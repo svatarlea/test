@@ -1,0 +1,68 @@
+﻿<repository name="Firefox" id="49cc1734-00f5-48dc-80b6-71f26bb525a4" rxversion="3.2.3.16825">
+  <codegen classname="Firefox" namespace="Browsers.FirefoxBrowser"/>
+  <rootfolder name="Root" id="76c841d7-0ac5-4985-b102-a45cc6bbeb68" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+    <appfolder name="Form" id="1a43965b-5ca0-43b4-b128-7d9e666d98ff" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+      <item name="NavigateEditBox" id="0535d943-7b3b-4f00-9b16-79a1cc1a9464" searchtimeout="30000ms" capname="combobox" addcaps="text,accessible">
+        <![CDATA[/form[@class='MozillaWindowClass']/container[@accessiblerole='PropertyPage']/toolbar[@accessiblename='Navigation Toolbar']/combobox[@accessiblename='Go to a Website']]]>
+      </item>
+      <item name="ButtonBack" id="46b3d8f2-3ffa-4b04-bd89-52096725d18f" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+        <![CDATA[/form[@class='MozillaWindowClass']/container[@accessiblerole='PropertyPage']/toolbar[@accessiblename='Navigation Toolbar']/button[@accessiblename='Back']]]>
+      </item>
+      <item name="TitleBar" id="1441865f-b978-4565-91ad-90beac40b672" searchtimeout="30000ms" capname="titlebar" addcaps="titlebar,accessible">
+        <![CDATA[/form[@class='MozillaWindowClass']/titlebar[@accessiblerole='TitleBar']]]>
+      </item>
+      <item name="Window" id="c50aabf4-60a8-486a-89f0-18dc37598530" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow">
+        <![CDATA[/form[@class='MozillaWindowClass']]]>
+      </item>
+      <basepath>
+        <![CDATA[/form[@class='MozillaWindowClass']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAO9SURBVDhPXZN/UNNlHMef78YGSLDfGyJYDc5T
+LiRQJMMJFAxkgkDb8Ca2EFojgoWkIVJSnHIQ53ZXebbsFGu7IBJawAR/JGAcJwGhngIJWgjMIQfq
+dRoQ775b1x/5uXv/87n35/U893zeDyF0jWgFR29phRtu7hH4RuiOb1Rvy63XZ+y6uTWnxhGpOz67
+XvvZz6Ea45lQjanY5f9fHfYhkt9yhBjXC2FRR3YUKTVTQxouGiLZ+Mp2Fl/ceoT958ex3diFFwut
+qNCm9rUoOap2vUT8i46wSJUXI9s1PPMR3w0Z1dJ6hwNLmAdMDa2ouTaH9zrvQnn6KjYVnca1U4mw
+7RQOXsrjqV0QYuSzam+/K3IDnJWBmCiTYLjADyfXMmFOCsf2aBkM3VNQNQ5jU4kVv57NxmBt+Lx9
+t+jKuVxBHDkhZQ9OHApcnjMF436tFBMHAjBZIvj3JrTy+Qzs6phEuu02IkqbUPVpCZwXU9D7/mp0
+FYi/J/VR7FlnzUq4ADOVEkyUP4+pKhnmvi2ELTkIih8ckNeNYLOxH+uKm5D+ZhEcnQpMn9mAnkLh
+JGmSsR47P/F3AxwV/pg8EQ3HKRkeNqaiLVWEmC9HEV19Gev3NSPk7XqEyg2Y71HgwbnNuJzPXyS2
+BGrJWS3CA6MY/dl+sG3lojmRR58ugio2DdKCRoTorQjWmhGkMSMmU48nA7GY/ykSnTq/ZdImpx6O
+lXAxWyXA3XI+2l6gUBn1HDhbysBPOoKGHcH4eI8S/ooqiBXVqNibhIULa3GvbiW687weE3scZe7J
+XPH39Id8zBwW4GrWCgxmPIO+TD8MvOaDS2lc6CM2IkxejFjFG7j/dSBmjnExkO+JCypWL2mNJ5qO
+eNaT6zm+cEEcHwhxPZuL7hQvtMTQYVrDQFiMHvvjI9C8LxQLFgnGDnrCvsML9nReHf0GZHVrLPOP
+rm3eGDNw4DwkwLhBjBs6MVpe9YVFLsCx9BC0vy7ASDmdF6MI/XrvJbva98/2LH6uO9YWGcn75mXq
+Xlsce2G0gIPpMh6mS3l0qASYOsjDnWIOxuhw/W7wxfBeH7QqmUNH4xm7Ta8QiRuQKCVixbNkZ+k6
+qsUazfzrfAJ7+UqaF/oyaKm80ZfljV6V57I9xXPpcxn7TkIQSXv6T/HpRlKQB+NAeSDlOBnFWGyO
+o2BLJPhRTui1MpcbEjwWTeGsR2uYlJn2vvQ0wJtuSHmEbInxI6VZYuq7t/ypHkMANVS8inEjJ4C6
+qF7FtCaLqSMiJkmmvQH/Af4Benft0XMHQJQAAAAASUVORK5CYII=
+      </icon>
+    </appfolder>
+    <appfolder name="DOM" id="daefb408-00fb-47dd-a6ab-a1b9e297f4a7" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="WebPage" id="40522d18-2021-417a-9d52-1b1a82d39a74" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
+        <![CDATA[/dom]]>
+      </item>
+      <basepath>
+        <![CDATA[/dom]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <basepath>
+    </basepath>
+  </rootfolder>
+  <variables/>
+</repository>

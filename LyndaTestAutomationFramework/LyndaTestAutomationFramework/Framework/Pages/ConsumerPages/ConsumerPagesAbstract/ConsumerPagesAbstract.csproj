@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{992E822F-BF99-42E0-A285-D94CFAC1DF6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsumerPagesAbstract</RootNamespace>
+    <AssemblyName>ConsumerPagesAbstract</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RanorexVersion>3</RanorexVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Controls, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Controls.dll</HintPath>
+      <id>c1185b1d-163c-4969-aebf-a885548104ad</id>
+    </Reference>
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.dll</HintPath>
+      <id>e16abbeb-af3f-42e2-a902-ae08966c5341</id>
+    </Reference>
+    <Reference Include="Ranorex.Core.Injector, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.Injector.dll</HintPath>
+      <id>1a248780-24f2-44f3-b994-858ac665694e</id>
+    </Reference>
+    <Reference Include="Ranorex.Core.WinApi, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.WinApi.dll</HintPath>
+      <id>b19e21ea-c740-454d-8d9b-63ce8f550759</id>
+    </Reference>
+    <Reference Include="Ranorex.Libs, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.dll</HintPath>
+      <id>ac9333fe-80ea-4975-8215-3401df2e46f3</id>
+    </Reference>
+    <Reference Include="Ranorex.Libs.IeAddon3, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.IeAddon3.dll</HintPath>
+      <id>6f10b6ad-3126-4d3a-a8e6-bab2c0771865</id>
+    </Reference>
+    <Reference Include="Ranorex.Libs.Web, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.Web.dll</HintPath>
+      <id>0ae01dc8-b7d0-4791-9978-56903ee552d1</id>
+    </Reference>
+    <Reference Include="Ranorex.Libs.WinForms, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.WinForms.dll</HintPath>
+      <id>a132e990-7361-447b-8b68-0218febed470</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.ChromeWeb.dll</HintPath>
+      <id>4ba31c39-52a3-4626-899f-76cf5e506149</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Flex.dll</HintPath>
+      <id>79f00ac8-7e5f-448e-aa7a-ac41545da6c1</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Java.dll</HintPath>
+      <id>35d725e1-93b8-4674-b570-fd2a54618121</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.MozillaWeb.dll</HintPath>
+      <id>1e82c4e7-b468-43ce-9752-5b7a2e520def</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Msaa.dll</HintPath>
+      <id>16e5967d-300a-49c8-8650-6d5135ae0313</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Office.dll</HintPath>
+      <id>2380d7f4-9c49-457a-8dcb-f373f1dcc54a</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.RawText.dll</HintPath>
+      <id>d76ebb9c-8108-4c90-baa9-1a4b7e13ea6d</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Web.dll</HintPath>
+      <id>beb5013b-e7f7-426f-a42a-b82306443b91</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Win32.dll</HintPath>
+      <id>49f5ec01-9fea-42bd-b724-c23c3161fda6</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.WinForms.dll</HintPath>
+      <id>0bbaca80-5448-49f7-82ed-8088f88d1682</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Wpf.dll</HintPath>
+      <id>1d55fdfe-07eb-4041-aef4-414273931101</id>
+    </Reference>
+    <Reference Include="System">
+      <id>93e65add-bf21-471a-8924-49b64ca01939</id>
+    </Reference>
+    <Reference Include="System.Core">
+      <id>7d63a650-9a4f-4bb4-bd6d-9eadb08632f7</id>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <id>94ee9ba9-a087-4390-94df-0fcf635e60a3</id>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <id>ca2dadd6-8a9e-44f4-8099-0c4ed657c140</id>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <id>81add3e8-c18e-40c3-a1c8-c6faa100ae85</id>
+    </Reference>
+    <Reference Include="System.Data">
+      <id>c5c42823-3f4e-47d4-b6e5-f92005c5c88c</id>
+    </Reference>
+    <Reference Include="System.Xml">
+      <id>7d6c19f2-5e11-4798-a0aa-385f757542cc</id>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LyndaHeaderFooterPage1\LyndaHeaderFooterPage1.cs">
+      <id>65ed5df4-8eda-47c6-9375-e5622c4e4572</id>
+    </Compile>
+    <Compile Include="LyndaHeaderFooterPage1\HeaderRepo.cs">
+      <BoundTo>DE0AA63F-5250-460D-9329-47AD2101EB14</BoundTo>
+      <DependentUpon>HeaderRepo.rxrep</DependentUpon>
+      <id>fac9c23d-0b78-4ab6-b360-091deb0a4bd9</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="LyndaHeaderFooterPage2\HeaderRepo.cs">
+      <BoundTo>2D2B4848-3B55-4227-8C58-58C5B89A4C58</BoundTo>
+      <DependentUpon>HeaderRepo.rxrep</DependentUpon>
+      <id>fc89b004-beb8-4987-b7dd-90e33a26ac36</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="LyndaHeaderFooterPage2\LyndaHeaderFooterPage2.cs">
+      <id>7e5fe58b-6017-47f2-99ed-71eb6263a149</id>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <id>40c0dc36-ea27-4cc1-ab56-ac18e3166714</id>
+    </Compile>
+    <None Include="LyndaHeaderFooterPage1\HeaderRepo.rxrep">
+      <id>DE0AA63F-5250-460D-9329-47AD2101EB14</id>
+      <repoid>0675dd3d-4220-4bde-8e37-2658f2247710</repoid>
+      <reporootid>dd5063b8-99c4-4d7c-abae-f8959eebbf1c</reporootid>
+    </None>
+    <None Include="LyndaHeaderFooterPage2\HeaderRepo.rxrep">
+      <id>2D2B4848-3B55-4227-8C58-58C5B89A4C58</id>
+      <repoid>23b2a1c3-6e8b-4743-8fba-490f11564245</repoid>
+      <reporootid>dfc29b64-9e01-4cde-a284-750ba31c725c</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BrowserTypes\Browsers\Browsers\Browsers.csproj">
+      <Project>{3A1AC965-0417-49EF-9B28-E907EB7FC79A}</Project>
+      <Name>Browsers</Name>
+      <id>3c36eb04-c28c-421e-9599-02af5690c14b</id>
+    </ProjectReference>
+    <ProjectReference Include="..\..\AbstractGeneral\PagesAbstractGeneral\PagesAbstractGeneral.csproj">
+      <Project>{E701375F-9B34-4EF8-9A74-39D5D3E6D77A}</Project>
+      <Name>PagesAbstractGeneral</Name>
+      <id>b85c35ba-cf35-4605-9a20-12462601d28f</id>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

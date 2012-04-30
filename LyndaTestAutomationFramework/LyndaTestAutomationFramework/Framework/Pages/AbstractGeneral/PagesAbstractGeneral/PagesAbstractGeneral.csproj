@@ -1,0 +1,104 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E701375F-9B34-4EF8-9A74-39D5D3E6D77A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PagesAbstractGeneral</RootNamespace>
+    <AssemblyName>PagesAbstractGeneral</AssemblyName>
+    <RanorexVersion>3</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)">
+      <id>30226987-3476-47b1-8807-a455fbc28935</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)">
+      <id>95048922-64eb-4b52-96c7-1423fe6ce280</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)">
+      <id>40c6bf2f-28fe-4261-901b-cdd803f1af28</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)">
+      <id>9edf0ca5-473f-4b9a-bc49-1b52b20250d9</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
+      <id>4817b465-978c-4f33-906c-fc38b2cd881e</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)">
+      <id>b601e790-21ec-4ee5-9845-8aada8102c5a</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)">
+      <id>e16372da-8b3c-4599-b812-977af9018a53</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)">
+      <id>1c23f751-b28b-4ab8-9fe3-455d4d41e94a</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)">
+      <id>6e03a28f-fb67-4f6f-97b4-e302b0287cb7</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)">
+      <id>b2074be3-564f-4dcb-92b6-88fe775de495</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)">
+      <id>bcbf5991-008f-4444-b338-93696a49b2f4</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)">
+      <id>a2aadc32-278c-4720-bf72-0b5cb075e341</id>
+    </Reference>
+    <Reference Include="System">
+      <id>0d3cbc53-0ca1-42e8-b84d-2db18e75b1ca</id>
+    </Reference>
+    <Reference Include="System.Data">
+      <id>778e034c-10d2-4744-8467-d4af54fa8738</id>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <id>dd7f749e-4373-4569-91cd-b7d09efd2e04</id>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <id>35989dad-e967-4dbd-85ce-96ec92283842</id>
+    </Reference>
+    <Reference Include="System.Xml">
+      <id>3303fb56-e406-4bc2-b124-af4b6578e90f</id>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractPage1.cs">
+      <id>e4536596-691a-4ea0-8e86-0c8c7f87c97a</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>38b51226-a85d-4822-8fa7-9dd86d57940a</id>
+    </Compile>
+  </ItemGroup>
+</Project>

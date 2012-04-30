@@ -1,0 +1,63 @@
+﻿<testsuite name="Tests" rxversion="3.2.3.16825" id="3f647c1d-1399-4837-9f78-e70951b71080" reportfilename="%S_%Y%M%D_%T.rxlog" reportxslfilename="" reportwriteinterval="30000ms" enabletracingscreenshots="True" description="" reportlevel="Info;20">
+  <content>
+    <folder name="Demo" id="77c0ea3f-2c76-47c3-827e-f11cd1549308">
+      <testcase name="TestCase1" id="179adc16-c2e3-46f8-adbe-ff906076e905">
+        <testmodule name="TestCase1" id="9dd0c200-3e7e-4a8b-99cd-eb809e92d517" ref="84E4B99C-F3FE-446B-962C-7F2EB5596954" type="UserCode"/>
+      </testcase>
+      <testcase name="TestCase2" id="4dd20567-2184-4e8c-9c5c-50d680243d72">
+        <testmodule name="TestCase2" id="dcf9278c-39e2-46a5-98b9-d029c551a3a1" ref="5487DE9F-33EE-41EF-9ED9-EC9705B4A5C7" type="UserCode"/>
+      </testcase>
+    </folder>
+  </content>
+  <testconfigurations default="TestRun">
+    <testconfiguration name="TestRun">
+      <testcase id="179adc16-c2e3-46f8-adbe-ff906076e905"/>
+      <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
+      <testcase id="77c0ea3f-2c76-47c3-827e-f11cd1549308"/>
+    </testconfiguration>
+  </testconfigurations>
+  <references>
+    <reference>
+      Ranorex.Controls.dll
+    </reference>
+    <reference>
+      ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.Injector.dll
+    </reference>
+    <reference>
+      ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.WinApi.dll
+    </reference>
+    <reference>
+      ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.dll
+    </reference>
+    <reference>
+      Ranorex.Libs.IeAddon3.dll
+    </reference>
+    <reference>
+      ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.Web.dll
+    </reference>
+    <reference>
+      ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.WinForms.dll
+    </reference>
+    <reference>
+      ..\..\..\General\bin\Debug\General.exe
+    </reference>
+    <reference>
+      ..\..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
+    </reference>
+    <reference>
+      Browsers.dll
+    </reference>
+    <reference>
+      WebPages.dll
+    </reference>
+    <reference>
+      ConsumerPagesMain.dll
+    </reference>
+    <reference>
+      ConsumerPagesAbstract.dll
+    </reference>
+    <reference>
+      PagesAbstractGeneral.dll
+    </reference>
+  </references>
+</testsuite>

@@ -1,0 +1,76 @@
+﻿<repository name="IE" id="545b1474-1808-4033-9ff6-15291080dad2" rxversion="3.2.3.16825">
+  <codegen classname="IE" namespace="Browsers.IEBrowser"/>
+  <rootfolder name="Root" id="20d858bd-54d3-486c-a6fb-bdd9ab5b016f" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+    <appfolder name="Form" id="5bf07cb5-9605-4764-a654-0ea04402878e" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+      <item name="NavigateEditBox" id="a8920685-d014-4a34-a858-940fde7c7f51" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+        <![CDATA[/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@controlid='41477']/text[@class='Edit']]]>
+      </item>
+      <item name="ButtonBack" id="a5fe8c42-8d25-4fa6-9709-76dd3778cf01" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
+        <![CDATA[/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@class='TravelBand']/toolbar/button[@text='Back']]]>
+      </item>
+      <item name="ButtonForward" id="6c9db020-7f88-4d88-a10b-b11afba914d6" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
+        <![CDATA[/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@class='TravelBand']/toolbar/button[@text='Forward']]]>
+      </item>
+      <item name="MenuFile" id="fb631b50-307a-4ae5-95cf-424e49d7bbfa" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
+        <![CDATA[/form[@class='IEFrame']/element[@class='Frame Tab']/element/element/container/toolbar/button[@text='&File']]]>
+      </item>
+      <item name="MenuHelp" id="4905f66e-5d6a-4417-9b59-5cdd0ef6342e" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
+        <![CDATA[/form[@class='IEFrame']/element[@class='Frame Tab']/element/element/container/toolbar/button[@text='&Help']]]>
+      </item>
+      <item name="TitleBar" id="f38bb932-37cb-4f20-837e-59fc2c8ca211" searchtimeout="30000ms" capname="unknown" addcaps="unknown,nativewindow">
+        <![CDATA[/form[@class='IEFrame']/element[@class='Client Caption']]]>
+      </item>
+      <item name="Window" id="781b97a2-b1da-4cf6-b702-779b4d5bbbb0" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow">
+        <![CDATA[/form[@class='IEFrame']]]>
+      </item>
+      <basepath>
+        <![CDATA[/form[@class='IEFrame']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANvSURBVDhPjVJrTJNnGH3KMIo/EGOytdyK6Nw0
+66ZE4j2yuBhdFu+AgW1ssaXQBooQlXmrly0DL2tn461okctUlgX1U5sC9VLBu4IK1q/Qdi2XFoqg
+RaH9vq/9npWSGG/JfJLz402ec95zzvsCfMAgIod9IhCwZPge9nGIzn+PU5QBMCZA5byXzpMTY6ds
+0yauKDFkmJs3baWMEXrqSmiPpWzMkaYdISJbCWz3/Q3n1wCEvSMQv4mI/XK3/mxuTVsf2XOAZTvD
+0ETMYMXHLwxMK6jU8WVn4oaJNAGl6QDhbwjwf7m4YuUZU+vpTgv9fGgzonEcPriUggeNJtxh82Da
+NRct2H/DHC+rXEXXwIbvAMa+Epi8URu9stpEEl4G6SEJYhNgtWphf4ykvPEblcGymRxgCttZTLs1
+gF8UXzPLi1MSkgE+CgpEr78RJthdR5x2OmjKm4/s/Qj28QHe+fSCnGnDRcXm/RUfK6tS5jX1DRXY
+/LiE6KDjck5d5GUeHXEwsZBILLhsc/V6lIgkoFYhaF8IEPp6vsk52tEp/7R07+xFTL/3Ar+S61xR
+WaWzgzszdmnXPnKe87NmHnbVzsU9jffdIn2rQ6Q3OYR1pFNYSzoza8nujQ9d7qI+RGGLB2cfbaZ4
+Ik1aUEB1VpVPOabjy0sTsOSZG8v8iOXsawicTzCI6kHEXwMORM2DOKeizc8TlQhh+JO8sCepqauh
+qL2rQo3Hj8IasoufX5UdIz2ZNYLKrECZ2ZFZJ7IjxRpJEEK1NIApwwKhlHmSyVU2npEZe1HhZjC3
+wdoflVMxku//hrZ9O9d/e1T72jzx9VRDO7Ol04O/dbz0zd9XdzNKUj4rcAOHLynlRomPyZIO1duW
+nnrgWnC4voP7w58n+RmKCPC1JUh9eo5h3mfzkgSKBmtaYx9u6/Kisp/B1ZV3ndHZpS0zdxFWicHu
+kVkYTH3kxc9/19s/+X7vxKC5wTufrqJ0nAupAJNipBXLBMr6tuSGbjrX6sXCDhoL7RTKrBSua2Vw
+sb7HFyfXOWLE6h9fJcsEGOWr5dTI+DBVDhCSkPcHL/C+VYsO1rsWn7NQSZef4tfV//rm7LvqjstU
+X+emKqa+XQvHWAwJdiWstx6G5XYNLJDLl4RHizSJXKF6TeTPR6Tcn1QZH6crF41PLhr3Nvk/Befc
+dnTypcQAAAAASUVORK5CYII=
+      </icon>
+    </appfolder>
+    <appfolder name="DOM" id="ea9444db-7ca7-495f-9dfa-16ec93263cc5" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="WebPage" id="38bef810-ac24-4f45-9da5-f630e98feebc" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
+        <![CDATA[/dom]]>
+      </item>
+      <basepath>
+        <![CDATA[/dom]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <basepath>
+    </basepath>
+  </rootfolder>
+  <variables/>
+</repository>

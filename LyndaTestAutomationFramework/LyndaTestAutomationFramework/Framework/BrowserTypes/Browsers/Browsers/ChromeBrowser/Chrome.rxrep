@@ -1,0 +1,57 @@
+﻿<repository name="Chrome" id="0bfa8476-14bc-4ad3-8a40-1e2d991af687" rxversion="3.2.3.16825">
+  <codegen classname="Chrome" namespace="Browsers.ChromeBrowser"/>
+  <rootfolder name="Root" id="cf5abfec-c870-4e9f-abf2-d23d77ae15ed" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+    <appfolder name="DOM" id="f5109710-53f2-48e2-b62b-d7ae1fcd5a4a" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="WebPage" id="a04f60ff-c95b-4a04-ae99-3e7cd867c805" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
+        <![CDATA[/dom]]>
+      </item>
+      <basepath>
+        <![CDATA[/dom]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <appfolder name="Form" id="170f8a50-6744-42ec-a564-43e5d976d113" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+      <item name="NavigateEditBox" id="02c46c0c-e463-4e08-99b2-af7709493f70" searchtimeout="30000ms" capname="text" addcaps="text,accessible">
+        <![CDATA[/form[@class='Chrome_WidgetWin_0']/element[@class='Chrome_OmniboxView']/text]]>
+      </item>
+      <item name="TitleBar" id="40ea7bc6-06c5-4830-be2f-398e7a7f9ae1" searchtimeout="30000ms" capname="toolbar" addcaps="toolbar,accessible">
+        <![CDATA[/form[@class='Chrome_WidgetWin_0']/container/toolbar[@accessiblename='Google Chrome Toolbar']]]>
+      </item>
+      <basepath>
+        <![CDATA[/form[@class='Chrome_WidgetWin_0']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKESURBVDhPtZNrSJNhGIZdUOIBS7OURFdrpi43
+y8PWPMzNvrm5TcUGyQiD/nRCBDshBIGCBBpkdCAoMIVKUdG0PCWYqROHYlNWU0qdc7N5IssCW3D3
+fls5TcRfvXD9eriv53m/73nd3P7HGc+iMqZzlO0L50+CxnpKaZrKTLlDejG26scYE/F7ZtWpmNMo
+sXA6E/M5GZjLToMtk8JUsgBaDoe9mYQxGcXDtDAOVnE8ZqhEzMiSCSJYUxJgER2DOS4aUzwehoIP
+5G+QnLkRozWFH4aJy4U55ijM/BhMC2IdmGNJ8EgUTJxITIZG4COTDSLYvioRlyep01vToAtjY4IV
+homD4bDm5qF/1IaOkc9YNHdi9nUwFjt3Y6nbDz90Pviuc6clzpNSJe6kBVcL4zEcwoLlQi6uV39A
+3lMjLlWN4dwTA+a/LOPXsMc6SHSbQyCvTwUtoCmThaFWO470Wzpk3x2E5t4Q1GUDUJT0w25grhF4
+0hN4OASyOilUfwS05PZLAxKKeiC92edAUqyFsLAbK6PHVwV2vRct8HJeoVxsVb1yTkDTon+DQ5cb
+EVnQCm5BGzjXmkEVt6/rvjKw0zWBsFRYoaiXrwpOtGVgxPgJzLMVhEoIrlTj/ViXq/uQN7717ln3
+J3wljyRQvpBD1eKaJKdDg/yuPGieJ7nC77zxtXsveh8GNK/dBUZA4j6V7JkMigan5O83UTTKYOzz
+h13viZVBHyxr/TFRE/SThP3+XSZG+MWoUtF9CeRElFYrd8iyaihHaOltIGzNITBWMumw72brvIMU
+ovklIogfUKAeS2Fu2g9LAwuT1aFoKgppJ/WgrR4UXXcnBBIiCBwCi7CLsOE1/gYMepb94q/0WAAA
+AABJRU5ErkJggg==
+      </icon>
+    </appfolder>
+    <basepath>
+    </basepath>
+  </rootfolder>
+  <variables/>
+</repository>

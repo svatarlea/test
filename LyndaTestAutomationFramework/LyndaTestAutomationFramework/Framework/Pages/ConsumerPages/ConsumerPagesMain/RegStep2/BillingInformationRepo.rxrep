@@ -1,0 +1,83 @@
+﻿<repository name="BillingInformationRepo" id="49f5b734-39fa-49bc-b260-855938a38d1b" rxversion="3.2.3.16825">
+  <codegen classname="BillingInformationRepo" namespace="ConsumerPagesMain.RegStep2"/>
+  <rootfolder name="Root" id="d11d1e90-a524-406b-aa69-266b05cccaf4" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+    <appfolder name="DOM" id="8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="FirstNameInput" id="d5f7a92d-12b5-4074-a8db-8fcdeef766d4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[1]/td[@innertext=' *']/input[@id='txtFirstName']]]>
+      </item>
+      <item name="LastNameInput" id="755d4fb5-9598-42b2-9bd8-b861abf2d799" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[2]/td[@innertext=' *']/input[@id='txtLastName']]]>
+      </item>
+      <item name="CompanyInput" id="4c79313a-2038-4b6b-8fe6-775c6f28f72e" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[3]/td[2]/input[@id='txtOrgName']]]>
+      </item>
+      <item name="AddressInput" id="86a8d0a4-5af6-4324-950b-0b4d6ca6b53d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[4]/td[@innertext=' *']/input[@id='txtAddress1']]]>
+      </item>
+      <item name="AptInput" id="4ef1279d-68a2-4a76-ad5d-a8d291d9279e" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[5]/td[2]/input[@id='txtAddress2']]]>
+      </item>
+      <item name="CityInput" id="98ddb7e5-ce75-468b-9d90-75ba6ca6eb58" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[6]/td[@innertext=' *']/input[@id='txtCity']]]>
+      </item>
+      <item name="StateSelect" id="a749f6b9-9f97-4fd3-bbd4-0b2e514c5e1d" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[7]/td[2]/select[@id='drpState']]]>
+      </item>
+      <item name="ZipInput" id="374b17c5-745e-4c16-9dd5-fc3a926ff804" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[8]/td[2]/input[@id='txtZIP']]]>
+      </item>
+      <item name="CountrySelect" id="80b0b8bb-b5ef-4696-9ed9-b693944ed6d8" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[9]/td[2]/select[@id='drpCountry']]]>
+      </item>
+      <item name="PhoneInput" id="b46ad68e-0e54-4adf-870e-fd2836d35e10" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[10]/td[@innertext=' *']/input[@id='txtPhone']]]>
+      </item>
+      <item name="BillingEmailInput" id="a855235b-7cc0-49aa-876b-1ecd8610ed98" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[11]/td[@innertext=' *']/input[@id='txtEmail']]]>
+      </item>
+      <item name="HowHearSelect" id="5192a3ad-0ce4-4336-a04e-b6986dd77409" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[12]/td[2]/select[@id='drpHearAboutUs']]]>
+      </item>
+      <basepath>
+        <![CDATA[/dom]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <appfolder name="StateContainer" id="0c689279-1d54-4cd2-afe0-f504a90ad766" searchtimeout="30000ms" capname="container" addcaps="container" isrooted="True" usecache="True">
+      <item name="StateListitem" id="8446ba18-d980-4558-81d7-ebe9092bc1fa" searchtimeout="30000ms" capname="listitem" addcaps="listitem,accessible">
+        <![CDATA[/container[@caption='selectbox']/listitem]]>
+      </item>
+      <basepath>
+        <![CDATA[/container[@caption='selectbox']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAYFJREFU
+OE/Fj71LAnEYx2/vhf6EhojIoleKlmpIoqlsiRoitHJscJFIbTB6s07lgtCiodmQarE0h5beqDZB
+DQT1jqCWQirfvt3P31kXFZYNPceH54XnPvccw/w1+hwRtHFxNNoF1FsFKGw86lgeDXZe7HlUi3WV
+JQYFK6DWeotWWxSd85fg/FHkvl2u9aJi3IdSjRdlYs5D+hI1hdQ1+hNU6s7QPrWHwaEZ6LkduFwu
+MOb9CAKROK7CMVyH4zLkfQznwSguRE5DAnzBO4xMO8GyLJiN43vkI4uPD5l/NSPz7sk1Klj3C9L7
+STEXIiXupHLSHq2dChxHcZmALBSSJKlggpV+wRv9xQVETi5IQ6lZoYLNw0gRggyU6iUq2PLcFCcY
+W6CCbU8oJ8giI5HOnfg9ZC+L3tE5KnDuBvCYSOIh8SLyLPIk1aT/TH73TaCePUDHMIdmlUViWVbn
+Z++5qX8RLapVdA3o6AUkOI6DyWSC0Wj8EQaDAWazGW63mwr+NV4BUqqnq4df6rAAAAAASUVORK5C
+YII=
+      </icon>
+    </appfolder>
+    <basepath>
+    </basepath>
+  </rootfolder>
+  <variables/>
+</repository>

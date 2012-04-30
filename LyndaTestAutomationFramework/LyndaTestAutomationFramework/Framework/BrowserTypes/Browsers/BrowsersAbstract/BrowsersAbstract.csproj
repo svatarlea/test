@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{9C28B488-4FFA-4570-9AA3-306E0E7B3C3C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BrowsersAbstract</RootNamespace>
+    <AssemblyName>BrowsersAbstract</AssemblyName>
+    <RanorexVersion>3</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Ranorex.Core\3.2.3.16825__b798506b574ebc9a\Ranorex.Core.dll</HintPath>
+      <id>95467523-e358-4b64-926c-793a81d5e04a</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)">
+      <id>f522b027-eb08-4da1-aaa5-4465994d7954</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)">
+      <id>c0f1a611-2b47-45f2-a0c8-bcc44d07eb33</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)">
+      <id>10e62435-ad4d-463c-8200-18a99d3d5879</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
+      <id>0d456926-797c-48e2-b604-c13d8a639307</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)">
+      <id>51efa63f-32df-493b-8ddf-8f95822ec090</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)">
+      <id>fc351f10-f4e7-4974-b81c-a8d6dcf577c0</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)">
+      <id>293dc2af-c81a-47eb-a705-c56da3952c03</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)">
+      <id>c6fd8fd0-6dc3-4ccf-bc9b-d217b6bd1963</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)">
+      <id>ee18cd74-79b8-4261-af59-65249d37c64d</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)">
+      <id>60b5fd8c-244d-43ce-bbe3-caf5d1547fda</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)">
+      <id>8f209a5b-758f-49f8-82a8-ed0d42fe8fc7</id>
+    </Reference>
+    <Reference Include="System">
+      <id>c45f307e-7744-4a41-9e0b-f5ea209b648d</id>
+    </Reference>
+    <Reference Include="System.Data">
+      <id>94b29690-ec1a-4612-b0cc-e7f5bdad8640</id>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <id>b8aaf367-b6c4-450d-90f2-816735eac21e</id>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <id>7c9cecf5-ff27-4830-be96-1be3af107ec8</id>
+    </Reference>
+    <Reference Include="System.Xml">
+      <id>9874520c-e00b-4185-9902-f960f530e0bc</id>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>e1de027e-2444-4869-b07f-2f3249089214</id>
+    </Compile>
+    <Compile Include="BrowserBasic\BrowserBasic.cs">
+      <id>cc4a0b7c-551b-41a4-8924-82709ca843e0</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

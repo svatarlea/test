@@ -1,0 +1,36 @@
+﻿<repository name="HeaderRepo" id="0675dd3d-4220-4bde-8e37-2658f2247710" rxversion="3.2.3.16825">
+  <codegen classname="HeaderRepo" namespace="ConsumerPagesAbstract.LyndaHeaderFooterPage1"/>
+  <rootfolder name="Root" id="dd5063b8-99c4-4d7c-abae-f8959eebbf1c" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+    <appfolder name="DOMbase" id="b10025bb-d9f1-4980-b9bf-67b402450255" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="SubscribeLink" id="b8389e85-ab84-4359-bd14-505deefe5be2" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+        <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[2]/a[@innertext='subscribe']]]>
+      </item>
+      <item name="SupportMenu" id="2abacfe9-6389-4013-99d5-d9b487f69719" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+        <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[1]/a[@innertext='support']]]>
+      </item>
+      <item name="SupportMenu_FAQs" id="bff6bc38-ef1c-4745-ad18-b16028a5c68d" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+        <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[1]/div/ul/li[1]/a[@innertext~'^frequently\ asked\ question']]]>
+      </item>
+      <basepath>
+        <![CDATA[/dom]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <basepath>
+    </basepath>
+  </rootfolder>
+  <variables/>
+</repository>

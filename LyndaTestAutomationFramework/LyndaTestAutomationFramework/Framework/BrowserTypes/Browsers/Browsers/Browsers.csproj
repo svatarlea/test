@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3A1AC965-0417-49EF-9B28-E907EB7FC79A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Browsers</RootNamespace>
+    <AssemblyName>Browsers</AssemblyName>
+    <RanorexVersion>3</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Ranorex.Core\3.2.3.16825__b798506b574ebc9a\Ranorex.Core.dll</HintPath>
+      <id>997a43c5-7305-465e-a82f-a6082e4c1e28</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)">
+      <id>ef3ad0f9-40ae-479b-915c-79069c350db5</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)">
+      <id>045ff5ec-39ce-4858-986b-230dfd28650d</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)">
+      <id>d95c891c-e861-47ac-9c04-f6bd20699cab</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
+      <id>3f3b47f5-f2b4-41fd-bcf4-aa463926f1b6</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)">
+      <id>25788720-eccf-45bc-a360-2e4f20e98952</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)">
+      <id>d4fde2d7-9244-4125-86c0-84920208a94d</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)">
+      <id>3ca75a0e-c203-4d55-8d56-cae5dedd818e</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)">
+      <id>4857c297-356e-4073-9812-c415d4a6b072</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)">
+      <id>5344af26-6957-49bf-84e6-0b641e4f63f9</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)">
+      <id>1afdea18-9cd4-4965-bb74-72f3973ba44d</id>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)">
+      <id>bce434f7-bb5b-4c43-8eee-c099315bd759</id>
+    </Reference>
+    <Reference Include="System">
+      <id>ceda362a-5ac0-4245-af44-9f7a077da384</id>
+    </Reference>
+    <Reference Include="System.Data">
+      <id>bf696af7-d311-4e87-8cc4-72d5c5f1b067</id>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <id>11a3d606-0af4-4267-94cc-b336315d76da</id>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <id>7a542844-249a-441a-b683-53ae4657d8a1</id>
+    </Reference>
+    <Reference Include="System.Xml">
+      <id>f5a8c45d-d1d7-4e8f-a3ec-8e6195567e77</id>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>0337ccfa-7683-43b0-b6c5-89bf8522533d</id>
+    </Compile>
+    <Compile Include="Browser.cs">
+      <id>478e435b-7f63-410b-8056-b4b88bf16e54</id>
+    </Compile>
+    <Compile Include="ChromeBrowser\Chrome.cs">
+      <BoundTo>88987CFC-5E68-47F3-971B-1DE6305AA2FA</BoundTo>
+      <DependentUpon>Chrome.rxrep</DependentUpon>
+      <id>11f621b6-14c5-4769-aec0-7f9410fde6b1</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="ChromeBrowser\ChromeBrowser.cs">
+      <id>42e5e014-05a0-4401-8dfa-a53a47a90f28</id>
+    </Compile>
+    <Compile Include="FirefoxBrowser\Firefox.cs">
+      <id>be46a5cc-3b84-432c-9f1b-fa07cc49fcbf</id>
+      <RepositoryCode>true</RepositoryCode>
+      <DependentUpon>Firefox.rxrep</DependentUpon>
+      <BoundTo>B0188711-5C57-4AA3-BC28-CD2295705CB2</BoundTo>
+    </Compile>
+    <Compile Include="FirefoxBrowser\FirefoxBrowser.cs">
+      <id>163302b7-6c79-4c4b-a967-2bdde110cfa4</id>
+    </Compile>
+    <Compile Include="IEBrowser\IE.cs">
+      <RepositoryCode>true</RepositoryCode>
+      <BoundTo>852AF6D5-552C-409D-AAF3-DFE309986D0D</BoundTo>
+      <id>37385f3a-33a4-440d-8271-85cb987a627b</id>
+      <DependentUpon>IE.rxrep</DependentUpon>
+    </Compile>
+    <Compile Include="IEBrowser\IEBrowser.cs">
+      <id>f9de76b7-b997-424b-92b1-49256a1164cf</id>
+    </Compile>
+    <Compile Include="SafariBrowser\Safari.cs">
+      <id>d21f8c6f-4a82-4685-a626-04d3723ee584</id>
+      <RepositoryCode>true</RepositoryCode>
+      <DependentUpon>Safari.rxrep</DependentUpon>
+      <BoundTo>1A888E89-C8D6-4E1C-B66B-33BDEDDFE600</BoundTo>
+    </Compile>
+    <Compile Include="SafariBrowser\SafariBrowser.cs">
+      <id>cf5fdcc5-7f48-417c-8bf3-f472b27622dc</id>
+    </Compile>
+    <None Include="ChromeBrowser\Chrome.rxrep">
+      <id>88987CFC-5E68-47F3-971B-1DE6305AA2FA</id>
+      <repoid>0bfa8476-14bc-4ad3-8a40-1e2d991af687</repoid>
+      <reporootid>cf5abfec-c870-4e9f-abf2-d23d77ae15ed</reporootid>
+    </None>
+    <None Include="FirefoxBrowser\Firefox.rxrep">
+      <id>B0188711-5C57-4AA3-BC28-CD2295705CB2</id>
+      <reporootid>76c841d7-0ac5-4985-b102-a45cc6bbeb68</reporootid>
+      <repoid>49cc1734-00f5-48dc-80b6-71f26bb525a4</repoid>
+    </None>
+    <None Include="IEBrowser\IE.rxrep">
+      <id>852AF6D5-552C-409D-AAF3-DFE309986D0D</id>
+      <reporootid>20d858bd-54d3-486c-a6fb-bdd9ab5b016f</reporootid>
+      <repoid>545b1474-1808-4033-9ff6-15291080dad2</repoid>
+    </None>
+    <None Include="SafariBrowser\Safari.rxrep">
+      <id>1A888E89-C8D6-4E1C-B66B-33BDEDDFE600</id>
+      <reporootid>a4f3ebd6-bd34-4818-936b-6d0a7e3de81a</reporootid>
+      <repoid>223313f9-f148-4504-a562-c8d1988dbdf9</repoid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BrowsersAbstract\BrowsersAbstract.csproj">
+      <Project>{9C28B488-4FFA-4570-9AA3-306E0E7B3C3C}</Project>
+      <Name>BrowsersAbstract</Name>
+      <id>9ec9cde2-b7b9-4cee-b763-f61c3a73b4b0</id>
+    </ProjectReference>
+    <Folder Include="SafariBrowser">
+      <id>701f7fe1-42d4-45cc-a7a8-be9b0eda375c</id>
+    </Folder>
+  </ItemGroup>
+</Project>
