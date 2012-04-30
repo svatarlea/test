@@ -18,15 +18,13 @@ namespace Lynda.Test.ConsumerPages
     /// </summary>
     public class RegPageStep1 : LyndaHeaderFooterPage2
     {
-        Browser browser;
-
         private RegPageStep1Repo regPageStep1Repo = null;
         
         /// <summary>
         /// Initializes a new Lynda.Test.ConsumerPages.RegPageStep1 class. Does not select a subscription or enter any account information.
         /// </summary>
         /// <param name="browserForPage">Browser instance containing the consumer registration page step 1.</param>
-        public RegPageStep1(Browser browserForPage) : base (browserForPage)
+        public RegPageStep1(Browser browserForPage)
         {
         	regPageStep1Repo = new RegPageStep1Repo();
         	browser = browserForPage;

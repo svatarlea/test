@@ -57,9 +57,9 @@
   </content>
   <testconfigurations default="TestRun">
     <testconfiguration name="TestRun">
-      <testcase id="09b18ae7-dabb-449f-b629-0bb7f4fc2bfd"/>
+      <testcase id="1013df48-aee7-4e81-9f82-cc064bb8bbee"/>
       <testcase id="c4b15e2f-3974-4fc7-85fa-868ff28046df"/>
-      <testcase id="dacf63c6-1da9-4dc6-bef2-f1c963de31b1"/>
+      <testcase id="f308081d-1600-4b2d-9926-a1b6c8d96844"/>
     </testconfiguration>
   </testconfigurations>
   <references>

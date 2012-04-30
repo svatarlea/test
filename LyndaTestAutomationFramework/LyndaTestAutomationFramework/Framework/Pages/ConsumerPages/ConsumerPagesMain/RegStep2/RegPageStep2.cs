@@ -17,16 +17,14 @@ namespace Lynda.Test.ConsumerPages
     /// Lynda Consumer Reg step 2 page https://stage.lynda.com/home/registration/ConsumerRegistrationStep2.aspx?bnr=topsubbtn_newsite
     /// </summary>
     public class RegPageStep2 : LyndaHeaderFooterPage2
-    {
-		Browser browser;      
-		
+    {  		
         private RegPageStep2Repo regPageStep2Repo = null;
         
         /// <summary>
         /// Initializes a new Lynda.Test.ConsumerPages.RegPageStep2 class. Does not enter any billing or payment information.
         /// </summary>
         /// <param name="browserForPage"></param>
-        public RegPageStep2(Browser browserForPage) : base (browserForPage)
+        public RegPageStep2(Browser browserForPage)
         {     
         	regPageStep2Repo = new RegPageStep2Repo();
         	browser = browserForPage;

@@ -32,16 +32,15 @@ namespace Lynda.Test.ConsumerPages
         /// <summary>
         /// Browser instance that has a page loaded that is derived from the LyndaHeaderFooterPage1 class. 
         /// </summary>
-        private Browser browser = null;
+        protected Browser browser = null;
         
         /// <summary>
         /// Initializes new instance of LyndaHeaderFooterPage1 class.
         /// </summary>
         /// <param name="browserForPage">Browser instance containing the page derived from the LyndaHeaderFooterPage1 class.</param>
-        protected LyndaHeaderFooterPage1(Browser browserForPage)
+        protected LyndaHeaderFooterPage1()
         {
         	headerRepo = new HeaderRepo();
-        	browser=browserForPage;
         }
 
         /// <summary>

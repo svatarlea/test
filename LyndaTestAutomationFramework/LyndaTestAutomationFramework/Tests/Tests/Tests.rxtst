@@ -21,22 +21,22 @@
       Ranorex.Controls.dll
     </reference>
     <reference>
-      ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.Injector.dll
+      ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.Injector.dll
     </reference>
     <reference>
-      ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.WinApi.dll
+      ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.WinApi.dll
     </reference>
     <reference>
-      ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.dll
+      ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.dll
     </reference>
     <reference>
       Ranorex.Libs.IeAddon3.dll
     </reference>
     <reference>
-      ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.Web.dll
+      ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.Web.dll
     </reference>
     <reference>
-      ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.WinForms.dll
+      ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.WinForms.dll
     </reference>
     <reference>
       ..\..\..\General\bin\Debug\General.exe
