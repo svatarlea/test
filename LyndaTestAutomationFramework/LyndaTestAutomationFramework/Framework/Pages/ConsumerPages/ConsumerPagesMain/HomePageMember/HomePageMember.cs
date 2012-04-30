@@ -34,7 +34,7 @@ namespace Lynda.Test.ConsumerPages
     	/// and waits for the page to load.
     	/// </summary>
     	/// <param name="browserForPage">Browser instance containing the member home page.</param>
-    	public HomePageMember(Browser browserForPage)// : base(browserForPage)
+    	public HomePageMember(Browser browserForPage)
     	{
     		homePageMemberRepo = new HomePageMemberRepo();
     		browser=browserForPage;   		
