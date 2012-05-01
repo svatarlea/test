@@ -55,7 +55,7 @@ namespace Tests.Demo
             regPageStep1.CheckOrUncheckNewReleases(true);
             regPageStep1.CheckOrUncheckSpecialAnnouncements(true);
             regPageStep1.FillAccountInfo(); //standard info default.
-            //custom
+            //custom...
             AccountInfo accountInfo = new AccountInfo(); //nothing initialized
             accountInfo.SignMeUpNewReleases=true;
             accountInfo = new AccountInfo(AccountInfo.DefaultInfo.Standard); //standard account info
