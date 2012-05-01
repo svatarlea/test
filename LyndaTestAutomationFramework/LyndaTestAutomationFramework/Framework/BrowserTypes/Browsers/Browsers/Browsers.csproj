@@ -167,10 +167,6 @@
     <ProjectReference Include="..\BrowsersAbstract\BrowsersAbstract.csproj">
       <Project>{9C28B488-4FFA-4570-9AA3-306E0E7B3C3C}</Project>
       <Name>BrowsersAbstract</Name>
-      <id>9ec9cde2-b7b9-4cee-b763-f61c3a73b4b0</id>
     </ProjectReference>
-    <Folder Include="SafariBrowser">
-      <id>701f7fe1-42d4-45cc-a7a8-be9b0eda375c</id>
-    </Folder>
   </ItemGroup>
 </Project>

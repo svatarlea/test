@@ -1,0 +1,4 @@
+*.rxuser
+bin
+obj
+*.suo
