@@ -54,13 +54,13 @@ namespace Tests.Demo
             regPageStep1.CheckOrUncheckMonthlyNewsletters(true);
             regPageStep1.CheckOrUncheckNewReleases(true);
             regPageStep1.CheckOrUncheckSpecialAnnouncements(true);
-            regPageStep1.FillAccountInfo(); //standard info default...
+            regPageStep1.FillAccountInfo(); //standard info default
 
-            //custom...!
-            AccountInfo accountInfo = new AccountInfo(); //Nothing initialized....
+            //custom
+            AccountInfo accountInfo = new AccountInfo(); //Nothing initialized
 
             accountInfo.SignMeUpNewReleases=true;
-            accountInfo = new AccountInfo(AccountInfo.DefaultInfo.Standard); //Standard account info.
+            accountInfo = new AccountInfo(AccountInfo.DefaultInfo.Standard); //Standard account info
             //change standard values to custom
             accountInfo.FirstName="Trebek";
             accountInfo.SignMeUpSpecial=false;
