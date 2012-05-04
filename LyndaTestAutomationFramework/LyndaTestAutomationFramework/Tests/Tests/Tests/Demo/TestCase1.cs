@@ -57,10 +57,10 @@ namespace Tests.Demo
             regPageStep1.FillAccountInfo(); //standard info default...
 
             //custom...!
-            AccountInfo accountInfo = new AccountInfo(); //nothing initialized!
+            AccountInfo accountInfo = new AccountInfo(); //Nothing initialized....
 
             accountInfo.SignMeUpNewReleases=true;
-            accountInfo = new AccountInfo(AccountInfo.DefaultInfo.Standard); //standard account info
+            accountInfo = new AccountInfo(AccountInfo.DefaultInfo.Standard); //Standard account info.
             //change standard values to custom
             accountInfo.FirstName="Trebek";
             accountInfo.SignMeUpSpecial=false;
