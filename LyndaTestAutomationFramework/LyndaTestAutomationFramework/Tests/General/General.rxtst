@@ -67,22 +67,22 @@
       ..\..\..\Tests\bin\Debug\Tests.exe
     </reference>
     <reference>
-      ..\..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
-    </reference>
-    <reference>
-      Browsers.dll
-    </reference>
-    <reference>
-      WebPages.dll
-    </reference>
-    <reference>
-      ..\..\..\..\Framework\Pages\ConsumerPages\ConsumerPagesMain\bin\Debug\ConsumerPagesMain.dll
+      ..\..\..\..\Framework\Pages\AbstractGeneral\PagesAbstractGeneral\bin\Debug\PagesAbstractGeneral.dll
     </reference>
     <reference>
       ..\..\..\..\Framework\Pages\ConsumerPages\ConsumerPagesAbstract\bin\Debug\ConsumerPagesAbstract.dll
     </reference>
     <reference>
-      ..\..\..\..\Framework\Pages\AbstractGeneral\PagesAbstractGeneral\bin\Debug\PagesAbstractGeneral.dll
+      ..\..\..\..\Framework\Pages\ConsumerPages\ConsumerPagesMain\bin\Debug\ConsumerPagesMain.dll
+    </reference>
+    <reference>
+      WebPages.dll
+    </reference>
+    <reference>
+      Browsers.dll
+    </reference>
+    <reference>
+      ..\..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
     </reference>
   </references>
 </testsuite>

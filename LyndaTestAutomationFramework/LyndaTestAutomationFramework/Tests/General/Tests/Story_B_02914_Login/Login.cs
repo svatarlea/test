@@ -40,7 +40,7 @@ namespace General.Tests.Story_B_02914_Login
             Keyboard.DefaultKeyPressTime = 50;
             Delay.SpeedFactor = 1.0;
 
-            const string domain = "integration.lynda.com";
+            const string domain = "release.lynda.com";
             
             const string testCaseName = "Login";
 
