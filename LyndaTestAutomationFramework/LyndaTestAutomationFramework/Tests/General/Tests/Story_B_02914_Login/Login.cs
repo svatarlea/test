@@ -41,7 +41,7 @@ namespace General.Tests.Story_B_02914_Login
             Delay.SpeedFactor = 1.0;
 
             //Specifiy domain.
-            const string domain = "release.lynda.com";
+            const string domain = "stage.lynda.com";
             
             //Specifiy test case name.
             const string testCaseName = "Login";
