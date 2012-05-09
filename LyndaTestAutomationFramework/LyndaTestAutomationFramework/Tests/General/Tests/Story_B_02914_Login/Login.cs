@@ -42,6 +42,7 @@ namespace General.Tests.Story_B_02914_Login
 
             const string domain = "release.lynda.com";
             
+            //Specifiy test case name.
             const string testCaseName = "Login";
 
             string navigateTo = TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["NavigateTo"];
