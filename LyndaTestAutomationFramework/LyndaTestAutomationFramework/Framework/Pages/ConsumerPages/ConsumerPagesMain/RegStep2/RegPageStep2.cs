@@ -14,7 +14,8 @@ using Lynda.Test.Browsers;
 namespace Lynda.Test.ConsumerPages
 {   		
 	/// <summary>
-    /// Lynda Consumer Reg step 2 page https://stage.lynda.com/home/registration/ConsumerRegistrationStep2.aspx?bnr=topsubbtn_newsite
+    /// Lynda Consumer Reg step 2 page,
+    ///  /home/registration/ConsumerRegistrationStep2.aspx?bnr=topsubbtn_newsite
     /// </summary>
     public class RegPageStep2 : LyndaHeaderFooterPage2
     {  		
@@ -93,6 +94,18 @@ namespace Lynda.Test.ConsumerPages
         	browser.ClickTitleBar();
         	billingInfo.GetBillingInfo();
         	return billingInfo;
+        }
+        
+        /// <summary>
+        /// Gets OTL Subscription info from web page.
+        /// </summary>
+        /// <returns>OTL Subscription info.</returns>
+        public OTLSubscriptionPlanRegPage2 GetOTLSubscriptionPlan()
+        {
+        	OTLSubscriptionPlanRegPage2 otlPlan = new OTLSubscriptionPlanRegPage2();
+        	browser.ClickTitleBar();
+        	otlPlan.GetOTLPlanInfo();
+        	return otlPlan;
         }
         
         /// <summary>

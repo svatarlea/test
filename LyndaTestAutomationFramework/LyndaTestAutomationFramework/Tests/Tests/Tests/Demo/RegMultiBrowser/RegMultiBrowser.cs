@@ -21,12 +21,12 @@ namespace Tests.Demo
     /// Description of TestCase2.
     /// </summary>
     [TestModule("5487DE9F-33EE-41EF-9ED9-EC9705B4A5C7", ModuleType.UserCode, 1)]
-    public class TestCase2 : ITestModule
+    public class RegMultiBrowser : ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public TestCase2()
+        public RegMultiBrowser()
         {
             // Do not delete - a parameterless constructor is required!
         }
@@ -61,8 +61,8 @@ namespace Tests.Demo
             RegPageStep1 regPageStep1IE = new RegPageStep1(browserIE);
             RegPageStep1 regPageStep1FF = new RegPageStep1(browserFF);
                       
-            regPageStep1IE.SelectOTLSubscription(OTLSubscriptionPlan.SubscriptionPlan.MonthlyPremium);
-            regPageStep1FF.SelectOTLSubscription(OTLSubscriptionPlan.SubscriptionPlan.Annual);
+            regPageStep1IE.SelectOTLSubscription(OTLSubscriptionPlanRegPage1.SubscriptionPlan.MonthlyPremium);
+            regPageStep1FF.SelectOTLSubscription(OTLSubscriptionPlanRegPage1.SubscriptionPlan.Annual);
             
             regPageStep1IE.FillAccountInfo(new AccountInfo(AccountInfo.DefaultInfo.Standard));
             AccountInfo accountInfo = new AccountInfo(AccountInfo.DefaultInfo.Standard);

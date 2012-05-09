@@ -15,7 +15,7 @@ namespace Lynda.Test.ConsumerPages
 	/// <summary>
 	/// Represents Online Training Library Subscription Plan section on consumer registration page 1.
 	/// </summary>
-	public class OTLSubscriptionPlan
+	public class OTLSubscriptionPlanRegPage1
     {    	
 		/// <summary>
 		/// Monthly = Monthly Subscription.
@@ -25,23 +25,24 @@ namespace Lynda.Test.ConsumerPages
 		/// </summary>
     	public enum SubscriptionPlan { Monthly, MonthlyPremium, Annual, AnnualPremium };
     	
-    	private OTLSubscriptionPlanRepo otlSubscriptionPlanRepo = null;
+    	private OTLSubscriptionPlanRegPage1Repo otlSubscriptionPlanRepo = null;
     	
     	private SubscriptionPlan subscription;	
+    	private string subscriptionPrice;
 
     	/// <summary>
     	/// Initializes a new instance of the Lynda.Test.ConsumerPages.OTLSubscriptionPlan class without initializing the subscription choice.
     	/// </summary>
-    	internal OTLSubscriptionPlan()
+    	internal OTLSubscriptionPlanRegPage1()
     	{
-    		otlSubscriptionPlanRepo = new OTLSubscriptionPlanRepo();
+    		otlSubscriptionPlanRepo = new OTLSubscriptionPlanRegPage1Repo();
     	}
     	
     	/// <summary>
     	/// Initializes a new instance of the Lynda.Test.ConsumerPages.OTLSubscriptionPlan class.
     	/// </summary>
     	/// <param name="subscriptionPlan">Specifies how to initialize the subscription plan.</param>
-    	internal OTLSubscriptionPlan(SubscriptionPlan subscriptionPlan) :
+    	internal OTLSubscriptionPlanRegPage1(SubscriptionPlan subscriptionPlan) :
     		this ()
 	    {	    		    	
 	    	Subscription = subscriptionPlan;
@@ -56,23 +57,28 @@ namespace Lynda.Test.ConsumerPages
 	    	if (Convert.ToBoolean(otlSubscriptionPlanRepo.DOM.RadioMonthlyInput.Checked))
 	    	{
 	    		Subscription = SubscriptionPlan.Monthly;
+	    		SubscriptionPrice=otlSubscriptionPlanRepo.DOM.MonthlyPrice.InnerText.Trim();
 	    		return;
 	    	}
 	    	if (Convert.ToBoolean(otlSubscriptionPlanRepo.DOM.RadioMonthlyPremiumInput.Checked))
 	    	{
 	    		Subscription = SubscriptionPlan.MonthlyPremium;
+	    		SubscriptionPrice=otlSubscriptionPlanRepo.DOM.MonthlyPremiumPrice.InnerText.Trim();
 	    		return;
 	    	}
 	    	if (Convert.ToBoolean(otlSubscriptionPlanRepo.DOM.RadioAnnualInput.Checked))
 	    	{
 	    		Subscription = SubscriptionPlan.Annual;
+	    		SubscriptionPrice=otlSubscriptionPlanRepo.DOM.AnnualPrice.InnerText.Trim();
 	    		return;
 	    	}
 	    	if (Convert.ToBoolean(otlSubscriptionPlanRepo.DOM.RadioAnnualPremiumInput.Checked))
 	    	{
 	    		Subscription = SubscriptionPlan.AnnualPremium;
+	    		SubscriptionPrice=otlSubscriptionPlanRepo.DOM.AnuualPremiumPrice.InnerText.Trim();
 	    		return;
-	    	}   	
+	    	}   
+	    	
 	    }
     	
 	    /// <summary>
@@ -108,9 +114,9 @@ namespace Lynda.Test.ConsumerPages
 	    }
 
 	    /// <summary>
-	    /// Gets or sets the state of the subscription plan radio button choice in this instance.
+	    /// Gets or sets the subscription plan radio button choice in this instance.
 	    /// </summary>
-    	internal SubscriptionPlan Subscription
+    	public SubscriptionPlan Subscription
 	    {
 	    	get
 	    	{
@@ -126,6 +132,15 @@ namespace Lynda.Test.ConsumerPages
 	    		subscription = value;
 	    	}
 	    }	
+    	
+    	/// <summary>
+    	/// Gets or sets the subscription price for the chosen subscription in this instance.
+    	/// </summary>
+    	public string SubscriptionPrice
+    	{
+    		get{return subscriptionPrice;}
+    		set{subscriptionPrice=value;}
+    	}
 	    
 	   
     }

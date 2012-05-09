@@ -154,7 +154,6 @@
       <BoundTo>2eee0b99-077e-49a3-9a91-89392b502ffa</BoundTo>
       <DependentUpon>General.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>6683e1f4-a649-4de3-8583-b2ad8f4067b7</id>
     </Content>
     <None Include="Tests\ConsumerReg\ConsumerRegRepo.rxrep">
       <id>72B4DCAF-C541-4CA7-BD88-F05412E18A1B</id>

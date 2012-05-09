@@ -19,31 +19,31 @@ using Ranorex.Core.Testing;
 namespace ConsumerPagesMain.RegStep1
 {
     /// <summary>
-    /// The class representing the OTLSubscriptionPlanRepo element repository.
+    /// The class representing the OTLSubscriptionPlanRegPage1Repo element repository.
     /// </summary>
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("6fc9bb01-badc-48e5-9e77-61be3084ff39")]
-    public partial class OTLSubscriptionPlanRepo : RepoGenBaseFolder
+    public partial class OTLSubscriptionPlanRegPage1Repo : RepoGenBaseFolder
     {
-        static OTLSubscriptionPlanRepo instance = new OTLSubscriptionPlanRepo();
+        static OTLSubscriptionPlanRegPage1Repo instance = new OTLSubscriptionPlanRegPage1Repo();
 
         /// <summary>
-        /// Gets the singleton class instance representing the OTLSubscriptionPlanRepo element repository.
+        /// Gets the singleton class instance representing the OTLSubscriptionPlanRegPage1Repo element repository.
         /// </summary>
         [RepositoryFolder("6fc9bb01-badc-48e5-9e77-61be3084ff39")]
-        public static OTLSubscriptionPlanRepo Instance
+        public static OTLSubscriptionPlanRegPage1Repo Instance
         {
             get { return instance; }
         }
 
-        OTLSubscriptionPlanRepoFolders.DOMAppFolder _dom;
+        OTLSubscriptionPlanRegPage1RepoFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Repository class constructor.
         /// </summary>
-        public OTLSubscriptionPlanRepo() 
-            : base("OTLSubscriptionPlanRepo", "", null, 30000, false)
+        public OTLSubscriptionPlanRegPage1Repo() 
+            : base("OTLSubscriptionPlanRegPage1Repo", "", null, 30000, false)
         {
-            _dom = new OTLSubscriptionPlanRepoFolders.DOMAppFolder(this);
+            _dom = new OTLSubscriptionPlanRegPage1RepoFolders.DOMAppFolder(this);
         }
 
 #region Variables
@@ -54,7 +54,7 @@ namespace ConsumerPagesMain.RegStep1
         /// The DOM folder.
         /// </summary>
         [RepositoryFolder("89597d3b-6b55-44a6-aaa5-914eedf6a09b")]
-        public virtual OTLSubscriptionPlanRepoFolders.DOMAppFolder DOM
+        public virtual OTLSubscriptionPlanRegPage1RepoFolders.DOMAppFolder DOM
         {
             get { return _dom; }
         }
@@ -63,7 +63,7 @@ namespace ConsumerPagesMain.RegStep1
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    public partial class OTLSubscriptionPlanRepoFolders
+    public partial class OTLSubscriptionPlanRegPage1RepoFolders
     {
         /// <summary>
         /// The DOMAppFolder folder.
@@ -76,6 +76,10 @@ namespace ConsumerPagesMain.RegStep1
             RepoItemInfo _radiomonthlypremiuminputInfo;
             RepoItemInfo _radioannualinputInfo;
             RepoItemInfo _radioannualpremiuminputInfo;
+            RepoItemInfo _monthlypriceInfo;
+            RepoItemInfo _annualpriceInfo;
+            RepoItemInfo _monthlypremiumpriceInfo;
+            RepoItemInfo _anuualpremiumpriceInfo;
 
             /// <summary>
             /// Creates a new DOM  folder.
@@ -88,6 +92,10 @@ namespace ConsumerPagesMain.RegStep1
                 _radiomonthlypremiuminputInfo = new RepoItemInfo(this, "RadioMonthlyPremiumInput", "body/div[1]/div[2]/form/table/tbody/tr[@id='row1008']/td[1]/input[@id='subChoice_1008']", 30000, null, "3d4b3816-afe0-4784-82a3-e6872c4371a2");
                 _radioannualinputInfo = new RepoItemInfo(this, "RadioAnnualInput", "body/div[1]/div[2]/form/table/tbody/tr[@id='row1002']/td[1]/input[@id='subChoice_1002']", 30000, null, "7e6826e6-04a1-47c1-bd34-ba4bb32be01f");
                 _radioannualpremiuminputInfo = new RepoItemInfo(this, "RadioAnnualPremiumInput", "body/div[1]/div[2]/form/table/tbody/tr[@id='row1003']/td[1]/input[@id='subChoice_1003']", 30000, null, "2cc6465b-79d7-46f5-a43e-f08098ed0264");
+                _monthlypriceInfo = new RepoItemInfo(this, "MonthlyPrice", "body/div[1]/div[2]/form/table/tbody/tr[@id='row1001']/td[@class='price']", 30000, null, "eade2e03-96e0-4943-af9b-5cf2a5c8124c");
+                _annualpriceInfo = new RepoItemInfo(this, "AnnualPrice", "body/div[1]/div[2]/form/table/tbody/tr[@id='row1002']/td[@class='price']", 30000, null, "4ed41c0d-e996-455e-9ad8-1df300f86f2e");
+                _monthlypremiumpriceInfo = new RepoItemInfo(this, "MonthlyPremiumPrice", "body/div[1]/div[2]/form/table/tbody/tr[@id='row1008']/td[@class='price']", 30000, null, "4a786d3d-cb74-4e2c-a437-01c21f7aaf0d");
+                _anuualpremiumpriceInfo = new RepoItemInfo(this, "AnuualPremiumPrice", "body/div[1]/div[2]/form/table/tbody/tr[@id='row1003']/td[@class='price']", 30000, null, "429cda05-6cd9-4b87-9ce7-8ac5d3f35d4c");
             }
 
             /// <summary>
@@ -207,6 +215,102 @@ namespace ConsumerPagesMain.RegStep1
                 get
                 {
                     return _radioannualpremiuminputInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MonthlyPrice item.
+            /// </summary>
+            [RepositoryItem("eade2e03-96e0-4943-af9b-5cf2a5c8124c")]
+            public virtual Ranorex.TdTag MonthlyPrice
+            {
+                get
+                {
+                    return _monthlypriceInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MonthlyPrice item info.
+            /// </summary>
+            [RepositoryItemInfo("eade2e03-96e0-4943-af9b-5cf2a5c8124c")]
+            public virtual RepoItemInfo MonthlyPriceInfo
+            {
+                get
+                {
+                    return _monthlypriceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AnnualPrice item.
+            /// </summary>
+            [RepositoryItem("4ed41c0d-e996-455e-9ad8-1df300f86f2e")]
+            public virtual Ranorex.TdTag AnnualPrice
+            {
+                get
+                {
+                    return _annualpriceInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AnnualPrice item info.
+            /// </summary>
+            [RepositoryItemInfo("4ed41c0d-e996-455e-9ad8-1df300f86f2e")]
+            public virtual RepoItemInfo AnnualPriceInfo
+            {
+                get
+                {
+                    return _annualpriceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MonthlyPremiumPrice item.
+            /// </summary>
+            [RepositoryItem("4a786d3d-cb74-4e2c-a437-01c21f7aaf0d")]
+            public virtual Ranorex.TdTag MonthlyPremiumPrice
+            {
+                get
+                {
+                    return _monthlypremiumpriceInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MonthlyPremiumPrice item info.
+            /// </summary>
+            [RepositoryItemInfo("4a786d3d-cb74-4e2c-a437-01c21f7aaf0d")]
+            public virtual RepoItemInfo MonthlyPremiumPriceInfo
+            {
+                get
+                {
+                    return _monthlypremiumpriceInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AnuualPremiumPrice item.
+            /// </summary>
+            [RepositoryItem("429cda05-6cd9-4b87-9ce7-8ac5d3f35d4c")]
+            public virtual Ranorex.TdTag AnuualPremiumPrice
+            {
+                get
+                {
+                    return _anuualpremiumpriceInfo.CreateAdapter<Ranorex.TdTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AnuualPremiumPrice item info.
+            /// </summary>
+            [RepositoryItemInfo("429cda05-6cd9-4b87-9ce7-8ac5d3f35d4c")]
+            public virtual RepoItemInfo AnuualPremiumPriceInfo
+            {
+                get
+                {
+                    return _anuualpremiumpriceInfo;
                 }
             }
         }

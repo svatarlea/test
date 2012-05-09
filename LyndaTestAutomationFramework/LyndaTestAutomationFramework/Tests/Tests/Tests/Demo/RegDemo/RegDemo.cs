@@ -19,12 +19,12 @@ namespace Tests.Demo
     /// Description of TestCase1.
     /// </summary>
     [TestModule("84E4B99C-F3FE-446B-962C-7F2EB5596954", ModuleType.UserCode, 1)]
-    public class TestCase1 : ITestModule
+    public class RegDemo : ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public TestCase1()
+        public RegDemo()
         {
             // Do not delete - a parameterless constructor is required!
         }
@@ -48,7 +48,7 @@ namespace Tests.Demo
             HomePageMember homePageMember = new HomePageMember(browser);
             homePageMember.ClickSubscribeLink();
             
-            RegPageStep1 regPageStep1 = new RegPageStep1(browser,OTLSubscriptionPlan.SubscriptionPlan.MonthlyPremium,
+            RegPageStep1 regPageStep1 = new RegPageStep1(browser,OTLSubscriptionPlanRegPage1.SubscriptionPlan.MonthlyPremium,
                                                          AccountInfo.DefaultInfo.Standard);
             
             regPageStep1.CheckOrUncheckMonthlyNewsletters(true);
@@ -57,7 +57,7 @@ namespace Tests.Demo
             regPageStep1.FillAccountInfo(); //standard info default.
 
             //custom
-            AccountInfo accountInfo = new AccountInfo(); //Nothing initialized.
+            AccountInfo accountInfo = new AccountInfo(); //Nothing initialized
 
             accountInfo.SignMeUpNewReleases=true;
             accountInfo = new AccountInfo(AccountInfo.DefaultInfo.Standard); //Standard account info
@@ -73,9 +73,10 @@ namespace Tests.Demo
             string firstName = accountInfo.Username;
             bool newReleasesChecked = accountInfo.SignMeUpNewReleases;
             //change subscription plan
-            regPageStep1.SelectOTLSubscription(OTLSubscriptionPlan.SubscriptionPlan.Monthly);
+            regPageStep1.SelectOTLSubscription(OTLSubscriptionPlanRegPage1.SubscriptionPlan.Monthly);
             //get current plan
-            OTLSubscriptionPlan.SubscriptionPlan currentPlan = regPageStep1.GetOTLSubscriptionPlan();
+            OTLSubscriptionPlanRegPage1 otlSubscriptionPlan = regPageStep1.GetOTLSubscriptionPlan();
+            OTLSubscriptionPlanRegPage1.SubscriptionPlan otlCurrentPlan = otlSubscriptionPlan.Subscription;
 
             regPageStep1.ClickContinue();
             

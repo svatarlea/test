@@ -143,18 +143,85 @@
     <Compile Include="AssemblyInfo.cs">
       <id>f18b5ca0-5f6d-4903-a1b5-e2caedd888f9</id>
     </Compile>
-    <Compile Include="Tests\Demo\TestCase1.cs">
+    <Compile Include="Tests\ConsumerReg\AllRegistrations.cs">
+      <id>00159a88-2850-4f2d-b575-5059f81e7d21</id>
+    </Compile>
+    <Compile Include="Tests\Demo\RegDemo\RegDemo.cs">
       <id>5ae371aa-3b29-4c4e-b680-d24cbef796ed</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>5ad9b392-a7eb-4b87-9438-f79a6c741e6a</id>
     </Compile>
-    <Compile Include="Tests\Demo\TestCase2.cs">
+    <Compile Include="Tests\Demo\RegMultiBrowser\RegMultiBrowser.cs">
       <id>15406e70-517c-4a1f-a994-78dee4bc609e</id>
     </Compile>
+    <Content Include="AllRegistrations.xlsx">
+      <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
+      <DependentUpon>Tests.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>bd88fa50-aea1-46d6-8aea-22a09151b36e</id>
+    </Content>
     <None Include="app.config">
       <id>e702f5f2-2916-4963-adcc-74c1a0e25fc1</id>
     </None>
+    <None Include="Reports\Tests_20120508_105754.rxlog">
+      <id>6dcea914-a814-4ae1-a69f-b3525b8d83e5</id>
+    </None>
+    <None Include="Reports\Tests_20120508_145551.rxlog">
+      <id>fdcc520b-52b1-429b-a37a-86aea7b24229</id>
+    </None>
+    <None Include="Reports\Tests_20120508_150709.rxlog">
+      <id>95222215-631d-4ae0-8993-b319882154a7</id>
+    </None>
+    <None Include="Reports\Tests_20120508_160252.rxlog">
+      <id>15e9c4a0-7521-4569-96d0-618d3f3c0037</id>
+    </None>
+    <None Include="Reports\Tests_20120508_160446.rxlog">
+      <id>034ba88a-4a73-46cf-8af4-2f52d46bb203</id>
+    </None>
+    <None Include="Reports\Tests_20120509_100932.rxlog">
+      <id>1c935da2-f59f-42dd-b97a-9e5f7c075c69</id>
+    </None>
+    <None Include="Reports\Tests_20120509_102555.rxlog">
+      <id>8eb3594d-1c77-463f-b69d-8d1cd7b10725</id>
+    </None>
+    <None Include="Reports\Tests_20120509_102732.rxlog">
+      <id>2d0715d4-c800-4839-b9f6-1e20f84a8f5a</id>
+    </None>
+    <None Include="Reports\Tests_20120509_102806.rxlog">
+      <id>55b7d57a-9dd6-43ab-9866-5ccea0fc3669</id>
+    </None>
+    <None Include="Reports\Tests_20120509_103451.rxlog">
+      <id>0d791496-4a50-4da0-ac2d-13f0d9b529fb</id>
+    </None>
+    <None Include="Reports\Tests_20120509_141532.rxlog">
+      <id>93f44df2-d87f-41d4-b56a-f60b075eb364</id>
+    </None>
+    <None Include="Reports\Tests_20120509_141707.rxlog">
+      <id>907262d4-c751-42f8-bf83-27b921489e23</id>
+    </None>
+    <None Include="Reports\Tests_20120509_142210.rxlog">
+      <id>5576f10d-a628-492a-9305-6346ba25ec38</id>
+    </None>
+    <None Include="Reports\Tests_20120509_153931.rxlog">
+      <id>f755bc2a-5977-46d3-b9c4-6014877d8fe7</id>
+    </None>
+    <None Include="Reports\Tests_20120509_155341.rxlog">
+      <id>1fb839f2-bc7c-47e8-952f-cf23c7c1b7cd</id>
+    </None>
+    <None Include="Reports\Tests_20120509_161113.rxlog">
+      <id>33b51229-81bc-42e8-9f80-55489f6278a6</id>
+    </None>
+    <None Include="Reports\Tests_20120509_161210.rxlog">
+      <id>f939143a-2ad4-4b23-ba8d-c9002f47a3a9</id>
+    </None>
+    <None Include="Reports\Tests_20120509_161235.rxlog">
+      <id>ccdba9b4-2273-4429-9306-5a51b3b5084f</id>
+    </None>
+    <None Include="Reports\Tests_20120509_161315.rxlog">
+      <id>9ed2e3e9-ab1f-475f-a6d4-1bf6aed2d091</id>
+    </None>
+    <None Include="Reports\Tests_20120509_161503.rxlog" />
     <Content Include="Tests.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>ccad5aec-3cb9-485a-a031-4542e4ff132c</id>
@@ -190,6 +257,15 @@
     <Folder Include="Reports">
       <ReportsDir>true</ReportsDir>
       <id>7919b9d6-f7c7-43fe-b946-fb2baa707d2e</id>
+    </Folder>
+    <Folder Include="Tests\ConsumerReg">
+      <id>6d8c4508-d8ac-410f-8682-f53a5d4d03e6</id>
+    </Folder>
+    <Folder Include="Tests\Demo\RegMultiBrowser">
+      <id>81dad4bb-9188-496c-8b9c-f380b82ef767</id>
+    </Folder>
+    <Folder Include="Tests\Demo\RegDemo">
+      <id>57c4d995-38e3-4d87-b413-ed1e6dad720a</id>
     </Folder>
   </ItemGroup>
   <ItemGroup>
