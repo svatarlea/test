@@ -1,0 +1,33 @@
+﻿<repository name="OTLPlanInfoRepo" id="9abf8fd9-0d8c-428e-8155-33e2fba5c8b8" rxversion="3.2.3.16825">
+  <codegen classname="OTLPlanInfoRepo" namespace="ConsumerPagesMain.RegConfirm"/>
+  <rootfolder name="Root" id="3fcad546-cef4-4d24-8ca7-7a3a4062a81e" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+    <appfolder name="DOM" id="2a88a4ef-6070-4d81-974a-6de75b7a1141" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="OTLPlanPrice" id="83152af2-e5a5-4ad6-a55a-860c228637be" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
+        <![CDATA[/dom/body/div[4]/table/tbody/tr[2]/td[@class='price']]]>
+      </item>
+      <item name="OTLPlanName" id="5ae67476-e64d-4e8f-965d-1714d35df53e" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
+        <![CDATA[/dom/body/div[4]/table/tbody/tr[2]/td[@class=null()]]]>
+      </item>
+      <basepath>
+        <![CDATA[/dom]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <basepath>
+    </basepath>
+  </rootfolder>
+  <variables/>
+</repository>

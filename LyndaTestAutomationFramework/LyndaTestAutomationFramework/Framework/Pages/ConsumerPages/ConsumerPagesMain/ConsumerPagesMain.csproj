@@ -149,6 +149,24 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <id>42490af1-7987-428d-ab6b-543e1c96b0d2</id>
     </Compile>
+    <Compile Include="RegConfirm\OTLPlanInfo.cs">
+      <id>30f7a445-19c2-43d5-bd9c-22df2c577b4b</id>
+    </Compile>
+    <Compile Include="RegConfirm\OTLPlanInfoRepo.cs">
+      <BoundTo>005380E0-40A2-43FC-8EA9-9A62A402FF7A</BoundTo>
+      <DependentUpon>OTLPlanInfoRepo.rxrep</DependentUpon>
+      <id>41902726-ed57-4d64-8d8c-318c1e5ac1f1</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="RegConfirm\RegConfirm.cs">
+      <id>6a4ee2cf-1b7a-44f4-830e-a18c5a370c38</id>
+    </Compile>
+    <Compile Include="RegConfirm\RegConfirmRepo.cs">
+      <BoundTo>FCC8AA61-C7B4-4B1F-A0FE-1EAE22E77112</BoundTo>
+      <DependentUpon>RegConfirmRepo.rxrep</DependentUpon>
+      <id>76a89b11-697d-4f65-80dc-7af9ee8c7d4c</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
     <Compile Include="RegStep1\AccountInfo.cs">
       <id>7a3b16f5-b743-4c7c-9252-f4fb2e4cd695</id>
     </Compile>
@@ -158,12 +176,12 @@
       <id>9379f282-2871-4071-9e32-4e991ec7a16c</id>
       <RepositoryCode>true</RepositoryCode>
     </Compile>
-    <Compile Include="RegStep1\OTLSubscriptionPlan.cs">
+    <Compile Include="RegStep1\OTLSubscriptionPlanRegPage1.cs">
       <id>ebb6c192-e5e8-4d0c-8da3-0312f67746fe</id>
     </Compile>
-    <Compile Include="RegStep1\OTLSubscriptionPlanRepo.cs">
+    <Compile Include="RegStep1\OTLSubscriptionPlanRegPage1Repo.cs">
       <BoundTo>1B2570A6-910B-4E6E-B292-3CAF46E21A79</BoundTo>
-      <DependentUpon>OTLSubscriptionPlanRepo.rxrep</DependentUpon>
+      <DependentUpon>OTLSubscriptionPlanRegPage1Repo.rxrep</DependentUpon>
       <id>c4444193-88f9-41a7-aa0b-3e51fe40f973</id>
       <RepositoryCode>true</RepositoryCode>
     </Compile>
@@ -183,6 +201,15 @@
       <BoundTo>05BBB1B4-2799-49E5-8B52-4E13A431BBA4</BoundTo>
       <DependentUpon>BillingInformationRepo.rxrep</DependentUpon>
       <id>5e33d5d9-ecf0-4744-a94d-0cee08d40f58</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="RegStep2\OTLSubscriptionPlanRegPage2.cs">
+      <id>34391f4b-e342-4ec2-aadf-ada14d586a83</id>
+    </Compile>
+    <Compile Include="RegStep2\OTLSubscriptionPlanRegPage2Repo.cs">
+      <BoundTo>48B588B7-CD11-471A-B1CF-C2FFE69167B7</BoundTo>
+      <DependentUpon>OTLSubscriptionPlanRegPage2Repo.rxrep</DependentUpon>
+      <id>26cc9ad2-b266-4cbd-b796-d4095bec1537</id>
       <RepositoryCode>true</RepositoryCode>
     </Compile>
     <Compile Include="RegStep2\PaymentInformation.cs">
@@ -208,12 +235,22 @@
       <repoid>bfc87119-05b2-4370-8a68-13183b2c3491</repoid>
       <reporootid>d4e8c92d-ca76-47f6-b467-d5e40e210536</reporootid>
     </None>
+    <None Include="RegConfirm\OTLPlanInfoRepo.rxrep">
+      <id>005380E0-40A2-43FC-8EA9-9A62A402FF7A</id>
+      <repoid>9abf8fd9-0d8c-428e-8155-33e2fba5c8b8</repoid>
+      <reporootid>3fcad546-cef4-4d24-8ca7-7a3a4062a81e</reporootid>
+    </None>
+    <None Include="RegConfirm\RegConfirmRepo.rxrep">
+      <id>FCC8AA61-C7B4-4B1F-A0FE-1EAE22E77112</id>
+      <repoid>59c48bef-c8cb-4fba-b93c-1007fa5dbe63</repoid>
+      <reporootid>5baa0d35-4aae-4139-b0a7-6b75cda9eec7</reporootid>
+    </None>
     <None Include="RegStep1\AccountInfoRepo.rxrep">
       <id>36E90996-293D-4710-B1C2-117FB0EE9A91</id>
       <repoid>b5094ddd-6080-433d-a4ab-3b2998356dd9</repoid>
       <reporootid>5ac99b8c-7c79-4aab-b72e-c7919e4b02bf</reporootid>
     </None>
-    <None Include="RegStep1\OTLSubscriptionPlanRepo.rxrep">
+    <None Include="RegStep1\OTLSubscriptionPlanRegPage1Repo.rxrep">
       <id>1B2570A6-910B-4E6E-B292-3CAF46E21A79</id>
       <repoid>ec15a732-269f-4116-b9c7-c073b3ff0cc0</repoid>
       <reporootid>6fc9bb01-badc-48e5-9e77-61be3084ff39</reporootid>
@@ -227,6 +264,11 @@
       <id>05BBB1B4-2799-49E5-8B52-4E13A431BBA4</id>
       <repoid>49f5b734-39fa-49bc-b260-855938a38d1b</repoid>
       <reporootid>d11d1e90-a524-406b-aa69-266b05cccaf4</reporootid>
+    </None>
+    <None Include="RegStep2\OTLSubscriptionPlanRegPage2Repo.rxrep">
+      <id>48B588B7-CD11-471A-B1CF-C2FFE69167B7</id>
+      <repoid>35861c9f-3f1c-4c48-aa33-d0f4cd6c3028</repoid>
+      <reporootid>92731d2c-63e1-4c11-8eb8-783f70d52232</reporootid>
     </None>
     <None Include="RegStep2\PaymentInformationRepo.rxrep">
       <id>BFBD93CC-4ACC-49CD-A031-9FA174D7E839</id>

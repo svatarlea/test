@@ -14,7 +14,8 @@ using Lynda.Test.Browsers;
 namespace Lynda.Test.ConsumerPages
 {     
     /// <summary>
-    /// Represents a Lynda Consumer Reg step 1 page https://www.lynda.com/home/Registration/ConsumerRegistrationStep1.aspx?bnr=topsubbtn_newsite
+    /// Represents a Lynda Consumer Reg step 1 page,
+    ///  /home/Registration/ConsumerRegistrationStep1.aspx?bnr=topsubbtn_newsite
     /// </summary>
     public class RegPageStep1 : LyndaHeaderFooterPage2
     {
@@ -38,7 +39,7 @@ namespace Lynda.Test.ConsumerPages
         /// <param name="browserForPage">Browser instance containing the consumer registration page step 1.</param>
         /// <param name="subscription">Subscription to select.</param>
         /// <param name="accountDefaultInfo">Type of account information to enter.</param>
-        public RegPageStep1(Browser browserForPage, OTLSubscriptionPlan.SubscriptionPlan subscription, AccountInfo.DefaultInfo accountDefaultInfo) :
+        public RegPageStep1(Browser browserForPage, OTLSubscriptionPlanRegPage1.SubscriptionPlan subscription, AccountInfo.DefaultInfo accountDefaultInfo) :
         	this (browserForPage, subscription, new AccountInfo(accountDefaultInfo))
         {	
         }
@@ -49,7 +50,7 @@ namespace Lynda.Test.ConsumerPages
         /// <param name="browserForPage">Browser instance containing the consumer registration page step 1.</param>
         /// <param name="subscription">Subscription to select.</param>
         /// <param name="customAccountInfo">Custom account information to enter.</param>
-        public RegPageStep1(Browser browserForPage, OTLSubscriptionPlan.SubscriptionPlan subscription, AccountInfo customAccountInfo) :
+        public RegPageStep1(Browser browserForPage, OTLSubscriptionPlanRegPage1.SubscriptionPlan subscription, AccountInfo customAccountInfo) :
         	this (browserForPage)
         {
         	SelectOTLSubscription(subscription);
@@ -132,23 +133,23 @@ namespace Lynda.Test.ConsumerPages
         /// Selects an OTL subscription plan on the web page.
         /// </summary>
         /// <param name="subscriptionPlan">Lynda.Test.ConsumerPages.OTLSubscriptionPlan.SubscriptionPlan type to select.</param>
-        public void SelectOTLSubscription(OTLSubscriptionPlan.SubscriptionPlan subscriptionPlan)
+        public void SelectOTLSubscription(OTLSubscriptionPlanRegPage1.SubscriptionPlan subscriptionPlan)
         {
-        	OTLSubscriptionPlan otlSubscriptionPlan = new OTLSubscriptionPlan(subscriptionPlan);
+        	OTLSubscriptionPlanRegPage1 otlSubscriptionPlan = new OTLSubscriptionPlanRegPage1(subscriptionPlan);
         	browser.ClickTitleBar();
         	otlSubscriptionPlan.EnterOTLSubscriptionPlan();
         }
-        
+              
         /// <summary>
-        /// Gets current OTL Subscription plan selected on web page.
+        /// Gets OTL subscription plan info from the web page.
         /// </summary>
-        /// <returns>Subscription plan selected on web page currently.</returns>
-        public OTLSubscriptionPlan.SubscriptionPlan GetOTLSubscriptionPlan()
+        /// <returns>OTL subscription plan info.</returns>
+        public OTLSubscriptionPlanRegPage1 GetOTLSubscriptionPlan()
         {
-        	OTLSubscriptionPlan otlSubscriptionPlan = new OTLSubscriptionPlan();
+        	OTLSubscriptionPlanRegPage1 otlSubscriptionPlan = new OTLSubscriptionPlanRegPage1();
         	browser.ClickTitleBar();
         	otlSubscriptionPlan.GetOTLSubscriptionPlan();
-        	return otlSubscriptionPlan.Subscription;
+        	return otlSubscriptionPlan;
         }
         
         /// <summary>
