@@ -11,6 +11,8 @@ using System;
 using System.Threading;
 using System.Drawing;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Configuration;
 using System.Text.RegularExpressions;
 using WinForms = System.Windows.Forms;
 
@@ -25,8 +27,8 @@ namespace Tests
     {
         [STAThread]
         public static int Main(string[] args)
-        {
-            Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
+        {                    	
+        	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
 
             try

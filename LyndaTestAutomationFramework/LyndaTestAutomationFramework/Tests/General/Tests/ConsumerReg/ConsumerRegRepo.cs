@@ -16,7 +16,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace General.Tests.ConsumerReg
+namespace Tests.General.Tests.ConsumerReg
 {
     /// <summary>
     /// The class representing the ConsumerRegRepo element repository.

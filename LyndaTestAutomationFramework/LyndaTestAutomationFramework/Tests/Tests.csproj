@@ -126,6 +126,9 @@
     <Reference Include="System">
       <id>ef2cba77-b575-43c0-92e8-c17da59493a7</id>
     </Reference>
+    <Reference Include="System.Configuration">
+      <id>4c6006f3-14a5-4954-9e5c-5a31d13d1a0c</id>
+    </Reference>
     <Reference Include="System.Data">
       <id>081cbe65-e698-425c-b18e-509be7dce61a</id>
     </Reference>
@@ -143,16 +146,55 @@
     <Compile Include="AssemblyInfo.cs">
       <id>f18b5ca0-5f6d-4903-a1b5-e2caedd888f9</id>
     </Compile>
-    <Compile Include="Tests\ConsumerReg\AllRegistrations.cs">
+    <Compile Include="AppSettings.cs">
+      <id>4330eb56-2d78-43ee-adfc-c46979cc70ed</id>
+    </Compile>
+    <Compile Include="General\Tests\ConsumerReg\ConsumerRegRepo.cs">
+      <id>22aaac18-60cd-4bc6-97ab-855fea1cc6cb</id>
+      <RepositoryCode>true</RepositoryCode>
+      <DependentUpon>ConsumerRegRepo.rxrep</DependentUpon>
+      <BoundTo>3b7a21e9-3705-4c92-bc5f-5656ff8a8ed9</BoundTo>
+    </Compile>
+    <Compile Include="General\Tests\ConsumerReg\ConsumerRegTest1.cs">
+      <id>96e6b02f-04c1-404b-8543-2381ffb9604a</id>
+    </Compile>
+    <Compile Include="General\Tests\MultiBrowser\MemberHomePage.cs">
+      <id>4370890a-60b4-402e-9e98-2b05b8a0b5a2</id>
+      <RepositoryCode>true</RepositoryCode>
+      <DependentUpon>MemberHomePage.rxrep</DependentUpon>
+      <BoundTo>32340971-9464-4ff2-9e46-a79ff75a0c40</BoundTo>
+    </Compile>
+    <Compile Include="General\Tests\MultiBrowser\MultiBrowserExample.cs">
+      <id>9f61ed63-daeb-4f10-aedc-92a0748824cc</id>
+    </Compile>
+    <Compile Include="General\Tests\Story_B_02914_Login\Login.cs">
+      <id>7ad47f47-1fb1-44da-be1e-787eaba86b3b</id>
+    </Compile>
+    <Compile Include="General\Tests\Story_B_02914_Login\Story_B_02914_LoginRepo.cs">
+      <RepositoryCode>true</RepositoryCode>
+      <BoundTo>37e6b926-ecae-42ac-b869-0533c2a76ade</BoundTo>
+      <id>1e8e4b65-70bc-43ec-8ec2-d5c463ba9bff</id>
+      <DependentUpon>Story_B_02914_LoginRepo.rxrep</DependentUpon>
+    </Compile>
+    <Compile Include="General\Utilities\FormDataAccount.cs">
+      <id>825cf5a0-579b-42cd-932c-06219bba6b1c</id>
+    </Compile>
+    <Compile Include="General\Utilities\FormDataBilling.cs">
+      <id>4af087d1-5774-4051-9e59-188955365568</id>
+    </Compile>
+    <Compile Include="General\Utilities\FormDataPayment.cs">
+      <id>5795314a-2a6a-42fb-93c1-243208bba899</id>
+    </Compile>
+    <Compile Include="Main\ConsumerReg\AllRegistrations.cs">
       <id>00159a88-2850-4f2d-b575-5059f81e7d21</id>
     </Compile>
-    <Compile Include="Tests\Demo\RegDemo\RegDemo.cs">
+    <Compile Include="Main\Demo\RegDemo\RegDemo.cs">
       <id>5ae371aa-3b29-4c4e-b680-d24cbef796ed</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>5ad9b392-a7eb-4b87-9438-f79a6c741e6a</id>
     </Compile>
-    <Compile Include="Tests\Demo\RegMultiBrowser\RegMultiBrowser.cs">
+    <Compile Include="Main\Demo\RegMultiBrowser\RegMultiBrowser.cs">
       <id>15406e70-517c-4a1f-a994-78dee4bc609e</id>
     </Compile>
     <Content Include="AllRegistrations.xlsx">
@@ -163,6 +205,22 @@
     </Content>
     <None Include="app.config">
       <id>e702f5f2-2916-4963-adcc-74c1a0e25fc1</id>
+    </None>
+    <None Include="General\Tests\ConsumerReg\ConsumerRegRepo.rxrep">
+      <id>3b7a21e9-3705-4c92-bc5f-5656ff8a8ed9</id>
+      <reporootid>c01e8542-268c-458b-a9b3-363285851754</reporootid>
+      <repoid>3a7797e6-9535-4e0d-b260-0e1480059b10</repoid>
+    </None>
+    <None Include="General\Tests\MultiBrowser\MemberHomePage.rxrep">
+      <id>32340971-9464-4ff2-9e46-a79ff75a0c40</id>
+      <reporootid>12b2a37c-e9c1-4d56-a7d5-624b896a361e</reporootid>
+      <repoid>96b36747-8a91-4a5b-a093-deeee36533cc</repoid>
+    </None>
+    <None Include="General\Tests\Story_B_02914_Login\Story_B_02914_LoginRepo.rxrep">
+      <id>37e6b926-ecae-42ac-b869-0533c2a76ade</id>
+      <reporootid>b0017254-ce36-4185-917b-250caa8ff04b</reporootid>
+      <projectdefaultrepository>true</projectdefaultrepository>
+      <repoid>4d8e3c8d-c312-455c-b74a-570e20a9b4df</repoid>
     </None>
     <None Include="Reports\Tests_20120508_105754.rxlog">
       <id>6dcea914-a814-4ae1-a69f-b3525b8d83e5</id>
@@ -221,7 +279,100 @@
     <None Include="Reports\Tests_20120509_161315.rxlog">
       <id>9ed2e3e9-ab1f-475f-a6d4-1bf6aed2d091</id>
     </None>
-    <None Include="Reports\Tests_20120509_161503.rxlog" />
+    <None Include="Reports\Tests_20120509_161503.rxlog">
+      <id>35cf54d4-96f7-449b-9fb6-9ac4cec06f05</id>
+    </None>
+    <None Include="Reports\Tests_20120509_165111.rxlog">
+      <id>d6160743-d2be-408e-9309-8bd3bcb2fdc2</id>
+    </None>
+    <None Include="Reports\Tests_20120510_151150.rxlog">
+      <id>34ef8b69-0955-443d-b02d-d8fac979ba2d</id>
+    </None>
+    <None Include="Reports\Tests_20120511_143457.rxlog">
+      <id>08f7140e-c6d0-4ec8-bb38-235eeb867c5a</id>
+    </None>
+    <None Include="Reports\Tests_20120511_143557.rxlog">
+      <id>4352bf2e-dc75-4e3a-8116-f0276c11cf87</id>
+    </None>
+    <None Include="Reports\Tests_20120511_143625.rxlog">
+      <id>84d1143b-5a2d-4d9d-8ee3-84ae9246b04a</id>
+    </None>
+    <None Include="Reports\Tests_20120511_143648.rxlog">
+      <id>77d3fb50-82dd-45d5-98c2-f81a7971883d</id>
+    </None>
+    <None Include="Reports\Tests_20120511_143707.rxlog">
+      <id>ed3ca5b5-fcb3-4430-bce0-5746751de9e2</id>
+    </None>
+    <None Include="Reports\Tests_20120511_143813.rxlog">
+      <id>f1b69ad8-c0a5-4e07-ab73-d41607d35a07</id>
+    </None>
+    <None Include="Reports\Tests_20120511_150124.rxlog">
+      <id>a4173218-b89e-4f38-94e8-3816af839911</id>
+    </None>
+    <None Include="Reports\Tests_20120511_150242.rxlog">
+      <id>e6323bc3-a866-497d-9b48-5af558529891</id>
+    </None>
+    <None Include="Reports\Tests_20120514_084219.rxlog">
+      <id>07b85645-02cb-4388-a6a2-1b10de322e42</id>
+    </None>
+    <None Include="Reports\Tests_20120514_091018.rxlog">
+      <id>80742b50-b72c-4f42-96dd-9bdcb79fdb77</id>
+    </None>
+    <None Include="Reports\Tests_20120514_091453.rxlog">
+      <id>72c70d15-27ad-43ba-adca-b5d29dd275f8</id>
+    </None>
+    <None Include="Reports\Tests_20120514_091531.rxlog">
+      <id>201d33fb-7e74-45e8-a6ec-d94c81de3deb</id>
+    </None>
+    <None Include="Reports\Tests_20120514_091739.rxlog">
+      <id>186c100c-3489-4202-9d1e-7eb0f3bc3764</id>
+    </None>
+    <None Include="Reports\Tests_20120514_091759.rxlog">
+      <id>24878d6a-b840-4326-bfcd-3ed1cf6f6214</id>
+    </None>
+    <None Include="Reports\Tests_20120514_091825.rxlog">
+      <id>f93c3658-7ad3-4e48-bdb6-e3bc50ee284b</id>
+    </None>
+    <None Include="Reports\Tests_20120514_091903.rxlog">
+      <id>616572bb-e92a-420e-9243-6ab2cc674417</id>
+    </None>
+    <None Include="Reports\Tests_20120514_091927.rxlog">
+      <id>368ccfd9-5c11-4e45-8b3b-5d813a2682af</id>
+    </None>
+    <None Include="Reports\Tests_20120514_092002.rxlog">
+      <id>a76507b7-1194-4487-bdc5-f982d5f3efac</id>
+    </None>
+    <None Include="Reports\Tests_20120514_092324.rxlog">
+      <id>f82cfcce-8cfe-4bdb-93a3-8af562e4a796</id>
+    </None>
+    <None Include="Reports\Tests_20120514_092510.rxlog">
+      <id>146ef7a3-9754-45d4-ba39-4584ef5b1b3e</id>
+    </None>
+    <None Include="Reports\Tests_20120514_093331.rxlog">
+      <id>40c17ad2-671f-49eb-9ec2-1cade75170f7</id>
+    </None>
+    <None Include="Reports\Tests_20120514_093412.rxlog">
+      <id>e19174d6-0b2f-4979-8a3e-6d973c15a858</id>
+    </None>
+    <None Include="Reports\Tests_20120514_093433.rxlog">
+      <id>ca21763f-f503-48b1-942c-373c70f39e9b</id>
+    </None>
+    <None Include="Reports\Tests_20120514_093453.rxlog">
+      <id>7d916103-a2bd-414a-9e33-af33b01ae6aa</id>
+    </None>
+    <None Include="Reports\Tests_20120514_093519.rxlog">
+      <id>e96b75dd-38a0-4ad1-80b3-db7e7aa48b9f</id>
+    </None>
+    <None Include="Reports\Tests_20120514_093542.rxlog">
+      <id>50dd4aee-0f0f-4bf8-a2b9-06691b281b67</id>
+    </None>
+    <None Include="Reports\Tests_20120514_094206.rxlog" />
+    <Content Include="Story_B_02914_Login.xlsx">
+      <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
+      <DependentUpon>Tests.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>2e643a99-282a-4026-9137-2996e15dd3cd</id>
+    </Content>
     <Content Include="Tests.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>ccad5aec-3cb9-485a-a031-4542e4ff132c</id>
@@ -229,42 +380,60 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Framework\BrowserTypes\Browsers\Browsers\Browsers.csproj">
+    <ProjectReference Include="..\Framework\BrowserTypes\Browsers\Browsers\Browsers.csproj">
       <Project>{3A1AC965-0417-49EF-9B28-E907EB7FC79A}</Project>
       <Name>Browsers</Name>
-      <id>a258e36a-4e9d-4a3f-934f-0ddbbd0485f1</id>
+      <id>d4f92513-68ab-42fe-90e4-19168accfd4a</id>
     </ProjectReference>
-    <ProjectReference Include="..\..\Framework\Pages\AbstractGeneral\PagesAbstractGeneral\PagesAbstractGeneral.csproj">
+    <ProjectReference Include="..\Framework\Pages\AbstractGeneral\PagesAbstractGeneral\PagesAbstractGeneral.csproj">
       <Project>{E701375F-9B34-4EF8-9A74-39D5D3E6D77A}</Project>
       <Name>PagesAbstractGeneral</Name>
-      <id>dee90ec6-71ba-4547-a4d0-2fb0dffccd4d</id>
+      <id>71dc8854-e3bb-40d4-b5fa-e99e3d0db72a</id>
     </ProjectReference>
-    <ProjectReference Include="..\..\Framework\Pages\ConsumerPages\ConsumerPagesAbstract\ConsumerPagesAbstract.csproj">
+    <ProjectReference Include="..\Framework\Pages\ConsumerPages\ConsumerPagesAbstract\ConsumerPagesAbstract.csproj">
       <Project>{992E822F-BF99-42E0-A285-D94CFAC1DF6D}</Project>
       <Name>ConsumerPagesAbstract</Name>
-      <id>b1fabd1f-d9e2-47d5-bda2-5caa03b34719</id>
+      <id>b8df9b26-1072-4705-93d5-b6bcbd59e729</id>
     </ProjectReference>
-    <ProjectReference Include="..\..\Framework\Pages\ConsumerPages\ConsumerPagesMain\ConsumerPagesMain.csproj">
+    <ProjectReference Include="..\Framework\Pages\ConsumerPages\ConsumerPagesMain\ConsumerPagesMain.csproj">
       <Project>{28D0F7A8-9FF8-4AB7-A7B3-279B5A84A2C7}</Project>
       <Name>ConsumerPagesMain</Name>
-      <id>27536b78-7fde-46c4-bb0b-a16ec109cf71</id>
+      <id>3f425d75-f333-4287-8d2c-0a88f186b40c</id>
     </ProjectReference>
-    <ProjectReference Include="..\..\Framework\Utilities\WebPages\WebPages.csproj">
+    <ProjectReference Include="..\Framework\Utilities\WebPages\WebPages.csproj">
       <Project>{DD4D570A-3317-402A-B9AF-E7CBBBAB9F1D}</Project>
       <Name>WebPages</Name>
-      <id>1d0be108-8046-4233-8636-ecc0c0146640</id>
+      <id>f12fab88-f5f5-4799-93b0-0b694d2f3b96</id>
     </ProjectReference>
+    <Folder Include="General">
+      <id>d89eff42-8f68-40f2-b511-a0207216a815</id>
+    </Folder>
+    <Folder Include="General\Tests\ConsumerReg">
+      <id>871d187f-0b3c-48bd-bcc3-036953606560</id>
+    </Folder>
+    <Folder Include="General\Tests\MultiBrowser">
+      <id>9025940e-52f8-41eb-a76c-18eaf7b8adbf</id>
+    </Folder>
+    <Folder Include="General\Tests">
+      <id>b344cfec-14bb-40d4-be4d-00895b2f782f</id>
+    </Folder>
+    <Folder Include="General\Tests\Story_B_02914_Login">
+      <id>7e5ab37e-96ac-4de7-aac5-bc756554fee9</id>
+    </Folder>
+    <Folder Include="General\Utilities">
+      <id>8169fd0e-b01b-4cac-bcc4-aee7900d30c1</id>
+    </Folder>
     <Folder Include="Reports">
       <ReportsDir>true</ReportsDir>
       <id>7919b9d6-f7c7-43fe-b946-fb2baa707d2e</id>
     </Folder>
-    <Folder Include="Tests\ConsumerReg">
+    <Folder Include="Main\ConsumerReg">
       <id>6d8c4508-d8ac-410f-8682-f53a5d4d03e6</id>
     </Folder>
-    <Folder Include="Tests\Demo\RegMultiBrowser">
+    <Folder Include="Main\Demo\RegMultiBrowser">
       <id>81dad4bb-9188-496c-8b9c-f380b82ef767</id>
     </Folder>
-    <Folder Include="Tests\Demo\RegDemo">
+    <Folder Include="Main\Demo\RegDemo">
       <id>57c4d995-38e3-4d87-b413-ed1e6dad720a</id>
     </Folder>
   </ItemGroup>

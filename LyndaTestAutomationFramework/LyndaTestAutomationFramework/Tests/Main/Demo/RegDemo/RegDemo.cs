@@ -13,6 +13,8 @@ using Ranorex.Core.Testing;
 using Lynda.Test.Browsers;
 using Lynda.Test.ConsumerPages;
 
+using Tests.AppConfig;
+
 namespace Tests.Demo
 {
     /// <summary>
@@ -41,9 +43,9 @@ namespace Tests.Demo
             Keyboard.DefaultKeyPressTime = 50;
             Delay.SpeedFactor = 1.0;      
 
-            const string url = "http://release.lynda.com/member.aspx";
+            string url = string.Format("http://{0}/member.aspx",AppSettings.Domain);
 
-            Browser browser = new Browser(BrowserProduct.IE, url,true);
+            Browser browser = new Browser(AppSettings.Browser, url,true);
 
             HomePageMember homePageMember = new HomePageMember(browser);
             homePageMember.ClickSubscribeLink();

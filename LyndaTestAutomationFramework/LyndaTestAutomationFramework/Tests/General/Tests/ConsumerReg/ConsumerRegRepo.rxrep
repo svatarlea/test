@@ -1,5 +1,5 @@
-﻿<repository name="ConsumerRegRepo" id="0df8487d-9641-4517-b074-7df385f8f115" rxversion="3.2.3.16825">
-  <codegen classname="ConsumerRegRepo" namespace="General.Tests.ConsumerReg"/>
+﻿<repository name="ConsumerRegRepo" id="3a7797e6-9535-4e0d-b260-0e1480059b10" rxversion="3.2.3.16825">
+  <codegen classname="ConsumerRegRepo" namespace="Tests.General.Tests.ConsumerReg"/>
   <rootfolder name="Root" id="c01e8542-268c-458b-a9b3-363285851754" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
     <appfolder name="Form" id="77812b61-8c32-44da-946d-ebfadb4bcaaf" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
       <item name="NavigateEditBox" id="122d31d8-85c8-4e64-a222-eb8d267ab3fd" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">

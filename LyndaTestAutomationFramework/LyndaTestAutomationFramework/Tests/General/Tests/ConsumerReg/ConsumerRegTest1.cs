@@ -15,7 +15,7 @@ using Lynda.Test.Browsers;
 
 using General.Utilities.Forms;
 
-namespace General.Tests.ConsumerReg
+namespace Tests.General.Tests.ConsumerReg
 {
     /// <summary>
     /// Description of ConsumerReg.

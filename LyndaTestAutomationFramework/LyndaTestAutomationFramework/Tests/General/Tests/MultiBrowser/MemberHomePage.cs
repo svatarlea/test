@@ -16,7 +16,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace General.Tests.MultiBrowser
+namespace Tests.General.Tests.MultiBrowser
 {
     /// <summary>
     /// The class representing the MemberHomePage element repository.
