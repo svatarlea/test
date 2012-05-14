@@ -16,7 +16,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace General.Tests.Story_B_02914_Login
+namespace Tests.General.Tests.Story_B_02914_Login
 {
     /// <summary>
     /// The class representing the Story_B_02914_LoginRepo element repository.

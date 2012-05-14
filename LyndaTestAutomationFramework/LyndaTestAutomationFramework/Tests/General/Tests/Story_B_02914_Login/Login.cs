@@ -10,7 +10,9 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 
-namespace General.Tests.Story_B_02914_Login
+using Tests.AppConfig;
+
+namespace Tests.General.Tests.Story_B_02914_Login
 {
     /// <summary>
     /// Description of Login.
@@ -41,10 +43,10 @@ namespace General.Tests.Story_B_02914_Login
             Delay.SpeedFactor = 1.0;
 
             //Specifiy domain.
-            const string domain = "stage.lynda.com";
-            
+            string domain = AppSettings.Domain;
+
             //Specifiy test case name.
-            const string testCaseName = "Login";
+            const string testCaseName = "Story_B_02914_Login";
 
             string navigateTo = TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["NavigateTo"];
             bool canDirectlyNavigateTo = Convert.ToBoolean(TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["CanDirectlyNavigateTo"]);
@@ -56,11 +58,10 @@ namespace General.Tests.Story_B_02914_Login
 
             Story_B_02914_LoginRepo repo = Story_B_02914_LoginRepo.Instance;
             
-            const string browser = "IE";
+            string browser = AppSettings.Browser.ToString();
             
             Host.Local.KillBrowser(browser);
             Host.Local.OpenBrowser("", browser, "", true, true); 
-
 
             repo.DOM.WebPage.WaitForDocumentLoaded();
             Validate.Exists(repo.Form.NavigateEditBox);

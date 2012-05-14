@@ -32,9 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <id>5bf72e10-7288-4445-937f-a4100a5ca33d</id>
-    </Reference>
     <Reference Include="Ranorex.Controls, Version=$(RanorexVersion)">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Controls.dll</HintPath>
       <id>3273686b-f2e9-4b9b-a868-f12ae31c9cc1</id>

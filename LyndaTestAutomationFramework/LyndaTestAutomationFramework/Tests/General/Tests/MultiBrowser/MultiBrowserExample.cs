@@ -12,7 +12,7 @@ using Ranorex.Core.Testing;
 
 using Lynda.Test.Browsers;
 
-namespace General.Tests.MultiBrowser
+namespace Tests.General.Tests.MultiBrowser
 {
     /// <summary>
     /// Description of UserCodeModule1.

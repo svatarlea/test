@@ -14,6 +14,8 @@ using System.Drawing;
 using System.Threading;
 using WinForms = System.Windows.Forms;
 
+using Tests.AppConfig;
+
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
@@ -22,7 +24,7 @@ using Lynda.Test.Browsers;
 using Lynda.Test.ConsumerPages;
 using Lynda.Test.Advanced.Utilities.WebPages;
 
-namespace Tests.Tests.Demo
+namespace Tests.ConsumerReg
 {
     /// <summary>
     /// Description of UserCodeModule1.
@@ -46,7 +48,7 @@ namespace Tests.Tests.Demo
         /// that will in turn invoke this method.</remarks>
         void ITestModule.Run()
         {
-            const string testCaseName = "AllRegistrations";
+        	const string testCaseName = "AllRegistrations";
             string subscriptionPlanRow = TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["SubscriptionPlan"];
             string regPage2PlanNameExpected = TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["regPage2PlanNameExpected"];
             string confirmPagePlanNameExpected = TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["confirmPagePlanNameExpected"];
@@ -58,9 +60,9 @@ namespace Tests.Tests.Demo
             Keyboard.DefaultKeyPressTime = 40;
             Delay.SpeedFactor = 1.0;
 
-            const string url = "http://stage.lynda.com/member.aspx";
+            string url = string.Format("http://{0}/member.aspx", AppSettings.Domain);           
 
-            Browser browser = new Browser(BrowserProduct.IE, url,true);
+            Browser browser = new Browser(AppSettings.Browser,url,true);
 
             HomePageMember homePageMember = new HomePageMember(browser);
             homePageMember.ClickSubscribeLink();
