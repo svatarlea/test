@@ -38,8 +38,8 @@ namespace Tests.General.Tests.Story_B_02914_Login
         /// that will in turn invoke this method.</remarks>
         void ITestModule.Run()
         {
- 			Mouse.DefaultMoveTime = 50;
-            Keyboard.DefaultKeyPressTime = 50;
+        	Mouse.DefaultMoveTime = AppSettings.MouseDefaultMoveTime;
+            Keyboard.DefaultKeyPressTime = AppSettings.KeyboardDefaultKeyPressTime;
             Delay.SpeedFactor = 1.0;
 
             //Specifiy domain.

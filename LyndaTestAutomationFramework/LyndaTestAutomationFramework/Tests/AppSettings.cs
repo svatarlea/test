@@ -14,6 +14,8 @@ namespace Tests.AppConfig
 	{
 		static BrowserProduct browser;
 		static string domain;
+		static int mouseDefaultMoveTime;
+		static int keyboardDefaultKeyPressTime;
 		static NameValueCollection appSettings;
 		static string configFileName;
 		
@@ -37,8 +39,8 @@ namespace Tests.AppConfig
 					string.Format("Failed to get application settings data from {0}.",configFileName),e);
 			}
 
+			//Browser
 			string appSettingsBrowser = GetAppSettingsKeyValue("Browser");
-
             try
             {
             	browser = (BrowserProduct)Enum.Parse(typeof(BrowserProduct),appSettingsBrowser,true);
@@ -52,16 +54,62 @@ namespace Tests.AppConfig
             	throw new Exception
             		(string.Format("Application settings \"Browser\" key's value is not IE, Firefox, Chrome or Safari. Or the value is either an empty string or only contains white space. File:{0}.",configFileName), e);	                                  
             }
-
             if (browser < BrowserProduct.IE || browser > BrowserProduct.Safari)
             {
                 throw new Exception(string.Format("Application settings \"Browser\" key's value is not IE, Firefox, Chrome or Safari. File:{0}.",configFileName));
             }
 
+            //Domain
             domain = GetAppSettingsKeyValue("Domain");
             if (string.IsNullOrEmpty(domain))
             {
             	throw new Exception(string.Format("Application settings \"Domain\" key's value is null or empty. Value:{0}, File:{1}.",domain,configFileName));
+            }
+            
+            //MouseDefaultMoveTime
+            string mouseDefaultMoveTimeToParse = GetAppSettingsKeyValue("MouseDefaultMoveTime");
+            if (string.IsNullOrEmpty(mouseDefaultMoveTimeToParse))
+            {
+            	throw new Exception(string.Format("Application settings \"MouseDefaultMoveTime\" key's value is null or empty. Value:{0}, File:{1}.",mouseDefaultMoveTimeToParse,configFileName));
+            }
+            try
+            {
+            	mouseDefaultMoveTime = Int32.Parse(mouseDefaultMoveTimeToParse);
+            }
+            catch (FormatException e)
+            {
+            	throw new Exception(string.Format("Unable to convert application settings \"MouseDefaultMoveTime\" key's value to Int32. Value:{0}, File:{1}.",mouseDefaultMoveTimeToParse,configFileName), e);
+            }
+            catch (OverflowException e)
+            {
+            	throw new Exception(string.Format("Unable to convert application settings \"MouseDefaultMoveTime\" key's value to Int32; value must be between {0} and {1}. Value:{2}, File:{3}.",Int32.MinValue,Int32.MaxValue,mouseDefaultMoveTimeToParse,configFileName), e);
+            }
+            if (mouseDefaultMoveTime<1)
+            {
+            	throw new Exception(string.Format("Application settings \"MouseDefaultMoveTime\" key's value must be > 0. Value:{0}, File:{1}.",mouseDefaultMoveTime, configFileName));
+            }
+            
+            //KeyboardDefaultKeyPressTime
+            string keyboardDefaultKeyPressTimeToParse = GetAppSettingsKeyValue("KeyboardDefaultKeyPressTime");
+            if (string.IsNullOrEmpty(keyboardDefaultKeyPressTimeToParse))
+            {
+            	throw new Exception(string.Format("Application settings \"KeyboardDefaultKeyPressTime\" key's value is null or empty. Value:{0}, File:{1}.",keyboardDefaultKeyPressTimeToParse,configFileName));
+            }            
+            try
+            {
+            	keyboardDefaultKeyPressTime = Int32.Parse(keyboardDefaultKeyPressTimeToParse);
+            }           
+            catch (FormatException e)
+            {
+            	throw new Exception(string.Format("Unable to convert application settings \"KeyboardDefaultKeyPressTime\" key's value to Int32. Value:{0}, File:{1}.",keyboardDefaultKeyPressTimeToParse,configFileName), e);
+            }            
+            catch (OverflowException e)
+            {
+            	throw new Exception(string.Format("Unable to convert application settings \"KeyboardDefaultKeyPressTime\" key's value to Int32; value must be between {0} and {1}. Value:{2}, File:{3}.",Int32.MinValue,Int32.MaxValue,keyboardDefaultKeyPressTimeToParse,configFileName), e);
+            }            
+            if (keyboardDefaultKeyPressTime<1)
+            {
+            	throw new Exception(string.Format("Application settings \"KeyboardDefaultKeyPressTime\" key's value must be > 0. Value:{0}, File:{1}.",keyboardDefaultKeyPressTime, configFileName));
             }
 		}
 		
@@ -79,6 +127,22 @@ namespace Tests.AppConfig
 		internal static string Domain
 		{
 			get{return domain;}
+		}
+		
+		/// <summary>
+		/// Gets the MouseDefaultMoveTime key's value from the app.config file for the Tests.exe assembly.
+		/// </summary>
+		internal static int MouseDefaultMoveTime
+		{
+			get{return mouseDefaultMoveTime;}
+		}
+		
+		/// <summary>
+		/// Gets the KeyboardDefaultKeyPressTime key's value from the app.config file for the Tests.exe assembly.
+		/// </summary>
+		internal static int  KeyboardDefaultKeyPressTime
+		{
+			get{return keyboardDefaultKeyPressTime;}
 		}
 		
 		/// <summary>

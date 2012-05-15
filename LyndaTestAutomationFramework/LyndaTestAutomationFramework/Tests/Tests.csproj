@@ -372,7 +372,40 @@
     <None Include="Reports\Tests_20120514_150433.rxlog">
       <id>42565183-3a28-4c12-81c7-b843d3f534b1</id>
     </None>
-    <None Include="Reports\Tests_20120514_150535.rxlog" />
+    <None Include="Reports\Tests_20120514_150535.rxlog">
+      <id>ffc5636b-e240-49cd-b388-aaf015f630a9</id>
+    </None>
+    <None Include="Reports\Tests_20120515_094838.rxlog">
+      <id>06f815be-31ae-4058-acfd-acb17c90997f</id>
+    </None>
+    <None Include="Reports\Tests_20120515_095040.rxlog">
+      <id>e56e911d-2047-43a4-a344-08b8705d2ad3</id>
+    </None>
+    <None Include="Reports\Tests_20120515_095102.rxlog">
+      <id>14a0ff02-0ca3-4c09-ba0d-aad8a79a8bcf</id>
+    </None>
+    <None Include="Reports\Tests_20120515_095123.rxlog">
+      <id>38f3e709-6f69-4c91-bb3c-8b5e1f9daed6</id>
+    </None>
+    <None Include="Reports\Tests_20120515_095144.rxlog">
+      <id>54616345-8b8b-431e-b030-94950008d248</id>
+    </None>
+    <None Include="Reports\Tests_20120515_095208.rxlog">
+      <id>df8401aa-c137-45d9-87dd-fab4c3148205</id>
+    </None>
+    <None Include="Reports\Tests_20120515_095232.rxlog">
+      <id>77b9c6ac-d6fe-4f2c-b398-5481b7c81026</id>
+    </None>
+    <None Include="Reports\Tests_20120515_095303.rxlog">
+      <id>7a2bffb5-2502-4e7c-b17b-34b646d4d46f</id>
+    </None>
+    <None Include="Reports\Tests_20120515_095330.rxlog">
+      <id>9504927f-23ab-4676-9e54-a48ba8fcb62a</id>
+    </None>
+    <None Include="Reports\Tests_20120515_095352.rxlog">
+      <id>1a6795cf-563d-48b9-9f45-ba7a3f7f87c1</id>
+    </None>
+    <None Include="Reports\Tests_20120515_095608.rxlog" />
     <Content Include="Story_B_02914_Login.xlsx">
       <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
       <DependentUpon>Tests.rxtst</DependentUpon>

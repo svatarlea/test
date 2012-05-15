@@ -56,8 +56,8 @@ namespace Tests.ConsumerReg
             OTLSubscriptionPlanRegPage1.SubscriptionPlan subscriptionPlanToSelect = (OTLSubscriptionPlanRegPage1.SubscriptionPlan)
             	Enum.Parse(typeof(OTLSubscriptionPlanRegPage1.SubscriptionPlan),subscriptionPlanRow,false);
 
-        	Mouse.DefaultMoveTime = 100;
-            Keyboard.DefaultKeyPressTime = 40;
+        	Mouse.DefaultMoveTime = AppSettings.MouseDefaultMoveTime;
+            Keyboard.DefaultKeyPressTime = AppSettings.KeyboardDefaultKeyPressTime;
             Delay.SpeedFactor = 1.0;
 
             string url = string.Format("http://{0}/member.aspx", AppSettings.Domain);           
