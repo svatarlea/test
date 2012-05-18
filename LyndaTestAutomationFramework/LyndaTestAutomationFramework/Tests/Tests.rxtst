@@ -110,22 +110,22 @@
       ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.WinForms.dll
     </reference>
     <reference>
-      PagesAbstractGeneral.dll
-    </reference>
-    <reference>
-      ConsumerPagesAbstract.dll
-    </reference>
-    <reference>
-      ConsumerPagesMain.dll
-    </reference>
-    <reference>
-      WebPages.dll
+      ..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
     </reference>
     <reference>
       Browsers.dll
     </reference>
     <reference>
-      ..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
+      WebPages.dll
+    </reference>
+    <reference>
+      ConsumerPagesMain.dll
+    </reference>
+    <reference>
+      ConsumerPagesAbstract.dll
+    </reference>
+    <reference>
+      PagesAbstractGeneral.dll
     </reference>
   </references>
 </testsuite>
