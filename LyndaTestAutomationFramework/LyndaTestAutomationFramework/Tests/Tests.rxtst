@@ -289,7 +289,12 @@
     </folder>
   </content>
   <testconfigurations default="TestRun">
-    <testconfiguration name="TestRun"/>
+    <testconfiguration name="TestRun">
+      <testcase id="08529b9b-c12b-4067-a77d-0e24fad714f4"/>
+      <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
+      <testcase id="43e16ec5-f749-4d70-9e3f-bec5231ad329"/>
+      <testcase id="cc5a43f0-cedc-44b8-a95f-866e6fa6e20e"/>
+    </testconfiguration>
   </testconfigurations>
   <references>
     <reference>
