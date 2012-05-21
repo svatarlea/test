@@ -45,6 +45,17 @@ namespace General.Utilities.Forms
     		return "lynda1";
     	}
 
+    	public static void GenerateAccountInfo(out string country, out string title, out string department,
+    	                                   out string companyName, out string phone)
+    	{
+    		country = "United States";
+    		title = "QA";
+    		department = "QA Dept";
+    		companyName = "QA Org";
+    		phone = "1231231234";
+    		
+    	}
+    	
 	}
 
 }

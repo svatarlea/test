@@ -149,6 +149,48 @@
     <Compile Include="AppSettings.cs">
       <id>4330eb56-2d78-43ee-adfc-c46979cc70ed</id>
     </Compile>
+    <Compile Include="General\Tests\BVT5\Admin_CloseBrowser.cs">
+      <id>8b7e05b1-b402-4ff3-b023-b13a7f155339</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Admin_CS_NewAcct.cs">
+      <id>6b379ae4-5409-4c96-b99a-23a25849253e</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Admin_CS_NewAcctRepository.cs">
+      <BoundTo>6d8c5a86-44e9-49ea-bea5-d91e20d93179</BoundTo>
+      <DependentUpon>Admin_CS_NewAcctRepository.rxrep</DependentUpon>
+      <id>2f43c91b-5a2e-4a18-adc4-52925b01a58d</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\CloseBrowser.cs">
+      <id>720f8a92-cab7-4100-944b-00bc4b8ff5ac</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\OpenBrowser.cs">
+      <id>9057a6cd-ffb4-4329-9099-8ab7ac1287d0</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpAddGroupsUsers.cs">
+      <id>ee9b5f3e-be5f-4d3d-99f9-f5c7272c3695</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpBVT5Repository.cs">
+      <BoundTo>5ba4d698-90dd-406b-b121-7ccedf82477e</BoundTo>
+      <DependentUpon>Public_lpBVT5Repository.rxrep</DependentUpon>
+      <id>f2cd9b3e-c97e-429a-ab26-657f1a4e9611</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpCleanGroupsUsers.cs">
+      <id>d48a6c6f-c8f5-4324-b830-9d14a7de22b0</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpNewUser_RegisterLogin.cs">
+      <id>aeb52cba-f410-4133-8ba4-71e53ceaac4a</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_NewAcctAccess.cs">
+      <id>2d9dd6a0-1b72-4e93-b34a-c080f030e7c9</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_NewAcctAccessRepository.cs">
+      <BoundTo>dd351ec3-ff23-41f1-a9a4-3fd4d1260494</BoundTo>
+      <DependentUpon>Public_NewAcctAccessRepository.rxrep</DependentUpon>
+      <id>78c92104-9523-4842-97f9-a7e016717811</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
     <Compile Include="General\Tests\ConsumerReg\ConsumerRegRepo.cs">
       <id>22aaac18-60cd-4bc6-97ab-855fea1cc6cb</id>
       <RepositoryCode>true</RepositoryCode>
@@ -176,14 +218,23 @@
       <id>1e8e4b65-70bc-43ec-8ec2-d5c463ba9bff</id>
       <DependentUpon>Story_B_02914_LoginRepo.rxrep</DependentUpon>
     </Compile>
+    <Compile Include="General\Utilities\ExcelData.cs">
+      <id>3c15f6ca-19fd-48a9-aa39-d2dc6be3f0e3</id>
+    </Compile>
     <Compile Include="General\Utilities\FormDataAccount.cs">
       <id>825cf5a0-579b-42cd-932c-06219bba6b1c</id>
     </Compile>
     <Compile Include="General\Utilities\FormDataBilling.cs">
       <id>4af087d1-5774-4051-9e59-188955365568</id>
     </Compile>
+    <Compile Include="General\Utilities\FormDataIPAddress.cs">
+      <id>f40c8cf9-3fe5-4255-a5bf-d53fa75df76b</id>
+    </Compile>
     <Compile Include="General\Utilities\FormDataPayment.cs">
       <id>5795314a-2a6a-42fb-93c1-243208bba899</id>
+    </Compile>
+    <Compile Include="General\Utilities\GetValuesFromDB.cs">
+      <id>95f9d27d-4bf2-4018-9de6-4c22050fde34</id>
     </Compile>
     <Compile Include="Skynet\ConsumerReg\AllRegistrations.cs">
       <id>00159a88-2850-4f2d-b575-5059f81e7d21</id>
@@ -203,8 +254,38 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>bd88fa50-aea1-46d6-8aea-22a09151b36e</id>
     </Content>
+    <Content Include="Admin_CS_NewAcctData.xlsx">
+      <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
+      <DependentUpon>Tests.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>97241c0b-fc9e-49f8-aba0-a2281858a0bf</id>
+    </Content>
     <None Include="app.config">
       <id>e702f5f2-2916-4963-adcc-74c1a0e25fc1</id>
+    </None>
+    <None Include="General\Tests\BVT5\Admin_CS_NewAcctRepository.rxrep">
+      <id>6d8c5a86-44e9-49ea-bea5-d91e20d93179</id>
+      <repoid>1273f589-4da2-4255-ad2b-a5c6488595ff</repoid>
+      <reporootid>8e7e5982-0f98-4e7b-ad69-ffa5a3335a13</reporootid>
+    </None>
+    <None Include="General\Tests\BVT5\Public_NewAcctAccessRepository.rxrep">
+      <id>dd351ec3-ff23-41f1-a9a4-3fd4d1260494</id>
+      <repoid>0d341447-d39b-4730-9b40-6aef3db5d6ad</repoid>
+      <reporootid>96b341df-9816-4ff2-b42d-d37adb3a631b</reporootid>
+    </None>
+    <None Include="General\Tests\BVT5\Public_lpBVT5Repository.rxrep">
+      <id>5ba4d698-90dd-406b-b121-7ccedf82477e</id>
+      <repoid>43e3b16d-5e4b-4792-9fd3-e72a4c3f1d16</repoid>
+      <reporootid>8ec0adf8-37d6-47d6-bfa0-2fcb3edabd0e</reporootid>
+    </None>
+    <None Include="General\Tests\BVT5\TestData\Admin_CS_NewAcctData.xlsx">
+      <id>1747a8a3-b7e2-4035-bada-19504a7aee0f</id>
+    </None>
+    <None Include="General\Tests\BVT5\TestData\Public_AcctAccessData.xlsx">
+      <id>a13ef971-e974-4516-aead-7db53ace09c2</id>
+    </None>
+    <None Include="General\Tests\BVT5\TestData\Public_lpAcctData.xlsx">
+      <id>ce843b84-a8b6-4b07-8b56-8a36f1fc4119</id>
     </None>
     <None Include="General\Tests\ConsumerReg\ConsumerRegRepo.rxrep">
       <id>3b7a21e9-3705-4c92-bc5f-5656ff8a8ed9</id>
@@ -222,157 +303,88 @@
       <projectdefaultrepository>true</projectdefaultrepository>
       <repoid>4d8e3c8d-c312-455c-b74a-570e20a9b4df</repoid>
     </None>
-    <None Include="Reports\Tests_20120508_105754.rxlog">
-      <id>6dcea914-a814-4ae1-a69f-b3525b8d83e5</id>
+    <Content Include="Public_lpAcctData.xlsx">
+      <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
+      <DependentUpon>Tests.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>0c50fb79-3966-4e8f-ae70-551f26feba87</id>
+    </Content>
+    <None Include="Reports\Tests_20120517_115014.rxlog">
+      <id>2adf968c-3e13-4fc8-8f44-b37746816013</id>
     </None>
-    <None Include="Reports\Tests_20120508_145551.rxlog">
-      <id>fdcc520b-52b1-429b-a37a-86aea7b24229</id>
+    <None Include="Reports\Tests_20120517_115541.rxlog">
+      <id>796dbcd1-fa61-4716-8f8b-78be67bb5f85</id>
     </None>
-    <None Include="Reports\Tests_20120508_150709.rxlog">
-      <id>95222215-631d-4ae0-8993-b319882154a7</id>
+    <None Include="Reports\Tests_20120517_143218.rxlog">
+      <id>42ed58aa-82b2-4ad3-a5af-2fcc3cf208a6</id>
     </None>
-    <None Include="Reports\Tests_20120508_160252.rxlog">
-      <id>15e9c4a0-7521-4569-96d0-618d3f3c0037</id>
+    <None Include="Reports\Tests_20120517_145606.rxlog">
+      <id>ec22b8b7-f41c-4be5-9fe4-f985464f33b3</id>
     </None>
-    <None Include="Reports\Tests_20120508_160446.rxlog">
-      <id>034ba88a-4a73-46cf-8af4-2f52d46bb203</id>
+    <None Include="Reports\Tests_20120517_145825.rxlog">
+      <id>99b31f2d-67fe-4cb4-9283-a4b6008626d2</id>
     </None>
-    <None Include="Reports\Tests_20120509_100932.rxlog">
-      <id>1c935da2-f59f-42dd-b97a-9e5f7c075c69</id>
+    <None Include="Reports\Tests_20120517_151409.rxlog">
+      <id>e60bc24f-e53b-48bb-8684-f610840bfeb0</id>
     </None>
-    <None Include="Reports\Tests_20120509_102555.rxlog">
-      <id>8eb3594d-1c77-463f-b69d-8d1cd7b10725</id>
+    <None Include="Reports\Tests_20120517_151915.rxlog">
+      <id>b912962a-19ce-48f6-9a90-1c3922d5a603</id>
     </None>
-    <None Include="Reports\Tests_20120509_102732.rxlog">
-      <id>2d0715d4-c800-4839-b9f6-1e20f84a8f5a</id>
+    <None Include="Reports\Tests_20120518_093952.rxlog">
+      <id>52001e4b-5762-4cfa-a550-049eb4e4bf72</id>
     </None>
-    <None Include="Reports\Tests_20120509_102806.rxlog">
-      <id>55b7d57a-9dd6-43ab-9866-5ccea0fc3669</id>
+    <None Include="Reports\Tests_20120518_094225.rxlog">
+      <id>e96b06e7-e86b-47b8-94c3-8e89158345c2</id>
     </None>
-    <None Include="Reports\Tests_20120509_103451.rxlog">
-      <id>0d791496-4a50-4da0-ac2d-13f0d9b529fb</id>
+    <None Include="Reports\Tests_20120518_094636.rxlog">
+      <id>f9231761-6b76-4263-9cf3-130e898aba13</id>
     </None>
-    <None Include="Reports\Tests_20120509_141532.rxlog">
-      <id>93f44df2-d87f-41d4-b56a-f60b075eb364</id>
+    <None Include="Reports\Tests_20120521_082209.rxlog">
+      <id>b4e977eb-3433-46c8-b235-d597cabe560c</id>
     </None>
-    <None Include="Reports\Tests_20120509_141707.rxlog">
-      <id>907262d4-c751-42f8-bf83-27b921489e23</id>
+    <None Include="Reports\Tests_20120521_082455.rxlog">
+      <id>6e95fb8a-ee9c-4f53-b541-4862a88c6f99</id>
     </None>
-    <None Include="Reports\Tests_20120509_142210.rxlog">
-      <id>5576f10d-a628-492a-9305-6346ba25ec38</id>
+    <None Include="Reports\Tests_20120521_082828.rxlog">
+      <id>cc0ebd44-79d1-4c48-a73a-1808d74cb113</id>
     </None>
-    <None Include="Reports\Tests_20120509_153931.rxlog">
-      <id>f755bc2a-5977-46d3-b9c4-6014877d8fe7</id>
+    <None Include="Reports\Tests_20120521_093041.rxlog">
+      <id>bcc3ed8c-afb1-4154-805a-3d24cf646ae4</id>
     </None>
-    <None Include="Reports\Tests_20120509_155341.rxlog">
-      <id>1fb839f2-bc7c-47e8-952f-cf23c7c1b7cd</id>
+    <None Include="Reports\Tests_20120521_093423.rxlog">
+      <id>6428d50b-6655-4c06-83a7-fe73a62523e6</id>
     </None>
-    <None Include="Reports\Tests_20120509_161113.rxlog">
-      <id>33b51229-81bc-42e8-9f80-55489f6278a6</id>
+    <None Include="Reports\Tests_20120521_093845.rxlog">
+      <id>6fcc9c90-c0ef-4771-b32c-2281f38ecf2d</id>
     </None>
-    <None Include="Reports\Tests_20120509_161210.rxlog">
-      <id>f939143a-2ad4-4b23-ba8d-c9002f47a3a9</id>
+    <None Include="Reports\Tests_20120521_094832.rxlog">
+      <id>64c65758-9140-4484-85a1-1fee94c0fd09</id>
     </None>
-    <None Include="Reports\Tests_20120509_161235.rxlog">
-      <id>ccdba9b4-2273-4429-9306-5a51b3b5084f</id>
+    <None Include="Reports\Tests_20120521_095948.rxlog">
+      <id>e67f00f9-37ee-4cbd-91c3-d1c827444938</id>
     </None>
-    <None Include="Reports\Tests_20120509_161315.rxlog">
-      <id>9ed2e3e9-ab1f-475f-a6d4-1bf6aed2d091</id>
+    <None Include="Reports\Tests_20120521_101239.rxlog">
+      <id>27eb7fd8-da7c-406c-8faf-53fa288f9e23</id>
     </None>
-    <None Include="Reports\Tests_20120509_161503.rxlog">
-      <id>35cf54d4-96f7-449b-9fb6-9ac4cec06f05</id>
+    <None Include="Reports\Tests_20120521_101507.rxlog">
+      <id>fd772e4d-4aeb-4c53-a7a8-8b0564bdc58d</id>
     </None>
-    <None Include="Reports\Tests_20120509_165111.rxlog">
-      <id>d6160743-d2be-408e-9309-8bd3bcb2fdc2</id>
+    <None Include="Reports\Tests_20120521_102213.rxlog">
+      <id>78d03faf-8521-451e-b592-d275aa63fb2c</id>
     </None>
-    <None Include="Reports\Tests_20120510_151150.rxlog">
-      <id>34ef8b69-0955-443d-b02d-d8fac979ba2d</id>
+    <None Include="Reports\Tests_20120521_102948.rxlog">
+      <id>5cdb41d7-c09b-4d19-be8e-e9e637ffa75f</id>
     </None>
-    <None Include="Reports\Tests_20120511_143457.rxlog">
-      <id>08f7140e-c6d0-4ec8-bb38-235eeb867c5a</id>
+    <None Include="Reports\Tests_20120521_103357.rxlog">
+      <id>21995abb-bb11-416d-a25e-ceeeadc49216</id>
     </None>
-    <None Include="Reports\Tests_20120511_143557.rxlog">
-      <id>4352bf2e-dc75-4e3a-8116-f0276c11cf87</id>
-    </None>
-    <None Include="Reports\Tests_20120511_143625.rxlog">
-      <id>84d1143b-5a2d-4d9d-8ee3-84ae9246b04a</id>
-    </None>
-    <None Include="Reports\Tests_20120511_143648.rxlog">
-      <id>77d3fb50-82dd-45d5-98c2-f81a7971883d</id>
-    </None>
-    <None Include="Reports\Tests_20120511_143707.rxlog">
-      <id>ed3ca5b5-fcb3-4430-bce0-5746751de9e2</id>
-    </None>
-    <None Include="Reports\Tests_20120511_143813.rxlog">
-      <id>f1b69ad8-c0a5-4e07-ab73-d41607d35a07</id>
-    </None>
-    <None Include="Reports\Tests_20120511_150124.rxlog">
-      <id>a4173218-b89e-4f38-94e8-3816af839911</id>
-    </None>
-    <None Include="Reports\Tests_20120511_150242.rxlog">
-      <id>e6323bc3-a866-497d-9b48-5af558529891</id>
-    </None>
-    <None Include="Reports\Tests_20120514_084219.rxlog">
-      <id>07b85645-02cb-4388-a6a2-1b10de322e42</id>
-    </None>
-    <None Include="Reports\Tests_20120514_091018.rxlog">
-      <id>80742b50-b72c-4f42-96dd-9bdcb79fdb77</id>
-    </None>
-    <None Include="Reports\Tests_20120514_091453.rxlog">
-      <id>72c70d15-27ad-43ba-adca-b5d29dd275f8</id>
-    </None>
-    <None Include="Reports\Tests_20120514_091531.rxlog">
-      <id>201d33fb-7e74-45e8-a6ec-d94c81de3deb</id>
-    </None>
-    <None Include="Reports\Tests_20120514_091739.rxlog">
-      <id>186c100c-3489-4202-9d1e-7eb0f3bc3764</id>
-    </None>
-    <None Include="Reports\Tests_20120514_091759.rxlog">
-      <id>24878d6a-b840-4326-bfcd-3ed1cf6f6214</id>
-    </None>
-    <None Include="Reports\Tests_20120514_091825.rxlog">
-      <id>f93c3658-7ad3-4e48-bdb6-e3bc50ee284b</id>
-    </None>
-    <None Include="Reports\Tests_20120514_091903.rxlog">
-      <id>616572bb-e92a-420e-9243-6ab2cc674417</id>
-    </None>
-    <None Include="Reports\Tests_20120514_091927.rxlog">
-      <id>368ccfd9-5c11-4e45-8b3b-5d813a2682af</id>
-    </None>
-    <None Include="Reports\Tests_20120514_092002.rxlog">
-      <id>a76507b7-1194-4487-bdc5-f982d5f3efac</id>
-    </None>
-    <None Include="Reports\Tests_20120514_092324.rxlog">
-      <id>f82cfcce-8cfe-4bdb-93a3-8af562e4a796</id>
-    </None>
-    <None Include="Reports\Tests_20120514_092510.rxlog">
-      <id>146ef7a3-9754-45d4-ba39-4584ef5b1b3e</id>
-    </None>
-    <None Include="Reports\Tests_20120514_093331.rxlog">
-      <id>40c17ad2-671f-49eb-9ec2-1cade75170f7</id>
-    </None>
-    <None Include="Reports\Tests_20120514_093412.rxlog">
-      <id>e19174d6-0b2f-4979-8a3e-6d973c15a858</id>
-    </None>
-    <None Include="Reports\Tests_20120514_093433.rxlog">
-      <id>ca21763f-f503-48b1-942c-373c70f39e9b</id>
-    </None>
-    <None Include="Reports\Tests_20120514_093453.rxlog">
-      <id>7d916103-a2bd-414a-9e33-af33b01ae6aa</id>
-    </None>
-    <None Include="Reports\Tests_20120514_093519.rxlog">
-      <id>e96b75dd-38a0-4ad1-80b3-db7e7aa48b9f</id>
-    </None>
-    <None Include="Reports\Tests_20120514_093542.rxlog">
-      <id>50dd4aee-0f0f-4bf8-a2b9-06691b281b67</id>
-    </None>
-    <None Include="Reports\Tests_20120514_094206.rxlog">
-      <id>9f750bdc-9179-4e50-b949-5bf21bde685b</id>
-    </None>
-    <None Include="Reports\Tests_20120514_150433.rxlog">
-      <id>42565183-3a28-4c12-81c7-b843d3f534b1</id>
-    </None>
-    <None Include="Reports\Tests_20120514_150535.rxlog" />
+    <None Include="Reports\Tests_20120521_103850.rxlog" />
+    <Content Include="Public_AcctAccessData.xlsx">
+      <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
+      <DependentUpon>Tests.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>1b75d9cd-c5ca-44fc-a54f-7d5a4e486449</id>
+    </Content>
     <Content Include="Story_B_02914_Login.xlsx">
       <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
       <DependentUpon>Tests.rxtst</DependentUpon>
@@ -414,6 +426,9 @@
     <Folder Include="General">
       <id>d89eff42-8f68-40f2-b511-a0207216a815</id>
     </Folder>
+    <Folder Include="General\Tests\BVT5\TestData">
+      <id>3595d1b4-9aa5-4b49-9fce-53c4d3961f7c</id>
+    </Folder>
     <Folder Include="General\Tests\ConsumerReg">
       <id>871d187f-0b3c-48bd-bcc3-036953606560</id>
     </Folder>
@@ -422,6 +437,9 @@
     </Folder>
     <Folder Include="General\Tests">
       <id>b344cfec-14bb-40d4-be4d-00895b2f782f</id>
+    </Folder>
+    <Folder Include="General\Tests\BVT5">
+      <id>bf5ecf5a-003f-4eac-8f83-1fda103ecb42</id>
     </Folder>
     <Folder Include="General\Tests\Story_B_02914_Login">
       <id>7e5ab37e-96ac-4de7-aac5-bc756554fee9</id>
