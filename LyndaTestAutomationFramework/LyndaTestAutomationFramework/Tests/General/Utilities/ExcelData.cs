@@ -50,5 +50,38 @@ namespace Tests.General.Utilities
                 		excelApp.Quit();
                 }
 		}
+		
+		public static object[,] Read(string strPath, string startcell, string endcell)
+		{
+			    Excel.Application excelApp = new Excel.Application();
+                Excel.Workbook excelWb;
+                Excel.Worksheet excelWs;
+                Excel.Range excelRg;
+                object misValue = System.Reflection.Missing.Value;
+                object[,] results = new object[4,4];
+                try
+                {
+                	excelApp.DisplayAlerts = false;
+                	excelWb = excelApp.Workbooks.Open(strPath,misValue,false,misValue,misValue,misValue,misValue,misValue, misValue, true, misValue, misValue, misValue);
+                	excelWs = (Excel.Worksheet)excelWb.ActiveSheet;
+                	excelRg = excelWs.Range["B2","E5"];
+                	excelApp.Visible = false;
+                	results = (object[,])excelRg.Value;
+                	
+                	
+                }
+			    catch(Exception e)
+                {
+                	Report.Log(ReportLevel.Error, e.ToString());
+                }
+                finally
+                {
+                	if (excelApp != null)
+                		excelApp.Quit();
+                	
+                }
+                
+                return results;
+		}
 	}
 }

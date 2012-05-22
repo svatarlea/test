@@ -30,6 +30,57 @@
         <item name="btnTagContinue_RegnPage1" id="fb07e12d-154e-4db6-976d-fe65abdb5a13" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
           <![CDATA[/dom/body/div[5]/div[2]/form/p[2]/span/input[@name='Continue']]]>
         </item>
+        <item name="btnNewSubAdmin" id="6819b41d-384b-409b-ba9b-3a584d0ee896" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset/table/tbody/tr/td/table/tbody/tr/td[2]/a[@id='4_A1']]]>
+        </item>
+        <item name="selGroupName_CreateSubadminPage" id="491e4b88-9657-40ed-92f2-1a0939889876" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset[@id='4_fscs']/table/tbody/tr[3]/td[1]/select[@id='selGroupName']]]>
+        </item>
+        <item name="selUserName_CreateSubadminPage" id="efd0430a-616d-46d6-82e9-86a48986265c" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset[@id='4_fscs']/table/tbody/tr[3]/td[2]/select[@id='selUserName']]]>
+        </item>
+        <item name="selGroupsAvail_CreateSubAdminPage" id="0898b056-e5c5-4afc-960b-72e39748c9c8" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset[@id='4_Fieldset1']/table/tbody/tr[2]/td[1]/select[@id='selGroupsAvail']]]>
+        </item>
+        <item name="btnAddGrouptoManage_CreateSubadminPage" id="e9beb3a7-bd16-46fa-94c4-4d3193ca6535" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset[@id='4_Fieldset1']/table/tbody/tr[2]/td[2]/div[1]/a[@id='btnGMAdd']]]>
+        </item>
+        <item name="selGroupsManaged_CreateSubadminPage" id="a2290e0b-6d1d-4dc2-9d86-b0b747d8c59a" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset[@id='4_Fieldset1']/table/tbody/tr[2]/td[3]/select[@id='selGroupsManaged']]]>
+        </item>
+        <item name="ATagGSel_GrpMgmtPermsns_CreateSubadminPage" id="fac7f7f8-eecc-48c1-979c-4d19d0c73601" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset[@id='4_Fieldset2']/table/tbody/tr[1]/td[3]/a[@id='gSelAll']]]>
+        </item>
+        <item name="ATagUSel_UsrMgmtPermsns_CreateSubadminPage" id="dd27d430-1051-4faf-9403-2869eff341ce" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset[@id='4_Fieldset3']/table/tbody/tr[1]/td[3]/a[@id='uSelAll']]]>
+        </item>
+        <item name="btnSubmit_CreateSubadminPage" id="22b17fc6-c7cc-40a8-9b23-98212a58e486" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/p[4]/span/input[@id='btnAddSubadminInfo']]]>
+        </item>
+        <item name="tdGroupsManaged_CreateSubAdminPage" id="8168c4ba-88f6-4773-b4c9-15bacb66b290" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset[@id='6_fsl']/table/tbody/tr/td/table[@id='gvSubadmin']/tbody/tr[2]/td[3]]]>
+        </item>
+        <item name="btnContinue_CreateSubadminPage" id="e87f9d64-72ba-4bc8-b64b-2c0d16b092d9" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/table/tbody/tr/td[2]/p/span/input[@id='btnContinue']]]>
+        </item>
+        <item name="lbSendEmailConfirm" id="c7210ef8-abb5-49a7-bd47-68e0520a449e" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[@id='ctl00_main_divConfirmation']/table/tbody/tr[1]/td[1]/span[@id='ctl00_main_lblConfirm']]]>
+        </item>
+        <item name="btnContinue_CreateSubadmincomplete" id="16b910ac-7f96-4f09-a058-f7f5a6195fe4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[@id='ctl00_main_divConfirmation']/table/tbody/tr[2]/td[2]/span/input[@id='ctl00_main_imgButtons']]]>
+        </item>
+        <item name="tdGroupsManaged_ManageSubAdminPage" id="5ec185ec-2089-4602-aeae-530eddda7ce9" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset/table/tbody/tr/td/table[@id='gvSubadmin']/tbody/tr[2]/td[4]]]>
+        </item>
+        <item name="ATagEdit_ManageSubadminPage" id="2eb6857e-eb67-4346-8947-a580b6800809" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset/table/tbody/tr/td/table[@id='gvSubadmin']/tbody/tr[2]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']/a[@innertext='Edit']]]>
+        </item>
+        <item name="ATagRemove_ManageSubadminPage" id="bd5ddd53-7311-4af3-afcd-423dc1f951ee" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+          <![CDATA[/dom/body/div[5]/div[2]/form/fieldset/table/tbody/tr/td/table[@id='gvSubadmin']/tbody/tr[2]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']/a[@innertext='Remove']]]>
+        </item>
+        <item name="btnContinue_MangeSubadminPage" id="186d02bd-39b0-4eb9-a608-c1988676e491" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+          <![CDATA[/dom/body/div[5]/div[2]/p/a[@href~'\.lynda\.com/']]]>
+        </item>
         <basepath>
           <![CDATA[/dom/body]]>
         </basepath>
@@ -141,6 +192,9 @@ eaaWqAoK3FLgB2zQfEudxIlbAAAAAElFTkSuQmCC]]>
         <item name="StrongTagLog_out_admin" id="a0fb288e-63fe-4c12-a0cf-32bf66941cc5" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
           <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log out']]]>
         </item>
+        <item name="ATagManage_CreateSubadmin" id="67b617d3-c3ac-455d-8e17-ec72d9187d5e" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+          <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[3]/div/ul/li[2]/a[@innertext~'^manage\ \+\ create\ sub-admin']]]>
+        </item>
         <basepath>
           <![CDATA[/dom/body/div[@id='eyebrow']/div[1]]]>
         </basepath>
@@ -213,9 +267,6 @@ eaaWqAoK3FLgB2zQfEudxIlbAAAAAElFTkSuQmCC]]>
         <item name="SpanTagManage_Groups_" id="d5245439-1484-4838-bea0-631ce703ede7" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
           <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[1]/th[@id='imgActionMenuG']/span[@innertext='Manage Groups ']]]>
         </item>
-        <item name="imgClick_to_show_hide_Users_2" id="a15d47e4-2eb6-4f32-8f56-c50c4397bca5" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
-          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[2]/td[1]/img[@src~'http://(integration|stage|release).lynda.com/images/MMUS/btn_expand.gif']]]>
-        </item>
         <item name="InputTagEdit_group" id="c0fd50d9-d5a3-4e3d-b56a-b9a10e1f7716" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
           <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[2]/td[8]/input[@title='Edit group']]]>
         </item>
@@ -234,6 +285,9 @@ eaaWqAoK3FLgB2zQfEudxIlbAAAAAElFTkSuQmCC]]>
         <item name="imgClick_to_show_hide_Users_1" id="87b71ef6-9075-4259-87ae-b004e0f89513" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
           <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[2]/td[1]/img[@src~'http://(integration|stage|release).lynda.com/images/MMUS/btn_collapse.gif']]]>
         </item>
+        <item name="imgClick_to_show_hide_Users_2" id="a15d47e4-2eb6-4f32-8f56-c50c4397bca5" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[2]/td[1]/img[@src~'http://(integration|stage|release).lynda.com/images/MMUS/btn_expand.gif']]]>
+        </item>
         <item name="chkSelectAllGroups" id="506ebe84-c01d-4bbc-ad16-d7f3b7eb97b1" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
           <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[1]/th[1]/span/input[@id='ctl00_main_grdNGU_Groups_ctl01_chkGroupSelectAll']]]>
         </item>
@@ -242,6 +296,69 @@ eaaWqAoK3FLgB2zQfEudxIlbAAAAAElFTkSuQmCC]]>
         </item>
         <item name="ImgTagClick_to_show_hide_Users" id="c463c700-9123-483a-a0b5-07452fe84a33" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
           <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[4]/td[1]/img[@id='imgdiv37667']]]>
+        </item>
+        <item name="txtUser1_Fname" id="e05bfd90-5a11-4f26-8275-0f5f690c9184" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[2]/td[2]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl02_txtFirstNameRO']]]>
+        </item>
+        <item name="txtUser1_Lname" id="69c594cd-227b-47b4-9cc4-4941e6e6b19f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[2]/td[3]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl02_txtLastNameRO']]]>
+        </item>
+        <item name="txtUser1_Email" id="adb990df-6a3b-4e25-931b-c0c777f3e1f1" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[2]/td[4]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl02_emailTextBox']]]>
+        </item>
+        <item name="txtUser1_RegStatus" id="74b2af27-b786-4b8c-b485-656bd67e4d51" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[2]/td[5]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl02_txtRegisteredStatusRO']]]>
+        </item>
+        <item name="selUser1_Status" id="420fd93e-f326-438b-a2d4-8c2bf7f769fd" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[2]/td[7]/select[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl02_ddlUserStatus']]]>
+        </item>
+        <item name="txtUser2_Fname" id="6dc294d7-4863-4915-a790-16680fa2bc8b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[3]/td[2]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl03_txtFirstNameRO']]]>
+        </item>
+        <item name="txtUser2_Lname" id="c36d1792-317e-4171-a968-f9024d126050" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[3]/td[3]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl03_txtLastNameRO']]]>
+        </item>
+        <item name="txtUser2_Email" id="f1c42ab1-01a5-45ef-8eb2-71ca87af0e3d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[3]/td[4]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl03_emailTextBox']]]>
+        </item>
+        <item name="txtUser2_RegStatus" id="b4c7f428-765b-4946-82e2-ef12d1f840f8" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[3]/td[5]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl03_txtRegisteredStatusRO']]]>
+        </item>
+        <item name="selUser2_Status" id="f5a0aded-46dc-49ce-bd63-ec43a2d12241" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[3]/td[7]/select[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl03_ddlUserStatus']]]>
+        </item>
+        <item name="txtUser3_Fname" id="75d879cf-2964-43dd-b185-e240455fa8d0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[4]/td[2]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl04_txtFirstNameRO']]]>
+        </item>
+        <item name="txtUser3_Lname" id="4c602cda-c1cd-4838-84eb-797a3f40d93e" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[4]/td[3]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl04_txtLastNameRO']]]>
+        </item>
+        <item name="txtUser3_RegStatus" id="d0f6dd2f-3f4d-4167-9a5d-72bea7410e5a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[4]/td[5]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl04_txtRegisteredStatusRO']]]>
+        </item>
+        <item name="txtUser3_Email" id="6468b968-7235-4719-acec-b1de288a0d79" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[4]/td[4]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl04_emailTextBox']]]>
+        </item>
+        <item name="selUser3_Status" id="12332c74-66e8-4984-8c31-09afaff9aca1" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[4]/td[7]/select[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl04_ddlUserStatus']]]>
+        </item>
+        <item name="txtUser4_Fname" id="f95f2739-824f-453c-90dc-9191b68463c7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[5]/td[2]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl05_txtFirstNameRO']]]>
+        </item>
+        <item name="txtUser4_Lname" id="1efce0ba-1a1f-4f9c-a380-f0fb65365781" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[5]/td[3]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl05_txtLastNameRO']]]>
+        </item>
+        <item name="txtUser4_Email" id="4eba9cea-3d9a-45dd-8b4a-4bfb77bc95df" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[5]/td[4]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl05_emailTextBox']]]>
+        </item>
+        <item name="selUser4_Status" id="83727c43-6852-4f4c-917c-6070c59caee9" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[5]/td[7]/select[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl05_ddlUserStatus']]]>
+        </item>
+        <item name="txtUser4_RegStatus" id="5e5f8ef1-f0c4-4f11-ac6e-f3dbb36960b7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody/tr[5]/td[5]/input[@id='ctl00_main_grdNGU_Groups_ctl02_Users_ctl05_txtRegisteredStatusRO']]]>
+        </item>
+        <item name="selSecondGroupStatus" id="88331c3d-f5f6-4170-95aa-bca609a99e25" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[4]/td[7]/select[@id='ctl00_main_grdNGU_Groups_ctl03_ddlGroupStatus']]]>
         </item>
         <basepath>
           <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody]]>
@@ -431,6 +548,11 @@ eaaWqAoK3FLgB2zQfEudxIlbAAAAAElFTkSuQmCC]]>
           <![CDATA[/dom/body/div[5]/div[2]]]>
         </basepath>
       </folder>
+      <folder name="SomeTBodyTag" id="fa501893-7503-450e-bc95-7441f97470bc" searchtimeout="30000ms" capname="tbodytag" addcaps="unknown,webelement,tbodytag" isrooted="True" usecache="False">
+        <basepath>
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody]]>
+        </basepath>
+      </folder>
       <basepath>
         <![CDATA[/dom]]>
       </basepath>
@@ -481,6 +603,30 @@ FD8AAAAASUVORK5CYII=
       <item name="ButtonOK" id="d8ea4038-d0a2-4b68-888f-6f4a611374d7" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
         <![CDATA[/form[@title='Message from webpage']/button[@text='OK']]]>
       </item>
+      <item name="ButtonCancel" id="e249910f-c89e-470c-ac1e-4995f9db53de" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
+        <![CDATA[/form[@title='Message from webpage']/button[@text='Cancel']]]>
+      </item>
+      <item name="TextN20" id="c4001763-25d4-4f33-8d45-37c5c23d59b3" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+        <![CDATA[/form[@title='Message from webpage']/text[@controlid='20']]]>
+      </item>
+      <item name="TextYou_are_about_to_remove_" id="b8d5de3e-c773-4a01-a629-bab0c5142d9f" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+        <![CDATA[/form[@title='Message from webpage']/text[@controlid='65535']]]>
+      </item>
+      <item name="MenuItemSystem" id="d734200b-3aa7-44b7-97c8-f7786f49dc83" searchtimeout="30000ms" capname="menuitem" addcaps="menuitem,accessible">
+        <![CDATA[/form[@title='Message from webpage']/menubar/menuitem[@accessiblename='System']]]>
+      </item>
+      <item name="MenuBarSystem" id="f6b79c06-f91e-4b28-82b8-da5d9360f9ab" searchtimeout="30000ms" capname="menubar" addcaps="menubar,accessible">
+        <![CDATA[/form[@title='Message from webpage']/menubar[@accessiblename='System']]]>
+      </item>
+      <item name="ButtonClose" id="3df846ae-f9bc-42dc-a9a6-0f8409f16129" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+        <![CDATA[/form[@title='Message from webpage']/titlebar/button[@accessiblename='Close']]]>
+      </item>
+      <item name="TitleBarMessage_from_webpage" id="43688f1f-5002-4e2d-a70b-93254f0b040b" searchtimeout="30000ms" capname="titlebar" addcaps="titlebar,accessible">
+        <![CDATA[/form[@title='Message from webpage']/titlebar[@accessiblerole='TitleBar']]]>
+      </item>
+      <item name="FormMessage_from_webpage" id="2d12772c-307d-4139-8952-1e9b5d64a91b" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow">
+        <![CDATA[/form[@title='Message from webpage']]]>
+      </item>
       <basepath>
         <![CDATA[/form[@title='Message from webpage']]]>
       </basepath>
@@ -503,25 +649,6 @@ aSi8s7B8SEcFXpWbXGnFhGuDTO3M+9bgOKKbmcsfDOD3u8lwulQ5Gr3IQA/PHxknQ6JY83wRYcuV
 G5m9hAsf7Z8D8VgIJHdC0fj5cBD23SDx21dGFzNLu+xP57dtiq4R1PBa6GZUFMnfLK1IyS27PPDi
 VypHTvWtmW2XRsI7m634jYZRZscPA76Xq7TOtEJCn3T0WtaqB8xtxPe2Ir3nAgLyPJq0f42KN0vq
 93I7/sg5PZgiuT6eIlZ2c/nFpJPt7yCZ7IlHDf4X4PYIf1V1wIQAAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <appfolder name="ButtonStart" id="d821ed39-c2d3-4ea0-9fab-b423654bc8e5" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow" isrooted="True" usecache="True">
-      <item name="ButtonStart" id="d67c30b1-d04d-4e8d-ad47-0a12ca360890" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
-        <![CDATA[/button[@text='Start']]]>
-      </item>
-      <basepath>
-        <![CDATA[/button[@text='Start']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
-jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
-AAAOxAAADsQBlSsOGwAAAUpJREFUOE+lk79Kw1AUxu9D+AS+gG4uPoKjq7j5BK4uDuLsKwiOgiB1
-kBIXERyiix2sEqhUo0nz9/a2TZMc851r0ggRIg38cv7cfF9Owr2CiMQysPjs2qTV7UMSm/utWNk6
-IGigZfHG3gndPLyi0ep6smzWQCvwZsN8oTzP/4Vh9vXUGDtN0z/FQojGNSUj/bm4TacTNmkCBuhn
-WVatyyggGfkLA6UkJUnCQADm89mvuuyhH/gOU02gVMxT1IEAtY6qlk/Icz+YmkFEmAJG5QSIZa3G
-xVoB98YxOZ9vTGUQhi7JOOQHEKtc/vTwzTKo1u2hRaAyCAKHotBj6hM01WE4ouGgX/C8MHCdd/K8
-LwY/x/c0yNHTuY6oB1aP4QmwLY27exq5dmtg0ul2CVreyuu7x3R6fkm9x9tWXFx1aG3nSG/lpQ/T
-MkcZ2m+wkALQ5SEsiAAAAABJRU5ErkJggg==
       </icon>
     </appfolder>
     <basepath>

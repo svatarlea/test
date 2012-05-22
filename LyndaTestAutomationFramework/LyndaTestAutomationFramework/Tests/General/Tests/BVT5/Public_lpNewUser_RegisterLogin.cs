@@ -18,7 +18,8 @@ using System.IO;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
-
+using Tests.AppConfig;
+using Lynda.Test.Browsers;
 using General.Utilities.Forms;
 using Tests.General.Utilities;
 
@@ -32,6 +33,8 @@ namespace Tests.General.Tests.BVT5
     {
         
     	private static Public_lpBVT5Repository repo = Public_lpBVT5Repository.Instance;
+    	private Browser browser;
+    	
     	/// <summary>
         /// Constructs a new instance.
         /// </summary>
@@ -80,6 +83,10 @@ namespace Tests.General.Tests.BVT5
             Mouse.DefaultMoveTime = 50;
             Keyboard.DefaultKeyPressTime = 50;
             Delay.SpeedFactor = 1.0;
+            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
+            string url = string.Format("{0}{1}{2}","http://", AppSettings.Domain.ToString(),"/lyndaPro/UserRegistration/UserRegistrationStep1.aspx");
+            browser = new Browser(browserProduct, url);
+            
             string strResultsFile = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName + @"\General\Tests\BVT5\TestData\Public_lpAcctData.xlsx";
             
             Validate.Exists(repo.DOM.Body.txtGroupCode_RegnPage1Info);
@@ -115,13 +122,15 @@ namespace Tests.General.Tests.BVT5
              	{
 	             	//Confirmation Message for Active User.
 	               	//Your registration is complete! You can now log in to the lynda.com Online Training Library® using the log in link.
+	               	//TODO: Validate.AreEqual(expectedString, StringfromUI); 
 	               	Report.Log(ReportLevel.Info, repo.DOM.UserRegnPage2.ConfirmationMessage_forActiveUsers.GetInnerHtml());
              	}
              	else
              	{
              		//Confirmation Message for Inactive User.
              		//Your registration is complete! However, at this point, you can not log in as your account is inactive. Please contact your account administrator to activate your account.
-               		Report.Log(ReportLevel.Info, repo.DOM.UserRegnPage2.ConfirmationMessage_forInactiveUsers.GetInnerHtml());
+               		//TODO: Validate.AreEqual(expectedString, StringfromUI); 
+             		Report.Log(ReportLevel.Info, repo.DOM.UserRegnPage2.ConfirmationMessage_forInactiveUsers.GetInnerHtml());
                	}    
              	
                	Validate.Exists(repo.DOM.Top_Right_Menus.StrongTagLog_inInfo);
@@ -142,14 +151,15 @@ namespace Tests.General.Tests.BVT5
                 //TODO : Browse Course and Watch Videos.
                 
                 repo.DOM.Top_Right_Menus.StrongTagLog_out.Click();
-                
+                Validate.Exists(repo.DOM.Top_Right_Menus.StrongTagLog_inInfo);
 				}
 				else
 				{
+					//TODO: Validate.AreEqual(expectedString, StringfromUI); 
 					Report.Log(ReportLevel.Info, repo.DOM.UserRegnPage2.Message_forInactiveUser.GetInnerHtml());
 				}
                
-				
+				Host.Local.CloseApplication(repo.DOM.Self, new Duration(0));
         }
     }
 }

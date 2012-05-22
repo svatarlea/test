@@ -20,6 +20,8 @@ using Ranorex.Core.Testing;
 
 using Lynda.Test.Advanced.Utilities.WebPages;
 using Lynda.Test.Browsers;
+using Tests.AppConfig;
+using Tests.General.Utilities;
 
 namespace Tests.General.Tests.BVT5
 {
@@ -31,8 +33,8 @@ namespace Tests.General.Tests.BVT5
     [TestModule("A69389BD-527D-4B6D-B0FF-557E1E283C9E", ModuleType.UserCode, 1)]
     public class Public_NewAcctAccess : ITestModule
     {
-         private static Public_NewAcctAccessRepository repo = Public_NewAcctAccessRepository.Instance;
-    	
+        private static Public_NewAcctAccessRepository repo = Public_NewAcctAccessRepository.Instance;
+    	private Browser	browser;
     	
     	/// <summary>
         /// Constructs a new instance.
@@ -74,16 +76,14 @@ namespace Tests.General.Tests.BVT5
            Mouse.DefaultMoveTime = 100;
             Keyboard.DefaultKeyPressTime = 50;
             Delay.SpeedFactor = 1.0;
-                        
+            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
+            string url = string.Format("{0}{1}","http://", AppSettings.Domain.ToString());             
             
             varUserName = TestCase.Current.DataContext.CurrentRow["Username"];
             varPersona  = TestCase.Current.DataContext.CurrentRow["persona"];
             string password = "lynda1";
             
-          
-            //const BrowserProduct browserProduct = BrowserProduct.Firefox;
-            
-            
+                browser = new Browser(browserProduct, url);    
                 //Wait for page to load
             	Delay.Milliseconds(1000);
             	Validate.Exists(repo.DOM.SomeBodyTag.btnMainLog_in);
@@ -123,6 +123,7 @@ namespace Tests.General.Tests.BVT5
             		Report.Log(ReportLevel.Error, e.ToString());
             	}
             	
+            	Host.Local.CloseApplication(repo.DOM.Self, new Duration(0));
         }
     }
 }

@@ -1,9 +1,4 @@
 ﻿<testsuite name="Tests" rxversion="3.2.3.16825" id="3f647c1d-1399-4837-9f78-e70951b71080" reportfilename="%S_%Y%M%D_%T.rxlog" reportxslfilename="" reportwriteinterval="30000ms" enabletracingscreenshots="True" description="" reportlevel="Info;20">
-  <parameters>
-    <param name="Environment" value="http://release.lynda.com"/>
-    <param name="BrowserName" value="IE"/>
-    <param name="NavigateTo" value="/lyndaPro/UserRegistration/UserRegistrationStep1.aspx"/>
-  </parameters>
   <datasources>
     <dataConnector name="Subscriptions" type="Ranorex.Core.Data.ExcelDataConnector" id="ffa9686f-1436-4968-897b-53583ed729f3" filename="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests\Tests\Tests\ConsumerReg\AllRegistrations.xlsx" worksheetname="TestRowsAutomated" worksheetrange="A:C" includefile="Checked">
       <fallbackcolumns>
@@ -145,94 +140,33 @@
       <folder name="BVT5" id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84">
         <folder name="Precondition" id="eaaf240c-4fd3-455f-aa24-19e4bba957be">
           <testcase name="TC01_AdminNewAcct" id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21" minrange="0" maxrange="0" datarangeactive="True" datasource="Admin_NewAcct">
-            <parameters>
-              <param name="Environment" value="https://admin.release.lynda.com"/>
-              <param name="NavigateTo" value="/Welcome.aspx"/>
-              <param name="BrowserName" value="Firefox"/>
-            </parameters>
-            <setup name="container3" id="22aae935-f5fd-4b7b-a496-7659d00a3d3b">
-              <testmodule name="OpenBrowser" id="d9ae4b3d-41d0-4ea4-956a-1ebcdd4eb751" ref="289F49D5-DC79-4EFD-9704-DE6E30488D63" type="UserCode">
-                <databinding>
-                  <var variablename="varEnvironment" variableid="94732686-269f-48e5-87ea-90a80f409651" dataname="Environment" datasourceid="bf9f6223-d7f5-4e08-9f44-5e52571e4e21"/>
-                  <var variablename="varNavigateTo" variableid="3a6302c2-4570-42b5-8180-301f9928f537" dataname="NavigateTo" datasourceid="bf9f6223-d7f5-4e08-9f44-5e52571e4e21"/>
-                  <var variablename="varBrowserName" variableid="6760a0d9-4014-4a5e-8c26-fce0b3aa5d51" dataname="BrowserName" datasourceid="bf9f6223-d7f5-4e08-9f44-5e52571e4e21"/>
-                </databinding>
-              </testmodule>
-            </setup>
             <testmodule name="Admin_CS_NewAcct" id="1cdd5fbe-0d0c-4d23-8735-e64b5afcba83" ref="ED3E942B-6E05-4C79-B999-BD5146EA35CC" type="UserCode">
               <databinding>
-                <var variablename="varPersona" variableid="8c000255-b7b7-4331-b9a2-6fa9da65472e" dataname="persona" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
-                <var variablename="varAccountType" variableid="d601e63d-3d8c-472f-a1c0-9ba208f002e6" dataname="accountType" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
-                <var variablename="varUsername" variableid="cba471b1-1567-4eea-bd18-685c68cb5715" dataname="Username" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
-                <var variablename="varSalesOperationType" variableid="0e5282f7-833b-42c1-838e-4a10f36c4260" dataname="OperationType" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
                 <var variablename="varSalesRep1" variableid="9e760f6a-7e9b-4189-b1db-f72da11fdaf6" dataname="Rep1" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
+                <var variablename="varSalesOperationType" variableid="0e5282f7-833b-42c1-838e-4a10f36c4260" dataname="OperationType" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
+                <var variablename="varUsername" variableid="cba471b1-1567-4eea-bd18-685c68cb5715" dataname="Username" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
+                <var variablename="varAccountType" variableid="d601e63d-3d8c-472f-a1c0-9ba208f002e6" dataname="accountType" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
+                <var variablename="varPersona" variableid="8c000255-b7b7-4331-b9a2-6fa9da65472e" dataname="persona" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
               </databinding>
             </testmodule>
-            <testmodule name="Admin_CloseBrowser" id="e7d3ea9e-f3ad-4fe3-a166-a893a36f83b1" ref="F5FBCE6D-4891-482A-B5C1-9AE7C094B4CE" type="UserCode"/>
           </testcase>
           <testcase name="TC02_PublicNewAcctAccess" id="d1844dff-545d-4897-b07f-4097aab99565" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
-            <setup name="container7" id="1954ce54-cafd-48b4-a579-25ea699466f7">
-              <testmodule name="OpenBrowser" id="bcbcf058-b216-4f58-ab8a-a9980ac0770e" ref="289F49D5-DC79-4EFD-9704-DE6E30488D63" type="UserCode">
-                <databinding>
-                  <var variablename="varEnvironment" variableid="94732686-269f-48e5-87ea-90a80f409651" dataname="Environment" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-                  <var variablename="varBrowserName" variableid="6760a0d9-4014-4a5e-8c26-fce0b3aa5d51" dataname="BrowserName" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-                  <var variablename="varNavigateTo" variableid="3a6302c2-4570-42b5-8180-301f9928f537" dataname="NavigateTo" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-                </databinding>
-              </testmodule>
-            </setup>
             <testmodule name="Public_NewAcctAccess" id="7f722dad-7bcd-485c-9f92-33019d25d1da" ref="A69389BD-527D-4B6D-B0FF-557E1E283C9E" type="UserCode">
               <databinding>
                 <var variablename="varPersona" variableid="a4730979-e4fe-4fb3-a8f1-1bce4dfd6869" dataname="persona" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
                 <var variablename="varUserName" variableid="613ec119-8e51-4f27-9cd2-be4f82cd939b" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
               </databinding>
             </testmodule>
-            <testmodule name="CloseBrowser" id="f7167a2d-58dd-4ccd-93f1-a7221769f666" ref="B56BBBB1-F373-414D-A05D-BDBA455FDD2E" type="UserCode"/>
           </testcase>
         </folder>
         <testcase name="TC1_lyndaProAdmin_AddGroupsUsers" id="f65dad26-88c6-414b-8faa-109200942e03" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
-          <parameters>
-            <param name="Environment" value="http://release.lynda.com"/>
-            <param name="NavigateTo" value=""/>
-            <param name="BrowserName" value="IE"/>
-          </parameters>
-          <setup name="container2" id="04f1b6a7-0c51-402c-84e6-05849e4e9640">
-            <testmodule name="OpenBrowser" id="62ce5e89-bfa0-4697-b977-ea07b8a3786c" ref="289F49D5-DC79-4EFD-9704-DE6E30488D63" type="UserCode">
-              <databinding>
-                <var variablename="varEnvironment" variableid="94732686-269f-48e5-87ea-90a80f409651" dataname="Environment" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-                <var variablename="varNavigateTo" variableid="3a6302c2-4570-42b5-8180-301f9928f537" dataname="NavigateTo" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-                <var variablename="varBrowserName" variableid="6760a0d9-4014-4a5e-8c26-fce0b3aa5d51" dataname="BrowserName" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-              </databinding>
-            </testmodule>
-          </setup>
           <testmodule name="Public_lpAddGroupsUsers" id="449a1113-37a2-49fd-ba99-2424d0cf13fa" ref="A6FB8831-FB06-43CA-A7C2-9B1ACCD64646" type="UserCode">
             <databinding>
               <var variablename="varUsername" variableid="95874721-24bc-4cd4-ad41-6a595fa81489" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
             </databinding>
           </testmodule>
-          <teardown name="container1" id="33cb1365-d435-45e1-97ac-a9f04f881ad9">
-            <testmodule name="CloseBrowser" id="8b4f6252-86f8-4687-992b-ae633b6489f5" ref="B56BBBB1-F373-414D-A05D-BDBA455FDD2E" type="UserCode"/>
-          </teardown>
         </testcase>
         <testcase name="TC2_lyndaProUser_Regn" id="569237fb-e44c-4940-92d0-9c9377b1f2a4" errorbehavior="ContinueNextIteration" minrange="0" maxrange="2" datasource="Public_lpAcctData">
-          <parameters>
-            <param name="Environment" value="http://release.lynda.com"/>
-            <param name="NavigateTo" value="/lyndaPro/UserRegistration/UserRegistrationStep1.aspx"/>
-            <param name="BrowserName" value="IE"/>
-          </parameters>
-          <setup name="container" id="c4eaf09b-3ab7-4250-b2c4-8e98c19ce3c7">
-            <testmodule name="OpenBrowser" id="c710f816-09b4-4a55-9d06-d679ac1eb7ea" ref="289F49D5-DC79-4EFD-9704-DE6E30488D63" type="UserCode">
-              <databinding>
-                <var variablename="varEnvironment" variableid="94732686-269f-48e5-87ea-90a80f409651" dataname="Environment" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-                <var variablename="varNavigateTo" variableid="3a6302c2-4570-42b5-8180-301f9928f537" dataname="NavigateTo" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-                <var variablename="varBrowserName" variableid="6760a0d9-4014-4a5e-8c26-fce0b3aa5d51" dataname="BrowserName" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-              </databinding>
-              <missingdatabinding>
-                <var variablename="varEnvironment" variableid="94732686-269f-48e5-87ea-90a80f409651" dataname="Environment" datasourceid="f65dad26-88c6-414b-8faa-109200942e03"/>
-                <var variablename="varNavigateTo" variableid="3a6302c2-4570-42b5-8180-301f9928f537" dataname="NavigateTo" datasourceid="f65dad26-88c6-414b-8faa-109200942e03"/>
-                <var variablename="varBrowserName" variableid="6760a0d9-4014-4a5e-8c26-fce0b3aa5d51" dataname="BrowserName" datasourceid="f8dfb10d-d413-4be2-996e-419a4eb83a13"/>
-              </missingdatabinding>
-            </testmodule>
-          </setup>
           <testmodule name="Public_lpNewUser_RegisterLogin" id="28e86fad-fa07-4991-9245-5f713e4794fa" ref="13F3DD1C-4C7A-4F4A-A4D9-F42F3DF4104D" type="UserCode">
             <databinding>
               <var variablename="varUserstatus" variableid="b61e2514-de87-4953-a94c-afc36cd9d3f3" dataname="UserStatus" datasourceid="c6a361a3-2815-4b1f-98f4-f95560ece147"/>
@@ -240,35 +174,34 @@
               <var variablename="varGroupCode" variableid="33709d07-6267-4323-a1d4-4ad77257fb4d" dataname="GroupCode" datasourceid="c6a361a3-2815-4b1f-98f4-f95560ece147"/>
             </databinding>
           </testmodule>
-          <teardown name="container6" id="bcc13dbf-1cc0-4474-9534-4e653a43af50">
-            <testmodule name="CloseBrowser" id="d754a5f9-1200-442c-86dc-ccbeba39fccf" ref="B56BBBB1-F373-414D-A05D-BDBA455FDD2E" type="UserCode"/>
-          </teardown>
         </testcase>
-        <testcase name="TC3_lyndaProdAdmin_ManageUsers" id="c905a61d-a547-4294-8389-11d995543502"/>
-        <testcase name="TC4_lyndaProSubAdmin" id="dcac7107-933a-414b-99c1-f0e5a92e2425"/>
+        <testcase name="TC3_lyndaProdAdmin_ManageUsers" id="c905a61d-a547-4294-8389-11d995543502" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
+          <testmodule name="Public_lpManageUsers" id="4c64a00d-07e8-49ed-9b1c-b80b853214ee" ref="08315453-3D16-459B-8D03-6084044F00AB" type="UserCode">
+            <databinding>
+              <var variablename="varUsername" variableid="1603ea22-e576-4893-92c5-e2cc5b91b028" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
+            </databinding>
+          </testmodule>
+        </testcase>
+        <testcase name="TC4_lyndaProSubAdmin" id="dcac7107-933a-414b-99c1-f0e5a92e2425" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
+          <testmodule name="Public_lpNewSubAdmin" id="e1b136a2-f47b-4675-947e-995c4cc4448d" ref="3F31D071-EF12-455D-85DA-C40EB003EFC0" type="UserCode">
+            <databinding>
+              <var variablename="varUsername" variableid="b4b312a7-e6f9-479f-87b6-4e788f3b014e" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
+            </databinding>
+          </testmodule>
+        </testcase>
+        <testcase name="TC5_lyndaProRemSubAdmin" id="9153f576-aa32-42b5-a84c-acf8e727531e" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
+          <testmodule name="Public_lpRemSubAdmin" id="f016cb32-de54-4fbb-ba65-3b342d5a8b9c" ref="4EF5F661-3628-46F2-A92F-7242C002BD46" type="UserCode">
+            <databinding>
+              <var variablename="varUsername" variableid="576a43c1-2deb-484f-beb5-e8de322202c4" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
+            </databinding>
+          </testmodule>
+        </testcase>
         <testcase name="Cleanup" id="6faa9fa3-9922-4db5-bdc6-8dd627ef2e08" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
-          <parameters>
-            <param name="BrowserName" value="IE"/>
-            <param name="Environment" value="http://release.lynda.com"/>
-            <param name="NavigateTo" value=""/>
-          </parameters>
-          <setup name="container4" id="8b23d828-19cc-40c2-af52-c0c4c167c4f1">
-            <testmodule name="OpenBrowser" id="fc8caa7c-51a9-455f-a7df-9d9f4e45e71b" ref="289F49D5-DC79-4EFD-9704-DE6E30488D63" type="UserCode">
-              <databinding>
-                <var variablename="varNavigateTo" variableid="3a6302c2-4570-42b5-8180-301f9928f537" dataname="NavigateTo" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-                <var variablename="varBrowserName" variableid="6760a0d9-4014-4a5e-8c26-fce0b3aa5d51" dataname="BrowserName" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-                <var variablename="varEnvironment" variableid="94732686-269f-48e5-87ea-90a80f409651" dataname="Environment" datasourceid="3f647c1d-1399-4837-9f78-e70951b71080"/>
-              </databinding>
-            </testmodule>
-          </setup>
           <testmodule name="Public_lpCleanGroupsUsers" id="58547308-5017-46ce-9ea4-c4a2ae8e4e3d" ref="56DF0CF4-CF34-41FA-B76B-FF8EF0BB3600" type="UserCode">
             <databinding>
               <var variablename="varUsername" variableid="3ba8d5d8-0134-4025-acfb-516326af8e0e" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
             </databinding>
           </testmodule>
-          <teardown name="container5" id="0c46eace-3eb8-4f01-983e-5775534bebc1">
-            <testmodule name="CloseBrowser" id="f915ec0b-5851-424b-81db-307d0f36ab02" ref="B56BBBB1-F373-414D-A05D-BDBA455FDD2E" type="UserCode"/>
-          </teardown>
         </testcase>
       </folder>
     </folder>
@@ -289,12 +222,7 @@
     </folder>
   </content>
   <testconfigurations default="TestRun">
-    <testconfiguration name="TestRun">
-      <testcase id="08529b9b-c12b-4067-a77d-0e24fad714f4"/>
-      <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
-      <testcase id="43e16ec5-f749-4d70-9e3f-bec5231ad329"/>
-      <testcase id="cc5a43f0-cedc-44b8-a95f-866e6fa6e20e"/>
-    </testconfiguration>
+    <testconfiguration name="TestRun"/>
   </testconfigurations>
   <references>
     <reference>

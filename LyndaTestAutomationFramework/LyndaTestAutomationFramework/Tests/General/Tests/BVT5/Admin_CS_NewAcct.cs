@@ -13,7 +13,7 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
-
+using WinForms = System.Windows.Forms;
 using General.Utilities;
 using General.Utilities.Forms;
 using Tests.General.Utilities;
@@ -23,8 +23,8 @@ using Lynda.Test.Browsers;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
+using Tests.AppConfig;
 
-using WinForms = System.Windows.Forms;
 
 namespace Tests.General.Tests.BVT5
 {
@@ -35,7 +35,7 @@ namespace Tests.General.Tests.BVT5
     public class Admin_CS_NewAcct : ITestModule
     {
         private static Admin_CS_NewAcctRepository repo = Admin_CS_NewAcctRepository.Instance;
-    	//private Browser	browser;
+    	private Browser	browser;
     	
     	/// <summary>
         /// Constructs a new instance.
@@ -92,10 +92,7 @@ namespace Tests.General.Tests.BVT5
         	set { _varSalesOperationType = value; }
         }
         
-        
-        
-        
-        
+         
         /// <summary>
         /// Performs the playback of actions in this module.
         /// </summary>
@@ -108,28 +105,16 @@ namespace Tests.General.Tests.BVT5
             Mouse.DefaultMoveTime = 50;
             Keyboard.DefaultKeyPressTime = 50;
             Delay.SpeedFactor = 1.0;
-            
-            
-            //const string testCaseName = "TC01_AdminNewAcct"; 
+             
             string strResultsFile = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName + @"\General\Tests\BVT5\TestData\Public_AcctAccessData.xlsx";
-            //const string navigateTo = "/Welcome.aspx";
-            //login
-            //string domain = "admin.stage.lynda.com";
-            //string domain = "admin.release.lynda.com";
+            const string navigateTo = "/Welcome.aspx";
             string username = "knvirtualuser7";
             string password = "lynda1";
             
-            
-			
-            //const BrowserProduct browserProduct = BrowserProduct.Firefox;
-            //const Browser.BrowserProduct browserProduct = Browser.BrowserProduct.SAFARI;
-            //const Browser.BrowserProduct browserProduct = Browser.BrowserProduct.CHROME;
-            
-            //int intIndex= TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRowIndex;
+            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
+            string url = string.Format("{0}{1}{2}","https://admin.", AppSettings.Domain.ToString(),navigateTo);
+                        
             int intIndex = TestCase.Current.DataContext.CurrentRowIndex;
-            //domain = TestSuite.Current.GetTestCase(testCaseName).Parameters["domain"];
-            //varPersona = TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["persona"];
-            //varAccountType = TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["accountType"];
             varSalesRep1 = TestCase.Current.DataContext.CurrentRow["Rep1"];
             varSalesOperationType = TestCase.Current.DataContext.CurrentRow["OperationType"];
             
@@ -139,9 +124,7 @@ namespace Tests.General.Tests.BVT5
             if (intIndex == 1)
             {
             	//Open browser and navigate to url
-            	//string url = string.Format("https://{0}{1}", domain, navigateTo.ToString());
-            	//browser = new Browser(browserProduct, url);
-            	
+            	browser = new Browser(browserProduct, url);
             	//Wait for page to load
             	Validate.Exists(repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLogin);
             	
@@ -154,14 +137,12 @@ namespace Tests.General.Tests.BVT5
             Validate.Exists(repo.DOM.SomeBodyTag.lnkCS);	
             
             repo.DOM.SomeBodyTag.lnkCS.Click();
-            //Delay.Milliseconds(1000);
-            
+                       
             try
             {
             	if (Validate.Exists(repo.DOM.SomeBodyTag.lnkNewAccountInfo.AbsolutePath, repo.DOM.SomeBodyTag.lnkNewAccountInfo.SearchTimeout,"{0}",new Validate.Options(false,ReportLevel.Info)))
             	{
-            		//Validate.Exists(repo.WebDocumentWelcome.SomeBodyTag.lnkNewAccount);
-            		//Delay.Milliseconds(1000);
+            		
             		repo.DOM.SomeBodyTag.lnkNewAccount.Click();
             	}
             
@@ -205,8 +186,7 @@ namespace Tests.General.Tests.BVT5
             		
             }
             
-            
-            
+                       
             switch(varAccountType)
             {
             	case "Regular":
@@ -380,7 +360,9 @@ namespace Tests.General.Tests.BVT5
         	
         	ExcelData.Write(strResultsFile , intIndex+1, 2, varPersona, varUsername);
             
-        	
+        	//TODO : Logout and close when all iterations are completed.
+        	repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLogout.Click();
+            Host.Local.CloseApplication(repo.FormCustomer_Details.Self, new Duration(0));
         	
         	
        

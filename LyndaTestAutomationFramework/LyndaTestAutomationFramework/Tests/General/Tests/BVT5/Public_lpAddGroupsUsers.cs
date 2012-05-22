@@ -18,7 +18,8 @@ using System.IO;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
-
+using Tests.AppConfig;
+using Lynda.Test.Browsers;
 using Tests.General.Utilities;
 
 namespace Tests.General.Tests.BVT5
@@ -31,6 +32,7 @@ namespace Tests.General.Tests.BVT5
     {
         
     	private static Public_lpBVT5Repository repo = Public_lpBVT5Repository.Instance;
+    	private Browser browser;
     	
     	/// <summary>
         /// Constructs a new instance.
@@ -61,7 +63,17 @@ namespace Tests.General.Tests.BVT5
             Mouse.DefaultMoveTime = 250;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
+            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
+            string url = string.Format("{0}{1}","http://", AppSettings.Domain.ToString());
+            browser = new Browser(browserProduct, url);
+            
+            
             string strResultsFile = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName + @"\General\Tests\BVT5\TestData\Public_lpAcctData.xlsx";
+            
+            
+            
+            
+            
             repo.DOM.Top_Right_Menus.StrongTagLog_in.Click();
             
             Validate.Exists(repo.DOM.Login_form.txtUsernameInfo);
@@ -170,6 +182,8 @@ namespace Tests.General.Tests.BVT5
 			      ExcelData.Write(strResultsFile , i+1, 2, strGrpId[2],"TestFname-"+ currletter  +"@mailinator.com", strUserStatus );
 		        }
             repo.DOM.Top_Right_Menus.StrongTagLog_out_admin.Click();
+            Validate.Exists(repo.DOM.Top_Right_Menus.StrongTagLog_inInfo);
+            Host.Local.CloseApplication(repo.DOM.Self, new Duration(0));
             
         }
         
