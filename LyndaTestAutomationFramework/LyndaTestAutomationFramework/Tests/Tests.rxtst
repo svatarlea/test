@@ -139,7 +139,7 @@
       </testcase>
       <folder name="BVT5" id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84">
         <folder name="Precondition" id="eaaf240c-4fd3-455f-aa24-19e4bba957be">
-          <testcase name="TC01_AdminNewAcct" id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21" minrange="0" maxrange="0" datarangeactive="True" datasource="Admin_NewAcct">
+          <testcase name="TC01_AdminNewAcct" id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="Admin_NewAcct">
             <testmodule name="Admin_CS_NewAcct" id="1cdd5fbe-0d0c-4d23-8735-e64b5afcba83" ref="ED3E942B-6E05-4C79-B999-BD5146EA35CC" type="UserCode">
               <databinding>
                 <var variablename="varSalesRep1" variableid="9e760f6a-7e9b-4189-b1db-f72da11fdaf6" dataname="Rep1" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
@@ -159,7 +159,7 @@
             </testmodule>
           </testcase>
         </folder>
-        <testcase name="TC1_lyndaProAdmin_AddGroupsUsers" id="f65dad26-88c6-414b-8faa-109200942e03" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
+        <testcase name="TC1_lyndaProAdmin_AddGroupsUsers" id="f65dad26-88c6-414b-8faa-109200942e03" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
           <testmodule name="Public_lpAddGroupsUsers" id="449a1113-37a2-49fd-ba99-2424d0cf13fa" ref="A6FB8831-FB06-43CA-A7C2-9B1ACCD64646" type="UserCode">
             <databinding>
               <var variablename="varUsername" variableid="95874721-24bc-4cd4-ad41-6a595fa81489" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
@@ -175,21 +175,21 @@
             </databinding>
           </testmodule>
         </testcase>
-        <testcase name="TC3_lyndaProdAdmin_ManageUsers" id="c905a61d-a547-4294-8389-11d995543502" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
+        <testcase name="TC3_lyndaProdAdmin_ManageUsers" id="c905a61d-a547-4294-8389-11d995543502" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
           <testmodule name="Public_lpManageUsers" id="4c64a00d-07e8-49ed-9b1c-b80b853214ee" ref="08315453-3D16-459B-8D03-6084044F00AB" type="UserCode">
             <databinding>
               <var variablename="varUsername" variableid="1603ea22-e576-4893-92c5-e2cc5b91b028" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
             </databinding>
           </testmodule>
         </testcase>
-        <testcase name="TC4_lyndaProSubAdmin" id="dcac7107-933a-414b-99c1-f0e5a92e2425" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
+        <testcase name="TC4_lyndaProSubAdmin" id="dcac7107-933a-414b-99c1-f0e5a92e2425" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
           <testmodule name="Public_lpNewSubAdmin" id="e1b136a2-f47b-4675-947e-995c4cc4448d" ref="3F31D071-EF12-455D-85DA-C40EB003EFC0" type="UserCode">
             <databinding>
               <var variablename="varUsername" variableid="b4b312a7-e6f9-479f-87b6-4e788f3b014e" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
             </databinding>
           </testmodule>
         </testcase>
-        <testcase name="TC5_lyndaProRemSubAdmin" id="9153f576-aa32-42b5-a84c-acf8e727531e" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
+        <testcase name="TC5_lyndaProRemSubAdmin" id="9153f576-aa32-42b5-a84c-acf8e727531e" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
           <testmodule name="Public_lpRemSubAdmin" id="f016cb32-de54-4fbb-ba65-3b342d5a8b9c" ref="4EF5F661-3628-46F2-A92F-7242C002BD46" type="UserCode">
             <databinding>
               <var variablename="varUsername" variableid="576a43c1-2deb-484f-beb5-e8de322202c4" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
@@ -222,7 +222,19 @@
     </folder>
   </content>
   <testconfigurations default="TestRun">
-    <testconfiguration name="TestRun"/>
+    <testconfiguration name="TestRun">
+      <testcase id="108c6022-89ef-4c23-802b-23fe8fd6cde3"/>
+      <testcase id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84"/>
+      <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
+      <testcase id="569237fb-e44c-4940-92d0-9c9377b1f2a4"/>
+      <testcase id="6faa9fa3-9922-4db5-bdc6-8dd627ef2e08"/>
+      <testcase id="9153f576-aa32-42b5-a84c-acf8e727531e"/>
+      <testcase id="c905a61d-a547-4294-8389-11d995543502"/>
+      <testcase id="d1844dff-545d-4897-b07f-4097aab99565"/>
+      <testcase id="dcac7107-933a-414b-99c1-f0e5a92e2425"/>
+      <testcase id="eaaf240c-4fd3-455f-aa24-19e4bba957be"/>
+      <testcase id="f65dad26-88c6-414b-8faa-109200942e03"/>
+    </testconfiguration>
   </testconfigurations>
   <references>
     <reference>
@@ -247,22 +259,22 @@
       ..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.WinForms.dll
     </reference>
     <reference>
-      ..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
-    </reference>
-    <reference>
-      Browsers.dll
-    </reference>
-    <reference>
-      WebPages.dll
-    </reference>
-    <reference>
-      ConsumerPagesMain.dll
+      PagesAbstractGeneral.dll
     </reference>
     <reference>
       ConsumerPagesAbstract.dll
     </reference>
     <reference>
-      PagesAbstractGeneral.dll
+      ConsumerPagesMain.dll
+    </reference>
+    <reference>
+      WebPages.dll
+    </reference>
+    <reference>
+      Browsers.dll
+    </reference>
+    <reference>
+      ..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
     </reference>
   </references>
 </testsuite>

@@ -62,6 +62,12 @@ namespace Tests.General.Tests.BVT5.TestData
             Mouse.DefaultMoveTime = 300;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
+            //TODO: Update rxrep to support all Browsers
+            if(AppSettings.Browser.ToString() != "IE")
+            {
+            	Report.Error("Note: Currently only IE Supported; Please change the appsettings Key Browser value to IE and retry.");
+            	throw new Ranorex.RanorexException();
+            }
             BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
             string url = string.Format("{0}{1}","http://", AppSettings.Domain.ToString());
             browser = new Browser(browserProduct, url);

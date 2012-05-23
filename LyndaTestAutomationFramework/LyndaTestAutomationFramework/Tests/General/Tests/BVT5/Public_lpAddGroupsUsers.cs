@@ -21,6 +21,7 @@ using Ranorex.Core.Testing;
 using Tests.AppConfig;
 using Lynda.Test.Browsers;
 using Tests.General.Utilities;
+using Lynda.Test.Advanced.Utilities.WebPages;
 
 namespace Tests.General.Tests.BVT5
 {
@@ -63,24 +64,25 @@ namespace Tests.General.Tests.BVT5
             Mouse.DefaultMoveTime = 250;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
+            
+            //TODO: Update rxrep to support all Browsers
+            if(AppSettings.Browser.ToString() != "IE")
+            {
+            	Report.Error("Note: Currently only IE Supported; Please change the appsettings Key Browser value to IE and retry.");
+            	throw new Ranorex.RanorexException();
+            }
+            
             BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
             string url = string.Format("{0}{1}","http://", AppSettings.Domain.ToString());
             browser = new Browser(browserProduct, url);
-            
-            
+                        
             string strResultsFile = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName + @"\General\Tests\BVT5\TestData\Public_lpAcctData.xlsx";
-            
-            
-            
-            
-            
+                        
             repo.DOM.Top_Right_Menus.StrongTagLog_in.Click();
             
             Validate.Exists(repo.DOM.Login_form.txtUsernameInfo);
             
-            
-            repo.DOM.Login_form.txtUsername.PressKeys(varUsername); 
-            
+            repo.DOM.Login_form.txtUsername.PressKeys(varUsername);
             repo.DOM.Login_form.txtPassword.PressKeys("lynda1");
             repo.DOM.Login_form.btnLogin.Click();
             
@@ -88,28 +90,27 @@ namespace Tests.General.Tests.BVT5
             
             repo.DOM.Top_Right_Menus.ATagAdministration.MoveTo();
             repo.DOM.Top_Right_Menus.ATagLyndaPro_home.Click();
-            //repo.DOM.WebDocumentSoftware_training_online.WaitForDocumentLoaded();
-            
+                        
             Validate.Exists(repo.DOM.Body.btnAddGroupsInfo);
+            
             repo.DOM.Body.btnAddGroups.Click();
             
             Validate.Exists(repo.DOM.Modal_AddGroups.lblAvailLicensesInfo);
+            
             	repo.DOM.Modal_AddGroups.txtAGtxtGroupName.PressKeys("QA_Group1");
             	repo.DOM.Modal_AddGroups.txtAGtxtNumLicenses.PressKeys("3");
-            	repo.DOM.Modal_AddGroups.selGroupStatus.Focus();
-            	repo.DOM.Modal_AddGroups.selGroupStatus.Click();
-            	    String itemToClickRxPath = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']","Active");
-		        	ListItem itemToClick = itemToClickRxPath;
-		        	itemToClick.Click();          
+            	SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.Modal_AddGroups.selGroupStatus, "Active");
+//            	repo.DOM.Modal_AddGroups.selGroupStatus.Focus();
+//            	repo.DOM.Modal_AddGroups.selGroupStatus.Click();
+//            	    String itemToClickRxPath = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']","Active");
+//		        	ListItem itemToClick = itemToClickRxPath;
+//		        	itemToClick.Click();          
             
 		        repo.DOM.Modal_AddGroups.btnAdd_group.Click();
 		        
 		        Validate.Exists(repo.DOM.GroupsAndUsers_Grid.txtROFirstGroupNameInfo);
 		        Report.Log(ReportLevel.Info, repo.DOM.GroupsAndUsers_Grid.txtROFirstGroupName.TagValue.ToString());
 		        
-		        
-		        //repo.DOM.GroupsAndUsers_Grid.imgActionMenuG.Click();
-		       
 		        // To create n number of Groups :  noOfGroups 
 		        //int noOfGroups = 2;
 		        for (int i=2;i <=2 ; i++ ) {
@@ -121,11 +122,12 @@ namespace Tests.General.Tests.BVT5
 		        	 repo.DOM.ManageGroupsActionMenu.lnkAddGroups.Click();
 		        	 repo.DOM.Modal_AddGroups.txtAGtxtGroupName.PressKeys("QA_Group"+i);
             		 repo.DOM.Modal_AddGroups.txtAGtxtNumLicenses.PressKeys("1");
-            	     repo.DOM.Modal_AddGroups.selGroupStatus.Focus();
-            	     repo.DOM.Modal_AddGroups.selGroupStatus.Click();
-            	     string itemToClickRxPath1 = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']","Inactive");
-		        	 ListItem itemToClick1 = itemToClickRxPath1;
-		        	 itemToClick1.Click();          
+            		 SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.Modal_AddGroups.selGroupStatus, "Inactive");
+//            	     repo.DOM.Modal_AddGroups.selGroupStatus.Focus();
+//            	     repo.DOM.Modal_AddGroups.selGroupStatus.Click();
+//            	     string itemToClickRxPath1 = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']","Inactive");
+//		        	 ListItem itemToClick1 = itemToClickRxPath1;
+//		        	 itemToClick1.Click();          
             		
 		             repo.DOM.Modal_AddGroups.btnAdd_group.Click();
 		             
@@ -162,17 +164,22 @@ namespace Tests.General.Tests.BVT5
 				 repo.DOM.Modal_AddUsers.txtAUtxtFirstName.PressKeys("TestFname" + currletter);
 				 repo.DOM.Modal_AddUsers.txtAUtxtLastName.PressKeys("TestLname");
 				 repo.DOM.Modal_AddUsers.txtAUtxtEmail.PressKeys("TestFname-"+ currletter  +"@mailinator.com");
-				 repo.DOM.Modal_AddUsers.selAUddlstUserStatus.Focus();
-				 repo.DOM.Modal_AddUsers.selAUddlstUserStatus.Click();
+//				 repo.DOM.Modal_AddUsers.selAUddlstUserStatus.Focus();
+//				 repo.DOM.Modal_AddUsers.selAUddlstUserStatus.Click();
 				 string strUserStatus = "Active";
-				 string itemToClickRxPath2 = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']",strUserStatus);
+//				 string itemToClickRxPath2 = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']",strUserStatus);
 				 if(i == 3)
 				 {
 				 	strUserStatus = "Inactive";
-				 	itemToClickRxPath2 = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']",strUserStatus);
+				 	SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.Modal_AddUsers.selAUddlstUserStatus, strUserStatus);
 				 }
-			        	ListItem itemToClick2 = itemToClickRxPath2;
-			        	itemToClick2.Click();
+			     else
+			     {
+			     	SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.Modal_AddUsers.selAUddlstUserStatus, strUserStatus);
+			     }
+			     	
+//			     	ListItem itemToClick2 = itemToClickRxPath2;
+//			        	itemToClick2.Click();
 			        	
 			      repo.DOM.Modal_AddUsers.btnAdd_user.Click();
 			      

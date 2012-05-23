@@ -233,9 +233,6 @@
     <Compile Include="General\Utilities\FormDataPayment.cs">
       <id>5795314a-2a6a-42fb-93c1-243208bba899</id>
     </Compile>
-    <Compile Include="General\Utilities\GetValuesFromDB.cs">
-      <id>95f9d27d-4bf2-4018-9de6-4c22050fde34</id>
-    </Compile>
     <Compile Include="Skynet\ConsumerReg\AllRegistrations.cs">
       <id>00159a88-2850-4f2d-b575-5059f81e7d21</id>
     </Compile>
@@ -309,20 +306,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>0c50fb79-3966-4e8f-ae70-551f26feba87</id>
     </Content>
-    <None Include="Reports\Tests_20120522_162312.rxlog">
-      <id>f834d45b-b22c-4bd9-a5bf-dd60bf9321b9</id>
+    <None Include="Reports\Tests_20120523_151325.rxlog">
+      <id>32e1abef-1b6f-4ecf-8ac3-a8b3f3553d32</id>
     </None>
-    <None Include="Reports\Tests_20120522_163243.rxlog">
-      <id>a4514c65-269b-404f-8520-2511727d9702</id>
-    </None>
-    <None Include="Reports\Tests_20120522_163416.rxlog">
-      <id>0e55c53d-d162-4885-9633-57d7e1abf46e</id>
-    </None>
-    <None Include="Reports\Tests_20120522_163950.rxlog">
-      <id>ac34e130-e590-4a18-a3b6-99c1b03b20fe</id>
-    </None>
-    <None Include="Reports\Tests_20120522_164435.rxlog">
-      <id>2a53a602-3990-43ce-b72a-64ae05cee519</id>
+    <None Include="Reports\Tests_20120523_152309.rxlog">
+      <id>0654d157-5655-4644-b7ab-2be33365937e</id>
     </None>
     <Content Include="Public_AcctAccessData.xlsx">
       <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>

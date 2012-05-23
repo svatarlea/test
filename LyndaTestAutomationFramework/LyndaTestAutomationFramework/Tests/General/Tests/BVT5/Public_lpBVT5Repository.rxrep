@@ -283,10 +283,10 @@ eaaWqAoK3FLgB2zQfEudxIlbAAAAAElFTkSuQmCC]]>
           <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[2]/td[8]/input[@title='Save changes']]]>
         </item>
         <item name="imgClick_to_show_hide_Users_1" id="87b71ef6-9075-4259-87ae-b004e0f89513" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
-          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[2]/td[1]/img[@src~'http://(integration|stage|release).lynda.com/images/MMUS/btn_collapse.gif']]]>
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[2]/td[1]/img[@src~'http://(integration|stage|release|www).lynda.com/images/MMUS/btn_collapse.gif']]]>
         </item>
         <item name="imgClick_to_show_hide_Users_2" id="a15d47e4-2eb6-4f32-8f56-c50c4397bca5" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
-          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[2]/td[1]/img[@src~'http://(integration|stage|release).lynda.com/images/MMUS/btn_expand.gif']]]>
+          <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[2]/td[1]/img[@src~'http://(integration|stage|release|www).lynda.com/images/MMUS/btn_expand.gif']]]>
         </item>
         <item name="chkSelectAllGroups" id="506ebe84-c01d-4bbc-ad16-d7f3b7eb97b1" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
           <![CDATA[/dom/body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[1]/th[1]/span/input[@id='ctl00_main_grdNGU_Groups_ctl01_chkGroupSelectAll']]]>

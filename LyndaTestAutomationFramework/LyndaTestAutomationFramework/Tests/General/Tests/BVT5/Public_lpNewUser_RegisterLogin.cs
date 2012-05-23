@@ -22,6 +22,7 @@ using Tests.AppConfig;
 using Lynda.Test.Browsers;
 using General.Utilities.Forms;
 using Tests.General.Utilities;
+using Lynda.Test.Advanced.Utilities.WebPages;
 
 namespace Tests.General.Tests.BVT5
 {
@@ -83,6 +84,12 @@ namespace Tests.General.Tests.BVT5
             Mouse.DefaultMoveTime = 50;
             Keyboard.DefaultKeyPressTime = 50;
             Delay.SpeedFactor = 1.0;
+            //TODO: Update rxrep to support all Browsers
+            if(AppSettings.Browser.ToString() != "IE")
+            {
+            	Report.Error("Note: Currently only IE Supported; Please change the appsettings Key Browser value to IE and retry.");
+            	throw new Ranorex.RanorexException();
+            }
             BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
             string url = string.Format("{0}{1}{2}","http://", AppSettings.Domain.ToString(),"/lyndaPro/UserRegistration/UserRegistrationStep1.aspx");
             browser = new Browser(browserProduct, url);
@@ -96,16 +103,16 @@ namespace Tests.General.Tests.BVT5
             repo.DOM.Body.btnTagContinue_RegnPage1.Click();
             
             Validate.Exists(repo.DOM.UserRegnPage2.selAlreadyMember_RegnPage2Info);
-            repo.DOM.UserRegnPage2.selAlreadyMember_RegnPage2.Focus();
-            	repo.DOM.UserRegnPage2.selAlreadyMember_RegnPage2.Click();
-            	    String itemToClickRxPath = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']","No");
-		        	ListItem itemToClick = itemToClickRxPath;
-		        	itemToClick.Click();   
+            SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.UserRegnPage2.selAlreadyMember_RegnPage2, "No");
+//            repo.DOM.UserRegnPage2.selAlreadyMember_RegnPage2.Focus();
+//            	repo.DOM.UserRegnPage2.selAlreadyMember_RegnPage2.Click();
+//            	    String itemToClickRxPath = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']","No");
+//		        	ListItem itemToClick = itemToClickRxPath;
+//		        	itemToClick.Click();   
             
 		    Validate.Exists(repo.DOM.UserRegnPage2.txtUsername_RegnPage2Info);
 		    
-//		    	string[] strUsername = varUserEmail.Split('@');
-//             	Report.Log(ReportLevel.Info, strUsername[0]);
+
              	string strUsername, strEmail;
             	FormDataAccount.GenerateUsernameEmail(out strUsername, out strEmail);
             	

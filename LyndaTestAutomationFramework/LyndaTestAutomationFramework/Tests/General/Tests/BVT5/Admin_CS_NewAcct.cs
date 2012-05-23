@@ -110,6 +110,12 @@ namespace Tests.General.Tests.BVT5
             const string navigateTo = "/Welcome.aspx";
             string username = "knvirtualuser7";
             string password = "lynda1";
+            //TODO: Update rxrep to support all Browsers
+            if(AppSettings.Browser.ToString() != "Firefox")
+            {
+            	Report.Error("Note: Currently only Firefox Supported; Please change the appsettings Key Browser value to Firefox and retry.");
+            	throw new Ranorex.RanorexException();
+            }
             
             BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
             string url = string.Format("{0}{1}{2}","https://admin.", AppSettings.Domain.ToString(),navigateTo);
