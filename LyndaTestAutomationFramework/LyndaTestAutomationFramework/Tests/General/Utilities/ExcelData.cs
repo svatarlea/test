@@ -58,13 +58,13 @@ namespace Tests.General.Utilities
                 Excel.Worksheet excelWs;
                 Excel.Range excelRg;
                 object misValue = System.Reflection.Missing.Value;
-                object[,] results = new object[4,4];
+                object[,] results = null;
                 try
                 {
                 	excelApp.DisplayAlerts = false;
                 	excelWb = excelApp.Workbooks.Open(strPath,misValue,false,misValue,misValue,misValue,misValue,misValue, misValue, true, misValue, misValue, misValue);
                 	excelWs = (Excel.Worksheet)excelWb.ActiveSheet;
-                	excelRg = excelWs.Range["B2","E5"];
+                	excelRg = excelWs.Range[startcell,endcell];
                 	excelApp.Visible = false;
                 	results = (object[,])excelRg.Value;
                 	

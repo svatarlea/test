@@ -23,7 +23,7 @@
         </basepath>
       </folder>
       <folder name="SomeBodyTag" id="006c0342-bdbe-47d6-bbc0-74c55a7becb4" searchtimeout="30000ms" capname="bodytag" addcaps="unknown,webelement,bodytag" isrooted="True" usecache="False">
-        <item name="lnkNewAccount" id="209566bb-9db6-451b-9720-c685778aeb84" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+        <item name="lnkNewAccount" id="209566bb-9db6-451b-9720-c685778aeb84" searchtimeout="3000ms" capname="atag" addcaps="unknown,webelement,atag">
           <![CDATA[/dom/body/form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[3]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu101']]]>
         </item>
         <item name="lnkCS" id="72dcb991-be8a-460f-ada4-b6572a02a021" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
@@ -318,6 +318,26 @@
           <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_pnlIpAddresses']/table/tbody/tr/td[1]/table[1]/tbody]]>
         </basepath>
       </folder>
+      <folder name="ConnectionUntrustedPage" id="de5bd35a-49af-4756-bc63-5b0eae2467b4" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+        <item name="DivTagExpertContent" id="5a36cc73-4eed-4a54-b75e-89f3ac7e7277" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
+          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']]]>
+        </item>
+        <item name="DivTagTechnicalContent" id="db957ea6-86f8-44bb-a9b7-d0419c60f661" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
+          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='technicalContent']]]>
+        </item>
+        <item name="ButtonTagGetMeOutOfHereButton" id="fa4f09d4-ad08-46fe-bda4-680c42f069f0" searchtimeout="30000ms" capname="buttontag" addcaps="unknown,webelement,buttontag">
+          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='whatShouldIDoContent']/div/button[@id='getMeOutOfHereButton']]]>
+        </item>
+        <item name="PTagTechnicalContentText" id="5f3bd23b-f77b-468d-8187-ab9b7966f82d" searchtimeout="30000ms" capname="ptag" addcaps="unknown,webelement,ptag">
+          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='technicalContent']/p[@id='technicalContentText']]]>
+        </item>
+        <item name="ButtonTagExceptionDialogButton" id="76968d34-1214-4fd8-9c66-afd7af0f82b8" searchtimeout="30000ms" capname="buttontag" addcaps="unknown,webelement,buttontag">
+          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']/div/button[@id='exceptionDialogButton']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom/body/div/div[@id='errorLongContent']]]>
+        </basepath>
+      </folder>
       <basepath>
         <![CDATA[/dom]]>
       </basepath>
@@ -465,6 +485,40 @@ FpiJruLK/Vfovf0IA0OTcDqdcLvdbMxAIIBEIoFsNotCoQBBEFCr1SBJkvlrTKVSCIfDiMVioGOO
       </item>
       <basepath>
         <![CDATA[/form[@title~'^Customer\ Details\ -\ ']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANsSURBVDhPbZN9TJNXFMbv+5bSVwVLaSstLhCH
+YuZgE1hkqASKfGiRz7Xo+AyzQyc6XB2idYugkUr/UGExouIHBIJBQqGsiA6VzGQIhJEAAyEYBbQU
+mBaJG1Ojj33fTYwZJ3mSk3vP87vnntxLiD0G08W1wxmSADb3yyr9LDZi+5kdCSkD/lmlj1l9mnmq
+a1XyibqPk4vT2Jr/xVCGBKwSFRlHI+Ny77H5lQABLtx/xqmw04JNRS1Ysa0cX4YlXDPHMOvmIHqG
+TmUNUwWuHORtXuXrgKK+aRh6bTjUOQlVRQ980krQeykC9UnS2VaNKImDFIsdyoa/deMAtpNesByR
+cfl5b5pTII9GbscU1MYh+GSeRnerBiN1CjSlSqfbv5fKSNmHjt0PDshfseYpwzKMHXCHVfeum29c
+aaTfGEe86T68NReh/2kv/urfijt5HrilERWTywGOE1a9G3f6VIEYo9/JMar9CE+q87gO4pv/RJzx
+IYJL+7F8RyXScnbD0qbCWI0fWrYwPcQYzJ+1Fkk4wCOdBI/KAjnN1MagwpfGunNDWHuiA5/k1mNZ
+VjVWRebA1p6Ap78E4ecY/gtiiiKvrXoJZo67wryeQbknb+7+orACuKeUwSPjIjy3lECuOgVF0tfA
+QAhsravRsJF6TZoiqZmBXUI81osxsl+EJh8KNQE0hOt1ECsNqInzQtXODZBF6yGNNiBfGwX85ouJ
+cjnMsfQzcjWUMt7auIADsOpQCtAVzeB3tQsG05zQmSLlOpJGFcI9KBvjFR74p06Gfq0jzErSRswK
+kly/hv67L9OZA1h/lGDwKzFuKxkY1/D/NQfpsE/hh9uFK/Giyg2TRQJcjWPQnOh2mJg2k4UNwVR3
+i4LBw/0umMwXYyxvCYZzlqL6cydUx8vRkLAY3dsXwKZ3gcU+ry6NAM1bhU/bd3rKuMd0JZQEVq6l
+JlrCBBjKFmJcJ8K4fR6jOjEsB0UY2SvEvezFGN3jjLvaRbiexJs9rqDf/xepK0h6iT812RjCw68R
+AvR+sRB96kXoTXbCH+nO6ElhcDNRgNpNglmVF9HO96eivHiU4YcPKOtZf/p5fSgFUyRBo12mCBo1
+4Q4vj63kT3vzqLN2s3I+wBL7oq9dict51NFwPtWoYug2NUPfCeVTJhZu31P/V8PWcvEG3uTiGswK
+FD8AAAAASUVORK5CYII=
+      </icon>
+    </appfolder>
+    <appfolder name="FormAdd_Security_Exception" id="69d75c21-6c93-44fc-ba74-31dc5f7ccf69" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+      <item name="TextLocation_" id="e5bece51-a09c-4be8-aba6-d68b6144db74" searchtimeout="30000ms" capname="text" addcaps="text,accessible">
+        <![CDATA[/form[@title='Add Security Exception']/container[@accessiblename='Server']/text[@accessiblename='Location:' and @accessiblerole='Text']]]>
+      </item>
+      <item name="ButtonGet_Certificate" id="2a2c3d84-5dfb-45ef-8467-b776218b859d" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+        <![CDATA[/form[@title='Add Security Exception']/container[@accessiblename='Server']/button[@accessiblename='Get Certificate']]]>
+      </item>
+      <item name="ButtonConfirm_Security_Excepti" id="ca192554-cb4b-4b82-bf9e-728cde25d14c" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+        <![CDATA[/form[@title='Add Security Exception']/button[@accessiblename~'^Confirm\ Security\ Exceptio']]]>
+      </item>
+      <basepath>
+        <![CDATA[/form[@title='Add Security Exception']]]>
       </basepath>
       <icon>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

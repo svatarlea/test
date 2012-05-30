@@ -63,15 +63,15 @@ namespace Tests.General.Tests.BVT5.TestData
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             //TODO: Update rxrep to support all Browsers
-            if(AppSettings.Browser.ToString() != "IE")
+            if(AppSettings.Browser != BrowserProduct.IE)
             {
-            	Report.Error("Note: Currently only IE Supported; Please change the appsettings Key Browser value to IE and retry.");
+            	Report.Error("Note: Currently only IE Supported; Please change the appsettings Key - Browser value to IE and retry.");
             	throw new Ranorex.RanorexException();
             }
-            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
-            string url = string.Format("{0}{1}","http://", AppSettings.Domain.ToString());
+            BrowserProduct browserProduct = AppSettings.Browser;
+            string url = string.Format("{0}{1}","http://", AppSettings.Domain);
             browser = new Browser(browserProduct, url);
-            string strResultsFile = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName + @"\General\Tests\BVT5\TestData\Public_lpAcctData.xlsx";
+            string strResultsFile = Directory.GetCurrentDirectory() + @"\Public_lpAcctData.xlsx";
             
             repo.DOM.Top_Right_Menus.StrongTagLog_in.Click();
             Validate.Exists(repo.DOM.Login_form.txtUsernameInfo);
@@ -105,27 +105,25 @@ namespace Tests.General.Tests.BVT5.TestData
 		    		    
 		    //TODO: validate repo.DOM.Body.selGroupsManaged_CreateSubadminPage has the added group id
 		    
-		    //repo.DOM.Body.ATagGSel_GrpMgmtPermsns_CreateSubadminPage.MoveTo();
-		    repo.DOM.Body.ATagGSel_GrpMgmtPermsns_CreateSubadminPage.Click();
+		   	repo.DOM.Body.ATagGSel_GrpMgmtPermsns_CreateSubadminPage.Click();
 		    
-		    //repo.DOM.Body.ATagUSel_UsrMgmtPermsns_CreateSubadminPage.MoveTo();
 		    repo.DOM.Body.ATagUSel_UsrMgmtPermsns_CreateSubadminPage.Click();
 		    
-		    //repo.DOM.Body.btnSubmit_CreateSubadminPage.MoveTo();
+		    repo.DOM.Body.btnSubmit_CreateSubadminPage.MoveTo();
 		    repo.DOM.Body.btnSubmit_CreateSubadminPage.Click();
 		    
 		    Validate.Exists(repo.DOM.Body.tdGroupsManaged_CreateSubAdminPageInfo);
 		    Validate.AreEqual(repo.DOM.Body.tdGroupsManaged_CreateSubAdminPage.InnerText,"QA_Group1");
 		    
-		    //repo.DOM.Body.btnContinue_CreateSubadminPage.MoveTo();
+		    repo.DOM.Body.btnContinue_CreateSubadminPage.MoveTo();
 		    repo.DOM.Body.btnContinue_CreateSubadminPage.Click();
 		    
 		    Validate.Exists(repo.DOM.DivTagCtl00_main_divSendEmail.selEmailTemplateTypeInfo);
-		    //repo.DOM.DivTagCtl00_main_divSendEmail.btnSendEmail.MoveTo();
+		    repo.DOM.DivTagCtl00_main_divSendEmail.btnSendEmail.MoveTo();
 		    repo.DOM.DivTagCtl00_main_divSendEmail.btnSendEmail.Click();
 		    
 		    Validate.Exists(repo.DOM.Body.lbSendEmailConfirmInfo);
-		    //repo.DOM.Body.btnContinue_CreateSubadmincomplete.MoveTo();
+		    repo.DOM.Body.btnContinue_CreateSubadmincomplete.MoveTo();
 		    repo.DOM.Body.btnContinue_CreateSubadmincomplete.Click();
 		    
 		    Validate.Exists(repo.DOM.GroupsAndUsers_Grid.txtROFirstGroupNameInfo);
@@ -138,7 +136,7 @@ namespace Tests.General.Tests.BVT5.TestData
 		   repo.DOM.Top_Right_Menus.StrongTagLog_out_admin.MoveTo();
 		   repo.DOM.Top_Right_Menus.StrongTagLog_out_admin.Click();
 		   Validate.Exists(repo.DOM.Top_Right_Menus.StrongTagLog_inInfo);
-		   Host.Local.CloseApplication(repo.DOM.Self, new Duration(0));
+		   Host.Local.CloseApplication(repo.DOM.Self, new Duration(100));
 		    
 		    
         }

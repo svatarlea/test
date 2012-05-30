@@ -76,8 +76,8 @@ namespace Tests.General.Tests.BVT5
            Mouse.DefaultMoveTime = 100;
             Keyboard.DefaultKeyPressTime = 50;
             Delay.SpeedFactor = 1.0;
-            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
-            string url = string.Format("{0}{1}","http://", AppSettings.Domain.ToString());             
+            BrowserProduct browserProduct = AppSettings.Browser;
+            string url = string.Format("{0}{1}","http://", AppSettings.Domain);             
             
             varUserName = TestCase.Current.DataContext.CurrentRow["Username"];
             varPersona  = TestCase.Current.DataContext.CurrentRow["persona"];
@@ -85,33 +85,32 @@ namespace Tests.General.Tests.BVT5
             
                 browser = new Browser(browserProduct, url);    
                 //Wait for page to load
-            	Delay.Milliseconds(1000);
             	Validate.Exists(repo.DOM.SomeBodyTag.btnMainLog_in);
             	repo.DOM.SomeBodyTag.btnMainLog_in.Click();
             	
-            	Delay.Milliseconds(1000);
-            	Validate.Exists(repo.DOM.SomeBodyTag.btnModalLog_in);
+            	Validate.Exists(repo.DOM.SomeBodyTag.btnModalLog_inInfo);
             	repo.DOM.SomeBodyTag.txtUsername.PressKeys(varUserName);
             	repo.DOM.SomeBodyTag.txtUserPassword.PressKeys(password);
             	repo.DOM.SomeBodyTag.btnModalLog_in.Click();
             	
             	try
             	{
-            		if (Validate.Exists(repo.DOM.SomeBodyTag.btnI_acceptInfo.AbsolutePath, repo.DOM.SomeBodyTag.btnI_acceptInfo.SearchTimeout,"{0}",new Validate.Options(false,ReportLevel.Info)))
+            		if (Validate.Exists(repo.DOM.SomeBodyTag.btnI_acceptInfo.AbsolutePath, repo.DOM.SomeBodyTag.btnI_acceptInfo.SearchTimeout,"{0}",new Validate.Options(false,ReportLevel.Warn)))
             		    {
             		    	Report.Log(ReportLevel.Info, varPersona + " : " + varUserName + " : First Login.");
             		    	repo.DOM.SomeBodyTag.btnI_accept.Click();
+            		    	
             		    	Delay.Milliseconds(1000);
-            		    	Validate.Exists(repo.DOM.SomeBodyTag.btnMainLog_out);
-            		    	repo.DOM.SomeBodyTag.btnMainLog_out.Click();
+            		    	if (Validate.Exists(repo.DOM.SomeBodyTag.btnMainLog_outInfo.AbsolutePath, repo.DOM.SomeBodyTag.btnMainLog_outInfo.SearchTimeout,"{0}",new Validate.Options(true,ReportLevel.Error)))
+            		    	 repo.DOM.SomeBodyTag.btnMainLog_out.Click();
             		    	
             		    }
             		    else
             		    {
             		    	Report.Log(ReportLevel.Warn, varPersona + " : " + varUserName + " : User has logged in previously.");
-            		    		Delay.Milliseconds(1000);
-            		    	Validate.Exists(repo.DOM.SomeBodyTag.btnMainLog_out);
-            		    	repo.DOM.SomeBodyTag.btnMainLog_out.Click();
+            		    		
+            		    	if (Validate.Exists(repo.DOM.SomeBodyTag.btnMainLog_outInfo.AbsolutePath, repo.DOM.SomeBodyTag.btnMainLog_outInfo.SearchTimeout,"{0}",new Validate.Options(true,ReportLevel.Error)))
+            		    	 repo.DOM.SomeBodyTag.btnMainLog_out.Click();
             		    }
             	}
             	catch(ValidationException e)
@@ -122,7 +121,7 @@ namespace Tests.General.Tests.BVT5
             	{
             		Report.Log(ReportLevel.Error, e.ToString());
             	}
-            	
+            	Validate.Exists(repo.DOM.SomeBodyTag.btnMainLog_inInfo);
             	Host.Local.CloseApplication(repo.DOM.Self, new Duration(0));
         }
     }

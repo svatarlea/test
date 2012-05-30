@@ -275,15 +275,6 @@
       <repoid>43e3b16d-5e4b-4792-9fd3-e72a4c3f1d16</repoid>
       <reporootid>8ec0adf8-37d6-47d6-bfa0-2fcb3edabd0e</reporootid>
     </None>
-    <None Include="General\Tests\BVT5\TestData\Admin_CS_NewAcctData.xlsx">
-      <id>1747a8a3-b7e2-4035-bada-19504a7aee0f</id>
-    </None>
-    <None Include="General\Tests\BVT5\TestData\Public_AcctAccessData.xlsx">
-      <id>a13ef971-e974-4516-aead-7db53ace09c2</id>
-    </None>
-    <None Include="General\Tests\BVT5\TestData\Public_lpAcctData.xlsx">
-      <id>ce843b84-a8b6-4b07-8b56-8a36f1fc4119</id>
-    </None>
     <None Include="General\Tests\ConsumerReg\ConsumerRegRepo.rxrep">
       <id>3b7a21e9-3705-4c92-bc5f-5656ff8a8ed9</id>
       <reporootid>c01e8542-268c-458b-a9b3-363285851754</reporootid>
@@ -300,18 +291,15 @@
       <projectdefaultrepository>true</projectdefaultrepository>
       <repoid>4d8e3c8d-c312-455c-b74a-570e20a9b4df</repoid>
     </None>
+    <None Include="Reports\Tests_20120529_172649.rxlog">
+      <id>666d223c-2af0-4c33-8230-860e1c2bc99b</id>
+    </None>
     <Content Include="Public_lpAcctData.xlsx">
       <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
       <DependentUpon>Tests.rxtst</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>0c50fb79-3966-4e8f-ae70-551f26feba87</id>
     </Content>
-    <None Include="Reports\Tests_20120523_151325.rxlog">
-      <id>32e1abef-1b6f-4ecf-8ac3-a8b3f3553d32</id>
-    </None>
-    <None Include="Reports\Tests_20120523_152309.rxlog">
-      <id>0654d157-5655-4644-b7ab-2be33365937e</id>
-    </None>
     <Content Include="Public_AcctAccessData.xlsx">
       <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
       <DependentUpon>Tests.rxtst</DependentUpon>
@@ -359,9 +347,6 @@
     <Folder Include="General">
       <id>d89eff42-8f68-40f2-b511-a0207216a815</id>
     </Folder>
-    <Folder Include="General\Tests\BVT5\TestData">
-      <id>3595d1b4-9aa5-4b49-9fce-53c4d3961f7c</id>
-    </Folder>
     <Folder Include="General\Tests\ConsumerReg">
       <id>871d187f-0b3c-48bd-bcc3-036953606560</id>
     </Folder>
@@ -382,7 +367,7 @@
     </Folder>
     <Folder Include="Reports">
       <ReportsDir>true</ReportsDir>
-      <id>7919b9d6-f7c7-43fe-b946-fb2baa707d2e</id>
+      <id>cd6eb501-9a11-44f8-9449-b10ca00d02e5</id>
     </Folder>
     <Folder Include="Skynet\ConsumerReg">
       <id>6d8c4508-d8ac-410f-8682-f53a5d4d03e6</id>

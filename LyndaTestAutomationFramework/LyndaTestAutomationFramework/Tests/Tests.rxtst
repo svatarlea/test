@@ -50,7 +50,7 @@
         </column>
       </fallbackcolumns>
     </dataConnector>
-    <dataConnector name="Admin_NewAcct" type="Ranorex.Core.Data.ExcelDataConnector" id="3aa39436-a21b-4ed9-b29b-b316376ae125" filename="Admin_CS_NewAcctData.xlsx" worksheetname="Sheet1" worksheetrange="B:L" includefile="Checked">
+    <dataConnector name="Admin_NewAcct" type="Ranorex.Core.Data.ExcelDataConnector" id="3aa39436-a21b-4ed9-b29b-b316376ae125" filename="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests\Admin_CS_NewAcctData.xlsx" worksheetname="Sheet1" worksheetrange="B:L" includefile="Checked">
       <fallbackcolumns>
         <column>
           <![CDATA[persona]]>
@@ -87,7 +87,7 @@
         </column>
       </fallbackcolumns>
     </dataConnector>
-    <dataConnector name="Public_NewAcct" type="Ranorex.Core.Data.ExcelDataConnector" id="db4e904e-c088-49bc-b51b-2c6763c95367" filename="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests\General\Tests\BVT5\TestData\Public_AcctAccessData.xlsx" worksheetname="Sheet1" worksheetrange="B:E" includefile="Checked">
+    <dataConnector name="Public_NewAcct" type="Ranorex.Core.Data.ExcelDataConnector" id="db4e904e-c088-49bc-b51b-2c6763c95367" filename="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests\bin\Debug\Public_AcctAccessData.xlsx" worksheetname="Sheet1" worksheetrange="B:E" includefile="Checked">
       <fallbackcolumns>
         <column>
           <![CDATA[persona]]>
@@ -109,7 +109,7 @@
     <dataConnector name="NewConnector1" type="Ranorex.Core.Data.SimpleDataConnector" id="92946375-dece-4ec3-ae6d-acbda2abe608">
       <fallbackcolumns/>
     </dataConnector>
-    <dataConnector name="Public_lpAcctData" type="Ranorex.Core.Data.ExcelDataConnector" id="c6a361a3-2815-4b1f-98f4-f95560ece147" filename="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests\General\Tests\BVT5\TestData\Public_lpAcctData.xlsx" worksheetname="Sheet1" worksheetrange="B:g" includefile="Checked">
+    <dataConnector name="Public_lpAcctData" type="Ranorex.Core.Data.ExcelDataConnector" id="c6a361a3-2815-4b1f-98f4-f95560ece147" filename="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests\bin\Debug\Public_lpAcctData.xlsx" worksheetname="Sheet1" worksheetrange="B:H" includefile="Checked">
       <fallbackcolumns>
         <column>
           <![CDATA[GroupCode]]>
@@ -226,14 +226,9 @@
       <testcase id="108c6022-89ef-4c23-802b-23fe8fd6cde3"/>
       <testcase id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84"/>
       <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
-      <testcase id="569237fb-e44c-4940-92d0-9c9377b1f2a4"/>
       <testcase id="6faa9fa3-9922-4db5-bdc6-8dd627ef2e08"/>
       <testcase id="9153f576-aa32-42b5-a84c-acf8e727531e"/>
-      <testcase id="c905a61d-a547-4294-8389-11d995543502"/>
-      <testcase id="d1844dff-545d-4897-b07f-4097aab99565"/>
       <testcase id="dcac7107-933a-414b-99c1-f0e5a92e2425"/>
-      <testcase id="eaaf240c-4fd3-455f-aa24-19e4bba957be"/>
-      <testcase id="f65dad26-88c6-414b-8faa-109200942e03"/>
     </testconfiguration>
   </testconfigurations>
   <references>

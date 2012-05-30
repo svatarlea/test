@@ -7,7 +7,7 @@
           <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log in']]]>
         </item>
         <item name="btnMainLog_out" id="65cd5820-d8c6-4c28-a281-203560d43552" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
-          <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log out']]]>
+          <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log out' and @tagname='strong']]]>
         </item>
         <item name="txtUserPassword" id="17c7a321-b63a-4045-b6fb-af1b0fb06252" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
           <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[4]/td/input[@id='password']]]>

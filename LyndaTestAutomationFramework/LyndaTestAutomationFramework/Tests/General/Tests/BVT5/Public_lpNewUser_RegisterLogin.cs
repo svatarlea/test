@@ -85,16 +85,16 @@ namespace Tests.General.Tests.BVT5
             Keyboard.DefaultKeyPressTime = 50;
             Delay.SpeedFactor = 1.0;
             //TODO: Update rxrep to support all Browsers
-            if(AppSettings.Browser.ToString() != "IE")
+            if(AppSettings.Browser != BrowserProduct.IE)
             {
-            	Report.Error("Note: Currently only IE Supported; Please change the appsettings Key Browser value to IE and retry.");
+            	Report.Error("Note: Currently only IE Supported; Please change the appsettings Key - Browser value to IE and retry.");
             	throw new Ranorex.RanorexException();
             }
-            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
-            string url = string.Format("{0}{1}{2}","http://", AppSettings.Domain.ToString(),"/lyndaPro/UserRegistration/UserRegistrationStep1.aspx");
+            BrowserProduct browserProduct = AppSettings.Browser;
+            string url = string.Format("{0}{1}{2}","http://", AppSettings.Domain,"/lyndaPro/UserRegistration/UserRegistrationStep1.aspx");
             browser = new Browser(browserProduct, url);
             
-            string strResultsFile = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName + @"\General\Tests\BVT5\TestData\Public_lpAcctData.xlsx";
+            string strResultsFile = Directory.GetCurrentDirectory() + @"\Public_lpAcctData.xlsx";
             
             Validate.Exists(repo.DOM.Body.txtGroupCode_RegnPage1Info);
             repo.DOM.Body.txtGroupCode_RegnPage1.PressKeys(varGroupCode);
@@ -104,12 +104,7 @@ namespace Tests.General.Tests.BVT5
             
             Validate.Exists(repo.DOM.UserRegnPage2.selAlreadyMember_RegnPage2Info);
             SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.UserRegnPage2.selAlreadyMember_RegnPage2, "No");
-//            repo.DOM.UserRegnPage2.selAlreadyMember_RegnPage2.Focus();
-//            	repo.DOM.UserRegnPage2.selAlreadyMember_RegnPage2.Click();
-//            	    String itemToClickRxPath = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']","No");
-//		        	ListItem itemToClick = itemToClickRxPath;
-//		        	itemToClick.Click();   
-            
+
 		    Validate.Exists(repo.DOM.UserRegnPage2.txtUsername_RegnPage2Info);
 		    
 
@@ -150,7 +145,8 @@ namespace Tests.General.Tests.BVT5
             	
             	//Message:Inactive Account
                 //Your account administrator has deactivated your account. If you have questions please contact your lyndaPro account administrator.
-
+				//TODO: Validate.AreEqual(expectedString, StringfromUI);
+				
 				if(varUserstatus=="Active")
 				{
             	
@@ -166,7 +162,7 @@ namespace Tests.General.Tests.BVT5
 					Report.Log(ReportLevel.Info, repo.DOM.UserRegnPage2.Message_forInactiveUser.GetInnerHtml());
 				}
                
-				Host.Local.CloseApplication(repo.DOM.Self, new Duration(0));
+				Host.Local.CloseApplication(repo.DOM.Self, new Duration(100));
         }
     }
 }

@@ -195,7 +195,7 @@ namespace Tests.General.Tests.BVT5
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "2a264a64-6075-47b4-bb05-ca2c3cefed18");
                 _btnmainlog_inInfo = new RepoItemInfo(this, "btnMainLog_in", "div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log in']", 30000, null, "907f2b61-f6c0-4f4a-a695-fe599a339e7b");
-                _btnmainlog_outInfo = new RepoItemInfo(this, "btnMainLog_out", "div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log out']", 30000, null, "65cd5820-d8c6-4c28-a281-203560d43552");
+                _btnmainlog_outInfo = new RepoItemInfo(this, "btnMainLog_out", "div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log out' and @tagname='strong']", 30000, null, "65cd5820-d8c6-4c28-a281-203560d43552");
                 _txtuserpasswordInfo = new RepoItemInfo(this, "txtUserPassword", "div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[4]/td/input[@id='password']", 30000, null, "17c7a321-b63a-4045-b6fb-af1b0fb06252");
                 _btnmodallog_inInfo = new RepoItemInfo(this, "btnModalLog_in", "div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[6]/td/div[@id='login_btn']/a/span[@innertext='log in']", 30000, null, "84e7a1ea-fede-4604-a293-350718d93993");
                 _inputtagagtxtgroupnameInfo = new RepoItemInfo(this, "InputTagAGtxtGroupName", "div[@id='modalMMUS']/div[@id='modal-container']/div[@id='modal-contents']/form/div[@id='divAG']/table/tbody/tr[2]/td[2]/input[@id='AGtxtGroupName']", 30000, null, "29f45297-17c8-4bf3-a178-b6994d86570c");

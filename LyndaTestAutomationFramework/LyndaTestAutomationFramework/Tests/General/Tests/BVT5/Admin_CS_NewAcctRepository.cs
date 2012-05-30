@@ -42,6 +42,7 @@ namespace Tests.General.Tests.BVT5
         Admin_CS_NewAcctRepositoryFolders.FormLyndaPro_Admin_RegistratAppFolder _formlyndapro_admin_registrat;
         Admin_CS_NewAcctRepositoryFolders.DesktopExplorerAppFolder _desktopexplorer;
         Admin_CS_NewAcctRepositoryFolders.FormCustomer_DetailsAppFolder _formcustomer_details;
+        Admin_CS_NewAcctRepositoryFolders.FormAdd_Security_ExceptionAppFolder _formadd_security_exception;
 
         /// <summary>
         /// Repository class constructor.
@@ -56,6 +57,7 @@ namespace Tests.General.Tests.BVT5
             _formlyndapro_admin_registrat = new Admin_CS_NewAcctRepositoryFolders.FormLyndaPro_Admin_RegistratAppFolder(this);
             _desktopexplorer = new Admin_CS_NewAcctRepositoryFolders.DesktopExplorerAppFolder(this);
             _formcustomer_details = new Admin_CS_NewAcctRepositoryFolders.FormCustomer_DetailsAppFolder(this);
+            _formadd_security_exception = new Admin_CS_NewAcctRepositoryFolders.FormAdd_Security_ExceptionAppFolder(this);
         }
 
 #region Variables
@@ -160,6 +162,15 @@ namespace Tests.General.Tests.BVT5
         {
             get { return _formcustomer_details; }
         }
+
+        /// <summary>
+        /// The FormAdd_Security_Exception folder.
+        /// </summary>
+        [RepositoryFolder("69d75c21-6c93-44fc-ba74-31dc5f7ccf69")]
+        public virtual Admin_CS_NewAcctRepositoryFolders.FormAdd_Security_ExceptionAppFolder FormAdd_Security_Exception
+        {
+            get { return _formadd_security_exception; }
+        }
     }
 
     /// <summary>
@@ -181,6 +192,7 @@ namespace Tests.General.Tests.BVT5
             Admin_CS_NewAcctRepositoryFolders.SomeTableTag1Folder _sometabletag1;
             Admin_CS_NewAcctRepositoryFolders.SomeTableTag2Folder _sometabletag2;
             Admin_CS_NewAcctRepositoryFolders.SomeTBodyTagFolder _sometbodytag;
+            Admin_CS_NewAcctRepositoryFolders.ConnectionUntrustedPageFolder _connectionuntrustedpage;
             RepoItemInfo _selfInfo;
             RepoItemInfo _webdocumentlyndapro_admin_registratInfo;
 
@@ -198,6 +210,7 @@ namespace Tests.General.Tests.BVT5
                 _sometabletag1 = new Admin_CS_NewAcctRepositoryFolders.SomeTableTag1Folder(this);
                 _sometabletag2 = new Admin_CS_NewAcctRepositoryFolders.SomeTableTag2Folder(this);
                 _sometbodytag = new Admin_CS_NewAcctRepositoryFolders.SomeTBodyTagFolder(this);
+                _connectionuntrustedpage = new Admin_CS_NewAcctRepositoryFolders.ConnectionUntrustedPageFolder(this);
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "454fb43e-b24c-40e0-9ed9-e294e212ba61");
                 _webdocumentlyndapro_admin_registratInfo = new RepoItemInfo(this, "WebDocumentLyndaPro_Admin_Registrat", "", 30000, null, "f727a542-5bf5-46ca-83d9-8bdb6d8bd4d1");
             }
@@ -320,6 +333,15 @@ namespace Tests.General.Tests.BVT5
             public virtual Admin_CS_NewAcctRepositoryFolders.SomeTBodyTagFolder SomeTBodyTag
             {
                 get { return _sometbodytag; }
+            }
+
+            /// <summary>
+            /// The ConnectionUntrustedPage folder.
+            /// </summary>
+            [RepositoryFolder("de5bd35a-49af-4756-bc63-5b0eae2467b4")]
+            public virtual Admin_CS_NewAcctRepositoryFolders.ConnectionUntrustedPageFolder ConnectionUntrustedPage
+            {
+                get { return _connectionuntrustedpage; }
             }
         }
 
@@ -524,7 +546,7 @@ namespace Tests.General.Tests.BVT5
                     base("SomeBodyTag", "body", parentFolder, 30000, false, "006c0342-bdbe-47d6-bbc0-74c55a7becb4")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "006c0342-bdbe-47d6-bbc0-74c55a7becb4");
-                _lnknewaccountInfo = new RepoItemInfo(this, "lnkNewAccount", "form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[3]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu101']", 30000, null, "209566bb-9db6-451b-9720-c685778aeb84");
+                _lnknewaccountInfo = new RepoItemInfo(this, "lnkNewAccount", "form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[3]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu101']", 3000, null, "209566bb-9db6-451b-9720-c685778aeb84");
                 _lnkcsInfo = new RepoItemInfo(this, "lnkCS", "form/div[4]/div[1]/table/tbody/tr/td[1]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu1']", 30000, null, "72dcb991-be8a-460f-ada4-b6572a02a021");
                 _somedivtagInfo = new RepoItemInfo(this, "SomeDivTag", "form/div[5]/div/div", 30000, null, "e305d478-8de1-442d-a0e7-f53a7e96772e");
                 _btncontinueInfo = new RepoItemInfo(this, "btnContinue", "form/div[5]/div/div/div/p/input[@id='ctl00_cphMain_btnContinue']", 30000, null, "9aa2c8e3-34a0-441a-97df-5746b8fdf912");
@@ -3026,6 +3048,178 @@ namespace Tests.General.Tests.BVT5
         }
 
         /// <summary>
+        /// The ConnectionUntrustedPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("de5bd35a-49af-4756-bc63-5b0eae2467b4")]
+        public partial class ConnectionUntrustedPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _divtagexpertcontentInfo;
+            RepoItemInfo _divtagtechnicalcontentInfo;
+            RepoItemInfo _buttontaggetmeoutofherebuttonInfo;
+            RepoItemInfo _ptagtechnicalcontenttextInfo;
+            RepoItemInfo _buttontagexceptiondialogbuttonInfo;
+
+            /// <summary>
+            /// Creates a new ConnectionUntrustedPage  folder.
+            /// </summary>
+            public ConnectionUntrustedPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("ConnectionUntrustedPage", "body/div/div[@id='errorLongContent']", parentFolder, 30000, false, "de5bd35a-49af-4756-bc63-5b0eae2467b4")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "de5bd35a-49af-4756-bc63-5b0eae2467b4");
+                _divtagexpertcontentInfo = new RepoItemInfo(this, "DivTagExpertContent", "div[@id='expertContent']", 30000, null, "5a36cc73-4eed-4a54-b75e-89f3ac7e7277");
+                _divtagtechnicalcontentInfo = new RepoItemInfo(this, "DivTagTechnicalContent", "div[@id='technicalContent']", 30000, null, "db957ea6-86f8-44bb-a9b7-d0419c60f661");
+                _buttontaggetmeoutofherebuttonInfo = new RepoItemInfo(this, "ButtonTagGetMeOutOfHereButton", "div[@id='whatShouldIDoContent']/div/button[@id='getMeOutOfHereButton']", 30000, null, "fa4f09d4-ad08-46fe-bda4-680c42f069f0");
+                _ptagtechnicalcontenttextInfo = new RepoItemInfo(this, "PTagTechnicalContentText", "div[@id='technicalContent']/p[@id='technicalContentText']", 30000, null, "5f3bd23b-f77b-468d-8187-ab9b7966f82d");
+                _buttontagexceptiondialogbuttonInfo = new RepoItemInfo(this, "ButtonTagExceptionDialogButton", "div[@id='expertContent']/div/button[@id='exceptionDialogButton']", 30000, null, "76968d34-1214-4fd8-9c66-afd7af0f82b8");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("de5bd35a-49af-4756-bc63-5b0eae2467b4")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("de5bd35a-49af-4756-bc63-5b0eae2467b4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DivTagExpertContent item.
+            /// </summary>
+            [RepositoryItem("5a36cc73-4eed-4a54-b75e-89f3ac7e7277")]
+            public virtual Ranorex.DivTag DivTagExpertContent
+            {
+                get
+                {
+                    return _divtagexpertcontentInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DivTagExpertContent item info.
+            /// </summary>
+            [RepositoryItemInfo("5a36cc73-4eed-4a54-b75e-89f3ac7e7277")]
+            public virtual RepoItemInfo DivTagExpertContentInfo
+            {
+                get
+                {
+                    return _divtagexpertcontentInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DivTagTechnicalContent item.
+            /// </summary>
+            [RepositoryItem("db957ea6-86f8-44bb-a9b7-d0419c60f661")]
+            public virtual Ranorex.DivTag DivTagTechnicalContent
+            {
+                get
+                {
+                    return _divtagtechnicalcontentInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DivTagTechnicalContent item info.
+            /// </summary>
+            [RepositoryItemInfo("db957ea6-86f8-44bb-a9b7-d0419c60f661")]
+            public virtual RepoItemInfo DivTagTechnicalContentInfo
+            {
+                get
+                {
+                    return _divtagtechnicalcontentInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagGetMeOutOfHereButton item.
+            /// </summary>
+            [RepositoryItem("fa4f09d4-ad08-46fe-bda4-680c42f069f0")]
+            public virtual Ranorex.ButtonTag ButtonTagGetMeOutOfHereButton
+            {
+                get
+                {
+                    return _buttontaggetmeoutofherebuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagGetMeOutOfHereButton item info.
+            /// </summary>
+            [RepositoryItemInfo("fa4f09d4-ad08-46fe-bda4-680c42f069f0")]
+            public virtual RepoItemInfo ButtonTagGetMeOutOfHereButtonInfo
+            {
+                get
+                {
+                    return _buttontaggetmeoutofherebuttonInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PTagTechnicalContentText item.
+            /// </summary>
+            [RepositoryItem("5f3bd23b-f77b-468d-8187-ab9b7966f82d")]
+            public virtual Ranorex.PTag PTagTechnicalContentText
+            {
+                get
+                {
+                    return _ptagtechnicalcontenttextInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PTagTechnicalContentText item info.
+            /// </summary>
+            [RepositoryItemInfo("5f3bd23b-f77b-468d-8187-ab9b7966f82d")]
+            public virtual RepoItemInfo PTagTechnicalContentTextInfo
+            {
+                get
+                {
+                    return _ptagtechnicalcontenttextInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagExceptionDialogButton item.
+            /// </summary>
+            [RepositoryItem("76968d34-1214-4fd8-9c66-afd7af0f82b8")]
+            public virtual Ranorex.ButtonTag ButtonTagExceptionDialogButton
+            {
+                get
+                {
+                    return _buttontagexceptiondialogbuttonInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTagExceptionDialogButton item info.
+            /// </summary>
+            [RepositoryItemInfo("76968d34-1214-4fd8-9c66-afd7af0f82b8")]
+            public virtual RepoItemInfo ButtonTagExceptionDialogButtonInfo
+            {
+                get
+                {
+                    return _buttontagexceptiondialogbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The ContainerDropdownAppFolder folder.
         /// </summary>
         [RepositoryFolder("4ae02920-fc21-43e9-a726-f273938099e9")]
@@ -3586,6 +3780,126 @@ namespace Tests.General.Tests.BVT5
                 get
                 {
                     return _formcustomer_detailsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormAdd_Security_ExceptionAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("69d75c21-6c93-44fc-ba74-31dc5f7ccf69")]
+        public partial class FormAdd_Security_ExceptionAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _textlocation_Info;
+            RepoItemInfo _buttonget_certificateInfo;
+            RepoItemInfo _buttonconfirm_security_exceptiInfo;
+
+            /// <summary>
+            /// Creates a new FormAdd_Security_Exception  folder.
+            /// </summary>
+            public FormAdd_Security_ExceptionAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormAdd_Security_Exception", "/form[@title='Add Security Exception']", parentFolder, 30000, true, "69d75c21-6c93-44fc-ba74-31dc5f7ccf69")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "69d75c21-6c93-44fc-ba74-31dc5f7ccf69");
+                _textlocation_Info = new RepoItemInfo(this, "TextLocation_", "container[@accessiblename='Server']/text[@accessiblename='Location:' and @accessiblerole='Text']", 30000, null, "e5bece51-a09c-4be8-aba6-d68b6144db74");
+                _buttonget_certificateInfo = new RepoItemInfo(this, "ButtonGet_Certificate", "container[@accessiblename='Server']/button[@accessiblename='Get Certificate']", 30000, null, "2a2c3d84-5dfb-45ef-8467-b776218b859d");
+                _buttonconfirm_security_exceptiInfo = new RepoItemInfo(this, "ButtonConfirm_Security_Excepti", "button[@accessiblename~'^Confirm\\ Security\\ Exceptio']", 30000, null, "ca192554-cb4b-4b82-bf9e-728cde25d14c");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("69d75c21-6c93-44fc-ba74-31dc5f7ccf69")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("69d75c21-6c93-44fc-ba74-31dc5f7ccf69")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextLocation_ item.
+            /// </summary>
+            [RepositoryItem("e5bece51-a09c-4be8-aba6-d68b6144db74")]
+            public virtual Ranorex.Text TextLocation_
+            {
+                get
+                {
+                    return _textlocation_Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextLocation_ item info.
+            /// </summary>
+            [RepositoryItemInfo("e5bece51-a09c-4be8-aba6-d68b6144db74")]
+            public virtual RepoItemInfo TextLocation_Info
+            {
+                get
+                {
+                    return _textlocation_Info;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonGet_Certificate item.
+            /// </summary>
+            [RepositoryItem("2a2c3d84-5dfb-45ef-8467-b776218b859d")]
+            public virtual Ranorex.Button ButtonGet_Certificate
+            {
+                get
+                {
+                    return _buttonget_certificateInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonGet_Certificate item info.
+            /// </summary>
+            [RepositoryItemInfo("2a2c3d84-5dfb-45ef-8467-b776218b859d")]
+            public virtual RepoItemInfo ButtonGet_CertificateInfo
+            {
+                get
+                {
+                    return _buttonget_certificateInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonConfirm_Security_Excepti item.
+            /// </summary>
+            [RepositoryItem("ca192554-cb4b-4b82-bf9e-728cde25d14c")]
+            public virtual Ranorex.Button ButtonConfirm_Security_Excepti
+            {
+                get
+                {
+                    return _buttonconfirm_security_exceptiInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonConfirm_Security_Excepti item info.
+            /// </summary>
+            [RepositoryItemInfo("ca192554-cb4b-4b82-bf9e-728cde25d14c")]
+            public virtual RepoItemInfo ButtonConfirm_Security_ExceptiInfo
+            {
+                get
+                {
+                    return _buttonconfirm_security_exceptiInfo;
                 }
             }
         }

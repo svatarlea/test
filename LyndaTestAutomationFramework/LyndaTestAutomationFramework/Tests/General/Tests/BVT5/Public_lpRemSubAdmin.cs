@@ -65,13 +65,13 @@ namespace Tests.General.Tests.BVT5
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             //TODO: Update rxrep to support all Browsers
-            if(AppSettings.Browser.ToString() != "IE")
+            if(AppSettings.Browser != BrowserProduct.IE)
             {
-            	Report.Error("Note: Currently only IE Supported; Please change the appsettings Key Browser value to IE and retry.");
+            	Report.Error("Note: Currently only IE Supported; Please change the appsettings Key - Browser value to IE and retry.");
             	throw new Ranorex.RanorexException();
             }
-            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
-            string url = string.Format("{0}{1}","http://", AppSettings.Domain.ToString());
+            BrowserProduct browserProduct = AppSettings.Browser;
+            string url = string.Format("{0}{1}","http://", AppSettings.Domain);
             browser = new Browser(browserProduct, url);
             
             repo.DOM.Top_Right_Menus.StrongTagLog_in.Click();
@@ -91,8 +91,18 @@ namespace Tests.General.Tests.BVT5
             Validate.Exists(repo.FormMessage_from_webpage.ButtonOKInfo);
             repo.FormMessage_from_webpage.ButtonOK.Click();
             
-            Validate.NotExists(repo.DOM.Body.tdGroupsManaged_ManageSubAdminPageInfo );
-            repo.DOM.Body.btnContinue_MangeSubadminPage.Click();
+            try
+            {
+               if (Validate.NotExists(repo.DOM.Body.tdGroupsManaged_ManageSubAdminPageInfo.AbsolutePath, repo.DOM.Body.tdGroupsManaged_ManageSubAdminPageInfo.SearchTimeout,"{0}",new Validate.Options(true,ReportLevel.Error)))
+               {
+            		repo.DOM.Body.btnContinue_MangeSubadminPage.Click();
+               }
+            }
+            catch(ValidationException ve)
+            {
+            	Report.Log(ReportLevel.Warn,"ValidationException - " + ve.ToString());
+            }
+            
             Validate.Exists(repo.DOM.GroupsAndUsers_Grid.txtROFirstGroupNameInfo);
 		    Validate.Exists(repo.DOM.GroupsAndUsers_Grid.imgClick_to_show_hide_Users_1Info);
 		        repo.DOM.GroupsAndUsers_Grid.imgClick_to_show_hide_Users_1.MoveTo();
@@ -102,7 +112,7 @@ namespace Tests.General.Tests.BVT5
            repo.DOM.Top_Right_Menus.StrongTagLog_out_admin.MoveTo();
 		   repo.DOM.Top_Right_Menus.StrongTagLog_out_admin.Click();
 		   Validate.Exists(repo.DOM.Top_Right_Menus.StrongTagLog_inInfo);
-		   Host.Local.CloseApplication(repo.DOM.Self, new Duration(0));
+		   Host.Local.CloseApplication(repo.DOM.Self, new Duration(100));
             
             
         }

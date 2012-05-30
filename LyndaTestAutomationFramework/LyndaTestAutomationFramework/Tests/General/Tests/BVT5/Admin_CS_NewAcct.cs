@@ -106,19 +106,19 @@ namespace Tests.General.Tests.BVT5
             Keyboard.DefaultKeyPressTime = 50;
             Delay.SpeedFactor = 1.0;
              
-            string strResultsFile = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName + @"\General\Tests\BVT5\TestData\Public_AcctAccessData.xlsx";
+            string strResultsFile = Directory.GetCurrentDirectory() + @"\Public_AcctAccessData.xlsx";
             const string navigateTo = "/Welcome.aspx";
             string username = "knvirtualuser7";
             string password = "lynda1";
             //TODO: Update rxrep to support all Browsers
-            if(AppSettings.Browser.ToString() != "Firefox")
+            if(AppSettings.Browser != BrowserProduct.Firefox)
             {
-            	Report.Error("Note: Currently only Firefox Supported; Please change the appsettings Key Browser value to Firefox and retry.");
+            	Report.Error("Note: Currently only Firefox Supported; Please change the appsettings Key - Browser value to Firefox and retry.");
             	throw new Ranorex.RanorexException();
             }
             
-            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
-            string url = string.Format("{0}{1}{2}","https://admin.", AppSettings.Domain.ToString(),navigateTo);
+            BrowserProduct browserProduct = AppSettings.Browser;
+            string url = string.Format("{0}{1}{2}","https://admin.", AppSettings.Domain,navigateTo);
                         
             int intIndex = TestCase.Current.DataContext.CurrentRowIndex;
             varSalesRep1 = TestCase.Current.DataContext.CurrentRow["Rep1"];
@@ -132,14 +132,23 @@ namespace Tests.General.Tests.BVT5
             	//Open browser and navigate to url
             	browser = new Browser(browserProduct, url);
             	//Wait for page to load
-            	Validate.Exists(repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLogin);
-            	
+            	try
+            	{
+            		if (Validate.Exists(repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLoginInfo.AbsolutePath, repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLoginInfo.SearchTimeout,"{0}",new Validate.Options(true,ReportLevel.Error)))
+            		{
+            			repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLogin.Click();
+            		}
+            	}
+            	catch(ValidationException ve)
+            	{
+            		Report.Log(ReportLevel.Warn,"ValidationException - " + ve.ToString());
+            		HandleUntrustedConnection("https://admin."+AppSettings.Domain+navigateTo);
+            	}
             	repo.DOM.DivTagCtl00_UcHeaderAdminLogin.txtAdminUserName.PressKeys(username);
             	repo.DOM.DivTagCtl00_UcHeaderAdminLogin.txtAdminPasswd.PressKeys(password);
             	repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLogin.Click();
             }
             
-            Delay.Milliseconds(100);
             Validate.Exists(repo.DOM.SomeBodyTag.lnkCS);	
             
             repo.DOM.SomeBodyTag.lnkCS.Click();
@@ -162,27 +171,27 @@ namespace Tests.General.Tests.BVT5
             switch(varPersona)
             {
             	case "lyndaPro admin":
-            		Delay.Milliseconds(100);
+            		Validate.Exists(repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_lProadminInfo);
             		repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_lProadmin.Click();
             		break;
             	case "Educator":
-            		Delay.Milliseconds(100);
+            		Validate.Exists(repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_EducatorInfo);
             		repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_Educator.Click();
             		break;
             	case "Consumer":
-            		Delay.Milliseconds(100);
+            		Validate.Exists(repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_ConsumerInfo);
             		repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_Consumer.Click();
             		break;
             	case "lyndaKiosk admin":
-            		Delay.Milliseconds(100);
+            		Validate.Exists(repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_lKisokadminInfo);
             		repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_lKisokadmin.Click();
             		break;
             	case "lyndaEnterprise admin":
-            		Delay.Milliseconds(100);
+            		Validate.Exists(repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_lEnterpriseadminInfo);
             		repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_lEnterpriseadmin.Click();
             		break;
             	case "lyndaCampus admin":
-            		Delay.Milliseconds(100);
+            		Validate.Exists(repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_lCampusadminInfo);
             		repo.DOM.TableTagCtl00_cphMain_rblPersona.rbPersona_lCampusadmin.Click();
             		break;
             	
@@ -192,20 +201,16 @@ namespace Tests.General.Tests.BVT5
             		
             }
             
-                       
-            switch(varAccountType)
-            {
-            	case "Regular":
-            		repo.DOM.SomeBodyTag.rbAccountType_Regular.Click();
-            		break;
-            	case "Complimentary":
-            		repo.DOM.SomeBodyTag.rbAccountType_Compl.Click();
-            		break;
-            	default:
-            	    //Report.Log(ReportLevel.Error, "AccountType could not be determined." );
-            		break;
-            }
+            Report.Log(ReportLevel.Info,"Validate if Accountype Default is selected as Regular");
+            Validate.Attribute(repo.DOM.SomeBodyTag.rbAccountType_RegularInfo,"checked", "True");
             
+            
+            //TODO : handle different AccountTypes 
+            if (varAccountType == "Complimentary")
+               repo.DOM.SomeBodyTag.rbAccountType_Compl.Click();
+            
+            
+            repo.DOM.SomeBodyTag.btnContinue.MoveTo();
             repo.DOM.SomeBodyTag.btnContinue.Focus();
             repo.DOM.SomeBodyTag.btnContinue.Click();
             
@@ -219,72 +224,57 @@ namespace Tests.General.Tests.BVT5
             			Validate.Exists(repo.DOM.SomeBodyTag.txtNoOfLicenses);
             			repo.DOM.SomeBodyTag.txtNoOfLicenses.PressKeys("12");
             		
-            			//TODO : Promotional Code - 
+            			//TODO : Promotional Code 
             		
             			repo.DOM.SomeBodyTag.btnCalculate.Click();
-            			Delay.Milliseconds(100);
             			//TODO :Validate Amount Per license and total Amount
             		
             			repo.DOM.SomeBodyTag.btn_Step2of4_Continue.Click();
-            			Delay.Milliseconds(100);
-            		
+            			
             			EnterBillingInformation();
             		            		
             			EnterSalesInformation();
             		
             			repo.DOM.SomeBodyTag.btn_Step3of4_Continue.Click();
-            			Delay.Milliseconds(1000);
-            		
-            			Validate.Exists(repo.DOM.SomeBodyTag.btn_Purchase);
+            			Validate.Exists(repo.DOM.SomeBodyTag.btn_PurchaseInfo);
             			repo.DOM.SomeBodyTag.btn_Purchase.Click();
-            			Delay.Milliseconds(1000);
             			Validate.Exists(repo.DOM.SomeBodyTag.btn_Continue_toCustomerDetails);
             			repo.DOM.SomeBodyTag.btn_Continue_toCustomerDetails.Click();
-            			Delay.Milliseconds(1000);
-            		
-            		break;
+            			
+            			break;
             		case "Educator":
             			//TODO : Create Educator account
-            		break;
+            			break;
             		case "Consumer":
             			//TODO : Create Consumer account
-            		break;
+            			break;
             		
             		case "lyndaKiosk admin":
             		
             			EnterAccountInformation();
             		
-            			Delay.Milliseconds(100);
             			Validate.Exists(repo.DOM.DivTagTable_format.lk_NoOfConcurrentLicenses);
             			repo.DOM.DivTagTable_format.lk_NoOfConcurrentLicenses.PressKeys("12");
             		    repo.DOM.DivTagTable_format.lk_Price.PressKeys("1200");
             		    //TODO :Validate Amount
             			repo.DOM.DivTagTable_format.lk_btn_Step2of4Continue.Click();
-            			Delay.Milliseconds(100);           		
-            		 
+            			
             			EnterBillingInformation();
             		
             			EnterSalesInformation();
             			
             			repo.DOM.SomeBodyTag.btn_Step3of4_Continue.Click();
-            			Delay.Milliseconds(1000);
-            		    Validate.Exists(repo.DOM.SomeBodyTag.btn_Purchase);
+            			Validate.Exists(repo.DOM.SomeBodyTag.btn_Purchase);
             			repo.DOM.SomeBodyTag.btn_Purchase.Click();
-            			Delay.Milliseconds(1000);
             			repo.DOM.DivTagTable_format.lk_btnContinue_EnterIPAddrs.Click();
-            			Delay.Milliseconds(100);
             			Validate.Exists(repo.DOM.DivTagTable_format.lk_btnContinue_IPAddrsPg);
             			
             			string strIPAddress1, strIPAddress2;
             			FormDataIPAddress.GenerateIPAddress(out strIPAddress1, out strIPAddress2);
             			repo.DOM.SomeTBodyTag.lk_txtFromIPAddress1.PressKeys(strIPAddress1);
-            			
-            			//repo.WebDocumentWelcome.SomeTBodyTag.lk_txtToIPAddress1.PressKeys(strIPAddress2);
             			repo.DOM.DivTagTable_format.lk_btnContinue_IPAddrsPg.Click();
-            			Delay.Milliseconds(1000);
-            			            		
-            		
-            		break;
+            				            			
+            			break;
             		case "lyndaEnterprise admin":
             		
             			EnterAccountInformation_lc();
@@ -295,9 +285,9 @@ namespace Tests.General.Tests.BVT5
             			//TODO : Promotional Code
             		
             			repo.DOM.DivTagTable_format.lc_btnCalculate.Click();
-            			Delay.Milliseconds(100);
+            			
             			//TODO : Validate Amount
-            		
+            			Validate.Exists(repo.DOM.DivTagTable_format.lc_btn_Step2of4_ContinueInfo);
             			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.Click();;
             		
             			EnterBillingInformation_lc();
@@ -305,19 +295,15 @@ namespace Tests.General.Tests.BVT5
             			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.DivTagTable_format.lc_cmbSalesRep1, varSalesRep1);
             		    SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.DivTagTable_format.lc_cmbOperationType, varSalesOperationType);
             		 
-            		
-            			Delay.Milliseconds(1000);
+            		    Validate.Exists(repo.DOM.DivTagTable_format.lc_btnPurchaseInfo);
             			repo.DOM.DivTagTable_format.lc_btnPurchase.Click();
-            			Delay.Milliseconds(1000);
+            			Validate.Exists(repo.DOM.DivTagTable_format.lc_btnPurchaseInfo);
             			repo.DOM.DivTagTable_format.lc_btnPurchase.Click();
-            			Delay.Milliseconds(1000);
+            			
             			Validate.Exists(repo.DOM.DivTagTable_format.lc_btnCustomerDetails);
             			repo.DOM.DivTagTable_format.lc_btnCustomerDetails.Click();
-            			Delay.Milliseconds(1000);
             			
-            		
-            		
-            		break;
+            			break;
             		case "lyndaCampus admin":
             		
             			EnterAccountInformation_lc();
@@ -328,9 +314,9 @@ namespace Tests.General.Tests.BVT5
             			//TODO : Promotional Code
             		
             			repo.DOM.DivTagTable_format.lc_btnCalculate.Click();
-            			Delay.Milliseconds(100);
+            			
             			//TODO : Validate Amount
-            		
+            			Validate.Exists(repo.DOM.DivTagTable_format.lc_btn_Step2of4_ContinueInfo);
             			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.Click();
             		
             			EnterBillingInformation_lc();
@@ -338,24 +324,15 @@ namespace Tests.General.Tests.BVT5
             			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.DivTagTable_format.lc_cmbSalesRep1, varSalesRep1);
             			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.DivTagTable_format.lc_cmbOperationType, varSalesOperationType);
             		  
-            		
-            			//repo.WebDocumentWelcome.DivTagTable_format.lc_btn_Step3of4_Continue.Click();
             			repo.DOM.DivTagTable_format.lc_btnPurchase.Click();
-            			Delay.Milliseconds(1000);
-            		
             			Validate.Exists(repo.DOM.DivTagTable_format.lc_btnPurchase);
             			repo.DOM.DivTagTable_format.lc_btnPurchase.Click();
-            			Delay.Milliseconds(1000);
             			Validate.Exists(repo.DOM.DivTagTable_format.lc_btnCustomerDetails);
             			repo.DOM.DivTagTable_format.lc_btnCustomerDetails.Click();
-            			Delay.Milliseconds(1000); 
-            		
-            		
-            		
-            		break;
+            			
+            			break;
             		default:
-            		
-            		break;
+            		    break;
             		
             }
         	
@@ -366,17 +343,12 @@ namespace Tests.General.Tests.BVT5
         	
         	ExcelData.Write(strResultsFile , intIndex+1, 2, varPersona, varUsername);
             
-        	//TODO : Logout and close when all iterations are completed.
+        	//TODO : Logout and close only when all iterations are completed.
         	repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLogout.Click();
             Host.Local.CloseApplication(repo.FormCustomer_Details.Self, new Duration(0));
         	
-        	
-       
         }
         
-           
-     
-       
         
         void EnterAccountInformation()
         {
@@ -406,9 +378,6 @@ namespace Tests.General.Tests.BVT5
             		            		
             		repo.DOM.SomeBodyTag.btn_Step1of4_Continue.Click();
             		
-            		 
-            		            		
-            		
         }
         
         void EnterBillingInformation()
@@ -419,31 +388,29 @@ namespace Tests.General.Tests.BVT5
         	 		Validate.Exists(repo.DOM.SomeBodyTag.txtAddress);
             		repo.DOM.SomeBodyTag.txtAddress.PressKeys(straddress);
             		repo.DOM.SomeBodyTag.txtCity.PressKeys(strcity);
-            		            		
-            		//SelectByOptionName(repo.WebDocumentWelcome.SomeBodyTag.cmbBillingState, varBillingState);
+            		
             		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.SomeBodyTag.cmbBillingState,strstate);	
             		repo.DOM.SomeBodyTag.txtZip.PressKeys(strzip);
             		
             		string strpaymentType, strcardType, strcardNumber, strnameOnCard, strcardSecurityCode,  strexpireMonth, strexpireYear;
             		FormDataPayment.GenerateCreditCard(out strpaymentType, out strcardType, out strcardNumber, out strnameOnCard, out strcardSecurityCode, out strexpireMonth, out strexpireYear);
-            		//SelectByOptionName(repo.WebDocumentWelcome.SomeBodyTag.cmbCreditCardType, strcardType);
             		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.SomeBodyTag.cmbCreditCardType, strcardType);
             		repo.DOM.SomeBodyTag.txtCreditCardNumber.PressKeys(strcardNumber);
             		repo.DOM.SomeBodyTag.txtCreditCardName.PressKeys(strnameOnCard);
             		repo.DOM.SomeBodyTag.txtCreditCardSecurityCode.PressKeys(strcardSecurityCode);
             		            		
-            		//SelectByOptionName(repo.WebDocumentWelcome.SomeBodyTag.cmbExpirationDateMonth, strexpireMonth);
             		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.SomeBodyTag.cmbExpirationDateMonth,strexpireMonth);
-            		Delay.Milliseconds(100);
-            		            		
-            		//SelectByOptionName(repo.WebDocumentWelcome.SomeBodyTag.cmbExpirationDateYear, strexpireYear);
+            		
+            		Validate.Exists(repo.DOM.SomeBodyTag.cmbExpirationDateYearInfo);
             		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.SomeBodyTag.cmbExpirationDateYear, strexpireYear);
-            		Delay.Milliseconds(1000);
+            		
         }
         
         void EnterSalesInformation()
         {
-					SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.SomeBodyTag.cmbSalesRep1,varSalesRep1);
+        			Validate.Exists(repo.DOM.SomeBodyTag.cmbSalesRep1Info);
+        			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.SomeBodyTag.cmbSalesRep1,varSalesRep1);
+        			Validate.Exists(repo.DOM.SomeBodyTag.cmbSalesOperationTypeInfo);
             		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.SomeBodyTag.cmbSalesOperationType, varSalesOperationType);
             		   
         }
@@ -493,28 +460,49 @@ namespace Tests.General.Tests.BVT5
             		
             		string strpaymentType, strcardType, strcardNumber, strnameOnCard, strcardSecurityCode,  strexpireMonth, strexpireYear;
             		FormDataPayment.GenerateCreditCard(out strpaymentType, out strcardType, out strcardNumber, out strnameOnCard, out strcardSecurityCode, out strexpireMonth, out strexpireYear);
-            		//SelectByOptionName(repo.WebDocumentWelcome.DivTagTable_format.lc_cmbPaymentType, "CreditCard")
-            		//SelectByOptionName(repo.WebDocumentWelcome.SomeTableTag2.lc_cmbCreditCardType, varCreditCardType);
+            		
             		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.SomeTableTag2.lc_cmbCreditCardType, strcardType);
             		
             		repo.DOM.SomeTableTag2.lc_txtCreditCardNumber.PressKeys(strcardNumber);
             		repo.DOM.SomeTableTag2.lc_txtCreditCardName.PressKeys(strnameOnCard);
             		repo.DOM.SomeTableTag2.lc_txtCreditCardSecurity.PressKeys(strcardSecurityCode);
             		
-            		
-            		//SelectByOptionName(repo.WebDocumentWelcome.SomeTableTag2.lc_cmbExpirationDateMonth, varExpirationDateMonth);
             		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.SomeTableTag2.lc_cmbExpirationDateMonth, strexpireMonth);
-            		Delay.Milliseconds(100);
             		
-            		
-            		//SelectByOptionName(repo.WebDocumentWelcome.SomeTableTag2.lc_cmbExpirationYear, varExpirationDateYear);
+            		Validate.Exists(repo.DOM.SomeTableTag2.lc_cmbExpirationYearInfo);
             		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.SomeTableTag2.lc_cmbExpirationYear, strexpireYear);
-            		Delay.Milliseconds(1000);
+            		
             		
         }
+         
+        void HandleUntrustedConnection(string url)
+        {
+        	Validate.Exists(repo.DOM.ConnectionUntrustedPage.ButtonTagGetMeOutOfHereButtonInfo);
+        	repo.DOM.ConnectionUntrustedPage.DivTagTechnicalContent.Click();
+        	Validate.Exists(repo.DOM.ConnectionUntrustedPage.PTagTechnicalContentTextInfo);
+        	Regex errorMsg = new Regex("^.*(Error code: ssl_error_bad_cert_domain)*^");
+        	try
+        	{
+        		Validate.AreEqual(repo.DOM.ConnectionUntrustedPage.PTagTechnicalContentText.InnerText, errorMsg);
+        		repo.DOM.ConnectionUntrustedPage.DivTagExpertContent.Click();
+        		Validate.Exists(repo.DOM.ConnectionUntrustedPage.ButtonTagExceptionDialogButtonInfo);
+        		repo.DOM.ConnectionUntrustedPage.ButtonTagExceptionDialogButton.Click();
+        		
+        		Validate.Exists(repo.FormAdd_Security_Exception.TextLocation_Info);
+        		if(repo.FormAdd_Security_Exception.TextLocation_.TextValue != url)
+        			repo.FormAdd_Security_Exception.TextLocation_.PressKeys(url);
+        		
+        		repo.FormAdd_Security_Exception.ButtonConfirm_Security_Excepti.Click();
+        		Validate.Exists(repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLoginInfo);	                                                        
+        		
+        	}
+        	catch(ValidationException ve)
+        	{
+        		Report.Log(ReportLevel.Error, "Unknown Error - Could not login : " + ve.ToString());
+        		throw new Ranorex.RanorexException();	
+        	}
         
-        
-            
+        }
             
         
     }

@@ -43,14 +43,7 @@ namespace Tests.General.Tests.BVT5
         	get { return _varUsername; }
         	set { _varUsername = value; }
         }
-        
-        
-        
-        
-        
-        
-        
-        
+
         
         /// <summary>
         /// Constructs a new instance.
@@ -72,18 +65,26 @@ namespace Tests.General.Tests.BVT5
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             //TODO: Update rxrep to support all Browsers
-            if(AppSettings.Browser.ToString() != "IE")
+            if(AppSettings.Browser != BrowserProduct.IE)
             {
-            	Report.Error("Note: Currently only IE Supported; Please change the appsettings Key Browser value to IE and retry.");
+            	Report.Error("Note: Currently only IE Supported; Please change the appsettings - Key Browser value to IE and retry.");
             	throw new Ranorex.RanorexException();
             }
-            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
-            string url = string.Format("{0}{1}","http://", AppSettings.Domain.ToString());
+            BrowserProduct browserProduct = AppSettings.Browser;
+            string url = string.Format("{0}{1}","http://", AppSettings.Domain);
             browser = new Browser(browserProduct, url);
             
-            string strDataFile = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName + @"\General\Tests\BVT5\TestData\Public_lpAcctData.xlsx";
-            //object[,] testdata = ExcelData.Read(strDataFile,"B2","E5");
-            
+            string strDataFile = Directory.GetCurrentDirectory() + @"\Public_lpAcctData.xlsx";
+            object[,] testdata = null;
+            try
+            {
+               	testdata = ExcelData.Read(strDataFile,"B2","E5");
+               		       
+            }
+            catch(Exception e)
+            {
+            	Report.Log(ReportLevel.Error, e.ToString());
+           	}
             repo.DOM.Top_Right_Menus.StrongTagLog_in.Click();
             
             Validate.Exists(repo.DOM.Login_form.txtUsernameInfo);
@@ -109,35 +110,35 @@ namespace Tests.General.Tests.BVT5
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser1_Lname.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser1_Email.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser1_RegStatus.TagValue.ToString());
-		        //Report.Log(ReportLevel.Info, testdata[0,2].ToString());
+		        Report.Log(ReportLevel.Info, testdata[1,3].ToString());
 		        Report.Log(ReportLevel.Info,SelectTagUI.GetSelectTagCurrentText(repo.DOM.GroupsAndUsers_Grid.selUser1_Status));
 		        
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser2_Fname.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser2_Lname.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser2_Email.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser2_RegStatus.TagValue.ToString());
-		        //Report.Log(ReportLevel.Info, testdata[1,2].ToString());
+		        Report.Log(ReportLevel.Info, testdata[2,3].ToString());
 		        Report.Log(ReportLevel.Info,SelectTagUI.GetSelectTagCurrentText(repo.DOM.GroupsAndUsers_Grid.selUser2_Status));
 		        
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser3_Fname.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser3_Lname.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser3_Email.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser3_RegStatus.TagValue.ToString());
-		        //Report.Log(ReportLevel.Info, testdata[2,2].ToString());
+		        Report.Log(ReportLevel.Info, testdata[3,3].ToString());
 		        Report.Log(ReportLevel.Info,SelectTagUI.GetSelectTagCurrentText(repo.DOM.GroupsAndUsers_Grid.selUser3_Status));
 		        
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser4_Fname.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser4_Lname.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser4_Email.TagValue.ToString());
 		        Report.Log(ReportLevel.Info,repo.DOM.GroupsAndUsers_Grid.txtUser4_RegStatus.TagValue.ToString());
-		        //Report.Log(ReportLevel.Info, testdata[3,2].ToString());
+		        Report.Log(ReportLevel.Info, testdata[4,3].ToString());
 		        Report.Log(ReportLevel.Info,SelectTagUI.GetSelectTagCurrentText(repo.DOM.GroupsAndUsers_Grid.selUser4_Status));
 		                   
 		        Report.Log(ReportLevel.Info,SelectTagUI.GetSelectTagCurrentText(repo.DOM.GroupsAndUsers_Grid.selSecondGroupStatus));
 		     
 		     repo.DOM.Top_Right_Menus.StrongTagLog_out_admin.Click();
-		     
-		     Host.Local.CloseApplication(repo.DOM.Self, new Duration(0));
+		     Validate.Exists(repo.DOM.Top_Right_Menus.StrongTagLog_inInfo);
+		     Host.Local.CloseApplication(repo.DOM.Self, new Duration(100));
             
         }
     }

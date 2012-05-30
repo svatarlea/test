@@ -62,8 +62,8 @@ namespace Tests.General.Tests.BVT5
             Mouse.DefaultMoveTime = 200;
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
-            BrowserProduct browserProduct = (BrowserProduct)Enum.Parse(typeof(BrowserProduct), AppSettings.Browser.ToString());
-            string url = string.Format("{0}{1}","http://", AppSettings.Domain.ToString());
+            BrowserProduct browserProduct = AppSettings.Browser;
+            string url = string.Format("{0}{1}","http://", AppSettings.Domain);
             browser = new Browser(browserProduct, url);
             
             
@@ -71,9 +71,7 @@ namespace Tests.General.Tests.BVT5
             
             Validate.Exists(repo.DOM.Login_form.txtUsernameInfo);
             
-            repo.DOM.Login_form.txtUsername.PressKeys(varUsername);  
-            
-            
+            repo.DOM.Login_form.txtUsername.PressKeys(varUsername); 
             repo.DOM.Login_form.txtPassword.PressKeys("lynda1");
             repo.DOM.Login_form.btnLogin.Click();
             
@@ -82,7 +80,7 @@ namespace Tests.General.Tests.BVT5
             repo.DOM.Top_Right_Menus.ATagAdministration.MoveTo();
             repo.DOM.Top_Right_Menus.ATagLyndaPro_home.Click();
             
-             Validate.Exists(repo.DOM.GroupsAndUsers_Grid.txtROFirstGroupNameInfo);
+            Validate.Exists(repo.DOM.GroupsAndUsers_Grid.txtROFirstGroupNameInfo);
              
            
              if (repo.DOM.GroupsAndUsers_Grid.chkSelectAllGroups.Checked == "False")
@@ -100,7 +98,7 @@ namespace Tests.General.Tests.BVT5
              
              repo.DOM.Top_Right_Menus.StrongTagLog_out_admin.Click();
              Validate.Exists(repo.DOM.Top_Right_Menus.StrongTagLog_inInfo);
-             Host.Local.CloseApplication(repo.DOM.Self, new Duration(0));
+             Host.Local.CloseApplication(repo.DOM.Self, new Duration(100));
         }
     }
 }
