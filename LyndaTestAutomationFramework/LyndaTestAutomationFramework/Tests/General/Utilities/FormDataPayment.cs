@@ -7,7 +7,7 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 
-namespace General.Utilities.Forms
+namespace Tests.General.Utilities.Forms
 {
     public static class FormDataPayment
     {

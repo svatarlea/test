@@ -153,16 +153,18 @@ namespace Browsers.ChromeBrowser
             RepoItemInfo _selfInfo;
             RepoItemInfo _navigateeditboxInfo;
             RepoItemInfo _titlebarInfo;
+            RepoItemInfo _titlebartabpagelistInfo;
 
             /// <summary>
             /// Creates a new Form  folder.
             /// </summary>
             public FormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Form", "/form[@class='Chrome_WidgetWin_0']", parentFolder, 30000, true, "170f8a50-6744-42ec-a564-43e5d976d113")
+                    base("Form", "/form[@class='Chrome_WidgetWin_1']", parentFolder, 30000, true, "170f8a50-6744-42ec-a564-43e5d976d113")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "170f8a50-6744-42ec-a564-43e5d976d113");
                 _navigateeditboxInfo = new RepoItemInfo(this, "NavigateEditBox", "element[@class='Chrome_OmniboxView']/text", 30000, null, "02c46c0c-e463-4e08-99b2-af7709493f70");
                 _titlebarInfo = new RepoItemInfo(this, "TitleBar", "container/toolbar[@accessiblename='Google Chrome Toolbar']", 30000, null, "40ea7bc6-06c5-4830-be2f-398e7a7f9ae1");
+                _titlebartabpagelistInfo = new RepoItemInfo(this, "TitleBarTabPageList", "container/tabpagelist[@accessiblerole='PageTabList']", 30000, null, "d64275ff-386f-4194-b95d-9d1b0c1b159e");
             }
 
             /// <summary>
@@ -234,6 +236,30 @@ namespace Browsers.ChromeBrowser
                 get
                 {
                     return _titlebarInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TitleBarTabPageList item.
+            /// </summary>
+            [RepositoryItem("d64275ff-386f-4194-b95d-9d1b0c1b159e")]
+            public virtual Ranorex.TabPageList TitleBarTabPageList
+            {
+                get
+                {
+                    return _titlebartabpagelistInfo.CreateAdapter<Ranorex.TabPageList>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TitleBarTabPageList item info.
+            /// </summary>
+            [RepositoryItemInfo("d64275ff-386f-4194-b95d-9d1b0c1b159e")]
+            public virtual RepoItemInfo TitleBarTabPageListInfo
+            {
+                get
+                {
+                    return _titlebartabpagelistInfo;
                 }
             }
         }

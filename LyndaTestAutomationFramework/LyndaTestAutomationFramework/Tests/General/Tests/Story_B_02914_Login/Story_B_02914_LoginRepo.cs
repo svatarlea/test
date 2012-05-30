@@ -37,6 +37,7 @@ namespace Tests.General.Tests.Story_B_02914_Login
 
         Story_B_02914_LoginRepoFolders.FormAppFolder _form;
         Story_B_02914_LoginRepoFolders.DOMAppFolder _dom;
+        Story_B_02914_LoginRepoFolders.WebDocumentSSL_ErrorAppFolder _webdocumentssl_error;
 
         /// <summary>
         /// Repository class constructor.
@@ -46,6 +47,7 @@ namespace Tests.General.Tests.Story_B_02914_Login
         {
             _form = new Story_B_02914_LoginRepoFolders.FormAppFolder(this);
             _dom = new Story_B_02914_LoginRepoFolders.DOMAppFolder(this);
+            _webdocumentssl_error = new Story_B_02914_LoginRepoFolders.WebDocumentSSL_ErrorAppFolder(this);
         }
 
 #region Variables
@@ -68,6 +70,15 @@ namespace Tests.General.Tests.Story_B_02914_Login
         public virtual Story_B_02914_LoginRepoFolders.DOMAppFolder DOM
         {
             get { return _dom; }
+        }
+
+        /// <summary>
+        /// The WebDocumentSSL_Error folder.
+        /// </summary>
+        [RepositoryFolder("35797398-195c-4ef5-8004-21aaa2b48181")]
+        public virtual Story_B_02914_LoginRepoFolders.WebDocumentSSL_ErrorAppFolder WebDocumentSSL_Error
+        {
+            get { return _webdocumentssl_error; }
         }
     }
 
@@ -522,6 +533,74 @@ namespace Tests.General.Tests.Story_B_02914_Login
                 get
                 {
                     return _loginbuttonInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The WebDocumentSSL_ErrorAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("35797398-195c-4ef5-8004-21aaa2b48181")]
+        public partial class WebDocumentSSL_ErrorAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _divtagrightcolumnmenuInfo;
+
+            /// <summary>
+            /// Creates a new WebDocumentSSL_Error  folder.
+            /// </summary>
+            public WebDocumentSSL_ErrorAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("WebDocumentSSL_Error", "/dom[@domain='admin.release.lynda.com']", parentFolder, 30000, false, "35797398-195c-4ef5-8004-21aaa2b48181")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "35797398-195c-4ef5-8004-21aaa2b48181");
+                _divtagrightcolumnmenuInfo = new RepoItemInfo(this, "DivTagRightColumnMenu", "body/div[@id='pageContainer']/div[@id='rightColumn']/div[@id='rightColumnMenu']", 30000, null, "6b8ea48d-ea49-4a3c-9d1e-91183042e2ab");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("35797398-195c-4ef5-8004-21aaa2b48181")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("35797398-195c-4ef5-8004-21aaa2b48181")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DivTagRightColumnMenu item.
+            /// </summary>
+            [RepositoryItem("6b8ea48d-ea49-4a3c-9d1e-91183042e2ab")]
+            public virtual Ranorex.DivTag DivTagRightColumnMenu
+            {
+                get
+                {
+                    return _divtagrightcolumnmenuInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DivTagRightColumnMenu item info.
+            /// </summary>
+            [RepositoryItemInfo("6b8ea48d-ea49-4a3c-9d1e-91183042e2ab")]
+            public virtual RepoItemInfo DivTagRightColumnMenuInfo
+            {
+                get
+                {
+                    return _divtagrightcolumnmenuInfo;
                 }
             }
         }

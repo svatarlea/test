@@ -114,6 +114,7 @@
     <Reference Include="System.Core">
       <id>0c6e3e7a-0e4f-4dc8-9793-98844ee79f96</id>
     </Reference>
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms">
       <id>0fbe2daa-4102-4b30-9ce0-3ef8fd10ab2f</id>
     </Reference>

@@ -140,7 +140,7 @@ namespace Tests.AppConfig
 		/// <summary>
 		/// Gets the KeyboardDefaultKeyPressTime key's value from the app.config file for the Tests.exe assembly.
 		/// </summary>
-		internal static int  KeyboardDefaultKeyPressTime
+		internal static int KeyboardDefaultKeyPressTime
 		{
 			get{return keyboardDefaultKeyPressTime;}
 		}
