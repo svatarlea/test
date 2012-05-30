@@ -136,7 +136,7 @@ namespace Tests.General.Tests.BVT5
             	{
             		if (Validate.Exists(repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLoginInfo.AbsolutePath, repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLoginInfo.SearchTimeout,"{0}",new Validate.Options(true,ReportLevel.Error)))
             		{
-            			repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLogin.Click();
+            			Report.Log(ReportLevel.Info,"Admin Login Page loaded");
             		}
             	}
             	catch(ValidationException ve)

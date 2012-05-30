@@ -226,9 +226,12 @@
       <testcase id="108c6022-89ef-4c23-802b-23fe8fd6cde3"/>
       <testcase id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84"/>
       <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
+      <testcase id="569237fb-e44c-4940-92d0-9c9377b1f2a4"/>
       <testcase id="6faa9fa3-9922-4db5-bdc6-8dd627ef2e08"/>
       <testcase id="9153f576-aa32-42b5-a84c-acf8e727531e"/>
+      <testcase id="c905a61d-a547-4294-8389-11d995543502"/>
       <testcase id="dcac7107-933a-414b-99c1-f0e5a92e2425"/>
+      <testcase id="f65dad26-88c6-414b-8faa-109200942e03"/>
     </testconfiguration>
   </testconfigurations>
   <references>

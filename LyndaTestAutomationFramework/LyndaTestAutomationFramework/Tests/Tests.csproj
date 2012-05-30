@@ -294,6 +294,13 @@
     <None Include="Reports\Tests_20120529_172649.rxlog">
       <id>666d223c-2af0-4c33-8230-860e1c2bc99b</id>
     </None>
+    <None Include="Reports\Tests_20120530_093856.rxlog">
+      <id>8d676368-2b5f-4acf-8d8d-6ab61407ff90</id>
+    </None>
+    <None Include="Reports\Tests_20120530_113245.rxlog">
+      <id>1cf32db0-5895-4bc0-b336-e6883955510e</id>
+    </None>
+    <None Include="Reports\Tests_20120530_113438.rxlog" />
     <Content Include="Public_lpAcctData.xlsx">
       <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
       <DependentUpon>Tests.rxtst</DependentUpon>

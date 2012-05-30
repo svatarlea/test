@@ -23,7 +23,7 @@
         </basepath>
       </folder>
       <folder name="SomeBodyTag" id="006c0342-bdbe-47d6-bbc0-74c55a7becb4" searchtimeout="30000ms" capname="bodytag" addcaps="unknown,webelement,bodytag" isrooted="True" usecache="False">
-        <item name="lnkNewAccount" id="209566bb-9db6-451b-9720-c685778aeb84" searchtimeout="3000ms" capname="atag" addcaps="unknown,webelement,atag">
+        <item name="lnkNewAccount" id="209566bb-9db6-451b-9720-c685778aeb84" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
           <![CDATA[/dom/body/form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[3]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu101']]]>
         </item>
         <item name="lnkCS" id="72dcb991-be8a-460f-ada4-b6572a02a021" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">

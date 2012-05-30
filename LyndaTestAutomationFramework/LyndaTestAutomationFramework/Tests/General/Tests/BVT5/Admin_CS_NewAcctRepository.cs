@@ -546,7 +546,7 @@ namespace Tests.General.Tests.BVT5
                     base("SomeBodyTag", "body", parentFolder, 30000, false, "006c0342-bdbe-47d6-bbc0-74c55a7becb4")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "006c0342-bdbe-47d6-bbc0-74c55a7becb4");
-                _lnknewaccountInfo = new RepoItemInfo(this, "lnkNewAccount", "form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[3]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu101']", 3000, null, "209566bb-9db6-451b-9720-c685778aeb84");
+                _lnknewaccountInfo = new RepoItemInfo(this, "lnkNewAccount", "form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[3]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu101']", 30000, null, "209566bb-9db6-451b-9720-c685778aeb84");
                 _lnkcsInfo = new RepoItemInfo(this, "lnkCS", "form/div[4]/div[1]/table/tbody/tr/td[1]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu1']", 30000, null, "72dcb991-be8a-460f-ada4-b6572a02a021");
                 _somedivtagInfo = new RepoItemInfo(this, "SomeDivTag", "form/div[5]/div/div", 30000, null, "e305d478-8de1-442d-a0e7-f53a7e96772e");
                 _btncontinueInfo = new RepoItemInfo(this, "btnContinue", "form/div[5]/div/div/div/p/input[@id='ctl00_cphMain_btnContinue']", 30000, null, "9aa2c8e3-34a0-441a-97df-5746b8fdf912");
