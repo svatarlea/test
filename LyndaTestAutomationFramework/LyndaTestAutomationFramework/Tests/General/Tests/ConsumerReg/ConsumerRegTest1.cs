@@ -13,7 +13,7 @@ using Ranorex.Core.Testing;
 using Lynda.Test.Advanced.Utilities.WebPages;
 using Lynda.Test.Browsers;
 
-using General.Utilities.Forms;
+using Tests.General.Utilities.Forms;
 
 namespace Tests.General.Tests.ConsumerReg
 {
@@ -48,7 +48,7 @@ namespace Tests.General.Tests.ConsumerReg
             const string domain = "integration.lynda.com";
             const string navigateTo = "/";
             
-            const BrowserProduct browserProduct = BrowserProduct.Firefox;
+            const BrowserProduct browserProduct = BrowserProduct.IE;
 
             //Open browser and navigate to url
             string url = string.Format("http://{0}{1}", domain, navigateTo.ToString());

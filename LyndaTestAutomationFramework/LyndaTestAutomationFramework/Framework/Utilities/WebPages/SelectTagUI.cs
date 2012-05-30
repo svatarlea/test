@@ -17,7 +17,7 @@ namespace Lynda.Test.Advanced.Utilities.WebPages
 	public static class SelectTagUI
     {
         /// <summary>
-        /// Clicks or selects a web page select tag option.
+        /// Clicks or sets a web page select tag option.
         /// </summary>
         /// <param name="pathToDOM">Ranorex.Core.Repository.RepoGenBaseFolder.BaseBath of a web page DOM.</param>
         /// <param name="selecttag">Ranorex.SelectTag of a web page select tag.</param>
@@ -26,87 +26,85 @@ namespace Lynda.Test.Advanced.Utilities.WebPages
 		{
             WebDocument domWebDocument = pathToDOM;
             
-	        //Handle InnerText that contains white space. e.g.:
-			//	InnerText="credit card" or
-			//	InnerText="      credit card  " (where there is white space before and/or after)
-			//and option = "credit card"
-			//Regular expression covers white space before or after the option string	
-            string patternOptionWhiteSpace =  String.Format(@"^\s*{0}\s*$",option);
-            
             switch (domWebDocument.BrowserName)
             {
             	case "Chrome":
             	case "Safari":
-            		{
-		            	//1. Find TagValue for requested option
-			        	string tagValueToSelect = null;
-			        	bool tagOptionInList=false;
-			        	IList<OptionTag> tagOptions = selecttag.Options;
-			        	foreach (OptionTag optionTag in tagOptions)
-			        	{	        		
-                    		if (Regex.IsMatch(optionTag.InnerText, patternOptionWhiteSpace))                    		
-			        		{
-			        			tagValueToSelect = optionTag.TagValue;
-			        			tagOptionInList=true;
-			        			break;
-			        		}
-			        	}
-			        	if (!tagOptionInList)
-			        	{
-			        		throw new ArgumentException(string.Format("None of the SelectTag {0} OptionTags have InnerText of {1}", selecttag.Name, option), "option");
-			        	}
-			        	//2. Press Down key until current option is requested option
-			        	selecttag.Focus();
-			        	bool tagOptionSelected=false;
-			        	while (!tagOptionSelected)
-			        	{
-			        		string currentTagValue = selecttag.TagValue;
-			        		if (currentTagValue == tagValueToSelect)
-			        		{
-			        			tagOptionSelected=true;
-			        		}
-			        		else
-			        		{
-			        			Keyboard.Press("{DOWN}");
-			        			//Did option change?
-			        			if (selecttag.TagValue == currentTagValue)
-			        			{
-			        				//No, so on last option
-			        				break;
-			        			}
-			        		}
-			        	}
-			        	if (!tagOptionSelected)
-			        	{
-			        		throw new Exception(string.Format("None of the selected SelectTag {0} options had a TagValue of {1}", selecttag.Name, tagValueToSelect));
-			        	}
-		            	break;
-            		}
+        			//Using Chrome and Safari select tag problematic, so set the tag value directly for now.
+        			selecttag.TagValue = FindSelectTagValueForOption(selecttag, option);
+	        		break;       		
             	case "IE":
-		            String itemToClickRxPath = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']",option);
-		        	selecttag.Focus();
-		        	selecttag.Click();
-		        	ListItem itemToClick = itemToClickRxPath;
-		        	itemToClick.Click();            		
-            		break;            	
-            	case "Mozilla":
+            		//Click option if visible after clicking select tag.
+            		String itemToClickRxPath = String.Format("/container[@caption='selectbox']/listitem[@accessiblename='{0}']",option);
+
             		selecttag.Focus();
-        			selecttag.Click();
-        			String optionRxPath = String.Format(@"option[@InnerText~'{0}']",patternOptionWhiteSpace);
-        			OptionTag optionToClick;
-        			bool result = selecttag.TryFindSingle<OptionTag>(optionRxPath,out optionToClick);  
-        			
-        			if (!result)
-        			{
-        				throw new ArgumentException(string.Format("TryFindSingle failed to find option {0} to click", optionRxPath),"option");
-        			}
-        			optionToClick.Click();
-            		break;
+		        	selecttag.Click();
+
+		        	ListItem itemToClick;
+		        	try
+		        	{
+		        		itemToClick = itemToClickRxPath;
+		        	}
+		        	catch (Exception e)
+		        	{
+		        		throw new ArgumentException(string.Format("Unable to find option {0} in SelectTag {1}. Exception:{2}", option, selecttag.Name,e), "option");
+		        	}
+		        	
+		        	if (itemToClick.Visible)
+		        	{
+		        		itemToClick.Click(); 
+		        		break;
+		        	}
+		        	//If not visible, set tag value directly for now.
+		        	selecttag.TagValue = FindSelectTagValueForOption(selecttag, option);
+            		break;     
+            	case "Mozilla":
+            		//OptionTag.Visible does not work for an option tag that is not visible, so set the tag value directly for now.
+            		selecttag.TagValue = FindSelectTagValueForOption(selecttag, option);
+		        	break;
             	default:
             		break;                		      
             }
 
         }
+
+		/// <summary>
+		/// Find a specified option in all the options contained within a Ranorex.SelectTag 
+		///  and return that option's Ranorex.OptionTag.TagValue.
+		/// </summary>
+		/// <param name="selecttag">Ranorex.SelectTag containing options to search.</param>
+		/// <param name="option">Option to find in the Ranorex.SelectTag.</param>
+		/// <returns>If option is found, returns Ranorex.OptionTag.TagValue of the found option.
+		/// If not found, throws a System.ArgumentException.ArgumentException.</returns>
+		private static string FindSelectTagValueForOption(Ranorex.SelectTag selecttag, string option)
+		{
+			//Handle InnerText that contains white space. e.g.:
+			//	InnerText="credit card" or
+			//	InnerText="      credit card  " (where there is white space before and/or after)
+			//and option = "credit card"
+			//Regular expression covers white space before or after the option string	
+			string patternOptionWhiteSpace =  String.Format(@"^\s*{0}\s*$",option);
+			
+			//Find TagValue for requested option
+        	string tagValueToSelect = null;
+        	bool tagOptionInList=false;
+        	IList<OptionTag> tagOptions = selecttag.Options;
+        	foreach (OptionTag optionTag in tagOptions)
+        	{	        		
+        		if (Regex.IsMatch(optionTag.InnerText, patternOptionWhiteSpace))                    		
+        		{
+        			tagValueToSelect = optionTag.TagValue;
+        			tagOptionInList=true;
+        			break;
+        		}
+        	}
+        	if (!tagOptionInList)
+        	{
+        		throw new ArgumentException(string.Format("None of the SelectTag {0} OptionTags have InnerText of {1}", selecttag.Name, option), "option");
+        	}
+        	return tagValueToSelect;
+		}
+	
 
         /// <summary>
         /// Gets the current text shown in a web page select tag.

@@ -39,9 +39,9 @@ namespace Lynda.Test.Browsers
             }
 
             //Open browser           
-            OpenBrowser(uri, BrowserProduct.Chrome.ToString(), new RxPath("/form[@class='Chrome_WidgetWin_0']"));
+            OpenBrowser(uri, BrowserProduct.Chrome.ToString(), new RxPath("/form[@class='Chrome_WidgetWin_1']"));
             //Update repository instance base path to include native window handle attribute for the form
-            chromeRepo.Form.BasePath = new RxPath(String.Format("/form[@class='Chrome_WidgetWin_0' and @handle='{0}']", handle));
+            chromeRepo.Form.BasePath = new RxPath(String.Format("/form[@class='Chrome_WidgetWin_1' and @handle='{0}']", handle));
             Validate.Exists(chromeRepo.Form.BasePath);
         }
 
@@ -67,7 +67,10 @@ namespace Lynda.Test.Browsers
             //Click title bar of this window first so the navigate edit box is in the active window so it can be typed into
             ClickTitleBar();
             Validate.Exists(chromeRepo.Form.NavigateEditBox);
-            chromeRepo.Form.NavigateEditBox.PressKeys(navigateUri);
+            
+            //Ctrl-A to select all text then release Ctrl. Used so all text can be selected first before being typed over.
+        	const string pressKeysSelectAll = "{Control down}{Akey}{Control up}";
+        	chromeRepo.Form.NavigateEditBox.PressKeys(String.Format("{0}{1}", pressKeysSelectAll, navigateUri));
         }
 
         /// <summary>
@@ -75,8 +78,10 @@ namespace Lynda.Test.Browsers
         /// </summary>
         internal void ClickTitleBar()
         {
-            Validate.Exists(chromeRepo.Form.TitleBar);
-            chromeRepo.Form.TitleBar.Click();
+            Validate.Exists(chromeRepo.Form.TitleBarTabPageList);
+            //Click using move time, otherwise a click too soon after a previous call to ClickTitleBar() acts like a double-click on the title bar
+            //(which can change the window size).
+            chromeRepo.Form.TitleBarTabPageList.Click(new Duration(250));
         }
 
         /// <summary>

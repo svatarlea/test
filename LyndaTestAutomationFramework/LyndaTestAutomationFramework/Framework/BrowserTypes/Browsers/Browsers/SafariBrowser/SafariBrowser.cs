@@ -76,7 +76,9 @@ namespace Lynda.Test.Browsers
         internal void ClickTitleBar()
         {
             Validate.Exists(safariRepo.Form.TitleBar);
-            safariRepo.Form.TitleBar.Click();
+            //Click using move time, otherwise a click too soon after a previous call to ClickTitleBar() acts like a double-click on the title bar
+            //(which can change the window size).
+            safariRepo.Form.TitleBar.Click(new Duration(250));
         }
 
         /// <summary>
