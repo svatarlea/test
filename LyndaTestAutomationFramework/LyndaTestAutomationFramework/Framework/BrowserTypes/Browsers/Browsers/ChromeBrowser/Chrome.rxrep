@@ -25,13 +25,16 @@ j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
     </appfolder>
     <appfolder name="Form" id="170f8a50-6744-42ec-a564-43e5d976d113" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
       <item name="NavigateEditBox" id="02c46c0c-e463-4e08-99b2-af7709493f70" searchtimeout="30000ms" capname="text" addcaps="text,accessible">
-        <![CDATA[/form[@class='Chrome_WidgetWin_0']/element[@class='Chrome_OmniboxView']/text]]>
+        <![CDATA[/form[@class='Chrome_WidgetWin_1']/element[@class='Chrome_OmniboxView']/text]]>
       </item>
       <item name="TitleBar" id="40ea7bc6-06c5-4830-be2f-398e7a7f9ae1" searchtimeout="30000ms" capname="toolbar" addcaps="toolbar,accessible">
-        <![CDATA[/form[@class='Chrome_WidgetWin_0']/container/toolbar[@accessiblename='Google Chrome Toolbar']]]>
+        <![CDATA[/form[@class='Chrome_WidgetWin_1']/container/toolbar[@accessiblename='Google Chrome Toolbar']]]>
+      </item>
+      <item name="TitleBarTabPageList" id="d64275ff-386f-4194-b95d-9d1b0c1b159e" searchtimeout="30000ms" capname="tabpagelist" addcaps="tabpagelist,accessible">
+        <![CDATA[/form[@class='Chrome_WidgetWin_1']/container/tabpagelist[@accessiblerole='PageTabList']]]>
       </item>
       <basepath>
-        <![CDATA[/form[@class='Chrome_WidgetWin_0']]]>
+        <![CDATA[/form[@class='Chrome_WidgetWin_1']]]>
       </basepath>
       <icon>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx

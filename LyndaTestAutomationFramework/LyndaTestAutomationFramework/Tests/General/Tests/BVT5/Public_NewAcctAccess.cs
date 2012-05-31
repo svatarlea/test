@@ -107,7 +107,10 @@ namespace Tests.General.Tests.BVT5
             		    }
             		    else
             		    {
-            		    	Report.Log(ReportLevel.Warn, varPersona + " : " + varUserName + " : User has logged in previously.");
+            		    	if ( varPersona == "lyndaCampus admin" || varPersona == "lyndaEnterprise admin" ||  varPersona == "lyndaEnterprise admin" )
+            		    		Report.Log(ReportLevel.Info, varPersona + " : " + varUserName + " : User logged in successfully.");
+            		    	else
+            		    	    Report.Log(ReportLevel.Warn, varPersona + " : " + varUserName + " : User has logged in previously.");
             		    		
             		    	if (Validate.Exists(repo.DOM.SomeBodyTag.btnMainLog_outInfo.AbsolutePath, repo.DOM.SomeBodyTag.btnMainLog_outInfo.SearchTimeout,"{0}",new Validate.Options(true,ReportLevel.Error)))
             		    	 repo.DOM.SomeBodyTag.btnMainLog_out.Click();

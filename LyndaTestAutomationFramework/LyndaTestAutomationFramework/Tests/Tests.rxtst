@@ -204,8 +204,11 @@
           </testmodule>
         </testcase>
       </folder>
+      <testcase name="CreateEducator" id="cb6339f1-d3a9-46b7-ad9e-414e26c0e399">
+        <testmodule name="CreateEducator" id="d17f2e62-d812-4a76-9168-b5fac0f954d0" ref="FE2B6F36-8341-4D18-A9CF-7325F9390251" type="UserCode"/>
+      </testcase>
     </folder>
-    <folder name="Main" id="cc5a43f0-cedc-44b8-a95f-866e6fa6e20e">
+    <folder name="Skynet" id="cc5a43f0-cedc-44b8-a95f-866e6fa6e20e">
       <folder name="ConsumerRegistration" id="43e16ec5-f749-4d70-9e3f-bec5231ad329">
         <testcase name="AllRegistrations" id="08529b9b-c12b-4067-a77d-0e24fad714f4" datasource="Subscriptions">
           <testmodule name="AllRegistrations" id="3b5e5e66-efa7-4a58-9be1-988d8932d754" ref="12652A8A-67D3-40D0-848D-FB92775B7863" type="UserCode"/>
@@ -227,8 +230,14 @@
       <testcase id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84"/>
       <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
       <testcase id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21"/>
+      <testcase id="cb6339f1-d3a9-46b7-ad9e-414e26c0e399"/>
       <testcase id="d1844dff-545d-4897-b07f-4097aab99565"/>
       <testcase id="eaaf240c-4fd3-455f-aa24-19e4bba957be"/>
+    </testconfiguration>
+    <testconfiguration name="TestRun1">
+      <testcase id="108c6022-89ef-4c23-802b-23fe8fd6cde3"/>
+      <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
+      <testcase id="6ce6c25b-f521-4089-8452-f4796a0ba4ae"/>
     </testconfiguration>
   </testconfigurations>
   <references>

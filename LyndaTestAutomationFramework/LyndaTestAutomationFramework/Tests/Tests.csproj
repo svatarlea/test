@@ -200,6 +200,15 @@
     <Compile Include="General\Tests\ConsumerReg\ConsumerRegTest1.cs">
       <id>96e6b02f-04c1-404b-8543-2381ffb9604a</id>
     </Compile>
+    <Compile Include="General\Tests\Educator\CreateEducator.cs">
+      <id>fb26a75a-6dd9-4dda-8d16-7b054ac4055e</id>
+    </Compile>
+    <Compile Include="General\Tests\Educator\CreateEducatorRepo.cs">
+      <BoundTo>2C265F80-98E0-495C-81AE-7AB3C83897D0</BoundTo>
+      <DependentUpon>CreateEducatorRepo.rxrep</DependentUpon>
+      <id>64cbcc90-0043-4d36-afa2-e01b685820e8</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
     <Compile Include="General\Tests\MultiBrowser\MemberHomePage.cs">
       <id>4370890a-60b4-402e-9e98-2b05b8a0b5a2</id>
       <RepositoryCode>true</RepositoryCode>
@@ -280,6 +289,11 @@
       <reporootid>c01e8542-268c-458b-a9b3-363285851754</reporootid>
       <repoid>3a7797e6-9535-4e0d-b260-0e1480059b10</repoid>
     </None>
+    <None Include="General\Tests\Educator\CreateEducatorRepo.rxrep">
+      <id>2C265F80-98E0-495C-81AE-7AB3C83897D0</id>
+      <repoid>82cec03a-770a-40d6-b498-119cbafb121f</repoid>
+      <reporootid>1d6ce830-0df7-45d3-8518-f2705151a6d2</reporootid>
+    </None>
     <None Include="General\Tests\MultiBrowser\MemberHomePage.rxrep">
       <id>32340971-9464-4ff2-9e46-a79ff75a0c40</id>
       <reporootid>12b2a37c-e9c1-4d56-a7d5-624b896a361e</reporootid>
@@ -321,7 +335,10 @@
     <None Include="Reports\Tests_20120531_144557.rxlog">
       <id>0e082f27-127a-47c0-abd6-386fe99c4c34</id>
     </None>
-    <None Include="Reports\Tests_20120531_145125.rxlog" />
+    <None Include="Reports\Tests_20120531_145125.rxlog">
+      <id>c833b64b-9b86-486b-b04a-0bb771a14e1c</id>
+    </None>
+    <None Include="Reports\Tests_20120531_153711.rxlog" />
     <Content Include="Public_lpAcctData.xlsx">
       <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
       <DependentUpon>Tests.rxtst</DependentUpon>
@@ -384,8 +401,11 @@
     <Folder Include="General\Tests">
       <id>b344cfec-14bb-40d4-be4d-00895b2f782f</id>
     </Folder>
-    <Folder Include="General\Tests\BVT5">
-      <id>bf5ecf5a-003f-4eac-8f83-1fda103ecb42</id>
+    <Folder Include="General\Tests\Educator">
+      <id>a7761a53-836d-4c74-a0f3-06babf0edba6</id>
+    </Folder>
+    <Folder Include="General\Tests\EnterpriseCampus">
+      <id>bf4b9e25-f8e5-4da9-9e0d-12c1a0cc226f</id>
     </Folder>
     <Folder Include="General\Tests\Story_B_02914_Login">
       <id>7e5ab37e-96ac-4de7-aac5-bc756554fee9</id>

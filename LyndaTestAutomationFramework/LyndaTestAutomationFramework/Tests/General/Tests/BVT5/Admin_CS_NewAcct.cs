@@ -13,10 +13,6 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
-using WinForms = System.Windows.Forms;
-using General.Utilities;
-using General.Utilities.Forms;
-using Tests.General.Utilities;
 
 using Lynda.Test.Advanced.Utilities.WebPages;
 using Lynda.Test.Browsers;
@@ -24,7 +20,9 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Tests.AppConfig;
-
+using Tests.General.Utilities;
+using Tests.General.Utilities.Forms;
+using WinForms = System.Windows.Forms;
 
 namespace Tests.General.Tests.BVT5
 {
