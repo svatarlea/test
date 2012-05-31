@@ -2139,7 +2139,7 @@ namespace Tests.General.Tests.BVT5
             RepoItemInfo _lc_cmbpaymenttypeInfo;
             RepoItemInfo _lc_cmbsalesrep1Info;
             RepoItemInfo _lc_cmboperationtypeInfo;
-            RepoItemInfo _lc_btnpurchaseInfo;
+            RepoItemInfo _lc_btn_step3of4_continueInfo;
             RepoItemInfo _lc_btncustomerdetailsInfo;
             RepoItemInfo _lk_cmbpaymenttypeInfo;
             RepoItemInfo _lk_noofconcurrentlicensesInfo;
@@ -2147,6 +2147,8 @@ namespace Tests.General.Tests.BVT5
             RepoItemInfo _lk_btncontinue_enteripaddrsInfo;
             RepoItemInfo _lk_btncontinue_ipaddrspgInfo;
             RepoItemInfo _lk_btn_step2of4continueInfo;
+            RepoItemInfo _h1signup_4of4Info;
+            RepoItemInfo _lc_btnpurchaseInfo;
 
             /// <summary>
             /// Creates a new DivTagTable_format  folder.
@@ -2162,7 +2164,7 @@ namespace Tests.General.Tests.BVT5
                 _lc_cmbpaymenttypeInfo = new RepoItemInfo(this, "lc_cmbPaymentType", "div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[@id='ctl00_cphMain_ucPaymentInformation_fsPaymentType']/table/tbody/tr/td[2]/select[@id='ctl00_cphMain_ucPaymentInformation_ddPaymentType']", 30000, null, "21b1c05e-a69a-4b1a-aeca-d1c39002a257");
                 _lc_cmbsalesrep1Info = new RepoItemInfo(this, "lc_cmbSalesRep1", "div/div[@id='ctl00_cphMain_pnlSalesInformation']/div/fieldset/table/tbody/tr[1]/td[2]/select[@id='ctl00_cphMain_ucSalesRepresentativeInformation_drpAccountManager']", 30000, null, "82d7955e-e89e-44dc-8e43-475a041075a3");
                 _lc_cmboperationtypeInfo = new RepoItemInfo(this, "lc_cmbOperationType", "div/div[@id='ctl00_cphMain_pnlSalesInformation']/div/fieldset/table/tbody/tr[9]/td[2]/select[@id='ctl00_cphMain_ucSalesRepresentativeInformation_drpOperationType']", 30000, null, "2df53bf8-e9d3-4a8e-bb37-1a637f31aa56");
-                _lc_btnpurchaseInfo = new RepoItemInfo(this, "lc_btnPurchase", "div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_imgContinue']", 30000, null, "1e55a168-ed8b-426a-ab05-fc163e1ecdef");
+                _lc_btn_step3of4_continueInfo = new RepoItemInfo(this, "lc_btn_Step3of4_Continue", "div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_imgContinue' and @src='../../images/buttons/continue.gif']", 30000, null, "1e55a168-ed8b-426a-ab05-fc163e1ecdef");
                 _lc_btncustomerdetailsInfo = new RepoItemInfo(this, "lc_btnCustomerDetails", "div/p[2]/input[@id='ctl00_cphMain_btnCustomerDetails']", 30000, null, "e811e368-248d-4fe6-9995-6d3fbddb3e94");
                 _lk_cmbpaymenttypeInfo = new RepoItemInfo(this, "lk_cmbPaymentType", "div/div[@id='ctl00_cphMain_ucRegistrationStep3_pnlForms']/div/fieldset[@id='ctl00_cphMain_ucRegistrationStep3_ucPaymentInformation_fsPaymentType']/table/tbody/tr/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep3_ucPaymentInformation_ddPaymentType']", 30000, null, "088bcba3-317c-4669-aca2-311fc96ac67a");
                 _lk_noofconcurrentlicensesInfo = new RepoItemInfo(this, "lk_NoOfConcurrentLicenses", "div[@id='ctl00_cphMain_ucRegistrationStep2_pnlForm']/div/fieldset/input[@id='ctl00_cphMain_ucRegistrationStep2_txtLicenses']", 30000, null, "fceb7e4b-fec8-4783-9b1b-852cf7f9d034");
@@ -2170,6 +2172,8 @@ namespace Tests.General.Tests.BVT5
                 _lk_btncontinue_enteripaddrsInfo = new RepoItemInfo(this, "lk_btnContinue_EnterIPAddrs", "p[2]/input[@id='ctl00_cphMain_imgContinue']", 30000, null, "798b964a-5cd3-491d-a110-c309e65219a5");
                 _lk_btncontinue_ipaddrspgInfo = new RepoItemInfo(this, "lk_btnContinue_IPAddrsPg", "p/input[@id='ctl00_cphMain_btnContinue']", 30000, null, "21aa88ad-ea1f-4604-b5b8-36c73bbc030e");
                 _lk_btn_step2of4continueInfo = new RepoItemInfo(this, "lk_btn_Step2of4Continue", "table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_ucRegistrationStep2_imgContinue']", 30000, null, "97f7f683-5e72-433b-88d3-8e6268dc7b5b");
+                _h1signup_4of4Info = new RepoItemInfo(this, "h1Signup_4of4", "div/h1[@innertext~'lyndaCampus Signup: 4 of 4 – Review and Submit Order']", 30000, null, "8f3355c0-f7bf-4e88-adfb-c62ab74e4eaf");
+                _lc_btnpurchaseInfo = new RepoItemInfo(this, "lc_btnPurchase", "div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_imgContinue' and @src='../../images/buttons/purchase.gif']", 30000, null, "dd6c3049-d323-4490-8e72-5e0d8c7a8ad2");
             }
 
             /// <summary>
@@ -2365,26 +2369,26 @@ namespace Tests.General.Tests.BVT5
             }
 
             /// <summary>
-            /// The lc_btnPurchase item.
+            /// The lc_btn_Step3of4_Continue item.
             /// </summary>
             [RepositoryItem("1e55a168-ed8b-426a-ab05-fc163e1ecdef")]
-            public virtual Ranorex.InputTag lc_btnPurchase
+            public virtual Ranorex.InputTag lc_btn_Step3of4_Continue
             {
                 get
                 {
-                    return _lc_btnpurchaseInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _lc_btn_step3of4_continueInfo.CreateAdapter<Ranorex.InputTag>(true);
                 }
             }
 
             /// <summary>
-            /// The lc_btnPurchase item info.
+            /// The lc_btn_Step3of4_Continue item info.
             /// </summary>
             [RepositoryItemInfo("1e55a168-ed8b-426a-ab05-fc163e1ecdef")]
-            public virtual RepoItemInfo lc_btnPurchaseInfo
+            public virtual RepoItemInfo lc_btn_Step3of4_ContinueInfo
             {
                 get
                 {
-                    return _lc_btnpurchaseInfo;
+                    return _lc_btn_step3of4_continueInfo;
                 }
             }
 
@@ -2553,6 +2557,54 @@ namespace Tests.General.Tests.BVT5
                 get
                 {
                     return _lk_btn_step2of4continueInfo;
+                }
+            }
+
+            /// <summary>
+            /// The h1Signup_4of4 item.
+            /// </summary>
+            [RepositoryItem("8f3355c0-f7bf-4e88-adfb-c62ab74e4eaf")]
+            public virtual Ranorex.H1Tag h1Signup_4of4
+            {
+                get
+                {
+                    return _h1signup_4of4Info.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The h1Signup_4of4 item info.
+            /// </summary>
+            [RepositoryItemInfo("8f3355c0-f7bf-4e88-adfb-c62ab74e4eaf")]
+            public virtual RepoItemInfo h1Signup_4of4Info
+            {
+                get
+                {
+                    return _h1signup_4of4Info;
+                }
+            }
+
+            /// <summary>
+            /// The lc_btnPurchase item.
+            /// </summary>
+            [RepositoryItem("dd6c3049-d323-4490-8e72-5e0d8c7a8ad2")]
+            public virtual Ranorex.InputTag lc_btnPurchase
+            {
+                get
+                {
+                    return _lc_btnpurchaseInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The lc_btnPurchase item info.
+            /// </summary>
+            [RepositoryItemInfo("dd6c3049-d323-4490-8e72-5e0d8c7a8ad2")]
+            public virtual RepoItemInfo lc_btnPurchaseInfo
+            {
+                get
+                {
+                    return _lc_btnpurchaseInfo;
                 }
             }
         }

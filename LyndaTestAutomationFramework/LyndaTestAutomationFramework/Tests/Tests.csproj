@@ -300,7 +300,28 @@
     <None Include="Reports\Tests_20120530_113245.rxlog">
       <id>1cf32db0-5895-4bc0-b336-e6883955510e</id>
     </None>
-    <None Include="Reports\Tests_20120530_113438.rxlog" />
+    <None Include="Reports\Tests_20120530_113438.rxlog">
+      <id>7f98fd29-f582-42f1-91b1-716d474cc607</id>
+    </None>
+    <None Include="Reports\Tests_20120530_135734.rxlog">
+      <id>b4631c0b-cc1e-4397-9c73-901ba4828c29</id>
+    </None>
+    <None Include="Reports\Tests_20120530_141601.rxlog">
+      <id>398cac3c-404e-47ea-bab5-3969ce9a7e76</id>
+    </None>
+    <None Include="Reports\Tests_20120531_100739.rxlog">
+      <id>9488789f-ca8b-4d2f-817a-887c805329e8</id>
+    </None>
+    <None Include="Reports\Tests_20120531_103009.rxlog">
+      <id>03d310d9-cfbb-4837-b0c9-3cd7a0febda5</id>
+    </None>
+    <None Include="Reports\Tests_20120531_141357.rxlog">
+      <id>d5c1d930-329c-4666-b283-27ad26d9c625</id>
+    </None>
+    <None Include="Reports\Tests_20120531_144557.rxlog">
+      <id>0e082f27-127a-47c0-abd6-386fe99c4c34</id>
+    </None>
+    <None Include="Reports\Tests_20120531_145125.rxlog" />
     <Content Include="Public_lpAcctData.xlsx">
       <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
       <DependentUpon>Tests.rxtst</DependentUpon>

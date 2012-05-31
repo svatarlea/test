@@ -127,7 +127,8 @@ namespace Tests.General.Tests.BVT5
             
             // TODO : Add logic to run from any row in the data source
             
-            if (intIndex == 1)
+            
+            if (!(TestCase.Current.DataContext.Next()))
             {
             	//Open browser and navigate to url
             	browser = new Browser(browserProduct, url);
@@ -221,7 +222,7 @@ namespace Tests.General.Tests.BVT5
             		case "lyndaPro admin":
             			EnterAccountInformation();
             		
-            			Validate.Exists(repo.DOM.SomeBodyTag.txtNoOfLicenses);
+            			Validate.Exists(repo.DOM.SomeBodyTag.txtNoOfLicensesInfo);
             			repo.DOM.SomeBodyTag.txtNoOfLicenses.PressKeys("12");
             		
             			//TODO : Promotional Code 
@@ -238,7 +239,7 @@ namespace Tests.General.Tests.BVT5
             			repo.DOM.SomeBodyTag.btn_Step3of4_Continue.Click();
             			Validate.Exists(repo.DOM.SomeBodyTag.btn_PurchaseInfo);
             			repo.DOM.SomeBodyTag.btn_Purchase.Click();
-            			Validate.Exists(repo.DOM.SomeBodyTag.btn_Continue_toCustomerDetails);
+            			Validate.Exists(repo.DOM.SomeBodyTag.btn_Continue_toCustomerDetailsInfo);
             			repo.DOM.SomeBodyTag.btn_Continue_toCustomerDetails.Click();
             			
             			break;
@@ -253,7 +254,7 @@ namespace Tests.General.Tests.BVT5
             		
             			EnterAccountInformation();
             		
-            			Validate.Exists(repo.DOM.DivTagTable_format.lk_NoOfConcurrentLicenses);
+            			Validate.Exists(repo.DOM.DivTagTable_format.lk_NoOfConcurrentLicensesInfo);
             			repo.DOM.DivTagTable_format.lk_NoOfConcurrentLicenses.PressKeys("12");
             		    repo.DOM.DivTagTable_format.lk_Price.PressKeys("1200");
             		    //TODO :Validate Amount
@@ -264,10 +265,10 @@ namespace Tests.General.Tests.BVT5
             			EnterSalesInformation();
             			
             			repo.DOM.SomeBodyTag.btn_Step3of4_Continue.Click();
-            			Validate.Exists(repo.DOM.SomeBodyTag.btn_Purchase);
+            			Validate.Exists(repo.DOM.SomeBodyTag.btn_PurchaseInfo);
             			repo.DOM.SomeBodyTag.btn_Purchase.Click();
             			repo.DOM.DivTagTable_format.lk_btnContinue_EnterIPAddrs.Click();
-            			Validate.Exists(repo.DOM.DivTagTable_format.lk_btnContinue_IPAddrsPg);
+            			Validate.Exists(repo.DOM.DivTagTable_format.lk_btnContinue_IPAddrsPgInfo);
             			
             			string strIPAddress1, strIPAddress2;
             			FormDataIPAddress.GenerateIPAddress(out strIPAddress1, out strIPAddress2);
@@ -279,7 +280,7 @@ namespace Tests.General.Tests.BVT5
             		
             			EnterAccountInformation_lc();
             		
-            			Validate.Exists(repo.DOM.DivTagTable_format.lc_txtNoOfLicenses);
+            			Validate.Exists(repo.DOM.DivTagTable_format.lc_txtNoOfLicensesInfo);
             			repo.DOM.DivTagTable_format.lc_txtNoOfLicenses.PressKeys("12");
             		
             			//TODO : Promotional Code
@@ -295,20 +296,22 @@ namespace Tests.General.Tests.BVT5
             			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.DivTagTable_format.lc_cmbSalesRep1, varSalesRep1);
             		    SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.DivTagTable_format.lc_cmbOperationType, varSalesOperationType);
             		 
-            		    Validate.Exists(repo.DOM.DivTagTable_format.lc_btnPurchaseInfo);
-            			repo.DOM.DivTagTable_format.lc_btnPurchase.Click();
+            		    Validate.Exists(repo.DOM.DivTagTable_format.lc_btn_Step3of4_ContinueInfo);
+            			repo.DOM.DivTagTable_format.lc_btn_Step3of4_Continue.Click();
             			Validate.Exists(repo.DOM.DivTagTable_format.lc_btnPurchaseInfo);
+            			repo.DOM.DivTagTable_format.lc_btnPurchase.MoveTo();
             			repo.DOM.DivTagTable_format.lc_btnPurchase.Click();
-            			
-            			Validate.Exists(repo.DOM.DivTagTable_format.lc_btnCustomerDetails);
+            			Validate.Exists(repo.DOM.DivTagTable_format.lc_btnCustomerDetailsInfo);
             			repo.DOM.DivTagTable_format.lc_btnCustomerDetails.Click();
+            			
+            			
             			
             			break;
             		case "lyndaCampus admin":
             		
             			EnterAccountInformation_lc();
             		
-            			Validate.Exists(repo.DOM.DivTagTable_format.lc_txtNoOfLicenses);
+            			Validate.Exists(repo.DOM.DivTagTable_format.lc_txtNoOfLicensesInfo);
             			repo.DOM.DivTagTable_format.lc_txtNoOfLicenses.PressKeys("12");
             		
             			//TODO : Promotional Code
@@ -323,11 +326,14 @@ namespace Tests.General.Tests.BVT5
             		
             			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.DivTagTable_format.lc_cmbSalesRep1, varSalesRep1);
             			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.DivTagTable_format.lc_cmbOperationType, varSalesOperationType);
-            		  
+            		    
+            			Validate.Exists(repo.DOM.DivTagTable_format.lc_btn_Step3of4_ContinueInfo);
+            			repo.DOM.DivTagTable_format.lc_btn_Step3of4_Continue.Click();
+            			
+            			Validate.Exists(repo.DOM.DivTagTable_format.h1Signup_4of4Info);
+            			repo.DOM.DivTagTable_format.lc_btnPurchase.MoveTo();
             			repo.DOM.DivTagTable_format.lc_btnPurchase.Click();
-            			Validate.Exists(repo.DOM.DivTagTable_format.lc_btnPurchase);
-            			repo.DOM.DivTagTable_format.lc_btnPurchase.Click();
-            			Validate.Exists(repo.DOM.DivTagTable_format.lc_btnCustomerDetails);
+            			Validate.Exists(repo.DOM.DivTagTable_format.lc_btnCustomerDetailsInfo);
             			repo.DOM.DivTagTable_format.lc_btnCustomerDetails.Click();
             			
             			break;

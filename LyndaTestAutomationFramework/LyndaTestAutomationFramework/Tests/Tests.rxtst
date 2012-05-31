@@ -139,7 +139,7 @@
       </testcase>
       <folder name="BVT5" id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84">
         <folder name="Precondition" id="eaaf240c-4fd3-455f-aa24-19e4bba957be">
-          <testcase name="TC01_AdminNewAcct" id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="Admin_NewAcct">
+          <testcase name="TC01_AdminNewAcct" id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21" errorbehavior="Stop" minrange="3" maxrange="3" datarangeactive="True" datasource="Admin_NewAcct">
             <testmodule name="Admin_CS_NewAcct" id="1cdd5fbe-0d0c-4d23-8735-e64b5afcba83" ref="ED3E942B-6E05-4C79-B999-BD5146EA35CC" type="UserCode">
               <databinding>
                 <var variablename="varSalesRep1" variableid="9e760f6a-7e9b-4189-b1db-f72da11fdaf6" dataname="Rep1" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
@@ -150,7 +150,7 @@
               </databinding>
             </testmodule>
           </testcase>
-          <testcase name="TC02_PublicNewAcctAccess" id="d1844dff-545d-4897-b07f-4097aab99565" minrange="0" maxrange="0" datarangeactive="True" datasource="Public_NewAcct">
+          <testcase name="TC02_PublicNewAcctAccess" id="d1844dff-545d-4897-b07f-4097aab99565" minrange="3" maxrange="3" datarangeactive="True" datasource="Public_NewAcct">
             <testmodule name="Public_NewAcctAccess" id="7f722dad-7bcd-485c-9f92-33019d25d1da" ref="A69389BD-527D-4B6D-B0FF-557E1E283C9E" type="UserCode">
               <databinding>
                 <var variablename="varPersona" variableid="a4730979-e4fe-4fb3-a8f1-1bce4dfd6869" dataname="persona" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
@@ -226,12 +226,9 @@
       <testcase id="108c6022-89ef-4c23-802b-23fe8fd6cde3"/>
       <testcase id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84"/>
       <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
-      <testcase id="569237fb-e44c-4940-92d0-9c9377b1f2a4"/>
-      <testcase id="6faa9fa3-9922-4db5-bdc6-8dd627ef2e08"/>
-      <testcase id="9153f576-aa32-42b5-a84c-acf8e727531e"/>
-      <testcase id="c905a61d-a547-4294-8389-11d995543502"/>
-      <testcase id="dcac7107-933a-414b-99c1-f0e5a92e2425"/>
-      <testcase id="f65dad26-88c6-414b-8faa-109200942e03"/>
+      <testcase id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21"/>
+      <testcase id="d1844dff-545d-4897-b07f-4097aab99565"/>
+      <testcase id="eaaf240c-4fd3-455f-aa24-19e4bba957be"/>
     </testconfiguration>
   </testconfigurations>
   <references>

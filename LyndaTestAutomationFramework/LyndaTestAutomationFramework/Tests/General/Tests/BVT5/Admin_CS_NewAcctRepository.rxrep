@@ -233,8 +233,8 @@
         <item name="lc_cmbOperationType" id="2df53bf8-e9d3-4a8e-bb37-1a637f31aa56" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
           <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlSalesInformation']/div/fieldset/table/tbody/tr[9]/td[2]/select[@id='ctl00_cphMain_ucSalesRepresentativeInformation_drpOperationType']]]>
         </item>
-        <item name="lc_btnPurchase" id="1e55a168-ed8b-426a-ab05-fc163e1ecdef" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_imgContinue']]]>
+        <item name="lc_btn_Step3of4_Continue" id="1e55a168-ed8b-426a-ab05-fc163e1ecdef" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[5]/div/div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_imgContinue' and @src='../../images/buttons/continue.gif']]]>
         </item>
         <item name="lc_btnCustomerDetails" id="e811e368-248d-4fe6-9995-6d3fbddb3e94" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
           <![CDATA[/dom/body/form/div[5]/div/div/p[2]/input[@id='ctl00_cphMain_btnCustomerDetails']]]>
@@ -256,6 +256,12 @@
         </item>
         <item name="lk_btn_Step2of4Continue" id="97f7f683-5e72-433b-88d3-8e6268dc7b5b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
           <![CDATA[/dom/body/form/div[5]/div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_ucRegistrationStep2_imgContinue']]]>
+        </item>
+        <item name="h1Signup_4of4" id="8f3355c0-f7bf-4e88-adfb-c62ab74e4eaf" searchtimeout="30000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
+          <![CDATA[/dom/body/form/div[5]/div/div/h1[@innertext~'lyndaCampus Signup: 4 of 4 – Review and Submit Order']]]>
+        </item>
+        <item name="lc_btnPurchase" id="dd6c3049-d323-4490-8e72-5e0d8c7a8ad2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom/body/form/div[5]/div/div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_imgContinue' and @src='../../images/buttons/purchase.gif']]]>
         </item>
         <basepath>
           <![CDATA[/dom/body/form/div[5]/div]]>
