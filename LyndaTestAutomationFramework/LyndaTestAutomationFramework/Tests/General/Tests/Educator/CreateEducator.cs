@@ -185,7 +185,7 @@ namespace Tests.General.Tests.Educator
 			//Click continue
 			repo.DOM.AdminCSNewAccountPage.ContinueButton.Click();
 			
-			//Fill-out Educator Registration step 1 page
+			//Fill-out Educator Registration step 1 page		
 			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.AdminCSRegStep1Page.CountrySelect, "United States");
 			repo.DOM.AdminCSRegStep1Page.FirstNameInput.PressKeys("Testfirstname");
 			repo.DOM.AdminCSRegStep1Page.LastNameInput.PressKeys("Testlastname");
@@ -293,7 +293,7 @@ namespace Tests.General.Tests.Educator
 			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.AdminCSRegStep5Page.CardMonthSelect, "08 - August");
 			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.AdminCSRegStep5Page.CardYearSelect, "2012");
 			//sales info...
-			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.AdminCSRegStep5Page.SalesRep1Select, "Jane Foster");
+			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.AdminCSRegStep5Page.SalesRep1Select, "Donna Gill");
 			SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(), repo.DOM.AdminCSRegStep5Page.SalesOperationTypeSelect, "New");
 			//click continue
 			Validate.Exists(repo.DOM.AdminCSRegStep5Page.ContinueButton);
