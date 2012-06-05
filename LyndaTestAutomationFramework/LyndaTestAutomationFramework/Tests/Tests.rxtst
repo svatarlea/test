@@ -138,7 +138,7 @@
         <testmodule name="Login" id="912db2b8-0c76-42cd-86c6-de201bda5b6d" ref="EC78CBCF-64FD-481E-A18D-90C1545FAA77" type="UserCode"/>
       </testcase>
       <folder name="BVT5" id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84">
-        <folder name="Precondition" id="eaaf240c-4fd3-455f-aa24-19e4bba957be">
+        <folder name="BVT5_Precondition" id="eaaf240c-4fd3-455f-aa24-19e4bba957be">
           <testcase name="TC01_AdminNewAcct" id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21" errorbehavior="Stop" minrange="3" maxrange="3" datarangeactive="True" datasource="Admin_NewAcct">
             <testmodule name="Admin_CS_NewAcct" id="1cdd5fbe-0d0c-4d23-8735-e64b5afcba83" ref="ED3E942B-6E05-4C79-B999-BD5146EA35CC" type="UserCode">
               <databinding>
@@ -207,6 +207,26 @@
       <testcase name="CreateEducator" id="cb6339f1-d3a9-46b7-ad9e-414e26c0e399">
         <testmodule name="CreateEducator" id="d17f2e62-d812-4a76-9168-b5fac0f954d0" ref="FE2B6F36-8341-4D18-A9CF-7325F9390251" type="UserCode"/>
       </testcase>
+      <folder name="EnterpriseCampus" id="e7b9d864-9218-42c7-a1f6-cc28285b022c">
+        <testcase name="EC_Precondition" id="7d071d5a-27ab-495a-854a-2dcce2c4114a" minrange="3" maxrange="3" datarangeactive="True" datasource="Admin_NewAcct">
+          <testmodule name="Admin_CS_NewAcct" id="643ce9c4-27b6-48e1-8463-e0255decd42e" ref="ED3E942B-6E05-4C79-B999-BD5146EA35CC" type="UserCode">
+            <databinding>
+              <var variablename="varPersona" variableid="8c000255-b7b7-4331-b9a2-6fa9da65472e" dataname="persona" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
+              <var variablename="varAccountType" variableid="d601e63d-3d8c-472f-a1c0-9ba208f002e6" dataname="accountType" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
+              <var variablename="varUsername" variableid="cba471b1-1567-4eea-bd18-685c68cb5715" dataname="Username" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
+              <var variablename="varSalesRep1" variableid="9e760f6a-7e9b-4189-b1db-f72da11fdaf6" dataname="Rep1" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
+              <var variablename="varSalesOperationType" variableid="0e5282f7-833b-42c1-838e-4a10f36c4260" dataname="OperationType" datasourceid="3aa39436-a21b-4ed9-b29b-b316376ae125"/>
+            </databinding>
+          </testmodule>
+        </testcase>
+        <testcase name="TC_EC01_AccountSetup" id="0857d2c2-aa49-481e-9f5e-aa5dbc7353b6" minrange="3" maxrange="3" datarangeactive="True" datasource="Public_NewAcct">
+          <testmodule name="Admin_EnterpriseAcctSetup" id="a71eb3bd-2549-4ea8-b52d-a529e8adcf22" ref="DBB4C28F-AD02-4A89-9683-C7146FFD459F" type="UserCode">
+            <databinding>
+              <var variablename="varUsername" variableid="18a2165a-0a8e-4413-ac47-3788c10f97c7" dataname="Username" datasourceid="db4e904e-c088-49bc-b51b-2c6763c95367"/>
+            </databinding>
+          </testmodule>
+        </testcase>
+      </folder>
     </folder>
     <folder name="Skynet" id="cc5a43f0-cedc-44b8-a95f-866e6fa6e20e">
       <folder name="ConsumerRegistration" id="43e16ec5-f749-4d70-9e3f-bec5231ad329">
@@ -225,15 +245,7 @@
     </folder>
   </content>
   <testconfigurations default="TestRun">
-    <testconfiguration name="TestRun">
-      <testcase id="108c6022-89ef-4c23-802b-23fe8fd6cde3"/>
-      <testcase id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84"/>
-      <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
-      <testcase id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21"/>
-      <testcase id="cb6339f1-d3a9-46b7-ad9e-414e26c0e399"/>
-      <testcase id="d1844dff-545d-4897-b07f-4097aab99565"/>
-      <testcase id="eaaf240c-4fd3-455f-aa24-19e4bba957be"/>
-    </testconfiguration>
+    <testconfiguration name="TestRun"/>
     <testconfiguration name="TestRun1">
       <testcase id="108c6022-89ef-4c23-802b-23fe8fd6cde3"/>
       <testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>

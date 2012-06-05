@@ -234,7 +234,7 @@
           <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlSalesInformation']/div/fieldset/table/tbody/tr[9]/td[2]/select[@id='ctl00_cphMain_ucSalesRepresentativeInformation_drpOperationType']]]>
         </item>
         <item name="lc_btn_Step3of4_Continue" id="1e55a168-ed8b-426a-ab05-fc163e1ecdef" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_imgContinue' and @src='../../images/buttons/continue.gif']]]>
+          <![CDATA[/dom/body/form/div[5]/div/div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_imgContinue' and @src~'.*lynda.com\/images\/buttons\/continue.gif$']]]>
         </item>
         <item name="lc_btnCustomerDetails" id="e811e368-248d-4fe6-9995-6d3fbddb3e94" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
           <![CDATA[/dom/body/form/div[5]/div/div/p[2]/input[@id='ctl00_cphMain_btnCustomerDetails']]]>
@@ -261,33 +261,33 @@
           <![CDATA[/dom/body/form/div[5]/div/div/h1[@innertext~'lyndaCampus Signup: 4 of 4 – Review and Submit Order']]]>
         </item>
         <item name="lc_btnPurchase" id="dd6c3049-d323-4490-8e72-5e0d8c7a8ad2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_imgContinue' and @src='../../images/buttons/purchase.gif']]]>
+          <![CDATA[/dom/body/form/div[5]/div/div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_imgContinue' and @src~'.*lynda.com\/images\/buttons\/purchase.gif$']]]>
         </item>
         <basepath>
           <![CDATA[/dom/body/form/div[5]/div]]>
         </basepath>
       </folder>
-      <folder name="SomeTableTag1" id="651a2cfd-4909-4760-b7eb-1ebacd601f77" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+      <folder name="Registraion_Billingfields" id="651a2cfd-4909-4760-b7eb-1ebacd601f77" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
         <item name="lc_cmbBillingCountry" id="e1dc51b9-811d-44f5-8ef2-bea9548b5b46" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[1]/td[2]/select[@id='ctl00_cphMain_ucPaymentInformation_ucBillingInfo_drpCountry']]]>
+          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[2]/table/tbody/tr[1]/td[2]/select[@id='ctl00_cphMain_ucPaymentInformation_ucBillingInfo_drpCountry']]]>
         </item>
         <item name="lc_txtAddress" id="84f151cc-ee11-4ddf-9e42-d8c91a3bcf7e" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[5]/td[2]/input[@id='ctl00_cphMain_ucPaymentInformation_ucBillingInfo_txtAddress1']]]>
+          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[2]/table/tbody/tr[5]/td[2]/input[@id='ctl00_cphMain_ucPaymentInformation_ucBillingInfo_txtAddress1']]]>
         </item>
         <item name="lc_txtCity" id="1bc2e0e1-f6d7-48b3-a010-ac38eed513ef" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[7]/td[2]/input[@id='ctl00_cphMain_ucPaymentInformation_ucBillingInfo_txtCity']]]>
+          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[2]/table/tbody/tr[7]/td[2]/input[@id='ctl00_cphMain_ucPaymentInformation_ucBillingInfo_txtCity']]]>
         </item>
         <item name="lc_cmbBillingState" id="f4c265b4-2135-46c8-a949-d78c5d4d5332" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[8]/td[2]/select[@id='ctl00_cphMain_ucPaymentInformation_ucBillingInfo_drpState']]]>
+          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[2]/table/tbody/tr[8]/td[2]/select[@id='ctl00_cphMain_ucPaymentInformation_ucBillingInfo_drpState']]]>
         </item>
         <item name="lc_txtZip" id="7253e163-a62d-4e3b-b136-6421a56fea27" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[9]/td[2]/input[@id='ctl00_cphMain_ucPaymentInformation_ucBillingInfo_txtZIP']]]>
+          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[2]/table/tbody/tr[9]/td[2]/input[@id='ctl00_cphMain_ucPaymentInformation_ucBillingInfo_txtZIP']]]>
         </item>
         <basepath>
-          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table]]>
+          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[2]/table]]>
         </basepath>
       </folder>
-      <folder name="SomeTableTag2" id="247b03e9-231e-4a03-85ed-a28228a8380c" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+      <folder name="Registration_CreditCardfields" id="247b03e9-231e-4a03-85ed-a28228a8380c" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
         <item name="lc_cmbCreditCardType" id="a392f15b-7b4e-4fc6-be15-e8cc331d126e" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
           <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[3]/div[2]/table/tbody/tr[2]/td[2]/select[@id='ctl00_cphMain_ucPaymentInformation_ucCreditCard_drpCreditCardType']]]>
         </item>
@@ -301,10 +301,10 @@
           <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[3]/div[2]/table/tbody/tr[5]/td[2]/input[@id='ctl00_cphMain_ucPaymentInformation_ucCreditCard_txtCreditCardSecurityCode']]]>
         </item>
         <item name="lc_cmbExpirationDateMonth" id="0f6c50c4-4064-49d3-a387-a9365f8acaa9" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[3]/div[2]/table/tbody/tr[6]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ /\ \ ']/select[@id='ctl00_cphMain_ucPaymentInformation_ucCreditCard_drpExpirationMonth']]]>
+          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[3]/div[2]/table/tbody/tr[6]/td[2]/select[@id='ctl00_cphMain_ucPaymentInformation_ucCreditCard_drpExpirationMonth']]]>
         </item>
         <item name="lc_cmbExpirationYear" id="55e7804b-d1c8-4a98-825a-8f2e322fd6a3" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[3]/div[2]/table/tbody/tr[6]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ /\ \ ']/select[@id='ctl00_cphMain_ucPaymentInformation_ucCreditCard_drpExpirationYear']]]>
+          <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[3]/div[2]/table/tbody/tr[6]/td[2]/select[@id='ctl00_cphMain_ucPaymentInformation_ucCreditCard_drpExpirationYear']]]>
         </item>
         <basepath>
           <![CDATA[/dom/body/form/div[5]/div/div/div[@id='ctl00_cphMain_pnlForms']/div/fieldset[3]/div[2]/table]]>
@@ -324,7 +324,12 @@
           <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_pnlIpAddresses']/table/tbody/tr/td[1]/table[1]/tbody]]>
         </basepath>
       </folder>
-      <folder name="ConnectionUntrustedPage" id="de5bd35a-49af-4756-bc63-5b0eae2467b4" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+      <folder name="IECertificateErrorPage" id="64ad53f2-b96b-46c4-96bb-b1b01b76ce06" searchtimeout="0ms" capname="unknown" isrooted="False">
+        <item name="OverrideLink" id="1b8256ed-367a-4fe8-bbb3-e4994fd49d32" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+          <![CDATA[/dom/body/table/tbody/tr[7]/td[@id='continueToSiteAlign']/h4/a[@id='overridelink']]]>
+        </item>
+      </folder>
+      <folder name="FFConnectionUntrustedPage" id="de5bd35a-49af-4756-bc63-5b0eae2467b4" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
         <item name="DivTagExpertContent" id="5a36cc73-4eed-4a54-b75e-89f3ac7e7277" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
           <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']]]>
         </item>
@@ -545,6 +550,35 @@ JlrCBBjKFmJcJ8K4fR6jOjEsB0UY2SvEvezFGN3jjLvaRbiexJs9rqDf/xepK0h6iT812RjCw68R
 AvR+sRB96kXoTXbCH+nO6ElhcDNRgNpNglmVF9HO96eivHiU4YcPKOtZf/p5fSgFUyRBo12mCBo1
 4Q4vj63kT3vzqLN2s3I+wBL7oq9dict51NFwPtWoYug2NUPfCeVTJhZu31P/V8PWcvEG3uTiGswK
 FD8AAAAASUVORK5CYII=
+      </icon>
+    </appfolder>
+    <appfolder name="ReviewCoursesConfirmDialogSafari" id="03107021-a9ee-4b77-a0ad-5f7eac61377a" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+      <item name="ContinueButton" id="6f5a428b-affa-41f7-9a53-2690176e470c" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+        <![CDATA[/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='Continue']]]>
+      </item>
+      <item name="OKButton" id="c4cb6863-bd99-45c0-8829-0c4226615c5d" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+        <![CDATA[/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='OK']]]>
+      </item>
+      <basepath>
+        <![CDATA[/form[@title='' and @processname='Safari']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALwSURBVDhPhVN/LNRhHC4/WmYsq62YOLVcGqE1
+zrQVM9TmZAnHbYa1MsrIV0YsiZPf3HVnduHcN+4ncsQ5l3Pn6vyopUmcKbVVk/IP1dZqT99Z2jTl
+3Z692/N+Ps/7fj7P+9m2bZPl6el52MPD40xwcPDezc635KKjo+MlEolZpVIp1Wo1l8PhEEwm88iW
+iXQ6nUaSZLd+WPeTJMXg8fjgCxqgUMihUnV/z8vLE7q4uDhsKuTq6uoxqNEsyKUS5BWWgStUQiQb
+grBtENV8CW6W1kIg4CMj48qonZ3d7r9FdnC5XOM96tbM/GoI2o1o6XwC6YPnaFZOoLV3Fs0iLTil
+PJSUFIMqR7JBIDAwMLG9jQRRWAmitg85vAGk3+6FuPcZ0rlGVBS1QJx9HamcfpTzmnA5PRXu7u4n
+1kScnJz2s9lsleAODykFYsQU3QertBsZfC34ajMaSwXoivAHi2hHcvkIylopnleH8PDwqjUBOv3g
+qZTkpNmGxrtgEnL4XJDCj1CAxTUg8ZoQwxE01Nc0IpOcRRzHiBzhGCiHkJCQoFkToJoXTmRnLTSJ
+2hBV0EsF6ZAiMKF+8BUMBiPY2RxcUr7A8UoDHHN1CCkzQC6TUi8I1a+X4EsQxFgHZVVCjQaB5Y/h
+VfwIrepxZDX0IF+9AHbXLE7LpuDbOI1MxTTIZiFoB2jy9UbupJpYJabISqkWhyrGcbVrCucahuDX
+NIdC/RJOSl/jvPY9QmQLGDF/QEZaKmxsbNL+OGFtbe0ZGxe7ounvQ93QS5xVzoDRtYiAziWEkYsI
+6llGlO4jlPOrGBroB83N7S2VvG+DlQ4ODrmxsTGYGDOhf34ZhOkT4nSfkaRfwa3JFUwsrsKoewhG
+QAAsLCziN/2Ntra2N/wZjB+82mqMj5owOWPGtHkOT8dNqKooh5ePzxcrK6uL/50JS0vLIHv7XR1e
+R73fMSMjv7HY7K9BoWFvnJydRVSpx7YcqN8B26ndkYIvBW8Ke/6V+AtB/J4MTcSjqgAAAABJRU5E
+rkJggg==
       </icon>
     </appfolder>
     <basepath>

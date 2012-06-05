@@ -136,6 +136,7 @@ namespace Tests.General.Tests.BVT5.TestData
 		   repo.DOM.Top_Right_Menus.StrongTagLog_out_admin.MoveTo();
 		   repo.DOM.Top_Right_Menus.StrongTagLog_out_admin.Click();
 		   Validate.Exists(repo.DOM.Top_Right_Menus.StrongTagLog_inInfo);
+		   repo.DOM.Top_Right_Menus.StrongTagLog_in.MoveTo();
 		   Host.Local.CloseApplication(repo.DOM.Self, new Duration(100));
 		    
 		    

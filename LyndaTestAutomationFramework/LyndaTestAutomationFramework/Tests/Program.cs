@@ -28,8 +28,8 @@ namespace Tests
         [STAThread]
         public static int Main(string[] args)
         {                    	
-        	Keyboard.Enabled = false; 
-        	Mouse.Enabled = false;
+        	Keyboard.Enabled = true; 
+        	Mouse.Enabled = true;
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;
 

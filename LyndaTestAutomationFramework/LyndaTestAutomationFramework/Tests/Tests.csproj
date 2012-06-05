@@ -209,6 +209,15 @@
       <id>64cbcc90-0043-4d36-afa2-e01b685820e8</id>
       <RepositoryCode>true</RepositoryCode>
     </Compile>
+    <Compile Include="General\Tests\EnterpriseCampus\EnterpriseAcctSetup_IP.cs">
+      <id>ff8c5ae4-4bd8-4b11-9689-fa6274ba0cb0</id>
+    </Compile>
+    <Compile Include="General\Tests\EnterpriseCampus\EnterpriseCampusAcctSetup.cs">
+      <BoundTo>C9790F7B-28B3-423B-878C-E61EEAFA85A2</BoundTo>
+      <DependentUpon>EnterpriseCampusAcctSetup.rxrep</DependentUpon>
+      <id>dc0e55bf-eb30-46ed-9326-e3afcb5d252c</id>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
     <Compile Include="General\Tests\MultiBrowser\MemberHomePage.cs">
       <id>4370890a-60b4-402e-9e98-2b05b8a0b5a2</id>
       <RepositoryCode>true</RepositoryCode>
@@ -294,6 +303,11 @@
       <repoid>82cec03a-770a-40d6-b498-119cbafb121f</repoid>
       <reporootid>1d6ce830-0df7-45d3-8518-f2705151a6d2</reporootid>
     </None>
+    <None Include="General\Tests\EnterpriseCampus\EnterpriseCampusAcctSetup.rxrep">
+      <id>C9790F7B-28B3-423B-878C-E61EEAFA85A2</id>
+      <repoid>fc760cce-a606-4ded-9c54-0b8978677736</repoid>
+      <reporootid>d8fd4343-4955-447e-b9c6-947d8986c648</reporootid>
+    </None>
     <None Include="General\Tests\MultiBrowser\MemberHomePage.rxrep">
       <id>32340971-9464-4ff2-9e46-a79ff75a0c40</id>
       <reporootid>12b2a37c-e9c1-4d56-a7d5-624b896a361e</reporootid>
@@ -305,40 +319,48 @@
       <projectdefaultrepository>true</projectdefaultrepository>
       <repoid>4d8e3c8d-c312-455c-b74a-570e20a9b4df</repoid>
     </None>
-    <None Include="Reports\Tests_20120529_172649.rxlog">
-      <id>666d223c-2af0-4c33-8230-860e1c2bc99b</id>
+    <None Include="Reports\Tests_20120604_130527.rxlog">
+      <id>75ecac93-396e-4f12-9d3e-7ac1f88d397b</id>
     </None>
-    <None Include="Reports\Tests_20120530_093856.rxlog">
-      <id>8d676368-2b5f-4acf-8d8d-6ab61407ff90</id>
+    <None Include="Reports\Tests_20120604_133154.rxlog">
+      <id>e5af0d6b-368b-45b0-b58a-f7eb2a566ef2</id>
     </None>
-    <None Include="Reports\Tests_20120530_113245.rxlog">
-      <id>1cf32db0-5895-4bc0-b336-e6883955510e</id>
+    <None Include="Reports\Tests_20120604_134109.rxlog">
+      <id>47adc2dd-f7f9-470c-b054-330991796769</id>
     </None>
-    <None Include="Reports\Tests_20120530_113438.rxlog">
-      <id>7f98fd29-f582-42f1-91b1-716d474cc607</id>
+    <None Include="Reports\Tests_20120604_140303.rxlog">
+      <id>8bf4d178-a30a-4a1a-a849-0fe96da48c06</id>
     </None>
-    <None Include="Reports\Tests_20120530_135734.rxlog">
-      <id>b4631c0b-cc1e-4397-9c73-901ba4828c29</id>
+    <None Include="Reports\Tests_20120604_141721.rxlog">
+      <id>e0b1ea02-bce8-4e57-8826-73336ff556f2</id>
     </None>
-    <None Include="Reports\Tests_20120530_141601.rxlog">
-      <id>398cac3c-404e-47ea-bab5-3969ce9a7e76</id>
+    <None Include="Reports\Tests_20120604_150821.rxlog">
+      <id>9358bdd8-a5ed-436b-9481-e34e8b6b1c17</id>
     </None>
-    <None Include="Reports\Tests_20120531_100739.rxlog">
-      <id>9488789f-ca8b-4d2f-817a-887c805329e8</id>
+    <None Include="Reports\Tests_20120604_151941.rxlog">
+      <id>50b52854-09a1-4767-a960-72656aa7f061</id>
     </None>
-    <None Include="Reports\Tests_20120531_103009.rxlog">
-      <id>03d310d9-cfbb-4837-b0c9-3cd7a0febda5</id>
+    <None Include="Reports\Tests_20120604_162505.rxlog">
+      <id>10ae6fc3-3aeb-45d6-a91b-1c06b40d1ed1</id>
     </None>
-    <None Include="Reports\Tests_20120531_141357.rxlog">
-      <id>d5c1d930-329c-4666-b283-27ad26d9c625</id>
+    <None Include="Reports\Tests_20120604_163949.rxlog">
+      <id>352bf158-bfc7-441b-b2e0-d0b83f69c4ca</id>
     </None>
-    <None Include="Reports\Tests_20120531_144557.rxlog">
-      <id>0e082f27-127a-47c0-abd6-386fe99c4c34</id>
+    <None Include="Reports\Tests_20120604_164551.rxlog">
+      <id>f69dd7ff-9e18-44d2-8040-d5c8577fe6c1</id>
     </None>
-    <None Include="Reports\Tests_20120531_145125.rxlog">
-      <id>c833b64b-9b86-486b-b04a-0bb771a14e1c</id>
+    <None Include="Reports\Tests_20120604_165355.rxlog">
+      <id>79a75492-4fd3-40da-b979-11aed3d286ef</id>
     </None>
-    <None Include="Reports\Tests_20120531_153711.rxlog" />
+    <None Include="Reports\Tests_20120604_165954.rxlog">
+      <id>c03dc009-fd6d-43af-86ca-bd2d38c4419f</id>
+    </None>
+    <None Include="Reports\Tests_20120604_170700.rxlog">
+      <id>607942a6-a4a0-4057-a900-d1459da57257</id>
+    </None>
+    <None Include="Reports\Tests_20120604_171301.rxlog">
+      <id>a2304975-da03-46ad-9a49-65b20dcea27b</id>
+    </None>
     <Content Include="Public_lpAcctData.xlsx">
       <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
       <DependentUpon>Tests.rxtst</DependentUpon>

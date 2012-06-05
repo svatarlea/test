@@ -155,13 +155,14 @@ namespace Tests.General.Tests.BVT5
                 
                 repo.DOM.Top_Right_Menus.StrongTagLog_out.Click();
                 Validate.Exists(repo.DOM.Top_Right_Menus.StrongTagLog_inInfo);
+                repo.DOM.Top_Right_Menus.StrongTagLog_in.MoveTo();
 				}
 				else
 				{
 					//TODO: Validate.AreEqual(expectedString, StringfromUI); 
 					Report.Log(ReportLevel.Info, repo.DOM.UserRegnPage2.Message_forInactiveUser.GetInnerHtml());
 				}
-               
+                
 				Host.Local.CloseApplication(repo.DOM.Self, new Duration(100));
         }
     }

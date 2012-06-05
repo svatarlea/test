@@ -106,14 +106,8 @@ namespace Tests.General.Tests.BVT5
              
             string strResultsFile = Directory.GetCurrentDirectory() + @"\Public_AcctAccessData.xlsx";
             const string navigateTo = "/Welcome.aspx";
-            string username = "knvirtualuser7";
+            string username =   "knvirtualuser6";
             string password = "lynda1";
-            //TODO: Update rxrep to support all Browsers
-            if(AppSettings.Browser != BrowserProduct.Firefox)
-            {
-            	Report.Error("Note: Currently only Firefox Supported; Please change the appsettings Key - Browser value to Firefox and retry.");
-            	throw new Ranorex.RanorexException();
-            }
             
             BrowserProduct browserProduct = AppSettings.Browser;
             string url = string.Format("{0}{1}{2}","https://admin.", AppSettings.Domain,navigateTo);
@@ -286,8 +280,10 @@ namespace Tests.General.Tests.BVT5
             			repo.DOM.DivTagTable_format.lc_btnCalculate.Click();
             			
             			//TODO : Validate Amount
+            			
             			Validate.Exists(repo.DOM.DivTagTable_format.lc_btn_Step2of4_ContinueInfo);
-            			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.Click();;
+            			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.MoveTo();
+            			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.Click();
             		
             			EnterBillingInformation_lc();
             		
@@ -455,56 +451,92 @@ namespace Tests.General.Tests.BVT5
         			string strcompanyName, straddress, straptSuite, strcity, strstate, strzip, strcountry, strphone;
         	   	    FormDataBilling.GenerateAddress(out strcompanyName, out straddress, out straptSuite,out strcity, out strstate, out strzip, out strcountry, out strphone);	
         	   	    
-            		Validate.Exists(repo.DOM.SomeTableTag1.lc_txtAddress);
-            		repo.DOM.SomeTableTag1.lc_txtAddress.PressKeys(straddress);
-            		repo.DOM.SomeTableTag1.lc_txtCity.PressKeys(strcity);
+            		Validate.Exists(repo.DOM.Registraion_Billingfields.lc_txtAddress);
+            		repo.DOM.Registraion_Billingfields.lc_txtAddress.PressKeys(straddress);
+            		repo.DOM.Registraion_Billingfields.lc_txtCity.PressKeys(strcity);
             		            		
-            		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.SomeTableTag1.lc_cmbBillingState,strstate);
-            		repo.DOM.SomeTableTag1.lc_txtZip.PressKeys(strzip);
+            		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.Registraion_Billingfields.lc_cmbBillingState,strstate);
+            		repo.DOM.Registraion_Billingfields.lc_txtZip.PressKeys(strzip);
             		
             		string strpaymentType, strcardType, strcardNumber, strnameOnCard, strcardSecurityCode,  strexpireMonth, strexpireYear;
             		FormDataPayment.GenerateCreditCard(out strpaymentType, out strcardType, out strcardNumber, out strnameOnCard, out strcardSecurityCode, out strexpireMonth, out strexpireYear);
             		
-            		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.SomeTableTag2.lc_cmbCreditCardType, strcardType);
+            		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.Registration_CreditCardfields.lc_cmbCreditCardType, strcardType);
             		
-            		repo.DOM.SomeTableTag2.lc_txtCreditCardNumber.PressKeys(strcardNumber);
-            		repo.DOM.SomeTableTag2.lc_txtCreditCardName.PressKeys(strnameOnCard);
-            		repo.DOM.SomeTableTag2.lc_txtCreditCardSecurity.PressKeys(strcardSecurityCode);
+            		repo.DOM.Registration_CreditCardfields.lc_txtCreditCardNumber.PressKeys(strcardNumber);
+            		repo.DOM.Registration_CreditCardfields.lc_txtCreditCardName.PressKeys(strnameOnCard);
+            		repo.DOM.Registration_CreditCardfields.lc_txtCreditCardSecurity.PressKeys(strcardSecurityCode);
             		
-            		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.SomeTableTag2.lc_cmbExpirationDateMonth, strexpireMonth);
+            		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.Registration_CreditCardfields.lc_cmbExpirationDateMonth, strexpireMonth);
             		
-            		Validate.Exists(repo.DOM.SomeTableTag2.lc_cmbExpirationYearInfo);
-            		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.SomeTableTag2.lc_cmbExpirationYear, strexpireYear);
+            		Validate.Exists(repo.DOM.Registration_CreditCardfields.lc_cmbExpirationYearInfo);
+            		SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.Registration_CreditCardfields.lc_cmbExpirationYear, strexpireYear);
             		
             		
         }
          
         void HandleUntrustedConnection(string url)
         {
-        	Validate.Exists(repo.DOM.ConnectionUntrustedPage.ButtonTagGetMeOutOfHereButtonInfo);
-        	repo.DOM.ConnectionUntrustedPage.DivTagTechnicalContent.Click();
-        	Validate.Exists(repo.DOM.ConnectionUntrustedPage.PTagTechnicalContentTextInfo);
-        	Regex errorMsg = new Regex("^.*(Error code: ssl_error_bad_cert_domain)*^");
-        	try
-        	{
-        		Validate.AreEqual(repo.DOM.ConnectionUntrustedPage.PTagTechnicalContentText.InnerText, errorMsg);
-        		repo.DOM.ConnectionUntrustedPage.DivTagExpertContent.Click();
-        		Validate.Exists(repo.DOM.ConnectionUntrustedPage.ButtonTagExceptionDialogButtonInfo);
-        		repo.DOM.ConnectionUntrustedPage.ButtonTagExceptionDialogButton.Click();
+        	
+           switch (AppSettings.Browser)
+           {
+           		case BrowserProduct.IE:
+				{
+						repo.DOM.IECertificateErrorPage.OverrideLink.Click();	
+						break;
+				}
+				case BrowserProduct.Firefox:
+				{
+           			Validate.Exists(repo.DOM.FFConnectionUntrustedPage.ButtonTagGetMeOutOfHereButtonInfo);
+        			repo.DOM.FFConnectionUntrustedPage.DivTagTechnicalContent.Click();
+        			Validate.Exists(repo.DOM.FFConnectionUntrustedPage.PTagTechnicalContentTextInfo);
+        			Regex errorMsg = new Regex("^.*(Error code: ssl_error_bad_cert_domain)*^");
+        			try
+        			{
+        				Validate.AreEqual(repo.DOM.FFConnectionUntrustedPage.PTagTechnicalContentText.InnerText, errorMsg);
+        				repo.DOM.FFConnectionUntrustedPage.DivTagExpertContent.Click();
+        				Validate.Exists(repo.DOM.FFConnectionUntrustedPage.ButtonTagExceptionDialogButtonInfo);
+        				repo.DOM.FFConnectionUntrustedPage.ButtonTagExceptionDialogButton.Click();
         		
-        		Validate.Exists(repo.FormAdd_Security_Exception.TextLocation_Info);
-        		if(repo.FormAdd_Security_Exception.TextLocation_.TextValue != url)
-        			repo.FormAdd_Security_Exception.TextLocation_.PressKeys(url);
+        				Validate.Exists(repo.FormAdd_Security_Exception.TextLocation_Info);
+        				if(repo.FormAdd_Security_Exception.TextLocation_.TextValue != url)
+        				repo.FormAdd_Security_Exception.TextLocation_.PressKeys(url);
         		
-        		repo.FormAdd_Security_Exception.ButtonConfirm_Security_Excepti.Click();
-        		Validate.Exists(repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLoginInfo);	                                                        
+        				repo.FormAdd_Security_Exception.ButtonConfirm_Security_Excepti.Click();
+        				Validate.Exists(repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLoginInfo);	                                                        
         		
-        	}
-        	catch(ValidationException ve)
-        	{
-        		Report.Log(ReportLevel.Error, "Unknown Error - Could not login : " + ve.ToString());
-        		throw new Ranorex.RanorexException();	
-        	}
+        			}
+        			catch(ValidationException ve)
+        			{
+        				Report.Log(ReportLevel.Error, "Unknown Error - Could not login : " + ve.ToString());
+        				throw new Ranorex.RanorexException();	
+        			}
+        			break;
+           		}
+           		case BrowserProduct.Safari:
+				{
+					repo.ReviewCoursesConfirmDialogSafari.ContinueButton.Click();
+					break;
+				}
+				case BrowserProduct.Chrome:
+				{
+					//Handle Chrome "This is probably not the site you are looking for!" page
+					//Ranorex doesn't support this page yet.
+					//Click navigate edit box then tab to "Proceed anyway" button and press Enter for now.
+					Text navigateEditBox = "/form[@title='SSL Error - Google Chrome']/element/text[@accessiblename='Address']";
+					Validate.Exists(navigateEditBox);
+					navigateEditBox.Click();
+					Keyboard.Press(System.Windows.Forms.Keys.Tab);
+					Keyboard.Press("{Enter}");
+					break;						
+				}
+				default:
+					throw new Exception(String.Format("Code not implemented yet: {0}", AppSettings.Browser.ToString()));
+           		
+           }
+           
+        	
+        	
         
         }
             
