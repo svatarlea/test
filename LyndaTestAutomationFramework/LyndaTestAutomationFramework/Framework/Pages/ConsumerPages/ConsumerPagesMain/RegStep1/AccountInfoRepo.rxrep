@@ -1,39 +1,39 @@
-﻿<repository name="AccountInfoRepo" id="b5094ddd-6080-433d-a4ab-3b2998356dd9" rxversion="3.2.3.16825">
-  <codegen classname="AccountInfoRepo" namespace="ConsumerPagesMain.RegStep1"/>
-  <rootfolder name="Root" id="5ac99b8c-7c79-4aab-b72e-c7919e4b02bf" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="DOM" id="89597d3b-6b55-44a6-aaa5-914eedf6a09b" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="FirstNameInput" id="565efb7d-4da0-4681-9ed3-475bef29f1f6" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[1]/td[2]/input[@id='txtFirstName']]]>
-      </item>
-      <item name="LastNameInput" id="9e7b4b0f-cd18-49d8-9caf-46531e2318ba" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[2]/td[2]/input[@id='txtLastName']]]>
-      </item>
-      <item name="EmailInput" id="1455b65f-bf2a-489f-9b68-6610b5f50763" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[3]/td[2]/input[@id='txtEmail']]]>
-      </item>
-      <item name="UsernameInput" id="49b9cea1-9ee0-45ce-897c-e5e22679b4f9" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[4]/td[2]/input[@id='txtUserName']]]>
-      </item>
-      <item name="PasswordInput" id="19313008-a281-4b6d-8a10-02bf86bfebc2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[5]/td[2]/input[@id='txtPassword']]]>
-      </item>
-      <item name="PasswordConfirmInput" id="d4fdc522-cfea-4fc3-b255-22c4c970c153" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[6]/td[2]/input[@id='txtPasswordConfirm']]]>
-      </item>
-      <item name="NewslettersInput" id="c1946865-1de2-41af-b1c1-7a43d3e4a5f9" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews876492']]]>
-      </item>
-      <item name="NewReleasesInput" id="a6be849f-f914-4250-8a64-2e0aff76b812" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews876494']]]>
-      </item>
-      <item name="SpecialInput" id="6d9437c6-1e91-42c3-8d22-3c6c27c2fe1a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews2192942']]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="AccountInfoRepo" id="b5094ddd-6080-433d-a4ab-3b2998356dd9" rxversion="3.3.0.17843">
+	<codegen classname="AccountInfoRepo" namespace="ConsumerPagesMain.RegStep1" resourcebasedir="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<rootfolder name="Root" id="5ac99b8c-7c79-4aab-b72e-c7919e4b02bf" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="DOM" id="89597d3b-6b55-44a6-aaa5-914eedf6a09b" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="FirstNameInput" id="565efb7d-4da0-4681-9ed3-475bef29f1f6" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[1]/td[2]/input[@id='txtFirstName']
+			</item>
+			<item name="LastNameInput" id="9e7b4b0f-cd18-49d8-9caf-46531e2318ba" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[2]/td[2]/input[@id='txtLastName']
+			</item>
+			<item name="EmailInput" id="1455b65f-bf2a-489f-9b68-6610b5f50763" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[3]/td[2]/input[@id='txtEmail']
+			</item>
+			<item name="UsernameInput" id="49b9cea1-9ee0-45ce-897c-e5e22679b4f9" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[4]/td[2]/input[@id='txtUserName']
+			</item>
+			<item name="PasswordInput" id="19313008-a281-4b6d-8a10-02bf86bfebc2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[5]/td[2]/input[@id='txtPassword']
+			</item>
+			<item name="PasswordConfirmInput" id="d4fdc522-cfea-4fc3-b255-22c4c970c153" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[6]/td[2]/input[@id='txtPasswordConfirm']
+			</item>
+			<item name="NewslettersInput" id="c1946865-1de2-41af-b1c1-7a43d3e4a5f9" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews876492']
+			</item>
+			<item name="NewReleasesInput" id="a6be849f-f914-4250-8a64-2e0aff76b812" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews876494']
+			</item>
+			<item name="SpecialInput" id="6d9437c6-1e91-42c3-8d22-3c6c27c2fe1a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews2192942']
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -45,10 +45,9 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

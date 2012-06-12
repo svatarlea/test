@@ -1,240 +1,240 @@
-﻿<repository name="CreateEducatorRepo" id="82cec03a-770a-40d6-b498-119cbafb121f" rxversion="3.2.3.16825">
-  <codegen classname="CreateEducatorRepo" namespace="Tests.General.Tests.Educator"/>
-  <rootfolder name="Root" id="1d6ce830-0df7-45d3-8518-f2705151a6d2" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="DOM" id="21187d4f-baeb-40a2-b8f5-85f2cdaf82f6" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <folder name="AdminWelcomePageNotLoggedIn" id="5f19804b-d22d-4792-98d6-b28ec28cabae" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="UsernameInput" id="ba9e2da0-26de-4b1f-8f0e-4283999ea612" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtUsername']]]>
-        </item>
-        <item name="LoginInput" id="c512f704-ec6e-4556-94ea-3f297ba6cbd2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[3]/input[@id='ctl00_UcHeaderAdminLogin1_ImageButton1']]]>
-        </item>
-        <item name="PasswordInput" id="8e2c20b6-79b8-45f7-86d5-f285b6c1e09f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[2]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtPassword']]]>
-        </item>
-      </folder>
-      <folder name="AdminWelcomePageLoggedIn" id="a68568c8-a307-460d-9a10-f9916cb1c1b3" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="WelcomeMessage" id="439d5d41-43c7-48c8-a639-e65dff6492b5" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-          <![CDATA[/dom/body/form/div[5]/div/div/p/span[@id='ctl00_cphMain_labelForMsg']]]>
-        </item>
-      </folder>
-      <folder name="IECertificateErrorPage" id="64ad53f2-b96b-46c4-96bb-b1b01b76ce06" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="OverrideLink" id="1b8256ed-367a-4fe8-bbb3-e4994fd49d32" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/table/tbody/tr[7]/td[@id='continueToSiteAlign']/h4/a[@id='overridelink']]]>
-        </item>
-      </folder>
-      <folder name="FirefoxUntrustedConnectionPage" id="23f0365b-473a-4a3d-ac09-6f9bf7cfa2ef" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="IUnderstandTheRisks" id="2ece9aae-6290-448f-a469-599249f8e581" searchtimeout="30000ms" capname="h2tag" addcaps="unknown,webelement,h2tag">
-          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']/h2[@id='expertContentHeading']]]>
-        </item>
-        <item name="AddExceptionButton" id="1ebfad8d-72c3-4a33-950b-7a5c41736030" searchtimeout="30000ms" capname="buttontag" addcaps="unknown,webelement,buttontag">
-          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']/div/button[@id='exceptionDialogButton']]]>
-        </item>
-      </folder>
-      <folder name="AdminHeaderMenusAbstractPage" id="7d38b416-b434-4d45-bcf9-c683bf0561b5" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="CSmenu" id="bd4fe592-f629-4473-84e9-d47c9816a661" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/form/div[4]/div[1]/table/tbody/tr/td[1]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu1']]]>
-        </item>
-        <item name="CSmenuNewAccount" id="9ae14e88-f985-427a-ba01-d3de07d29b91" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[3]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu101']]]>
-        </item>
-        <item name="LogoutButton" id="a9504d86-3910-4b79-a500-f974046100e4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[3]/table/tbody/tr/td[9]/div/div/table/tbody/tr/td[5]/input[@id='ctl00_UcHeaderAdminLogin1_btnLogOut']]]>
-        </item>
-      </folder>
-      <folder name="AdminCSNewAccountPage" id="4fffd714-1f40-49cf-846b-c193fffffd2a" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="EducatorRadio" id="584cb646-4f9f-45d6-b685-0a9bbcef7b78" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/div/table/tbody/tr[2]/td/table/tbody/tr[2]/td/input[@id='ctl00_cphMain_rblPersonaProduct_1']]]>
-        </item>
-        <item name="RegularRadio" id="6d91bbae-e8d5-453d-898c-b384f5ee2123" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/div/table/tbody/tr[4]/td/table/tbody/tr[1]/td/input[@id='ctl00_cphMain_rblAccountType_0']]]>
-        </item>
-        <item name="ContinueButton" id="3b4006ec-4413-419b-9f94-b231691daf5c" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/div/p/input[@id='ctl00_cphMain_btnContinue']]]>
-        </item>
-      </folder>
-      <folder name="AdminCSRegStep1Page" id="22f41ff8-39e5-472e-9c33-f17a2f557c97" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="CountrySelect" id="9b78ca47-2136-4a9b-971a-6ded77fcb5c9" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[1]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep1_drpCountry']]]>
-        </item>
-        <item name="FirstNameInput" id="85b94467-c240-41a2-b582-6ca850106a26" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[2]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_firstname']]]>
-        </item>
-        <item name="LastNameInput" id="9e8d52a8-079b-4f32-8c13-6c0c15262d09" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[3]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_lastname']]]>
-        </item>
-        <item name="PositionTitleInput" id="74869e39-77cc-4177-88ca-2cda5b2b3d95" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[4]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_positiontitle']]]>
-        </item>
-        <item name="DepartmentInput" id="5e55a7c9-aae9-4549-b68a-d6e6980e4495" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[5]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_department']]]>
-        </item>
-        <item name="SchoolInput" id="664770a1-d4f9-48a4-a1cb-ea9e77827d02" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[6]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_school']]]>
-        </item>
-        <item name="PhoneInput" id="39c90bd3-11c1-48f1-8d4f-0ba2bfc639ff" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[7]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_phonenumber']]]>
-        </item>
-        <item name="EmailInput" id="a4976852-5c39-4ce1-b55b-3544eb05d93f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[8]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_email']]]>
-        </item>
-        <item name="UsernameInput" id="2f684c3a-890d-4360-be42-dd875cb9be2b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[9]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_txtUserName']]]>
-        </item>
-        <item name="PasswordInput" id="87397c88-88de-4b34-bf73-dabf52b0a734" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[10]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_txtPassword']]]>
-        </item>
-        <item name="PasswordConfirmInput" id="a09ac8f5-ab19-4c3a-8efc-2c7808eedda4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[11]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_txtPasswordConfirm']]]>
-        </item>
-        <item name="ContinueButton" id="ed9ebab4-9960-4cc2-bbdf-47d4f1474244" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/p/input[@id='ctl00_cphMain_ucRegistrationStep1_btnGoToStep2']]]>
-        </item>
-      </folder>
-      <folder name="AdminCSRegStep2Page" id="4cf9aa06-3183-4baa-8aeb-ee87b342c731" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="StartDateInput" id="c0396650-6b4e-4e1a-865a-cd157dc8cfa6" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[4]/td/input[@id='ctl00_cphMain_ucRegistrationStep2_cpStartDate']]]>
-        </item>
-        <item name="EndDateInput" id="60a0ec58-d6e0-4d08-a03d-139d00090f6d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[5]/td/input[@id='ctl00_cphMain_ucRegistrationStep2_cpEndDate']]]>
-        </item>
-        <item name="ClassIDInput" id="42364533-341c-4d30-ba7a-c5b96afccfe9" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[3]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep2_classID']]]>
-        </item>
-        <item name="ClassNameInput" id="2095e6e5-26b4-406e-9ba6-8885867ebee7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[2]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep2_classname']]]>
-        </item>
-        <item name="SchoolNameInput" id="b1002d0b-859f-487f-91c3-343e1e68bd64" searchtimeout="30000ms" capname="inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[1]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep2_schoolname']]]>
-        </item>
-        <item name="ContinueButton" id="6e6f2994-4ec0-4e5a-8777-30a59a1b19f1" searchtimeout="30000ms" capname="inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/table/tbody/tr/td/input[@id='ctl00_cphMain_ucRegistrationStep2_btnContinue']]]>
-        </item>
-      </folder>
-      <folder name="AdminCSRegStep3Page" id="d49d0687-a766-410a-84c7-86d1ff2b6c8f" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="ContinueButton" id="c995777c-c65e-4f3f-b23f-5e570203f162" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep3_upSelectCourse']/table/tbody/tr[1]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep3_btnContinue']]]>
-        </item>
-        <item name="AddCourseButton" id="ca6d1067-80ec-4468-b12f-8b978d444396" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep3_upSelectCourse']/p/input[@id='ctl00_cphMain_ucRegistrationStep3_btnAddCourse']]]>
-        </item>
-        <item name="CoursesTableColumn" id="33dca28b-3114-4872-90e3-f898cf3f201d" searchtimeout="30000ms" capname="thtag" addcaps="unknown,webelement,thtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep3_upSelectCourse']/div[@id='ctl00_cphMain_ucRegistrationStep3_pnlCoursesSelected']/div/table/tbody/tr[1]/th[@innertext='Courses']]]>
-        </item>
-      </folder>
-      <folder name="AdminCSRegStep4Page" id="258907cd-0956-4793-a5af-639aa429fbe5" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="FirstNameInput" id="41c3a775-eeb2-47de-9b38-420c59e74888" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upAddStudents']/fieldset/table/tbody/tr[2]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep4_firstname']]]>
-        </item>
-        <item name="LastNameInput" id="38dd7f03-4adc-4d03-829e-181e4353fb78" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upAddStudents']/fieldset/table/tbody/tr[3]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep4_lastname']]]>
-        </item>
-        <item name="EmailInput" id="41605055-46f2-4758-84d1-77c54669d847" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upAddStudents']/fieldset/table/tbody/tr[4]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep4_email']]]>
-        </item>
-        <item name="AddStudentButton" id="9a228e65-f919-4cf0-99db-9f9eade660c5" searchtimeout="30000ms" capname="inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upAddStudents']/fieldset/p/input[@id='ctl00_cphMain_ucRegistrationStep4_btnAddStudent']]]>
-        </item>
-        <item name="ContinueButton" id="f172a6bb-ef25-449c-a7d1-714829e07cd2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upGroupInvitations']/p/input[@id='ctl00_cphMain_ucRegistrationStep4_btnContinue']]]>
-        </item>
-        <item name="StudentNameTableColumn" id="59c09bc9-e7c9-43d8-8e98-1682a9e73c18" searchtimeout="30000ms" capname="thtag" addcaps="unknown,webelement,thtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upGroupInvitations']/div/table/tbody/tr[1]/th[@innertext='Student Name']]]>
-        </item>
-      </folder>
-      <folder name="AdminCSRegStep5Page" id="6c1a8c30-8359-47d4-9584-4393275f9c91" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="PaidBySchoolRadio" id="d3b6e324-ba7d-4f32-aaa4-c6b57c6d7545" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/span/span/input[@id='ctl00_cphMain_ucRegistrationStep5_rblPaidBy_1']]]>
-        </item>
-        <item name="PaymentTypeSelect" id="6044512f-0812-49c5-8e99-6bbd9d73bdd2" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_fsPaymentType']/table/tbody/tr/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ddPaymentType']]]>
-        </item>
-        <item name="BillingAddressInput" id="6b043fd8-5776-46c1-85fb-b95dffa2218d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[5]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucBillingInfo_txtAddress1']]]>
-        </item>
-        <item name="BillingAptSuiteInput" id="e7b93f04-fe93-4cf2-a950-af7b9cadf96d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[6]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucBillingInfo_txtAddress2']]]>
-        </item>
-        <item name="BillingCityInput" id="484e4257-520d-450b-8cfd-1d7a151da160" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[7]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucBillingInfo_txtCity']]]>
-        </item>
-        <item name="BillingStateSelect" id="e4d59313-8d0f-42e5-8046-0c7b2f1ad1b7" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[8]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucBillingInfo_drpState']]]>
-        </item>
-        <item name="BillingZipInput" id="e2a5f64b-838b-4995-af11-53cf1ec4656b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[9]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucBillingInfo_txtZIP']]]>
-        </item>
-        <item name="CardTypeSelect" id="1eb11894-f338-4544-be31-dd4702fc42f6" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[2]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_drpCreditCardType']]]>
-        </item>
-        <item name="CardNumberInput" id="6142130e-fb5b-458a-bf47-9f73498f1b88" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[3]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_txtCreditCardNumber']]]>
-        </item>
-        <item name="CardNameInput" id="dc2b0eef-6587-4895-a3c8-46b73434e1d6" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[4]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_txtNameOnCard']]]>
-        </item>
-        <item name="CardCodeInput" id="454bf8f4-1f5c-49fe-a14d-3944dab27f8f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[5]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_txtCreditCardSecurityCode']]]>
-        </item>
-        <item name="CardMonthSelect" id="571ace7e-1cff-4577-bac4-9656d7d5e15e" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[6]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_drpExpirationMonth']]]>
-        </item>
-        <item name="CardYearSelect" id="94998fc0-0c29-400f-85b0-9189c2e47631" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[6]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_drpExpirationYear']]]>
-        </item>
-        <item name="SalesRep1Select" id="a48c9f8d-bc63-44b0-a1cf-5615056d3512" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset[5]/table/tbody/tr[1]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucSalesRepresentativeInformation_drpAccountManager']]]>
-        </item>
-        <item name="SalesOperationTypeSelect" id="57d74649-be12-4acc-884a-eaff08d0a768" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset[5]/table/tbody/tr[9]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucSalesRepresentativeInformation_drpOperationType']]]>
-        </item>
-        <item name="ContinueButton" id="ba4e0277-77df-454b-b817-7fe2c00322a0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/table/tbody/tr/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_btnGoToStep6']]]>
-        </item>
-      </folder>
-      <folder name="AdminCSRegStep6Page" id="eb157908-29d6-4cf4-acd6-48ffd2f194f9" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="StudentEmail" id="365aeebc-d5ce-4ba7-a1f1-531a1706c0ec" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[3]/div[1]/table/tbody/tr[2]/td[3]]]>
-        </item>
-        <item name="StudentName" id="8d562487-a224-42b2-bbbb-e7269735d96b" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[3]/div[1]/table/tbody/tr[2]/td[2]]]>
-        </item>
-        <item name="ApproveNowButton" id="5ff1e49a-08bc-44e7-9be8-9f12fe9ea168" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/p/input[@id='ctl00_cphMain_ucRegistrationStep6_btnApproveNow']]]>
-        </item>
-      </folder>
-      <folder name="AdminCSRegConfirmPage" id="490eaaed-d61e-4d6c-8d94-6b775a2f99e0" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="ContinueButton" id="6a05e1ef-8cec-4216-9318-9a6b5dc24460" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/p/input[@id='ctl00_cphMain_btnContinue']]]>
-        </item>
-      </folder>
-      <folder name="MemberHomePage" id="695cae93-338a-47c3-b2c1-f3f81d19497d" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="LoginLink" id="3014fcd6-c322-4bb2-be0a-1ebf28f32b84" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
-          <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log in']]]>
-        </item>
-        <item name="LoginUsername" id="440aa381-e1e6-40f5-b939-467ed497e511" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[2]/td/input[@id='username']]]>
-        </item>
-        <item name="LoginPassword" id="34a30a3c-6f56-47c0-9341-a74fa3a94b11" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[4]/td/input[@id='password']]]>
-        </item>
-        <item name="LoginButton" id="56bc1be0-24b5-4449-9f81-d5d0e033563f" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-          <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[6]/td/div[@id='login_btn']/a/span[@innertext='log in']]]>
-        </item>
-        <item name="LogoutLink" id="50945fca-5f21-4923-97ca-bf62e94a2951" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
-          <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log out']]]>
-        </item>
-      </folder>
-      <folder name="AdminDisplayCustomerPage" id="b40cdb77-249d-4eef-b65f-c3ced6e02119" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="CustomerDetailsText" id="feb64223-f7ef-4816-b9ac-251c2e1df1c7" searchtimeout="30000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_pnlForLinks']/table/tbody/tr/td[1]/h1[@innertext='Customer Details']]]>
-        </item>
-      </folder>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="CreateEducatorRepo" id="82cec03a-770a-40d6-b498-119cbafb121f" rxversion="3.3.0.17843">
+	<codegen classname="CreateEducatorRepo" namespace="Tests.General.Tests.Educator" resourcebasedir="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<rootfolder name="Root" id="1d6ce830-0df7-45d3-8518-f2705151a6d2" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="DOM" id="21187d4f-baeb-40a2-b8f5-85f2cdaf82f6" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<folder name="AdminWelcomePageNotLoggedIn" id="5f19804b-d22d-4792-98d6-b28ec28cabae" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="UsernameInput" id="ba9e2da0-26de-4b1f-8f0e-4283999ea612" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtUsername']
+				</item>
+				<item name="LoginInput" id="c512f704-ec6e-4556-94ea-3f297ba6cbd2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[3]/input[@id='ctl00_UcHeaderAdminLogin1_ImageButton1']
+				</item>
+				<item name="PasswordInput" id="8e2c20b6-79b8-45f7-86d5-f285b6c1e09f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[2]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtPassword']
+				</item>
+			</folder>
+			<folder name="AdminWelcomePageLoggedIn" id="a68568c8-a307-460d-9a10-f9916cb1c1b3" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="WelcomeMessage" id="439d5d41-43c7-48c8-a639-e65dff6492b5" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+					/dom/body/form/div[5]/div/div/p/span[@id='ctl00_cphMain_labelForMsg']
+				</item>
+			</folder>
+			<folder name="IECertificateErrorPage" id="64ad53f2-b96b-46c4-96bb-b1b01b76ce06" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="OverrideLink" id="1b8256ed-367a-4fe8-bbb3-e4994fd49d32" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/table/tbody/tr[7]/td[@id='continueToSiteAlign']/h4/a[@id='overridelink']
+				</item>
+			</folder>
+			<folder name="FirefoxUntrustedConnectionPage" id="23f0365b-473a-4a3d-ac09-6f9bf7cfa2ef" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="IUnderstandTheRisks" id="2ece9aae-6290-448f-a469-599249f8e581" searchtimeout="30000ms" capname="h2tag" addcaps="unknown,webelement,h2tag">
+					/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']/h2[@id='expertContentHeading']
+				</item>
+				<item name="AddExceptionButton" id="1ebfad8d-72c3-4a33-950b-7a5c41736030" searchtimeout="30000ms" capname="buttontag" addcaps="unknown,webelement,buttontag">
+					/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']/div/button[@id='exceptionDialogButton']
+				</item>
+			</folder>
+			<folder name="AdminHeaderMenusAbstractPage" id="7d38b416-b434-4d45-bcf9-c683bf0561b5" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="CSmenu" id="bd4fe592-f629-4473-84e9-d47c9816a661" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/form/div[4]/div[1]/table/tbody/tr/td[1]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu1']
+				</item>
+				<item name="CSmenuNewAccount" id="9ae14e88-f985-427a-ba01-d3de07d29b91" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[3]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu101']
+				</item>
+				<item name="LogoutButton" id="a9504d86-3910-4b79-a500-f974046100e4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[3]/table/tbody/tr/td[9]/div/div/table/tbody/tr/td[5]/input[@id='ctl00_UcHeaderAdminLogin1_btnLogOut']
+				</item>
+			</folder>
+			<folder name="AdminCSNewAccountPage" id="4fffd714-1f40-49cf-846b-c193fffffd2a" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="EducatorRadio" id="584cb646-4f9f-45d6-b685-0a9bbcef7b78" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/div/table/tbody/tr[2]/td/table/tbody/tr[2]/td/input[@id='ctl00_cphMain_rblPersonaProduct_1']
+				</item>
+				<item name="RegularRadio" id="6d91bbae-e8d5-453d-898c-b384f5ee2123" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/div/table/tbody/tr[4]/td/table/tbody/tr[1]/td/input[@id='ctl00_cphMain_rblAccountType_0']
+				</item>
+				<item name="ContinueButton" id="3b4006ec-4413-419b-9f94-b231691daf5c" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/div/p/input[@id='ctl00_cphMain_btnContinue']
+				</item>
+			</folder>
+			<folder name="AdminCSRegStep1Page" id="22f41ff8-39e5-472e-9c33-f17a2f557c97" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="CountrySelect" id="9b78ca47-2136-4a9b-971a-6ded77fcb5c9" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[1]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep1_drpCountry']
+				</item>
+				<item name="FirstNameInput" id="85b94467-c240-41a2-b582-6ca850106a26" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[2]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_firstname']
+				</item>
+				<item name="LastNameInput" id="9e8d52a8-079b-4f32-8c13-6c0c15262d09" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[3]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_lastname']
+				</item>
+				<item name="PositionTitleInput" id="74869e39-77cc-4177-88ca-2cda5b2b3d95" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[4]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_positiontitle']
+				</item>
+				<item name="DepartmentInput" id="5e55a7c9-aae9-4549-b68a-d6e6980e4495" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[5]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_department']
+				</item>
+				<item name="SchoolInput" id="664770a1-d4f9-48a4-a1cb-ea9e77827d02" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[6]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_school']
+				</item>
+				<item name="PhoneInput" id="39c90bd3-11c1-48f1-8d4f-0ba2bfc639ff" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[7]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_phonenumber']
+				</item>
+				<item name="EmailInput" id="a4976852-5c39-4ce1-b55b-3544eb05d93f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[8]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_email']
+				</item>
+				<item name="UsernameInput" id="2f684c3a-890d-4360-be42-dd875cb9be2b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[9]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_txtUserName']
+				</item>
+				<item name="PasswordInput" id="87397c88-88de-4b34-bf73-dabf52b0a734" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[10]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_txtPassword']
+				</item>
+				<item name="PasswordConfirmInput" id="a09ac8f5-ab19-4c3a-8efc-2c7808eedda4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[11]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_txtPasswordConfirm']
+				</item>
+				<item name="ContinueButton" id="ed9ebab4-9960-4cc2-bbdf-47d4f1474244" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/p/input[@id='ctl00_cphMain_ucRegistrationStep1_btnGoToStep2']
+				</item>
+			</folder>
+			<folder name="AdminCSRegStep2Page" id="4cf9aa06-3183-4baa-8aeb-ee87b342c731" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="StartDateInput" id="c0396650-6b4e-4e1a-865a-cd157dc8cfa6" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[4]/td/input[@id='ctl00_cphMain_ucRegistrationStep2_cpStartDate']
+				</item>
+				<item name="EndDateInput" id="60a0ec58-d6e0-4d08-a03d-139d00090f6d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[5]/td/input[@id='ctl00_cphMain_ucRegistrationStep2_cpEndDate']
+				</item>
+				<item name="ClassIDInput" id="42364533-341c-4d30-ba7a-c5b96afccfe9" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[3]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep2_classID']
+				</item>
+				<item name="ClassNameInput" id="2095e6e5-26b4-406e-9ba6-8885867ebee7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[2]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep2_classname']
+				</item>
+				<item name="SchoolNameInput" id="b1002d0b-859f-487f-91c3-343e1e68bd64" searchtimeout="30000ms" capname="inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[1]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep2_schoolname']
+				</item>
+				<item name="ContinueButton" id="6e6f2994-4ec0-4e5a-8777-30a59a1b19f1" searchtimeout="30000ms" capname="inputtag">
+					/dom/body/form/div[5]/div/table/tbody/tr/td/input[@id='ctl00_cphMain_ucRegistrationStep2_btnContinue']
+				</item>
+			</folder>
+			<folder name="AdminCSRegStep3Page" id="d49d0687-a766-410a-84c7-86d1ff2b6c8f" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="ContinueButton" id="c995777c-c65e-4f3f-b23f-5e570203f162" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep3_upSelectCourse']/table/tbody/tr[1]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep3_btnContinue']
+				</item>
+				<item name="AddCourseButton" id="ca6d1067-80ec-4468-b12f-8b978d444396" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep3_upSelectCourse']/p/input[@id='ctl00_cphMain_ucRegistrationStep3_btnAddCourse']
+				</item>
+				<item name="CoursesTableColumn" id="33dca28b-3114-4872-90e3-f898cf3f201d" searchtimeout="30000ms" capname="thtag" addcaps="unknown,webelement,thtag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep3_upSelectCourse']/div[@id='ctl00_cphMain_ucRegistrationStep3_pnlCoursesSelected']/div/table/tbody/tr[1]/th[@innertext='Courses']
+				</item>
+			</folder>
+			<folder name="AdminCSRegStep4Page" id="258907cd-0956-4793-a5af-639aa429fbe5" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="FirstNameInput" id="41c3a775-eeb2-47de-9b38-420c59e74888" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upAddStudents']/fieldset/table/tbody/tr[2]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep4_firstname']
+				</item>
+				<item name="LastNameInput" id="38dd7f03-4adc-4d03-829e-181e4353fb78" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upAddStudents']/fieldset/table/tbody/tr[3]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep4_lastname']
+				</item>
+				<item name="EmailInput" id="41605055-46f2-4758-84d1-77c54669d847" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upAddStudents']/fieldset/table/tbody/tr[4]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep4_email']
+				</item>
+				<item name="AddStudentButton" id="9a228e65-f919-4cf0-99db-9f9eade660c5" searchtimeout="30000ms" capname="inputtag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upAddStudents']/fieldset/p/input[@id='ctl00_cphMain_ucRegistrationStep4_btnAddStudent']
+				</item>
+				<item name="ContinueButton" id="f172a6bb-ef25-449c-a7d1-714829e07cd2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upGroupInvitations']/p/input[@id='ctl00_cphMain_ucRegistrationStep4_btnContinue']
+				</item>
+				<item name="StudentNameTableColumn" id="59c09bc9-e7c9-43d8-8e98-1682a9e73c18" searchtimeout="30000ms" capname="thtag" addcaps="unknown,webelement,thtag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upGroupInvitations']/div/table/tbody/tr[1]/th[@innertext='Student Name']
+				</item>
+			</folder>
+			<folder name="AdminCSRegStep5Page" id="6c1a8c30-8359-47d4-9584-4393275f9c91" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="PaidBySchoolRadio" id="d3b6e324-ba7d-4f32-aaa4-c6b57c6d7545" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/span/span/input[@id='ctl00_cphMain_ucRegistrationStep5_rblPaidBy_1']
+				</item>
+				<item name="PaymentTypeSelect" id="6044512f-0812-49c5-8e99-6bbd9d73bdd2" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/form/div[5]/div/div/fieldset[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_fsPaymentType']/table/tbody/tr/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ddPaymentType']
+				</item>
+				<item name="BillingAddressInput" id="6b043fd8-5776-46c1-85fb-b95dffa2218d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[5]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucBillingInfo_txtAddress1']
+				</item>
+				<item name="BillingAptSuiteInput" id="e7b93f04-fe93-4cf2-a950-af7b9cadf96d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[6]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucBillingInfo_txtAddress2']
+				</item>
+				<item name="BillingCityInput" id="484e4257-520d-450b-8cfd-1d7a151da160" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[7]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucBillingInfo_txtCity']
+				</item>
+				<item name="BillingStateSelect" id="e4d59313-8d0f-42e5-8046-0c7b2f1ad1b7" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[8]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucBillingInfo_drpState']
+				</item>
+				<item name="BillingZipInput" id="e2a5f64b-838b-4995-af11-53cf1ec4656b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/table/tbody/tr[9]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucBillingInfo_txtZIP']
+				</item>
+				<item name="CardTypeSelect" id="1eb11894-f338-4544-be31-dd4702fc42f6" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[2]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_drpCreditCardType']
+				</item>
+				<item name="CardNumberInput" id="6142130e-fb5b-458a-bf47-9f73498f1b88" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[3]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_txtCreditCardNumber']
+				</item>
+				<item name="CardNameInput" id="dc2b0eef-6587-4895-a3c8-46b73434e1d6" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[4]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_txtNameOnCard']
+				</item>
+				<item name="CardCodeInput" id="454bf8f4-1f5c-49fe-a14d-3944dab27f8f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[5]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_txtCreditCardSecurityCode']
+				</item>
+				<item name="CardMonthSelect" id="571ace7e-1cff-4577-bac4-9656d7d5e15e" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[6]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_drpExpirationMonth']
+				</item>
+				<item name="CardYearSelect" id="94998fc0-0c29-400f-85b0-9189c2e47631" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/form/div[5]/div/div/fieldset[4]/div[2]/table/tbody/tr[6]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ucCreditCard_drpExpirationYear']
+				</item>
+				<item name="SalesRep1Select" id="a48c9f8d-bc63-44b0-a1cf-5615056d3512" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/form/div[5]/div/div/fieldset[5]/table/tbody/tr[1]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucSalesRepresentativeInformation_drpAccountManager']
+				</item>
+				<item name="SalesOperationTypeSelect" id="57d74649-be12-4acc-884a-eaff08d0a768" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/form/div[5]/div/div/fieldset[5]/table/tbody/tr[9]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucSalesRepresentativeInformation_drpOperationType']
+				</item>
+				<item name="ContinueButton" id="ba4e0277-77df-454b-b817-7fe2c00322a0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/table/tbody/tr/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep5_btnGoToStep6']
+				</item>
+			</folder>
+			<folder name="AdminCSRegStep6Page" id="eb157908-29d6-4cf4-acd6-48ffd2f194f9" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="StudentEmail" id="365aeebc-d5ce-4ba7-a1f1-531a1706c0ec" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
+					/dom/body/form/div[5]/div/fieldset[3]/div[1]/table/tbody/tr[2]/td[3]
+				</item>
+				<item name="StudentName" id="8d562487-a224-42b2-bbbb-e7269735d96b" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
+					/dom/body/form/div[5]/div/fieldset[3]/div[1]/table/tbody/tr[2]/td[2]
+				</item>
+				<item name="ApproveNowButton" id="5ff1e49a-08bc-44e7-9be8-9f12fe9ea168" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/p/input[@id='ctl00_cphMain_ucRegistrationStep6_btnApproveNow']
+				</item>
+			</folder>
+			<folder name="AdminCSRegConfirmPage" id="490eaaed-d61e-4d6c-8d94-6b775a2f99e0" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="ContinueButton" id="6a05e1ef-8cec-4216-9318-9a6b5dc24460" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/p/input[@id='ctl00_cphMain_btnContinue']
+				</item>
+			</folder>
+			<folder name="MemberHomePage" id="695cae93-338a-47c3-b2c1-f3f81d19497d" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="LoginLink" id="3014fcd6-c322-4bb2-be0a-1ebf28f32b84" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
+					/dom/body/div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log in']
+				</item>
+				<item name="LoginUsername" id="440aa381-e1e6-40f5-b939-467ed497e511" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[2]/td/input[@id='username']
+				</item>
+				<item name="LoginPassword" id="34a30a3c-6f56-47c0-9341-a74fa3a94b11" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[4]/td/input[@id='password']
+				</item>
+				<item name="LoginButton" id="56bc1be0-24b5-4449-9f81-d5d0e033563f" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+					/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[6]/td/div[@id='login_btn']/a/span[@innertext='log in']
+				</item>
+				<item name="LogoutLink" id="50945fca-5f21-4923-97ca-bf62e94a2951" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
+					/dom/body/div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log out']
+				</item>
+			</folder>
+			<folder name="AdminDisplayCustomerPage" id="b40cdb77-249d-4eef-b65f-c3ced6e02119" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="CustomerDetailsText" id="feb64223-f7ef-4816-b9ac-251c2e1df1c7" searchtimeout="30000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_pnlForLinks']/table/tbody/tr/td[1]/h1[@innertext='Customer Details']
+				</item>
+			</folder>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -246,20 +246,20 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <appfolder name="AddSecurityExceptionDialogFirefox" id="eb373c0b-dd2b-4d93-9ace-cdbbd1c0f588" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="PermanentlyStoreThisExceptionCheckBoxChecked" id="2aff7363-7cb9-4880-8e1a-1fa80fe7b3e8" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
-        <![CDATA[/form[@title='Add Security Exception']/container[@accessiblename='Certificate Status']/checkbox[@accessiblename~'^Permanently\ store\ this\ ex' and @checked='true']]]>
-      </item>
-      <item name="ConfirmSecurityExceptionButton" id="5142d2a7-e849-493c-b61d-8d39daa6154e" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form[@title='Add Security Exception']/button[@accessiblename~'^Confirm\ Security\ Exceptio']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@title='Add Security Exception']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="AddSecurityExceptionDialogFirefox" id="eb373c0b-dd2b-4d93-9ace-cdbbd1c0f588" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="PermanentlyStoreThisExceptionCheckBoxChecked" id="2aff7363-7cb9-4880-8e1a-1fa80fe7b3e8" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+				/form[@title='Add Security Exception']/container[@accessiblename='Certificate Status']/checkbox[@accessiblename~'^Permanently\ store\ this\ ex' and @checked='true']
+			</item>
+			<item name="ConfirmSecurityExceptionButton" id="5142d2a7-e849-493c-b61d-8d39daa6154e" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form[@title='Add Security Exception']/button[@accessiblename~'^Confirm\ Security\ Exceptio']
+			</item>
+			<basepath>
+				/form[@title='Add Security Exception']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANsSURBVDhPbZN9TJNXFMbv+5bSVwVLaSstLhCH
 YuZgE1hkqASKfGiRz7Xo+AyzQyc6XB2idYugkUr/UGExouIHBIJBQqGsiA6VzGQIhJEAAyEYBbQU
 mBaJG1Ojj33fTYwZJ3mSk3vP87vnntxLiD0G08W1wxmSADb3yyr9LDZi+5kdCSkD/lmlj1l9mnmq
@@ -277,20 +277,20 @@ JlrCBBjKFmJcJ8K4fR6jOjEsB0UY2SvEvezFGN3jjLvaRbiexJs9rqDf/xepK0h6iT812RjCw68R
 AvR+sRB96kXoTXbCH+nO6ElhcDNRgNpNglmVF9HO96eivHiU4YcPKOtZf/p5fSgFUyRBo12mCBo1
 4Q4vj63kT3vzqLN2s3I+wBL7oq9dict51NFwPtWoYug2NUPfCeVTJhZu31P/V8PWcvEG3uTiGswK
 FD8AAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <appfolder name="ReviewCoursesConfirmDialogSafari" id="03107021-a9ee-4b77-a0ad-5f7eac61377a" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="ContinueButton" id="6f5a428b-affa-41f7-9a53-2690176e470c" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='Continue']]]>
-      </item>
-      <item name="OKButton" id="c4cb6863-bd99-45c0-8829-0c4226615c5d" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='OK']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@title='' and @processname='Safari']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="ReviewCoursesConfirmDialogSafari" id="03107021-a9ee-4b77-a0ad-5f7eac61377a" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="ContinueButton" id="6f5a428b-affa-41f7-9a53-2690176e470c" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='Continue']
+			</item>
+			<item name="OKButton" id="c4cb6863-bd99-45c0-8829-0c4226615c5d" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='OK']
+			</item>
+			<basepath>
+				/form[@title='' and @processname='Safari']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALwSURBVDhPhVN/LNRhHC4/WmYsq62YOLVcGqE1
 zrQVM9TmZAnHbYa1MsrIV0YsiZPf3HVnduHcN+4ncsQ5l3Pn6vyopUmcKbVVk/IP1dZqT99Z2jTl
 3Z692/N+Ps/7fj7P+9m2bZPl6el52MPD40xwcPDezc635KKjo+MlEolZpVIp1Wo1l8PhEEwm88iW
@@ -306,17 +306,17 @@ NIdC/RJOSl/jvPY9QmQLGDF/QEZaKmxsbNL+OGFtbe0ZGxe7ounvQ93QS5xVzoDRtYiAziWEkYsI
 QAAsLCziN/2Ntra2N/wZjB+82mqMj5owOWPGtHkOT8dNqKooh5ePzxcrK6uL/50JS0vLIHv7XR1e
 R73fMSMjv7HY7K9BoWFvnJydRVSpx7YcqN8B26ndkYIvBW8Ke/6V+AtB/J4MTcSjqgAAAABJRU5E
 rkJggg==
-      </icon>
-    </appfolder>
-    <appfolder name="ReviewCoursesConfirmDialogIE" id="a443ac80-bb6a-4c34-83af-29e9c6103b1c" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="OKButton" id="8b9fe1a0-1f08-4f58-b6d2-394029eabce8" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
-        <![CDATA[/form[@title='Message from webpage']/button[@text='OK']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@title='Message from webpage']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="ReviewCoursesConfirmDialogIE" id="a443ac80-bb6a-4c34-83af-29e9c6103b1c" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="OKButton" id="8b9fe1a0-1f08-4f58-b6d2-394029eabce8" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
+				/form[@title='Message from webpage']/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@title='Message from webpage']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOQSURBVDhPhVJtTFtlFH4rEuIPEkTBdXxtSJbV
 2cg2RSSbm87o/pls1mniotmc2ZcbrC1fomUbA4daNwLoNqJ8THSFUS7UFdqVbm0TPgtzLUuHlLa3
 vRu3lELLrdArvsfbkpAZf+xNnpyTnDzPOed5D0KPeXnnTfG+nsSceWPCMXYyfooZiGPme3lssJdn
@@ -334,17 +334,17 @@ aSi8s7B8SEcFXpWbXGnFhGuDTO3M+9bgOKKbmcsfDOD3u8lwulQ5Gr3IQA/PHxknQ6JY83wRYcuV
 G5m9hAsf7Z8D8VgIJHdC0fj5cBD23SDx21dGFzNLu+xP57dtiq4R1PBa6GZUFMnfLK1IyS27PPDi
 VypHTvWtmW2XRsI7m634jYZRZscPA76Xq7TOtEJCn3T0WtaqB8xtxPe2Ir3nAgLyPJq0f42KN0vq
 93I7/sg5PZgiuT6eIlZ2c/nFpJPt7yCZ7IlHDf4X4PYIf1V1wIQAAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <appfolder name="ReviewCoursesConfirmDialogFirefox" id="70486c9f-50ac-4f06-88e7-bb744db73c7f" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="OKButton" id="4f531b0f-adf8-45ed-bbe1-938580da8108" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form[@title~'^Educator\ Registration:\ 3\ ']/container/container/container/form/button[@accessiblename='OK']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@title~'^Educator\ Registration:\ 3\ ']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="ReviewCoursesConfirmDialogFirefox" id="70486c9f-50ac-4f06-88e7-bb744db73c7f" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="OKButton" id="4f531b0f-adf8-45ed-bbe1-938580da8108" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form[@title~'^Educator\ Registration:\ 3\ ']/container/container/container/form/button[@accessiblename='OK']
+			</item>
+			<basepath>
+				/form[@title~'^Educator\ Registration:\ 3\ ']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANsSURBVDhPbZN9TJNXFMbv+5bSVwVLaSstLhCH
 YuZgE1hkqASKfGiRz7Xo+AyzQyc6XB2idYugkUr/UGExouIHBIJBQqGsiA6VzGQIhJEAAyEYBbQU
 mBaJG1Ojj33fTYwZJ3mSk3vP87vnntxLiD0G08W1wxmSADb3yyr9LDZi+5kdCSkD/lmlj1l9mnmq
@@ -362,17 +362,17 @@ JlrCBBjKFmJcJ8K4fR6jOjEsB0UY2SvEvezFGN3jjLvaRbiexJs9rqDf/xepK0h6iT812RjCw68R
 AvR+sRB96kXoTXbCH+nO6ElhcDNRgNpNglmVF9HO96eivHiU4YcPKOtZf/p5fSgFUyRBo12mCBo1
 4Q4vj63kT3vzqLN2s3I+wBL7oq9dict51NFwPtWoYug2NUPfCeVTJhZu31P/V8PWcvEG3uTiGswK
 FD8AAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <appfolder name="ReviewCoursesConfirmDialogChrome" id="1da4ddbf-1dad-41ce-a7d0-ed71196615ad" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="OKButton" id="e03884ae-a162-472d-bc3c-2444d42d9efe" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form[@title~'^The\ page\ at\ https://admin']/container/button[@accessiblename='OK']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@title~'^The\ page\ at\ https://admin']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="ReviewCoursesConfirmDialogChrome" id="1da4ddbf-1dad-41ce-a7d0-ed71196615ad" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="OKButton" id="e03884ae-a162-472d-bc3c-2444d42d9efe" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form[@title~'^The\ page\ at\ https://admin']/container/button[@accessiblename='OK']
+			</item>
+			<basepath>
+				/form[@title~'^The\ page\ at\ https://admin']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKLSURBVDhPtdJrSFNhHAZwUSm0HJVOvMyVOrzb
 dF6ZtLPNOTc9VhSIUQtJpaKgCAZmXwyyDxVBISZBOZJumJZKJg770FJLm5dkLFPZ2TTnZUFaSGbw
 dN6lq5lBXzrwcD49v/f/vvw9PP7Hp89O87cdpltny/aDZEpDfxqhKe2/nOVpoTLnZ/fmYK4oHw7N
@@ -386,52 +386,52 @@ AJzVhwyW3pIiv8UdOWk4Dq3hDGQ6hVv5S3cAumoD29iy1yrgLdDElCvrlXBOwl5n9U3UT3Jh7grA
 8tAmLBk5WHgZCKYxhJwevHaZOHGnkpqoGzKo7ucir0mFvGYVih7JsPhqm7P4sYOH0bt8Uo5j47ne
 SnN8wzhKUVUWsq5RkN9UsAsUDmtjOMy6HWip5OnZkuD30ddDvFfGE7F/CRuKjZhNFBu/tYUfIYCY
 dPETEwgAAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <folder name="TermsAndConditionsPageChrome" id="c9b9a6ab-a514-4afc-a833-cac63e450ce1" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="IAcceptButton" id="eb0ed069-b345-4446-98cc-8ed1b736158b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/input[@type='submit']]]>
-      </item>
-      <item name="IDeclineButton" id="748bbe6d-1d7e-440c-9a1f-6e7b1428be83" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-        <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span]]>
-      </item>
-    </folder>
-    <folder name="TermsAndConditionsPageSafari" id="4218c0ff-4d4e-4142-bc65-d362321e5b68" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="IAcceptButton" id="7442c649-4a59-4bfd-aaec-108edc74ee2a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/input[@type='submit']]]>
-      </item>
-      <item name="IDeclineButton" id="3d56cb25-c105-4769-ac78-29ae768d7130" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-        <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span]]>
-      </item>
-    </folder>
-    <folder name="TermsAndConditionsPageIE" id="16848793-d076-4b34-9d61-0d949e7c32fe" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="IAcceptButton" id="43dca117-499d-4385-9a0f-17cdd1925803" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/input[@type='submit']]]>
-      </item>
-      <item name="IDeclineButton" id="b1d3e021-8003-4241-8e19-2f478b50fa49" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-        <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span]]>
-      </item>
-    </folder>
-    <folder name="TermsAndConditionsPageFirefox" id="df27cce3-290e-49e2-9dd3-c59054dd26f2" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="IDeclineButton" id="fb232c6b-394f-46e6-ab25-a6cee7ae1650" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-        <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span]]>
-      </item>
-      <item name="IAcceptButton" id="05d03152-1a7a-4360-a41e-2a687423a79c" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-        <![CDATA[/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/span]]>
-      </item>
-    </folder>
-    <appfolder name="CurrentlyLoggedInDialogChrome" id="55d7cc9e-ac1d-4685-89b6-bc4c55e173a0" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="OKButton" id="957a4295-f04d-419d-b7be-7d640366c12f" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form[@title~'^The\ page\ at\ https://admin']/container/button[@accessiblename='OK']]]>
-      </item>
-      <item name="HelloText" id="6d4c6cc0-ce79-48d8-ac83-abd6ed55b941" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
-        <![CDATA[/form[@title~'^The\ page\ at\ https://admin']/container/element/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@title~'^The\ page\ at\ https://admin']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<folder name="TermsAndConditionsPageChrome" id="c9b9a6ab-a514-4afc-a833-cac63e450ce1" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="IAcceptButton" id="eb0ed069-b345-4446-98cc-8ed1b736158b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/input[@type='submit']
+			</item>
+			<item name="IDeclineButton" id="748bbe6d-1d7e-440c-9a1f-6e7b1428be83" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+				/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span
+			</item>
+		</folder>
+		<folder name="TermsAndConditionsPageSafari" id="4218c0ff-4d4e-4142-bc65-d362321e5b68" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="IAcceptButton" id="7442c649-4a59-4bfd-aaec-108edc74ee2a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/input[@type='submit']
+			</item>
+			<item name="IDeclineButton" id="3d56cb25-c105-4769-ac78-29ae768d7130" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+				/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span
+			</item>
+		</folder>
+		<folder name="TermsAndConditionsPageIE" id="16848793-d076-4b34-9d61-0d949e7c32fe" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="IAcceptButton" id="43dca117-499d-4385-9a0f-17cdd1925803" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/input[@type='submit']
+			</item>
+			<item name="IDeclineButton" id="b1d3e021-8003-4241-8e19-2f478b50fa49" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+				/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span
+			</item>
+		</folder>
+		<folder name="TermsAndConditionsPageFirefox" id="df27cce3-290e-49e2-9dd3-c59054dd26f2" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="IDeclineButton" id="fb232c6b-394f-46e6-ab25-a6cee7ae1650" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+				/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span
+			</item>
+			<item name="IAcceptButton" id="05d03152-1a7a-4360-a41e-2a687423a79c" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+				/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/span
+			</item>
+		</folder>
+		<appfolder name="CurrentlyLoggedInDialogChrome" id="55d7cc9e-ac1d-4685-89b6-bc4c55e173a0" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="OKButton" id="957a4295-f04d-419d-b7be-7d640366c12f" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form[@title~'^The\ page\ at\ https://admin']/container/button[@accessiblename='OK']
+			</item>
+			<item name="HelloText" id="6d4c6cc0-ce79-48d8-ac83-abd6ed55b941" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
+				/form[@title~'^The\ page\ at\ https://admin']/container/element/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']
+			</item>
+			<basepath>
+				/form[@title~'^The\ page\ at\ https://admin']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKLSURBVDhPtdJrSFNhHAZwUSm0HJVOvMyVOrzb
 dF6ZtLPNOTc9VhSIUQtJpaKgCAZmXwyyDxVBISZBOZJumJZKJg770FJLm5dkLFPZ2TTnZUFaSGbw
 dN6lq5lBXzrwcD49v/f/vvw9PP7Hp89O87cdpltny/aDZEpDfxqhKe2/nOVpoTLnZ/fmYK4oHw7N
@@ -445,28 +445,28 @@ AJzVhwyW3pIiv8UdOWk4Dq3hDGQ6hVv5S3cAumoD29iy1yrgLdDElCvrlXBOwl5n9U3UT3Jh7grA
 8tAmLBk5WHgZCKYxhJwevHaZOHGnkpqoGzKo7ucir0mFvGYVih7JsPhqm7P4sYOH0bt8Uo5j47ne
 SnN8wzhKUVUWsq5RkN9UsAsUDmtjOMy6HWip5OnZkuD30ddDvFfGE7F/CRuKjZhNFBu/tYUfIYCY
 dPETEwgAAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <folder name="CurrentlyLoggedInDialogIE" id="50132258-3ec2-4e7b-9acb-d01b4d535857" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="HelloText" id="3696e788-c285-478c-9b52-ce5242b179c6" searchtimeout="5000ms" capname="text" addcaps="text,nativewindow">
-        <![CDATA[/form[@title='Message from webpage']/text[@controlid='65535' and @caption~'^Hello\ Keynote\ Virtualuser']]]>
-      </item>
-      <item name="OKButton" id="8a317cc7-ccbd-42be-a573-5489161d4fe7" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
-        <![CDATA[/form[@title='Message from webpage']/button[@text='OK']]]>
-      </item>
-    </folder>
-    <appfolder name="CurrentlyLoggedInDialogFirefox" id="0dc49aa5-c9dd-4846-8e61-1b8a43481d69" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="HelloText" id="f4a38af6-82e7-45c4-98b0-62756c44435c" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
-        <![CDATA[/form/container/container/container/form/text/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']]]>
-      </item>
-      <item name="OKButton" id="c8c7ac44-9e10-4c0b-a297-c2c07fa55b8c" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form/container/container/container/form/button[@accessiblename='OK']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<folder name="CurrentlyLoggedInDialogIE" id="50132258-3ec2-4e7b-9acb-d01b4d535857" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="HelloText" id="3696e788-c285-478c-9b52-ce5242b179c6" searchtimeout="5000ms" capname="text" addcaps="text,nativewindow">
+				/form[@title='Message from webpage']/text[@controlid='65535' and @caption~'^Hello\ Keynote\ Virtualuser']
+			</item>
+			<item name="OKButton" id="8a317cc7-ccbd-42be-a573-5489161d4fe7" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
+				/form[@title='Message from webpage']/button[@text='OK']
+			</item>
+		</folder>
+		<appfolder name="CurrentlyLoggedInDialogFirefox" id="0dc49aa5-c9dd-4846-8e61-1b8a43481d69" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="HelloText" id="f4a38af6-82e7-45c4-98b0-62756c44435c" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
+				/form/container/container/container/form/text/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']
+			</item>
+			<item name="OKButton" id="c8c7ac44-9e10-4c0b-a297-c2c07fa55b8c" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form/container/container/container/form/button[@accessiblename='OK']
+			</item>
+			<basepath>
+				/form
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANsSURBVDhPbZN9TJNXFMbv+5bSVwVLaSstLhCH
 YuZgE1hkqASKfGiRz7Xo+AyzQyc6XB2idYugkUr/UGExouIHBIJBQqGsiA6VzGQIhJEAAyEYBbQU
 mBaJG1Ojj33fTYwZJ3mSk3vP87vnntxLiD0G08W1wxmSADb3yyr9LDZi+5kdCSkD/lmlj1l9mnmq
@@ -484,18 +484,17 @@ JlrCBBjKFmJcJ8K4fR6jOjEsB0UY2SvEvezFGN3jjLvaRbiexJs9rqDf/xepK0h6iT812RjCw68R
 AvR+sRB96kXoTXbCH+nO6ElhcDNRgNpNglmVF9HO96eivHiU4YcPKOtZf/p5fSgFUyRBo12mCBo1
 4Q4vj63kT3vzqLN2s3I+wBL7oq9dict51NFwPtWoYug2NUPfCeVTJhZu31P/V8PWcvEG3uTiGswK
 FD8AAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <folder name="CurrentlyLoggedInDialogSafari" id="bde1cd1c-54a5-4faf-ba27-43020c24b957" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="HelloText" id="1ece8bac-11ab-4efe-98aa-56b54befc7b8" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
-        <![CDATA[/form[@title='' and @processname='Safari']/element/element/container/container/container[1]/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']]]>
-      </item>
-      <item name="OKButton" id="4590d9a2-b100-48be-b9b0-774d7eab14ab" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='OK']]]>
-      </item>
-    </folder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<folder name="CurrentlyLoggedInDialogSafari" id="bde1cd1c-54a5-4faf-ba27-43020c24b957" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="HelloText" id="1ece8bac-11ab-4efe-98aa-56b54befc7b8" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
+				/form[@title='' and @processname='Safari']/element/element/container/container/container[1]/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']
+			</item>
+			<item name="OKButton" id="4590d9a2-b100-48be-b9b0-774d7eab14ab" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='OK']
+			</item>
+		</folder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

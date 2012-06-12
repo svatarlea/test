@@ -1,24 +1,24 @@
-﻿<repository name="Firefox" id="49cc1734-00f5-48dc-80b6-71f26bb525a4" rxversion="3.2.3.16825">
-  <codegen classname="Firefox" namespace="Browsers.FirefoxBrowser"/>
-  <rootfolder name="Root" id="76c841d7-0ac5-4985-b102-a45cc6bbeb68" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="Form" id="1a43965b-5ca0-43b4-b128-7d9e666d98ff" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="NavigateEditBox" id="0535d943-7b3b-4f00-9b16-79a1cc1a9464" searchtimeout="30000ms" capname="combobox" addcaps="text,accessible">
-        <![CDATA[/form[@class='MozillaWindowClass']/container[@accessiblerole='PropertyPage']/toolbar[@accessiblename='Navigation Toolbar']/combobox[@accessiblename='Go to a Website']]]>
-      </item>
-      <item name="ButtonBack" id="46b3d8f2-3ffa-4b04-bd89-52096725d18f" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form[@class='MozillaWindowClass']/container[@accessiblerole='PropertyPage']/toolbar[@accessiblename='Navigation Toolbar']/button[@accessiblename='Back']]]>
-      </item>
-      <item name="TitleBar" id="1441865f-b978-4565-91ad-90beac40b672" searchtimeout="30000ms" capname="titlebar" addcaps="titlebar,accessible">
-        <![CDATA[/form[@class='MozillaWindowClass']/titlebar[@accessiblerole='TitleBar']]]>
-      </item>
-      <item name="Window" id="c50aabf4-60a8-486a-89f0-18dc37598530" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow">
-        <![CDATA[/form[@class='MozillaWindowClass']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@class='MozillaWindowClass']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="Firefox" id="49cc1734-00f5-48dc-80b6-71f26bb525a4" rxversion="3.3.0.17843">
+	<codegen classname="Firefox" namespace="Browsers.FirefoxBrowser" resourcebasedir="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
+	<rootfolder name="Root" id="76c841d7-0ac5-4985-b102-a45cc6bbeb68" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="Form" id="1a43965b-5ca0-43b4-b128-7d9e666d98ff" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="NavigateEditBox" id="0535d943-7b3b-4f00-9b16-79a1cc1a9464" searchtimeout="30000ms" capname="combobox" addcaps="text,accessible">
+				/form[@class='MozillaWindowClass']/container[@accessiblerole='PropertyPage']/toolbar[@accessiblename='Navigation Toolbar']/combobox[@accessiblename='Go to a Website']
+			</item>
+			<item name="ButtonBack" id="46b3d8f2-3ffa-4b04-bd89-52096725d18f" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form[@class='MozillaWindowClass']/container[@accessiblerole='PropertyPage']/toolbar[@accessiblename='Navigation Toolbar']/button[@accessiblename='Back']
+			</item>
+			<item name="TitleBar" id="1441865f-b978-4565-91ad-90beac40b672" searchtimeout="30000ms" capname="titlebar" addcaps="titlebar,accessible">
+				/form[@class='MozillaWindowClass']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item name="Window" id="c50aabf4-60a8-486a-89f0-18dc37598530" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow">
+				/form[@class='MozillaWindowClass']
+			</item>
+			<basepath>
+				/form[@class='MozillaWindowClass']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAO9SURBVDhPXZN/UNNlHMef78YGSLDfGyJYDc5T
 LiRQJMMJFAxkgkDb8Ca2EFojgoWkIVJSnHIQ53ZXebbsFGu7IBJawAR/JGAcJwGhngIJWgjMIQfq
 dRoQ775b1x/5uXv/87n35/U893zeDyF0jWgFR29phRtu7hH4RuiOb1Rvy63XZ+y6uTWnxhGpOz67
@@ -37,17 +37,17 @@ Xlsce2G0gIPpMh6mS3l0qASYOsjDnWIOxuhw/W7wxfBeH7QqmUNH4xm7Ta8QiRuQKCVixbNkZ+k6
 qsUazfzrfAJ7+UqaF/oyaKm80ZfljV6V57I9xXPpcxn7TkIQSXv6T/HpRlKQB+NAeSDlOBnFWGyO
 o2BLJPhRTui1MpcbEjwWTeGsR2uYlJn2vvQ0wJtuSHmEbInxI6VZYuq7t/ypHkMANVS8inEjJ4C6
 qF7FtCaLqSMiJkmmvQH/Af4Benft0XMHQJQAAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <appfolder name="DOM" id="daefb408-00fb-47dd-a6ab-a1b9e297f4a7" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="WebPage" id="40522d18-2021-417a-9d52-1b1a82d39a74" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
-        <![CDATA[/dom]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="DOM" id="daefb408-00fb-47dd-a6ab-a1b9e297f4a7" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="WebPage" id="40522d18-2021-417a-9d52-1b1a82d39a74" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
+				/dom
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -59,10 +59,9 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

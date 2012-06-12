@@ -106,7 +106,7 @@ namespace Tests.General.Tests.BVT5
              
             string strResultsFile = Directory.GetCurrentDirectory() + @"\Public_AcctAccessData.xlsx";
             const string navigateTo = "/Welcome.aspx";
-            string username =   "knvirtualuser6";
+            string username =   "knvirtualuser8";
             string password = "lynda1";
             
             BrowserProduct browserProduct = AppSettings.Browser;
@@ -220,9 +220,11 @@ namespace Tests.General.Tests.BVT5
             			//TODO : Promotional Code 
             		
             			repo.DOM.SomeBodyTag.btnCalculate.Click();
+            			Validate.Exists(repo.DOM.RegnStep2of4_TableDiscountInfo);
             			//TODO :Validate Amount Per license and total Amount
             		
-            			repo.DOM.SomeBodyTag.btn_Step2of4_Continue.Click();
+            			repo.DOM.SomeBodyTag.btn_Step2of4_Continue.MoveTo();
+            			repo.DOM.SomeBodyTag.btn_Step2of4_Continue.Click(Location.Center);
             			
             			EnterBillingInformation();
             		            		
@@ -282,6 +284,7 @@ namespace Tests.General.Tests.BVT5
             			//TODO : Validate Amount
             			
             			Validate.Exists(repo.DOM.DivTagTable_format.lc_btn_Step2of4_ContinueInfo);
+            			
             			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.MoveTo();
             			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.Click();
             		
@@ -313,7 +316,9 @@ namespace Tests.General.Tests.BVT5
             			repo.DOM.DivTagTable_format.lc_btnCalculate.Click();
             			
             			//TODO : Validate Amount
+            			
             			Validate.Exists(repo.DOM.DivTagTable_format.lc_btn_Step2of4_ContinueInfo);
+            			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.MoveTo();
             			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.Click();
             		
             			EnterBillingInformation_lc();
@@ -344,8 +349,10 @@ namespace Tests.General.Tests.BVT5
         	ExcelData.Write(strResultsFile , intIndex+1, 2, varPersona, varUsername);
             
         	//TODO : Logout and close only when all iterations are completed.
+        	
         	repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLogout.Click();
-            Host.Local.CloseApplication(repo.FormCustomer_Details.Self, new Duration(0));
+        	Validate.Exists(repo.DOM.DivTagCtl00_UcHeaderAdminLogin.btnLoginInfo);
+            Host.Local.CloseApplication(repo.DOM.Self, new Duration(1000));
         	
         }
         

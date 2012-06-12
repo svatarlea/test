@@ -1,264 +1,284 @@
-﻿<repository name="EnterpriseCampusAcctSetup" id="fc760cce-a606-4ded-9c54-0b8978677736" rxversion="3.2.3.16825">
-  <codegen classname="EnterpriseCampusAcctSetup" namespace="Tests.General.Tests.EnterpriseCampus"/>
-  <rootfolder name="Root" id="d8fd4343-4955-447e-b9c6-947d8986c648" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="DOM" id="454fb43e-b24c-40e0-9ed9-e294e212ba61" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="Webpage" id="f727a542-5bf5-46ca-83d9-8bdb6d8bd4d1" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
-        <![CDATA[/dom]]>
-      </item>
-      <folder name="HeaderAdminLogin" id="f6bdcf1a-0b69-47a2-8988-15a8758d495e" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
-        <item name="btnLogout" id="db4dc05d-4bd7-4c31-a20f-c2da7b1f964b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[3]/table/tbody/tr/td[9]/div/div/table/tbody/tr/td[5]/input[@id='ctl00_UcHeaderAdminLogin1_btnLogOut']]]>
-        </item>
-        <item name="txtAdminUserName" id="c4c86868-b1f9-4fbf-bd84-c3d4890a5348" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtUsername']]]>
-        </item>
-        <item name="btnLogin" id="0101d302-e6fb-42e4-b0e3-e11b1e0ab5ef" searchtimeout="10000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[3]/input[@id='ctl00_UcHeaderAdminLogin1_ImageButton1']]]>
-        </item>
-        <item name="txtAdminPasswd" id="915683d7-cf12-4fd6-b7f2-c7de0a737f54" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[2]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtPassword']]]>
-        </item>
-        <basepath>
-          <![CDATA[/dom/body/form/div[3]/table/tbody/tr/td[9]/div]]>
-        </basepath>
-      </folder>
-      <folder name="AdminWelcomePageLoggedIn" id="a68568c8-a307-460d-9a10-f9916cb1c1b3" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="WelcomeMessage" id="439d5d41-43c7-48c8-a639-e65dff6492b5" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-          <![CDATA[/dom/body/form/div[5]/div/div/p/span[@id='ctl00_cphMain_labelForMsg']]]>
-        </item>
-      </folder>
-      <folder name="IECertificateErrorPage" id="64ad53f2-b96b-46c4-96bb-b1b01b76ce06" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="OverrideLink" id="1b8256ed-367a-4fe8-bbb3-e4994fd49d32" searchtimeout="10000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/table/tbody/tr[7]/td[@id='continueToSiteAlign']/h4/a[@id='overridelink']]]>
-        </item>
-      </folder>
-      <folder name="FFConnectionUntrustedPage" id="de5bd35a-49af-4756-bc63-5b0eae2467b4" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
-        <item name="DivTagExpertContent" id="5a36cc73-4eed-4a54-b75e-89f3ac7e7277" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
-          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']]]>
-        </item>
-        <item name="DivTagTechnicalContent" id="db957ea6-86f8-44bb-a9b7-d0419c60f661" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
-          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='technicalContent']]]>
-        </item>
-        <item name="ButtonTagGetMeOutOfHereButton" id="fa4f09d4-ad08-46fe-bda4-680c42f069f0" searchtimeout="30000ms" capname="buttontag" addcaps="unknown,webelement,buttontag">
-          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='whatShouldIDoContent']/div/button[@id='getMeOutOfHereButton']]]>
-        </item>
-        <item name="PTagTechnicalContentText" id="5f3bd23b-f77b-468d-8187-ab9b7966f82d" searchtimeout="30000ms" capname="ptag" addcaps="unknown,webelement,ptag">
-          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='technicalContent']/p[@id='technicalContentText']]]>
-        </item>
-        <item name="ButtonTagExceptionDialogButton" id="76968d34-1214-4fd8-9c66-afd7af0f82b8" searchtimeout="30000ms" capname="buttontag" addcaps="unknown,webelement,buttontag">
-          <![CDATA[/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']/div/button[@id='exceptionDialogButton']]]>
-        </item>
-        <basepath>
-          <![CDATA[/dom/body/div/div[@id='errorLongContent']]]>
-        </basepath>
-      </folder>
-      <folder name="SearchPage" id="48bdf017-9f40-4788-8377-c90848dccc83" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="menuItemSearch" id="98d09b1a-a9ce-4d0c-8802-15cd680e93d6" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[2]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu100']]]>
-        </item>
-        <item name="txtUsername" id="c5ae5ee0-9f18-46e9-9e3f-80e1bb7be4f2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/div[@id='ctl00_cphMain_SearchCustomer2_UpdatePanel1']/table/tbody/tr[4]/td[2]/input[@id='ctl00_cphMain_SearchCustomer2_txtUsername']]]>
-        </item>
-        <item name="btnSubmit" id="ec5909c9-12fd-4c52-83aa-7e64469850f0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div/fieldset/div[2]/input[@id='ctl00_cphMain_SearchCustomer2_btnSubmit']]]>
-        </item>
-        <item name="menuCS" id="72dcb991-be8a-460f-ada4-b6572a02a021" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/form/div[4]/div[1]/table/tbody/tr/td[1]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu1']]]>
-        </item>
-        <item name="lnkSearchResults" id="08ea032c-e76b-4044-9b1f-cd699a99ae33" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/form/div[6]/div/div/div[@id='ctl00_cphMain_SearchCustomer2_pnlSearchResult']/div/table/tbody/tr[2]/td[3]/a[@id='ctl00_cphMain_SearchCustomer2_gvSearchResult_ctl03_hlUserDetails']]]>
-        </item>
-      </folder>
-      <folder name="AccountSetup" id="4eb4fe18-aa35-4b27-b8b8-57aafb7de18e" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
-        <item name="txtUsername" id="49ac8a7f-22f5-466d-a88f-9915cd86e80c" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_DetailCustomerContainer']/table/tbody/tr[2]/td[1]/div/table/tbody/tr[7]/td[2]/input[@id='ctl00_cphMain_AccountInfoControl1_tbUsername']]]>
-        </item>
-        <item name="lnklyndaEntAcctSetup" id="78c0f85e-af07-461e-94bb-db0978d660fe" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_pnlForLinks']/table/tbody/tr/td[2]/span/a[@id='ctl00_cphMain_lbManageIPAddresses']]]>
-        </item>
-        <item name="h1_Setup1of4" id="3c74f0b8-1869-414d-88f1-cf68c561fe2c" searchtimeout="30000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
-          <![CDATA[/dom/body/form/div[5]/div/h1[@innertext~'.*Enter\ IP\ Addresses']]]>
-        </item>
-        <item name="txtFromIPAddress1" id="c31aab6c-187b-478b-b2c5-93af81744d58" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[2]/table/tbody/tr[2]/td[2]/input[@id='1_fromIp']]]>
-        </item>
-        <item name="txtToIPAddress1" id="bd3e5322-37b2-4354-8ddb-acedfe5bb966" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[2]/table/tbody/tr[2]/td[3]/input[@id='1_toIp']]]>
-        </item>
-        <item name="txt_notes1" id="ac0b8352-23c8-4700-9a18-18f6b0565012" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[2]/table/tbody/tr[2]/td[4]/input[@id='1_notes']]]>
-        </item>
-        <item name="btnContinue" id="ef6357ed-5bd7-4f52-a61b-d04cd374d79d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/table/tbody/tr/td/input[@id='btnContinue']]]>
-        </item>
-        <item name="InputTagRdAdministrativeArea" id="6f66b60e-884d-43bf-b3e3-f001b16b6795" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[10]/td[2]/input[@id='rdAdministrativeArea']]]>
-        </item>
-        <item name="h1_Setup2of4" id="f733c467-7e64-43f4-88b0-3fa229a46aed" searchtimeout="15000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
-          <![CDATA[/dom/body/form/div[5]/div/h1[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ lyndaEnterpr']]]>
-        </item>
-        <item name="InputTagRdFirstName1" id="cf20aa1f-438b-4fe4-90fe-3d1dea4154f7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[3]/td[3]/input[@name='rdFirstName']]]>
-        </item>
-        <item name="InputTagRdFirstName" id="1e55c555-9ac2-489a-a1f0-2cd76f142910" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[3]/td[2]/input[@id='rdFirstName']]]>
-        </item>
-        <item name="InputTagRdAdministrativeArea1" id="2e572d1e-a22e-4182-adf2-dfcdcd6a872b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[10]/td[3]/input[@name='rdAdministrativeArea']]]>
-        </item>
-        <item name="btnApprove" id="5486a596-c72b-4e8b-93bb-870456bc2c86" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/table/tbody/tr/td[2]/p/input[@id='btnContinue']]]>
-        </item>
-        <item name="InputTagRdFullName" id="67d2f3dc-f08a-4c7d-81c1-8a6d6ac9e3c2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[4]/td[2]/input[@id='rdFullName']]]>
-        </item>
-        <item name="InputTagRdFullName1" id="9f7b0346-6b80-4ecd-bda5-f9cae8a36e14" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[4]/td[3]/input[@name='rdFullName']]]>
-        </item>
-        <item name="InputTagRdDisplayEmail" id="478898ed-e979-41f8-8b4f-a8b219e7f177" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[5]/td[2]/input[@id='rdDisplayEmail']]]>
-        </item>
-        <item name="InputTagRdDisplayEmail1" id="24ee6caa-b466-4bcb-9ab8-2d8351d1e49c" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[5]/td[3]/input[@name='rdDisplayEmail']]]>
-        </item>
-        <item name="InputTagRdCommunicationsEmail" id="7bfd9138-4b3b-4402-a804-b19e48b58be3" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[6]/td[2]/input[@id='rdCommunicationsEmail']]]>
-        </item>
-        <item name="InputTagRdCommunicationsEmail1" id="ac353d13-c592-4e35-8bd8-c387ad0eed6f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[6]/td[3]/input[@name='rdCommunicationsEmail']]]>
-        </item>
-        <item name="InputTagRdUserType" id="f0d6841e-0ba9-4c50-980b-df236b0aa8d1" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[7]/td[2]/input[@id='rdUserType']]]>
-        </item>
-        <item name="InputTagRdUserType1" id="e7d2aa98-a8f8-4a7b-bd8e-137d5c94d4d6" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[7]/td[3]/input[@name='rdUserType']]]>
-        </item>
-        <item name="InputTagRdCampus" id="bb9fdcf6-a648-4b1a-895a-8648b776fd3c" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[8]/td[2]/input[@id='rdCampus']]]>
-        </item>
-        <item name="InputTagRdCampus1" id="2a628ec7-72db-4b1e-a948-1e806db748ed" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[8]/td[3]/input[@name='rdCampus']]]>
-        </item>
-        <item name="InputTagRdDepartment" id="2cde2beb-e0e7-42b8-8481-fdbe20117da8" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[9]/td[2]/input[@id='rdDepartment']]]>
-        </item>
-        <item name="InputTagRdDepartment1" id="259c8a4c-4b36-4bfa-a68b-3c683c3bfc41" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[9]/td[3]/input[@name='rdDepartment']]]>
-        </item>
-        <item name="h1_Setup3of4" id="205a6b26-615e-441a-856b-2b4a49f2239d" searchtimeout="30000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
-          <![CDATA[/dom/body/form/div[5]/div/h1[@innertext~'.*Customize\ Landing\ Page']]]>
-        </item>
-        <item name="brwseSelCustlogo" id="1abc7ba9-c3e3-4af7-9823-36afc560e413" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[@id='custom_logo']/table/tbody/tr[1]/td[2]/input[@id='ctl00_cphMain_CustomLogo']]]>
-        </item>
-        <item name="txtCustomBanner" id="469c1ed3-153d-4dcd-b971-d56a70670303" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[@id='customize_banner_text']/table/tbody/tr/td[2]/input[@id='ctl00_cphMain_WelcomeMessage']]]>
-        </item>
-        <item name="brwseSelCustomHdr" id="a6c9aa4e-458b-4235-8755-d566233d1a12" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[@id='default_header']/table/tbody/tr[3]/td/input[@id='ctl00_cphMain_CustomHeader']]]>
-        </item>
-        <item name="txtDefaultGreeting" id="0b35eef8-f817-4be6-a21a-29922c4c6e29" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[@id='default_greeting']/table/tbody/tr/td[2]/input[@id='ctl00_cphMain_DefaultGreeting']]]>
-        </item>
-        <item name="btnImport" id="8b6145ad-1f0c-4ef7-b076-cb78d600fc33" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/input[@id='ctl00_cphMain_btnUploadEmails']]]>
-        </item>
-        <item name="browseSelectUserNameAccessContraintsImportFile" id="986be4dd-1600-44db-8606-aca3aa95b08a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/input[@id='ctl00_cphMain_EmailDomainUpload']]]>
-        </item>
-        <item name="txtEmailDomain" id="75b2a580-51b2-4877-98b4-cd0a6163b979" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tbody/tr/td[2]/input[@id='email_domain_0']]]>
-        </item>
-        <item name="ATagAdd_email_domain_link" id="19893331-4fcd-4b3a-8d77-6607d096a789" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tfoot/tr/td[@innertext=' | ']/a[@id='add_email_domain_link']]]>
-        </item>
-        <item name="ATagTest_domains" id="cf5b378a-227a-490f-904d-70625868df5b" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tfoot/tr/td[@innertext=' | ']/a[@innertext='test domains']]]>
-        </item>
-        <item name="chkAllowUsersOutsideIPrange" id="4756be7b-dd59-4ba5-b6b4-4387c90b2020" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='login_without_ip']/tbody/tr/td[1]/input[@id='ctl00_cphMain_LoginWithoutIP']]]>
-        </item>
-        <item name="btnContinuePg3of4" id="a69c006a-f82e-45b3-a26b-65d213b4f638" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_btnContinue']]]>
-        </item>
-        <item name="h1_Setup4of4" id="d7d9c340-1caa-4a4a-92ab-8215f40bf9d2" searchtimeout="30000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
-          <![CDATA[/dom/body/form/div[5]/div/h1[@innertext~'.*Set\ user\ default\ newsletter\ settings']]]>
-        </item>
-        <item name="rdNewRelNotifn_Subscribe" id="f0b39ffb-7daa-4c4d-b78d-902f2daa38f0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[4]/td[2]/input[@name='NewReleaseNotifications']]]>
-        </item>
-        <item name="rdNewRelNotifn_Unsubscribe" id="5715e016-1490-4579-ac70-806e7f994e82" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[4]/td[3]/input[@name='NewReleaseNotifications']]]>
-        </item>
-        <item name="rdMonthlyNewsletter_Subscribe" id="28382c6f-b6c3-4ac6-8611-0661b1a366f4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[5]/td[2]/input[@name='MonthlyNewsletter']]]>
-        </item>
-        <item name="rdMonthlyNewsletter_Unsubscribe" id="b82e021e-cc95-4b77-9167-73293f21e8b7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[5]/td[3]/input[@name='MonthlyNewsletter']]]>
-        </item>
-        <item name="rdSpecialAnnouncemntsOffrs_Subscribe" id="7e58f8b5-8e84-4a4d-b771-a160adb8bc36" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[6]/td[2]/input[@name='SpecialAnnouncementsOffers']]]>
-        </item>
-        <item name="rdSpecialAnnouncemntsOffrs_Unsubscribe" id="5d3fe180-0db5-44d6-ba8a-bf26d7246cac" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/fieldset/table/tbody/tr[6]/td[3]/input[@name='SpecialAnnouncementsOffers']]]>
-        </item>
-        <item name="btnContinuePg4of4" id="d1c54bc5-644a-4659-9090-1e0fb2bbd0cd" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/form/div[5]/div/table/tbody/tr/td[2]/p/input[@id='btnContinue']]]>
-        </item>
-        <item name="IP_PageDivErrors" id="9664f1f2-70ce-4d06-b58e-c0ae557d02e9" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='divErrors']]]>
-        </item>
-        <item name="IP_PageErrorRange" id="ba5e9e6e-1849-42ce-a49b-f9f71de12ee3" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='divErrors']/ul/li[@innertext~'^\ The\ following\ IP\ address']/ul/li[@innertext~'^range']]]>
-        </item>
-        <item name="IP_AddressPage_Username" id="b5dbfaa9-3921-419e-beaa-01dd2c05d18e" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/form/div[5]/div/div[@id='divErrors']/ul/li[@innertext~'^\ The\ following\ IP\ address']/ul/li/a[1]]]>
-        </item>
-        <basepath>
-          <![CDATA[/dom/body/form/div[5]/div]]>
-        </basepath>
-      </folder>
-      <folder name="IP_TestPage" id="6511e313-20d6-4965-bccd-787d677dc630" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="h1_IPAddress" id="e7034c97-b5c7-409f-b8a1-51ff1ccad361" searchtimeout="10000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
-          <![CDATA[/dom/body/div[5]/div[2]/h1[@innertext~'^Your\ IP\ Address\ is:\ ']]]>
-        </item>
-      </folder>
-      <folder name="DivTagEnterprise_wrapper" id="67437895-47bb-4d96-a7f5-ac3c3d59bddf" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
-        <basepath>
-          <![CDATA[/dom/body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']]]>
-        </basepath>
-      </folder>
-      <folder name="IP_LoginPage" id="31a26cd6-bfb4-455b-baa4-ba32ba7f5b68" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="DivTagBreadcrumbs" id="be208921-973b-4eed-8bbc-636d22772571" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
-          <![CDATA[/dom/body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']/div[@id='breadcrumbs']]]>
-        </item>
-        <item name="SpanTagEnterprise_QA_Test_login" id="bd93ba9f-aec7-4c66-a311-f70be1b6876d" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-          <![CDATA[/dom/body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']/div[@id='enterprise_marquee']/div/div/div[2]/span[1]]]>
-        </item>
-        <item name="ImgTagEnterpriseLogo" id="d2b5f09a-6616-4e59-9c1e-489a5c357c97" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
-          <![CDATA[/dom/body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']/div[@id='enterprise_marquee']/img[@src~'.*default_iplogin_header.jpg']]]>
-        </item>
-        <item name="SpanTagOk" id="2564e603-fa75-43dc-8ace-d25bf1e184e3" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-          <![CDATA[/dom/body/form/div[@id='master-page']/div[3]/div[@id='overlay']/div[2]/p[2]/a[@id='accept_overlay']/span[@innertext='ok']]]>
-        </item>
-        <item name="PTagYou_are_about_to_leave_t" id="5d8790f4-ad39-4f22-bdf7-a6339c706cba" searchtimeout="30000ms" capname="ptag" addcaps="unknown,webelement,ptag">
-          <![CDATA[/dom/body/form/div[@id='master-page']/div[3]/div[@id='overlay']/div[2]/p[@innertext~'^You\ are\ about\ to\ leave\ th']]]>
-        </item>
-        <item name="ATag_lynda_com" id="80cbb1b8-6e50-463c-b366-5be7e3bce082" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/form/div[@id='master-page']/div[@id='orng-navbar']/div/div/a[@innertext='lynda.com']]]>
-        </item>
-        <item name="ImgTagHttps___s3_amazonaws_comIE" id="48c6a333-c95a-428c-a1a9-c4950568fd4e" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
-          <![CDATA[/dom/body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']/div[@id='enterprise_marquee']/img[@src~'.*default_iplogin_header.jpg']]]>
-        </item>
-      </folder>
-      <item name="ATagLynda_com" id="8cdc4f91-830c-4d85-b781-427743fda28d" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-        <![CDATA[/dom/body/div[@id='orng-navbar']/div/div[@id='logo']/a[@innertext='lynda.com']]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="EnterpriseCampusAcctSetup" id="fc760cce-a606-4ded-9c54-0b8978677736" rxversion="3.3.0.17843">
+	<codegen classname="EnterpriseCampusAcctSetup" namespace="Tests.General.Tests.EnterpriseCampus" resourcebasedir="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<rootfolder name="Root" id="d8fd4343-4955-447e-b9c6-947d8986c648" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="DOM" id="454fb43e-b24c-40e0-9ed9-e294e212ba61" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="Webpage" id="f727a542-5bf5-46ca-83d9-8bdb6d8bd4d1" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
+				/dom
+			</item>
+			<folder name="HeaderAdminLogin" id="f6bdcf1a-0b69-47a2-8988-15a8758d495e" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+				<item name="btnLogout" id="db4dc05d-4bd7-4c31-a20f-c2da7b1f964b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[3]/table/tbody/tr/td[9]/div/div/table/tbody/tr/td[5]/input[@id='ctl00_UcHeaderAdminLogin1_btnLogOut']
+				</item>
+				<item name="txtAdminUserName" id="c4c86868-b1f9-4fbf-bd84-c3d4890a5348" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtUsername']
+				</item>
+				<item name="btnLogin" id="0101d302-e6fb-42e4-b0e3-e11b1e0ab5ef" searchtimeout="10000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[3]/input[@id='ctl00_UcHeaderAdminLogin1_ImageButton1']
+				</item>
+				<item name="txtAdminPasswd" id="915683d7-cf12-4fd6-b7f2-c7de0a737f54" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[2]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtPassword']
+				</item>
+				<basepath>
+					/dom/body/form/div[3]/table/tbody/tr/td[9]/div
+				</basepath>
+			</folder>
+			<folder name="AdminWelcomePageLoggedIn" id="a68568c8-a307-460d-9a10-f9916cb1c1b3" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="WelcomeMessage" id="439d5d41-43c7-48c8-a639-e65dff6492b5" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+					/dom/body/form/div[5]/div/div/p/span[@id='ctl00_cphMain_labelForMsg']
+				</item>
+			</folder>
+			<folder name="IECertificateErrorPage" id="64ad53f2-b96b-46c4-96bb-b1b01b76ce06" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="OverrideLink" id="1b8256ed-367a-4fe8-bbb3-e4994fd49d32" searchtimeout="10000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/table/tbody/tr[7]/td[@id='continueToSiteAlign']/h4/a[@id='overridelink']
+				</item>
+			</folder>
+			<folder name="FFConnectionUntrustedPage" id="de5bd35a-49af-4756-bc63-5b0eae2467b4" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+				<item name="DivTagExpertContent" id="5a36cc73-4eed-4a54-b75e-89f3ac7e7277" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
+					/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']
+				</item>
+				<item name="DivTagTechnicalContent" id="db957ea6-86f8-44bb-a9b7-d0419c60f661" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
+					/dom/body/div/div[@id='errorLongContent']/div[@id='technicalContent']
+				</item>
+				<item name="ButtonTagGetMeOutOfHereButton" id="fa4f09d4-ad08-46fe-bda4-680c42f069f0" searchtimeout="30000ms" capname="buttontag" addcaps="unknown,webelement,buttontag">
+					/dom/body/div/div[@id='errorLongContent']/div[@id='whatShouldIDoContent']/div/button[@id='getMeOutOfHereButton']
+				</item>
+				<item name="PTagTechnicalContentText" id="5f3bd23b-f77b-468d-8187-ab9b7966f82d" searchtimeout="30000ms" capname="ptag" addcaps="unknown,webelement,ptag">
+					/dom/body/div/div[@id='errorLongContent']/div[@id='technicalContent']/p[@id='technicalContentText']
+				</item>
+				<item name="ButtonTagExceptionDialogButton" id="76968d34-1214-4fd8-9c66-afd7af0f82b8" searchtimeout="30000ms" capname="buttontag" addcaps="unknown,webelement,buttontag">
+					/dom/body/div/div[@id='errorLongContent']/div[@id='expertContent']/div/button[@id='exceptionDialogButton']
+				</item>
+				<basepath>
+					/dom/body/div/div[@id='errorLongContent']
+				</basepath>
+			</folder>
+			<folder name="SearchPage" id="48bdf017-9f40-4788-8377-c90848dccc83" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="menuItemSearch" id="98d09b1a-a9ce-4d0c-8802-15cd680e93d6" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[2]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu100']
+				</item>
+				<item name="txtUsername" id="c5ae5ee0-9f18-46e9-9e3f-80e1bb7be4f2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/div[@id='ctl00_cphMain_SearchCustomer2_UpdatePanel1']/table/tbody/tr[4]/td[2]/input[@id='ctl00_cphMain_SearchCustomer2_txtUsername']
+				</item>
+				<item name="btnSubmit" id="ec5909c9-12fd-4c52-83aa-7e64469850f0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div/fieldset/div[2]/input[@id='ctl00_cphMain_SearchCustomer2_btnSubmit']
+				</item>
+				<item name="menuCS" id="72dcb991-be8a-460f-ada4-b6572a02a021" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/form/div[4]/div[1]/table/tbody/tr/td[1]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu1']
+				</item>
+				<item name="lnkSearchResults" id="08ea032c-e76b-4044-9b1f-cd699a99ae33" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/form/div[6]/div/div/div[@id='ctl00_cphMain_SearchCustomer2_pnlSearchResult']/div/table/tbody/tr[2]/td[3]/a[@id='ctl00_cphMain_SearchCustomer2_gvSearchResult_ctl03_hlUserDetails']
+				</item>
+			</folder>
+			<folder name="CustomerDetailsPage" id="3e6ab1c3-9592-4c27-9bb5-afc0eced8c68" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="CustomerDetails_Authentication_Label" id="f5c36eb6-0f8f-4287-80fb-96420ba5fb10" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_DetailCustomerContainer']/table/tbody/tr[2]/td[3]/div[@id='divDependencies']/div[@id='ctl00_cphMain_UpdatePanel4']/div/table/tbody/tr/td/table/tbody/tr[1]/td[@id='ctl00_cphMain_ucLicenseSummary_tdPortalType']/span[@id='ctl00_cphMain_ucLicenseSummary_lblAuthentication']
+				</item>
+				<item name="CustomerDetails_Authentication_Value" id="314f33f6-e4ab-4576-8524-0a6277f762a5" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_DetailCustomerContainer']/table/tbody/tr[2]/td[3]/div[@id='divDependencies']/div[@id='ctl00_cphMain_UpdatePanel4']/div/table/tbody/tr/td/table/tbody/tr[1]/td[2]/span[@id='ctl00_cphMain_ucLicenseSummary_lblAuthenticationVal']
+				</item>
+				<item name="txtUsername" id="49ac8a7f-22f5-466d-a88f-9915cd86e80c" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_DetailCustomerContainer']/table/tbody/tr[2]/td[1]/div/table/tbody/tr[7]/td[2]/input[@id='ctl00_cphMain_AccountInfoControl1_tbUsername']
+				</item>
+				<item name="lnklyndaEntAcctSetup" id="78c0f85e-af07-461e-94bb-db0978d660fe" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/form/div[5]/div/div[@id='ctl00_cphMain_pnlForLinks']/table/tbody/tr/td[2]/span/a[@id='ctl00_cphMain_lbManageIPAddresses']
+				</item>
+			</folder>
+			<folder name="AccountSetup" id="4eb4fe18-aa35-4b27-b8b8-57aafb7de18e" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+				<item name="h1_Setup1of4" id="3c74f0b8-1869-414d-88f1-cf68c561fe2c" searchtimeout="30000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
+					/dom/body/form/div[5]/div/h1[@innertext~'.*Enter\ IP\ Addresses']
+				</item>
+				<item name="tblIPAddresses" id="777a197b-b605-4a47-8d3c-8205413afdab" searchtimeout="30000ms" capname="tabletag" addcaps="unknown,webelement,tabletag">
+					/dom/body/form/div[5]/div/div[2]/table[@id='tblHeader']
+				</item>
+				<item name="txtFromIPAddress1" id="c31aab6c-187b-478b-b2c5-93af81744d58" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[2]/table/tbody/tr[2]/td[2]/input[@id='1_fromIp']
+				</item>
+				<item name="txtToIPAddress1" id="bd3e5322-37b2-4354-8ddb-acedfe5bb966" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[2]/table/tbody/tr[2]/td[3]/input[@id='1_toIp']
+				</item>
+				<item name="txt_notes1" id="ac0b8352-23c8-4700-9a18-18f6b0565012" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[2]/table/tbody/tr[2]/td[4]/input[@id='1_notes']
+				</item>
+				<item name="txtIPAddress1_delete" id="9de4e14a-f150-4ec8-b5da-9f561a138db2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/div[2]/table/tbody/tr[2]/td[5]/input[@id='1_delete']
+				</item>
+				<item name="btnContinue" id="ef6357ed-5bd7-4f52-a61b-d04cd374d79d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/table/tbody/tr/td/input[@id='btnContinue']
+				</item>
+				<item name="InputTagRdAdministrativeArea" id="6f66b60e-884d-43bf-b3e3-f001b16b6795" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[10]/td[2]/input[@id='rdAdministrativeArea']
+				</item>
+				<item name="h1_Setup2of4" id="f733c467-7e64-43f4-88b0-3fa229a46aed" searchtimeout="15000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
+					/dom/body/form/div[5]/div/h1[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ lyndaEnterpr']
+				</item>
+				<item name="InputTagRdFirstName1" id="cf20aa1f-438b-4fe4-90fe-3d1dea4154f7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[3]/td[3]/input[@name='rdFirstName']
+				</item>
+				<item name="InputTagRdFirstName" id="1e55c555-9ac2-489a-a1f0-2cd76f142910" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[3]/td[2]/input[@id='rdFirstName']
+				</item>
+				<item name="InputTagRdAdministrativeArea1" id="2e572d1e-a22e-4182-adf2-dfcdcd6a872b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[10]/td[3]/input[@name='rdAdministrativeArea']
+				</item>
+				<item name="btnApprove" id="5486a596-c72b-4e8b-93bb-870456bc2c86" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/table/tbody/tr/td[2]/p/input[@id='btnContinue']
+				</item>
+				<item name="InputTagRdFullName" id="67d2f3dc-f08a-4c7d-81c1-8a6d6ac9e3c2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[4]/td[2]/input[@id='rdFullName']
+				</item>
+				<item name="InputTagRdFullName1" id="9f7b0346-6b80-4ecd-bda5-f9cae8a36e14" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[4]/td[3]/input[@name='rdFullName']
+				</item>
+				<item name="InputTagRdDisplayEmail" id="478898ed-e979-41f8-8b4f-a8b219e7f177" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[5]/td[2]/input[@id='rdDisplayEmail']
+				</item>
+				<item name="InputTagRdDisplayEmail1" id="24ee6caa-b466-4bcb-9ab8-2d8351d1e49c" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[5]/td[3]/input[@name='rdDisplayEmail']
+				</item>
+				<item name="InputTagRdCommunicationsEmail" id="7bfd9138-4b3b-4402-a804-b19e48b58be3" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[6]/td[2]/input[@id='rdCommunicationsEmail']
+				</item>
+				<item name="InputTagRdCommunicationsEmail1" id="ac353d13-c592-4e35-8bd8-c387ad0eed6f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[6]/td[3]/input[@name='rdCommunicationsEmail']
+				</item>
+				<item name="InputTagRdUserType" id="f0d6841e-0ba9-4c50-980b-df236b0aa8d1" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[7]/td[2]/input[@id='rdUserType']
+				</item>
+				<item name="InputTagRdUserType1" id="e7d2aa98-a8f8-4a7b-bd8e-137d5c94d4d6" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[7]/td[3]/input[@name='rdUserType']
+				</item>
+				<item name="InputTagRdCampus" id="bb9fdcf6-a648-4b1a-895a-8648b776fd3c" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[8]/td[2]/input[@id='rdCampus']
+				</item>
+				<item name="InputTagRdCampus1" id="2a628ec7-72db-4b1e-a948-1e806db748ed" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[8]/td[3]/input[@name='rdCampus']
+				</item>
+				<item name="InputTagRdDepartment" id="2cde2beb-e0e7-42b8-8481-fdbe20117da8" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[9]/td[2]/input[@id='rdDepartment']
+				</item>
+				<item name="InputTagRdDepartment1" id="259c8a4c-4b36-4bfa-a68b-3c683c3bfc41" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[9]/td[3]/input[@name='rdDepartment']
+				</item>
+				<item name="h1_Setup3of4" id="205a6b26-615e-441a-856b-2b4a49f2239d" searchtimeout="30000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
+					/dom/body/form/div[5]/div/h1[@innertext~'.*Customize\ Landing\ Page']
+				</item>
+				<item name="brwseSelCustlogo" id="1abc7ba9-c3e3-4af7-9823-36afc560e413" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset[@id='custom_logo']/table/tbody/tr[1]/td[2]/input[@id='ctl00_cphMain_CustomLogo']
+				</item>
+				<item name="txtCustomBanner" id="469c1ed3-153d-4dcd-b971-d56a70670303" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset[@id='customize_banner_text']/table/tbody/tr/td[2]/input[@id='ctl00_cphMain_WelcomeMessage']
+				</item>
+				<item name="brwseSelCustomHdr" id="a6c9aa4e-458b-4235-8755-d566233d1a12" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset[@id='default_header']/table/tbody/tr[3]/td/input[@id='ctl00_cphMain_CustomHeader']
+				</item>
+				<item name="txtDefaultGreeting" id="0b35eef8-f817-4be6-a21a-29922c4c6e29" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset[@id='default_greeting']/table/tbody/tr/td[2]/input[@id='ctl00_cphMain_DefaultGreeting']
+				</item>
+				<item name="chkRequireUsernametobeEmailAddress" id="89ffd428-5cf1-40fe-99c7-4ea36cf4f7fa" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/p/input[@id='ctl00_cphMain_UsernameIsEmailConstraint']
+				</item>
+				<item name="btnImport" id="8b6145ad-1f0c-4ef7-b076-cb78d600fc33" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/input[@id='ctl00_cphMain_btnUploadEmails']
+				</item>
+				<item name="browseSelectUserNameAccessContraintsImportFile" id="986be4dd-1600-44db-8606-aca3aa95b08a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/input[@id='ctl00_cphMain_EmailDomainUpload']
+				</item>
+				<item name="txtEmailDomain" id="75b2a580-51b2-4877-98b4-cd0a6163b979" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tbody/tr/td[2]/input[@id='email_domain_0']
+				</item>
+				<item name="ATagAdd_email_domain_link" id="19893331-4fcd-4b3a-8d77-6607d096a789" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tfoot/tr/td[@innertext=' | ']/a[@id='add_email_domain_link']
+				</item>
+				<item name="ATagTest_domains" id="cf5b378a-227a-490f-904d-70625868df5b" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tfoot/tr/td[@innertext=' | ']/a[@innertext='test domains']
+				</item>
+				<item name="chkAllowUsersOutsideIPrange" id="4756be7b-dd59-4ba5-b6b4-4387c90b2020" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='login_without_ip']/tbody/tr/td[1]/input[@id='ctl00_cphMain_LoginWithoutIP']
+				</item>
+				<item name="btnContinuePg3of4" id="a69c006a-f82e-45b3-a26b-65d213b4f638" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_btnContinue']
+				</item>
+				<item name="h1_Setup4of4" id="d7d9c340-1caa-4a4a-92ab-8215f40bf9d2" searchtimeout="30000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
+					/dom/body/form/div[5]/div/h1[@innertext~'.*Set\ user\ default\ newsletter\ settings']
+				</item>
+				<item name="rdNewRelNotifn_Subscribe" id="f0b39ffb-7daa-4c4d-b78d-902f2daa38f0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[4]/td[2]/input[@name='NewReleaseNotifications']
+				</item>
+				<item name="rdNewRelNotifn_Unsubscribe" id="5715e016-1490-4579-ac70-806e7f994e82" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[4]/td[3]/input[@name='NewReleaseNotifications']
+				</item>
+				<item name="rdMonthlyNewsletter_Subscribe" id="28382c6f-b6c3-4ac6-8611-0661b1a366f4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[5]/td[2]/input[@name='MonthlyNewsletter']
+				</item>
+				<item name="rdMonthlyNewsletter_Unsubscribe" id="b82e021e-cc95-4b77-9167-73293f21e8b7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[5]/td[3]/input[@name='MonthlyNewsletter']
+				</item>
+				<item name="rdSpecialAnnouncemntsOffrs_Subscribe" id="7e58f8b5-8e84-4a4d-b771-a160adb8bc36" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[6]/td[2]/input[@name='SpecialAnnouncementsOffers']
+				</item>
+				<item name="rdSpecialAnnouncemntsOffrs_Unsubscribe" id="5d3fe180-0db5-44d6-ba8a-bf26d7246cac" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/fieldset/table/tbody/tr[6]/td[3]/input[@name='SpecialAnnouncementsOffers']
+				</item>
+				<item name="btnContinuePg4of4" id="d1c54bc5-644a-4659-9090-1e0fb2bbd0cd" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/form/div[5]/div/table/tbody/tr/td[2]/p/input[@id='btnContinue']
+				</item>
+				<item name="IP_PageDivErrors" id="9664f1f2-70ce-4d06-b58e-c0ae557d02e9" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
+					/dom/body/form/div[5]/div/div[@id='divErrors']
+				</item>
+				<item name="IP_PageErrorRange" id="ba5e9e6e-1849-42ce-a49b-f9f71de12ee3" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
+					/dom/body/form/div[5]/div/div[@id='divErrors']/ul/li[@innertext~'^\ The\ following\ IP\ address']/ul/li[@innertext~'^range']
+				</item>
+				<item name="IP_AddressPage_Username" id="b5dbfaa9-3921-419e-beaa-01dd2c05d18e" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/form/div[5]/div/div[@id='divErrors']/ul/li[@innertext~'^\ The\ following\ IP\ address']/ul/li/a[1]
+				</item>
+				<basepath>
+					/dom/body/form/div[5]/div
+				</basepath>
+			</folder>
+			<folder name="IP_TestPage" id="6511e313-20d6-4965-bccd-787d677dc630" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="h1_IPAddress" id="e7034c97-b5c7-409f-b8a1-51ff1ccad361" searchtimeout="20000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
+					/dom/body/div[5]/div[2]/h1[@innertext~'^Your\ IP\ Address\ is:\ ']
+				</item>
+			</folder>
+			<folder name="IP_LoginPage" id="31a26cd6-bfb4-455b-baa4-ba32ba7f5b68" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="DivTagBreadcrumbs" id="be208921-973b-4eed-8bbc-636d22772571" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
+					/dom/body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']/div[@id='breadcrumbs']
+				</item>
+				<item name="SpanTagEnterprise_QA_Test_login" id="bd93ba9f-aec7-4c66-a311-f70be1b6876d" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+					/dom/body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']/div[@id='enterprise_marquee']/div/div/div[2]/span[1]
+				</item>
+				<item name="ImgTagEnterpriseLogo" id="d2b5f09a-6616-4e59-9c1e-489a5c357c97" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
+					/dom/body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']/div[@id='enterprise_marquee']/img[@src~'.*default_iplogin_header.jpg']
+				</item>
+				<item name="SpanTagOk" id="2564e603-fa75-43dc-8ace-d25bf1e184e3" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+					/dom/body/form/div[@id='master-page']/div[3]/div[@id='overlay']/div[2]/p[2]/a[@id='accept_overlay']/span[@innertext='ok']
+				</item>
+				<item name="PTagYou_are_about_to_leave_t" id="5d8790f4-ad39-4f22-bdf7-a6339c706cba" searchtimeout="30000ms" capname="ptag" addcaps="unknown,webelement,ptag">
+					/dom/body/form/div[@id='master-page']/div[3]/div[@id='overlay']/div[2]/p[@innertext~'^You\ are\ about\ to\ leave\ th']
+				</item>
+				<item name="ATag_lynda_com" id="80cbb1b8-6e50-463c-b366-5be7e3bce082" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/form/div[@id='master-page']/div[@id='orng-navbar']/div/div/a[@innertext='lynda.com']
+				</item>
+				<item name="ImgTagHttps___s3_amazonaws_comIE" id="48c6a333-c95a-428c-a1a9-c4950568fd4e" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
+					/dom/body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']/div[@id='enterprise_marquee']/img[@src~'.*default_iplogin_header.jpg']
+				</item>
+			</folder>
+			<folder name="InvalidIP_LoginPage" id="0a9a42fa-7ba1-43a3-a337-9ea2528d9575" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="p_IP_Permission_denied_mesg" id="7808342a-1ec5-49a3-a31a-f89ace3d7b1b" searchtimeout="30000ms" capname="ptag" addcaps="unknown,webelement,ptag">
+					/dom/body/div[5]/div[2]/div/p[@innertext~'^You\ are\ trying\ to\ log\ in\ ']
+				</item>
+				<item name="h1_Permission_denied" id="2ed891f0-4a18-47c4-803d-67344b821758" searchtimeout="30000ms" capname="h1tag" addcaps="unknown,webelement,h1tag">
+					/dom/body/div[5]/div[2]/h1[@innertext='Permission denied']
+				</item>
+			</folder>
+			<item name="ATagLynda_com" id="8cdc4f91-830c-4d85-b781-427743fda28d" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+				/dom/body/div[@id='orng-navbar']/div/div[@id='logo']/a[@innertext='lynda.com']
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -270,20 +290,20 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <appfolder name="CurrentlyLoggedInDialogChrome" id="55d7cc9e-ac1d-4685-89b6-bc4c55e173a0" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="OKButton" id="957a4295-f04d-419d-b7be-7d640366c12f" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form[@title~'^The\ page\ at\ https://admin']/container/button[@accessiblename='OK']]]>
-      </item>
-      <item name="HelloText" id="6d4c6cc0-ce79-48d8-ac83-abd6ed55b941" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
-        <![CDATA[/form[@title~'^The\ page\ at\ https://admin']/container/element/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@title~'^The\ page\ at\ https://admin']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="CurrentlyLoggedInDialogChrome" id="55d7cc9e-ac1d-4685-89b6-bc4c55e173a0" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="OKButton" id="957a4295-f04d-419d-b7be-7d640366c12f" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form[@title~'^The\ page\ at\ https://admin']/container/button[@accessiblename='OK']
+			</item>
+			<item name="HelloText" id="6d4c6cc0-ce79-48d8-ac83-abd6ed55b941" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
+				/form[@title~'^The\ page\ at\ https://admin']/container/element/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']
+			</item>
+			<basepath>
+				/form[@title~'^The\ page\ at\ https://admin']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKLSURBVDhPtdJrSFNhHAZwUSm0HJVOvMyVOrzb
 dF6ZtLPNOTc9VhSIUQtJpaKgCAZmXwyyDxVBISZBOZJumJZKJg770FJLm5dkLFPZ2TTnZUFaSGbw
 dN6lq5lBXzrwcD49v/f/vvw9PP7Hp89O87cdpltny/aDZEpDfxqhKe2/nOVpoTLnZ/fmYK4oHw7N
@@ -297,28 +317,31 @@ AJzVhwyW3pIiv8UdOWk4Dq3hDGQ6hVv5S3cAumoD29iy1yrgLdDElCvrlXBOwl5n9U3UT3Jh7grA
 8tAmLBk5WHgZCKYxhJwevHaZOHGnkpqoGzKo7ucir0mFvGYVih7JsPhqm7P4sYOH0bt8Uo5j47ne
 SnN8wzhKUVUWsq5RkN9UsAsUDmtjOMy6HWip5OnZkuD30ddDvFfGE7F/CRuKjZhNFBu/tYUfIYCY
 dPETEwgAAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <folder name="CurrentlyLoggedInDialogIE" id="50132258-3ec2-4e7b-9acb-d01b4d535857" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="HelloText" id="3696e788-c285-478c-9b52-ce5242b179c6" searchtimeout="5000ms" capname="text" addcaps="text,nativewindow">
-        <![CDATA[/form[@title='Message from webpage']/text[@controlid='65535' and @caption~'^Hello\ Keynote\ Virtualuser']]]>
-      </item>
-      <item name="OKButton" id="8a317cc7-ccbd-42be-a573-5489161d4fe7" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
-        <![CDATA[/form[@title='Message from webpage']/button[@text='OK']]]>
-      </item>
-    </folder>
-    <appfolder name="CurrentlyLoggedInDialogFirefox" id="0dc49aa5-c9dd-4846-8e61-1b8a43481d69" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="HelloText" id="f4a38af6-82e7-45c4-98b0-62756c44435c" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
-        <![CDATA[/form/container/container/container/form/text/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']]]>
-      </item>
-      <item name="OKButton" id="c8c7ac44-9e10-4c0b-a297-c2c07fa55b8c" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form/container/container/container/form/button[@accessiblename='OK']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<folder name="CurrentlyLoggedInDialogIE" id="50132258-3ec2-4e7b-9acb-d01b4d535857" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="HelloText" id="3696e788-c285-478c-9b52-ce5242b179c6" searchtimeout="5000ms" capname="text" addcaps="text,nativewindow">
+				/form[@title='Message from webpage']/text[@controlid='65535' and @caption~'^Hello\ Keynote\ Virtualuser']
+			</item>
+			<item name="OKButton" id="8a317cc7-ccbd-42be-a573-5489161d4fe7" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
+				/form[@title='Message from webpage']/button[@text='OK']
+			</item>
+		</folder>
+		<appfolder name="CurrentlyLoggedInDialogFirefox" id="0dc49aa5-c9dd-4846-8e61-1b8a43481d69" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="HelloText" id="f4a38af6-82e7-45c4-98b0-62756c44435c" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
+				/form/container/container/container/form/text/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']
+			</item>
+			<item name="OKButton" id="c8c7ac44-9e10-4c0b-a297-c2c07fa55b8c" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form/container/container/container/form/button[@accessiblename='OK']
+			</item>
+			<item name="ButtonFirefox" id="3b431896-e644-40fd-a805-20fc8adf679a" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form/button[@accessiblename='Firefox']
+			</item>
+			<basepath>
+				/form
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANsSURBVDhPbZN9TJNXFMbv+5bSVwVLaSstLhCH
 YuZgE1hkqASKfGiRz7Xo+AyzQyc6XB2idYugkUr/UGExouIHBIJBQqGsiA6VzGQIhJEAAyEYBbQU
 mBaJG1Ojj33fTYwZJ3mSk3vP87vnntxLiD0G08W1wxmSADb3yyr9LDZi+5kdCSkD/lmlj1l9mnmq
@@ -336,23 +359,395 @@ JlrCBBjKFmJcJ8K4fR6jOjEsB0UY2SvEvezFGN3jjLvaRbiexJs9rqDf/xepK0h6iT812RjCw68R
 AvR+sRB96kXoTXbCH+nO6ElhcDNRgNpNglmVF9HO96eivHiU4YcPKOtZf/p5fSgFUyRBo12mCBo1
 4Q4vj63kT3vzqLN2s3I+wBL7oq9dict51NFwPtWoYug2NUPfCeVTJhZu31P/V8PWcvEG3uTiGswK
 FD8AAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <folder name="CurrentlyLoggedInDialogSafari" id="bde1cd1c-54a5-4faf-ba27-43020c24b957" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="HelloText" id="1ece8bac-11ab-4efe-98aa-56b54befc7b8" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
-        <![CDATA[/form[@title='' and @processname='Safari']/element/element/container/container/container[1]/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']]]>
-      </item>
-      <item name="OKButton" id="4590d9a2-b100-48be-b9b0-774d7eab14ab" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
-        <![CDATA[/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='OK']]]>
-      </item>
-    </folder>
-    <folder name="SomeTBodyTag" id="c83b5119-44c8-48bf-8c86-52d9e3ec9b79" searchtimeout="30000ms" capname="tbodytag" addcaps="unknown,webelement,tbodytag" isrooted="True" usecache="False">
-      <basepath>
-        <![CDATA[/dom/body/form/div[5]/div/div[2]/table/tbody]]>
-      </basepath>
-    </folder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<folder name="CurrentlyLoggedInDialogSafari" id="bde1cd1c-54a5-4faf-ba27-43020c24b957" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="HelloText" id="1ece8bac-11ab-4efe-98aa-56b54befc7b8" searchtimeout="5000ms" capname="text" addcaps="text,accessible">
+				/form[@title='' and @processname='Safari']/element/element/container/container/container[1]/text[@accessiblename~'^Hello\ Keynote\ Virtualuser']
+			</item>
+			<item name="OKButton" id="4590d9a2-b100-48be-b9b0-774d7eab14ab" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+				/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='OK']
+			</item>
+		</folder>
+		<folder name="SomeTBodyTag" id="c83b5119-44c8-48bf-8c86-52d9e3ec9b79" searchtimeout="30000ms" capname="tbodytag" addcaps="unknown,webelement,tbodytag" isrooted="True" usecache="False">
+			<basepath>
+				/dom/body/form/div[5]/div/div[2]/table/tbody
+			</basepath>
+		</folder>
+		<folder name="ClearCacheFirefox" id="f2c9cbd8-2f3e-4f5e-8cb1-6883b1a60db2" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<appfolder name="Firefox" id="f153ef10-8465-41a1-a869-217047de9db6" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+				<item name="ButtonFirefox" id="d1c360ae-fede-4f3c-9062-3fb5cb6f21ee" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+					/form/button[@accessiblename='Firefox']
+				</item>
+				<item name="MenuItemOptions" id="6f8de04f-91b7-4332-8ddc-0f06f0a939c4" searchtimeout="30000ms" capname="menuitem" addcaps="menuitem,accessible">
+					/form/button/contextmenu/menuitem[@accessiblename='Options']
+				</item>
+				<basepath>
+					/form
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANsSURBVDhPbZN9TJNXFMbv+5bSVwVLaSstLhCH
+YuZgE1hkqASKfGiRz7Xo+AyzQyc6XB2idYugkUr/UGExouIHBIJBQqGsiA6VzGQIhJEAAyEYBbQU
+mBaJG1Ojj33fTYwZJ3mSk3vP87vnntxLiD0G08W1wxmSADb3yyr9LDZi+5kdCSkD/lmlj1l9mnmq
+a1XyibqPk4vT2Jr/xVCGBKwSFRlHI+Ny77H5lQABLtx/xqmw04JNRS1Ysa0cX4YlXDPHMOvmIHqG
+TmUNUwWuHORtXuXrgKK+aRh6bTjUOQlVRQ980krQeykC9UnS2VaNKImDFIsdyoa/deMAtpNesByR
+cfl5b5pTII9GbscU1MYh+GSeRnerBiN1CjSlSqfbv5fKSNmHjt0PDshfseYpwzKMHXCHVfeum29c
+aaTfGEe86T68NReh/2kv/urfijt5HrilERWTywGOE1a9G3f6VIEYo9/JMar9CE+q87gO4pv/RJzx
+IYJL+7F8RyXScnbD0qbCWI0fWrYwPcQYzJ+1Fkk4wCOdBI/KAjnN1MagwpfGunNDWHuiA5/k1mNZ
+VjVWRebA1p6Ap78E4ecY/gtiiiKvrXoJZo67wryeQbknb+7+orACuKeUwSPjIjy3lECuOgVF0tfA
+QAhsravRsJF6TZoiqZmBXUI81osxsl+EJh8KNQE0hOt1ECsNqInzQtXODZBF6yGNNiBfGwX85ouJ
+cjnMsfQzcjWUMt7auIADsOpQCtAVzeB3tQsG05zQmSLlOpJGFcI9KBvjFR74p06Gfq0jzErSRswK
+kly/hv67L9OZA1h/lGDwKzFuKxkY1/D/NQfpsE/hh9uFK/Giyg2TRQJcjWPQnOh2mJg2k4UNwVR3
+i4LBw/0umMwXYyxvCYZzlqL6cydUx8vRkLAY3dsXwKZ3gcU+ry6NAM1bhU/bd3rKuMd0JZQEVq6l
+JlrCBBjKFmJcJ8K4fR6jOjEsB0UY2SvEvezFGN3jjLvaRbiexJs9rqDf/xepK0h6iT812RjCw68R
+AvR+sRB96kXoTXbCH+nO6ElhcDNRgNpNglmVF9HO96eivHiU4YcPKOtZf/p5fSgFUyRBo12mCBo1
+4Q4vj63kT3vzqLN2s3I+wBL7oq9dict51NFwPtWoYug2NUPfCeVTJhZu31P/V8PWcvEG3uTiGswK
+FD8AAAAASUVORK5CYII=
+				</icon>
+			</appfolder>
+			<appfolder name="FormOptions" id="e709fde8-6bb0-437b-bc4f-39a0b002c82f" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+				<item name="ListItemGeneral" id="c17b11c4-635b-4ddf-9cf1-48393f23b351" searchtimeout="30000ms" capname="listitem" addcaps="listitem,accessible">
+					/form[@title='Options']/list/listitem[@accessiblename='General']
+				</item>
+				<item name="ListItemAdvanced" id="69860401-7735-46ff-9917-658553c979dd" searchtimeout="30000ms" capname="listitem" addcaps="listitem,accessible">
+					/form[@title='Options']/list/listitem[@accessiblename='Advanced']
+				</item>
+				<item name="ButtonOK" id="308db322-7c79-4dee-b94c-66772d21850a" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+					/form[@title='Options']/button[@accessiblename='OK']
+				</item>
+				<folder name="ContainerAdvanced" id="2c35eacb-96da-4774-8c39-52a35f477214" searchtimeout="30000ms" capname="container" addcaps="container,accessible" isrooted="True" usecache="True">
+					<item name="ButtonClear_Now1" id="5d64c174-70a0-443b-bf0f-def93e74b99d" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+						/form[@title='Options']/container/container/container/container[@accessiblename~'^Offline\ Web\ Content\ and\ U']/button[@accessiblename='Clear Now']
+					</item>
+					<item name="ButtonClear_Now" id="12a14c9c-5221-4ea7-9f6c-fe316b54c7a2" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+						/form[@title='Options']/container/container/container/container[@accessiblename='Cached Web Content']/button[@accessiblename='Clear Now']
+					</item>
+					<item name="TabPageGeneral" id="808a84db-05ca-4d57-a0a5-a3377c4479d8" searchtimeout="30000ms" capname="tabpage" addcaps="tabpage,accessible">
+						/form[@title='Options']/container/tabpagelist/tabpage[@accessiblename='General']
+					</item>
+					<item name="TabPageNetwork" id="acca0d63-ed85-4f63-b15c-9696a41e838e" searchtimeout="30000ms" capname="tabpage" addcaps="tabpage,accessible">
+						/form[@title='Options']/container/tabpagelist/tabpage[@accessiblename='Network']
+					</item>
+					<basepath>
+						/form[@title='Options']/container
+					</basepath>
+				</folder>
+				<basepath>
+					/form[@title='Options']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANsSURBVDhPbZN9TJNXFMbv+5bSVwVLaSstLhCH
+YuZgE1hkqASKfGiRz7Xo+AyzQyc6XB2idYugkUr/UGExouIHBIJBQqGsiA6VzGQIhJEAAyEYBbQU
+mBaJG1Ojj33fTYwZJ3mSk3vP87vnntxLiD0G08W1wxmSADb3yyr9LDZi+5kdCSkD/lmlj1l9mnmq
+a1XyibqPk4vT2Jr/xVCGBKwSFRlHI+Ny77H5lQABLtx/xqmw04JNRS1Ysa0cX4YlXDPHMOvmIHqG
+TmUNUwWuHORtXuXrgKK+aRh6bTjUOQlVRQ980krQeykC9UnS2VaNKImDFIsdyoa/deMAtpNesByR
+cfl5b5pTII9GbscU1MYh+GSeRnerBiN1CjSlSqfbv5fKSNmHjt0PDshfseYpwzKMHXCHVfeum29c
+aaTfGEe86T68NReh/2kv/urfijt5HrilERWTywGOE1a9G3f6VIEYo9/JMar9CE+q87gO4pv/RJzx
+IYJL+7F8RyXScnbD0qbCWI0fWrYwPcQYzJ+1Fkk4wCOdBI/KAjnN1MagwpfGunNDWHuiA5/k1mNZ
+VjVWRebA1p6Ap78E4ecY/gtiiiKvrXoJZo67wryeQbknb+7+orACuKeUwSPjIjy3lECuOgVF0tfA
+QAhsravRsJF6TZoiqZmBXUI81osxsl+EJh8KNQE0hOt1ECsNqInzQtXODZBF6yGNNiBfGwX85ouJ
+cjnMsfQzcjWUMt7auIADsOpQCtAVzeB3tQsG05zQmSLlOpJGFcI9KBvjFR74p06Gfq0jzErSRswK
+kly/hv67L9OZA1h/lGDwKzFuKxkY1/D/NQfpsE/hh9uFK/Giyg2TRQJcjWPQnOh2mJg2k4UNwVR3
+i4LBw/0umMwXYyxvCYZzlqL6cydUx8vRkLAY3dsXwKZ3gcU+ry6NAM1bhU/bd3rKuMd0JZQEVq6l
+JlrCBBjKFmJcJ8K4fR6jOjEsB0UY2SvEvezFGN3jjLvaRbiexJs9rqDf/xepK0h6iT812RjCw68R
+AvR+sRB96kXoTXbCH+nO6ElhcDNRgNpNglmVF9HO96eivHiU4YcPKOtZf/p5fSgFUyRBo12mCBo1
+4Q4vj63kT3vzqLN2s3I+wBL7oq9dict51NFwPtWoYug2NUPfCeVTJhZu31P/V8PWcvEG3uTiGswK
+FD8AAAAASUVORK5CYII=
+				</icon>
+			</appfolder>
+		</folder>
+		<folder name="ClearCacheIE" id="94a36bab-a5f6-420e-90dc-26a338f420bd" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<appfolder name="ContextMenuIexplore" id="13417065-1c3b-4983-abd6-6a98c099bf31" searchtimeout="30000ms" capname="contextmenu" addcaps="contextmenu,nativewindow" isrooted="True" usecache="True">
+				<item name="MenuItemInternet_options" id="1ce03467-297d-4a06-9064-b8bf64eeefa6" searchtimeout="30000ms" capname="menuitem" addcaps="menuitem,accessible">
+					/contextmenu[@processname='iexplore']/contextmenu/menuitem[@accessiblename='Internet options']
+				</item>
+				<basepath>
+					/contextmenu[@processname='iexplore']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAALVJREFUOE9j+P//PwMlGK7ZJiD7/5oVM4nGMEtRDGBgAHEJA5BFWA0A
+iwIN2XHw/P+y9rn/M6om/o/MbvnvFVv2H+RCGMBrAMwQfO4gaADMkGUb9/2PzGn+7xlbTpoLYLbj
+ChOiXQAyAISnLlxPnAtgGmBeOHfu3H8QRgc4XQDTAHM6iG7onERcGHR1VMMtQjaAaBdAnQU2ZPvB
+c2C/k+QCZANAhsC8Q5ILKMoL5OZIirIyyFIAnawJImbUhwYAAAAASUVORK5CYII=
+				</icon>
+			</appfolder>
+			<appfolder name="FormInternet_Options" id="c996cf52-b845-4032-8edf-f8182e79d803" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+				<item name="ButtonDelete" id="3e372efa-08de-4f17-bf20-6b159cb89d57" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
+					/form[@title='Internet Options']/container/button[@text='&amp;Delete...']
+				</item>
+				<item name="ButtonOK" id="c81a704a-2ab0-4aef-9bbb-d7ba67998c01" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
+					/form[@title='Internet Options']/button[@text='OK']
+				</item>
+				<item name="TabPageGeneral" id="d63617d1-d306-47fe-b705-64def8106602" searchtimeout="30000ms" capname="tabpage" addcaps="tabpage">
+					/form[@title='Internet Options']/tabpagelist/tabpage[@title='General']
+				</item>
+				<basepath>
+					/form[@title='Internet Options']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOQSURBVDhPhVJtTFtlFH4rEuIPEkTBdXxtSJbV
+2cg2RSSbm87o/pls1mniotmc2ZcbrC1fomUbA4daNwLoNqJ8THSFUS7UFdqVbm0TPgtzLUuHlLa3
+vRu3lELLrdArvsfbkpAZf+xNnpyTnDzPOed5D0KPeXnnTfG+nsSceWPCMXYyfooZiGPme3lssJdn
+86tQxv/pMv2T64vVIuFpza8Hm67Z+4Y/WqLvC1nGkAABTezSXFdMjeciOkBfRce8zcj2H4GkAiJr
+Y7nW8F6T1d00Ph1yPBRj1pMAdGsi7mw+EC5paKAFMlUl4ppEiA9q0cyqQHJ+e+YLMo2t4BYd1lAT
+ODj7FmA7AkfrTiD+6IOK8SB8rKPwliqjN/m4olYkUsRQtahpRYBT3CjTmgr6HrJDXjOEZ4WA+xGY
+5Hl/77ls8m+XG6kP2qZcX1gW2MO3vfj1OvN88om2eueFmF1RfnqxSrTn5zG3xn0Xsz4BYD2CIXmu
+v1qtfRfjG3FrxO0Z60rV0m01g+ZTRj/7SS+Fs8/dtPPFyq1RAeEZ9W+/WO6FmNnXAA8iuP+dcBpj
+7QaAkdhHTco+e3PscM/M1ME+GnbUj0ynlXRditZ31+gmXNRnGDsQWBX74cNGMxaUa9xZX/aSmRzW
+l6nJjJLfyZeqjO6yIQYfN/pgd4s1lColRqICnUPVDKaeAteVzVA37oEqOwuVHM5FMMlCBYezf4bh
+zMQSyCwhOGLwwa5Gy1JqkdKK8F+C7UH3umV/SwKuueeBctsifuX7ATrScQUqkvOITC9SkWmF3WRq
+IUGmSDvJtRKlk3/qeiP6x5v4zeIwgquNJ8NlFgYko6FgdqXh7uMudLW+PIn6H7TEBff/ZKD2qZxY
+al5YFilsc4LTurbnCjpyIl/8jLQz/tkTiq1rxR3tHBx8SQfJX4mH0IKeF5glYus2lav6t1QbQp/q
+aSi8s7B8SEcFXpWbXGnFhGuDTO3M+9bgOKKbmcsfDOD3u8lwulQ5Gr3IQA/PHxknQ6JY83wRYcuV
+G5m9hAsf7Z8D8VgIJHdC0fj5cBD23SDx21dGFzNLu+xP57dtiq4R1PBa6GZUFMnfLK1IyS27PPDi
+VypHTvWtmW2XRsI7m634jYZRZscPA76Xq7TOtEJCn3T0WtaqB8xtxPe2Ir3nAgLyPJq0f42KN0vq
+93I7/sg5PZgiuT6eIlZ2c/nFpJPt7yCZ7IlHDf4X4PYIf1V1wIQAAAAASUVORK5CYII=
+				</icon>
+			</appfolder>
+			<appfolder name="FormDelete_Browsing_History" id="907ab4ff-fb72-4a80-9c41-192c9cc51a9c" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+				<item name="CheckBoxPreserve_Favorites_websi" id="03c4f1e5-dafb-490f-9234-65ff7359c3c8" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,nativewindow">
+					/form[@title='Delete Browsing History']/checkbox[@text~'^P&amp;reserve\ Favorites\ websi']
+				</item>
+				<item name="CheckBoxTemporary_Internet_files" id="54849fe0-4ca5-445d-a25f-b687dc71c106" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,nativewindow">
+					/form[@title='Delete Browsing History']/checkbox[@text='&amp;Temporary Internet files']
+				</item>
+				<item name="CheckBoxCookies" id="c06373af-2c76-4cc6-80d5-87916c1ea9b6" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,nativewindow">
+					/form[@title='Delete Browsing History']/checkbox[@text='C&amp;ookies']
+				</item>
+				<item name="CheckBoxHistory" id="f5196c9c-4bbf-4155-972e-ce0ab0f0a86c" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,nativewindow">
+					/form[@title='Delete Browsing History']/checkbox[@text='&amp;History']
+				</item>
+				<item name="CheckBoxDownload_History" id="46e059de-8277-425d-8637-3360ce524fd1" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,nativewindow">
+					/form[@title='Delete Browsing History']/checkbox[@text='Do&amp;wnload History']
+				</item>
+				<item name="CheckBoxForm_data" id="988ebf29-4403-4045-b5f8-139b0be28ae1" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,nativewindow">
+					/form[@title='Delete Browsing History']/checkbox[@text='&amp;Form data']
+				</item>
+				<item name="CheckBoxPasswords" id="cc1a9fc9-797b-4abc-a581-ec51e02cc807" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,nativewindow">
+					/form[@title='Delete Browsing History']/checkbox[@text='&amp;Passwords']
+				</item>
+				<item name="CheckBoxActiveX_Filtering_and_Tr" id="d3a1b582-7aad-4993-baa7-0447f14679e6" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,nativewindow">
+					/form[@title='Delete Browsing History']/checkbox[@text~'^ActiveX\ Filtering\ and\ Tra']
+				</item>
+				<item name="ButtonDelete" id="80809abf-f1e6-4dc2-bf11-07e248c5510b" searchtimeout="30000ms" capname="button" addcaps="button,nativewindow">
+					/form[@title='Delete Browsing History']/button[@text='&amp;Delete']
+				</item>
+				<basepath>
+					/form[@title='Delete Browsing History']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOQSURBVDhPhVJtTFtlFH4rEuIPEkTBdXxtSJbV
+2cg2RSSbm87o/pls1mniotmc2ZcbrC1fomUbA4daNwLoNqJ8THSFUS7UFdqVbm0TPgtzLUuHlLa3
+vRu3lELLrdArvsfbkpAZf+xNnpyTnDzPOed5D0KPeXnnTfG+nsSceWPCMXYyfooZiGPme3lssJdn
+86tQxv/pMv2T64vVIuFpza8Hm67Z+4Y/WqLvC1nGkAABTezSXFdMjeciOkBfRce8zcj2H4GkAiJr
+Y7nW8F6T1d00Ph1yPBRj1pMAdGsi7mw+EC5paKAFMlUl4ppEiA9q0cyqQHJ+e+YLMo2t4BYd1lAT
+ODj7FmA7AkfrTiD+6IOK8SB8rKPwliqjN/m4olYkUsRQtahpRYBT3CjTmgr6HrJDXjOEZ4WA+xGY
+5Hl/77ls8m+XG6kP2qZcX1gW2MO3vfj1OvN88om2eueFmF1RfnqxSrTn5zG3xn0Xsz4BYD2CIXmu
+v1qtfRfjG3FrxO0Z60rV0m01g+ZTRj/7SS+Fs8/dtPPFyq1RAeEZ9W+/WO6FmNnXAA8iuP+dcBpj
+7QaAkdhHTco+e3PscM/M1ME+GnbUj0ynlXRditZ31+gmXNRnGDsQWBX74cNGMxaUa9xZX/aSmRzW
+l6nJjJLfyZeqjO6yIQYfN/pgd4s1lColRqICnUPVDKaeAteVzVA37oEqOwuVHM5FMMlCBYezf4bh
+zMQSyCwhOGLwwa5Gy1JqkdKK8F+C7UH3umV/SwKuueeBctsifuX7ATrScQUqkvOITC9SkWmF3WRq
+IUGmSDvJtRKlk3/qeiP6x5v4zeIwgquNJ8NlFgYko6FgdqXh7uMudLW+PIn6H7TEBff/ZKD2qZxY
+al5YFilsc4LTurbnCjpyIl/8jLQz/tkTiq1rxR3tHBx8SQfJX4mH0IKeF5glYus2lav6t1QbQp/q
+aSi8s7B8SEcFXpWbXGnFhGuDTO3M+9bgOKKbmcsfDOD3u8lwulQ5Gr3IQA/PHxknQ6JY83wRYcuV
+G5m9hAsf7Z8D8VgIJHdC0fj5cBD23SDx21dGFzNLu+xP57dtiq4R1PBa6GZUFMnfLK1IyS27PPDi
+VypHTvWtmW2XRsI7m634jYZRZscPA76Xq7TOtEJCn3T0WtaqB8xtxPe2Ir3nAgLyPJq0f42KN0vq
+93I7/sg5PZgiuT6eIlZ2c/nFpJPt7yCZ7IlHDf4X4PYIf1V1wIQAAAAASUVORK5CYII=
+				</icon>
+			</appfolder>
+			<folder name="ContainerIexplore" id="9a56c42d-8357-4bf8-bee3-1384ab631be0" searchtimeout="30000ms" capname="container" addcaps="container,nativewindow" isrooted="True" usecache="True">
+				<item name="ButtonClose" id="2f194dc5-c755-44eb-9275-0ec3ca8413a9" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+					/form/element[@class='Frame Notification Bar']/container/toolbar/button[@accessiblename='Close']
+				</item>
+				<item name="TextNotification_bar_Text" id="9864b983-ea7a-4eb7-a31d-99b1abe74dab" searchtimeout="30000ms" capname="text" addcaps="text,accessible">
+					/form/element[@class='Frame Notification Bar']/container/toolbar/text[@accessiblename='Notification bar Text']
+				</item>
+				<item name="ToolBarNotification_bar" id="bcb25e5f-1c4d-427d-823d-b48751e727a3" searchtimeout="30000ms" capname="toolbar" addcaps="toolbar,accessible">
+					/form/element[@class='Frame Notification Bar']/container/toolbar[@accessiblename='Notification bar']
+				</item>
+				<basepath>
+					/form/element[@class='Frame Notification Bar']/container
+				</basepath>
+			</folder>
+			<appfolder name="Windows_Interne" id="c52501d0-ad9e-49ee-a3cf-e17a32841fa4" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+				<item name="ButtonTools" id="12244b78-3b5c-431f-8429-988474fa53ee" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
+					/form[@processname='iexplore' and @title~'.* Windows Internet Explorer']/element[@class='WorkerW']/container/element[@class='ControlBandClass']/toolbar/button[@text='Tools']
+				</item>
+				<basepath>
+					/form[@processname='iexplore' and @title~'.* Windows Internet Explorer']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOQSURBVDhPhVJtTFtlFH4rEuIPEkTBdXxtSJbV
+2cg2RSSbm87o/pls1mniotmc2ZcbrC1fomUbA4daNwLoNqJ8THSFUS7UFdqVbm0TPgtzLUuHlLa3
+vRu3lELLrdArvsfbkpAZf+xNnpyTnDzPOed5D0KPeXnnTfG+nsSceWPCMXYyfooZiGPme3lssJdn
+86tQxv/pMv2T64vVIuFpza8Hm67Z+4Y/WqLvC1nGkAABTezSXFdMjeciOkBfRce8zcj2H4GkAiJr
+Y7nW8F6T1d00Ph1yPBRj1pMAdGsi7mw+EC5paKAFMlUl4ppEiA9q0cyqQHJ+e+YLMo2t4BYd1lAT
+ODj7FmA7AkfrTiD+6IOK8SB8rKPwliqjN/m4olYkUsRQtahpRYBT3CjTmgr6HrJDXjOEZ4WA+xGY
+5Hl/77ls8m+XG6kP2qZcX1gW2MO3vfj1OvN88om2eueFmF1RfnqxSrTn5zG3xn0Xsz4BYD2CIXmu
+v1qtfRfjG3FrxO0Z60rV0m01g+ZTRj/7SS+Fs8/dtPPFyq1RAeEZ9W+/WO6FmNnXAA8iuP+dcBpj
+7QaAkdhHTco+e3PscM/M1ME+GnbUj0ynlXRditZ31+gmXNRnGDsQWBX74cNGMxaUa9xZX/aSmRzW
+l6nJjJLfyZeqjO6yIQYfN/pgd4s1lColRqICnUPVDKaeAteVzVA37oEqOwuVHM5FMMlCBYezf4bh
+zMQSyCwhOGLwwa5Gy1JqkdKK8F+C7UH3umV/SwKuueeBctsifuX7ATrScQUqkvOITC9SkWmF3WRq
+IUGmSDvJtRKlk3/qeiP6x5v4zeIwgquNJ8NlFgYko6FgdqXh7uMudLW+PIn6H7TEBff/ZKD2qZxY
+al5YFilsc4LTurbnCjpyIl/8jLQz/tkTiq1rxR3tHBx8SQfJX4mH0IKeF5glYus2lav6t1QbQp/q
+aSi8s7B8SEcFXpWbXGnFhGuDTO3M+9bgOKKbmcsfDOD3u8lwulQ5Gr3IQA/PHxknQ6JY83wRYcuV
+G5m9hAsf7Z8D8VgIJHdC0fj5cBD23SDx21dGFzNLu+xP57dtiq4R1PBa6GZUFMnfLK1IyS27PPDi
+VypHTvWtmW2XRsI7m634jYZRZscPA76Xq7TOtEJCn3T0WtaqB8xtxPe2Ir3nAgLyPJq0f42KN0vq
+93I7/sg5PZgiuT6eIlZ2c/nFpJPt7yCZ7IlHDf4X4PYIf1V1wIQAAAAASUVORK5CYII=
+				</icon>
+			</appfolder>
+		</folder>
+		<folder name="ClearCacheSafari" id="431d4ec8-b10e-4d9e-98e4-62e847c6118c" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<appfolder name="Safari" id="fe0937f0-3341-400f-b7af-22a47ab0475d" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+				<item name="MenuItemEdit" id="1bb5cef4-c1f7-42f2-bfea-89fb8f0dce7d" searchtimeout="30000ms" capname="menuitem" addcaps="menuitem,accessible">
+					/form[@processname='Safari']/element/toolbar/menuitem[@accessiblename='Edit']
+				</item>
+				<item name="DisplaySettings" id="9825cade-0cdb-4696-a479-2afa6e4c482d" searchtimeout="30000ms" capname="unknown" addcaps="unknown,nativewindow">
+					/form[@processname='Safari']/element[@class='RootElement' and @instance='0']
+				</item>
+				<basepath>
+					/form[@processname='Safari']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALwSURBVDhPhVN/LNRhHC4/WmYsq62YOLVcGqE1
+zrQVM9TmZAnHbYa1MsrIV0YsiZPf3HVnduHcN+4ncsQ5l3Pn6vyopUmcKbVVk/IP1dZqT99Z2jTl
+3Z692/N+Ps/7fj7P+9m2bZPl6el52MPD40xwcPDezc635KKjo+MlEolZpVIp1Wo1l8PhEEwm88iW
+iXQ6nUaSZLd+WPeTJMXg8fjgCxqgUMihUnV/z8vLE7q4uDhsKuTq6uoxqNEsyKUS5BWWgStUQiQb
+grBtENV8CW6W1kIg4CMj48qonZ3d7r9FdnC5XOM96tbM/GoI2o1o6XwC6YPnaFZOoLV3Fs0iLTil
+PJSUFIMqR7JBIDAwMLG9jQRRWAmitg85vAGk3+6FuPcZ0rlGVBS1QJx9HamcfpTzmnA5PRXu7u4n
+1kScnJz2s9lsleAODykFYsQU3QertBsZfC34ajMaSwXoivAHi2hHcvkIylopnleH8PDwqjUBOv3g
+qZTkpNmGxrtgEnL4XJDCj1CAxTUg8ZoQwxE01Nc0IpOcRRzHiBzhGCiHkJCQoFkToJoXTmRnLTSJ
+2hBV0EsF6ZAiMKF+8BUMBiPY2RxcUr7A8UoDHHN1CCkzQC6TUi8I1a+X4EsQxFgHZVVCjQaB5Y/h
+VfwIrepxZDX0IF+9AHbXLE7LpuDbOI1MxTTIZiFoB2jy9UbupJpYJabISqkWhyrGcbVrCucahuDX
+NIdC/RJOSl/jvPY9QmQLGDF/QEZaKmxsbNL+OGFtbe0ZGxe7ounvQ93QS5xVzoDRtYiAziWEkYsI
+6llGlO4jlPOrGBroB83N7S2VvG+DlQ4ODrmxsTGYGDOhf34ZhOkT4nSfkaRfwa3JFUwsrsKoewhG
+QAAsLCziN/2Ntra2N/wZjB+82mqMj5owOWPGtHkOT8dNqKooh5ePzxcrK6uL/50JS0vLIHv7XR1e
+R73fMSMjv7HY7K9BoWFvnJydRVSpx7YcqN8B26ndkYIvBW8Ke/6V+AtB/J4MTcSjqgAAAABJRU5E
+rkJggg==
+				</icon>
+			</appfolder>
+			<appfolder name="ContextMenuSafari" id="9a7cbda6-e5d6-4505-9e6e-142b92b33a32" searchtimeout="30000ms" capname="contextmenu" addcaps="contextmenu,nativewindow" isrooted="True" usecache="True">
+				<item name="MenuItemReset_Safari" id="b512556c-7bd4-4144-86a3-b65b9179b384" searchtimeout="30000ms" capname="menuitem" addcaps="menuitem,accessible">
+					/contextmenu[@processname='Safari']/contextmenu/menuitem[@accessiblename='Reset Safari&#8230;']
+				</item>
+				<item name="MenuItemHide_Menu_Bar" id="9b98df6f-ef11-495b-9dc6-00cf2dd9ce5d" searchtimeout="30000ms" capname="menuitem" addcaps="menuitem,accessible">
+					/contextmenu[@processname='Safari']/contextmenu/menuitem[@accessiblename='Hide Menu Bar']
+				</item>
+				<item name="MenuItemShow_Menu_Bar" id="39c0f285-04c6-4971-a817-0cfeb4ae609a" searchtimeout="30000ms" capname="menuitem" addcaps="menuitem,accessible">
+					/contextmenu[@processname='Safari']/contextmenu/menuitem[@accessiblename='Show Menu Bar']
+				</item>
+				<basepath>
+					/contextmenu[@processname='Safari']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAALVJREFUOE9j+P//PwMlGK7ZJiD7/5oVM4nGMEtRDGBgAHEJA5BFWA0A
+iwIN2XHw/P+y9rn/M6om/o/MbvnvFVv2H+RCGMBrAMwQfO4gaADMkGUb9/2PzGn+7xlbTpoLYLbj
+ChOiXQAyAISnLlxPnAtgGmBeOHfu3H8QRgc4XQDTAHM6iG7onERcGHR1VMMtQjaAaBdAnQU2ZPvB
+c2C/k+QCZANAhsC8Q5ILKMoL5OZIirIyyFIAnawJImbUhwYAAAAASUVORK5CYII=
+				</icon>
+			</appfolder>
+			<appfolder name="FormSafari" id="2fa63082-1470-4487-8512-8ada685c4675" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+				<folder name="ContainerClient" id="3a3352d0-798f-4faf-8243-92d50a03dd51" searchtimeout="30000ms" capname="container" addcaps="container,accessible" isrooted="True" usecache="True">
+					<item name="ButtonReset" id="e85c5ca2-c80d-4324-837a-f8093e6e7b87" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='Reset']
+					</item>
+					<item name="CheckBoxClear_history" id="6b8a2cb3-0fa3-48e6-af86-3540ac228b03" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/list/container[1]/checkbox[@accessiblename='Clear history']
+					</item>
+					<item name="CheckBoxReset_Top_Sites" id="31582269-9411-460d-9755-6dbb19bd7ad1" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/list/container[2]/checkbox[@accessiblename='Reset Top Sites']
+					</item>
+					<item name="CheckBoxRemove_all_webpage_previ" id="a8d031c2-a4f0-460b-b439-0bf3734df18b" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/list/container[3]/checkbox[@accessiblename~'^Remove\ all\ webpage\ previe']
+					</item>
+					<item name="CheckBoxRemove_the_Downloads" id="f0ba9494-e3ed-4a45-98ea-77f170509262" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/list/container[4]/checkbox[@accessiblename~'^Clear\ the\ Downloads\ windo']
+					</item>
+					<item name="CheckBoxRemove_all_website_icons" id="7d63493f-1e2b-4161-885f-5ab532fe0369" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/list/container[5]/checkbox[@accessiblename='Remove all website icons']
+					</item>
+					<item name="CheckBoxRemove_saved_names_and_p" id="05595c8e-398d-40d7-a3e1-f95772a92f1f" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/list/container[6]/checkbox[@accessiblename~'^Remove\ saved\ names\ and\ pa']
+					</item>
+					<item name="CheckBoxRemove_other_AutoFill_fo" id="e289cf77-2c1d-4a90-a098-54c6f0c592b7" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/list/container[7]/checkbox[@accessiblename~'^Remove\ other\ AutoFill\ for']
+					</item>
+					<item name="CheckBoxClose_all_Safari_windows" id="6a45e82f-282a-4573-b2d0-ba3d84d8ba8b" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/list/container[8]/checkbox[@accessiblename='Close all Safari windows']
+					</item>
+					<item name="CheckBoxReset_all_location_warni" id="56a28ee5-e23b-4eaa-9dd0-adf1c5e4f719" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/list/container[9]/checkbox[@accessiblename~'^Reset\ all\ location\ warnin']
+					</item>
+					<item name="CheckBoxRemove_all_website_data" id="d9b6f4f0-b95e-4393-bdd3-09bbee95f5de" searchtimeout="30000ms" capname="checkbox" addcaps="checkbox,accessible">
+						/form[@title='' and @processname='Safari']/element/element/container/container/list/container[10]/checkbox[@accessiblename='Remove all website data']
+					</item>
+					<basepath>
+						/form[@title='' and @processname='Safari']/element/element/container/container
+					</basepath>
+				</folder>
+				<basepath>
+					/form[@title='' and @processname='Safari']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALwSURBVDhPhVN/LNRhHC4/WmYsq62YOLVcGqE1
+zrQVM9TmZAnHbYa1MsrIV0YsiZPf3HVnduHcN+4ncsQ5l3Pn6vyopUmcKbVVk/IP1dZqT99Z2jTl
+3Z692/N+Ps/7fj7P+9m2bZPl6el52MPD40xwcPDezc635KKjo+MlEolZpVIp1Wo1l8PhEEwm88iW
+iXQ6nUaSZLd+WPeTJMXg8fjgCxqgUMihUnV/z8vLE7q4uDhsKuTq6uoxqNEsyKUS5BWWgStUQiQb
+grBtENV8CW6W1kIg4CMj48qonZ3d7r9FdnC5XOM96tbM/GoI2o1o6XwC6YPnaFZOoLV3Fs0iLTil
+PJSUFIMqR7JBIDAwMLG9jQRRWAmitg85vAGk3+6FuPcZ0rlGVBS1QJx9HamcfpTzmnA5PRXu7u4n
+1kScnJz2s9lsleAODykFYsQU3QertBsZfC34ajMaSwXoivAHi2hHcvkIylopnleH8PDwqjUBOv3g
+qZTkpNmGxrtgEnL4XJDCj1CAxTUg8ZoQwxE01Nc0IpOcRRzHiBzhGCiHkJCQoFkToJoXTmRnLTSJ
+2hBV0EsF6ZAiMKF+8BUMBiPY2RxcUr7A8UoDHHN1CCkzQC6TUi8I1a+X4EsQxFgHZVVCjQaB5Y/h
+VfwIrepxZDX0IF+9AHbXLE7LpuDbOI1MxTTIZiFoB2jy9UbupJpYJabISqkWhyrGcbVrCucahuDX
+NIdC/RJOSl/jvPY9QmQLGDF/QEZaKmxsbNL+OGFtbe0ZGxe7ounvQ93QS5xVzoDRtYiAziWEkYsI
+6llGlO4jlPOrGBroB83N7S2VvG+DlQ4ODrmxsTGYGDOhf34ZhOkT4nSfkaRfwa3JFUwsrsKoewhG
+QAAsLCziN/2Ntra2N/wZjB+82mqMj5owOWPGtHkOT8dNqKooh5ePzxcrK6uL/50JS0vLIHv7XR1e
+R73fMSMjv7HY7K9BoWFvnJydRVSpx7YcqN8B26ndkYIvBW8Ke/6V+AtB/J4MTcSjqgAAAABJRU5E
+rkJggg==
+				</icon>
+			</appfolder>
+		</folder>
+		<folder name="ClearCacheChrome" id="63b9c196-e204-42ae-b913-73716a1387c9" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<appfolder name="Chrome" id="bfbbdc51-3f00-4f70-8f88-41a83930adf5" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+				<item name="ButtonChrome" id="56be5f3d-cc15-4e9e-b6e8-3e873cdaed75" searchtimeout="30000ms" capname="button" addcaps="button,accessible">
+					/form[@processname='chrome']/container/toolbar[@accessiblename='Google Chrome Toolbar']/button[@accessiblename='Chrome']
+				</item>
+				<item name="TextAddress" id="3e675f23-f8e2-4cf2-b8fc-a743658c6e58" searchtimeout="30000ms" capname="text" addcaps="text,accessible">
+					/form[@processname='chrome']/element[@controlid='11945616']/text[@accessiblename='Address']
+				</item>
+				<basepath>
+					/form[@processname='chrome']
+				</basepath>
+				<icon>
+					iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKLSURBVDhPtdJrSFNhHAZwUSm0HJVOvMyVOrzb
+dF6ZtLPNOTc9VhSIUQtJpaKgCAZmXwyyDxVBISZBOZJumJZKJg770FJLm5dkLFPZ2TTnZUFaSGbw
+dN6lq5lBXzrwcD49v/f/vvw9PP7Hp89O87cdpltny/aDZEpDfxqhKe2/nOVpoTLnZ/fmYK4oHw7N
+bjgOFWCuUI2ZgmwwknS8ESYU/g3yGk+Ix6Q4HVMyMexKCabVUkyrKNgVu/CBysRkRipswp0Y4IfX
+/IGUnUuZZ6LjYE1MhC05CRNpIkymp2CCJCXZWbTGxoMRxGCUH4lqLjfIhQhKBbyCdjV6BBGwRETD
+EhkDpvgIBk3jMJoY2N73YqI5FPZnQXB0cjFv2IqFno1wAbI7Ej0B9tVJ0Re6HdbiEhy7PYwT9Wac
+vjeCozoThsbs+P7Wx5Wv/RsI4ONEFA1yEICkNioEw4wDe6724UB1Pw7WDKDwuhH5l19jyZzqApaH
+fAng7wSyH8hBrwB0sxKtA3aIzxsgr+qG4mIPpBe6kFn5AstjOS7g2+BmAnCdgKxO+plu+zkByczi
+NGK1T5F4tgPCCj0SyttBX3rudoXFXr9fQHKF6EreY5VrCoJ0D1vAK6lDWKkOGdqHeGeqcjvd0bmF
+AJzVhwyW3pIiv8UdOWk4Dq3hDGQ6hVv5S3cAumoD29iy1yrgLdDElCvrlXBOwl5n9U3UT3Jh7grA
+8tAmLBk5WHgZCKYxhJwevHaZOHGnkpqoGzKo7ucir0mFvGYVih7JsPhqm7P4sYOH0bt8Uo5j47ne
+SnN8wzhKUVUWsq5RkN9UsAsUDmtjOMy6HWip5OnZkuD30ddDvFfGE7F/CRuKjZhNFBu/tYUfIYCY
+dPETEwgAAAAASUVORK5CYII=
+				</icon>
+			</appfolder>
+		</folder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

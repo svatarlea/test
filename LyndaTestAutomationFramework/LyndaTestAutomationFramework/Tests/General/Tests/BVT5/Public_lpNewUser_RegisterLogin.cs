@@ -111,14 +111,17 @@ namespace Tests.General.Tests.BVT5
              	string strUsername, strEmail;
             	FormDataAccount.GenerateUsernameEmail(out strUsername, out strEmail);
             	
-            	repo.DOM.UserRegnPage2.txtUsername_RegnPage2.PressKeys("lpuser-"+strUsername);
+            	string strunamePrefix = "lyndaqalpuser";
+            	string lpusername = strunamePrefix + strUsername;
+            	
+            	repo.DOM.UserRegnPage2.txtUsername_RegnPage2.PressKeys(lpusername);
              	
              	repo.DOM.UserRegnPage2.txtPassword_RegnPage2.PressKeys("lynda1");
              	repo.DOM.UserRegnPage2.txtPasswordConfirm_RegnPage2.PressKeys("lynda1");
              	
              	repo.DOM.UserRegnPage2.btnContinue_RegnPage2.Click();
              	
-             	ExcelData.Write(strResultsFile, TestCase.Current.DataContext.CurrentRowIndex+1,  5, "lpuser-"+strUsername);
+             	ExcelData.Write(strResultsFile, TestCase.Current.DataContext.CurrentRowIndex+1,  5, lpusername);
              	
              	if(varUserstatus=="Active")
              	{
@@ -139,7 +142,7 @@ namespace Tests.General.Tests.BVT5
                	repo.DOM.Top_Right_Menus.StrongTagLog_in.Click();
                
                	Validate.Exists(repo.DOM.Login_form.txtUsernameInfo);            
-            	repo.DOM.Login_form.txtUsername.PressKeys("lpuser-"+strUsername);  
+            	repo.DOM.Login_form.txtUsername.PressKeys(lpusername);  
                 repo.DOM.Login_form.txtPassword.PressKeys("lynda1");
             	repo.DOM.Login_form.btnLogin.Click();
             	

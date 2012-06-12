@@ -21,10 +21,14 @@ namespace Tests.General.Tests.BVT5
     /// <summary>
     /// The class representing the Public_NewAcctAccessRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("96b341df-9816-4ff2-b42d-d37adb3a631b")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("96b341df-9816-4ff2-b42d-d37adb3a631b")]
     public partial class Public_NewAcctAccessRepository : RepoGenBaseFolder
     {
         static Public_NewAcctAccessRepository instance = new Public_NewAcctAccessRepository();
+        Public_NewAcctAccessRepositoryFolders.DOMAppFolder _dom;
+        Public_NewAcctAccessRepositoryFolders.ContainerSelectboxAppFolder _containerselectbox;
+        Public_NewAcctAccessRepositoryFolders.WebDocumentMozillaAppFolder _webdocumentmozilla;
 
         /// <summary>
         /// Gets the singleton class instance representing the Public_NewAcctAccessRepository element repository.
@@ -35,15 +39,11 @@ namespace Tests.General.Tests.BVT5
             get { return instance; }
         }
 
-        Public_NewAcctAccessRepositoryFolders.DOMAppFolder _dom;
-        Public_NewAcctAccessRepositoryFolders.ContainerSelectboxAppFolder _containerselectbox;
-        Public_NewAcctAccessRepositoryFolders.WebDocumentMozillaAppFolder _webdocumentmozilla;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public Public_NewAcctAccessRepository() 
-            : base("Public_NewAcctAccessRepository", "", null, 30000, false)
+            : base("Public_NewAcctAccessRepository", "", null, 30000, false, "96b341df-9816-4ff2-b42d-d37adb3a631b", "./RepositoryImages\\Public_NewAcctAccessRepository96b341df.rximgres")
         {
             _dom = new Public_NewAcctAccessRepositoryFolders.DOMAppFolder(this);
             _containerselectbox = new Public_NewAcctAccessRepositoryFolders.ContainerSelectboxAppFolder(this);
@@ -85,6 +85,7 @@ namespace Tests.General.Tests.BVT5
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class Public_NewAcctAccessRepositoryFolders
     {
         /// <summary>
@@ -102,7 +103,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "5b5d3c89-ab8e-4f92-98a3-20577c3f5979")
+                    base("DOM", "/dom", parentFolder, 30000, false, "5b5d3c89-ab8e-4f92-98a3-20577c3f5979", "")
             {
                 _somebodytag = new Public_NewAcctAccessRepositoryFolders.SomeBodyTagFolder(this);
                 _tabletagctl00_main_grdngu_groups = new Public_NewAcctAccessRepositoryFolders.TableTagCtl00_main_grdNGU_GroupsFolder(this);
@@ -191,7 +192,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new SomeBodyTag  folder.
             /// </summary>
             public SomeBodyTagFolder(RepoGenBaseFolder parentFolder) :
-                    base("SomeBodyTag", "body", parentFolder, 30000, false, "2a264a64-6075-47b4-bb05-ca2c3cefed18")
+                    base("SomeBodyTag", "body", parentFolder, 30000, false, "2a264a64-6075-47b4-bb05-ca2c3cefed18", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "2a264a64-6075-47b4-bb05-ca2c3cefed18");
                 _btnmainlog_inInfo = new RepoItemInfo(this, "btnMainLog_in", "div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log in']", 30000, null, "907f2b61-f6c0-4f4a-a695-fe599a339e7b");
@@ -663,7 +664,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new TableTagCtl00_main_grdNGU_Groups  folder.
             /// </summary>
             public TableTagCtl00_main_grdNGU_GroupsFolder(RepoGenBaseFolder parentFolder) :
-                    base("TableTagCtl00_main_grdNGU_Groups", "body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table", parentFolder, 30000, false, "fc1be8d9-b2f3-4d83-a7f5-52f331c554c3")
+                    base("TableTagCtl00_main_grdNGU_Groups", "body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table", parentFolder, 30000, false, "fc1be8d9-b2f3-4d83-a7f5-52f331c554c3", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "fc1be8d9-b2f3-4d83-a7f5-52f331c554c3");
                 _thtagimgactionmenugInfo = new RepoItemInfo(this, "ThTagImgActionMenuG", "tbody/tr[1]/th[@id='imgActionMenuG']", 30000, null, "dc7f4ebb-1394-4534-9225-941c97119c16");
@@ -1320,7 +1321,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new DivTagDivNGaU  folder.
             /// </summary>
             public DivTagDivNGaUFolder(RepoGenBaseFolder parentFolder) :
-                    base("DivTagDivNGaU", "body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']", parentFolder, 30000, false, "8b7ef181-9605-43c3-9631-ffe1eff03a21")
+                    base("DivTagDivNGaU", "body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']", parentFolder, 30000, false, "8b7ef181-9605-43c3-9631-ffe1eff03a21", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "8b7ef181-9605-43c3-9631-ffe1eff03a21");
                 _somebrtagInfo = new RepoItemInfo(this, "SomeBrTag", "br[1]", 30000, null, "445983da-f21a-46f8-bbd3-941760169708");
@@ -13613,7 +13614,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new ContainerSelectbox  folder.
             /// </summary>
             public ContainerSelectboxAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ContainerSelectbox", "/container[@caption='selectbox']", parentFolder, 30000, true, "58feee42-ab80-4697-b884-f937687383a9")
+                    base("ContainerSelectbox", "/container[@caption='selectbox']", parentFolder, 30000, true, "58feee42-ab80-4697-b884-f937687383a9", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "58feee42-ab80-4697-b884-f937687383a9");
                 _listiteminactiveInfo = new RepoItemInfo(this, "ListItemInactive", "listitem[@accessiblename='Inactive']", 30000, null, "aff496a1-08de-4c0e-9bc7-27a073639d9a");
@@ -13682,7 +13683,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new WebDocumentMozilla  folder.
             /// </summary>
             public WebDocumentMozillaAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WebDocumentMozilla", "/dom[@browsername='Mozilla']", parentFolder, 30000, false, "a5fa41a0-993e-4d2e-8031-4359528e05bf")
+                    base("WebDocumentMozilla", "/dom[@browsername='Mozilla']", parentFolder, 30000, false, "a5fa41a0-993e-4d2e-8031-4359528e05bf", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a5fa41a0-993e-4d2e-8031-4359528e05bf");
                 _someatagInfo = new RepoItemInfo(this, "SomeATag", "body/div/div/div/div/div/div/div/a", 30000, null, "bba780da-bcd9-484d-8970-49b3472e2162");

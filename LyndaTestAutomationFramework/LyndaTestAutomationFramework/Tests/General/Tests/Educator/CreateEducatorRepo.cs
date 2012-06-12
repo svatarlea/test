@@ -21,20 +21,11 @@ namespace Tests.General.Tests.Educator
     /// <summary>
     /// The class representing the CreateEducatorRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("1d6ce830-0df7-45d3-8518-f2705151a6d2")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("1d6ce830-0df7-45d3-8518-f2705151a6d2")]
     public partial class CreateEducatorRepo : RepoGenBaseFolder
     {
         static CreateEducatorRepo instance = new CreateEducatorRepo();
-
-        /// <summary>
-        /// Gets the singleton class instance representing the CreateEducatorRepo element repository.
-        /// </summary>
-        [RepositoryFolder("1d6ce830-0df7-45d3-8518-f2705151a6d2")]
-        public static CreateEducatorRepo Instance
-        {
-            get { return instance; }
-        }
-
         CreateEducatorRepoFolders.DOMAppFolder _dom;
         CreateEducatorRepoFolders.AddSecurityExceptionDialogFirefoxAppFolder _addsecurityexceptiondialogfirefox;
         CreateEducatorRepoFolders.ReviewCoursesConfirmDialogSafariAppFolder _reviewcoursesconfirmdialogsafari;
@@ -51,10 +42,19 @@ namespace Tests.General.Tests.Educator
         CreateEducatorRepoFolders.CurrentlyLoggedInDialogSafariFolder _currentlyloggedindialogsafari;
 
         /// <summary>
+        /// Gets the singleton class instance representing the CreateEducatorRepo element repository.
+        /// </summary>
+        [RepositoryFolder("1d6ce830-0df7-45d3-8518-f2705151a6d2")]
+        public static CreateEducatorRepo Instance
+        {
+            get { return instance; }
+        }
+
+        /// <summary>
         /// Repository class constructor.
         /// </summary>
         public CreateEducatorRepo() 
-            : base("CreateEducatorRepo", "", null, 30000, false)
+            : base("CreateEducatorRepo", "", null, 30000, false, "1d6ce830-0df7-45d3-8518-f2705151a6d2", "./RepositoryImages\\CreateEducatorRepo1d6ce830.rximgres")
         {
             _dom = new CreateEducatorRepoFolders.DOMAppFolder(this);
             _addsecurityexceptiondialogfirefox = new CreateEducatorRepoFolders.AddSecurityExceptionDialogFirefoxAppFolder(this);
@@ -206,6 +206,7 @@ namespace Tests.General.Tests.Educator
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class CreateEducatorRepoFolders
     {
         /// <summary>
@@ -235,7 +236,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "21187d4f-baeb-40a2-b8f5-85f2cdaf82f6")
+                    base("DOM", "/dom", parentFolder, 30000, false, "21187d4f-baeb-40a2-b8f5-85f2cdaf82f6", "")
             {
                 _adminwelcomepagenotloggedin = new CreateEducatorRepoFolders.AdminWelcomePageNotLoggedInFolder(this);
                 _adminwelcomepageloggedin = new CreateEducatorRepoFolders.AdminWelcomePageLoggedInFolder(this);
@@ -429,7 +430,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminWelcomePageNotLoggedIn  folder.
             /// </summary>
             public AdminWelcomePageNotLoggedInFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminWelcomePageNotLoggedIn", "", parentFolder, 0, false, "5f19804b-d22d-4792-98d6-b28ec28cabae")
+                    base("AdminWelcomePageNotLoggedIn", "", parentFolder, 0, false, "5f19804b-d22d-4792-98d6-b28ec28cabae", "")
             {
                 _usernameinputInfo = new RepoItemInfo(this, "UsernameInput", "body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtUsername']", 30000, null, "ba9e2da0-26de-4b1f-8f0e-4283999ea612");
                 _logininputInfo = new RepoItemInfo(this, "LoginInput", "body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[3]/input[@id='ctl00_UcHeaderAdminLogin1_ImageButton1']", 30000, null, "c512f704-ec6e-4556-94ea-3f297ba6cbd2");
@@ -521,7 +522,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminWelcomePageLoggedIn  folder.
             /// </summary>
             public AdminWelcomePageLoggedInFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminWelcomePageLoggedIn", "", parentFolder, 0, false, "a68568c8-a307-460d-9a10-f9916cb1c1b3")
+                    base("AdminWelcomePageLoggedIn", "", parentFolder, 0, false, "a68568c8-a307-460d-9a10-f9916cb1c1b3", "")
             {
                 _welcomemessageInfo = new RepoItemInfo(this, "WelcomeMessage", "body/form/div[5]/div/div/p/span[@id='ctl00_cphMain_labelForMsg']", 30000, null, "439d5d41-43c7-48c8-a639-e65dff6492b5");
             }
@@ -563,7 +564,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new IECertificateErrorPage  folder.
             /// </summary>
             public IECertificateErrorPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("IECertificateErrorPage", "", parentFolder, 0, false, "64ad53f2-b96b-46c4-96bb-b1b01b76ce06")
+                    base("IECertificateErrorPage", "", parentFolder, 0, false, "64ad53f2-b96b-46c4-96bb-b1b01b76ce06", "")
             {
                 _overridelinkInfo = new RepoItemInfo(this, "OverrideLink", "body/table/tbody/tr[7]/td[@id='continueToSiteAlign']/h4/a[@id='overridelink']", 30000, null, "1b8256ed-367a-4fe8-bbb3-e4994fd49d32");
             }
@@ -606,7 +607,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new FirefoxUntrustedConnectionPage  folder.
             /// </summary>
             public FirefoxUntrustedConnectionPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("FirefoxUntrustedConnectionPage", "", parentFolder, 0, false, "23f0365b-473a-4a3d-ac09-6f9bf7cfa2ef")
+                    base("FirefoxUntrustedConnectionPage", "", parentFolder, 0, false, "23f0365b-473a-4a3d-ac09-6f9bf7cfa2ef", "")
             {
                 _iunderstandtherisksInfo = new RepoItemInfo(this, "IUnderstandTheRisks", "body/div/div[@id='errorLongContent']/div[@id='expertContent']/h2[@id='expertContentHeading']", 30000, null, "2ece9aae-6290-448f-a469-599249f8e581");
                 _addexceptionbuttonInfo = new RepoItemInfo(this, "AddExceptionButton", "body/div/div[@id='errorLongContent']/div[@id='expertContent']/div/button[@id='exceptionDialogButton']", 30000, null, "1ebfad8d-72c3-4a33-950b-7a5c41736030");
@@ -675,7 +676,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminHeaderMenusAbstractPage  folder.
             /// </summary>
             public AdminHeaderMenusAbstractPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminHeaderMenusAbstractPage", "", parentFolder, 0, false, "7d38b416-b434-4d45-bcf9-c683bf0561b5")
+                    base("AdminHeaderMenusAbstractPage", "", parentFolder, 0, false, "7d38b416-b434-4d45-bcf9-c683bf0561b5", "")
             {
                 _csmenuInfo = new RepoItemInfo(this, "CSmenu", "body/form/div[4]/div[1]/table/tbody/tr/td[1]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu1']", 30000, null, "bd4fe592-f629-4473-84e9-d47c9816a661");
                 _csmenunewaccountInfo = new RepoItemInfo(this, "CSmenuNewAccount", "body/form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[3]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu101']", 30000, null, "9ae14e88-f985-427a-ba01-d3de07d29b91");
@@ -769,7 +770,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminCSNewAccountPage  folder.
             /// </summary>
             public AdminCSNewAccountPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminCSNewAccountPage", "", parentFolder, 0, false, "4fffd714-1f40-49cf-846b-c193fffffd2a")
+                    base("AdminCSNewAccountPage", "", parentFolder, 0, false, "4fffd714-1f40-49cf-846b-c193fffffd2a", "")
             {
                 _educatorradioInfo = new RepoItemInfo(this, "EducatorRadio", "body/form/div[5]/div/div/div/table/tbody/tr[2]/td/table/tbody/tr[2]/td/input[@id='ctl00_cphMain_rblPersonaProduct_1']", 30000, null, "584cb646-4f9f-45d6-b685-0a9bbcef7b78");
                 _regularradioInfo = new RepoItemInfo(this, "RegularRadio", "body/form/div[5]/div/div/div/table/tbody/tr[4]/td/table/tbody/tr[1]/td/input[@id='ctl00_cphMain_rblAccountType_0']", 30000, null, "6d91bbae-e8d5-453d-898c-b384f5ee2123");
@@ -872,7 +873,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminCSRegStep1Page  folder.
             /// </summary>
             public AdminCSRegStep1PageFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminCSRegStep1Page", "", parentFolder, 0, false, "22f41ff8-39e5-472e-9c33-f17a2f557c97")
+                    base("AdminCSRegStep1Page", "", parentFolder, 0, false, "22f41ff8-39e5-472e-9c33-f17a2f557c97", "")
             {
                 _countryselectInfo = new RepoItemInfo(this, "CountrySelect", "body/form/div[5]/div/div/fieldset/table/tbody/tr[1]/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep1_drpCountry']", 30000, null, "9b78ca47-2136-4a9b-971a-6ded77fcb5c9");
                 _firstnameinputInfo = new RepoItemInfo(this, "FirstNameInput", "body/form/div[5]/div/div/fieldset/table/tbody/tr[2]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep1_firstname']", 30000, null, "85b94467-c240-41a2-b582-6ca850106a26");
@@ -1194,7 +1195,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminCSRegStep2Page  folder.
             /// </summary>
             public AdminCSRegStep2PageFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminCSRegStep2Page", "", parentFolder, 0, false, "4cf9aa06-3183-4baa-8aeb-ee87b342c731")
+                    base("AdminCSRegStep2Page", "", parentFolder, 0, false, "4cf9aa06-3183-4baa-8aeb-ee87b342c731", "")
             {
                 _startdateinputInfo = new RepoItemInfo(this, "StartDateInput", "body/form/div[5]/div/fieldset/table/tbody/tr[4]/td/input[@id='ctl00_cphMain_ucRegistrationStep2_cpStartDate']", 30000, null, "c0396650-6b4e-4e1a-865a-cd157dc8cfa6");
                 _enddateinputInfo = new RepoItemInfo(this, "EndDateInput", "body/form/div[5]/div/fieldset/table/tbody/tr[5]/td/input[@id='ctl00_cphMain_ucRegistrationStep2_cpEndDate']", 30000, null, "60a0ec58-d6e0-4d08-a03d-139d00090f6d");
@@ -1363,7 +1364,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminCSRegStep3Page  folder.
             /// </summary>
             public AdminCSRegStep3PageFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminCSRegStep3Page", "", parentFolder, 0, false, "d49d0687-a766-410a-84c7-86d1ff2b6c8f")
+                    base("AdminCSRegStep3Page", "", parentFolder, 0, false, "d49d0687-a766-410a-84c7-86d1ff2b6c8f", "")
             {
                 _continuebuttonInfo = new RepoItemInfo(this, "ContinueButton", "body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep3_upSelectCourse']/table/tbody/tr[1]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep3_btnContinue']", 30000, null, "c995777c-c65e-4f3f-b23f-5e570203f162");
                 _addcoursebuttonInfo = new RepoItemInfo(this, "AddCourseButton", "body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep3_upSelectCourse']/p/input[@id='ctl00_cphMain_ucRegistrationStep3_btnAddCourse']", 30000, null, "ca6d1067-80ec-4468-b12f-8b978d444396");
@@ -1460,7 +1461,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminCSRegStep4Page  folder.
             /// </summary>
             public AdminCSRegStep4PageFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminCSRegStep4Page", "", parentFolder, 0, false, "258907cd-0956-4793-a5af-639aa429fbe5")
+                    base("AdminCSRegStep4Page", "", parentFolder, 0, false, "258907cd-0956-4793-a5af-639aa429fbe5", "")
             {
                 _firstnameinputInfo = new RepoItemInfo(this, "FirstNameInput", "body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upAddStudents']/fieldset/table/tbody/tr[2]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep4_firstname']", 30000, null, "41c3a775-eeb2-47de-9b38-420c59e74888");
                 _lastnameinputInfo = new RepoItemInfo(this, "LastNameInput", "body/form/div[5]/div/div[@id='ctl00_cphMain_ucRegistrationStep4_upAddStudents']/fieldset/table/tbody/tr[3]/td[2]/input[@id='ctl00_cphMain_ucRegistrationStep4_lastname']", 30000, null, "38dd7f03-4adc-4d03-829e-181e4353fb78");
@@ -1642,7 +1643,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminCSRegStep5Page  folder.
             /// </summary>
             public AdminCSRegStep5PageFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminCSRegStep5Page", "", parentFolder, 0, false, "6c1a8c30-8359-47d4-9584-4393275f9c91")
+                    base("AdminCSRegStep5Page", "", parentFolder, 0, false, "6c1a8c30-8359-47d4-9584-4393275f9c91", "")
             {
                 _paidbyschoolradioInfo = new RepoItemInfo(this, "PaidBySchoolRadio", "body/form/div[5]/div/div/fieldset/span/span/input[@id='ctl00_cphMain_ucRegistrationStep5_rblPaidBy_1']", 30000, null, "d3b6e324-ba7d-4f32-aaa4-c6b57c6d7545");
                 _paymenttypeselectInfo = new RepoItemInfo(this, "PaymentTypeSelect", "body/form/div[5]/div/div/fieldset[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_fsPaymentType']/table/tbody/tr/td[2]/select[@id='ctl00_cphMain_ucRegistrationStep5_ucPaymentInformation_ddPaymentType']", 30000, null, "6044512f-0812-49c5-8e99-6bbd9d73bdd2");
@@ -2061,7 +2062,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminCSRegStep6Page  folder.
             /// </summary>
             public AdminCSRegStep6PageFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminCSRegStep6Page", "", parentFolder, 0, false, "eb157908-29d6-4cf4-acd6-48ffd2f194f9")
+                    base("AdminCSRegStep6Page", "", parentFolder, 0, false, "eb157908-29d6-4cf4-acd6-48ffd2f194f9", "")
             {
                 _studentemailInfo = new RepoItemInfo(this, "StudentEmail", "body/form/div[5]/div/fieldset[3]/div[1]/table/tbody/tr[2]/td[3]", 30000, null, "365aeebc-d5ce-4ba7-a1f1-531a1706c0ec");
                 _studentnameInfo = new RepoItemInfo(this, "StudentName", "body/form/div[5]/div/fieldset[3]/div[1]/table/tbody/tr[2]/td[2]", 30000, null, "8d562487-a224-42b2-bbbb-e7269735d96b");
@@ -2153,7 +2154,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminCSRegConfirmPage  folder.
             /// </summary>
             public AdminCSRegConfirmPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminCSRegConfirmPage", "", parentFolder, 0, false, "490eaaed-d61e-4d6c-8d94-6b775a2f99e0")
+                    base("AdminCSRegConfirmPage", "", parentFolder, 0, false, "490eaaed-d61e-4d6c-8d94-6b775a2f99e0", "")
             {
                 _continuebuttonInfo = new RepoItemInfo(this, "ContinueButton", "body/form/div[5]/div/p/input[@id='ctl00_cphMain_btnContinue']", 30000, null, "6a05e1ef-8cec-4216-9318-9a6b5dc24460");
             }
@@ -2199,7 +2200,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new MemberHomePage  folder.
             /// </summary>
             public MemberHomePageFolder(RepoGenBaseFolder parentFolder) :
-                    base("MemberHomePage", "", parentFolder, 0, false, "695cae93-338a-47c3-b2c1-f3f81d19497d")
+                    base("MemberHomePage", "", parentFolder, 0, false, "695cae93-338a-47c3-b2c1-f3f81d19497d", "")
             {
                 _loginlinkInfo = new RepoItemInfo(this, "LoginLink", "body/div[@id='eyebrow']/div[1]/ul/li[4]/a/strong[@innertext='log in']", 30000, null, "3014fcd6-c322-4bb2-be0a-1ebf28f32b84");
                 _loginusernameInfo = new RepoItemInfo(this, "LoginUsername", "body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[2]/td/input[@id='username']", 30000, null, "440aa381-e1e6-40f5-b939-467ed497e511");
@@ -2341,7 +2342,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AdminDisplayCustomerPage  folder.
             /// </summary>
             public AdminDisplayCustomerPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminDisplayCustomerPage", "", parentFolder, 0, false, "b40cdb77-249d-4eef-b65f-c3ced6e02119")
+                    base("AdminDisplayCustomerPage", "", parentFolder, 0, false, "b40cdb77-249d-4eef-b65f-c3ced6e02119", "")
             {
                 _customerdetailstextInfo = new RepoItemInfo(this, "CustomerDetailsText", "body/form/div[5]/div/div[@id='ctl00_cphMain_pnlForLinks']/table/tbody/tr/td[1]/h1[@innertext='Customer Details']", 30000, null, "feb64223-f7ef-4816-b9ac-251c2e1df1c7");
             }
@@ -2385,7 +2386,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new AddSecurityExceptionDialogFirefox  folder.
             /// </summary>
             public AddSecurityExceptionDialogFirefoxAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("AddSecurityExceptionDialogFirefox", "/form[@title='Add Security Exception']", parentFolder, 30000, true, "eb373c0b-dd2b-4d93-9ace-cdbbd1c0f588")
+                    base("AddSecurityExceptionDialogFirefox", "/form[@title='Add Security Exception']", parentFolder, 30000, true, "eb373c0b-dd2b-4d93-9ace-cdbbd1c0f588", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "eb373c0b-dd2b-4d93-9ace-cdbbd1c0f588");
                 _permanentlystorethisexceptioncheckboxcheckedInfo = new RepoItemInfo(this, "PermanentlyStoreThisExceptionCheckBoxChecked", "container[@accessiblename='Certificate Status']/checkbox[@accessiblename~'^Permanently\\ store\\ this\\ ex' and @checked='true']", 30000, null, "2aff7363-7cb9-4880-8e1a-1fa80fe7b3e8");
@@ -2479,7 +2480,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new ReviewCoursesConfirmDialogSafari  folder.
             /// </summary>
             public ReviewCoursesConfirmDialogSafariAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ReviewCoursesConfirmDialogSafari", "/form[@title='' and @processname='Safari']", parentFolder, 30000, true, "03107021-a9ee-4b77-a0ad-5f7eac61377a")
+                    base("ReviewCoursesConfirmDialogSafari", "/form[@title='' and @processname='Safari']", parentFolder, 30000, true, "03107021-a9ee-4b77-a0ad-5f7eac61377a", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "03107021-a9ee-4b77-a0ad-5f7eac61377a");
                 _continuebuttonInfo = new RepoItemInfo(this, "ContinueButton", "element/element/container/container/container[2]/button[@accessiblename='Continue']", 30000, null, "6f5a428b-affa-41f7-9a53-2690176e470c");
@@ -2572,7 +2573,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new ReviewCoursesConfirmDialogIE  folder.
             /// </summary>
             public ReviewCoursesConfirmDialogIEAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ReviewCoursesConfirmDialogIE", "/form[@title='Message from webpage']", parentFolder, 30000, true, "a443ac80-bb6a-4c34-83af-29e9c6103b1c")
+                    base("ReviewCoursesConfirmDialogIE", "/form[@title='Message from webpage']", parentFolder, 30000, true, "a443ac80-bb6a-4c34-83af-29e9c6103b1c", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a443ac80-bb6a-4c34-83af-29e9c6103b1c");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", "button[@text='OK']", 30000, null, "8b9fe1a0-1f08-4f58-b6d2-394029eabce8");
@@ -2640,7 +2641,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new ReviewCoursesConfirmDialogFirefox  folder.
             /// </summary>
             public ReviewCoursesConfirmDialogFirefoxAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ReviewCoursesConfirmDialogFirefox", "/form[@title~'^Educator\\ Registration:\\ 3\\ ']", parentFolder, 30000, true, "70486c9f-50ac-4f06-88e7-bb744db73c7f")
+                    base("ReviewCoursesConfirmDialogFirefox", "/form[@title~'^Educator\\ Registration:\\ 3\\ ']", parentFolder, 30000, true, "70486c9f-50ac-4f06-88e7-bb744db73c7f", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "70486c9f-50ac-4f06-88e7-bb744db73c7f");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", "container/container/container/form/button[@accessiblename='OK']", 30000, null, "4f531b0f-adf8-45ed-bbe1-938580da8108");
@@ -2708,7 +2709,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new ReviewCoursesConfirmDialogChrome  folder.
             /// </summary>
             public ReviewCoursesConfirmDialogChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ReviewCoursesConfirmDialogChrome", "/form[@title~'^The\\ page\\ at\\ https://admin']", parentFolder, 30000, true, "1da4ddbf-1dad-41ce-a7d0-ed71196615ad")
+                    base("ReviewCoursesConfirmDialogChrome", "/form[@title~'^The\\ page\\ at\\ https://admin']", parentFolder, 30000, true, "1da4ddbf-1dad-41ce-a7d0-ed71196615ad", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "1da4ddbf-1dad-41ce-a7d0-ed71196615ad");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", "container/button[@accessiblename='OK']", 30000, null, "e03884ae-a162-472d-bc3c-2444d42d9efe");
@@ -2776,7 +2777,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new TermsAndConditionsPageChrome  folder.
             /// </summary>
             public TermsAndConditionsPageChromeFolder(RepoGenBaseFolder parentFolder) :
-                    base("TermsAndConditionsPageChrome", "", parentFolder, 0, false, "c9b9a6ab-a514-4afc-a833-cac63e450ce1")
+                    base("TermsAndConditionsPageChrome", "", parentFolder, 0, false, "c9b9a6ab-a514-4afc-a833-cac63e450ce1", "")
             {
                 _iacceptbuttonInfo = new RepoItemInfo(this, "IAcceptButton", "/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/input[@type='submit']", 30000, null, "eb0ed069-b345-4446-98cc-8ed1b736158b");
                 _ideclinebuttonInfo = new RepoItemInfo(this, "IDeclineButton", "/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span", 30000, null, "748bbe6d-1d7e-440c-9a1f-6e7b1428be83");
@@ -2844,7 +2845,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new TermsAndConditionsPageSafari  folder.
             /// </summary>
             public TermsAndConditionsPageSafariFolder(RepoGenBaseFolder parentFolder) :
-                    base("TermsAndConditionsPageSafari", "", parentFolder, 0, false, "4218c0ff-4d4e-4142-bc65-d362321e5b68")
+                    base("TermsAndConditionsPageSafari", "", parentFolder, 0, false, "4218c0ff-4d4e-4142-bc65-d362321e5b68", "")
             {
                 _iacceptbuttonInfo = new RepoItemInfo(this, "IAcceptButton", "/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/input[@type='submit']", 30000, null, "7442c649-4a59-4bfd-aaec-108edc74ee2a");
                 _ideclinebuttonInfo = new RepoItemInfo(this, "IDeclineButton", "/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span", 30000, null, "3d56cb25-c105-4769-ac78-29ae768d7130");
@@ -2912,7 +2913,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new TermsAndConditionsPageIE  folder.
             /// </summary>
             public TermsAndConditionsPageIEFolder(RepoGenBaseFolder parentFolder) :
-                    base("TermsAndConditionsPageIE", "", parentFolder, 0, false, "16848793-d076-4b34-9d61-0d949e7c32fe")
+                    base("TermsAndConditionsPageIE", "", parentFolder, 0, false, "16848793-d076-4b34-9d61-0d949e7c32fe", "")
             {
                 _iacceptbuttonInfo = new RepoItemInfo(this, "IAcceptButton", "/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/input[@type='submit']", 30000, null, "43dca117-499d-4385-9a0f-17cdd1925803");
                 _ideclinebuttonInfo = new RepoItemInfo(this, "IDeclineButton", "/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span", 30000, null, "b1d3e021-8003-4241-8e19-2f478b50fa49");
@@ -2980,7 +2981,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new TermsAndConditionsPageFirefox  folder.
             /// </summary>
             public TermsAndConditionsPageFirefoxFolder(RepoGenBaseFolder parentFolder) :
-                    base("TermsAndConditionsPageFirefox", "", parentFolder, 0, false, "df27cce3-290e-49e2-9dd3-c59054dd26f2")
+                    base("TermsAndConditionsPageFirefox", "", parentFolder, 0, false, "df27cce3-290e-49e2-9dd3-c59054dd26f2", "")
             {
                 _ideclinebuttonInfo = new RepoItemInfo(this, "IDeclineButton", "/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[1]/a/span", 30000, null, "fb232c6b-394f-46e6-ab25-a6cee7ae1650");
                 _iacceptbuttonInfo = new RepoItemInfo(this, "IAcceptButton", "/dom/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/div/div/div[2]/div[2]/span/span", 30000, null, "05d03152-1a7a-4360-a41e-2a687423a79c");
@@ -3049,7 +3050,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new CurrentlyLoggedInDialogChrome  folder.
             /// </summary>
             public CurrentlyLoggedInDialogChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CurrentlyLoggedInDialogChrome", "/form[@title~'^The\\ page\\ at\\ https://admin']", parentFolder, 30000, true, "55d7cc9e-ac1d-4685-89b6-bc4c55e173a0")
+                    base("CurrentlyLoggedInDialogChrome", "/form[@title~'^The\\ page\\ at\\ https://admin']", parentFolder, 30000, true, "55d7cc9e-ac1d-4685-89b6-bc4c55e173a0", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "55d7cc9e-ac1d-4685-89b6-bc4c55e173a0");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", "container/button[@accessiblename='OK']", 30000, null, "957a4295-f04d-419d-b7be-7d640366c12f");
@@ -3142,7 +3143,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new CurrentlyLoggedInDialogIE  folder.
             /// </summary>
             public CurrentlyLoggedInDialogIEFolder(RepoGenBaseFolder parentFolder) :
-                    base("CurrentlyLoggedInDialogIE", "", parentFolder, 0, false, "50132258-3ec2-4e7b-9acb-d01b4d535857")
+                    base("CurrentlyLoggedInDialogIE", "", parentFolder, 0, false, "50132258-3ec2-4e7b-9acb-d01b4d535857", "")
             {
                 _hellotextInfo = new RepoItemInfo(this, "HelloText", "/form[@title='Message from webpage']/text[@controlid='65535' and @caption~'^Hello\\ Keynote\\ Virtualuser']", 5000, null, "3696e788-c285-478c-9b52-ce5242b179c6");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", "/form[@title='Message from webpage']/button[@text='OK']", 30000, null, "8a317cc7-ccbd-42be-a573-5489161d4fe7");
@@ -3211,7 +3212,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new CurrentlyLoggedInDialogFirefox  folder.
             /// </summary>
             public CurrentlyLoggedInDialogFirefoxAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CurrentlyLoggedInDialogFirefox", "/form", parentFolder, 30000, true, "0dc49aa5-c9dd-4846-8e61-1b8a43481d69")
+                    base("CurrentlyLoggedInDialogFirefox", "/form", parentFolder, 30000, true, "0dc49aa5-c9dd-4846-8e61-1b8a43481d69", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "0dc49aa5-c9dd-4846-8e61-1b8a43481d69");
                 _hellotextInfo = new RepoItemInfo(this, "HelloText", "container/container/container/form/text/text[@accessiblename~'^Hello\\ Keynote\\ Virtualuser']", 5000, null, "f4a38af6-82e7-45c4-98b0-62756c44435c");
@@ -3304,7 +3305,7 @@ namespace Tests.General.Tests.Educator
             /// Creates a new CurrentlyLoggedInDialogSafari  folder.
             /// </summary>
             public CurrentlyLoggedInDialogSafariFolder(RepoGenBaseFolder parentFolder) :
-                    base("CurrentlyLoggedInDialogSafari", "", parentFolder, 0, false, "bde1cd1c-54a5-4faf-ba27-43020c24b957")
+                    base("CurrentlyLoggedInDialogSafari", "", parentFolder, 0, false, "bde1cd1c-54a5-4faf-ba27-43020c24b957", "")
             {
                 _hellotextInfo = new RepoItemInfo(this, "HelloText", "/form[@title='' and @processname='Safari']/element/element/container/container/container[1]/text[@accessiblename~'^Hello\\ Keynote\\ Virtualuser']", 5000, null, "1ece8bac-11ab-4efe-98aa-56b54befc7b8");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", "/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='OK']", 30000, null, "4590d9a2-b100-48be-b9b0-774d7eab14ab");

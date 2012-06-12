@@ -21,10 +21,21 @@ namespace Tests.General.Tests.EnterpriseCampus
     /// <summary>
     /// The class representing the EnterpriseCampusAcctSetup element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("d8fd4343-4955-447e-b9c6-947d8986c648")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("d8fd4343-4955-447e-b9c6-947d8986c648")]
     public partial class EnterpriseCampusAcctSetup : RepoGenBaseFolder
     {
         static EnterpriseCampusAcctSetup instance = new EnterpriseCampusAcctSetup();
+        EnterpriseCampusAcctSetupFolders.DOMAppFolder _dom;
+        EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogChromeAppFolder _currentlyloggedindialogchrome;
+        EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogIEFolder _currentlyloggedindialogie;
+        EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogFirefoxAppFolder _currentlyloggedindialogfirefox;
+        EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogSafariFolder _currentlyloggedindialogsafari;
+        EnterpriseCampusAcctSetupFolders.SomeTBodyTagFolder _sometbodytag;
+        EnterpriseCampusAcctSetupFolders.ClearCacheFirefoxFolder _clearcachefirefox;
+        EnterpriseCampusAcctSetupFolders.ClearCacheIEFolder _clearcacheie;
+        EnterpriseCampusAcctSetupFolders.ClearCacheSafariFolder _clearcachesafari;
+        EnterpriseCampusAcctSetupFolders.ClearCacheChromeFolder _clearcachechrome;
 
         /// <summary>
         /// Gets the singleton class instance representing the EnterpriseCampusAcctSetup element repository.
@@ -35,18 +46,11 @@ namespace Tests.General.Tests.EnterpriseCampus
             get { return instance; }
         }
 
-        EnterpriseCampusAcctSetupFolders.DOMAppFolder _dom;
-        EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogChromeAppFolder _currentlyloggedindialogchrome;
-        EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogIEFolder _currentlyloggedindialogie;
-        EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogFirefoxAppFolder _currentlyloggedindialogfirefox;
-        EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogSafariFolder _currentlyloggedindialogsafari;
-        EnterpriseCampusAcctSetupFolders.SomeTBodyTagFolder _sometbodytag;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public EnterpriseCampusAcctSetup() 
-            : base("EnterpriseCampusAcctSetup", "", null, 30000, false)
+            : base("EnterpriseCampusAcctSetup", "", null, 30000, false, "d8fd4343-4955-447e-b9c6-947d8986c648", "./RepositoryImages\\EnterpriseCampusAcctSetupd8fd4343.rximgres")
         {
             _dom = new EnterpriseCampusAcctSetupFolders.DOMAppFolder(this);
             _currentlyloggedindialogchrome = new EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogChromeAppFolder(this);
@@ -54,6 +58,10 @@ namespace Tests.General.Tests.EnterpriseCampus
             _currentlyloggedindialogfirefox = new EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogFirefoxAppFolder(this);
             _currentlyloggedindialogsafari = new EnterpriseCampusAcctSetupFolders.CurrentlyLoggedInDialogSafariFolder(this);
             _sometbodytag = new EnterpriseCampusAcctSetupFolders.SomeTBodyTagFolder(this);
+            _clearcachefirefox = new EnterpriseCampusAcctSetupFolders.ClearCacheFirefoxFolder(this);
+            _clearcacheie = new EnterpriseCampusAcctSetupFolders.ClearCacheIEFolder(this);
+            _clearcachesafari = new EnterpriseCampusAcctSetupFolders.ClearCacheSafariFolder(this);
+            _clearcachechrome = new EnterpriseCampusAcctSetupFolders.ClearCacheChromeFolder(this);
         }
 
 #region Variables
@@ -113,11 +121,48 @@ namespace Tests.General.Tests.EnterpriseCampus
         {
             get { return _sometbodytag; }
         }
+
+        /// <summary>
+        /// The ClearCacheFirefox folder.
+        /// </summary>
+        [RepositoryFolder("f2c9cbd8-2f3e-4f5e-8cb1-6883b1a60db2")]
+        public virtual EnterpriseCampusAcctSetupFolders.ClearCacheFirefoxFolder ClearCacheFirefox
+        {
+            get { return _clearcachefirefox; }
+        }
+
+        /// <summary>
+        /// The ClearCacheIE folder.
+        /// </summary>
+        [RepositoryFolder("94a36bab-a5f6-420e-90dc-26a338f420bd")]
+        public virtual EnterpriseCampusAcctSetupFolders.ClearCacheIEFolder ClearCacheIE
+        {
+            get { return _clearcacheie; }
+        }
+
+        /// <summary>
+        /// The ClearCacheSafari folder.
+        /// </summary>
+        [RepositoryFolder("431d4ec8-b10e-4d9e-98e4-62e847c6118c")]
+        public virtual EnterpriseCampusAcctSetupFolders.ClearCacheSafariFolder ClearCacheSafari
+        {
+            get { return _clearcachesafari; }
+        }
+
+        /// <summary>
+        /// The ClearCacheChrome folder.
+        /// </summary>
+        [RepositoryFolder("63b9c196-e204-42ae-b913-73716a1387c9")]
+        public virtual EnterpriseCampusAcctSetupFolders.ClearCacheChromeFolder ClearCacheChrome
+        {
+            get { return _clearcachechrome; }
+        }
     }
 
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class EnterpriseCampusAcctSetupFolders
     {
         /// <summary>
@@ -131,10 +176,11 @@ namespace Tests.General.Tests.EnterpriseCampus
             EnterpriseCampusAcctSetupFolders.IECertificateErrorPageFolder _iecertificateerrorpage;
             EnterpriseCampusAcctSetupFolders.FFConnectionUntrustedPageFolder _ffconnectionuntrustedpage;
             EnterpriseCampusAcctSetupFolders.SearchPageFolder _searchpage;
+            EnterpriseCampusAcctSetupFolders.CustomerDetailsPageFolder _customerdetailspage;
             EnterpriseCampusAcctSetupFolders.AccountSetupFolder _accountsetup;
             EnterpriseCampusAcctSetupFolders.IP_TestPageFolder _ip_testpage;
-            EnterpriseCampusAcctSetupFolders.DivTagEnterprise_wrapperFolder _divtagenterprise_wrapper;
             EnterpriseCampusAcctSetupFolders.IP_LoginPageFolder _ip_loginpage;
+            EnterpriseCampusAcctSetupFolders.InvalidIP_LoginPageFolder _invalidip_loginpage;
             RepoItemInfo _selfInfo;
             RepoItemInfo _webpageInfo;
             RepoItemInfo _ataglynda_comInfo;
@@ -143,17 +189,18 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "454fb43e-b24c-40e0-9ed9-e294e212ba61")
+                    base("DOM", "/dom", parentFolder, 30000, false, "454fb43e-b24c-40e0-9ed9-e294e212ba61", "")
             {
                 _headeradminlogin = new EnterpriseCampusAcctSetupFolders.HeaderAdminLoginFolder(this);
                 _adminwelcomepageloggedin = new EnterpriseCampusAcctSetupFolders.AdminWelcomePageLoggedInFolder(this);
                 _iecertificateerrorpage = new EnterpriseCampusAcctSetupFolders.IECertificateErrorPageFolder(this);
                 _ffconnectionuntrustedpage = new EnterpriseCampusAcctSetupFolders.FFConnectionUntrustedPageFolder(this);
                 _searchpage = new EnterpriseCampusAcctSetupFolders.SearchPageFolder(this);
+                _customerdetailspage = new EnterpriseCampusAcctSetupFolders.CustomerDetailsPageFolder(this);
                 _accountsetup = new EnterpriseCampusAcctSetupFolders.AccountSetupFolder(this);
                 _ip_testpage = new EnterpriseCampusAcctSetupFolders.IP_TestPageFolder(this);
-                _divtagenterprise_wrapper = new EnterpriseCampusAcctSetupFolders.DivTagEnterprise_wrapperFolder(this);
                 _ip_loginpage = new EnterpriseCampusAcctSetupFolders.IP_LoginPageFolder(this);
+                _invalidip_loginpage = new EnterpriseCampusAcctSetupFolders.InvalidIP_LoginPageFolder(this);
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "454fb43e-b24c-40e0-9ed9-e294e212ba61");
                 _webpageInfo = new RepoItemInfo(this, "Webpage", "", 30000, null, "f727a542-5bf5-46ca-83d9-8bdb6d8bd4d1");
                 _ataglynda_comInfo = new RepoItemInfo(this, "ATagLynda_com", "body/div[@id='orng-navbar']/div/div[@id='logo']/a[@innertext='lynda.com']", 30000, null, "8cdc4f91-830c-4d85-b781-427743fda28d");
@@ -277,6 +324,15 @@ namespace Tests.General.Tests.EnterpriseCampus
             }
 
             /// <summary>
+            /// The CustomerDetailsPage folder.
+            /// </summary>
+            [RepositoryFolder("3e6ab1c3-9592-4c27-9bb5-afc0eced8c68")]
+            public virtual EnterpriseCampusAcctSetupFolders.CustomerDetailsPageFolder CustomerDetailsPage
+            {
+                get { return _customerdetailspage; }
+            }
+
+            /// <summary>
             /// The AccountSetup folder.
             /// </summary>
             [RepositoryFolder("4eb4fe18-aa35-4b27-b8b8-57aafb7de18e")]
@@ -295,21 +351,21 @@ namespace Tests.General.Tests.EnterpriseCampus
             }
 
             /// <summary>
-            /// The DivTagEnterprise_wrapper folder.
-            /// </summary>
-            [RepositoryFolder("67437895-47bb-4d96-a7f5-ac3c3d59bddf")]
-            public virtual EnterpriseCampusAcctSetupFolders.DivTagEnterprise_wrapperFolder DivTagEnterprise_wrapper
-            {
-                get { return _divtagenterprise_wrapper; }
-            }
-
-            /// <summary>
             /// The IP_LoginPage folder.
             /// </summary>
             [RepositoryFolder("31a26cd6-bfb4-455b-baa4-ba32ba7f5b68")]
             public virtual EnterpriseCampusAcctSetupFolders.IP_LoginPageFolder IP_LoginPage
             {
                 get { return _ip_loginpage; }
+            }
+
+            /// <summary>
+            /// The InvalidIP_LoginPage folder.
+            /// </summary>
+            [RepositoryFolder("0a9a42fa-7ba1-43a3-a337-9ea2528d9575")]
+            public virtual EnterpriseCampusAcctSetupFolders.InvalidIP_LoginPageFolder InvalidIP_LoginPage
+            {
+                get { return _invalidip_loginpage; }
             }
         }
 
@@ -329,7 +385,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new HeaderAdminLogin  folder.
             /// </summary>
             public HeaderAdminLoginFolder(RepoGenBaseFolder parentFolder) :
-                    base("HeaderAdminLogin", "body/form/div[3]/table/tbody/tr/td[9]/div", parentFolder, 30000, false, "f6bdcf1a-0b69-47a2-8988-15a8758d495e")
+                    base("HeaderAdminLogin", "body/form/div[3]/table/tbody/tr/td[9]/div", parentFolder, 30000, false, "f6bdcf1a-0b69-47a2-8988-15a8758d495e", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "f6bdcf1a-0b69-47a2-8988-15a8758d495e");
                 _btnlogoutInfo = new RepoItemInfo(this, "btnLogout", "div/table/tbody/tr/td[5]/input[@id='ctl00_UcHeaderAdminLogin1_btnLogOut']", 30000, null, "db4dc05d-4bd7-4c31-a20f-c2da7b1f964b");
@@ -471,7 +527,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new AdminWelcomePageLoggedIn  folder.
             /// </summary>
             public AdminWelcomePageLoggedInFolder(RepoGenBaseFolder parentFolder) :
-                    base("AdminWelcomePageLoggedIn", "", parentFolder, 0, false, "a68568c8-a307-460d-9a10-f9916cb1c1b3")
+                    base("AdminWelcomePageLoggedIn", "", parentFolder, 0, false, "a68568c8-a307-460d-9a10-f9916cb1c1b3", "")
             {
                 _welcomemessageInfo = new RepoItemInfo(this, "WelcomeMessage", "body/form/div[5]/div/div/p/span[@id='ctl00_cphMain_labelForMsg']", 30000, null, "439d5d41-43c7-48c8-a639-e65dff6492b5");
             }
@@ -513,7 +569,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new IECertificateErrorPage  folder.
             /// </summary>
             public IECertificateErrorPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("IECertificateErrorPage", "", parentFolder, 0, false, "64ad53f2-b96b-46c4-96bb-b1b01b76ce06")
+                    base("IECertificateErrorPage", "", parentFolder, 0, false, "64ad53f2-b96b-46c4-96bb-b1b01b76ce06", "")
             {
                 _overridelinkInfo = new RepoItemInfo(this, "OverrideLink", "body/table/tbody/tr[7]/td[@id='continueToSiteAlign']/h4/a[@id='overridelink']", 10000, null, "1b8256ed-367a-4fe8-bbb3-e4994fd49d32");
             }
@@ -560,7 +616,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new FFConnectionUntrustedPage  folder.
             /// </summary>
             public FFConnectionUntrustedPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("FFConnectionUntrustedPage", "body/div/div[@id='errorLongContent']", parentFolder, 30000, false, "de5bd35a-49af-4756-bc63-5b0eae2467b4")
+                    base("FFConnectionUntrustedPage", "body/div/div[@id='errorLongContent']", parentFolder, 30000, false, "de5bd35a-49af-4756-bc63-5b0eae2467b4", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "de5bd35a-49af-4756-bc63-5b0eae2467b4");
                 _divtagexpertcontentInfo = new RepoItemInfo(this, "DivTagExpertContent", "div[@id='expertContent']", 30000, null, "5a36cc73-4eed-4a54-b75e-89f3ac7e7277");
@@ -731,7 +787,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new SearchPage  folder.
             /// </summary>
             public SearchPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("SearchPage", "", parentFolder, 0, false, "48bdf017-9f40-4788-8377-c90848dccc83")
+                    base("SearchPage", "", parentFolder, 0, false, "48bdf017-9f40-4788-8377-c90848dccc83", "")
             {
                 _menuitemsearchInfo = new RepoItemInfo(this, "menuItemSearch", "body/form/div[4]/div[@id='divForSubmenuLyndaAdmin']/table/tbody/tr/td[2]/div/a[@id='ctl00_UcAjaxMenu1_LinkButtonForMenu100']", 30000, null, "98d09b1a-a9ce-4d0c-8802-15cd680e93d6");
                 _txtusernameInfo = new RepoItemInfo(this, "txtUsername", "body/form/div[5]/div/div/fieldset/div[@id='ctl00_cphMain_SearchCustomer2_UpdatePanel1']/table/tbody/tr[4]/td[2]/input[@id='ctl00_cphMain_SearchCustomer2_txtUsername']", 30000, null, "c5ae5ee0-9f18-46e9-9e3f-80e1bb7be4f2");
@@ -862,139 +918,73 @@ namespace Tests.General.Tests.EnterpriseCampus
         }
 
         /// <summary>
-        /// The AccountSetupFolder folder.
+        /// The CustomerDetailsPageFolder folder.
         /// </summary>
-        [RepositoryFolder("4eb4fe18-aa35-4b27-b8b8-57aafb7de18e")]
-        public partial class AccountSetupFolder : RepoGenBaseFolder
+        [RepositoryFolder("3e6ab1c3-9592-4c27-9bb5-afc0eced8c68")]
+        public partial class CustomerDetailsPageFolder : RepoGenBaseFolder
         {
-            RepoItemInfo _selfInfo;
+            RepoItemInfo _customerdetails_authentication_labelInfo;
+            RepoItemInfo _customerdetails_authentication_valueInfo;
             RepoItemInfo _txtusernameInfo;
             RepoItemInfo _lnklyndaentacctsetupInfo;
-            RepoItemInfo _h1_setup1of4Info;
-            RepoItemInfo _txtfromipaddress1Info;
-            RepoItemInfo _txttoipaddress1Info;
-            RepoItemInfo _txt_notes1Info;
-            RepoItemInfo _btncontinueInfo;
-            RepoItemInfo _inputtagrdadministrativeareaInfo;
-            RepoItemInfo _h1_setup2of4Info;
-            RepoItemInfo _inputtagrdfirstname1Info;
-            RepoItemInfo _inputtagrdfirstnameInfo;
-            RepoItemInfo _inputtagrdadministrativearea1Info;
-            RepoItemInfo _btnapproveInfo;
-            RepoItemInfo _inputtagrdfullnameInfo;
-            RepoItemInfo _inputtagrdfullname1Info;
-            RepoItemInfo _inputtagrddisplayemailInfo;
-            RepoItemInfo _inputtagrddisplayemail1Info;
-            RepoItemInfo _inputtagrdcommunicationsemailInfo;
-            RepoItemInfo _inputtagrdcommunicationsemail1Info;
-            RepoItemInfo _inputtagrdusertypeInfo;
-            RepoItemInfo _inputtagrdusertype1Info;
-            RepoItemInfo _inputtagrdcampusInfo;
-            RepoItemInfo _inputtagrdcampus1Info;
-            RepoItemInfo _inputtagrddepartmentInfo;
-            RepoItemInfo _inputtagrddepartment1Info;
-            RepoItemInfo _h1_setup3of4Info;
-            RepoItemInfo _brwseselcustlogoInfo;
-            RepoItemInfo _txtcustombannerInfo;
-            RepoItemInfo _brwseselcustomhdrInfo;
-            RepoItemInfo _txtdefaultgreetingInfo;
-            RepoItemInfo _btnimportInfo;
-            RepoItemInfo _browseselectusernameaccesscontraintsimportfileInfo;
-            RepoItemInfo _txtemaildomainInfo;
-            RepoItemInfo _atagadd_email_domain_linkInfo;
-            RepoItemInfo _atagtest_domainsInfo;
-            RepoItemInfo _chkallowusersoutsideiprangeInfo;
-            RepoItemInfo _btncontinuepg3of4Info;
-            RepoItemInfo _h1_setup4of4Info;
-            RepoItemInfo _rdnewrelnotifn_subscribeInfo;
-            RepoItemInfo _rdnewrelnotifn_unsubscribeInfo;
-            RepoItemInfo _rdmonthlynewsletter_subscribeInfo;
-            RepoItemInfo _rdmonthlynewsletter_unsubscribeInfo;
-            RepoItemInfo _rdspecialannouncemntsoffrs_subscribeInfo;
-            RepoItemInfo _rdspecialannouncemntsoffrs_unsubscribeInfo;
-            RepoItemInfo _btncontinuepg4of4Info;
-            RepoItemInfo _ip_pagediverrorsInfo;
-            RepoItemInfo _ip_pageerrorrangeInfo;
-            RepoItemInfo _ip_addresspage_usernameInfo;
 
             /// <summary>
-            /// Creates a new AccountSetup  folder.
+            /// Creates a new CustomerDetailsPage  folder.
             /// </summary>
-            public AccountSetupFolder(RepoGenBaseFolder parentFolder) :
-                    base("AccountSetup", "body/form/div[5]/div", parentFolder, 30000, false, "4eb4fe18-aa35-4b27-b8b8-57aafb7de18e")
+            public CustomerDetailsPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("CustomerDetailsPage", "", parentFolder, 0, false, "3e6ab1c3-9592-4c27-9bb5-afc0eced8c68", "")
             {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "4eb4fe18-aa35-4b27-b8b8-57aafb7de18e");
-                _txtusernameInfo = new RepoItemInfo(this, "txtUsername", "div[@id='ctl00_cphMain_DetailCustomerContainer']/table/tbody/tr[2]/td[1]/div/table/tbody/tr[7]/td[2]/input[@id='ctl00_cphMain_AccountInfoControl1_tbUsername']", 30000, null, "49ac8a7f-22f5-466d-a88f-9915cd86e80c");
-                _lnklyndaentacctsetupInfo = new RepoItemInfo(this, "lnklyndaEntAcctSetup", "div[@id='ctl00_cphMain_pnlForLinks']/table/tbody/tr/td[2]/span/a[@id='ctl00_cphMain_lbManageIPAddresses']", 30000, null, "78c0f85e-af07-461e-94bb-db0978d660fe");
-                _h1_setup1of4Info = new RepoItemInfo(this, "h1_Setup1of4", "h1[@innertext~'.*Enter\\ IP\\ Addresses']", 30000, null, "3c74f0b8-1869-414d-88f1-cf68c561fe2c");
-                _txtfromipaddress1Info = new RepoItemInfo(this, "txtFromIPAddress1", "div[2]/table/tbody/tr[2]/td[2]/input[@id='1_fromIp']", 30000, null, "c31aab6c-187b-478b-b2c5-93af81744d58");
-                _txttoipaddress1Info = new RepoItemInfo(this, "txtToIPAddress1", "div[2]/table/tbody/tr[2]/td[3]/input[@id='1_toIp']", 30000, null, "bd3e5322-37b2-4354-8ddb-acedfe5bb966");
-                _txt_notes1Info = new RepoItemInfo(this, "txt_notes1", "div[2]/table/tbody/tr[2]/td[4]/input[@id='1_notes']", 30000, null, "ac0b8352-23c8-4700-9a18-18f6b0565012");
-                _btncontinueInfo = new RepoItemInfo(this, "btnContinue", "table/tbody/tr/td/input[@id='btnContinue']", 30000, null, "ef6357ed-5bd7-4f52-a61b-d04cd374d79d");
-                _inputtagrdadministrativeareaInfo = new RepoItemInfo(this, "InputTagRdAdministrativeArea", "fieldset/table/tbody/tr[10]/td[2]/input[@id='rdAdministrativeArea']", 30000, null, "6f66b60e-884d-43bf-b3e3-f001b16b6795");
-                _h1_setup2of4Info = new RepoItemInfo(this, "h1_Setup2of4", "h1[@innertext~'^\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ lyndaEnterpr']", 15000, null, "f733c467-7e64-43f4-88b0-3fa229a46aed");
-                _inputtagrdfirstname1Info = new RepoItemInfo(this, "InputTagRdFirstName1", "fieldset/table/tbody/tr[3]/td[3]/input[@name='rdFirstName']", 30000, null, "cf20aa1f-438b-4fe4-90fe-3d1dea4154f7");
-                _inputtagrdfirstnameInfo = new RepoItemInfo(this, "InputTagRdFirstName", "fieldset/table/tbody/tr[3]/td[2]/input[@id='rdFirstName']", 30000, null, "1e55c555-9ac2-489a-a1f0-2cd76f142910");
-                _inputtagrdadministrativearea1Info = new RepoItemInfo(this, "InputTagRdAdministrativeArea1", "fieldset/table/tbody/tr[10]/td[3]/input[@name='rdAdministrativeArea']", 30000, null, "2e572d1e-a22e-4182-adf2-dfcdcd6a872b");
-                _btnapproveInfo = new RepoItemInfo(this, "btnApprove", "table/tbody/tr/td[2]/p/input[@id='btnContinue']", 30000, null, "5486a596-c72b-4e8b-93bb-870456bc2c86");
-                _inputtagrdfullnameInfo = new RepoItemInfo(this, "InputTagRdFullName", "fieldset/table/tbody/tr[4]/td[2]/input[@id='rdFullName']", 30000, null, "67d2f3dc-f08a-4c7d-81c1-8a6d6ac9e3c2");
-                _inputtagrdfullname1Info = new RepoItemInfo(this, "InputTagRdFullName1", "fieldset/table/tbody/tr[4]/td[3]/input[@name='rdFullName']", 30000, null, "9f7b0346-6b80-4ecd-bda5-f9cae8a36e14");
-                _inputtagrddisplayemailInfo = new RepoItemInfo(this, "InputTagRdDisplayEmail", "fieldset/table/tbody/tr[5]/td[2]/input[@id='rdDisplayEmail']", 30000, null, "478898ed-e979-41f8-8b4f-a8b219e7f177");
-                _inputtagrddisplayemail1Info = new RepoItemInfo(this, "InputTagRdDisplayEmail1", "fieldset/table/tbody/tr[5]/td[3]/input[@name='rdDisplayEmail']", 30000, null, "24ee6caa-b466-4bcb-9ab8-2d8351d1e49c");
-                _inputtagrdcommunicationsemailInfo = new RepoItemInfo(this, "InputTagRdCommunicationsEmail", "fieldset/table/tbody/tr[6]/td[2]/input[@id='rdCommunicationsEmail']", 30000, null, "7bfd9138-4b3b-4402-a804-b19e48b58be3");
-                _inputtagrdcommunicationsemail1Info = new RepoItemInfo(this, "InputTagRdCommunicationsEmail1", "fieldset/table/tbody/tr[6]/td[3]/input[@name='rdCommunicationsEmail']", 30000, null, "ac353d13-c592-4e35-8bd8-c387ad0eed6f");
-                _inputtagrdusertypeInfo = new RepoItemInfo(this, "InputTagRdUserType", "fieldset/table/tbody/tr[7]/td[2]/input[@id='rdUserType']", 30000, null, "f0d6841e-0ba9-4c50-980b-df236b0aa8d1");
-                _inputtagrdusertype1Info = new RepoItemInfo(this, "InputTagRdUserType1", "fieldset/table/tbody/tr[7]/td[3]/input[@name='rdUserType']", 30000, null, "e7d2aa98-a8f8-4a7b-bd8e-137d5c94d4d6");
-                _inputtagrdcampusInfo = new RepoItemInfo(this, "InputTagRdCampus", "fieldset/table/tbody/tr[8]/td[2]/input[@id='rdCampus']", 30000, null, "bb9fdcf6-a648-4b1a-895a-8648b776fd3c");
-                _inputtagrdcampus1Info = new RepoItemInfo(this, "InputTagRdCampus1", "fieldset/table/tbody/tr[8]/td[3]/input[@name='rdCampus']", 30000, null, "2a628ec7-72db-4b1e-a948-1e806db748ed");
-                _inputtagrddepartmentInfo = new RepoItemInfo(this, "InputTagRdDepartment", "fieldset/table/tbody/tr[9]/td[2]/input[@id='rdDepartment']", 30000, null, "2cde2beb-e0e7-42b8-8481-fdbe20117da8");
-                _inputtagrddepartment1Info = new RepoItemInfo(this, "InputTagRdDepartment1", "fieldset/table/tbody/tr[9]/td[3]/input[@name='rdDepartment']", 30000, null, "259c8a4c-4b36-4bfa-a68b-3c683c3bfc41");
-                _h1_setup3of4Info = new RepoItemInfo(this, "h1_Setup3of4", "h1[@innertext~'.*Customize\\ Landing\\ Page']", 30000, null, "205a6b26-615e-441a-856b-2b4a49f2239d");
-                _brwseselcustlogoInfo = new RepoItemInfo(this, "brwseSelCustlogo", "fieldset[@id='custom_logo']/table/tbody/tr[1]/td[2]/input[@id='ctl00_cphMain_CustomLogo']", 30000, null, "1abc7ba9-c3e3-4af7-9823-36afc560e413");
-                _txtcustombannerInfo = new RepoItemInfo(this, "txtCustomBanner", "fieldset[@id='customize_banner_text']/table/tbody/tr/td[2]/input[@id='ctl00_cphMain_WelcomeMessage']", 30000, null, "469c1ed3-153d-4dcd-b971-d56a70670303");
-                _brwseselcustomhdrInfo = new RepoItemInfo(this, "brwseSelCustomHdr", "fieldset[@id='default_header']/table/tbody/tr[3]/td/input[@id='ctl00_cphMain_CustomHeader']", 30000, null, "a6c9aa4e-458b-4235-8755-d566233d1a12");
-                _txtdefaultgreetingInfo = new RepoItemInfo(this, "txtDefaultGreeting", "fieldset[@id='default_greeting']/table/tbody/tr/td[2]/input[@id='ctl00_cphMain_DefaultGreeting']", 30000, null, "0b35eef8-f817-4be6-a21a-29922c4c6e29");
-                _btnimportInfo = new RepoItemInfo(this, "btnImport", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/input[@id='ctl00_cphMain_btnUploadEmails']", 30000, null, "8b6145ad-1f0c-4ef7-b076-cb78d600fc33");
-                _browseselectusernameaccesscontraintsimportfileInfo = new RepoItemInfo(this, "browseSelectUserNameAccessContraintsImportFile", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/input[@id='ctl00_cphMain_EmailDomainUpload']", 30000, null, "986be4dd-1600-44db-8606-aca3aa95b08a");
-                _txtemaildomainInfo = new RepoItemInfo(this, "txtEmailDomain", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tbody/tr/td[2]/input[@id='email_domain_0']", 30000, null, "75b2a580-51b2-4877-98b4-cd0a6163b979");
-                _atagadd_email_domain_linkInfo = new RepoItemInfo(this, "ATagAdd_email_domain_link", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tfoot/tr/td[@innertext=' | ']/a[@id='add_email_domain_link']", 30000, null, "19893331-4fcd-4b3a-8d77-6607d096a789");
-                _atagtest_domainsInfo = new RepoItemInfo(this, "ATagTest_domains", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tfoot/tr/td[@innertext=' | ']/a[@innertext='test domains']", 30000, null, "cf5b378a-227a-490f-904d-70625868df5b");
-                _chkallowusersoutsideiprangeInfo = new RepoItemInfo(this, "chkAllowUsersOutsideIPrange", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='login_without_ip']/tbody/tr/td[1]/input[@id='ctl00_cphMain_LoginWithoutIP']", 30000, null, "4756be7b-dd59-4ba5-b6b4-4387c90b2020");
-                _btncontinuepg3of4Info = new RepoItemInfo(this, "btnContinuePg3of4", "table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_btnContinue']", 30000, null, "a69c006a-f82e-45b3-a26b-65d213b4f638");
-                _h1_setup4of4Info = new RepoItemInfo(this, "h1_Setup4of4", "h1[@innertext~'.*Set\\ user\\ default\\ newsletter\\ settings']", 30000, null, "d7d9c340-1caa-4a4a-92ab-8215f40bf9d2");
-                _rdnewrelnotifn_subscribeInfo = new RepoItemInfo(this, "rdNewRelNotifn_Subscribe", "fieldset/table/tbody/tr[4]/td[2]/input[@name='NewReleaseNotifications']", 30000, null, "f0b39ffb-7daa-4c4d-b78d-902f2daa38f0");
-                _rdnewrelnotifn_unsubscribeInfo = new RepoItemInfo(this, "rdNewRelNotifn_Unsubscribe", "fieldset/table/tbody/tr[4]/td[3]/input[@name='NewReleaseNotifications']", 30000, null, "5715e016-1490-4579-ac70-806e7f994e82");
-                _rdmonthlynewsletter_subscribeInfo = new RepoItemInfo(this, "rdMonthlyNewsletter_Subscribe", "fieldset/table/tbody/tr[5]/td[2]/input[@name='MonthlyNewsletter']", 30000, null, "28382c6f-b6c3-4ac6-8611-0661b1a366f4");
-                _rdmonthlynewsletter_unsubscribeInfo = new RepoItemInfo(this, "rdMonthlyNewsletter_Unsubscribe", "fieldset/table/tbody/tr[5]/td[3]/input[@name='MonthlyNewsletter']", 30000, null, "b82e021e-cc95-4b77-9167-73293f21e8b7");
-                _rdspecialannouncemntsoffrs_subscribeInfo = new RepoItemInfo(this, "rdSpecialAnnouncemntsOffrs_Subscribe", "fieldset/table/tbody/tr[6]/td[2]/input[@name='SpecialAnnouncementsOffers']", 30000, null, "7e58f8b5-8e84-4a4d-b771-a160adb8bc36");
-                _rdspecialannouncemntsoffrs_unsubscribeInfo = new RepoItemInfo(this, "rdSpecialAnnouncemntsOffrs_Unsubscribe", "fieldset/table/tbody/tr[6]/td[3]/input[@name='SpecialAnnouncementsOffers']", 30000, null, "5d3fe180-0db5-44d6-ba8a-bf26d7246cac");
-                _btncontinuepg4of4Info = new RepoItemInfo(this, "btnContinuePg4of4", "table/tbody/tr/td[2]/p/input[@id='btnContinue']", 30000, null, "d1c54bc5-644a-4659-9090-1e0fb2bbd0cd");
-                _ip_pagediverrorsInfo = new RepoItemInfo(this, "IP_PageDivErrors", "div[@id='divErrors']", 30000, null, "9664f1f2-70ce-4d06-b58e-c0ae557d02e9");
-                _ip_pageerrorrangeInfo = new RepoItemInfo(this, "IP_PageErrorRange", "div[@id='divErrors']/ul/li[@innertext~'^\\ The\\ following\\ IP\\ address']/ul/li[@innertext~'^range']", 30000, null, "ba5e9e6e-1849-42ce-a49b-f9f71de12ee3");
-                _ip_addresspage_usernameInfo = new RepoItemInfo(this, "IP_AddressPage_Username", "div[@id='divErrors']/ul/li[@innertext~'^\\ The\\ following\\ IP\\ address']/ul/li/a[1]", 30000, null, "b5dbfaa9-3921-419e-beaa-01dd2c05d18e");
+                _customerdetails_authentication_labelInfo = new RepoItemInfo(this, "CustomerDetails_Authentication_Label", "body/form/div[5]/div/div[@id='ctl00_cphMain_DetailCustomerContainer']/table/tbody/tr[2]/td[3]/div[@id='divDependencies']/div[@id='ctl00_cphMain_UpdatePanel4']/div/table/tbody/tr/td/table/tbody/tr[1]/td[@id='ctl00_cphMain_ucLicenseSummary_tdPortalType']/span[@id='ctl00_cphMain_ucLicenseSummary_lblAuthentication']", 30000, null, "f5c36eb6-0f8f-4287-80fb-96420ba5fb10");
+                _customerdetails_authentication_valueInfo = new RepoItemInfo(this, "CustomerDetails_Authentication_Value", "body/form/div[5]/div/div[@id='ctl00_cphMain_DetailCustomerContainer']/table/tbody/tr[2]/td[3]/div[@id='divDependencies']/div[@id='ctl00_cphMain_UpdatePanel4']/div/table/tbody/tr/td/table/tbody/tr[1]/td[2]/span[@id='ctl00_cphMain_ucLicenseSummary_lblAuthenticationVal']", 30000, null, "314f33f6-e4ab-4576-8524-0a6277f762a5");
+                _txtusernameInfo = new RepoItemInfo(this, "txtUsername", "body/form/div[5]/div/div[@id='ctl00_cphMain_DetailCustomerContainer']/table/tbody/tr[2]/td[1]/div/table/tbody/tr[7]/td[2]/input[@id='ctl00_cphMain_AccountInfoControl1_tbUsername']", 30000, null, "49ac8a7f-22f5-466d-a88f-9915cd86e80c");
+                _lnklyndaentacctsetupInfo = new RepoItemInfo(this, "lnklyndaEntAcctSetup", "body/form/div[5]/div/div[@id='ctl00_cphMain_pnlForLinks']/table/tbody/tr/td[2]/span/a[@id='ctl00_cphMain_lbManageIPAddresses']", 30000, null, "78c0f85e-af07-461e-94bb-db0978d660fe");
             }
 
             /// <summary>
-            /// The Self item.
+            /// The CustomerDetails_Authentication_Label item.
             /// </summary>
-            [RepositoryItem("4eb4fe18-aa35-4b27-b8b8-57aafb7de18e")]
-            public virtual Ranorex.DivTag Self
+            [RepositoryItem("f5c36eb6-0f8f-4287-80fb-96420ba5fb10")]
+            public virtual Ranorex.SpanTag CustomerDetails_Authentication_Label
             {
                 get
                 {
-                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                    return _customerdetails_authentication_labelInfo.CreateAdapter<Ranorex.SpanTag>(true);
                 }
             }
 
             /// <summary>
-            /// The Self item info.
+            /// The CustomerDetails_Authentication_Label item info.
             /// </summary>
-            [RepositoryItemInfo("4eb4fe18-aa35-4b27-b8b8-57aafb7de18e")]
-            public virtual RepoItemInfo SelfInfo
+            [RepositoryItemInfo("f5c36eb6-0f8f-4287-80fb-96420ba5fb10")]
+            public virtual RepoItemInfo CustomerDetails_Authentication_LabelInfo
             {
                 get
                 {
-                    return _selfInfo;
+                    return _customerdetails_authentication_labelInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CustomerDetails_Authentication_Value item.
+            /// </summary>
+            [RepositoryItem("314f33f6-e4ab-4576-8524-0a6277f762a5")]
+            public virtual Ranorex.SpanTag CustomerDetails_Authentication_Value
+            {
+                get
+                {
+                    return _customerdetails_authentication_valueInfo.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CustomerDetails_Authentication_Value item info.
+            /// </summary>
+            [RepositoryItemInfo("314f33f6-e4ab-4576-8524-0a6277f762a5")]
+            public virtual RepoItemInfo CustomerDetails_Authentication_ValueInfo
+            {
+                get
+                {
+                    return _customerdetails_authentication_valueInfo;
                 }
             }
 
@@ -1045,6 +1035,146 @@ namespace Tests.General.Tests.EnterpriseCampus
                     return _lnklyndaentacctsetupInfo;
                 }
             }
+        }
+
+        /// <summary>
+        /// The AccountSetupFolder folder.
+        /// </summary>
+        [RepositoryFolder("4eb4fe18-aa35-4b27-b8b8-57aafb7de18e")]
+        public partial class AccountSetupFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _h1_setup1of4Info;
+            RepoItemInfo _tblipaddressesInfo;
+            RepoItemInfo _txtfromipaddress1Info;
+            RepoItemInfo _txttoipaddress1Info;
+            RepoItemInfo _txt_notes1Info;
+            RepoItemInfo _txtipaddress1_deleteInfo;
+            RepoItemInfo _btncontinueInfo;
+            RepoItemInfo _inputtagrdadministrativeareaInfo;
+            RepoItemInfo _h1_setup2of4Info;
+            RepoItemInfo _inputtagrdfirstname1Info;
+            RepoItemInfo _inputtagrdfirstnameInfo;
+            RepoItemInfo _inputtagrdadministrativearea1Info;
+            RepoItemInfo _btnapproveInfo;
+            RepoItemInfo _inputtagrdfullnameInfo;
+            RepoItemInfo _inputtagrdfullname1Info;
+            RepoItemInfo _inputtagrddisplayemailInfo;
+            RepoItemInfo _inputtagrddisplayemail1Info;
+            RepoItemInfo _inputtagrdcommunicationsemailInfo;
+            RepoItemInfo _inputtagrdcommunicationsemail1Info;
+            RepoItemInfo _inputtagrdusertypeInfo;
+            RepoItemInfo _inputtagrdusertype1Info;
+            RepoItemInfo _inputtagrdcampusInfo;
+            RepoItemInfo _inputtagrdcampus1Info;
+            RepoItemInfo _inputtagrddepartmentInfo;
+            RepoItemInfo _inputtagrddepartment1Info;
+            RepoItemInfo _h1_setup3of4Info;
+            RepoItemInfo _brwseselcustlogoInfo;
+            RepoItemInfo _txtcustombannerInfo;
+            RepoItemInfo _brwseselcustomhdrInfo;
+            RepoItemInfo _txtdefaultgreetingInfo;
+            RepoItemInfo _chkrequireusernametobeemailaddressInfo;
+            RepoItemInfo _btnimportInfo;
+            RepoItemInfo _browseselectusernameaccesscontraintsimportfileInfo;
+            RepoItemInfo _txtemaildomainInfo;
+            RepoItemInfo _atagadd_email_domain_linkInfo;
+            RepoItemInfo _atagtest_domainsInfo;
+            RepoItemInfo _chkallowusersoutsideiprangeInfo;
+            RepoItemInfo _btncontinuepg3of4Info;
+            RepoItemInfo _h1_setup4of4Info;
+            RepoItemInfo _rdnewrelnotifn_subscribeInfo;
+            RepoItemInfo _rdnewrelnotifn_unsubscribeInfo;
+            RepoItemInfo _rdmonthlynewsletter_subscribeInfo;
+            RepoItemInfo _rdmonthlynewsletter_unsubscribeInfo;
+            RepoItemInfo _rdspecialannouncemntsoffrs_subscribeInfo;
+            RepoItemInfo _rdspecialannouncemntsoffrs_unsubscribeInfo;
+            RepoItemInfo _btncontinuepg4of4Info;
+            RepoItemInfo _ip_pagediverrorsInfo;
+            RepoItemInfo _ip_pageerrorrangeInfo;
+            RepoItemInfo _ip_addresspage_usernameInfo;
+
+            /// <summary>
+            /// Creates a new AccountSetup  folder.
+            /// </summary>
+            public AccountSetupFolder(RepoGenBaseFolder parentFolder) :
+                    base("AccountSetup", "body/form/div[5]/div", parentFolder, 30000, false, "4eb4fe18-aa35-4b27-b8b8-57aafb7de18e", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "4eb4fe18-aa35-4b27-b8b8-57aafb7de18e");
+                _h1_setup1of4Info = new RepoItemInfo(this, "h1_Setup1of4", "h1[@innertext~'.*Enter\\ IP\\ Addresses']", 30000, null, "3c74f0b8-1869-414d-88f1-cf68c561fe2c");
+                _tblipaddressesInfo = new RepoItemInfo(this, "tblIPAddresses", "div[2]/table[@id='tblHeader']", 30000, null, "777a197b-b605-4a47-8d3c-8205413afdab");
+                _txtfromipaddress1Info = new RepoItemInfo(this, "txtFromIPAddress1", "div[2]/table/tbody/tr[2]/td[2]/input[@id='1_fromIp']", 30000, null, "c31aab6c-187b-478b-b2c5-93af81744d58");
+                _txttoipaddress1Info = new RepoItemInfo(this, "txtToIPAddress1", "div[2]/table/tbody/tr[2]/td[3]/input[@id='1_toIp']", 30000, null, "bd3e5322-37b2-4354-8ddb-acedfe5bb966");
+                _txt_notes1Info = new RepoItemInfo(this, "txt_notes1", "div[2]/table/tbody/tr[2]/td[4]/input[@id='1_notes']", 30000, null, "ac0b8352-23c8-4700-9a18-18f6b0565012");
+                _txtipaddress1_deleteInfo = new RepoItemInfo(this, "txtIPAddress1_delete", "div[2]/table/tbody/tr[2]/td[5]/input[@id='1_delete']", 30000, null, "9de4e14a-f150-4ec8-b5da-9f561a138db2");
+                _btncontinueInfo = new RepoItemInfo(this, "btnContinue", "table/tbody/tr/td/input[@id='btnContinue']", 30000, null, "ef6357ed-5bd7-4f52-a61b-d04cd374d79d");
+                _inputtagrdadministrativeareaInfo = new RepoItemInfo(this, "InputTagRdAdministrativeArea", "fieldset/table/tbody/tr[10]/td[2]/input[@id='rdAdministrativeArea']", 30000, null, "6f66b60e-884d-43bf-b3e3-f001b16b6795");
+                _h1_setup2of4Info = new RepoItemInfo(this, "h1_Setup2of4", "h1[@innertext~'^\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ lyndaEnterpr']", 15000, null, "f733c467-7e64-43f4-88b0-3fa229a46aed");
+                _inputtagrdfirstname1Info = new RepoItemInfo(this, "InputTagRdFirstName1", "fieldset/table/tbody/tr[3]/td[3]/input[@name='rdFirstName']", 30000, null, "cf20aa1f-438b-4fe4-90fe-3d1dea4154f7");
+                _inputtagrdfirstnameInfo = new RepoItemInfo(this, "InputTagRdFirstName", "fieldset/table/tbody/tr[3]/td[2]/input[@id='rdFirstName']", 30000, null, "1e55c555-9ac2-489a-a1f0-2cd76f142910");
+                _inputtagrdadministrativearea1Info = new RepoItemInfo(this, "InputTagRdAdministrativeArea1", "fieldset/table/tbody/tr[10]/td[3]/input[@name='rdAdministrativeArea']", 30000, null, "2e572d1e-a22e-4182-adf2-dfcdcd6a872b");
+                _btnapproveInfo = new RepoItemInfo(this, "btnApprove", "table/tbody/tr/td[2]/p/input[@id='btnContinue']", 30000, null, "5486a596-c72b-4e8b-93bb-870456bc2c86");
+                _inputtagrdfullnameInfo = new RepoItemInfo(this, "InputTagRdFullName", "fieldset/table/tbody/tr[4]/td[2]/input[@id='rdFullName']", 30000, null, "67d2f3dc-f08a-4c7d-81c1-8a6d6ac9e3c2");
+                _inputtagrdfullname1Info = new RepoItemInfo(this, "InputTagRdFullName1", "fieldset/table/tbody/tr[4]/td[3]/input[@name='rdFullName']", 30000, null, "9f7b0346-6b80-4ecd-bda5-f9cae8a36e14");
+                _inputtagrddisplayemailInfo = new RepoItemInfo(this, "InputTagRdDisplayEmail", "fieldset/table/tbody/tr[5]/td[2]/input[@id='rdDisplayEmail']", 30000, null, "478898ed-e979-41f8-8b4f-a8b219e7f177");
+                _inputtagrddisplayemail1Info = new RepoItemInfo(this, "InputTagRdDisplayEmail1", "fieldset/table/tbody/tr[5]/td[3]/input[@name='rdDisplayEmail']", 30000, null, "24ee6caa-b466-4bcb-9ab8-2d8351d1e49c");
+                _inputtagrdcommunicationsemailInfo = new RepoItemInfo(this, "InputTagRdCommunicationsEmail", "fieldset/table/tbody/tr[6]/td[2]/input[@id='rdCommunicationsEmail']", 30000, null, "7bfd9138-4b3b-4402-a804-b19e48b58be3");
+                _inputtagrdcommunicationsemail1Info = new RepoItemInfo(this, "InputTagRdCommunicationsEmail1", "fieldset/table/tbody/tr[6]/td[3]/input[@name='rdCommunicationsEmail']", 30000, null, "ac353d13-c592-4e35-8bd8-c387ad0eed6f");
+                _inputtagrdusertypeInfo = new RepoItemInfo(this, "InputTagRdUserType", "fieldset/table/tbody/tr[7]/td[2]/input[@id='rdUserType']", 30000, null, "f0d6841e-0ba9-4c50-980b-df236b0aa8d1");
+                _inputtagrdusertype1Info = new RepoItemInfo(this, "InputTagRdUserType1", "fieldset/table/tbody/tr[7]/td[3]/input[@name='rdUserType']", 30000, null, "e7d2aa98-a8f8-4a7b-bd8e-137d5c94d4d6");
+                _inputtagrdcampusInfo = new RepoItemInfo(this, "InputTagRdCampus", "fieldset/table/tbody/tr[8]/td[2]/input[@id='rdCampus']", 30000, null, "bb9fdcf6-a648-4b1a-895a-8648b776fd3c");
+                _inputtagrdcampus1Info = new RepoItemInfo(this, "InputTagRdCampus1", "fieldset/table/tbody/tr[8]/td[3]/input[@name='rdCampus']", 30000, null, "2a628ec7-72db-4b1e-a948-1e806db748ed");
+                _inputtagrddepartmentInfo = new RepoItemInfo(this, "InputTagRdDepartment", "fieldset/table/tbody/tr[9]/td[2]/input[@id='rdDepartment']", 30000, null, "2cde2beb-e0e7-42b8-8481-fdbe20117da8");
+                _inputtagrddepartment1Info = new RepoItemInfo(this, "InputTagRdDepartment1", "fieldset/table/tbody/tr[9]/td[3]/input[@name='rdDepartment']", 30000, null, "259c8a4c-4b36-4bfa-a68b-3c683c3bfc41");
+                _h1_setup3of4Info = new RepoItemInfo(this, "h1_Setup3of4", "h1[@innertext~'.*Customize\\ Landing\\ Page']", 30000, null, "205a6b26-615e-441a-856b-2b4a49f2239d");
+                _brwseselcustlogoInfo = new RepoItemInfo(this, "brwseSelCustlogo", "fieldset[@id='custom_logo']/table/tbody/tr[1]/td[2]/input[@id='ctl00_cphMain_CustomLogo']", 30000, null, "1abc7ba9-c3e3-4af7-9823-36afc560e413");
+                _txtcustombannerInfo = new RepoItemInfo(this, "txtCustomBanner", "fieldset[@id='customize_banner_text']/table/tbody/tr/td[2]/input[@id='ctl00_cphMain_WelcomeMessage']", 30000, null, "469c1ed3-153d-4dcd-b971-d56a70670303");
+                _brwseselcustomhdrInfo = new RepoItemInfo(this, "brwseSelCustomHdr", "fieldset[@id='default_header']/table/tbody/tr[3]/td/input[@id='ctl00_cphMain_CustomHeader']", 30000, null, "a6c9aa4e-458b-4235-8755-d566233d1a12");
+                _txtdefaultgreetingInfo = new RepoItemInfo(this, "txtDefaultGreeting", "fieldset[@id='default_greeting']/table/tbody/tr/td[2]/input[@id='ctl00_cphMain_DefaultGreeting']", 30000, null, "0b35eef8-f817-4be6-a21a-29922c4c6e29");
+                _chkrequireusernametobeemailaddressInfo = new RepoItemInfo(this, "chkRequireUsernametobeEmailAddress", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/p/input[@id='ctl00_cphMain_UsernameIsEmailConstraint']", 30000, null, "89ffd428-5cf1-40fe-99c7-4ea36cf4f7fa");
+                _btnimportInfo = new RepoItemInfo(this, "btnImport", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/input[@id='ctl00_cphMain_btnUploadEmails']", 30000, null, "8b6145ad-1f0c-4ef7-b076-cb78d600fc33");
+                _browseselectusernameaccesscontraintsimportfileInfo = new RepoItemInfo(this, "browseSelectUserNameAccessContraintsImportFile", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/input[@id='ctl00_cphMain_EmailDomainUpload']", 30000, null, "986be4dd-1600-44db-8606-aca3aa95b08a");
+                _txtemaildomainInfo = new RepoItemInfo(this, "txtEmailDomain", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tbody/tr/td[2]/input[@id='email_domain_0']", 30000, null, "75b2a580-51b2-4877-98b4-cd0a6163b979");
+                _atagadd_email_domain_linkInfo = new RepoItemInfo(this, "ATagAdd_email_domain_link", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tfoot/tr/td[@innertext=' | ']/a[@id='add_email_domain_link']", 30000, null, "19893331-4fcd-4b3a-8d77-6607d096a789");
+                _atagtest_domainsInfo = new RepoItemInfo(this, "ATagTest_domains", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='username_email_constraint_domains']/tfoot/tr/td[@innertext=' | ']/a[@innertext='test domains']", 30000, null, "cf5b378a-227a-490f-904d-70625868df5b");
+                _chkallowusersoutsideiprangeInfo = new RepoItemInfo(this, "chkAllowUsersOutsideIPrange", "fieldset[@id='user_name_constraints']/table/tbody/tr/td/div/table[@id='login_without_ip']/tbody/tr/td[1]/input[@id='ctl00_cphMain_LoginWithoutIP']", 30000, null, "4756be7b-dd59-4ba5-b6b4-4387c90b2020");
+                _btncontinuepg3of4Info = new RepoItemInfo(this, "btnContinuePg3of4", "table/tbody/tr/td[2]/p/input[@id='ctl00_cphMain_btnContinue']", 30000, null, "a69c006a-f82e-45b3-a26b-65d213b4f638");
+                _h1_setup4of4Info = new RepoItemInfo(this, "h1_Setup4of4", "h1[@innertext~'.*Set\\ user\\ default\\ newsletter\\ settings']", 30000, null, "d7d9c340-1caa-4a4a-92ab-8215f40bf9d2");
+                _rdnewrelnotifn_subscribeInfo = new RepoItemInfo(this, "rdNewRelNotifn_Subscribe", "fieldset/table/tbody/tr[4]/td[2]/input[@name='NewReleaseNotifications']", 30000, null, "f0b39ffb-7daa-4c4d-b78d-902f2daa38f0");
+                _rdnewrelnotifn_unsubscribeInfo = new RepoItemInfo(this, "rdNewRelNotifn_Unsubscribe", "fieldset/table/tbody/tr[4]/td[3]/input[@name='NewReleaseNotifications']", 30000, null, "5715e016-1490-4579-ac70-806e7f994e82");
+                _rdmonthlynewsletter_subscribeInfo = new RepoItemInfo(this, "rdMonthlyNewsletter_Subscribe", "fieldset/table/tbody/tr[5]/td[2]/input[@name='MonthlyNewsletter']", 30000, null, "28382c6f-b6c3-4ac6-8611-0661b1a366f4");
+                _rdmonthlynewsletter_unsubscribeInfo = new RepoItemInfo(this, "rdMonthlyNewsletter_Unsubscribe", "fieldset/table/tbody/tr[5]/td[3]/input[@name='MonthlyNewsletter']", 30000, null, "b82e021e-cc95-4b77-9167-73293f21e8b7");
+                _rdspecialannouncemntsoffrs_subscribeInfo = new RepoItemInfo(this, "rdSpecialAnnouncemntsOffrs_Subscribe", "fieldset/table/tbody/tr[6]/td[2]/input[@name='SpecialAnnouncementsOffers']", 30000, null, "7e58f8b5-8e84-4a4d-b771-a160adb8bc36");
+                _rdspecialannouncemntsoffrs_unsubscribeInfo = new RepoItemInfo(this, "rdSpecialAnnouncemntsOffrs_Unsubscribe", "fieldset/table/tbody/tr[6]/td[3]/input[@name='SpecialAnnouncementsOffers']", 30000, null, "5d3fe180-0db5-44d6-ba8a-bf26d7246cac");
+                _btncontinuepg4of4Info = new RepoItemInfo(this, "btnContinuePg4of4", "table/tbody/tr/td[2]/p/input[@id='btnContinue']", 30000, null, "d1c54bc5-644a-4659-9090-1e0fb2bbd0cd");
+                _ip_pagediverrorsInfo = new RepoItemInfo(this, "IP_PageDivErrors", "div[@id='divErrors']", 30000, null, "9664f1f2-70ce-4d06-b58e-c0ae557d02e9");
+                _ip_pageerrorrangeInfo = new RepoItemInfo(this, "IP_PageErrorRange", "div[@id='divErrors']/ul/li[@innertext~'^\\ The\\ following\\ IP\\ address']/ul/li[@innertext~'^range']", 30000, null, "ba5e9e6e-1849-42ce-a49b-f9f71de12ee3");
+                _ip_addresspage_usernameInfo = new RepoItemInfo(this, "IP_AddressPage_Username", "div[@id='divErrors']/ul/li[@innertext~'^\\ The\\ following\\ IP\\ address']/ul/li/a[1]", 30000, null, "b5dbfaa9-3921-419e-beaa-01dd2c05d18e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("4eb4fe18-aa35-4b27-b8b8-57aafb7de18e")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("4eb4fe18-aa35-4b27-b8b8-57aafb7de18e")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
 
             /// <summary>
             /// The h1_Setup1of4 item.
@@ -1067,6 +1197,30 @@ namespace Tests.General.Tests.EnterpriseCampus
                 get
                 {
                     return _h1_setup1of4Info;
+                }
+            }
+
+            /// <summary>
+            /// The tblIPAddresses item.
+            /// </summary>
+            [RepositoryItem("777a197b-b605-4a47-8d3c-8205413afdab")]
+            public virtual Ranorex.TableTag tblIPAddresses
+            {
+                get
+                {
+                    return _tblipaddressesInfo.CreateAdapter<Ranorex.TableTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblIPAddresses item info.
+            /// </summary>
+            [RepositoryItemInfo("777a197b-b605-4a47-8d3c-8205413afdab")]
+            public virtual RepoItemInfo tblIPAddressesInfo
+            {
+                get
+                {
+                    return _tblipaddressesInfo;
                 }
             }
 
@@ -1139,6 +1293,30 @@ namespace Tests.General.Tests.EnterpriseCampus
                 get
                 {
                     return _txt_notes1Info;
+                }
+            }
+
+            /// <summary>
+            /// The txtIPAddress1_delete item.
+            /// </summary>
+            [RepositoryItem("9de4e14a-f150-4ec8-b5da-9f561a138db2")]
+            public virtual Ranorex.InputTag txtIPAddress1_delete
+            {
+                get
+                {
+                    return _txtipaddress1_deleteInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The txtIPAddress1_delete item info.
+            /// </summary>
+            [RepositoryItemInfo("9de4e14a-f150-4ec8-b5da-9f561a138db2")]
+            public virtual RepoItemInfo txtIPAddress1_deleteInfo
+            {
+                get
+                {
+                    return _txtipaddress1_deleteInfo;
                 }
             }
 
@@ -1719,6 +1897,30 @@ namespace Tests.General.Tests.EnterpriseCampus
             }
 
             /// <summary>
+            /// The chkRequireUsernametobeEmailAddress item.
+            /// </summary>
+            [RepositoryItem("89ffd428-5cf1-40fe-99c7-4ea36cf4f7fa")]
+            public virtual Ranorex.InputTag chkRequireUsernametobeEmailAddress
+            {
+                get
+                {
+                    return _chkrequireusernametobeemailaddressInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The chkRequireUsernametobeEmailAddress item info.
+            /// </summary>
+            [RepositoryItemInfo("89ffd428-5cf1-40fe-99c7-4ea36cf4f7fa")]
+            public virtual RepoItemInfo chkRequireUsernametobeEmailAddressInfo
+            {
+                get
+                {
+                    return _chkrequireusernametobeemailaddressInfo;
+                }
+            }
+
+            /// <summary>
             /// The btnImport item.
             /// </summary>
             [RepositoryItem("8b6145ad-1f0c-4ef7-b076-cb78d600fc33")]
@@ -2163,9 +2365,9 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new IP_TestPage  folder.
             /// </summary>
             public IP_TestPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("IP_TestPage", "", parentFolder, 0, false, "6511e313-20d6-4965-bccd-787d677dc630")
+                    base("IP_TestPage", "", parentFolder, 0, false, "6511e313-20d6-4965-bccd-787d677dc630", "")
             {
-                _h1_ipaddressInfo = new RepoItemInfo(this, "h1_IPAddress", "body/div[5]/div[2]/h1[@innertext~'^Your\\ IP\\ Address\\ is:\\ ']", 10000, null, "e7034c97-b5c7-409f-b8a1-51ff1ccad361");
+                _h1_ipaddressInfo = new RepoItemInfo(this, "h1_IPAddress", "body/div[5]/div[2]/h1[@innertext~'^Your\\ IP\\ Address\\ is:\\ ']", 20000, null, "e7034c97-b5c7-409f-b8a1-51ff1ccad361");
             }
 
             /// <summary>
@@ -2194,48 +2396,6 @@ namespace Tests.General.Tests.EnterpriseCampus
         }
 
         /// <summary>
-        /// The DivTagEnterprise_wrapperFolder folder.
-        /// </summary>
-        [RepositoryFolder("67437895-47bb-4d96-a7f5-ac3c3d59bddf")]
-        public partial class DivTagEnterprise_wrapperFolder : RepoGenBaseFolder
-        {
-            RepoItemInfo _selfInfo;
-
-            /// <summary>
-            /// Creates a new DivTagEnterprise_wrapper  folder.
-            /// </summary>
-            public DivTagEnterprise_wrapperFolder(RepoGenBaseFolder parentFolder) :
-                    base("DivTagEnterprise_wrapper", "body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']", parentFolder, 30000, false, "67437895-47bb-4d96-a7f5-ac3c3d59bddf")
-            {
-                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "67437895-47bb-4d96-a7f5-ac3c3d59bddf");
-            }
-
-            /// <summary>
-            /// The Self item.
-            /// </summary>
-            [RepositoryItem("67437895-47bb-4d96-a7f5-ac3c3d59bddf")]
-            public virtual Ranorex.DivTag Self
-            {
-                get
-                {
-                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Self item info.
-            /// </summary>
-            [RepositoryItemInfo("67437895-47bb-4d96-a7f5-ac3c3d59bddf")]
-            public virtual RepoItemInfo SelfInfo
-            {
-                get
-                {
-                    return _selfInfo;
-                }
-            }
-        }
-
-        /// <summary>
         /// The IP_LoginPageFolder folder.
         /// </summary>
         [RepositoryFolder("31a26cd6-bfb4-455b-baa4-ba32ba7f5b68")]
@@ -2253,7 +2413,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new IP_LoginPage  folder.
             /// </summary>
             public IP_LoginPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("IP_LoginPage", "", parentFolder, 0, false, "31a26cd6-bfb4-455b-baa4-ba32ba7f5b68")
+                    base("IP_LoginPage", "", parentFolder, 0, false, "31a26cd6-bfb4-455b-baa4-ba32ba7f5b68", "")
             {
                 _divtagbreadcrumbsInfo = new RepoItemInfo(this, "DivTagBreadcrumbs", "body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']/div[@id='breadcrumbs']", 30000, null, "be208921-973b-4eed-8bbc-636d22772571");
                 _spantagenterprise_qa_test_loginInfo = new RepoItemInfo(this, "SpanTagEnterprise_QA_Test_login", "body/form/div[@id='master-page']/div[3]/div[@id='enterprise_wrapper']/div[@id='enterprise_marquee']/div/div/div[2]/span[1]", 30000, null, "bd93ba9f-aec7-4c66-a311-f70be1b6876d");
@@ -2434,6 +2594,74 @@ namespace Tests.General.Tests.EnterpriseCampus
         }
 
         /// <summary>
+        /// The InvalidIP_LoginPageFolder folder.
+        /// </summary>
+        [RepositoryFolder("0a9a42fa-7ba1-43a3-a337-9ea2528d9575")]
+        public partial class InvalidIP_LoginPageFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _p_ip_permission_denied_mesgInfo;
+            RepoItemInfo _h1_permission_deniedInfo;
+
+            /// <summary>
+            /// Creates a new InvalidIP_LoginPage  folder.
+            /// </summary>
+            public InvalidIP_LoginPageFolder(RepoGenBaseFolder parentFolder) :
+                    base("InvalidIP_LoginPage", "", parentFolder, 0, false, "0a9a42fa-7ba1-43a3-a337-9ea2528d9575", "")
+            {
+                _p_ip_permission_denied_mesgInfo = new RepoItemInfo(this, "p_IP_Permission_denied_mesg", "body/div[5]/div[2]/div/p[@innertext~'^You\\ are\\ trying\\ to\\ log\\ in\\ ']", 30000, null, "7808342a-1ec5-49a3-a31a-f89ace3d7b1b");
+                _h1_permission_deniedInfo = new RepoItemInfo(this, "h1_Permission_denied", "body/div[5]/div[2]/h1[@innertext='Permission denied']", 30000, null, "2ed891f0-4a18-47c4-803d-67344b821758");
+            }
+
+            /// <summary>
+            /// The p_IP_Permission_denied_mesg item.
+            /// </summary>
+            [RepositoryItem("7808342a-1ec5-49a3-a31a-f89ace3d7b1b")]
+            public virtual Ranorex.PTag p_IP_Permission_denied_mesg
+            {
+                get
+                {
+                    return _p_ip_permission_denied_mesgInfo.CreateAdapter<Ranorex.PTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The p_IP_Permission_denied_mesg item info.
+            /// </summary>
+            [RepositoryItemInfo("7808342a-1ec5-49a3-a31a-f89ace3d7b1b")]
+            public virtual RepoItemInfo p_IP_Permission_denied_mesgInfo
+            {
+                get
+                {
+                    return _p_ip_permission_denied_mesgInfo;
+                }
+            }
+
+            /// <summary>
+            /// The h1_Permission_denied item.
+            /// </summary>
+            [RepositoryItem("2ed891f0-4a18-47c4-803d-67344b821758")]
+            public virtual Ranorex.H1Tag h1_Permission_denied
+            {
+                get
+                {
+                    return _h1_permission_deniedInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The h1_Permission_denied item info.
+            /// </summary>
+            [RepositoryItemInfo("2ed891f0-4a18-47c4-803d-67344b821758")]
+            public virtual RepoItemInfo h1_Permission_deniedInfo
+            {
+                get
+                {
+                    return _h1_permission_deniedInfo;
+                }
+            }
+        }
+
+        /// <summary>
         /// The CurrentlyLoggedInDialogChromeAppFolder folder.
         /// </summary>
         [RepositoryFolder("55d7cc9e-ac1d-4685-89b6-bc4c55e173a0")]
@@ -2447,7 +2675,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new CurrentlyLoggedInDialogChrome  folder.
             /// </summary>
             public CurrentlyLoggedInDialogChromeAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CurrentlyLoggedInDialogChrome", "/form[@title~'^The\\ page\\ at\\ https://admin']", parentFolder, 30000, true, "55d7cc9e-ac1d-4685-89b6-bc4c55e173a0")
+                    base("CurrentlyLoggedInDialogChrome", "/form[@title~'^The\\ page\\ at\\ https://admin']", parentFolder, 30000, true, "55d7cc9e-ac1d-4685-89b6-bc4c55e173a0", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "55d7cc9e-ac1d-4685-89b6-bc4c55e173a0");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", "container/button[@accessiblename='OK']", 30000, null, "957a4295-f04d-419d-b7be-7d640366c12f");
@@ -2540,7 +2768,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new CurrentlyLoggedInDialogIE  folder.
             /// </summary>
             public CurrentlyLoggedInDialogIEFolder(RepoGenBaseFolder parentFolder) :
-                    base("CurrentlyLoggedInDialogIE", "", parentFolder, 0, false, "50132258-3ec2-4e7b-9acb-d01b4d535857")
+                    base("CurrentlyLoggedInDialogIE", "", parentFolder, 0, false, "50132258-3ec2-4e7b-9acb-d01b4d535857", "")
             {
                 _hellotextInfo = new RepoItemInfo(this, "HelloText", "/form[@title='Message from webpage']/text[@controlid='65535' and @caption~'^Hello\\ Keynote\\ Virtualuser']", 5000, null, "3696e788-c285-478c-9b52-ce5242b179c6");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", "/form[@title='Message from webpage']/button[@text='OK']", 30000, null, "8a317cc7-ccbd-42be-a573-5489161d4fe7");
@@ -2604,16 +2832,18 @@ namespace Tests.General.Tests.EnterpriseCampus
             RepoItemInfo _selfInfo;
             RepoItemInfo _hellotextInfo;
             RepoItemInfo _okbuttonInfo;
+            RepoItemInfo _buttonfirefoxInfo;
 
             /// <summary>
             /// Creates a new CurrentlyLoggedInDialogFirefox  folder.
             /// </summary>
             public CurrentlyLoggedInDialogFirefoxAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("CurrentlyLoggedInDialogFirefox", "/form", parentFolder, 30000, true, "0dc49aa5-c9dd-4846-8e61-1b8a43481d69")
+                    base("CurrentlyLoggedInDialogFirefox", "/form", parentFolder, 30000, true, "0dc49aa5-c9dd-4846-8e61-1b8a43481d69", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "0dc49aa5-c9dd-4846-8e61-1b8a43481d69");
                 _hellotextInfo = new RepoItemInfo(this, "HelloText", "container/container/container/form/text/text[@accessiblename~'^Hello\\ Keynote\\ Virtualuser']", 5000, null, "f4a38af6-82e7-45c4-98b0-62756c44435c");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", "container/container/container/form/button[@accessiblename='OK']", 30000, null, "c8c7ac44-9e10-4c0b-a297-c2c07fa55b8c");
+                _buttonfirefoxInfo = new RepoItemInfo(this, "ButtonFirefox", "button[@accessiblename='Firefox']", 30000, null, "3b431896-e644-40fd-a805-20fc8adf679a");
             }
 
             /// <summary>
@@ -2687,6 +2917,30 @@ namespace Tests.General.Tests.EnterpriseCampus
                     return _okbuttonInfo;
                 }
             }
+
+            /// <summary>
+            /// The ButtonFirefox item.
+            /// </summary>
+            [RepositoryItem("3b431896-e644-40fd-a805-20fc8adf679a")]
+            public virtual Ranorex.Button ButtonFirefox
+            {
+                get
+                {
+                    return _buttonfirefoxInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonFirefox item info.
+            /// </summary>
+            [RepositoryItemInfo("3b431896-e644-40fd-a805-20fc8adf679a")]
+            public virtual RepoItemInfo ButtonFirefoxInfo
+            {
+                get
+                {
+                    return _buttonfirefoxInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -2702,7 +2956,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new CurrentlyLoggedInDialogSafari  folder.
             /// </summary>
             public CurrentlyLoggedInDialogSafariFolder(RepoGenBaseFolder parentFolder) :
-                    base("CurrentlyLoggedInDialogSafari", "", parentFolder, 0, false, "bde1cd1c-54a5-4faf-ba27-43020c24b957")
+                    base("CurrentlyLoggedInDialogSafari", "", parentFolder, 0, false, "bde1cd1c-54a5-4faf-ba27-43020c24b957", "")
             {
                 _hellotextInfo = new RepoItemInfo(this, "HelloText", "/form[@title='' and @processname='Safari']/element/element/container/container/container[1]/text[@accessiblename~'^Hello\\ Keynote\\ Virtualuser']", 5000, null, "1ece8bac-11ab-4efe-98aa-56b54befc7b8");
                 _okbuttonInfo = new RepoItemInfo(this, "OKButton", "/form[@title='' and @processname='Safari']/element/element/container/container/container[2]/button[@accessiblename='OK']", 30000, null, "4590d9a2-b100-48be-b9b0-774d7eab14ab");
@@ -2769,7 +3023,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             /// Creates a new SomeTBodyTag  folder.
             /// </summary>
             public SomeTBodyTagFolder(RepoGenBaseFolder parentFolder) :
-                    base("SomeTBodyTag", "/dom/body/form/div[5]/div/div[2]/table/tbody", parentFolder, 30000, false, "c83b5119-44c8-48bf-8c86-52d9e3ec9b79")
+                    base("SomeTBodyTag", "/dom/body/form/div[5]/div/div[2]/table/tbody", parentFolder, 30000, false, "c83b5119-44c8-48bf-8c86-52d9e3ec9b79", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c83b5119-44c8-48bf-8c86-52d9e3ec9b79");
             }
@@ -2795,6 +3049,1903 @@ namespace Tests.General.Tests.EnterpriseCampus
                 get
                 {
                     return _selfInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ClearCacheFirefoxFolder folder.
+        /// </summary>
+        [RepositoryFolder("f2c9cbd8-2f3e-4f5e-8cb1-6883b1a60db2")]
+        public partial class ClearCacheFirefoxFolder : RepoGenBaseFolder
+        {
+            EnterpriseCampusAcctSetupFolders.FirefoxAppFolder _firefox;
+            EnterpriseCampusAcctSetupFolders.FormOptionsAppFolder _formoptions;
+
+            /// <summary>
+            /// Creates a new ClearCacheFirefox  folder.
+            /// </summary>
+            public ClearCacheFirefoxFolder(RepoGenBaseFolder parentFolder) :
+                    base("ClearCacheFirefox", "", parentFolder, 0, false, "f2c9cbd8-2f3e-4f5e-8cb1-6883b1a60db2", "")
+            {
+                _firefox = new EnterpriseCampusAcctSetupFolders.FirefoxAppFolder(parentFolder);
+                _formoptions = new EnterpriseCampusAcctSetupFolders.FormOptionsAppFolder(parentFolder);
+            }
+
+            /// <summary>
+            /// The Firefox folder.
+            /// </summary>
+            [RepositoryFolder("f153ef10-8465-41a1-a869-217047de9db6")]
+            public virtual EnterpriseCampusAcctSetupFolders.FirefoxAppFolder Firefox
+            {
+                get { return _firefox; }
+            }
+
+            /// <summary>
+            /// The FormOptions folder.
+            /// </summary>
+            [RepositoryFolder("e709fde8-6bb0-437b-bc4f-39a0b002c82f")]
+            public virtual EnterpriseCampusAcctSetupFolders.FormOptionsAppFolder FormOptions
+            {
+                get { return _formoptions; }
+            }
+        }
+
+        /// <summary>
+        /// The FirefoxAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("f153ef10-8465-41a1-a869-217047de9db6")]
+        public partial class FirefoxAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _buttonfirefoxInfo;
+            RepoItemInfo _menuitemoptionsInfo;
+
+            /// <summary>
+            /// Creates a new Firefox  folder.
+            /// </summary>
+            public FirefoxAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Firefox", "/form", parentFolder, 30000, true, "f153ef10-8465-41a1-a869-217047de9db6", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "f153ef10-8465-41a1-a869-217047de9db6");
+                _buttonfirefoxInfo = new RepoItemInfo(this, "ButtonFirefox", "button[@accessiblename='Firefox']", 30000, null, "d1c360ae-fede-4f3c-9062-3fb5cb6f21ee");
+                _menuitemoptionsInfo = new RepoItemInfo(this, "MenuItemOptions", "button/contextmenu/menuitem[@accessiblename='Options']", 30000, null, "6f8de04f-91b7-4332-8ddc-0f06f0a939c4");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f153ef10-8465-41a1-a869-217047de9db6")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f153ef10-8465-41a1-a869-217047de9db6")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonFirefox item.
+            /// </summary>
+            [RepositoryItem("d1c360ae-fede-4f3c-9062-3fb5cb6f21ee")]
+            public virtual Ranorex.Button ButtonFirefox
+            {
+                get
+                {
+                    return _buttonfirefoxInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonFirefox item info.
+            /// </summary>
+            [RepositoryItemInfo("d1c360ae-fede-4f3c-9062-3fb5cb6f21ee")]
+            public virtual RepoItemInfo ButtonFirefoxInfo
+            {
+                get
+                {
+                    return _buttonfirefoxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemOptions item.
+            /// </summary>
+            [RepositoryItem("6f8de04f-91b7-4332-8ddc-0f06f0a939c4")]
+            public virtual Ranorex.MenuItem MenuItemOptions
+            {
+                get
+                {
+                    return _menuitemoptionsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemOptions item info.
+            /// </summary>
+            [RepositoryItemInfo("6f8de04f-91b7-4332-8ddc-0f06f0a939c4")]
+            public virtual RepoItemInfo MenuItemOptionsInfo
+            {
+                get
+                {
+                    return _menuitemoptionsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormOptionsAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("e709fde8-6bb0-437b-bc4f-39a0b002c82f")]
+        public partial class FormOptionsAppFolder : RepoGenBaseFolder
+        {
+            EnterpriseCampusAcctSetupFolders.ContainerAdvancedFolder _containeradvanced;
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _listitemgeneralInfo;
+            RepoItemInfo _listitemadvancedInfo;
+            RepoItemInfo _buttonokInfo;
+
+            /// <summary>
+            /// Creates a new FormOptions  folder.
+            /// </summary>
+            public FormOptionsAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormOptions", "/form[@title='Options']", parentFolder, 30000, true, "e709fde8-6bb0-437b-bc4f-39a0b002c82f", "")
+            {
+                _containeradvanced = new EnterpriseCampusAcctSetupFolders.ContainerAdvancedFolder(this);
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "e709fde8-6bb0-437b-bc4f-39a0b002c82f");
+                _listitemgeneralInfo = new RepoItemInfo(this, "ListItemGeneral", "list/listitem[@accessiblename='General']", 30000, null, "c17b11c4-635b-4ddf-9cf1-48393f23b351");
+                _listitemadvancedInfo = new RepoItemInfo(this, "ListItemAdvanced", "list/listitem[@accessiblename='Advanced']", 30000, null, "69860401-7735-46ff-9917-658553c979dd");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@accessiblename='OK']", 30000, null, "308db322-7c79-4dee-b94c-66772d21850a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("e709fde8-6bb0-437b-bc4f-39a0b002c82f")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("e709fde8-6bb0-437b-bc4f-39a0b002c82f")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListItemGeneral item.
+            /// </summary>
+            [RepositoryItem("c17b11c4-635b-4ddf-9cf1-48393f23b351")]
+            public virtual Ranorex.ListItem ListItemGeneral
+            {
+                get
+                {
+                    return _listitemgeneralInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItemGeneral item info.
+            /// </summary>
+            [RepositoryItemInfo("c17b11c4-635b-4ddf-9cf1-48393f23b351")]
+            public virtual RepoItemInfo ListItemGeneralInfo
+            {
+                get
+                {
+                    return _listitemgeneralInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ListItemAdvanced item.
+            /// </summary>
+            [RepositoryItem("69860401-7735-46ff-9917-658553c979dd")]
+            public virtual Ranorex.ListItem ListItemAdvanced
+            {
+                get
+                {
+                    return _listitemadvancedInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ListItemAdvanced item info.
+            /// </summary>
+            [RepositoryItemInfo("69860401-7735-46ff-9917-658553c979dd")]
+            public virtual RepoItemInfo ListItemAdvancedInfo
+            {
+                get
+                {
+                    return _listitemadvancedInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("308db322-7c79-4dee-b94c-66772d21850a")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("308db322-7c79-4dee-b94c-66772d21850a")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ContainerAdvanced folder.
+            /// </summary>
+            [RepositoryFolder("2c35eacb-96da-4774-8c39-52a35f477214")]
+            public virtual EnterpriseCampusAcctSetupFolders.ContainerAdvancedFolder ContainerAdvanced
+            {
+                get { return _containeradvanced; }
+            }
+        }
+
+        /// <summary>
+        /// The ContainerAdvancedFolder folder.
+        /// </summary>
+        [RepositoryFolder("2c35eacb-96da-4774-8c39-52a35f477214")]
+        public partial class ContainerAdvancedFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _buttonclear_now1Info;
+            RepoItemInfo _buttonclear_nowInfo;
+            RepoItemInfo _tabpagegeneralInfo;
+            RepoItemInfo _tabpagenetworkInfo;
+
+            /// <summary>
+            /// Creates a new ContainerAdvanced  folder.
+            /// </summary>
+            public ContainerAdvancedFolder(RepoGenBaseFolder parentFolder) :
+                    base("ContainerAdvanced", "container", parentFolder, 30000, true, "2c35eacb-96da-4774-8c39-52a35f477214", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "2c35eacb-96da-4774-8c39-52a35f477214");
+                _buttonclear_now1Info = new RepoItemInfo(this, "ButtonClear_Now1", "container/container/container[@accessiblename~'^Offline\\ Web\\ Content\\ and\\ U']/button[@accessiblename='Clear Now']", 30000, null, "5d64c174-70a0-443b-bf0f-def93e74b99d");
+                _buttonclear_nowInfo = new RepoItemInfo(this, "ButtonClear_Now", "container/container/container[@accessiblename='Cached Web Content']/button[@accessiblename='Clear Now']", 30000, null, "12a14c9c-5221-4ea7-9f6c-fe316b54c7a2");
+                _tabpagegeneralInfo = new RepoItemInfo(this, "TabPageGeneral", "tabpagelist/tabpage[@accessiblename='General']", 30000, null, "808a84db-05ca-4d57-a0a5-a3377c4479d8");
+                _tabpagenetworkInfo = new RepoItemInfo(this, "TabPageNetwork", "tabpagelist/tabpage[@accessiblename='Network']", 30000, null, "acca0d63-ed85-4f63-b15c-9696a41e838e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2c35eacb-96da-4774-8c39-52a35f477214")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2c35eacb-96da-4774-8c39-52a35f477214")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClear_Now1 item.
+            /// </summary>
+            [RepositoryItem("5d64c174-70a0-443b-bf0f-def93e74b99d")]
+            public virtual Ranorex.Button ButtonClear_Now1
+            {
+                get
+                {
+                    return _buttonclear_now1Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClear_Now1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5d64c174-70a0-443b-bf0f-def93e74b99d")]
+            public virtual RepoItemInfo ButtonClear_Now1Info
+            {
+                get
+                {
+                    return _buttonclear_now1Info;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClear_Now item.
+            /// </summary>
+            [RepositoryItem("12a14c9c-5221-4ea7-9f6c-fe316b54c7a2")]
+            public virtual Ranorex.Button ButtonClear_Now
+            {
+                get
+                {
+                    return _buttonclear_nowInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClear_Now item info.
+            /// </summary>
+            [RepositoryItemInfo("12a14c9c-5221-4ea7-9f6c-fe316b54c7a2")]
+            public virtual RepoItemInfo ButtonClear_NowInfo
+            {
+                get
+                {
+                    return _buttonclear_nowInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TabPageGeneral item.
+            /// </summary>
+            [RepositoryItem("808a84db-05ca-4d57-a0a5-a3377c4479d8")]
+            public virtual Ranorex.TabPage TabPageGeneral
+            {
+                get
+                {
+                    return _tabpagegeneralInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TabPageGeneral item info.
+            /// </summary>
+            [RepositoryItemInfo("808a84db-05ca-4d57-a0a5-a3377c4479d8")]
+            public virtual RepoItemInfo TabPageGeneralInfo
+            {
+                get
+                {
+                    return _tabpagegeneralInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TabPageNetwork item.
+            /// </summary>
+            [RepositoryItem("acca0d63-ed85-4f63-b15c-9696a41e838e")]
+            public virtual Ranorex.TabPage TabPageNetwork
+            {
+                get
+                {
+                    return _tabpagenetworkInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TabPageNetwork item info.
+            /// </summary>
+            [RepositoryItemInfo("acca0d63-ed85-4f63-b15c-9696a41e838e")]
+            public virtual RepoItemInfo TabPageNetworkInfo
+            {
+                get
+                {
+                    return _tabpagenetworkInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ClearCacheIEFolder folder.
+        /// </summary>
+        [RepositoryFolder("94a36bab-a5f6-420e-90dc-26a338f420bd")]
+        public partial class ClearCacheIEFolder : RepoGenBaseFolder
+        {
+            EnterpriseCampusAcctSetupFolders.ContextMenuIexploreAppFolder _contextmenuiexplore;
+            EnterpriseCampusAcctSetupFolders.FormInternet_OptionsAppFolder _forminternet_options;
+            EnterpriseCampusAcctSetupFolders.FormDelete_Browsing_HistoryAppFolder _formdelete_browsing_history;
+            EnterpriseCampusAcctSetupFolders.ContainerIexploreFolder _containeriexplore;
+            EnterpriseCampusAcctSetupFolders.Windows_InterneAppFolder _windows_interne;
+
+            /// <summary>
+            /// Creates a new ClearCacheIE  folder.
+            /// </summary>
+            public ClearCacheIEFolder(RepoGenBaseFolder parentFolder) :
+                    base("ClearCacheIE", "", parentFolder, 0, false, "94a36bab-a5f6-420e-90dc-26a338f420bd", "")
+            {
+                _contextmenuiexplore = new EnterpriseCampusAcctSetupFolders.ContextMenuIexploreAppFolder(parentFolder);
+                _forminternet_options = new EnterpriseCampusAcctSetupFolders.FormInternet_OptionsAppFolder(parentFolder);
+                _formdelete_browsing_history = new EnterpriseCampusAcctSetupFolders.FormDelete_Browsing_HistoryAppFolder(parentFolder);
+                _containeriexplore = new EnterpriseCampusAcctSetupFolders.ContainerIexploreFolder(parentFolder);
+                _windows_interne = new EnterpriseCampusAcctSetupFolders.Windows_InterneAppFolder(parentFolder);
+            }
+
+            /// <summary>
+            /// The ContextMenuIexplore folder.
+            /// </summary>
+            [RepositoryFolder("13417065-1c3b-4983-abd6-6a98c099bf31")]
+            public virtual EnterpriseCampusAcctSetupFolders.ContextMenuIexploreAppFolder ContextMenuIexplore
+            {
+                get { return _contextmenuiexplore; }
+            }
+
+            /// <summary>
+            /// The FormInternet_Options folder.
+            /// </summary>
+            [RepositoryFolder("c996cf52-b845-4032-8edf-f8182e79d803")]
+            public virtual EnterpriseCampusAcctSetupFolders.FormInternet_OptionsAppFolder FormInternet_Options
+            {
+                get { return _forminternet_options; }
+            }
+
+            /// <summary>
+            /// The FormDelete_Browsing_History folder.
+            /// </summary>
+            [RepositoryFolder("907ab4ff-fb72-4a80-9c41-192c9cc51a9c")]
+            public virtual EnterpriseCampusAcctSetupFolders.FormDelete_Browsing_HistoryAppFolder FormDelete_Browsing_History
+            {
+                get { return _formdelete_browsing_history; }
+            }
+
+            /// <summary>
+            /// The ContainerIexplore folder.
+            /// </summary>
+            [RepositoryFolder("9a56c42d-8357-4bf8-bee3-1384ab631be0")]
+            public virtual EnterpriseCampusAcctSetupFolders.ContainerIexploreFolder ContainerIexplore
+            {
+                get { return _containeriexplore; }
+            }
+
+            /// <summary>
+            /// The Windows_Interne folder.
+            /// </summary>
+            [RepositoryFolder("c52501d0-ad9e-49ee-a3cf-e17a32841fa4")]
+            public virtual EnterpriseCampusAcctSetupFolders.Windows_InterneAppFolder Windows_Interne
+            {
+                get { return _windows_interne; }
+            }
+        }
+
+        /// <summary>
+        /// The ContextMenuIexploreAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("13417065-1c3b-4983-abd6-6a98c099bf31")]
+        public partial class ContextMenuIexploreAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _menuiteminternet_optionsInfo;
+
+            /// <summary>
+            /// Creates a new ContextMenuIexplore  folder.
+            /// </summary>
+            public ContextMenuIexploreAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ContextMenuIexplore", "/contextmenu[@processname='iexplore']", parentFolder, 30000, true, "13417065-1c3b-4983-abd6-6a98c099bf31", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "13417065-1c3b-4983-abd6-6a98c099bf31");
+                _menuiteminternet_optionsInfo = new RepoItemInfo(this, "MenuItemInternet_options", "contextmenu/menuitem[@accessiblename='Internet options']", 30000, null, "1ce03467-297d-4a06-9064-b8bf64eeefa6");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("13417065-1c3b-4983-abd6-6a98c099bf31")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("13417065-1c3b-4983-abd6-6a98c099bf31")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemInternet_options item.
+            /// </summary>
+            [RepositoryItem("1ce03467-297d-4a06-9064-b8bf64eeefa6")]
+            public virtual Ranorex.MenuItem MenuItemInternet_options
+            {
+                get
+                {
+                    return _menuiteminternet_optionsInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemInternet_options item info.
+            /// </summary>
+            [RepositoryItemInfo("1ce03467-297d-4a06-9064-b8bf64eeefa6")]
+            public virtual RepoItemInfo MenuItemInternet_optionsInfo
+            {
+                get
+                {
+                    return _menuiteminternet_optionsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormInternet_OptionsAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c996cf52-b845-4032-8edf-f8182e79d803")]
+        public partial class FormInternet_OptionsAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _buttondeleteInfo;
+            RepoItemInfo _buttonokInfo;
+            RepoItemInfo _tabpagegeneralInfo;
+
+            /// <summary>
+            /// Creates a new FormInternet_Options  folder.
+            /// </summary>
+            public FormInternet_OptionsAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormInternet_Options", "/form[@title='Internet Options']", parentFolder, 30000, true, "c996cf52-b845-4032-8edf-f8182e79d803", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c996cf52-b845-4032-8edf-f8182e79d803");
+                _buttondeleteInfo = new RepoItemInfo(this, "ButtonDelete", "container/button[@text='&Delete...']", 30000, null, "3e372efa-08de-4f17-bf20-6b159cb89d57");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text='OK']", 30000, null, "c81a704a-2ab0-4aef-9bbb-d7ba67998c01");
+                _tabpagegeneralInfo = new RepoItemInfo(this, "TabPageGeneral", "tabpagelist/tabpage[@title='General']", 30000, null, "d63617d1-d306-47fe-b705-64def8106602");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c996cf52-b845-4032-8edf-f8182e79d803")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c996cf52-b845-4032-8edf-f8182e79d803")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonDelete item.
+            /// </summary>
+            [RepositoryItem("3e372efa-08de-4f17-bf20-6b159cb89d57")]
+            public virtual Ranorex.Button ButtonDelete
+            {
+                get
+                {
+                    return _buttondeleteInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonDelete item info.
+            /// </summary>
+            [RepositoryItemInfo("3e372efa-08de-4f17-bf20-6b159cb89d57")]
+            public virtual RepoItemInfo ButtonDeleteInfo
+            {
+                get
+                {
+                    return _buttondeleteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("c81a704a-2ab0-4aef-9bbb-d7ba67998c01")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("c81a704a-2ab0-4aef-9bbb-d7ba67998c01")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TabPageGeneral item.
+            /// </summary>
+            [RepositoryItem("d63617d1-d306-47fe-b705-64def8106602")]
+            public virtual Ranorex.TabPage TabPageGeneral
+            {
+                get
+                {
+                    return _tabpagegeneralInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TabPageGeneral item info.
+            /// </summary>
+            [RepositoryItemInfo("d63617d1-d306-47fe-b705-64def8106602")]
+            public virtual RepoItemInfo TabPageGeneralInfo
+            {
+                get
+                {
+                    return _tabpagegeneralInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormDelete_Browsing_HistoryAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("907ab4ff-fb72-4a80-9c41-192c9cc51a9c")]
+        public partial class FormDelete_Browsing_HistoryAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _checkboxpreserve_favorites_websiInfo;
+            RepoItemInfo _checkboxtemporary_internet_filesInfo;
+            RepoItemInfo _checkboxcookiesInfo;
+            RepoItemInfo _checkboxhistoryInfo;
+            RepoItemInfo _checkboxdownload_historyInfo;
+            RepoItemInfo _checkboxform_dataInfo;
+            RepoItemInfo _checkboxpasswordsInfo;
+            RepoItemInfo _checkboxactivex_filtering_and_trInfo;
+            RepoItemInfo _buttondeleteInfo;
+
+            /// <summary>
+            /// Creates a new FormDelete_Browsing_History  folder.
+            /// </summary>
+            public FormDelete_Browsing_HistoryAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormDelete_Browsing_History", "/form[@title='Delete Browsing History']", parentFolder, 30000, true, "907ab4ff-fb72-4a80-9c41-192c9cc51a9c", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "907ab4ff-fb72-4a80-9c41-192c9cc51a9c");
+                _checkboxpreserve_favorites_websiInfo = new RepoItemInfo(this, "CheckBoxPreserve_Favorites_websi", "checkbox[@text~'^P&reserve\\ Favorites\\ websi']", 30000, null, "03c4f1e5-dafb-490f-9234-65ff7359c3c8");
+                _checkboxtemporary_internet_filesInfo = new RepoItemInfo(this, "CheckBoxTemporary_Internet_files", "checkbox[@text='&Temporary Internet files']", 30000, null, "54849fe0-4ca5-445d-a25f-b687dc71c106");
+                _checkboxcookiesInfo = new RepoItemInfo(this, "CheckBoxCookies", "checkbox[@text='C&ookies']", 30000, null, "c06373af-2c76-4cc6-80d5-87916c1ea9b6");
+                _checkboxhistoryInfo = new RepoItemInfo(this, "CheckBoxHistory", "checkbox[@text='&History']", 30000, null, "f5196c9c-4bbf-4155-972e-ce0ab0f0a86c");
+                _checkboxdownload_historyInfo = new RepoItemInfo(this, "CheckBoxDownload_History", "checkbox[@text='Do&wnload History']", 30000, null, "46e059de-8277-425d-8637-3360ce524fd1");
+                _checkboxform_dataInfo = new RepoItemInfo(this, "CheckBoxForm_data", "checkbox[@text='&Form data']", 30000, null, "988ebf29-4403-4045-b5f8-139b0be28ae1");
+                _checkboxpasswordsInfo = new RepoItemInfo(this, "CheckBoxPasswords", "checkbox[@text='&Passwords']", 30000, null, "cc1a9fc9-797b-4abc-a581-ec51e02cc807");
+                _checkboxactivex_filtering_and_trInfo = new RepoItemInfo(this, "CheckBoxActiveX_Filtering_and_Tr", "checkbox[@text~'^ActiveX\\ Filtering\\ and\\ Tra']", 30000, null, "d3a1b582-7aad-4993-baa7-0447f14679e6");
+                _buttondeleteInfo = new RepoItemInfo(this, "ButtonDelete", "button[@text='&Delete']", 30000, null, "80809abf-f1e6-4dc2-bf11-07e248c5510b");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("907ab4ff-fb72-4a80-9c41-192c9cc51a9c")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("907ab4ff-fb72-4a80-9c41-192c9cc51a9c")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxPreserve_Favorites_websi item.
+            /// </summary>
+            [RepositoryItem("03c4f1e5-dafb-490f-9234-65ff7359c3c8")]
+            public virtual Ranorex.CheckBox CheckBoxPreserve_Favorites_websi
+            {
+                get
+                {
+                    return _checkboxpreserve_favorites_websiInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxPreserve_Favorites_websi item info.
+            /// </summary>
+            [RepositoryItemInfo("03c4f1e5-dafb-490f-9234-65ff7359c3c8")]
+            public virtual RepoItemInfo CheckBoxPreserve_Favorites_websiInfo
+            {
+                get
+                {
+                    return _checkboxpreserve_favorites_websiInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxTemporary_Internet_files item.
+            /// </summary>
+            [RepositoryItem("54849fe0-4ca5-445d-a25f-b687dc71c106")]
+            public virtual Ranorex.CheckBox CheckBoxTemporary_Internet_files
+            {
+                get
+                {
+                    return _checkboxtemporary_internet_filesInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxTemporary_Internet_files item info.
+            /// </summary>
+            [RepositoryItemInfo("54849fe0-4ca5-445d-a25f-b687dc71c106")]
+            public virtual RepoItemInfo CheckBoxTemporary_Internet_filesInfo
+            {
+                get
+                {
+                    return _checkboxtemporary_internet_filesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxCookies item.
+            /// </summary>
+            [RepositoryItem("c06373af-2c76-4cc6-80d5-87916c1ea9b6")]
+            public virtual Ranorex.CheckBox CheckBoxCookies
+            {
+                get
+                {
+                    return _checkboxcookiesInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxCookies item info.
+            /// </summary>
+            [RepositoryItemInfo("c06373af-2c76-4cc6-80d5-87916c1ea9b6")]
+            public virtual RepoItemInfo CheckBoxCookiesInfo
+            {
+                get
+                {
+                    return _checkboxcookiesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxHistory item.
+            /// </summary>
+            [RepositoryItem("f5196c9c-4bbf-4155-972e-ce0ab0f0a86c")]
+            public virtual Ranorex.CheckBox CheckBoxHistory
+            {
+                get
+                {
+                    return _checkboxhistoryInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxHistory item info.
+            /// </summary>
+            [RepositoryItemInfo("f5196c9c-4bbf-4155-972e-ce0ab0f0a86c")]
+            public virtual RepoItemInfo CheckBoxHistoryInfo
+            {
+                get
+                {
+                    return _checkboxhistoryInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxDownload_History item.
+            /// </summary>
+            [RepositoryItem("46e059de-8277-425d-8637-3360ce524fd1")]
+            public virtual Ranorex.CheckBox CheckBoxDownload_History
+            {
+                get
+                {
+                    return _checkboxdownload_historyInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxDownload_History item info.
+            /// </summary>
+            [RepositoryItemInfo("46e059de-8277-425d-8637-3360ce524fd1")]
+            public virtual RepoItemInfo CheckBoxDownload_HistoryInfo
+            {
+                get
+                {
+                    return _checkboxdownload_historyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxForm_data item.
+            /// </summary>
+            [RepositoryItem("988ebf29-4403-4045-b5f8-139b0be28ae1")]
+            public virtual Ranorex.CheckBox CheckBoxForm_data
+            {
+                get
+                {
+                    return _checkboxform_dataInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxForm_data item info.
+            /// </summary>
+            [RepositoryItemInfo("988ebf29-4403-4045-b5f8-139b0be28ae1")]
+            public virtual RepoItemInfo CheckBoxForm_dataInfo
+            {
+                get
+                {
+                    return _checkboxform_dataInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxPasswords item.
+            /// </summary>
+            [RepositoryItem("cc1a9fc9-797b-4abc-a581-ec51e02cc807")]
+            public virtual Ranorex.CheckBox CheckBoxPasswords
+            {
+                get
+                {
+                    return _checkboxpasswordsInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxPasswords item info.
+            /// </summary>
+            [RepositoryItemInfo("cc1a9fc9-797b-4abc-a581-ec51e02cc807")]
+            public virtual RepoItemInfo CheckBoxPasswordsInfo
+            {
+                get
+                {
+                    return _checkboxpasswordsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxActiveX_Filtering_and_Tr item.
+            /// </summary>
+            [RepositoryItem("d3a1b582-7aad-4993-baa7-0447f14679e6")]
+            public virtual Ranorex.CheckBox CheckBoxActiveX_Filtering_and_Tr
+            {
+                get
+                {
+                    return _checkboxactivex_filtering_and_trInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxActiveX_Filtering_and_Tr item info.
+            /// </summary>
+            [RepositoryItemInfo("d3a1b582-7aad-4993-baa7-0447f14679e6")]
+            public virtual RepoItemInfo CheckBoxActiveX_Filtering_and_TrInfo
+            {
+                get
+                {
+                    return _checkboxactivex_filtering_and_trInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonDelete item.
+            /// </summary>
+            [RepositoryItem("80809abf-f1e6-4dc2-bf11-07e248c5510b")]
+            public virtual Ranorex.Button ButtonDelete
+            {
+                get
+                {
+                    return _buttondeleteInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonDelete item info.
+            /// </summary>
+            [RepositoryItemInfo("80809abf-f1e6-4dc2-bf11-07e248c5510b")]
+            public virtual RepoItemInfo ButtonDeleteInfo
+            {
+                get
+                {
+                    return _buttondeleteInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ContainerIexploreFolder folder.
+        /// </summary>
+        [RepositoryFolder("9a56c42d-8357-4bf8-bee3-1384ab631be0")]
+        public partial class ContainerIexploreFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _buttoncloseInfo;
+            RepoItemInfo _textnotification_bar_textInfo;
+            RepoItemInfo _toolbarnotification_barInfo;
+
+            /// <summary>
+            /// Creates a new ContainerIexplore  folder.
+            /// </summary>
+            public ContainerIexploreFolder(RepoGenBaseFolder parentFolder) :
+                    base("ContainerIexplore", "/form/element[@class='Frame Notification Bar']/container", parentFolder, 30000, true, "9a56c42d-8357-4bf8-bee3-1384ab631be0", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "9a56c42d-8357-4bf8-bee3-1384ab631be0");
+                _buttoncloseInfo = new RepoItemInfo(this, "ButtonClose", "toolbar/button[@accessiblename='Close']", 30000, null, "2f194dc5-c755-44eb-9275-0ec3ca8413a9");
+                _textnotification_bar_textInfo = new RepoItemInfo(this, "TextNotification_bar_Text", "toolbar/text[@accessiblename='Notification bar Text']", 30000, null, "9864b983-ea7a-4eb7-a31d-99b1abe74dab");
+                _toolbarnotification_barInfo = new RepoItemInfo(this, "ToolBarNotification_bar", "toolbar[@accessiblename='Notification bar']", 30000, null, "bcb25e5f-1c4d-427d-823d-b48751e727a3");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9a56c42d-8357-4bf8-bee3-1384ab631be0")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9a56c42d-8357-4bf8-bee3-1384ab631be0")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClose item.
+            /// </summary>
+            [RepositoryItem("2f194dc5-c755-44eb-9275-0ec3ca8413a9")]
+            public virtual Ranorex.Button ButtonClose
+            {
+                get
+                {
+                    return _buttoncloseInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonClose item info.
+            /// </summary>
+            [RepositoryItemInfo("2f194dc5-c755-44eb-9275-0ec3ca8413a9")]
+            public virtual RepoItemInfo ButtonCloseInfo
+            {
+                get
+                {
+                    return _buttoncloseInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextNotification_bar_Text item.
+            /// </summary>
+            [RepositoryItem("9864b983-ea7a-4eb7-a31d-99b1abe74dab")]
+            public virtual Ranorex.Text TextNotification_bar_Text
+            {
+                get
+                {
+                    return _textnotification_bar_textInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextNotification_bar_Text item info.
+            /// </summary>
+            [RepositoryItemInfo("9864b983-ea7a-4eb7-a31d-99b1abe74dab")]
+            public virtual RepoItemInfo TextNotification_bar_TextInfo
+            {
+                get
+                {
+                    return _textnotification_bar_textInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ToolBarNotification_bar item.
+            /// </summary>
+            [RepositoryItem("bcb25e5f-1c4d-427d-823d-b48751e727a3")]
+            public virtual Ranorex.ToolBar ToolBarNotification_bar
+            {
+                get
+                {
+                    return _toolbarnotification_barInfo.CreateAdapter<Ranorex.ToolBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ToolBarNotification_bar item info.
+            /// </summary>
+            [RepositoryItemInfo("bcb25e5f-1c4d-427d-823d-b48751e727a3")]
+            public virtual RepoItemInfo ToolBarNotification_barInfo
+            {
+                get
+                {
+                    return _toolbarnotification_barInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Windows_InterneAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("c52501d0-ad9e-49ee-a3cf-e17a32841fa4")]
+        public partial class Windows_InterneAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _buttontoolsInfo;
+
+            /// <summary>
+            /// Creates a new Windows_Interne  folder.
+            /// </summary>
+            public Windows_InterneAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Windows_Interne", "/form[@processname='iexplore' and @title~'.* Windows Internet Explorer']", parentFolder, 30000, true, "c52501d0-ad9e-49ee-a3cf-e17a32841fa4", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c52501d0-ad9e-49ee-a3cf-e17a32841fa4");
+                _buttontoolsInfo = new RepoItemInfo(this, "ButtonTools", "element[@class='WorkerW']/container/element[@class='ControlBandClass']/toolbar/button[@text='Tools']", 30000, null, "12244b78-3b5c-431f-8429-988474fa53ee");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("c52501d0-ad9e-49ee-a3cf-e17a32841fa4")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("c52501d0-ad9e-49ee-a3cf-e17a32841fa4")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTools item.
+            /// </summary>
+            [RepositoryItem("12244b78-3b5c-431f-8429-988474fa53ee")]
+            public virtual Ranorex.Button ButtonTools
+            {
+                get
+                {
+                    return _buttontoolsInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonTools item info.
+            /// </summary>
+            [RepositoryItemInfo("12244b78-3b5c-431f-8429-988474fa53ee")]
+            public virtual RepoItemInfo ButtonToolsInfo
+            {
+                get
+                {
+                    return _buttontoolsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ClearCacheSafariFolder folder.
+        /// </summary>
+        [RepositoryFolder("431d4ec8-b10e-4d9e-98e4-62e847c6118c")]
+        public partial class ClearCacheSafariFolder : RepoGenBaseFolder
+        {
+            EnterpriseCampusAcctSetupFolders.SafariAppFolder _safari;
+            EnterpriseCampusAcctSetupFolders.ContextMenuSafariAppFolder _contextmenusafari;
+            EnterpriseCampusAcctSetupFolders.FormSafariAppFolder _formsafari;
+
+            /// <summary>
+            /// Creates a new ClearCacheSafari  folder.
+            /// </summary>
+            public ClearCacheSafariFolder(RepoGenBaseFolder parentFolder) :
+                    base("ClearCacheSafari", "", parentFolder, 0, false, "431d4ec8-b10e-4d9e-98e4-62e847c6118c", "")
+            {
+                _safari = new EnterpriseCampusAcctSetupFolders.SafariAppFolder(parentFolder);
+                _contextmenusafari = new EnterpriseCampusAcctSetupFolders.ContextMenuSafariAppFolder(parentFolder);
+                _formsafari = new EnterpriseCampusAcctSetupFolders.FormSafariAppFolder(parentFolder);
+            }
+
+            /// <summary>
+            /// The Safari folder.
+            /// </summary>
+            [RepositoryFolder("fe0937f0-3341-400f-b7af-22a47ab0475d")]
+            public virtual EnterpriseCampusAcctSetupFolders.SafariAppFolder Safari
+            {
+                get { return _safari; }
+            }
+
+            /// <summary>
+            /// The ContextMenuSafari folder.
+            /// </summary>
+            [RepositoryFolder("9a7cbda6-e5d6-4505-9e6e-142b92b33a32")]
+            public virtual EnterpriseCampusAcctSetupFolders.ContextMenuSafariAppFolder ContextMenuSafari
+            {
+                get { return _contextmenusafari; }
+            }
+
+            /// <summary>
+            /// The FormSafari folder.
+            /// </summary>
+            [RepositoryFolder("2fa63082-1470-4487-8512-8ada685c4675")]
+            public virtual EnterpriseCampusAcctSetupFolders.FormSafariAppFolder FormSafari
+            {
+                get { return _formsafari; }
+            }
+        }
+
+        /// <summary>
+        /// The SafariAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("fe0937f0-3341-400f-b7af-22a47ab0475d")]
+        public partial class SafariAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _menuitemeditInfo;
+            RepoItemInfo _displaysettingsInfo;
+
+            /// <summary>
+            /// Creates a new Safari  folder.
+            /// </summary>
+            public SafariAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Safari", "/form[@processname='Safari']", parentFolder, 30000, true, "fe0937f0-3341-400f-b7af-22a47ab0475d", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "fe0937f0-3341-400f-b7af-22a47ab0475d");
+                _menuitemeditInfo = new RepoItemInfo(this, "MenuItemEdit", "element/toolbar/menuitem[@accessiblename='Edit']", 30000, null, "1bb5cef4-c1f7-42f2-bfea-89fb8f0dce7d");
+                _displaysettingsInfo = new RepoItemInfo(this, "DisplaySettings", "element[@class='RootElement' and @instance='0']", 30000, null, "9825cade-0cdb-4696-a479-2afa6e4c482d");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("fe0937f0-3341-400f-b7af-22a47ab0475d")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("fe0937f0-3341-400f-b7af-22a47ab0475d")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemEdit item.
+            /// </summary>
+            [RepositoryItem("1bb5cef4-c1f7-42f2-bfea-89fb8f0dce7d")]
+            public virtual Ranorex.MenuItem MenuItemEdit
+            {
+                get
+                {
+                    return _menuitemeditInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemEdit item info.
+            /// </summary>
+            [RepositoryItemInfo("1bb5cef4-c1f7-42f2-bfea-89fb8f0dce7d")]
+            public virtual RepoItemInfo MenuItemEditInfo
+            {
+                get
+                {
+                    return _menuitemeditInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DisplaySettings item.
+            /// </summary>
+            [RepositoryItem("9825cade-0cdb-4696-a479-2afa6e4c482d")]
+            public virtual Ranorex.Unknown DisplaySettings
+            {
+                get
+                {
+                    return _displaysettingsInfo.CreateAdapter<Ranorex.Unknown>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DisplaySettings item info.
+            /// </summary>
+            [RepositoryItemInfo("9825cade-0cdb-4696-a479-2afa6e4c482d")]
+            public virtual RepoItemInfo DisplaySettingsInfo
+            {
+                get
+                {
+                    return _displaysettingsInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ContextMenuSafariAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("9a7cbda6-e5d6-4505-9e6e-142b92b33a32")]
+        public partial class ContextMenuSafariAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _menuitemreset_safariInfo;
+            RepoItemInfo _menuitemhide_menu_barInfo;
+            RepoItemInfo _menuitemshow_menu_barInfo;
+
+            /// <summary>
+            /// Creates a new ContextMenuSafari  folder.
+            /// </summary>
+            public ContextMenuSafariAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("ContextMenuSafari", "/contextmenu[@processname='Safari']", parentFolder, 30000, true, "9a7cbda6-e5d6-4505-9e6e-142b92b33a32", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "9a7cbda6-e5d6-4505-9e6e-142b92b33a32");
+                _menuitemreset_safariInfo = new RepoItemInfo(this, "MenuItemReset_Safari", "contextmenu/menuitem[@accessiblename='Reset Safari…']", 30000, null, "b512556c-7bd4-4144-86a3-b65b9179b384");
+                _menuitemhide_menu_barInfo = new RepoItemInfo(this, "MenuItemHide_Menu_Bar", "contextmenu/menuitem[@accessiblename='Hide Menu Bar']", 30000, null, "9b98df6f-ef11-495b-9dc6-00cf2dd9ce5d");
+                _menuitemshow_menu_barInfo = new RepoItemInfo(this, "MenuItemShow_Menu_Bar", "contextmenu/menuitem[@accessiblename='Show Menu Bar']", 30000, null, "39c0f285-04c6-4971-a817-0cfeb4ae609a");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("9a7cbda6-e5d6-4505-9e6e-142b92b33a32")]
+            public virtual Ranorex.ContextMenu Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.ContextMenu>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("9a7cbda6-e5d6-4505-9e6e-142b92b33a32")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemReset_Safari item.
+            /// </summary>
+            [RepositoryItem("b512556c-7bd4-4144-86a3-b65b9179b384")]
+            public virtual Ranorex.MenuItem MenuItemReset_Safari
+            {
+                get
+                {
+                    return _menuitemreset_safariInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemReset_Safari item info.
+            /// </summary>
+            [RepositoryItemInfo("b512556c-7bd4-4144-86a3-b65b9179b384")]
+            public virtual RepoItemInfo MenuItemReset_SafariInfo
+            {
+                get
+                {
+                    return _menuitemreset_safariInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemHide_Menu_Bar item.
+            /// </summary>
+            [RepositoryItem("9b98df6f-ef11-495b-9dc6-00cf2dd9ce5d")]
+            public virtual Ranorex.MenuItem MenuItemHide_Menu_Bar
+            {
+                get
+                {
+                    return _menuitemhide_menu_barInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemHide_Menu_Bar item info.
+            /// </summary>
+            [RepositoryItemInfo("9b98df6f-ef11-495b-9dc6-00cf2dd9ce5d")]
+            public virtual RepoItemInfo MenuItemHide_Menu_BarInfo
+            {
+                get
+                {
+                    return _menuitemhide_menu_barInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemShow_Menu_Bar item.
+            /// </summary>
+            [RepositoryItem("39c0f285-04c6-4971-a817-0cfeb4ae609a")]
+            public virtual Ranorex.MenuItem MenuItemShow_Menu_Bar
+            {
+                get
+                {
+                    return _menuitemshow_menu_barInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MenuItemShow_Menu_Bar item info.
+            /// </summary>
+            [RepositoryItemInfo("39c0f285-04c6-4971-a817-0cfeb4ae609a")]
+            public virtual RepoItemInfo MenuItemShow_Menu_BarInfo
+            {
+                get
+                {
+                    return _menuitemshow_menu_barInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The FormSafariAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("2fa63082-1470-4487-8512-8ada685c4675")]
+        public partial class FormSafariAppFolder : RepoGenBaseFolder
+        {
+            EnterpriseCampusAcctSetupFolders.ContainerClientFolder _containerclient;
+            RepoItemInfo _selfInfo;
+
+            /// <summary>
+            /// Creates a new FormSafari  folder.
+            /// </summary>
+            public FormSafariAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("FormSafari", "/form[@title='' and @processname='Safari']", parentFolder, 30000, true, "2fa63082-1470-4487-8512-8ada685c4675", "")
+            {
+                _containerclient = new EnterpriseCampusAcctSetupFolders.ContainerClientFolder(this);
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "2fa63082-1470-4487-8512-8ada685c4675");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("2fa63082-1470-4487-8512-8ada685c4675")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("2fa63082-1470-4487-8512-8ada685c4675")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ContainerClient folder.
+            /// </summary>
+            [RepositoryFolder("3a3352d0-798f-4faf-8243-92d50a03dd51")]
+            public virtual EnterpriseCampusAcctSetupFolders.ContainerClientFolder ContainerClient
+            {
+                get { return _containerclient; }
+            }
+        }
+
+        /// <summary>
+        /// The ContainerClientFolder folder.
+        /// </summary>
+        [RepositoryFolder("3a3352d0-798f-4faf-8243-92d50a03dd51")]
+        public partial class ContainerClientFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _buttonresetInfo;
+            RepoItemInfo _checkboxclear_historyInfo;
+            RepoItemInfo _checkboxreset_top_sitesInfo;
+            RepoItemInfo _checkboxremove_all_webpage_previInfo;
+            RepoItemInfo _checkboxremove_the_downloadsInfo;
+            RepoItemInfo _checkboxremove_all_website_iconsInfo;
+            RepoItemInfo _checkboxremove_saved_names_and_pInfo;
+            RepoItemInfo _checkboxremove_other_autofill_foInfo;
+            RepoItemInfo _checkboxclose_all_safari_windowsInfo;
+            RepoItemInfo _checkboxreset_all_location_warniInfo;
+            RepoItemInfo _checkboxremove_all_website_dataInfo;
+
+            /// <summary>
+            /// Creates a new ContainerClient  folder.
+            /// </summary>
+            public ContainerClientFolder(RepoGenBaseFolder parentFolder) :
+                    base("ContainerClient", "element/element/container/container", parentFolder, 30000, true, "3a3352d0-798f-4faf-8243-92d50a03dd51", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "3a3352d0-798f-4faf-8243-92d50a03dd51");
+                _buttonresetInfo = new RepoItemInfo(this, "ButtonReset", "container[2]/button[@accessiblename='Reset']", 30000, null, "e85c5ca2-c80d-4324-837a-f8093e6e7b87");
+                _checkboxclear_historyInfo = new RepoItemInfo(this, "CheckBoxClear_history", "list/container[1]/checkbox[@accessiblename='Clear history']", 30000, null, "6b8a2cb3-0fa3-48e6-af86-3540ac228b03");
+                _checkboxreset_top_sitesInfo = new RepoItemInfo(this, "CheckBoxReset_Top_Sites", "list/container[2]/checkbox[@accessiblename='Reset Top Sites']", 30000, null, "31582269-9411-460d-9755-6dbb19bd7ad1");
+                _checkboxremove_all_webpage_previInfo = new RepoItemInfo(this, "CheckBoxRemove_all_webpage_previ", "list/container[3]/checkbox[@accessiblename~'^Remove\\ all\\ webpage\\ previe']", 30000, null, "a8d031c2-a4f0-460b-b439-0bf3734df18b");
+                _checkboxremove_the_downloadsInfo = new RepoItemInfo(this, "CheckBoxRemove_the_Downloads", "list/container[4]/checkbox[@accessiblename~'^Clear\\ the\\ Downloads\\ windo']", 30000, null, "f0ba9494-e3ed-4a45-98ea-77f170509262");
+                _checkboxremove_all_website_iconsInfo = new RepoItemInfo(this, "CheckBoxRemove_all_website_icons", "list/container[5]/checkbox[@accessiblename='Remove all website icons']", 30000, null, "7d63493f-1e2b-4161-885f-5ab532fe0369");
+                _checkboxremove_saved_names_and_pInfo = new RepoItemInfo(this, "CheckBoxRemove_saved_names_and_p", "list/container[6]/checkbox[@accessiblename~'^Remove\\ saved\\ names\\ and\\ pa']", 30000, null, "05595c8e-398d-40d7-a3e1-f95772a92f1f");
+                _checkboxremove_other_autofill_foInfo = new RepoItemInfo(this, "CheckBoxRemove_other_AutoFill_fo", "list/container[7]/checkbox[@accessiblename~'^Remove\\ other\\ AutoFill\\ for']", 30000, null, "e289cf77-2c1d-4a90-a098-54c6f0c592b7");
+                _checkboxclose_all_safari_windowsInfo = new RepoItemInfo(this, "CheckBoxClose_all_Safari_windows", "list/container[8]/checkbox[@accessiblename='Close all Safari windows']", 30000, null, "6a45e82f-282a-4573-b2d0-ba3d84d8ba8b");
+                _checkboxreset_all_location_warniInfo = new RepoItemInfo(this, "CheckBoxReset_all_location_warni", "list/container[9]/checkbox[@accessiblename~'^Reset\\ all\\ location\\ warnin']", 30000, null, "56a28ee5-e23b-4eaa-9dd0-adf1c5e4f719");
+                _checkboxremove_all_website_dataInfo = new RepoItemInfo(this, "CheckBoxRemove_all_website_data", "list/container[10]/checkbox[@accessiblename='Remove all website data']", 30000, null, "d9b6f4f0-b95e-4393-bdd3-09bbee95f5de");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("3a3352d0-798f-4faf-8243-92d50a03dd51")]
+            public virtual Ranorex.Container Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("3a3352d0-798f-4faf-8243-92d50a03dd51")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonReset item.
+            /// </summary>
+            [RepositoryItem("e85c5ca2-c80d-4324-837a-f8093e6e7b87")]
+            public virtual Ranorex.Button ButtonReset
+            {
+                get
+                {
+                    return _buttonresetInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonReset item info.
+            /// </summary>
+            [RepositoryItemInfo("e85c5ca2-c80d-4324-837a-f8093e6e7b87")]
+            public virtual RepoItemInfo ButtonResetInfo
+            {
+                get
+                {
+                    return _buttonresetInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxClear_history item.
+            /// </summary>
+            [RepositoryItem("6b8a2cb3-0fa3-48e6-af86-3540ac228b03")]
+            public virtual Ranorex.CheckBox CheckBoxClear_history
+            {
+                get
+                {
+                    return _checkboxclear_historyInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxClear_history item info.
+            /// </summary>
+            [RepositoryItemInfo("6b8a2cb3-0fa3-48e6-af86-3540ac228b03")]
+            public virtual RepoItemInfo CheckBoxClear_historyInfo
+            {
+                get
+                {
+                    return _checkboxclear_historyInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxReset_Top_Sites item.
+            /// </summary>
+            [RepositoryItem("31582269-9411-460d-9755-6dbb19bd7ad1")]
+            public virtual Ranorex.CheckBox CheckBoxReset_Top_Sites
+            {
+                get
+                {
+                    return _checkboxreset_top_sitesInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxReset_Top_Sites item info.
+            /// </summary>
+            [RepositoryItemInfo("31582269-9411-460d-9755-6dbb19bd7ad1")]
+            public virtual RepoItemInfo CheckBoxReset_Top_SitesInfo
+            {
+                get
+                {
+                    return _checkboxreset_top_sitesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_all_webpage_previ item.
+            /// </summary>
+            [RepositoryItem("a8d031c2-a4f0-460b-b439-0bf3734df18b")]
+            public virtual Ranorex.CheckBox CheckBoxRemove_all_webpage_previ
+            {
+                get
+                {
+                    return _checkboxremove_all_webpage_previInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_all_webpage_previ item info.
+            /// </summary>
+            [RepositoryItemInfo("a8d031c2-a4f0-460b-b439-0bf3734df18b")]
+            public virtual RepoItemInfo CheckBoxRemove_all_webpage_previInfo
+            {
+                get
+                {
+                    return _checkboxremove_all_webpage_previInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_the_Downloads item.
+            /// </summary>
+            [RepositoryItem("f0ba9494-e3ed-4a45-98ea-77f170509262")]
+            public virtual Ranorex.CheckBox CheckBoxRemove_the_Downloads
+            {
+                get
+                {
+                    return _checkboxremove_the_downloadsInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_the_Downloads item info.
+            /// </summary>
+            [RepositoryItemInfo("f0ba9494-e3ed-4a45-98ea-77f170509262")]
+            public virtual RepoItemInfo CheckBoxRemove_the_DownloadsInfo
+            {
+                get
+                {
+                    return _checkboxremove_the_downloadsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_all_website_icons item.
+            /// </summary>
+            [RepositoryItem("7d63493f-1e2b-4161-885f-5ab532fe0369")]
+            public virtual Ranorex.CheckBox CheckBoxRemove_all_website_icons
+            {
+                get
+                {
+                    return _checkboxremove_all_website_iconsInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_all_website_icons item info.
+            /// </summary>
+            [RepositoryItemInfo("7d63493f-1e2b-4161-885f-5ab532fe0369")]
+            public virtual RepoItemInfo CheckBoxRemove_all_website_iconsInfo
+            {
+                get
+                {
+                    return _checkboxremove_all_website_iconsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_saved_names_and_p item.
+            /// </summary>
+            [RepositoryItem("05595c8e-398d-40d7-a3e1-f95772a92f1f")]
+            public virtual Ranorex.CheckBox CheckBoxRemove_saved_names_and_p
+            {
+                get
+                {
+                    return _checkboxremove_saved_names_and_pInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_saved_names_and_p item info.
+            /// </summary>
+            [RepositoryItemInfo("05595c8e-398d-40d7-a3e1-f95772a92f1f")]
+            public virtual RepoItemInfo CheckBoxRemove_saved_names_and_pInfo
+            {
+                get
+                {
+                    return _checkboxremove_saved_names_and_pInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_other_AutoFill_fo item.
+            /// </summary>
+            [RepositoryItem("e289cf77-2c1d-4a90-a098-54c6f0c592b7")]
+            public virtual Ranorex.CheckBox CheckBoxRemove_other_AutoFill_fo
+            {
+                get
+                {
+                    return _checkboxremove_other_autofill_foInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_other_AutoFill_fo item info.
+            /// </summary>
+            [RepositoryItemInfo("e289cf77-2c1d-4a90-a098-54c6f0c592b7")]
+            public virtual RepoItemInfo CheckBoxRemove_other_AutoFill_foInfo
+            {
+                get
+                {
+                    return _checkboxremove_other_autofill_foInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxClose_all_Safari_windows item.
+            /// </summary>
+            [RepositoryItem("6a45e82f-282a-4573-b2d0-ba3d84d8ba8b")]
+            public virtual Ranorex.CheckBox CheckBoxClose_all_Safari_windows
+            {
+                get
+                {
+                    return _checkboxclose_all_safari_windowsInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxClose_all_Safari_windows item info.
+            /// </summary>
+            [RepositoryItemInfo("6a45e82f-282a-4573-b2d0-ba3d84d8ba8b")]
+            public virtual RepoItemInfo CheckBoxClose_all_Safari_windowsInfo
+            {
+                get
+                {
+                    return _checkboxclose_all_safari_windowsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxReset_all_location_warni item.
+            /// </summary>
+            [RepositoryItem("56a28ee5-e23b-4eaa-9dd0-adf1c5e4f719")]
+            public virtual Ranorex.CheckBox CheckBoxReset_all_location_warni
+            {
+                get
+                {
+                    return _checkboxreset_all_location_warniInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxReset_all_location_warni item info.
+            /// </summary>
+            [RepositoryItemInfo("56a28ee5-e23b-4eaa-9dd0-adf1c5e4f719")]
+            public virtual RepoItemInfo CheckBoxReset_all_location_warniInfo
+            {
+                get
+                {
+                    return _checkboxreset_all_location_warniInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_all_website_data item.
+            /// </summary>
+            [RepositoryItem("d9b6f4f0-b95e-4393-bdd3-09bbee95f5de")]
+            public virtual Ranorex.CheckBox CheckBoxRemove_all_website_data
+            {
+                get
+                {
+                    return _checkboxremove_all_website_dataInfo.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CheckBoxRemove_all_website_data item info.
+            /// </summary>
+            [RepositoryItemInfo("d9b6f4f0-b95e-4393-bdd3-09bbee95f5de")]
+            public virtual RepoItemInfo CheckBoxRemove_all_website_dataInfo
+            {
+                get
+                {
+                    return _checkboxremove_all_website_dataInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The ClearCacheChromeFolder folder.
+        /// </summary>
+        [RepositoryFolder("63b9c196-e204-42ae-b913-73716a1387c9")]
+        public partial class ClearCacheChromeFolder : RepoGenBaseFolder
+        {
+            EnterpriseCampusAcctSetupFolders.ChromeAppFolder _chrome;
+
+            /// <summary>
+            /// Creates a new ClearCacheChrome  folder.
+            /// </summary>
+            public ClearCacheChromeFolder(RepoGenBaseFolder parentFolder) :
+                    base("ClearCacheChrome", "", parentFolder, 0, false, "63b9c196-e204-42ae-b913-73716a1387c9", "")
+            {
+                _chrome = new EnterpriseCampusAcctSetupFolders.ChromeAppFolder(parentFolder);
+            }
+
+            /// <summary>
+            /// The Chrome folder.
+            /// </summary>
+            [RepositoryFolder("bfbbdc51-3f00-4f70-8f88-41a83930adf5")]
+            public virtual EnterpriseCampusAcctSetupFolders.ChromeAppFolder Chrome
+            {
+                get { return _chrome; }
+            }
+        }
+
+        /// <summary>
+        /// The ChromeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("bfbbdc51-3f00-4f70-8f88-41a83930adf5")]
+        public partial class ChromeAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _selfInfo;
+            RepoItemInfo _buttonchromeInfo;
+            RepoItemInfo _textaddressInfo;
+
+            /// <summary>
+            /// Creates a new Chrome  folder.
+            /// </summary>
+            public ChromeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Chrome", "/form[@processname='chrome']", parentFolder, 30000, true, "bfbbdc51-3f00-4f70-8f88-41a83930adf5", "")
+            {
+                _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "bfbbdc51-3f00-4f70-8f88-41a83930adf5");
+                _buttonchromeInfo = new RepoItemInfo(this, "ButtonChrome", "container/toolbar[@accessiblename='Google Chrome Toolbar']/button[@accessiblename='Chrome']", 30000, null, "56be5f3d-cc15-4e9e-b6e8-3e873cdaed75");
+                _textaddressInfo = new RepoItemInfo(this, "TextAddress", "element[@controlid='11945616']/text[@accessiblename='Address']", 30000, null, "3e675f23-f8e2-4cf2-b8fc-a743658c6e58");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("bfbbdc51-3f00-4f70-8f88-41a83930adf5")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("bfbbdc51-3f00-4f70-8f88-41a83930adf5")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonChrome item.
+            /// </summary>
+            [RepositoryItem("56be5f3d-cc15-4e9e-b6e8-3e873cdaed75")]
+            public virtual Ranorex.Button ButtonChrome
+            {
+                get
+                {
+                    return _buttonchromeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonChrome item info.
+            /// </summary>
+            [RepositoryItemInfo("56be5f3d-cc15-4e9e-b6e8-3e873cdaed75")]
+            public virtual RepoItemInfo ButtonChromeInfo
+            {
+                get
+                {
+                    return _buttonchromeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextAddress item.
+            /// </summary>
+            [RepositoryItem("3e675f23-f8e2-4cf2-b8fc-a743658c6e58")]
+            public virtual Ranorex.Text TextAddress
+            {
+                get
+                {
+                    return _textaddressInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextAddress item info.
+            /// </summary>
+            [RepositoryItemInfo("3e675f23-f8e2-4cf2-b8fc-a743658c6e58")]
+            public virtual RepoItemInfo TextAddressInfo
+            {
+                get
+                {
+                    return _textaddressInfo;
                 }
             }
         }

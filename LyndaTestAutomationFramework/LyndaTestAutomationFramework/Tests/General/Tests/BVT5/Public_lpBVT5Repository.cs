@@ -21,10 +21,14 @@ namespace Tests.General.Tests.BVT5
     /// <summary>
     /// The class representing the Public_lpBVT5Repository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("8ec0adf8-37d6-47d6-bfa0-2fcb3edabd0e")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("8ec0adf8-37d6-47d6-bfa0-2fcb3edabd0e")]
     public partial class Public_lpBVT5Repository : RepoGenBaseFolder
     {
         static Public_lpBVT5Repository instance = new Public_lpBVT5Repository();
+        Public_lpBVT5RepositoryFolders.DOMAppFolder _dom;
+        Public_lpBVT5RepositoryFolders.FormLynda_com_software_trainAppFolder _formlynda_com_software_train;
+        Public_lpBVT5RepositoryFolders.FormMessage_from_webpageAppFolder _formmessage_from_webpage;
 
         /// <summary>
         /// Gets the singleton class instance representing the Public_lpBVT5Repository element repository.
@@ -35,15 +39,11 @@ namespace Tests.General.Tests.BVT5
             get { return instance; }
         }
 
-        Public_lpBVT5RepositoryFolders.DOMAppFolder _dom;
-        Public_lpBVT5RepositoryFolders.FormLynda_com_software_trainAppFolder _formlynda_com_software_train;
-        Public_lpBVT5RepositoryFolders.FormMessage_from_webpageAppFolder _formmessage_from_webpage;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public Public_lpBVT5Repository() 
-            : base("Public_lpBVT5Repository", "", null, 30000, false)
+            : base("Public_lpBVT5Repository", "", null, 30000, false, "8ec0adf8-37d6-47d6-bfa0-2fcb3edabd0e", "./RepositoryImages\\Public_lpBVT5Repository8ec0adf8.rximgres")
         {
             _dom = new Public_lpBVT5RepositoryFolders.DOMAppFolder(this);
             _formlynda_com_software_train = new Public_lpBVT5RepositoryFolders.FormLynda_com_software_trainAppFolder(this);
@@ -85,6 +85,7 @@ namespace Tests.General.Tests.BVT5
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class Public_lpBVT5RepositoryFolders
     {
         /// <summary>
@@ -107,13 +108,13 @@ namespace Tests.General.Tests.BVT5
             Public_lpBVT5RepositoryFolders.SomeTBodyTagFolder _sometbodytag;
             RepoItemInfo _selfInfo;
             RepoItemInfo _webdocumentsoftware_training_onlineInfo;
-            RepoItemInfo _login_form_closeInfo;
+            Login_form_closeInfoClass _login_form_closeInfo;
 
             /// <summary>
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "56b6aa61-6c61-475c-ab8c-719f9ae3dfba")
+                    base("DOM", "/dom", parentFolder, 30000, false, "56b6aa61-6c61-475c-ab8c-719f9ae3dfba", "")
             {
                 _body = new Public_lpBVT5RepositoryFolders.BodyFolder(this);
                 _login_form = new Public_lpBVT5RepositoryFolders.Login_formFolder(this);
@@ -129,7 +130,39 @@ namespace Tests.General.Tests.BVT5
                 _sometbodytag = new Public_lpBVT5RepositoryFolders.SomeTBodyTagFolder(this);
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "56b6aa61-6c61-475c-ab8c-719f9ae3dfba");
                 _webdocumentsoftware_training_onlineInfo = new RepoItemInfo(this, "WebDocumentSoftware_training_online", "", 30000, null, "42d48072-5150-4832-be50-23042ac15dd4");
-                _login_form_closeInfo = new RepoItemInfo(this, "Login_form_close", "body/div[@id='fancybox-wrap']/div/a[@id='fancybox-close']", 30000, null, "8fc49378-49f1-4d39-a182-b57d0f9aef90");
+                _login_form_closeInfo = new Login_form_closeInfoClass(this);
+            }
+
+            /// <summary>
+            /// The Login_form_closeInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("8fc49378-49f1-4d39-a182-b57d0f9aef90")]
+            public class Login_form_closeInfoClass : RepoItemInfo
+            {
+                public Login_form_closeInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "Login_form_close", "body/div[@id='fancybox-wrap']/div/a[@id='fancybox-close']", 30000, null, "8fc49378-49f1-4d39-a182-b57d0f9aef90")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("3e67cdd4-9a40-4d76-9219-0605697d99d2")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("3e67cdd4-9a40-4d76-9219-0605697d99d2");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image in <paramref name="image"/> to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("3e67cdd4-9a40-4d76-9219-0605697d99d2")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("3e67cdd4-9a40-4d76-9219-0605697d99d2", cropRect);
+                }
             }
 
             /// <summary>
@@ -196,7 +229,7 @@ namespace Tests.General.Tests.BVT5
             /// The Login_form_close item info.
             /// </summary>
             [RepositoryItemInfo("8fc49378-49f1-4d39-a182-b57d0f9aef90")]
-            public virtual RepoItemInfo Login_form_closeInfo
+            public virtual Login_form_closeInfoClass Login_form_closeInfo
             {
                 get
                 {
@@ -350,7 +383,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new Body  folder.
             /// </summary>
             public BodyFolder(RepoGenBaseFolder parentFolder) :
-                    base("Body", "body", parentFolder, 30000, false, "1de1f225-85a2-4528-8e8a-813b69e52d88")
+                    base("Body", "body", parentFolder, 30000, false, "1de1f225-85a2-4528-8e8a-813b69e52d88", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "1de1f225-85a2-4528-8e8a-813b69e52d88");
                 _btnaddgroupsInfo = new RepoItemInfo(this, "btnAddGroups", "form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr/td/table/tbody/tr/td[2]/input[@id='ctl00_main_grdNGU_Groups_ctl01_addNewGroup']", 30000, null, "45cd9c6f-705e-4ef8-b3de-8f1c28048e4f");
@@ -1012,30 +1045,136 @@ namespace Tests.General.Tests.BVT5
         public partial class Login_formFolder : RepoGenBaseFolder
         {
             RepoItemInfo _selfInfo;
-            RepoItemInfo _txtusernameInfo;
+            txtUsernameInfoClass _txtusernameInfo;
             RepoItemInfo _txtpasswordInfo;
             RepoItemInfo _chkstayloggedinInfo;
             RepoItemInfo _lnkforgotloginInfo;
             RepoItemInfo _lnksubscribeInfo;
             RepoItemInfo _lnklearnmoreInfo;
             RepoItemInfo _btnloginInfo;
-            RepoItemInfo _tdtagpassword_Info;
+            TdTagPassword_InfoClass _tdtagpassword_Info;
 
             /// <summary>
             /// Creates a new Login_form  folder.
             /// </summary>
             public Login_formFolder(RepoGenBaseFolder parentFolder) :
-                    base("Login_form", "body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div", parentFolder, 30000, false, "20b9886c-3e2d-47c6-a90c-5537d7450a1f")
+                    base("Login_form", "body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div", parentFolder, 30000, false, "20b9886c-3e2d-47c6-a90c-5537d7450a1f", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "20b9886c-3e2d-47c6-a90c-5537d7450a1f");
-                _txtusernameInfo = new RepoItemInfo(this, "txtUsername", "form/table/tbody/tr[2]/td/input[@id='username']", 30000, null, "a1db60ec-a84c-43ab-8414-fec328501969");
+                _txtusernameInfo = new txtUsernameInfoClass(this);
                 _txtpasswordInfo = new RepoItemInfo(this, "txtPassword", "form/table/tbody/tr[4]/td/input[@id='password']", 30000, null, "a5c45b4f-24c9-47c6-8e1e-2b33c1f0ee3f");
                 _chkstayloggedinInfo = new RepoItemInfo(this, "chkStayLoggedIn", "form/table/tbody/tr[5]/td/div/input[@id='rememberme']", 30000, null, "b8b6bfcb-f9d8-4d9b-92af-92617dc10a94");
                 _lnkforgotloginInfo = new RepoItemInfo(this, "lnkForgotLogin", "form/table/tbody/tr[6]/td/div[@id='forgot_login']/a[@innertext='Forgot login?']", 30000, null, "6a05f7e2-da65-4301-b14d-3f31cac8e7ae");
                 _lnksubscribeInfo = new RepoItemInfo(this, "lnkSubscribe", "div/a[@innertext='subscribe']", 30000, null, "27c29d08-63e1-45d6-9b1a-7387051c6c41");
                 _lnklearnmoreInfo = new RepoItemInfo(this, "lnkLearnMore", "div/a[@innertext='learn more']", 30000, null, "1a236040-a662-45db-8815-fcf479609187");
                 _btnloginInfo = new RepoItemInfo(this, "btnLogin", "form/table/tbody/tr[6]/td/div[@id='login_btn']/a", 30000, null, "b75dedb4-726c-41c9-8b55-a13ab78e36c7");
-                _tdtagpassword_Info = new RepoItemInfo(this, "TdTagPassword_", "form/table/tbody/tr[3]/td[@innertext='password:']", 30000, null, "26503370-b72f-4c45-bf68-7b91f1a3c334");
+                _tdtagpassword_Info = new TdTagPassword_InfoClass(this);
+            }
+
+            /// <summary>
+            /// The txtUsernameInfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("a1db60ec-a84c-43ab-8414-fec328501969")]
+            public class txtUsernameInfoClass : RepoItemInfo
+            {
+                public txtUsernameInfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "txtUsername", "form/table/tbody/tr[2]/td/input[@id='username']", 30000, null, "a1db60ec-a84c-43ab-8414-fec328501969")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("52d83d6c-32b0-426b-a443-0e04c6d11e0d")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("52d83d6c-32b0-426b-a443-0e04c6d11e0d");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image in <paramref name="image"/> to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("52d83d6c-32b0-426b-a443-0e04c6d11e0d")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("52d83d6c-32b0-426b-a443-0e04c6d11e0d", cropRect);
+                }
+
+                /// <summary>
+                /// Gets the Screenshot2 item image.
+                /// </summary>
+                /// <returns>The Screenshot2 image.</returns>
+                [RepositoryImage("3580e104-df5e-4d7e-985c-80117cb1907d")]
+                public CompressedImage GetScreenshot2()
+                {
+                    return GetImage("3580e104-df5e-4d7e-985c-80117cb1907d");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot2 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image in <paramref name="image"/> to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("3580e104-df5e-4d7e-985c-80117cb1907d")]
+                public CompressedImage GetScreenshot2(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("3580e104-df5e-4d7e-985c-80117cb1907d", cropRect);
+                }
+
+                /// <summary>
+                /// Gets the Screenshot3 item image.
+                /// </summary>
+                /// <returns>The Screenshot3 image.</returns>
+                [RepositoryImage("4554519d-5f7a-4f52-a06e-53d5cf227fb7")]
+                public CompressedImage GetScreenshot3()
+                {
+                    return GetImage("4554519d-5f7a-4f52-a06e-53d5cf227fb7");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot3 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image in <paramref name="image"/> to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("4554519d-5f7a-4f52-a06e-53d5cf227fb7")]
+                public CompressedImage GetScreenshot3(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("4554519d-5f7a-4f52-a06e-53d5cf227fb7", cropRect);
+                }
+            }
+
+            /// <summary>
+            /// The TdTagPassword_InfoClass folder.
+            /// </summary>
+            [RepositoryItemInfo("26503370-b72f-4c45-bf68-7b91f1a3c334")]
+            public class TdTagPassword_InfoClass : RepoItemInfo
+            {
+                public TdTagPassword_InfoClass(RepoGenBaseFolder parentFolder)
+                    : base(parentFolder, "TdTagPassword_", "form/table/tbody/tr[3]/td[@innertext='password:']", 30000, null, "26503370-b72f-4c45-bf68-7b91f1a3c334")
+                { }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <returns>The Screenshot1 image.</returns>
+                [RepositoryImage("deb2d886-3fb1-4a68-8294-b1eb7cfd49fc")]
+                public CompressedImage GetScreenshot1()
+                {
+                    return GetImage("deb2d886-3fb1-4a68-8294-b1eb7cfd49fc");
+                }
+
+                /// <summary>
+                /// Gets the Screenshot1 item image.
+                /// </summary>
+                /// <param name="cropRect">The bounds of the sub-image in <paramref name="image"/> to return.</param>
+                /// <returns>The cropped image.</returns>
+                [RepositoryImage("deb2d886-3fb1-4a68-8294-b1eb7cfd49fc")]
+                public CompressedImage GetScreenshot1(System.Drawing.Rectangle cropRect)
+                {
+                    return GetImage("deb2d886-3fb1-4a68-8294-b1eb7cfd49fc", cropRect);
+                }
             }
 
             /// <summary>
@@ -1078,7 +1217,7 @@ namespace Tests.General.Tests.BVT5
             /// The txtUsername item info.
             /// </summary>
             [RepositoryItemInfo("a1db60ec-a84c-43ab-8414-fec328501969")]
-            public virtual RepoItemInfo txtUsernameInfo
+            public virtual txtUsernameInfoClass txtUsernameInfo
             {
                 get
                 {
@@ -1246,7 +1385,7 @@ namespace Tests.General.Tests.BVT5
             /// The TdTagPassword_ item info.
             /// </summary>
             [RepositoryItemInfo("26503370-b72f-4c45-bf68-7b91f1a3c334")]
-            public virtual RepoItemInfo TdTagPassword_Info
+            public virtual TdTagPassword_InfoClass TdTagPassword_Info
             {
                 get
                 {
@@ -1275,7 +1414,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new Top_Right_Menus  folder.
             /// </summary>
             public Top_Right_MenusFolder(RepoGenBaseFolder parentFolder) :
-                    base("Top_Right_Menus", "body/div[@id='eyebrow']/div[1]", parentFolder, 30000, false, "4253bcc0-912f-4e46-9cf8-3bdaead6e297")
+                    base("Top_Right_Menus", "body/div[@id='eyebrow']/div[1]", parentFolder, 30000, false, "4253bcc0-912f-4e46-9cf8-3bdaead6e297", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "4253bcc0-912f-4e46-9cf8-3bdaead6e297");
                 _strongtaglog_inInfo = new RepoItemInfo(this, "StrongTagLog_in", "ul/li[4]/a/strong[@innertext='log in']", 30000, null, "57ed0cf6-a180-4006-956d-f8bf391f2cf9");
@@ -1524,7 +1663,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new Modal_AddGroups  folder.
             /// </summary>
             public Modal_AddGroupsFolder(RepoGenBaseFolder parentFolder) :
-                    base("Modal_AddGroups", "body/div[@id='modalMMUS']/div[@id='modal-container']/div[@id='modal-contents']/form/div[@id='divAG']/table", parentFolder, 30000, false, "31ef8439-da50-46d6-b597-5763d68ccfd8")
+                    base("Modal_AddGroups", "body/div[@id='modalMMUS']/div[@id='modal-container']/div[@id='modal-contents']/form/div[@id='divAG']/table", parentFolder, 30000, false, "31ef8439-da50-46d6-b597-5763d68ccfd8", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "31ef8439-da50-46d6-b597-5763d68ccfd8");
                 _btncancelInfo = new RepoItemInfo(this, "btnCancel", "tbody/tr[5]/td/a[@id='AGlnkCancel']", 30000, null, "fd4297ed-d10c-44df-95b6-964c6179d9e5");
@@ -1744,7 +1883,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new Cofirmation_Delete  folder.
             /// </summary>
             public Cofirmation_DeleteFolder(RepoGenBaseFolder parentFolder) :
-                    base("Cofirmation_Delete", "body/div[@id='modalMMUS']/div[@id='modal-container']", parentFolder, 30000, false, "92160b49-65c5-4feb-b855-2337b9c80f3b")
+                    base("Cofirmation_Delete", "body/div[@id='modalMMUS']/div[@id='modal-container']", parentFolder, 30000, false, "92160b49-65c5-4feb-b855-2337b9c80f3b", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "92160b49-65c5-4feb-b855-2337b9c80f3b");
                 _atagmodal_close_linkInfo = new RepoItemInfo(this, "ATagModal_close_link", "div[@id='modal-title-bar']/a[@id='modal-close-link']", 30000, null, "365828aa-8fe5-4474-a0d6-d5041442431a");
@@ -1901,7 +2040,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new GroupsAndUsers_Grid  folder.
             /// </summary>
             public GroupsAndUsers_GridFolder(RepoGenBaseFolder parentFolder) :
-                    base("GroupsAndUsers_Grid", "body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody", parentFolder, 30000, false, "8815d6f2-f9f1-45c9-9414-75f5bcd8856f")
+                    base("GroupsAndUsers_Grid", "body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody", parentFolder, 30000, false, "8815d6f2-f9f1-45c9-9414-75f5bcd8856f", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "8815d6f2-f9f1-45c9-9414-75f5bcd8856f");
                 _chkfirstgroupInfo = new RepoItemInfo(this, "chkFirstGroup", "tr[2]/td[1]/span/input[@id='ctl00_main_grdNGU_Groups_ctl02_cbxGroupSelected']", 30000, null, "54fc6250-a3bd-46d0-84c4-220fd3f83be4");
@@ -2970,7 +3109,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new ManageGroupsActionMenu  folder.
             /// </summary>
             public ManageGroupsActionMenuFolder(RepoGenBaseFolder parentFolder) :
-                    base("ManageGroupsActionMenu", "body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='divActionMenu']", parentFolder, 30000, false, "dd5e17bb-5528-4bc5-b85d-d02ad70ddba2")
+                    base("ManageGroupsActionMenu", "body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='divActionMenu']", parentFolder, 30000, false, "dd5e17bb-5528-4bc5-b85d-d02ad70ddba2", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "dd5e17bb-5528-4bc5-b85d-d02ad70ddba2");
                 _someultagInfo = new RepoItemInfo(this, "SomeUlTag", "ul", 30000, null, "95137739-edd2-4a42-a8a2-f2d7e4d5bd37");
@@ -3695,7 +3834,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new Modal_AddUsers  folder.
             /// </summary>
             public Modal_AddUsersFolder(RepoGenBaseFolder parentFolder) :
-                    base("Modal_AddUsers", "body/div[@id='modalMMUS']/div[@id='modal-container']/div[@id='modal-contents']/form/div[@id='divAU']/table", parentFolder, 30000, false, "a39360f9-c6fa-47b9-ac3e-0ca4e65acba8")
+                    base("Modal_AddUsers", "body/div[@id='modalMMUS']/div[@id='modal-container']/div[@id='modal-contents']/form/div[@id='divAU']/table", parentFolder, 30000, false, "a39360f9-c6fa-47b9-ac3e-0ca4e65acba8", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a39360f9-c6fa-47b9-ac3e-0ca4e65acba8");
                 _txtautxtgroupnameInfo = new RepoItemInfo(this, "txtAUtxtGroupName", "tbody/tr[1]/td[2]/input[@id='AUtxtGroupName']", 30000, null, "c8f2ebdf-cb83-4795-9422-6e73ab2e6d3f");
@@ -3939,7 +4078,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new RegnEmail_Yes_No  folder.
             /// </summary>
             public RegnEmail_Yes_NoFolder(RepoGenBaseFolder parentFolder) :
-                    base("RegnEmail_Yes_No", "body/form/div[2]/div[2]", parentFolder, 30000, false, "3eb0c6ba-725d-48b9-abd9-996bf597dcc9")
+                    base("RegnEmail_Yes_No", "body/form/div[2]/div[2]", parentFolder, 30000, false, "3eb0c6ba-725d-48b9-abd9-996bf597dcc9", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "3eb0c6ba-725d-48b9-abd9-996bf597dcc9");
                 _btnyesregnemailInfo = new RepoItemInfo(this, "btnYesRegnEmail", "div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_upRegistrationEmail']/div/div[@id='ctl00_main_grdNGU_RegEmailForm_Popup']/div[2]/table/tbody/tr[3]/td/span[1]/input[@id='ctl00_main_grdNGU_btnSendRegistrationEmail']", 30000, null, "80f6d792-6d39-4a0d-9345-3d87cbe5aeea");
@@ -4035,7 +4174,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new DivTagCtl00_main_divSendEmail  folder.
             /// </summary>
             public DivTagCtl00_main_divSendEmailFolder(RepoGenBaseFolder parentFolder) :
-                    base("DivTagCtl00_main_divSendEmail", "body/form/div[2]/div[2]/div[@id='ctl00_main_divSendEmail']", parentFolder, 30000, false, "da63a832-5c92-4bc5-aa25-ee05d849756f")
+                    base("DivTagCtl00_main_divSendEmail", "body/form/div[2]/div[2]/div[@id='ctl00_main_divSendEmail']", parentFolder, 30000, false, "da63a832-5c92-4bc5-aa25-ee05d849756f", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "da63a832-5c92-4bc5-aa25-ee05d849756f");
                 _selemailtemplatetypeInfo = new RepoItemInfo(this, "selEmailTemplateType", "div[3]/fieldset[1]/table/tbody/tr/td[2]/div/table/tbody/tr/td[1]/select[@id='ctl00_main_DisplayEmail1_ddlTemplateType']", 30000, null, "0c9bf7c8-4ab7-43b2-9a47-a8041a5bc1e4");
@@ -4189,7 +4328,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new UserRegnPage2  folder.
             /// </summary>
             public UserRegnPage2Folder(RepoGenBaseFolder parentFolder) :
-                    base("UserRegnPage2", "body/div[5]/div[2]", parentFolder, 30000, false, "bf0730f8-c065-4340-ade9-b01c36f06222")
+                    base("UserRegnPage2", "body/div[5]/div[2]", parentFolder, 30000, false, "bf0730f8-c065-4340-ade9-b01c36f06222", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "bf0730f8-c065-4340-ade9-b01c36f06222");
                 _txtfirstname_regnpage2Info = new RepoItemInfo(this, "txtFirstName_RegnPage2", "form/div[@id='divNewUser']/fieldset/div[2]/input[@id='FirstName']", 30000, null, "adf2d143-ebbb-4253-bd00-0bf6052f9891");
@@ -4531,7 +4670,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new SomeTBodyTag  folder.
             /// </summary>
             public SomeTBodyTagFolder(RepoGenBaseFolder parentFolder) :
-                    base("SomeTBodyTag", "body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody", parentFolder, 30000, false, "fa501893-7503-450e-bc95-7441f97470bc")
+                    base("SomeTBodyTag", "body/form/div[2]/div[2]/div[4]/div[@id='divNGaU']/div[@id='ctl00_main_grdNGU_UpdatePanelNG']/div/div/table/tbody/tr[3]/td/div/div/table/tbody", parentFolder, 30000, false, "fa501893-7503-450e-bc95-7441f97470bc", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "fa501893-7503-450e-bc95-7441f97470bc");
             }
@@ -4574,7 +4713,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new FormLynda_com_software_train  folder.
             /// </summary>
             public FormLynda_com_software_trainAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormLynda_com_software_train", "/form[@title~'^lynda\\.com\\ software\\ traini']", parentFolder, 30000, true, "e830c85f-bcb9-4e13-bea6-ea72384ac37b")
+                    base("FormLynda_com_software_train", "/form[@title~'^lynda\\.com\\ software\\ traini']", parentFolder, 30000, true, "e830c85f-bcb9-4e13-bea6-ea72384ac37b", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "e830c85f-bcb9-4e13-bea6-ea72384ac37b");
                 _formlynda_com_software_trainInfo = new RepoItemInfo(this, "FormLynda_com_software_train", "", 30000, null, "accaa769-1ab6-4f29-a1aa-e878aaf14e4c");
@@ -4650,7 +4789,7 @@ namespace Tests.General.Tests.BVT5
             /// Creates a new FormMessage_from_webpage  folder.
             /// </summary>
             public FormMessage_from_webpageAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FormMessage_from_webpage", "/form[@title='Message from webpage']", parentFolder, 30000, true, "bf4f5340-f1d0-48a4-aa1b-2fa8e389bad3")
+                    base("FormMessage_from_webpage", "/form[@title='Message from webpage']", parentFolder, 30000, true, "bf4f5340-f1d0-48a4-aa1b-2fa8e389bad3", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "bf4f5340-f1d0-48a4-aa1b-2fa8e389bad3");
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text='OK']", 30000, null, "d8ea4038-d0a2-4b68-888f-6f4a611374d7");

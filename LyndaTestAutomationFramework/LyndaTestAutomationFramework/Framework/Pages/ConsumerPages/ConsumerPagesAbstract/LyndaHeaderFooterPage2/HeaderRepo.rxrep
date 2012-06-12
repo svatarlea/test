@@ -1,15 +1,15 @@
-﻿<repository name="HeaderRepo" id="23b2a1c3-6e8b-4743-8fba-490f11564245" rxversion="3.2.3.16825">
-  <codegen classname="HeaderRepo" namespace="ConsumerPagesAbstract.LyndaHeaderFooterPage2"/>
-  <rootfolder name="Root" id="dfc29b64-9e01-4cde-a284-750ba31c725c" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="DOM" id="c7784686-0c44-4c60-af7f-7d76554d7088" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="LyndaImage" id="9b080be3-8a5a-4ee4-9666-998e8cb121cf" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
-        <![CDATA[/dom/body/div[1]/div[@id='topHeader']/div[3]/div[2]/a/img[@title='lynda.com']]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="HeaderRepo" id="23b2a1c3-6e8b-4743-8fba-490f11564245" rxversion="3.3.0.17843">
+	<codegen classname="HeaderRepo" namespace="ConsumerPagesAbstract.LyndaHeaderFooterPage2" resourcebasedir="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesAbstract"/>
+	<rootfolder name="Root" id="dfc29b64-9e01-4cde-a284-750ba31c725c" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="DOM" id="c7784686-0c44-4c60-af7f-7d76554d7088" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="LyndaImage" id="9b080be3-8a5a-4ee4-9666-998e8cb121cf" searchtimeout="30000ms" capname="imgtag" addcaps="unknown,webelement,imgtag">
+				/dom/body/div[1]/div[@id='topHeader']/div[3]/div[2]/a/img[@title='lynda.com']
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -21,10 +21,9 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

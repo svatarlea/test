@@ -14,7 +14,7 @@
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -39,6 +39,9 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <FileAlignment>4096</FileAlignment>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
     <Reference Include="Ranorex.Core, Version=$(RanorexVersion)">
@@ -53,6 +56,7 @@
     <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)">
       <id>9edf0ca5-473f-4b9a-bc49-1b52b20250d9</id>
     </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
     <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
       <id>4817b465-978c-4f33-906c-fc38b2cd881e</id>
     </Reference>
@@ -101,4 +105,5 @@
       <id>38b51226-a85d-4822-8fa7-9dd86d57940a</id>
     </Compile>
   </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
 </Project>

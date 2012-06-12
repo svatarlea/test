@@ -1,15 +1,15 @@
-﻿<repository name="Story_B_02914_LoginRepo" id="4d8e3c8d-c312-455c-b74a-570e20a9b4df" rxversion="3.2.3.16825">
-  <codegen classname="Story_B_02914_LoginRepo" namespace="Tests.General.Tests.Story_B_02914_Login"/>
-  <rootfolder name="Root" id="b0017254-ce36-4185-917b-250caa8ff04b" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="Form" id="77812b61-8c32-44da-946d-ebfadb4bcaaf" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="NavigateEditBox" id="122d31d8-85c8-4e64-a222-eb8d267ab3fd" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
-        <![CDATA[/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@controlid='41477']/text[@class='Edit']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@class='IEFrame']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="Story_B_02914_LoginRepo" id="4d8e3c8d-c312-455c-b74a-570e20a9b4df" rxversion="3.3.0.17843">
+	<codegen classname="Story_B_02914_LoginRepo" namespace="Tests.General.Tests.Story_B_02914_Login" resourcebasedir="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<rootfolder name="Root" id="b0017254-ce36-4185-917b-250caa8ff04b" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="Form" id="77812b61-8c32-44da-946d-ebfadb4bcaaf" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="NavigateEditBox" id="122d31d8-85c8-4e64-a222-eb8d267ab3fd" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+				/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@controlid='41477']/text[@class='Edit']
+			</item>
+			<basepath>
+				/form[@class='IEFrame']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANvSURBVDhPjVJrTJNnGH3KMIo/EGOytdyK6Nw0
 66ZE4j2yuBhdFu+AgW1ssaXQBooQlXmrly0DL2tn461okctUlgX1U5sC9VLBu4IK1q/Qdi2XFoqg
 RaH9vq/9npWSGG/JfJLz402ec95zzvsCfMAgIod9IhCwZPge9nGIzn+PU5QBMCZA5byXzpMTY6ds
@@ -27,51 +27,51 @@ kVkYTH3kxc9/19s/+X7vxKC5wTufrqJ0nAupAJNipBXLBMr6tuSGbjrX6sXCDhoL7RTKrBSua2Vw
 sb7HFyfXOWLE6h9fJcsEGOWr5dTI+DBVDhCSkPcHL/C+VYsO1rsWn7NQSZef4tfV//rm7LvqjstU
 X+emKqa+XQvHWAwJdiWstx6G5XYNLJDLl4RHizSJXKF6TeTPR6Tcn1QZH6crF41PLhr3Nvk/Befc
 dnTypcQAAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <appfolder name="DOM" id="f6b5a24e-b67a-4ca9-a9e5-2ebae2201c52" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="WebPage" id="c791d898-3696-45f6-ab08-f96e8a9e668d" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
-        <![CDATA[/dom[@browsername='IE']]]>
-      </item>
-      <item name="LoginLink" id="c27d7f21-9bdc-4aab-8b52-626ff63d6e0b" searchtimeout="5000ms" capname="atag" addcaps="unknown,webelement,atag">
-        <![CDATA[/dom[@browsername='IE']/body/div[@id='eyebrow']/div[1]/ul/li[4]/a[@id='login-modal']]]>
-      </item>
-      <item name="LogoutLink" id="7c238ef7-c1fd-4f2d-97ab-c4ea4a77186e" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
-        <![CDATA[/dom[@browsername='IE']/body/div[@id='eyebrow']/div[1]/ul/li/a/strong[@innertext='log out']]]>
-      </item>
-      <folder name="LoginControlA" id="10918efe-ad5b-411a-877c-89e66ea48236" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
-        <item name="Username" id="091e01b8-b796-447c-b9c3-8613d7835414" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom[@browsername='IE']/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[2]/td/input[@id='username']]]>
-        </item>
-        <item name="Password" id="082f96f9-9896-4f37-b406-4eae5b69722a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom[@browsername='IE']/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[4]/td/input[@id='password']]]>
-        </item>
-        <item name="LoginButton" id="aa095a49-b48b-43a3-b9b2-7c05480e756b" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom[@browsername='IE']/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[6]/td/div[@id='login_btn']/a]]>
-        </item>
-        <basepath>
-          <![CDATA[/dom[@browsername='IE']/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table]]>
-        </basepath>
-      </folder>
-      <folder name="LoginControlB" id="978e7906-e0ff-4978-9e4b-0cc2b72d6e9b" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
-        <item name="Username" id="50a8c184-3b15-46a6-b2be-35f820eed48a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom[@browsername='IE']/body/form/div[@id='ctl00_sectionHeader']/div/div[4]/div/div[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_Panel1']/table/tbody/tr[1]/td[2]/input[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_txtUsername']]]>
-        </item>
-        <item name="Password" id="dd0e1c14-6d1b-4342-a2d6-3fccf24f78db" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom[@browsername='IE']/body/form/div[@id='ctl00_sectionHeader']/div/div[4]/div/div[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_Panel1']/table/tbody/tr[2]/td[2]/input[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_txtPassword']]]>
-        </item>
-        <item name="LoginButton" id="1e22c792-6502-45b0-b899-8607f17bfd6f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom[@browsername='IE']/body/form/div[@id='ctl00_sectionHeader']/div/div[4]/div/div[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_Panel1']/table/tbody/tr[3]/td/div/input[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_btnLogin']]]>
-        </item>
-        <basepath>
-          <![CDATA[/dom[@browsername='IE']/body/form/div[@id='ctl00_sectionHeader']/div/div[4]/div/div[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_Panel1']/table]]>
-        </basepath>
-      </folder>
-      <basepath>
-        <![CDATA[/dom[@browsername='IE']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="DOM" id="f6b5a24e-b67a-4ca9-a9e5-2ebae2201c52" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="WebPage" id="c791d898-3696-45f6-ab08-f96e8a9e668d" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
+				/dom[@browsername='IE']
+			</item>
+			<item name="LoginLink" id="c27d7f21-9bdc-4aab-8b52-626ff63d6e0b" searchtimeout="5000ms" capname="atag" addcaps="unknown,webelement,atag">
+				/dom[@browsername='IE']/body/div[@id='eyebrow']/div[1]/ul/li[4]/a[@id='login-modal']
+			</item>
+			<item name="LogoutLink" id="7c238ef7-c1fd-4f2d-97ab-c4ea4a77186e" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
+				/dom[@browsername='IE']/body/div[@id='eyebrow']/div[1]/ul/li/a/strong[@innertext='log out']
+			</item>
+			<folder name="LoginControlA" id="10918efe-ad5b-411a-877c-89e66ea48236" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+				<item name="Username" id="091e01b8-b796-447c-b9c3-8613d7835414" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom[@browsername='IE']/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[2]/td/input[@id='username']
+				</item>
+				<item name="Password" id="082f96f9-9896-4f37-b406-4eae5b69722a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom[@browsername='IE']/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[4]/td/input[@id='password']
+				</item>
+				<item name="LoginButton" id="aa095a49-b48b-43a3-b9b2-7c05480e756b" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom[@browsername='IE']/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table/tbody/tr[6]/td/div[@id='login_btn']/a
+				</item>
+				<basepath>
+					/dom[@browsername='IE']/body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table
+				</basepath>
+			</folder>
+			<folder name="LoginControlB" id="978e7906-e0ff-4978-9e4b-0cc2b72d6e9b" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+				<item name="Username" id="50a8c184-3b15-46a6-b2be-35f820eed48a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom[@browsername='IE']/body/form/div[@id='ctl00_sectionHeader']/div/div[4]/div/div[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_Panel1']/table/tbody/tr[1]/td[2]/input[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_txtUsername']
+				</item>
+				<item name="Password" id="dd0e1c14-6d1b-4342-a2d6-3fccf24f78db" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom[@browsername='IE']/body/form/div[@id='ctl00_sectionHeader']/div/div[4]/div/div[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_Panel1']/table/tbody/tr[2]/td[2]/input[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_txtPassword']
+				</item>
+				<item name="LoginButton" id="1e22c792-6502-45b0-b899-8607f17bfd6f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom[@browsername='IE']/body/form/div[@id='ctl00_sectionHeader']/div/div[4]/div/div[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_Panel1']/table/tbody/tr[3]/td/div/input[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_btnLogin']
+				</item>
+				<basepath>
+					/dom[@browsername='IE']/body/form/div[@id='ctl00_sectionHeader']/div/div[4]/div/div[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_Panel1']/table
+				</basepath>
+			</folder>
+			<basepath>
+				/dom[@browsername='IE']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -83,17 +83,17 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <appfolder name="WebDocumentSSL_Error" id="35797398-195c-4ef5-8004-21aaa2b48181" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="DivTagRightColumnMenu" id="6b8ea48d-ea49-4a3c-9d1e-91183042e2ab" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
-        <![CDATA[/dom[@domain='admin.release.lynda.com']/body/div[@id='pageContainer']/div[@id='rightColumn']/div[@id='rightColumnMenu']]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom[@domain='admin.release.lynda.com']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="WebDocumentSSL_Error" id="35797398-195c-4ef5-8004-21aaa2b48181" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="DivTagRightColumnMenu" id="6b8ea48d-ea49-4a3c-9d1e-91183042e2ab" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
+				/dom[@domain='admin.release.lynda.com']/body/div[@id='pageContainer']/div[@id='rightColumn']/div[@id='rightColumnMenu']
+			</item>
+			<basepath>
+				/dom[@domain='admin.release.lynda.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -105,10 +105,9 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

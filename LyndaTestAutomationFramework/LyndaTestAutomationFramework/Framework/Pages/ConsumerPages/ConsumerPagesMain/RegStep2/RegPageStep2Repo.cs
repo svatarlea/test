@@ -21,10 +21,12 @@ namespace ConsumerPagesMain.RegStep2
     /// <summary>
     /// The class representing the RegPageStep2Repo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("5950c3eb-5975-4e43-b477-23d3bc6cd340")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("5950c3eb-5975-4e43-b477-23d3bc6cd340")]
     public partial class RegPageStep2Repo : RepoGenBaseFolder
     {
         static RegPageStep2Repo instance = new RegPageStep2Repo();
+        RegPageStep2RepoFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the RegPageStep2Repo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesMain.RegStep2
             get { return instance; }
         }
 
-        RegPageStep2RepoFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public RegPageStep2Repo() 
-            : base("RegPageStep2Repo", "", null, 30000, false)
+            : base("RegPageStep2Repo", "", null, 30000, false, "5950c3eb-5975-4e43-b477-23d3bc6cd340", "./RepositoryImages\\RegPageStep2Repo5950c3eb.rximgres")
         {
             _dom = new RegPageStep2RepoFolders.DOMAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesMain.RegStep2
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class RegPageStep2RepoFolders
     {
         /// <summary>
@@ -79,7 +80,7 @@ namespace ConsumerPagesMain.RegStep2
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0")
+                    base("DOM", "/dom", parentFolder, 30000, false, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0");
                 _ihavereadinputInfo = new RepoItemInfo(this, "IHaveReadInput", "body/div[1]/div[2]/form/div/p/input[@id='cbxTC']", 30000, null, "18e7ed2b-285e-482a-91b0-796410119d44");

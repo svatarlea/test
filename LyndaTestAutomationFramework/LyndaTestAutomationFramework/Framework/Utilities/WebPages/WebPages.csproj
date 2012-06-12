@@ -31,6 +31,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ranorex.Controls, Version=$(RanorexVersion)">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Controls.dll</HintPath>
@@ -76,6 +82,7 @@
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Java.dll</HintPath>
       <id>e7b1d374-77ee-43d9-afb8-8a03caae8844</id>
     </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
     <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.MozillaWeb.dll</HintPath>
       <id>2db57f85-2530-42cb-b207-4b955cfdd6bd</id>
@@ -147,4 +154,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
 </Project>

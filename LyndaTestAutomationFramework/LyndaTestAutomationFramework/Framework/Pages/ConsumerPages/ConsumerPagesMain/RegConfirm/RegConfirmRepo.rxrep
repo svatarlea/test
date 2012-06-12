@@ -1,15 +1,15 @@
-﻿<repository name="RegConfirmRepo" id="59c48bef-c8cb-4fba-b93c-1007fa5dbe63" rxversion="3.2.3.16825">
-  <codegen classname="RegConfirmRepo" namespace="ConsumerPagesMain.RegConfirm"/>
-  <rootfolder name="Root" id="5baa0d35-4aae-4139-b0a7-6b75cda9eec7" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="DOM" id="8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="PrintReceiptSpan" id="5ee21bea-e92f-4d23-9c05-066bee7a1d07" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-        <![CDATA[/dom/body/div[4]/div[3]/a/span[@innertext='print receipt']]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="RegConfirmRepo" id="59c48bef-c8cb-4fba-b93c-1007fa5dbe63" rxversion="3.3.0.17843">
+	<codegen classname="RegConfirmRepo" namespace="ConsumerPagesMain.RegConfirm" resourcebasedir="C:\Users\jalex\gitCodeJude1\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<rootfolder name="Root" id="5baa0d35-4aae-4139-b0a7-6b75cda9eec7" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="DOM" id="8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="PrintReceiptSpan" id="5ee21bea-e92f-4d23-9c05-066bee7a1d07" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+				/dom/body/div[4]/div[3]/a/span[@innertext='print receipt']
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -21,10 +21,9 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

@@ -33,9 +33,9 @@ namespace Tests.General.Tests.EnterpriseCampus
     /// Description of Admin_EnterpriseAcctSetup.
     /// </summary>
     [TestModule("DBB4C28F-AD02-4A89-9683-C7146FFD459F", ModuleType.UserCode, 1)]
-    public class Admin_EnterpriseAcctSetup : ITestModule
+    public class EnterpriseAcctSetup_IP : ITestModule
     {
-       private static EnterpriseCampusAcctSetup repo = EnterpriseCampusAcctSetup.Instance;
+       public static EnterpriseCampusAcctSetup repo = EnterpriseCampusAcctSetup.Instance;
        private Browser	browser; 
     	
     	
@@ -52,7 +52,7 @@ namespace Tests.General.Tests.EnterpriseCampus
     	/// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Admin_EnterpriseAcctSetup()
+        public EnterpriseAcctSetup_IP()
         {
             // Do not delete - a parameterless constructor is required!
         }
@@ -81,8 +81,8 @@ namespace Tests.General.Tests.EnterpriseCampus
             //Open Browser and Get the local IP
             browser = new Browser(browserProduct, url);
             
-            //If user is already a ip user with current ip and if the iplogin page is displayed - go to navigate out to get the ip address.
-            
+            //If user is already an ip user with current ip and if the iplogin page is displayed instead of the iptest page - navigate out to get the ip address.
+            //Also go to Admin and clear the IPs.
             if(Validate.NotExists(repo.DOM.IP_TestPage.h1_IPAddressInfo.AbsolutePath, repo.DOM.IP_TestPage.h1_IPAddressInfo.SearchTimeout,"{0}",new Validate.Options(false,ReportLevel.Info)) )
             {
             	Validate.Exists(repo.DOM.IP_LoginPage.ATag_lynda_comInfo);
@@ -90,9 +90,7 @@ namespace Tests.General.Tests.EnterpriseCampus
             	Validate.Exists(repo.DOM.IP_LoginPage.SpanTagOkInfo);
             	repo.DOM.IP_LoginPage.SpanTagOk.Click();
             	Validate.Exists(repo.DOM.ATagLynda_comInfo);
-            	url = string.Format("{0}{1}{2}","https://admin.", AppSettings.Domain,"/Welcome.aspx");
-            	GotoAccountSetup(url, username, password);
-            	AccountIPsCleanup();
+            	
             	url = string.Format("{0}{1}", AppSettings.Domain,"/home/iptest.aspx");
             	browser.Navigate(url);
             }
@@ -102,11 +100,11 @@ namespace Tests.General.Tests.EnterpriseCampus
             
             url = string.Format("{0}{1}{2}","https://admin.", AppSettings.Domain,"/Welcome.aspx");
             
-            GotoAccountSetup(url, username, password);
+            GotoAccountSetup(browser, url, username, password, varUsername);
            	
-           	Validate.Exists(repo.DOM.AccountSetup.lnklyndaEntAcctSetupInfo);
-           	repo.DOM.AccountSetup.lnklyndaEntAcctSetup.MoveTo();
-           	repo.DOM.AccountSetup.lnklyndaEntAcctSetup.Click();
+           	Validate.Exists(repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetupInfo);
+           	repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetup.MoveTo();
+           	repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetup.Click();
            	
            	Validate.Exists(repo.DOM.AccountSetup.h1_Setup1of4Info);
            	Validate.Exists(repo.DOM.AccountSetup.txtFromIPAddress1Info);
@@ -127,34 +125,55 @@ namespace Tests.General.Tests.EnterpriseCampus
            	 {
            	 	Validate.Exists(repo.DOM.AccountSetup.IP_PageDivErrorsInfo);
            	 	Validate.Exists(repo.DOM.AccountSetup.IP_PageErrorRangeInfo);
-           	 	Report.Log(ReportLevel.Warn,repo.DOM.AccountSetup.IP_PageErrorRange.InnerText);
+           	 	Report.Log(ReportLevel.Warn,repo.DOM.AccountSetup.IP_PageErrorRange.InnerText + " :  " + repo.DOM.AccountSetup.IP_AddressPage_Username.InnerText);
            	 	repo.DOM.AccountSetup.IP_AddressPage_Username.Click();
-           	 	AccountIPsCleanup();
-           	 	GotoAccountSetup(url, username, password);
-           		Validate.Exists(repo.DOM.AccountSetup.lnklyndaEntAcctSetupInfo);
-           		repo.DOM.AccountSetup.lnklyndaEntAcctSetup.MoveTo();
-           		repo.DOM.AccountSetup.lnklyndaEntAcctSetup.Click();
+           	 	AccountIPsCleanup(strIPaddress);
+           	 	Validate.Exists(repo.DOM.HeaderAdminLogin.btnLogoutInfo);
+           		repo.DOM.HeaderAdminLogin.btnLogout.MoveTo();
+           		repo.DOM.HeaderAdminLogin.btnLogout.Click(Location.Center);
+           		Validate.Exists(repo.DOM.HeaderAdminLogin.btnLoginInfo);
+           	 	GotoAccountSetup(browser, url, username, password, varUsername);
+           		Validate.Exists(repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetupInfo);
+           		repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetup.MoveTo();
+           		repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetup.Click();
            		Validate.Exists(repo.DOM.AccountSetup.h1_Setup1of4Info);
            		Validate.Exists(repo.DOM.AccountSetup.txtFromIPAddress1Info);
            		repo.DOM.AccountSetup.txtFromIPAddress1.PressKeys(strIPaddress);
            		Validate.Exists(repo.DOM.AccountSetup.btnContinueInfo);
            		repo.DOM.AccountSetup.btnContinue.Click();
+           		Validate.Exists(repo.DOM.AccountSetup.btnApproveInfo);
+           	    repo.DOM.AccountSetup.btnApprove.Click();  
            		
            	 }
            	
-           	
-           	Validate.Exists(repo.DOM.AccountSetup.btnContinuePg3of4Info);
+           	 //Setup: 3 of 4 – Customize Landing Page
+           	 Validate.Attribute(repo.DOM.AccountSetup.chkRequireUsernametobeEmailAddressInfo, "Checked", "True");
+           	 Validate.Exists(repo.DOM.AccountSetup.txtEmailDomainInfo);
+           	 if(repo.DOM.AccountSetup.txtEmailDomain.InnerText != "")
+           	 {
+           	 	repo.DOM.AccountSetup.txtEmailDomain.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
+           		repo.DOM.AccountSetup.txtEmailDomain.PressKeys("{Back}");
+           	 	repo.DOM.AccountSetup.txtEmailDomain.PressKeys("testdomain");
+           	 }
+           	 Validate.Exists(repo.DOM.AccountSetup.btnContinuePg3of4Info);
+           	repo.DOM.AccountSetup.btnContinuePg3of4.MoveTo();
            	repo.DOM.AccountSetup.btnContinuePg3of4.Click();
+           	
+           	//
            	Validate.Exists(repo.DOM.AccountSetup.btnContinuePg4of4Info);
+           	repo.DOM.AccountSetup.btnContinuePg4of4.MoveTo();
            	repo.DOM.AccountSetup.btnContinuePg4of4.Click();
            	
            	Validate.Exists(repo.DOM.HeaderAdminLogin.btnLogoutInfo);
-           	repo.DOM.HeaderAdminLogin.btnLogout.Click();
+           	repo.DOM.HeaderAdminLogin.btnLogout.MoveTo();
+           	repo.DOM.HeaderAdminLogin.btnLogout.Click(Location.Center);
            	Validate.Exists(repo.DOM.HeaderAdminLogin.btnLoginInfo);
            	
            	//login into Public and verify Access
+           	ClearBrowserCache();
+			Host.Local.CloseApplication(repo.DOM.Self,new Duration(1000));
            	url = string.Format("{0}{1}", AppSettings.Domain,"/ipprogram/iplogin.aspx");
-           	browser.Navigate(url);
+           	browser = new Browser(browserProduct, url);
            	
            	Validate.Exists(repo.DOM.IP_LoginPage.DivTagBreadcrumbsInfo);
            	Validate.AreEqual(repo.DOM.IP_LoginPage.DivTagBreadcrumbs.InnerText, " » Enterprise login");
@@ -167,18 +186,29 @@ namespace Tests.General.Tests.EnterpriseCampus
 			// You are trying to log in from an IP address that is not associated with a lynda.com account. For additional assistance, use our contact form or call Customer Service at (888) 335-9632
 			
 			url = string.Format("{0}{1}{2}","https://admin.", AppSettings.Domain,"/Welcome.aspx");
-			GotoAccountSetup(url, username, password);
+			GotoAccountSetup(browser, url, username, password, varUsername);
 			AccountIPsCleanup();
 			
 			//login into Public and verify Access
+			
+			ClearBrowserCache();
+			Host.Local.CloseApplication(repo.DOM.Self,new Duration(1000));
+			
            	url = string.Format("{0}{1}", AppSettings.Domain,"/ipprogram/iplogin.aspx");
-           	browser.Navigate(url);
+           	browser = new Browser(browserProduct, url);
+           	
+           	Validate.Exists(repo.DOM.InvalidIP_LoginPage.h1_Permission_deniedInfo);
+           	Validate.Exists(repo.DOM.InvalidIP_LoginPage.p_IP_Permission_denied_mesgInfo);
+           	string strPermDend = "You are trying to log in from an IP address that is not associated with a lynda.com account. For additional assistance, use our or call Customer Service at (888) 335-9632.";
+           	Report.Log(ReportLevel.Info, repo.DOM.InvalidIP_LoginPage.p_IP_Permission_denied_mesg.InnerText);
+           	Report.Log(ReportLevel.Info, strPermDend);
+           	
            	
 			
         }
         
         
-        void GotoAccountSetup(string url, string username, string password)
+    	public void GotoAccountSetup(Browser browser, string url, string username, string password, string testMAusername)
         {
         	//navigate to Admin url
             browser.Navigate(url);
@@ -204,48 +234,102 @@ namespace Tests.General.Tests.EnterpriseCampus
             
            	Validate.Exists(repo.DOM.SearchPage.menuItemSearchInfo);
            	Validate.Exists(repo.DOM.SearchPage.txtUsernameInfo);
-           	repo.DOM.SearchPage.txtUsername.PressKeys(varUsername);
+           	repo.DOM.SearchPage.txtUsername.PressKeys(testMAusername);
            	
            	repo.DOM.SearchPage.btnSubmit.MoveTo();
            	repo.DOM.SearchPage.btnSubmit.Click();
            	
            	Validate.Exists(repo.DOM.SearchPage.lnkSearchResultsInfo);
-           	Validate.AreEqual(repo.DOM.SearchPage.lnkSearchResults.InnerText, varUsername);
+           	Validate.AreEqual(repo.DOM.SearchPage.lnkSearchResults.InnerText, testMAusername);
            	repo.DOM.SearchPage.lnkSearchResults.Click(Location.UpperLeft);
            	
-           	Validate.Exists(repo.DOM.AccountSetup.txtUsernameInfo);
-           	Validate.AreEqual(repo.DOM.AccountSetup.txtUsername.Value, varUsername);
+           	Validate.Exists(repo.DOM.CustomerDetailsPage.txtUsernameInfo);
+           	Validate.AreEqual(repo.DOM.CustomerDetailsPage.txtUsername.Value, testMAusername);
         }
         
-        void AccountIPsCleanup()
+    	public void AccountIPsCleanup(string strIPaddress)
         {
-        	
-        	Validate.Exists(repo.DOM.AccountSetup.lnklyndaEntAcctSetupInfo);
-           	repo.DOM.AccountSetup.lnklyndaEntAcctSetup.MoveTo();
-           	repo.DOM.AccountSetup.lnklyndaEntAcctSetup.Click();
+        	//The account could be Enterprise Master Admin, Campus Master Admin or Kiosk Master Admin
+        	//Get the Master Admin's Product
+        	//TODO: handle based on lyndaCampus, Kiosk or Enterprise
+
+				Validate.Exists(repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetupInfo);
+           		repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetup.MoveTo();
+           		repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetup.Click();
+
+           	    Validate.Exists(repo.DOM.AccountSetup.txtFromIPAddress1Info);
            	
-           	Validate.Exists(repo.DOM.AccountSetup.txtFromIPAddress1Info);
-           	repo.DOM.AccountSetup.txtFromIPAddress1.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
-           	repo.DOM.AccountSetup.txtFromIPAddress1.PressKeys("{Back}");
-           	repo.DOM.AccountSetup.txtToIPAddress1.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
-           	repo.DOM.AccountSetup.txtToIPAddress1.PressKeys("{Back}");
-           	Validate.Exists(repo.DOM.AccountSetup.btnContinueInfo);
-           	repo.DOM.AccountSetup.btnContinue.Click();
            	
-           	Validate.Exists(repo.DOM.AccountSetup.btnApproveInfo);
-           	repo.DOM.AccountSetup.btnApprove.Click();
-           	Validate.Exists(repo.DOM.AccountSetup.btnContinuePg3of4Info);
-           	repo.DOM.AccountSetup.btnContinuePg3of4.Click();
-           	Validate.Exists(repo.DOM.AccountSetup.btnContinuePg4of4Info);
-           	repo.DOM.AccountSetup.btnContinuePg4of4.Click();
-           	
-           	Validate.Exists(repo.DOM.HeaderAdminLogin.btnLogoutInfo);
-           	repo.DOM.HeaderAdminLogin.btnLogout.Click();
-           	Validate.Exists(repo.DOM.HeaderAdminLogin.btnLoginInfo);
-        	
+           	    int intrownum = 0; 
+           	    int intbtnrow = 0;
+           	   
+           	    //Loop through the table and get the IPAddress Range row that has conflicting IPAddress
+           	    foreach (TrTag row in repo.DOM.AccountSetup.tblIPAddresses.Find("./tbody/tr"))
+				{  
+				     
+				    intrownum++;
+				    TdTag rowNameCell = row.FindSingle("./td[1]");
+				      
+				    if(rowNameCell.InnerText.Trim()==(intrownum-1).ToString())
+				    {
+					    int intcellnum = 0;
+					    string[] ipaddrs= {"",""};
+					    bool blnIPinRange=false;
+				    	foreach (TdTag cell in row.Find("./td"))
+					    {  
+					          
+					        intcellnum++;
+					        if(intcellnum == 2 || intcellnum == 3)
+					        {
+					         cell.SetStyle("background-color","#33ff00");
+					         InputTag txtAddress = cell.FindSingle("./input");
+					         ipaddrs[intcellnum-2]= txtAddress.Value.Trim();
+					         Report.Log(ReportLevel.Info, "IP Address [" + (intcellnum-2).ToString() + "] : " + ipaddrs[intcellnum-2].ToString());
+					        }
+					        
+					        if(ipaddrs[0] != "" && ipaddrs[1]!= "")
+				    		{
+				    			IPAddressRange iprange = new IPAddressRange(ipaddrs[0], ipaddrs[1]);
+				    			blnIPinRange = iprange.IsInRange(strIPaddress);
+				    			Report.Log(ReportLevel.Info, "Is " + strIPaddress + " in the range?  " + blnIPinRange.ToString());
+				    		}
+					        
+					        if(intcellnum == 5 && blnIPinRange)
+					        {
+					        		cell.SetStyle("background-color","#FF0000");
+					        		intbtnrow = intrownum-1;
+					        }
+					    }
+				    	
+				    }
+				      
+				}  
+           	    
+           	   
+           	    //Click the delete button on the Row with the conflicting IP Address range
+           	    foreach (TrTag row in repo.DOM.AccountSetup.tblIPAddresses.Find("./tbody/tr"))
+				{
+           	    	    TdTag rowNameCell = row.FindSingle("./td[1]");
+           	    	    if(rowNameCell.InnerText.Trim()==intbtnrow.ToString())
+					    {
+	           	    		TdTag btncell = row.FindSingle("./td[5]");
+	           	    		InputTag btnDelete = btncell.FindSingle("./input");
+							btnDelete.MoveTo();
+							btnDelete.Click();
+	           	    	}
+           	    }
+       
+	           	Validate.Exists(repo.DOM.AccountSetup.btnContinueInfo);
+	           	repo.DOM.AccountSetup.btnContinue.Click();
+	           	Validate.Exists(repo.DOM.AccountSetup.btnApproveInfo);
+	           	repo.DOM.AccountSetup.btnApprove.Click();
+	           	Validate.Exists(repo.DOM.AccountSetup.btnContinuePg3of4Info);
+	           	repo.DOM.AccountSetup.btnContinuePg3of4.Click();
+	           	Validate.Exists(repo.DOM.AccountSetup.btnContinuePg4of4Info);
+	           	repo.DOM.AccountSetup.btnContinuePg4of4.Click();
         }
         
-        void HandleAdminCurrentlyLoggedIn()
+    	public void HandleAdminCurrentlyLoggedIn()
         {
         	//Deal with already logged in dialog (if it appears)
 			//"Hello Keynote Virtualuser!You are currently logged in to your lynda.com account at another computer.
@@ -313,6 +397,183 @@ namespace Tests.General.Tests.EnterpriseCampus
 				default:	
 					throw new Exception(String.Format("Code not implemented yet: {0}", AppSettings.Browser.ToString()));
 			}
+        }
+        
+    	public void AccountIPsCleanup()
+        {
+        	//The account could be Enterprise Master Admin, Campus Master Admin or Kiosk Master Admin
+        	//Get the Master Admin's Product
+        	//TODO: handle based on lyndaCampus, Kiosk or Enterprise
+
+				Validate.Exists(repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetupInfo);
+           		repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetup.MoveTo();
+           		repo.DOM.CustomerDetailsPage.lnklyndaEntAcctSetup.Click();
+
+        	
+           	
+           	Validate.Exists(repo.DOM.AccountSetup.txtFromIPAddress1Info);
+           	//Clean hit delete on all rows
+           	int intrownum = 0;
+           	int intDelBtnsCnt = 0;
+           	foreach (TrTag row in repo.DOM.AccountSetup.tblIPAddresses.Find("./tbody/tr"))
+			{  
+           		intrownum++;    
+           		TdTag rowNameCell = row.FindSingle("./td[1]");
+				    if(rowNameCell.InnerText.Trim()==(intrownum-1).ToString())
+				    {
+					    
+				    	foreach (TdTag cell in row.Find("./td[5]"))
+					    {  
+					        intDelBtnsCnt++;
+					        
+					    }
+				    	
+				    }
+				      
+			}  
+           	
+           	Report.Log(ReportLevel.Info, "Debug : " + intDelBtnsCnt);
+           	    
+           	for (int i= intDelBtnsCnt; i >0; --i)
+           	{
+           		if(Validate.Exists(repo.DOM.AccountSetup.txtFromIPAddress1Info.AbsolutePath, repo.DOM.AccountSetup.txtFromIPAddress1Info.SearchTimeout, "{0}", new Validate.Options(false,ReportLevel.Info)))
+           		  ClickbtnDelete(i);
+           	}
+           	    
+           	    
+           	
+           	Validate.Exists(repo.DOM.AccountSetup.btnContinueInfo);
+           	repo.DOM.AccountSetup.btnContinue.Click();
+           	
+           	Validate.Exists(repo.DOM.AccountSetup.btnApproveInfo);
+           	repo.DOM.AccountSetup.btnApprove.Click();
+           	Validate.Exists(repo.DOM.AccountSetup.btnContinuePg3of4Info);
+           	repo.DOM.AccountSetup.btnContinuePg3of4.Click();
+           	Validate.Exists(repo.DOM.AccountSetup.btnContinuePg4of4Info);
+           	repo.DOM.AccountSetup.btnContinuePg4of4.Click();
+           	
+           	Validate.Exists(repo.DOM.HeaderAdminLogin.btnLogoutInfo);
+           	repo.DOM.HeaderAdminLogin.btnLogout.MoveTo();
+           	repo.DOM.HeaderAdminLogin.btnLogout.Click(Location.Center);
+           	Validate.Exists(repo.DOM.HeaderAdminLogin.btnLoginInfo);
+        	
+        }
+ 
+    	void ClickbtnDelete(int intbutrow)
+    	{
+    		foreach (TrTag row in repo.DOM.AccountSetup.tblIPAddresses.Find("./tbody/tr"))
+				{
+           	    	    TdTag rowNameCell = row.FindSingle("./td[1]");
+           	    	    if(rowNameCell.InnerText.Trim()==intbutrow.ToString())
+					    {
+	           	    		TdTag btncell = row.FindSingle("./td[5]");
+	           	    		InputTag btnDelete = btncell.FindSingle("./input");
+							btnDelete.MoveTo();
+							btnDelete.Click();
+	           	    	}
+           	    }
+    	}
+    	
+    	
+        //method to clear cache
+     	public  void ClearBrowserCache()
+        {
+        	switch(AppSettings.Browser)
+        	{
+        		case BrowserProduct.IE:
+				{
+        				repo.ClearCacheIE.Windows_Interne.ButtonTools.Click();
+        				repo.ClearCacheIE.ContextMenuIexplore.MenuItemInternet_options.MoveTo();
+        				repo.ClearCacheIE.ContextMenuIexplore.MenuItemInternet_options.Click();
+        				Validate.Exists(repo.ClearCacheIE.FormInternet_Options.TabPageGeneralInfo);
+        				repo.ClearCacheIE.FormInternet_Options.TabPageGeneral.Click();
+        				repo.ClearCacheIE.FormInternet_Options.ButtonDelete.MoveTo();
+        				repo.ClearCacheIE.FormInternet_Options.ButtonDelete.Click();
+        				Validate.Exists(repo.ClearCacheIE.FormDelete_Browsing_History.CheckBoxPreserve_Favorites_websiInfo);
+        				Validate.Attribute(repo.ClearCacheIE.FormDelete_Browsing_History.CheckBoxPreserve_Favorites_websiInfo,"Checked",false);
+        				
+        				repo.ClearCacheIE.FormDelete_Browsing_History.ButtonDelete.MoveTo();
+        				repo.ClearCacheIE.FormDelete_Browsing_History.ButtonDelete.Click();
+        				Delay.Milliseconds(3000);
+        				repo.ClearCacheIE.FormInternet_Options.ButtonOK.MoveTo();
+        				repo.ClearCacheIE.FormInternet_Options.ButtonOK.Click();
+        				
+        		break;
+        		}
+        		case BrowserProduct.Firefox:
+        		{
+        				repo.ClearCacheFirefox.Firefox.ButtonFirefox.Click();
+        				repo.ClearCacheFirefox.Firefox.MenuItemOptions.MoveTo();
+        				repo.ClearCacheFirefox.Firefox.MenuItemOptions.Click();
+        				Validate.Exists(repo.ClearCacheFirefox.FormOptions.ListItemGeneralInfo);
+        				repo.ClearCacheFirefox.FormOptions.ListItemGeneral.MoveTo();
+        				repo.ClearCacheFirefox.FormOptions.ListItemGeneral.Click();
+        				repo.ClearCacheFirefox.FormOptions.ListItemAdvanced.MoveTo();
+        				repo.ClearCacheFirefox.FormOptions.ListItemAdvanced.Click();
+        				repo.ClearCacheFirefox.FormOptions.ContainerAdvanced.TabPageGeneral.MoveTo();
+        				repo.ClearCacheFirefox.FormOptions.ContainerAdvanced.TabPageGeneral.Click();
+        				repo.ClearCacheFirefox.FormOptions.ContainerAdvanced.TabPageNetwork.MoveTo();
+        				repo.ClearCacheFirefox.FormOptions.ContainerAdvanced.TabPageNetwork.Click();
+        				repo.ClearCacheFirefox.FormOptions.ContainerAdvanced.ButtonClear_Now.MoveTo();
+        				repo.ClearCacheFirefox.FormOptions.ContainerAdvanced.ButtonClear_Now.Click();
+        				Delay.Milliseconds(3000);
+        				Validate.Exists(repo.ClearCacheFirefox.FormOptions.ContainerAdvanced.ButtonClear_Now1Info);
+        				repo.ClearCacheFirefox.FormOptions.ContainerAdvanced.ButtonClear_Now1.Click();
+        				Delay.Milliseconds(3000);
+        				repo.ClearCacheFirefox.FormOptions.ButtonOK.MoveTo();
+        				repo.ClearCacheFirefox.FormOptions.ButtonOK.Click();
+        				
+        		break;		
+        		}
+        		case BrowserProduct.Chrome:
+        		{
+        				Report.Log(ReportLevel.Error, String.Format("Code not implemented yet: {0}", AppSettings.Browser.ToString()));	
+        		break;		
+        		}
+        		case BrowserProduct.Safari:
+        		{
+        				if(Validate.NotExists(repo.ClearCacheSafari.Safari.MenuItemEditInfo.AbsolutePath, repo.ClearCacheSafari.Safari.MenuItemEditInfo.SearchTimeout, "{0}", new Validate.Options(false,ReportLevel.Warn)))
+        				 {
+        				   	repo.ClearCacheSafari.Safari.DisplaySettings.Click(Location.CenterRight);
+        				   	Validate.Exists(repo.ClearCacheSafari.ContextMenuSafari.MenuItemShow_Menu_BarInfo);
+        				   	repo.ClearCacheSafari.ContextMenuSafari.MenuItemShow_Menu_Bar.MoveTo();
+        				   	repo.ClearCacheSafari.ContextMenuSafari.MenuItemShow_Menu_Bar.Click();
+        				  }
+        				   
+        				   repo.ClearCacheSafari.Safari.MenuItemEdit.MoveTo();
+        				   repo.ClearCacheSafari.Safari.MenuItemEdit.Click();
+        				   repo.ClearCacheSafari.ContextMenuSafari.MenuItemReset_Safari.MoveTo();
+        				   repo.ClearCacheSafari.ContextMenuSafari.MenuItemReset_Safari.Click();
+        				  
+        				   if(Validate.Attribute(repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxClear_historyInfo, "Checked", "False" ,"{2}",  false))
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxClear_history.Checked = true;
+        				   if(Validate.Attribute(repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxReset_Top_SitesInfo, "Checked", "False" ,"{2}", false))
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxReset_Top_Sites.Checked = true;
+        				   if(Validate.Attribute(repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_all_webpage_previInfo, "Checked", "False" ,"{2}", false))
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_all_webpage_previ.Checked = true;
+        				   if(Validate.Attribute(repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_the_DownloadsInfo, "Checked", "False" ,"{2}", false))
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_the_Downloads.Checked = true;
+        				   if(Validate.Attribute(repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_all_website_iconsInfo, "Checked", "False" ,"{2}", false))
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_all_website_icons.Checked = true;
+        				   if(Validate.Attribute(repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_saved_names_and_pInfo, "Checked", "False" ,"{2}", false))
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_saved_names_and_p.Checked = true;
+        				   if(Validate.Attribute(repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_other_AutoFill_foInfo, "Checked", "False" ,"{2}", false))
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_other_AutoFill_fo.Checked = true;
+        				   if(Validate.Attribute(repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxClose_all_Safari_windowsInfo, "Checked", "False" ,"{2}", false))
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxClose_all_Safari_windows.Checked = true;
+        				   if(Validate.Attribute(repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxReset_all_location_warniInfo, "Checked", "False" ,"{2}", false))
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxReset_all_location_warni.Checked = true;
+        				   if(Validate.Attribute(repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_all_website_dataInfo, "Checked", "False" ,"{2}", false))
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.CheckBoxRemove_all_website_data.Checked = true;
+        				   
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.ButtonReset.MoveTo();
+        				    repo.ClearCacheSafari.FormSafari.ContainerClient.ButtonReset.Click();
+        				    Delay.Milliseconds(2000);
+        		break;		
+        		}
+        		default:
+        		throw new Exception(String.Format("Code not implemented yet: {0}", AppSettings.Browser.ToString()));
+        	}
         }
         
         

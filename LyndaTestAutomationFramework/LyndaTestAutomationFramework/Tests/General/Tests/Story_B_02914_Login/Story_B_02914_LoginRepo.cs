@@ -21,10 +21,14 @@ namespace Tests.General.Tests.Story_B_02914_Login
     /// <summary>
     /// The class representing the Story_B_02914_LoginRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("b0017254-ce36-4185-917b-250caa8ff04b")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("b0017254-ce36-4185-917b-250caa8ff04b")]
     public partial class Story_B_02914_LoginRepo : RepoGenBaseFolder
     {
         static Story_B_02914_LoginRepo instance = new Story_B_02914_LoginRepo();
+        Story_B_02914_LoginRepoFolders.FormAppFolder _form;
+        Story_B_02914_LoginRepoFolders.DOMAppFolder _dom;
+        Story_B_02914_LoginRepoFolders.WebDocumentSSL_ErrorAppFolder _webdocumentssl_error;
 
         /// <summary>
         /// Gets the singleton class instance representing the Story_B_02914_LoginRepo element repository.
@@ -35,15 +39,11 @@ namespace Tests.General.Tests.Story_B_02914_Login
             get { return instance; }
         }
 
-        Story_B_02914_LoginRepoFolders.FormAppFolder _form;
-        Story_B_02914_LoginRepoFolders.DOMAppFolder _dom;
-        Story_B_02914_LoginRepoFolders.WebDocumentSSL_ErrorAppFolder _webdocumentssl_error;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public Story_B_02914_LoginRepo() 
-            : base("Story_B_02914_LoginRepo", "", null, 30000, false)
+            : base("Story_B_02914_LoginRepo", "", null, 30000, false, "b0017254-ce36-4185-917b-250caa8ff04b", "./RepositoryImages\\Story_B_02914_LoginRepob0017254.rximgres")
         {
             _form = new Story_B_02914_LoginRepoFolders.FormAppFolder(this);
             _dom = new Story_B_02914_LoginRepoFolders.DOMAppFolder(this);
@@ -85,6 +85,7 @@ namespace Tests.General.Tests.Story_B_02914_Login
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class Story_B_02914_LoginRepoFolders
     {
         /// <summary>
@@ -100,7 +101,7 @@ namespace Tests.General.Tests.Story_B_02914_Login
             /// Creates a new Form  folder.
             /// </summary>
             public FormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Form", "/form[@class='IEFrame']", parentFolder, 30000, true, "77812b61-8c32-44da-946d-ebfadb4bcaaf")
+                    base("Form", "/form[@class='IEFrame']", parentFolder, 30000, true, "77812b61-8c32-44da-946d-ebfadb4bcaaf", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "77812b61-8c32-44da-946d-ebfadb4bcaaf");
                 _navigateeditboxInfo = new RepoItemInfo(this, "NavigateEditBox", "element[@class='WorkerW']/container/element[@controlid='41477']/text[@class='Edit']", 30000, null, "122d31d8-85c8-4e64-a222-eb8d267ab3fd");
@@ -172,7 +173,7 @@ namespace Tests.General.Tests.Story_B_02914_Login
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom[@browsername='IE']", parentFolder, 30000, false, "f6b5a24e-b67a-4ca9-a9e5-2ebae2201c52")
+                    base("DOM", "/dom[@browsername='IE']", parentFolder, 30000, false, "f6b5a24e-b67a-4ca9-a9e5-2ebae2201c52", "")
             {
                 _logincontrola = new Story_B_02914_LoginRepoFolders.LoginControlAFolder(this);
                 _logincontrolb = new Story_B_02914_LoginRepoFolders.LoginControlBFolder(this);
@@ -312,7 +313,7 @@ namespace Tests.General.Tests.Story_B_02914_Login
             /// Creates a new LoginControlA  folder.
             /// </summary>
             public LoginControlAFolder(RepoGenBaseFolder parentFolder) :
-                    base("LoginControlA", "body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table", parentFolder, 30000, false, "10918efe-ad5b-411a-877c-89e66ea48236")
+                    base("LoginControlA", "body/div[@id='fancybox-wrap']/div/div[@id='fancybox-inner']/iframe/body/div/form/table", parentFolder, 30000, false, "10918efe-ad5b-411a-877c-89e66ea48236", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "10918efe-ad5b-411a-877c-89e66ea48236");
                 _usernameInfo = new RepoItemInfo(this, "Username", "tbody/tr[2]/td/input[@id='username']", 30000, null, "091e01b8-b796-447c-b9c3-8613d7835414");
@@ -432,7 +433,7 @@ namespace Tests.General.Tests.Story_B_02914_Login
             /// Creates a new LoginControlB  folder.
             /// </summary>
             public LoginControlBFolder(RepoGenBaseFolder parentFolder) :
-                    base("LoginControlB", "body/form/div[@id='ctl00_sectionHeader']/div/div[4]/div/div[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_Panel1']/table", parentFolder, 30000, false, "978e7906-e0ff-4978-9e4b-0cc2b72d6e9b")
+                    base("LoginControlB", "body/form/div[@id='ctl00_sectionHeader']/div/div[4]/div/div[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_Panel1']/table", parentFolder, 30000, false, "978e7906-e0ff-4978-9e4b-0cc2b72d6e9b", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "978e7906-e0ff-4978-9e4b-0cc2b72d6e9b");
                 _usernameInfo = new RepoItemInfo(this, "Username", "tbody/tr[1]/td[2]/input[@id='ctl00_UcHeaderGiftSubscriptions1_UcHeaderLogin1_txtUsername']", 30000, null, "50a8c184-3b15-46a6-b2be-35f820eed48a");
@@ -550,7 +551,7 @@ namespace Tests.General.Tests.Story_B_02914_Login
             /// Creates a new WebDocumentSSL_Error  folder.
             /// </summary>
             public WebDocumentSSL_ErrorAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("WebDocumentSSL_Error", "/dom[@domain='admin.release.lynda.com']", parentFolder, 30000, false, "35797398-195c-4ef5-8004-21aaa2b48181")
+                    base("WebDocumentSSL_Error", "/dom[@domain='admin.release.lynda.com']", parentFolder, 30000, false, "35797398-195c-4ef5-8004-21aaa2b48181", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "35797398-195c-4ef5-8004-21aaa2b48181");
                 _divtagrightcolumnmenuInfo = new RepoItemInfo(this, "DivTagRightColumnMenu", "body/div[@id='pageContainer']/div[@id='rightColumn']/div[@id='rightColumnMenu']", 30000, null, "6b8ea48d-ea49-4a3c-9d1e-91183042e2ab");

@@ -21,10 +21,12 @@ namespace ConsumerPagesMain.RegStep1
     /// <summary>
     /// The class representing the OTLSubscriptionPlanRegPage1Repo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("6fc9bb01-badc-48e5-9e77-61be3084ff39")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("6fc9bb01-badc-48e5-9e77-61be3084ff39")]
     public partial class OTLSubscriptionPlanRegPage1Repo : RepoGenBaseFolder
     {
         static OTLSubscriptionPlanRegPage1Repo instance = new OTLSubscriptionPlanRegPage1Repo();
+        OTLSubscriptionPlanRegPage1RepoFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the OTLSubscriptionPlanRegPage1Repo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesMain.RegStep1
             get { return instance; }
         }
 
-        OTLSubscriptionPlanRegPage1RepoFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public OTLSubscriptionPlanRegPage1Repo() 
-            : base("OTLSubscriptionPlanRegPage1Repo", "", null, 30000, false)
+            : base("OTLSubscriptionPlanRegPage1Repo", "", null, 30000, false, "6fc9bb01-badc-48e5-9e77-61be3084ff39", "./RepositoryImages\\OTLSubscriptionPlanRegPage1Repo6fc9bb01.rximgres")
         {
             _dom = new OTLSubscriptionPlanRegPage1RepoFolders.DOMAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesMain.RegStep1
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class OTLSubscriptionPlanRegPage1RepoFolders
     {
         /// <summary>
@@ -85,7 +86,7 @@ namespace ConsumerPagesMain.RegStep1
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "89597d3b-6b55-44a6-aaa5-914eedf6a09b")
+                    base("DOM", "/dom", parentFolder, 30000, false, "89597d3b-6b55-44a6-aaa5-914eedf6a09b", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "89597d3b-6b55-44a6-aaa5-914eedf6a09b");
                 _radiomonthlyinputInfo = new RepoItemInfo(this, "RadioMonthlyInput", "body/div[1]/div[2]/form/table/tbody/tr[@id='row1001']/td[1]/input[@id='subChoice_1001']", 30000, null, "9b64126d-d036-4a88-a436-11fa2b2edeaa");

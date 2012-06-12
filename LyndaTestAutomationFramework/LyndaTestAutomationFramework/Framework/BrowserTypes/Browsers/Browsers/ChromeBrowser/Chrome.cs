@@ -21,10 +21,13 @@ namespace Browsers.ChromeBrowser
     /// <summary>
     /// The class representing the Chrome element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("cf5abfec-c870-4e9f-abf2-d23d77ae15ed")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("cf5abfec-c870-4e9f-abf2-d23d77ae15ed")]
     public partial class Chrome : RepoGenBaseFolder
     {
         static Chrome instance = new Chrome();
+        ChromeFolders.DOMAppFolder _dom;
+        ChromeFolders.FormAppFolder _form;
 
         /// <summary>
         /// Gets the singleton class instance representing the Chrome element repository.
@@ -35,14 +38,11 @@ namespace Browsers.ChromeBrowser
             get { return instance; }
         }
 
-        ChromeFolders.DOMAppFolder _dom;
-        ChromeFolders.FormAppFolder _form;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public Chrome() 
-            : base("Chrome", "", null, 30000, false)
+            : base("Chrome", "", null, 30000, false, "cf5abfec-c870-4e9f-abf2-d23d77ae15ed", "./RepositoryImages\\Chromecf5abfec.rximgres")
         {
             _dom = new ChromeFolders.DOMAppFolder(this);
             _form = new ChromeFolders.FormAppFolder(this);
@@ -74,6 +74,7 @@ namespace Browsers.ChromeBrowser
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class ChromeFolders
     {
         /// <summary>
@@ -89,7 +90,7 @@ namespace Browsers.ChromeBrowser
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "f5109710-53f2-48e2-b62b-d7ae1fcd5a4a")
+                    base("DOM", "/dom", parentFolder, 30000, false, "f5109710-53f2-48e2-b62b-d7ae1fcd5a4a", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "f5109710-53f2-48e2-b62b-d7ae1fcd5a4a");
                 _webpageInfo = new RepoItemInfo(this, "WebPage", "", 30000, null, "a04f60ff-c95b-4a04-ae99-3e7cd867c805");
@@ -159,7 +160,7 @@ namespace Browsers.ChromeBrowser
             /// Creates a new Form  folder.
             /// </summary>
             public FormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Form", "/form[@class='Chrome_WidgetWin_1']", parentFolder, 30000, true, "170f8a50-6744-42ec-a564-43e5d976d113")
+                    base("Form", "/form[@class='Chrome_WidgetWin_1']", parentFolder, 30000, true, "170f8a50-6744-42ec-a564-43e5d976d113", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "170f8a50-6744-42ec-a564-43e5d976d113");
                 _navigateeditboxInfo = new RepoItemInfo(this, "NavigateEditBox", "element[@class='Chrome_OmniboxView']/text", 30000, null, "02c46c0c-e463-4e08-99b2-af7709493f70");
