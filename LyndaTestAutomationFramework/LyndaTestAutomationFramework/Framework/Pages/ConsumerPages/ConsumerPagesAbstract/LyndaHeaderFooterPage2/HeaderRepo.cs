@@ -21,10 +21,12 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage2
     /// <summary>
     /// The class representing the HeaderRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("dfc29b64-9e01-4cde-a284-750ba31c725c")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("dfc29b64-9e01-4cde-a284-750ba31c725c")]
     public partial class HeaderRepo : RepoGenBaseFolder
     {
         static HeaderRepo instance = new HeaderRepo();
+        HeaderRepoFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the HeaderRepo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage2
             get { return instance; }
         }
 
-        HeaderRepoFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public HeaderRepo() 
-            : base("HeaderRepo", "", null, 30000, false)
+            : base("HeaderRepo", "", null, 30000, false, "dfc29b64-9e01-4cde-a284-750ba31c725c", "./RepositoryImages\\HeaderRepodfc29b64.rximgres")
         {
             _dom = new HeaderRepoFolders.DOMAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage2
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class HeaderRepoFolders
     {
         /// <summary>
@@ -78,7 +79,7 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage2
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "c7784686-0c44-4c60-af7f-7d76554d7088")
+                    base("DOM", "/dom", parentFolder, 30000, false, "c7784686-0c44-4c60-af7f-7d76554d7088", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "c7784686-0c44-4c60-af7f-7d76554d7088");
                 _lyndaimageInfo = new RepoItemInfo(this, "LyndaImage", "body/div[1]/div[@id='topHeader']/div[3]/div[2]/a/img[@title='lynda.com']", 30000, null, "9b080be3-8a5a-4ee4-9666-998e8cb121cf");

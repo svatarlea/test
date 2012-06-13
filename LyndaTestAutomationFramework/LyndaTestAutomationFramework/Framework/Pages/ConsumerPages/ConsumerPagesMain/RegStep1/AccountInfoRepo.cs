@@ -21,10 +21,12 @@ namespace ConsumerPagesMain.RegStep1
     /// <summary>
     /// The class representing the AccountInfoRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("5ac99b8c-7c79-4aab-b72e-c7919e4b02bf")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("5ac99b8c-7c79-4aab-b72e-c7919e4b02bf")]
     public partial class AccountInfoRepo : RepoGenBaseFolder
     {
         static AccountInfoRepo instance = new AccountInfoRepo();
+        AccountInfoRepoFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the AccountInfoRepo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesMain.RegStep1
             get { return instance; }
         }
 
-        AccountInfoRepoFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public AccountInfoRepo() 
-            : base("AccountInfoRepo", "", null, 30000, false)
+            : base("AccountInfoRepo", "", null, 30000, false, "5ac99b8c-7c79-4aab-b72e-c7919e4b02bf", "./RepositoryImages\\AccountInfoRepo5ac99b8c.rximgres")
         {
             _dom = new AccountInfoRepoFolders.DOMAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesMain.RegStep1
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class AccountInfoRepoFolders
     {
         /// <summary>
@@ -86,7 +87,7 @@ namespace ConsumerPagesMain.RegStep1
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "89597d3b-6b55-44a6-aaa5-914eedf6a09b")
+                    base("DOM", "/dom", parentFolder, 30000, false, "89597d3b-6b55-44a6-aaa5-914eedf6a09b", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "89597d3b-6b55-44a6-aaa5-914eedf6a09b");
                 _firstnameinputInfo = new RepoItemInfo(this, "FirstNameInput", "body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[1]/td[2]/input[@id='txtFirstName']", 30000, null, "565efb7d-4da0-4681-9ed3-475bef29f1f6");

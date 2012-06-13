@@ -21,10 +21,12 @@ namespace ConsumerPagesMain.RegStep2
     /// <summary>
     /// The class representing the OTLSubscriptionPlanRegPage2Repo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("92731d2c-63e1-4c11-8eb8-783f70d52232")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("92731d2c-63e1-4c11-8eb8-783f70d52232")]
     public partial class OTLSubscriptionPlanRegPage2Repo : RepoGenBaseFolder
     {
         static OTLSubscriptionPlanRegPage2Repo instance = new OTLSubscriptionPlanRegPage2Repo();
+        OTLSubscriptionPlanRegPage2RepoFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the OTLSubscriptionPlanRegPage2Repo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesMain.RegStep2
             get { return instance; }
         }
 
-        OTLSubscriptionPlanRegPage2RepoFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public OTLSubscriptionPlanRegPage2Repo() 
-            : base("OTLSubscriptionPlanRegPage2Repo", "", null, 30000, false)
+            : base("OTLSubscriptionPlanRegPage2Repo", "", null, 30000, false, "92731d2c-63e1-4c11-8eb8-783f70d52232", "./RepositoryImages\\OTLSubscriptionPlanRegPage2Repo92731d2c.rximgres")
         {
             _dom = new OTLSubscriptionPlanRegPage2RepoFolders.DOMAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesMain.RegStep2
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class OTLSubscriptionPlanRegPage2RepoFolders
     {
         /// <summary>
@@ -79,7 +80,7 @@ namespace ConsumerPagesMain.RegStep2
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "bb48ffcf-865f-4327-93a5-0c9d1910efbf")
+                    base("DOM", "/dom", parentFolder, 30000, false, "bb48ffcf-865f-4327-93a5-0c9d1910efbf", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "bb48ffcf-865f-4327-93a5-0c9d1910efbf");
                 _plannameInfo = new RepoItemInfo(this, "PlanName", "body/div[1]/div[2]/form/table/tbody/tr[2]/td[@class=null()]", 30000, null, "783b1314-ba93-4b47-863c-9d0df31a770b");

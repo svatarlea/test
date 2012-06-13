@@ -1,18 +1,18 @@
-﻿<repository name="OTLSubscriptionPlanRegPage2Repo" id="35861c9f-3f1c-4c48-aa33-d0f4cd6c3028" rxversion="3.2.3.16825">
-  <codegen classname="OTLSubscriptionPlanRegPage2Repo" namespace="ConsumerPagesMain.RegStep2"/>
-  <rootfolder name="Root" id="92731d2c-63e1-4c11-8eb8-783f70d52232" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="DOM" id="bb48ffcf-865f-4327-93a5-0c9d1910efbf" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="PlanName" id="783b1314-ba93-4b47-863c-9d0df31a770b" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/table/tbody/tr[2]/td[@class=null()]]]>
-      </item>
-      <item name="PlanPrice" id="baaf37b3-a4ab-451f-8523-2bd1b5a741fc" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/table/tbody/tr[2]/td[@class='price']]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="OTLSubscriptionPlanRegPage2Repo" id="35861c9f-3f1c-4c48-aa33-d0f4cd6c3028" rxversion="3.3.0.17843">
+	<codegen classname="OTLSubscriptionPlanRegPage2Repo" namespace="ConsumerPagesMain.RegStep2" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<rootfolder name="Root" id="92731d2c-63e1-4c11-8eb8-783f70d52232" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="DOM" id="bb48ffcf-865f-4327-93a5-0c9d1910efbf" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="PlanName" id="783b1314-ba93-4b47-863c-9d0df31a770b" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
+				/dom/body/div[1]/div[2]/form/table/tbody/tr[2]/td[@class=null()]
+			</item>
+			<item name="PlanPrice" id="baaf37b3-a4ab-451f-8523-2bd1b5a741fc" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
+				/dom/body/div[1]/div[2]/form/table/tbody/tr[2]/td[@class='price']
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -24,10 +24,9 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

@@ -1,15 +1,15 @@
-﻿<repository name="Safari" id="223313f9-f148-4504-a562-c8d1988dbdf9" rxversion="3.2.3.16825">
-  <codegen classname="Safari" namespace="Browsers.SafariBrowser"/>
-  <rootfolder name="Root" id="a4f3ebd6-bd34-4818-936b-6d0a7e3de81a" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="DOM" id="a68b881b-e066-4a8b-b4f6-fc6e32cc5639" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="WebPage" id="1b645d8d-7e90-46bd-87cd-1b358636d6dd" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
-        <![CDATA[/dom]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="Safari" id="223313f9-f148-4504-a562-c8d1988dbdf9" rxversion="3.3.0.17843">
+	<codegen classname="Safari" namespace="Browsers.SafariBrowser" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
+	<rootfolder name="Root" id="a4f3ebd6-bd34-4818-936b-6d0a7e3de81a" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="DOM" id="a68b881b-e066-4a8b-b4f6-fc6e32cc5639" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="WebPage" id="1b645d8d-7e90-46bd-87cd-1b358636d6dd" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
+				/dom
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -21,23 +21,23 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <appfolder name="Form" id="fcbfcd12-4c7a-41b5-bab5-a2655acc0c5a" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="NavigateEditBox" id="a78f072c-0064-439f-8667-e420d8b1964b" searchtimeout="30000ms" capname="unknown" addcaps="unknown,nativewindow">
-        <![CDATA[/form[@processname='Safari']/element[@class='RootElement']/element[@class='SafariEdit']]]>
-      </item>
-      <item name="NavigateEditBoxText" id="f1d72670-b050-4fc3-9812-964248d29b7c" searchtimeout="30000ms" capname="text" addcaps="text,accessible">
-        <![CDATA[/form[@processname='Safari']/element[@class='RootElement']/element[@class='SafariEdit']/element/element/container/container/container/text[@accessiblerole='Text']]]>
-      </item>
-      <item name="TitleBar" id="3e5c24ba-69c1-44d5-bc45-f2550b6f764f" searchtimeout="30000ms" capname="titlebar" addcaps="titlebar,accessible">
-        <![CDATA[/form[@processname='Safari']/titlebar[@accessiblerole='TitleBar']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@processname='Safari']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="Form" id="fcbfcd12-4c7a-41b5-bab5-a2655acc0c5a" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="NavigateEditBox" id="a78f072c-0064-439f-8667-e420d8b1964b" searchtimeout="30000ms" capname="unknown" addcaps="unknown,nativewindow">
+				/form[@processname='Safari']/element[@class='RootElement']/element[@class='SafariEdit']
+			</item>
+			<item name="NavigateEditBoxText" id="f1d72670-b050-4fc3-9812-964248d29b7c" searchtimeout="30000ms" capname="text" addcaps="text,accessible">
+				/form[@processname='Safari']/element[@class='RootElement']/element[@class='SafariEdit']/element/element/container/container/container/text[@accessiblerole='Text']
+			</item>
+			<item name="TitleBar" id="3e5c24ba-69c1-44d5-bc45-f2550b6f764f" searchtimeout="30000ms" capname="titlebar" addcaps="titlebar,accessible">
+				/form[@processname='Safari']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<basepath>
+				/form[@processname='Safari']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAALwSURBVDhPhVN/LNRhHC4/WmYsq62YOLVcGqE1
 zrQVM9TmZAnHbYa1MsrIV0YsiZPf3HVnduHcN+4ncsQ5l3Pn6vyopUmcKbVVk/IP1dZqT99Z2jTl
 3Z692/N+Ps/7fj7P+9m2bZPl6el52MPD40xwcPDezc635KKjo+MlEolZpVIp1Wo1l8PhEEwm88iW
@@ -53,10 +53,9 @@ NIdC/RJOSl/jvPY9QmQLGDF/QEZaKmxsbNL+OGFtbe0ZGxe7ounvQ93QS5xVzoDRtYiAziWEkYsI
 QAAsLCziN/2Ntra2N/wZjB+82mqMj5owOWPGtHkOT8dNqKooh5ePzxcrK6uL/50JS0vLIHv7XR1e
 R73fMSMjv7HY7K9BoWFvnJydRVSpx7YcqN8B26ndkYIvBW8Ke/6V+AtB/J4MTcSjqgAAAABJRU5E
 rkJggg==
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

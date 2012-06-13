@@ -21,10 +21,12 @@ namespace ConsumerPagesMain.RegConfirm
     /// <summary>
     /// The class representing the RegConfirmRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("5baa0d35-4aae-4139-b0a7-6b75cda9eec7")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("5baa0d35-4aae-4139-b0a7-6b75cda9eec7")]
     public partial class RegConfirmRepo : RepoGenBaseFolder
     {
         static RegConfirmRepo instance = new RegConfirmRepo();
+        RegConfirmRepoFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the RegConfirmRepo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesMain.RegConfirm
             get { return instance; }
         }
 
-        RegConfirmRepoFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public RegConfirmRepo() 
-            : base("RegConfirmRepo", "", null, 30000, false)
+            : base("RegConfirmRepo", "", null, 30000, false, "5baa0d35-4aae-4139-b0a7-6b75cda9eec7", "./RepositoryImages\\RegConfirmRepo5baa0d35.rximgres")
         {
             _dom = new RegConfirmRepoFolders.DOMAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesMain.RegConfirm
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class RegConfirmRepoFolders
     {
         /// <summary>
@@ -78,7 +79,7 @@ namespace ConsumerPagesMain.RegConfirm
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0")
+                    base("DOM", "/dom", parentFolder, 30000, false, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0");
                 _printreceiptspanInfo = new RepoItemInfo(this, "PrintReceiptSpan", "body/div[4]/div[3]/a/span[@innertext='print receipt']", 30000, null, "5ee21bea-e92f-4d23-9c05-066bee7a1d07");

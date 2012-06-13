@@ -14,6 +14,7 @@ using Lynda.Test.Advanced.Utilities.WebPages;
 using Lynda.Test.Browsers;
 
 using Tests.General.Utilities.Forms;
+using Tests.AppConfig;
 
 namespace Tests.General.Tests.ConsumerReg
 {
@@ -41,18 +42,15 @@ namespace Tests.General.Tests.ConsumerReg
         /// that will in turn invoke this method.</remarks>
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 50;
-            Keyboard.DefaultKeyPressTime = 25;
+            Mouse.DefaultMoveTime = AppSettings.MouseDefaultMoveTime;
+            Keyboard.DefaultKeyPressTime = AppSettings.KeyboardDefaultKeyPressTime;
             Delay.SpeedFactor = 1.0;
 
-            const string domain = "integration.lynda.com";
             const string navigateTo = "/";
             
-            const BrowserProduct browserProduct = BrowserProduct.IE;
-
-            //Open browser and navigate to url
-            string url = string.Format("http://{0}{1}", domain, navigateTo.ToString());
-            Browser browser = new Browser(browserProduct, url);
+            //Open browser and navigate to url           
+            string url = string.Format("http://{0}{1}", AppSettings.Domain, navigateTo.ToString());
+            Browser browser = new Browser(AppSettings.Browser, url);
 
             //Wait for page to load
             Validate.Exists(repo.MemberPage.SubscribeLink);

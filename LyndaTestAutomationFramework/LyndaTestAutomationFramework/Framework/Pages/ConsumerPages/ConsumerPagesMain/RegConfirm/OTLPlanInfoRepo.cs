@@ -21,10 +21,12 @@ namespace ConsumerPagesMain.RegConfirm
     /// <summary>
     /// The class representing the OTLPlanInfoRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("3fcad546-cef4-4d24-8ca7-7a3a4062a81e")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("3fcad546-cef4-4d24-8ca7-7a3a4062a81e")]
     public partial class OTLPlanInfoRepo : RepoGenBaseFolder
     {
         static OTLPlanInfoRepo instance = new OTLPlanInfoRepo();
+        OTLPlanInfoRepoFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the OTLPlanInfoRepo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesMain.RegConfirm
             get { return instance; }
         }
 
-        OTLPlanInfoRepoFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public OTLPlanInfoRepo() 
-            : base("OTLPlanInfoRepo", "", null, 30000, false)
+            : base("OTLPlanInfoRepo", "", null, 30000, false, "3fcad546-cef4-4d24-8ca7-7a3a4062a81e", "./RepositoryImages\\OTLPlanInfoRepo3fcad546.rximgres")
         {
             _dom = new OTLPlanInfoRepoFolders.DOMAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesMain.RegConfirm
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class OTLPlanInfoRepoFolders
     {
         /// <summary>
@@ -79,7 +80,7 @@ namespace ConsumerPagesMain.RegConfirm
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "2a88a4ef-6070-4d81-974a-6de75b7a1141")
+                    base("DOM", "/dom", parentFolder, 30000, false, "2a88a4ef-6070-4d81-974a-6de75b7a1141", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "2a88a4ef-6070-4d81-974a-6de75b7a1141");
                 _otlplanpriceInfo = new RepoItemInfo(this, "OTLPlanPrice", "body/div[4]/table/tbody/tr[2]/td[@class='price']", 30000, null, "83152af2-e5a5-4ad6-a55a-860c228637be");

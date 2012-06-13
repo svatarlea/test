@@ -21,10 +21,13 @@ namespace ConsumerPagesMain.RegStep2
     /// <summary>
     /// The class representing the BillingInformationRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("d11d1e90-a524-406b-aa69-266b05cccaf4")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("d11d1e90-a524-406b-aa69-266b05cccaf4")]
     public partial class BillingInformationRepo : RepoGenBaseFolder
     {
         static BillingInformationRepo instance = new BillingInformationRepo();
+        BillingInformationRepoFolders.DOMAppFolder _dom;
+        BillingInformationRepoFolders.StateContainerAppFolder _statecontainer;
 
         /// <summary>
         /// Gets the singleton class instance representing the BillingInformationRepo element repository.
@@ -35,14 +38,11 @@ namespace ConsumerPagesMain.RegStep2
             get { return instance; }
         }
 
-        BillingInformationRepoFolders.DOMAppFolder _dom;
-        BillingInformationRepoFolders.StateContainerAppFolder _statecontainer;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public BillingInformationRepo() 
-            : base("BillingInformationRepo", "", null, 30000, false)
+            : base("BillingInformationRepo", "", null, 30000, false, "d11d1e90-a524-406b-aa69-266b05cccaf4", "./RepositoryImages\\BillingInformationRepod11d1e90.rximgres")
         {
             _dom = new BillingInformationRepoFolders.DOMAppFolder(this);
             _statecontainer = new BillingInformationRepoFolders.StateContainerAppFolder(this);
@@ -74,6 +74,7 @@ namespace ConsumerPagesMain.RegStep2
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class BillingInformationRepoFolders
     {
         /// <summary>
@@ -100,7 +101,7 @@ namespace ConsumerPagesMain.RegStep2
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0")
+                    base("DOM", "/dom", parentFolder, 30000, false, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0");
                 _firstnameinputInfo = new RepoItemInfo(this, "FirstNameInput", "body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[1]/td[@innertext=' *']/input[@id='txtFirstName']", 30000, null, "d5f7a92d-12b5-4074-a8db-8fcdeef766d4");
@@ -443,7 +444,7 @@ namespace ConsumerPagesMain.RegStep2
             /// Creates a new StateContainer  folder.
             /// </summary>
             public StateContainerAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("StateContainer", "/container[@caption='selectbox']", parentFolder, 30000, true, "0c689279-1d54-4cd2-afe0-f504a90ad766")
+                    base("StateContainer", "/container[@caption='selectbox']", parentFolder, 30000, true, "0c689279-1d54-4cd2-afe0-f504a90ad766", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "0c689279-1d54-4cd2-afe0-f504a90ad766");
                 _statelistitemInfo = new RepoItemInfo(this, "StateListitem", "listitem", 30000, null, "8446ba18-d980-4558-81d7-ebe9092bc1fa");

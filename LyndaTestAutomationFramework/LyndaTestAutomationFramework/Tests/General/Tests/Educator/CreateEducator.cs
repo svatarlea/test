@@ -139,6 +139,7 @@ namespace Tests.General.Tests.Educator
 						if (Validate.Exists(repo.CurrentlyLoggedInDialogFirefox.HelloTextInfo.AbsolutePath.ToString(), repo.CurrentlyLoggedInDialogFirefox.HelloTextInfo.SearchTimeout,
 				        	"{0}", new Validate.Options(false,ReportLevel.Info)))
 						{
+							Validate.Exists(repo.CurrentlyLoggedInDialogFirefox.OKButton);
 							repo.CurrentlyLoggedInDialogFirefox.OKButton.Click();
 						}
 						else
@@ -199,6 +200,7 @@ namespace Tests.General.Tests.Educator
 			email = string.Format("edu{0}",email);
 			username = string.Format("edu{0}",username);
 			repo.DOM.AdminCSRegStep1Page.EmailInput.PressKeys(email);
+			Report.Info(string.Format("Entering username:{0}",username));
 			repo.DOM.AdminCSRegStep1Page.UsernameInput.PressKeys(username);
 			repo.DOM.AdminCSRegStep1Page.PasswordInput.PressKeys(password);
 			repo.DOM.AdminCSRegStep1Page.PasswordConfirmInput.PressKeys(password);
@@ -334,7 +336,7 @@ namespace Tests.General.Tests.Educator
 			repo.DOM.MemberHomePage.LoginUsername.PressKeys(username);
 			repo.DOM.MemberHomePage.LoginPassword.PressKeys(password);
 			repo.DOM.MemberHomePage.LoginButton.Click();
-			Duration waitForAcceptButtonNotExistTime = new Duration(4000);
+			Duration waitForAcceptButtonNotExistTime = new Duration(10000);
 			switch (AppSettings.Browser)
 			{
 				case BrowserProduct.IE:
@@ -359,6 +361,12 @@ namespace Tests.General.Tests.Educator
 						repo.TermsAndConditionsPageSafari.IAcceptButton.EnsureVisible();
 						repo.TermsAndConditionsPageSafari.IAcceptButton.Click();
 						repo.TermsAndConditionsPageSafari.IAcceptButtonInfo.WaitForNotExists(waitForAcceptButtonNotExistTime);
+						//Due to issue with Ranorex with Safari in identifying the DOM at this point,
+						//navigate to member home page a couple of times so the DOM is visible.
+						for (int i=0; i<=1; i++)
+						{
+							browser.Navigate(string.Format("{0}", AppSettings.Domain));
+						}
 						break;
 					}
 				case BrowserProduct.Chrome:
@@ -372,8 +380,9 @@ namespace Tests.General.Tests.Educator
 				default:
 					throw new Exception(String.Format("Code not implemented yet: {0}", AppSettings.Browser.ToString()));
 			}
-
-			//Verify now on home page with the log out link, then click it.
+			//Verify now on member home page; "My courses" shows.
+			Validate.Exists(repo.DOM.MemberHomePage.MyCoursesText);
+			//Click log out link.
 			Validate.Exists(repo.DOM.MemberHomePage.LogoutLink);
 			repo.DOM.MemberHomePage.LogoutLink.Click();
 			//Verify logout complete; check for login link

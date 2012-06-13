@@ -15,7 +15,7 @@ namespace Lynda.Test.Advanced.Utilities.WebPages
     /// Represents methods to handle a web page select tag.
     /// </summary>
 	public static class SelectTagUI
-    {		
+    {								
 		/// <summary>
         /// Clicks or sets a web page select tag option.
         /// </summary>
@@ -29,7 +29,7 @@ namespace Lynda.Test.Advanced.Utilities.WebPages
             string selectTagValueForOption = null;
             switch (domWebDocument.BrowserName)
             {
-            	case "Chrome":
+            	case "Chrome":          		
             	case "Safari":
             	case "Mozilla":
         			//Using Chrome and Safari select tag with mouse problematic. So select using keyboard.

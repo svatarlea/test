@@ -1,33 +1,33 @@
-﻿<repository name="IE" id="545b1474-1808-4033-9ff6-15291080dad2" rxversion="3.2.3.16825">
-  <codegen classname="IE" namespace="Browsers.IEBrowser"/>
-  <rootfolder name="Root" id="20d858bd-54d3-486c-a6fb-bdd9ab5b016f" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="Form" id="5bf07cb5-9605-4764-a654-0ea04402878e" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="NavigateEditBox" id="a8920685-d014-4a34-a858-940fde7c7f51" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
-        <![CDATA[/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@controlid='41477']/text[@class='Edit']]]>
-      </item>
-      <item name="ButtonBack" id="a5fe8c42-8d25-4fa6-9709-76dd3778cf01" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
-        <![CDATA[/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@class='TravelBand']/toolbar/button[@text='Back']]]>
-      </item>
-      <item name="ButtonForward" id="6c9db020-7f88-4d88-a10b-b11afba914d6" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
-        <![CDATA[/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@class='TravelBand']/toolbar/button[@text='Forward']]]>
-      </item>
-      <item name="MenuFile" id="fb631b50-307a-4ae5-95cf-424e49d7bbfa" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
-        <![CDATA[/form[@class='IEFrame']/element[@class='Frame Tab']/element/element/container/toolbar/button[@text='&File']]]>
-      </item>
-      <item name="MenuHelp" id="4905f66e-5d6a-4417-9b59-5cdd0ef6342e" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
-        <![CDATA[/form[@class='IEFrame']/element[@class='Frame Tab']/element/element/container/toolbar/button[@text='&Help']]]>
-      </item>
-      <item name="TitleBar" id="f38bb932-37cb-4f20-837e-59fc2c8ca211" searchtimeout="30000ms" capname="unknown" addcaps="unknown,nativewindow">
-        <![CDATA[/form[@class='IEFrame']/element[@class='Client Caption']]]>
-      </item>
-      <item name="Window" id="781b97a2-b1da-4cf6-b702-779b4d5bbbb0" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow">
-        <![CDATA[/form[@class='IEFrame']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form[@class='IEFrame']]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="IE" id="545b1474-1808-4033-9ff6-15291080dad2" rxversion="3.3.0.17843">
+	<codegen classname="IE" namespace="Browsers.IEBrowser" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
+	<rootfolder name="Root" id="20d858bd-54d3-486c-a6fb-bdd9ab5b016f" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="Form" id="5bf07cb5-9605-4764-a654-0ea04402878e" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="NavigateEditBox" id="a8920685-d014-4a34-a858-940fde7c7f51" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+				/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@controlid='41477']/text[@class='Edit']
+			</item>
+			<item name="ButtonBack" id="a5fe8c42-8d25-4fa6-9709-76dd3778cf01" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
+				/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@class='TravelBand']/toolbar/button[@text='Back']
+			</item>
+			<item name="ButtonForward" id="6c9db020-7f88-4d88-a10b-b11afba914d6" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
+				/form[@class='IEFrame']/element[@class='WorkerW']/container/element[@class='TravelBand']/toolbar/button[@text='Forward']
+			</item>
+			<item name="MenuFile" id="fb631b50-307a-4ae5-95cf-424e49d7bbfa" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
+				/form[@class='IEFrame']/element[@class='Frame Tab']/element/element/container/toolbar/button[@text='&amp;File']
+			</item>
+			<item name="MenuHelp" id="4905f66e-5d6a-4417-9b59-5cdd0ef6342e" searchtimeout="30000ms" capname="button" addcaps="button,nativeitem,checkable">
+				/form[@class='IEFrame']/element[@class='Frame Tab']/element/element/container/toolbar/button[@text='&amp;Help']
+			</item>
+			<item name="TitleBar" id="f38bb932-37cb-4f20-837e-59fc2c8ca211" searchtimeout="30000ms" capname="unknown" addcaps="unknown,nativewindow">
+				/form[@class='IEFrame']/element[@class='Client Caption']
+			</item>
+			<item name="Window" id="781b97a2-b1da-4cf6-b702-779b4d5bbbb0" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow">
+				/form[@class='IEFrame']
+			</item>
+			<basepath>
+				/form[@class='IEFrame']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANvSURBVDhPjVJrTJNnGH3KMIo/EGOytdyK6Nw0
 66ZE4j2yuBhdFu+AgW1ssaXQBooQlXmrly0DL2tn461okctUlgX1U5sC9VLBu4IK1q/Qdi2XFoqg
 RaH9vq/9npWSGG/JfJLz402ec95zzvsCfMAgIod9IhCwZPge9nGIzn+PU5QBMCZA5byXzpMTY6ds
@@ -45,17 +45,17 @@ kVkYTH3kxc9/19s/+X7vxKC5wTufrqJ0nAupAJNipBXLBMr6tuSGbjrX6sXCDhoL7RTKrBSua2Vw
 sb7HFyfXOWLE6h9fJcsEGOWr5dTI+DBVDhCSkPcHL/C+VYsO1rsWn7NQSZef4tfV//rm7LvqjstU
 X+emKqa+XQvHWAwJdiWstx6G5XYNLJDLl4RHizSJXKF6TeTPR6Tcn1QZH6crF41PLhr3Nvk/Befc
 dnTypcQAAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <appfolder name="DOM" id="ea9444db-7ca7-495f-9dfa-16ec93263cc5" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="WebPage" id="38bef810-ac24-4f45-9da5-f630e98feebc" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
-        <![CDATA[/dom]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="DOM" id="ea9444db-7ca7-495f-9dfa-16ec93263cc5" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="WebPage" id="38bef810-ac24-4f45-9da5-f630e98feebc" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
+				/dom
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -67,10 +67,9 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

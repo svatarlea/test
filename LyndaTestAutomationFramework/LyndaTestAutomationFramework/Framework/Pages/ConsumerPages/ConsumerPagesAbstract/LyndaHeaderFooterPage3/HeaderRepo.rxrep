@@ -1,15 +1,15 @@
-﻿<repository name="HeaderRepo" id="49bab088-7346-405a-969d-c12205af5ab7" rxversion="3.2.3.16825">
-  <codegen classname="HeaderRepo" namespace="ConsumerPagesAbstract.LyndaHeaderFooterPage3"/>
-  <rootfolder name="Root" id="1baeb281-0703-4776-ad8e-348e00fa0997" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="DOM" id="6683bd48-49ee-4212-8ab2-938e09fb7f27" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="LogOut" id="066500ea-d342-40f5-b455-413fb027b51d" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
-        <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[3]/a/strong[@innertext='log out']]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="HeaderRepo" id="49bab088-7346-405a-969d-c12205af5ab7" rxversion="3.3.0.17843">
+	<codegen classname="HeaderRepo" namespace="ConsumerPagesAbstract.LyndaHeaderFooterPage3" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesAbstract"/>
+	<rootfolder name="Root" id="1baeb281-0703-4776-ad8e-348e00fa0997" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="DOM" id="6683bd48-49ee-4212-8ab2-938e09fb7f27" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="LogOut" id="066500ea-d342-40f5-b455-413fb027b51d" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
+				/dom/body/div[@id='eyebrow']/div[1]/ul/li[3]/a/strong[@innertext='log out']
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -21,10 +21,9 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

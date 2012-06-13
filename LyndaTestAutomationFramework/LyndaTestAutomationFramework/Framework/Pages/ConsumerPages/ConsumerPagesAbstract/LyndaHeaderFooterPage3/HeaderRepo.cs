@@ -21,10 +21,12 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage3
     /// <summary>
     /// The class representing the HeaderRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("1baeb281-0703-4776-ad8e-348e00fa0997")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("1baeb281-0703-4776-ad8e-348e00fa0997")]
     public partial class HeaderRepo : RepoGenBaseFolder
     {
         static HeaderRepo instance = new HeaderRepo();
+        HeaderRepoFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the HeaderRepo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage3
             get { return instance; }
         }
 
-        HeaderRepoFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public HeaderRepo() 
-            : base("HeaderRepo", "", null, 30000, false)
+            : base("HeaderRepo", "", null, 30000, false, "1baeb281-0703-4776-ad8e-348e00fa0997", "./RepositoryImages\\HeaderRepo1baeb281.rximgres")
         {
             _dom = new HeaderRepoFolders.DOMAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage3
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class HeaderRepoFolders
     {
         /// <summary>
@@ -78,7 +79,7 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage3
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "6683bd48-49ee-4212-8ab2-938e09fb7f27")
+                    base("DOM", "/dom", parentFolder, 30000, false, "6683bd48-49ee-4212-8ab2-938e09fb7f27", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "6683bd48-49ee-4212-8ab2-938e09fb7f27");
                 _logoutInfo = new RepoItemInfo(this, "LogOut", "body/div[@id='eyebrow']/div[1]/ul/li[3]/a/strong[@innertext='log out']", 30000, null, "066500ea-d342-40f5-b455-413fb027b51d");

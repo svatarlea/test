@@ -1,17 +1,17 @@
-﻿<repository name="HomePageMemberRepo" id="bfc87119-05b2-4370-8a68-13183b2c3491" rxversion="3.2.3.16825">
-  <codegen classname="HomePageMemberRepo" namespace="ConsumerPagesMain.HomePageMember"/>
-  <rootfolder name="Root" id="d4e8c92d-ca76-47f6-b467-d5e40e210536" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="DOMbase" id="00ec6c98-0b85-45c1-935d-b288fd0dc41c" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <folder name="LatestReleaseTabs" id="cd1bb5e7-57e4-4763-b036-ae2fccefc5b9" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="Audio" id="7977011c-0206-4eef-9b84-1662a0177602" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-          <![CDATA[/dom/body/div[5]/div[2]/.//div[@id='latestNewReleases']/div[@id='latestNewReleasesContent']/div[@id='latestFilter']/a[@innertext='Audio']]]>
-        </item>
-      </folder>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="HomePageMemberRepo" id="bfc87119-05b2-4370-8a68-13183b2c3491" rxversion="3.3.0.17843">
+	<codegen classname="HomePageMemberRepo" namespace="ConsumerPagesMain.HomePageMember" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<rootfolder name="Root" id="d4e8c92d-ca76-47f6-b467-d5e40e210536" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="DOMbase" id="00ec6c98-0b85-45c1-935d-b288fd0dc41c" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<folder name="LatestReleaseTabs" id="cd1bb5e7-57e4-4763-b036-ae2fccefc5b9" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="Audio" id="7977011c-0206-4eef-9b84-1662a0177602" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+					/dom/body/div[5]/div[2]/.//div[@id='latestNewReleases']/div[@id='latestNewReleasesContent']/div[@id='latestFilter']/a[@innertext='Audio']
+				</item>
+			</folder>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -23,10 +23,9 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

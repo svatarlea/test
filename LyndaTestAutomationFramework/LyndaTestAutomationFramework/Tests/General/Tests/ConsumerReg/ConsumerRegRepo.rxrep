@@ -1,15 +1,15 @@
-﻿<repository name="ConsumerRegRepo" id="3a7797e6-9535-4e0d-b260-0e1480059b10" rxversion="3.2.3.16825">
-  <codegen classname="ConsumerRegRepo" namespace="Tests.General.Tests.ConsumerReg"/>
-  <rootfolder name="Root" id="c01e8542-268c-458b-a9b3-363285851754" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="Form" id="77812b61-8c32-44da-946d-ebfadb4bcaaf" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
-      <item name="NavigateEditBox" id="122d31d8-85c8-4e64-a222-eb8d267ab3fd" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
-        <![CDATA[/form/element[@class='WorkerW']/container/element[@controlid='41477']/text[@class='Edit']]]>
-      </item>
-      <basepath>
-        <![CDATA[/form]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="ConsumerRegRepo" id="3a7797e6-9535-4e0d-b260-0e1480059b10" rxversion="3.3.0.17843">
+	<codegen classname="ConsumerRegRepo" namespace="Tests.General.Tests.ConsumerReg" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<rootfolder name="Root" id="c01e8542-268c-458b-a9b3-363285851754" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="Form" id="77812b61-8c32-44da-946d-ebfadb4bcaaf" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
+			<item name="NavigateEditBox" id="122d31d8-85c8-4e64-a222-eb8d267ab3fd" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
+				/form/element[@class='WorkerW']/container/element[@controlid='41477']/text[@class='Edit']
+			</item>
+			<basepath>
+				/form
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAANvSURBVDhPjVJrTJNnGH3KMIo/EGOytdyK6Nw0
 66ZE4j2yuBhdFu+AgW1ssaXQBooQlXmrly0DL2tn461okctUlgX1U5sC9VLBu4IK1q/Qdi2XFoqg
 RaH9vq/9npWSGG/JfJLz402ec95zzvsCfMAgIod9IhCwZPge9nGIzn+PU5QBMCZA5byXzpMTY6ds
@@ -27,17 +27,17 @@ kVkYTH3kxc9/19s/+X7vxKC5wTufrqJ0nAupAJNipBXLBMr6tuSGbjrX6sXCDhoL7RTKrBSua2Vw
 sb7HFyfXOWLE6h9fJcsEGOWr5dTI+DBVDhCSkPcHL/C+VYsO1rsWn7NQSZef4tfV//rm7LvqjstU
 X+emKqa+XQvHWAwJdiWstx6G5XYNLJDLl4RHizSJXKF6TeTPR6Tcn1QZH6crF41PLhr3Nvk/Befc
 dnTypcQAAAAASUVORK5CYII=
-      </icon>
-    </appfolder>
-    <appfolder name="DOM" id="68370cb0-1a1c-445e-ac5d-9cbc309c9932" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="WebPage" id="6ef9fa63-c5d7-4561-89b4-db4ce0f4490b" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
-        <![CDATA[/dom]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+			</icon>
+		</appfolder>
+		<appfolder name="DOM" id="68370cb0-1a1c-445e-ac5d-9cbc309c9932" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="WebPage" id="6ef9fa63-c5d7-4561-89b4-db4ce0f4490b" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">
+				/dom
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -49,128 +49,127 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <folder name="MemberPage" id="a0cedce3-e83e-4a04-aed7-c772fef1be1d" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="SubscribeLink" id="050b24e0-9350-46d6-96b9-e8eda1c76539" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-        <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[2]/a[@innertext='subscribe']]]>
-      </item>
-    </folder>
-    <folder name="RegStep1Page" id="fbbf1378-7a58-406e-863a-dbdd7d7ee89f" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="MonthlyPremiumRadio" id="5d1e1737-2497-4545-a68d-c32c0696ce87" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/table/tbody/tr[@id='row1008']/td[1]/input[@id='subChoice_1008']]]>
-      </item>
-      <folder name="AccountInfo" id="498a0179-b963-46f6-a852-8d522864984e" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
-        <item name="FirstNameInput" id="567d76c5-e82b-4a7a-987f-15a9cfe51187" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[1]/td[2]/input[@id='txtFirstName']]]>
-        </item>
-        <item name="LastNameInput" id="e3374481-2b70-40bd-b8b2-da078aa565da" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[2]/td[2]/input[@id='txtLastName']]]>
-        </item>
-        <item name="EmailInput" id="d34196b3-91bc-4085-88ad-ecb28efddf1a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[3]/td[2]/input[@id='txtEmail']]]>
-        </item>
-        <item name="UserNameInput" id="04bb78a5-77bb-4900-92c4-2d18886addfd" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[4]/td[2]/input[@id='txtUserName']]]>
-        </item>
-        <item name="PasswordInput" id="8d8a6f64-c81e-43fd-afae-ab74002e3517" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[5]/td[2]/input[@id='txtPassword']]]>
-        </item>
-        <item name="PasswordConfirmInput" id="1d3e931a-db8b-4d04-962d-10a0ecdb6f45" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[6]/td[2]/input[@id='txtPasswordConfirm']]]>
-        </item>
-        <basepath>
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table]]>
-        </basepath>
-      </folder>
-      <folder name="SignMeUp" id="1c075f4c-a48d-4e78-adbb-f2e8fadad3a9" searchtimeout="30000ms" capname="trtag" addcaps="unknown,webelement,trtag" isrooted="True" usecache="False">
-        <item name="MonthlyCheckBox" id="c66a9efd-3aaa-44f1-aac7-78cbacbf86e4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews876492']]]>
-        </item>
-        <item name="NewReleasesCheckBox" id="492ab509-0d47-40d3-b023-8a1d5b950230" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews876494']]]>
-        </item>
-        <item name="SpecialCheckBox" id="8ef39148-c71e-4dcb-b0f7-8f5d638e5b2e" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews2192942']]]>
-        </item>
-        <basepath>
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]]]>
-        </basepath>
-      </folder>
-      <item name="ContinueButton" id="4b876dec-f6fd-4f27-859d-3b4610956b08" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[8]/td[2]/input[@id='btnContinue']]]>
-      </item>
-    </folder>
-    <folder name="RegStep2Page" id="44b91685-e20e-4c7e-848d-fe9a0957bbe9" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <folder name="BillingInfo" id="2e165d89-7c66-45e0-b6f9-62e0f8c916cd" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="CompanyInput" id="8542a85a-2a34-4f47-9103-d964f56fc9f0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[3]/td[2]/input[@id='txtOrgName']]]>
-        </item>
-        <item name="AddressInput" id="664f4b3a-5bd8-4120-91bf-c4a367f22fc5" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[4]/td[@innertext=' *']/input[@id='txtAddress1']]]>
-        </item>
-        <item name="AptSuiteInput" id="91e0aa5c-17c3-4836-bb16-900a97ea5f97" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[5]/td[2]/input[@id='txtAddress2']]]>
-        </item>
-        <item name="CityInput" id="b132ada7-c0e9-4f8b-8145-67aa9dad972e" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[6]/td[@innertext=' *']/input[@id='txtCity']]]>
-        </item>
-        <item name="StateSelect" id="b68d2dea-2271-4448-8c2c-ba96c41806e3" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[7]/td[2]/select[@id='drpState']]]>
-        </item>
-        <item name="PhoneInput" id="01619d12-3c5e-4fb2-b970-0caa824da1f4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[10]/td[@innertext=' *']/input[@id='txtPhone']]]>
-        </item>
-        <item name="ZipInput" id="e2fc4ef2-6eba-48b0-ae54-25ac0048f4b7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[8]/td[2]/input[@id='txtZIP']]]>
-        </item>
-        <item name="CountrySelect" id="d95fcca3-32f1-487d-ab7a-d03926636a9f" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[9]/td[2]/select[@id='drpCountry']]]>
-        </item>
-        <item name="HowHearSelect" id="9699108e-623d-401d-b5cf-7686e89ec905" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[12]/td[2]/select[@id='drpHearAboutUs']]]>
-        </item>
-      </folder>
-      <folder name="PaymentInfo" id="9c752930-ab22-456f-bc3c-f005e369100d" searchtimeout="0ms" capname="unknown" isrooted="False">
-        <item name="PaymentTypeSelect" id="9d955540-defb-4cb3-904c-676c318aa03d" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[1]/td[@innertext~'^\ \ \ \ \*\ \ \ \ \ \ ']/select[@id='drpPaymentType']]]>
-        </item>
-        <item name="CardTypeSelect" id="fe4c0963-613b-4920-92be-b4d3c5e68821" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCType']/td[2]/select[@id='drpCreditCardType']]]>
-        </item>
-        <item name="CardNumberInput" id="aa3db019-fd05-413a-98c9-2181cd2d5117" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCNumber']/td[2]/input[@id='txtCreditCardNumber']]]>
-        </item>
-        <item name="NameOnCardInput" id="61e11514-bda9-41b6-b041-9b837dfb6d6d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCName']/td[2]/input[@id='txtNameOnCard']]]>
-        </item>
-        <item name="CardSecurityCodeInput" id="93614f70-14dc-482d-ba5b-ba146470c748" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCSecurityCode']/td[2]/input[@id='txtCreditCardSecurityCode']]]>
-        </item>
-        <item name="CardExpirationMonthSelect" id="d9f4fb36-f3e3-43be-892f-d62c9e8846bd" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCExpirationDate']/td[@innertext='/']/select[@id='drpExpirationMonth']]]>
-        </item>
-        <item name="CardExpirationYearSelect" id="2d846a30-d3e1-4baa-8210-95c46fbe4fd8" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-          <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCExpirationDate']/td[@innertext='/']/select[@id='drpExpirationYear']]]>
-        </item>
-      </folder>
-      <item name="IHaveReadCheckBox" id="c19c92cf-01f3-4aab-9ff3-b61de8b5325a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/div/p/input[@id='cbxTC']]]>
-      </item>
-      <item name="SubmitButton" id="b35bbb8a-2a34-48d4-b293-b1fea1890768" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/div/input[@id='btnSubmit']]]>
-      </item>
-    </folder>
-    <folder name="RegConfirmPage" id="ec36dfd4-5128-4edd-9022-24b4b099a3b4" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="LogoutLink" id="f4ca70e3-7b3c-4137-b92c-998078fc30c2" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
-        <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[3]/a/strong[@innertext='log out']]]>
-      </item>
-      <item name="PrintReceiptButton" id="8677b82b-9d8c-4eb5-b48f-72c6afe48589" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
-        <![CDATA[/dom/body/div[4]/div[3]/a/span[@innertext='print receipt']]]>
-      </item>
-    </folder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<folder name="MemberPage" id="a0cedce3-e83e-4a04-aed7-c772fef1be1d" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="SubscribeLink" id="050b24e0-9350-46d6-96b9-e8eda1c76539" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+				/dom/body/div[@id='eyebrow']/div[1]/ul/li[2]/a[@innertext='subscribe']
+			</item>
+		</folder>
+		<folder name="RegStep1Page" id="fbbf1378-7a58-406e-863a-dbdd7d7ee89f" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="MonthlyPremiumRadio" id="5d1e1737-2497-4545-a68d-c32c0696ce87" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/table/tbody/tr[@id='row1008']/td[1]/input[@id='subChoice_1008']
+			</item>
+			<folder name="AccountInfo" id="498a0179-b963-46f6-a852-8d522864984e" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+				<item name="FirstNameInput" id="567d76c5-e82b-4a7a-987f-15a9cfe51187" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[1]/td[2]/input[@id='txtFirstName']
+				</item>
+				<item name="LastNameInput" id="e3374481-2b70-40bd-b8b2-da078aa565da" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[2]/td[2]/input[@id='txtLastName']
+				</item>
+				<item name="EmailInput" id="d34196b3-91bc-4085-88ad-ecb28efddf1a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[3]/td[2]/input[@id='txtEmail']
+				</item>
+				<item name="UserNameInput" id="04bb78a5-77bb-4900-92c4-2d18886addfd" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[4]/td[2]/input[@id='txtUserName']
+				</item>
+				<item name="PasswordInput" id="8d8a6f64-c81e-43fd-afae-ab74002e3517" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[5]/td[2]/input[@id='txtPassword']
+				</item>
+				<item name="PasswordConfirmInput" id="1d3e931a-db8b-4d04-962d-10a0ecdb6f45" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[6]/td[2]/input[@id='txtPasswordConfirm']
+				</item>
+				<basepath>
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table
+				</basepath>
+			</folder>
+			<folder name="SignMeUp" id="1c075f4c-a48d-4e78-adbb-f2e8fadad3a9" searchtimeout="30000ms" capname="trtag" addcaps="unknown,webelement,trtag" isrooted="True" usecache="False">
+				<item name="MonthlyCheckBox" id="c66a9efd-3aaa-44f1-aac7-78cbacbf86e4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews876492']
+				</item>
+				<item name="NewReleasesCheckBox" id="492ab509-0d47-40d3-b023-8a1d5b950230" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews876494']
+				</item>
+				<item name="SpecialCheckBox" id="8ef39148-c71e-4dcb-b0f7-8f5d638e5b2e" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]/td[2]/input[@id='Checkbox1' and @name='cknews2192942']
+				</item>
+				<basepath>
+					/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]
+				</basepath>
+			</folder>
+			<item name="ContinueButton" id="4b876dec-f6fd-4f27-859d-3b4610956b08" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[8]/td[2]/input[@id='btnContinue']
+			</item>
+		</folder>
+		<folder name="RegStep2Page" id="44b91685-e20e-4c7e-848d-fe9a0957bbe9" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<folder name="BillingInfo" id="2e165d89-7c66-45e0-b6f9-62e0f8c916cd" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="CompanyInput" id="8542a85a-2a34-4f47-9103-d964f56fc9f0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[3]/td[2]/input[@id='txtOrgName']
+				</item>
+				<item name="AddressInput" id="664f4b3a-5bd8-4120-91bf-c4a367f22fc5" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[4]/td[@innertext=' *']/input[@id='txtAddress1']
+				</item>
+				<item name="AptSuiteInput" id="91e0aa5c-17c3-4836-bb16-900a97ea5f97" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[5]/td[2]/input[@id='txtAddress2']
+				</item>
+				<item name="CityInput" id="b132ada7-c0e9-4f8b-8145-67aa9dad972e" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[6]/td[@innertext=' *']/input[@id='txtCity']
+				</item>
+				<item name="StateSelect" id="b68d2dea-2271-4448-8c2c-ba96c41806e3" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[7]/td[2]/select[@id='drpState']
+				</item>
+				<item name="PhoneInput" id="01619d12-3c5e-4fb2-b970-0caa824da1f4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[10]/td[@innertext=' *']/input[@id='txtPhone']
+				</item>
+				<item name="ZipInput" id="e2fc4ef2-6eba-48b0-ae54-25ac0048f4b7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[8]/td[2]/input[@id='txtZIP']
+				</item>
+				<item name="CountrySelect" id="d95fcca3-32f1-487d-ab7a-d03926636a9f" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[9]/td[2]/select[@id='drpCountry']
+				</item>
+				<item name="HowHearSelect" id="9699108e-623d-401d-b5cf-7686e89ec905" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[12]/td[2]/select[@id='drpHearAboutUs']
+				</item>
+			</folder>
+			<folder name="PaymentInfo" id="9c752930-ab22-456f-bc3c-f005e369100d" searchtimeout="0ms" capname="unknown" isrooted="False">
+				<item name="PaymentTypeSelect" id="9d955540-defb-4cb3-904c-676c318aa03d" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[1]/td[@innertext~'^\ \ \ \ \*\ \ \ \ \ \ ']/select[@id='drpPaymentType']
+				</item>
+				<item name="CardTypeSelect" id="fe4c0963-613b-4920-92be-b4d3c5e68821" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCType']/td[2]/select[@id='drpCreditCardType']
+				</item>
+				<item name="CardNumberInput" id="aa3db019-fd05-413a-98c9-2181cd2d5117" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCNumber']/td[2]/input[@id='txtCreditCardNumber']
+				</item>
+				<item name="NameOnCardInput" id="61e11514-bda9-41b6-b041-9b837dfb6d6d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCName']/td[2]/input[@id='txtNameOnCard']
+				</item>
+				<item name="CardSecurityCodeInput" id="93614f70-14dc-482d-ba5b-ba146470c748" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+					/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCSecurityCode']/td[2]/input[@id='txtCreditCardSecurityCode']
+				</item>
+				<item name="CardExpirationMonthSelect" id="d9f4fb36-f3e3-43be-892f-d62c9e8846bd" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCExpirationDate']/td[@innertext='/']/select[@id='drpExpirationMonth']
+				</item>
+				<item name="CardExpirationYearSelect" id="2d846a30-d3e1-4baa-8210-95c46fbe4fd8" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+					/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCExpirationDate']/td[@innertext='/']/select[@id='drpExpirationYear']
+				</item>
+			</folder>
+			<item name="IHaveReadCheckBox" id="c19c92cf-01f3-4aab-9ff3-b61de8b5325a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/div/p/input[@id='cbxTC']
+			</item>
+			<item name="SubmitButton" id="b35bbb8a-2a34-48d4-b293-b1fea1890768" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/div/input[@id='btnSubmit']
+			</item>
+		</folder>
+		<folder name="RegConfirmPage" id="ec36dfd4-5128-4edd-9022-24b4b099a3b4" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="LogoutLink" id="f4ca70e3-7b3c-4137-b92c-998078fc30c2" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">
+				/dom/body/div[@id='eyebrow']/div[1]/ul/li[3]/a/strong[@innertext='log out']
+			</item>
+			<item name="PrintReceiptButton" id="8677b82b-9d8c-4eb5-b48f-72c6afe48589" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">
+				/dom/body/div[4]/div[3]/a/span[@innertext='print receipt']
+			</item>
+		</folder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

@@ -19,7 +19,7 @@
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -44,59 +44,35 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <FileAlignment>4096</FileAlignment>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x64' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
-    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Ranorex.Core\3.2.3.16825__b798506b574ebc9a\Ranorex.Core.dll</HintPath>
-      <id>997a43c5-7305-465e-a82f-a6082e4c1e28</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)">
-      <id>ef3ad0f9-40ae-479b-915c-79069c350db5</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)">
-      <id>045ff5ec-39ce-4858-986b-230dfd28650d</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)">
-      <id>d95c891c-e861-47ac-9c04-f6bd20699cab</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
-      <id>3f3b47f5-f2b4-41fd-bcf4-aa463926f1b6</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)">
-      <id>25788720-eccf-45bc-a360-2e4f20e98952</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)">
-      <id>d4fde2d7-9244-4125-86c0-84920208a94d</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)">
-      <id>3ca75a0e-c203-4d55-8d56-cae5dedd818e</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)">
-      <id>4857c297-356e-4073-9812-c415d4a6b072</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)">
-      <id>5344af26-6957-49bf-84e6-0b641e4f63f9</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)">
-      <id>1afdea18-9cd4-4965-bb74-72f3973ba44d</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)">
-      <id>bce434f7-bb5b-4c43-8eee-c099315bd759</id>
-    </Reference>
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Libs, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Libs.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
     <Reference Include="System">
-      <id>ceda362a-5ac0-4245-af44-9f7a077da384</id>
     </Reference>
     <Reference Include="System.Data">
-      <id>bf696af7-d311-4e87-8cc4-72d5c5f1b067</id>
     </Reference>
     <Reference Include="System.Drawing">
-      <id>11a3d606-0af4-4267-94cc-b336315d76da</id>
     </Reference>
     <Reference Include="System.Windows.Forms">
-      <id>7a542844-249a-441a-b683-53ae4657d8a1</id>
     </Reference>
     <Reference Include="System.Xml">
-      <id>f5a8c45d-d1d7-4e8f-a3ec-8e6195567e77</id>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +81,9 @@
     </Compile>
     <Compile Include="Browser.cs">
       <id>478e435b-7f63-410b-8056-b4b88bf16e54</id>
+    </Compile>
+    <Compile Include="BrowserSystemInfo.cs">
+      <id>617d8a47-0ade-478d-ae80-169d7d79be48</id>
     </Compile>
     <Compile Include="ChromeBrowser\Chrome.cs">
       <BoundTo>88987CFC-5E68-47F3-971B-1DE6305AA2FA</BoundTo>
@@ -167,7 +146,7 @@
     <ProjectReference Include="..\BrowsersAbstract\BrowsersAbstract.csproj">
       <Project>{9C28B488-4FFA-4570-9AA3-306E0E7B3C3C}</Project>
       <Name>BrowsersAbstract</Name>
-      <id>2e03f78b-7b6c-44bd-b58f-a910d04b75c4</id>
     </ProjectReference>
   </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
 </Project>

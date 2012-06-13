@@ -21,10 +21,12 @@ namespace ConsumerPagesMain.HomePageMember
     /// <summary>
     /// The class representing the HomePageMemberRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("d4e8c92d-ca76-47f6-b467-d5e40e210536")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("d4e8c92d-ca76-47f6-b467-d5e40e210536")]
     public partial class HomePageMemberRepo : RepoGenBaseFolder
     {
         static HomePageMemberRepo instance = new HomePageMemberRepo();
+        HomePageMemberRepoFolders.DOMbaseAppFolder _dombase;
 
         /// <summary>
         /// Gets the singleton class instance representing the HomePageMemberRepo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesMain.HomePageMember
             get { return instance; }
         }
 
-        HomePageMemberRepoFolders.DOMbaseAppFolder _dombase;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public HomePageMemberRepo() 
-            : base("HomePageMemberRepo", "", null, 30000, false)
+            : base("HomePageMemberRepo", "", null, 30000, false, "d4e8c92d-ca76-47f6-b467-d5e40e210536", "./RepositoryImages\\HomePageMemberRepod4e8c92d.rximgres")
         {
             _dombase = new HomePageMemberRepoFolders.DOMbaseAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesMain.HomePageMember
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class HomePageMemberRepoFolders
     {
         /// <summary>
@@ -78,7 +79,7 @@ namespace ConsumerPagesMain.HomePageMember
             /// Creates a new DOMbase  folder.
             /// </summary>
             public DOMbaseAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOMbase", "/dom", parentFolder, 30000, false, "00ec6c98-0b85-45c1-935d-b288fd0dc41c")
+                    base("DOMbase", "/dom", parentFolder, 30000, false, "00ec6c98-0b85-45c1-935d-b288fd0dc41c", "")
             {
                 _latestreleasetabs = new HomePageMemberRepoFolders.LatestReleaseTabsFolder(this);
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "00ec6c98-0b85-45c1-935d-b288fd0dc41c");
@@ -130,7 +131,7 @@ namespace ConsumerPagesMain.HomePageMember
             /// Creates a new LatestReleaseTabs  folder.
             /// </summary>
             public LatestReleaseTabsFolder(RepoGenBaseFolder parentFolder) :
-                    base("LatestReleaseTabs", "", parentFolder, 0, false, "cd1bb5e7-57e4-4763-b036-ae2fccefc5b9")
+                    base("LatestReleaseTabs", "", parentFolder, 0, false, "cd1bb5e7-57e4-4763-b036-ae2fccefc5b9", "")
             {
                 _audioInfo = new RepoItemInfo(this, "Audio", "body/div[5]/div[2]/.//div[@id='latestNewReleases']/div[@id='latestNewReleasesContent']/div[@id='latestFilter']/a[@innertext='Audio']", 30000, null, "7977011c-0206-4eef-9b84-1662a0177602");
             }

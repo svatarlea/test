@@ -21,10 +21,17 @@ namespace Tests.General.Tests.ConsumerReg
     /// <summary>
     /// The class representing the ConsumerRegRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("c01e8542-268c-458b-a9b3-363285851754")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("c01e8542-268c-458b-a9b3-363285851754")]
     public partial class ConsumerRegRepo : RepoGenBaseFolder
     {
         static ConsumerRegRepo instance = new ConsumerRegRepo();
+        ConsumerRegRepoFolders.FormAppFolder _form;
+        ConsumerRegRepoFolders.DOMAppFolder _dom;
+        ConsumerRegRepoFolders.MemberPageFolder _memberpage;
+        ConsumerRegRepoFolders.RegStep1PageFolder _regstep1page;
+        ConsumerRegRepoFolders.RegStep2PageFolder _regstep2page;
+        ConsumerRegRepoFolders.RegConfirmPageFolder _regconfirmpage;
 
         /// <summary>
         /// Gets the singleton class instance representing the ConsumerRegRepo element repository.
@@ -35,18 +42,11 @@ namespace Tests.General.Tests.ConsumerReg
             get { return instance; }
         }
 
-        ConsumerRegRepoFolders.FormAppFolder _form;
-        ConsumerRegRepoFolders.DOMAppFolder _dom;
-        ConsumerRegRepoFolders.MemberPageFolder _memberpage;
-        ConsumerRegRepoFolders.RegStep1PageFolder _regstep1page;
-        ConsumerRegRepoFolders.RegStep2PageFolder _regstep2page;
-        ConsumerRegRepoFolders.RegConfirmPageFolder _regconfirmpage;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public ConsumerRegRepo() 
-            : base("ConsumerRegRepo", "", null, 30000, false)
+            : base("ConsumerRegRepo", "", null, 30000, false, "c01e8542-268c-458b-a9b3-363285851754", "./RepositoryImages\\ConsumerRegRepoc01e8542.rximgres")
         {
             _form = new ConsumerRegRepoFolders.FormAppFolder(this);
             _dom = new ConsumerRegRepoFolders.DOMAppFolder(this);
@@ -118,6 +118,7 @@ namespace Tests.General.Tests.ConsumerReg
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class ConsumerRegRepoFolders
     {
         /// <summary>
@@ -133,7 +134,7 @@ namespace Tests.General.Tests.ConsumerReg
             /// Creates a new Form  folder.
             /// </summary>
             public FormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Form", "/form", parentFolder, 30000, true, "77812b61-8c32-44da-946d-ebfadb4bcaaf")
+                    base("Form", "/form", parentFolder, 30000, true, "77812b61-8c32-44da-946d-ebfadb4bcaaf", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "77812b61-8c32-44da-946d-ebfadb4bcaaf");
                 _navigateeditboxInfo = new RepoItemInfo(this, "NavigateEditBox", "element[@class='WorkerW']/container/element[@controlid='41477']/text[@class='Edit']", 30000, null, "122d31d8-85c8-4e64-a222-eb8d267ab3fd");
@@ -201,7 +202,7 @@ namespace Tests.General.Tests.ConsumerReg
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "68370cb0-1a1c-445e-ac5d-9cbc309c9932")
+                    base("DOM", "/dom", parentFolder, 30000, false, "68370cb0-1a1c-445e-ac5d-9cbc309c9932", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "68370cb0-1a1c-445e-ac5d-9cbc309c9932");
                 _webpageInfo = new RepoItemInfo(this, "WebPage", "", 30000, null, "6ef9fa63-c5d7-4561-89b4-db4ce0f4490b");
@@ -268,7 +269,7 @@ namespace Tests.General.Tests.ConsumerReg
             /// Creates a new MemberPage  folder.
             /// </summary>
             public MemberPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("MemberPage", "", parentFolder, 0, false, "a0cedce3-e83e-4a04-aed7-c772fef1be1d")
+                    base("MemberPage", "", parentFolder, 0, false, "a0cedce3-e83e-4a04-aed7-c772fef1be1d", "")
             {
                 _subscribelinkInfo = new RepoItemInfo(this, "SubscribeLink", "/dom/body/div[@id='eyebrow']/div[1]/ul/li[2]/a[@innertext='subscribe']", 30000, null, "050b24e0-9350-46d6-96b9-e8eda1c76539");
             }
@@ -313,7 +314,7 @@ namespace Tests.General.Tests.ConsumerReg
             /// Creates a new RegStep1Page  folder.
             /// </summary>
             public RegStep1PageFolder(RepoGenBaseFolder parentFolder) :
-                    base("RegStep1Page", "", parentFolder, 0, false, "fbbf1378-7a58-406e-863a-dbdd7d7ee89f")
+                    base("RegStep1Page", "", parentFolder, 0, false, "fbbf1378-7a58-406e-863a-dbdd7d7ee89f", "")
             {
                 _accountinfo = new ConsumerRegRepoFolders.AccountInfoFolder(parentFolder);
                 _signmeup = new ConsumerRegRepoFolders.SignMeUpFolder(parentFolder);
@@ -406,7 +407,7 @@ namespace Tests.General.Tests.ConsumerReg
             /// Creates a new AccountInfo  folder.
             /// </summary>
             public AccountInfoFolder(RepoGenBaseFolder parentFolder) :
-                    base("AccountInfo", "/dom/body/div[1]/div[2]/form/fieldset/div[1]/table", parentFolder, 30000, false, "498a0179-b963-46f6-a852-8d522864984e")
+                    base("AccountInfo", "/dom/body/div[1]/div[2]/form/fieldset/div[1]/table", parentFolder, 30000, false, "498a0179-b963-46f6-a852-8d522864984e", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "498a0179-b963-46f6-a852-8d522864984e");
                 _firstnameinputInfo = new RepoItemInfo(this, "FirstNameInput", "tbody/tr[1]/td[2]/input[@id='txtFirstName']", 30000, null, "567d76c5-e82b-4a7a-987f-15a9cfe51187");
@@ -601,7 +602,7 @@ namespace Tests.General.Tests.ConsumerReg
             /// Creates a new SignMeUp  folder.
             /// </summary>
             public SignMeUpFolder(RepoGenBaseFolder parentFolder) :
-                    base("SignMeUp", "/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]", parentFolder, 30000, false, "1c075f4c-a48d-4e78-adbb-f2e8fadad3a9")
+                    base("SignMeUp", "/dom/body/div[1]/div[2]/form/fieldset/div[1]/table/tbody/tr[7]", parentFolder, 30000, false, "1c075f4c-a48d-4e78-adbb-f2e8fadad3a9", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "1c075f4c-a48d-4e78-adbb-f2e8fadad3a9");
                 _monthlycheckboxInfo = new RepoItemInfo(this, "MonthlyCheckBox", "td[2]/input[@id='Checkbox1' and @name='cknews876492']", 30000, null, "c66a9efd-3aaa-44f1-aac7-78cbacbf86e4");
@@ -721,7 +722,7 @@ namespace Tests.General.Tests.ConsumerReg
             /// Creates a new RegStep2Page  folder.
             /// </summary>
             public RegStep2PageFolder(RepoGenBaseFolder parentFolder) :
-                    base("RegStep2Page", "", parentFolder, 0, false, "44b91685-e20e-4c7e-848d-fe9a0957bbe9")
+                    base("RegStep2Page", "", parentFolder, 0, false, "44b91685-e20e-4c7e-848d-fe9a0957bbe9", "")
             {
                 _billinginfo = new ConsumerRegRepoFolders.BillingInfoFolder(parentFolder);
                 _paymentinfo = new ConsumerRegRepoFolders.PaymentInfoFolder(parentFolder);
@@ -816,7 +817,7 @@ namespace Tests.General.Tests.ConsumerReg
             /// Creates a new BillingInfo  folder.
             /// </summary>
             public BillingInfoFolder(RepoGenBaseFolder parentFolder) :
-                    base("BillingInfo", "", parentFolder, 0, false, "2e165d89-7c66-45e0-b6f9-62e0f8c916cd")
+                    base("BillingInfo", "", parentFolder, 0, false, "2e165d89-7c66-45e0-b6f9-62e0f8c916cd", "")
             {
                 _companyinputInfo = new RepoItemInfo(this, "CompanyInput", "/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[3]/td[2]/input[@id='txtOrgName']", 30000, null, "8542a85a-2a34-4f47-9103-d964f56fc9f0");
                 _addressinputInfo = new RepoItemInfo(this, "AddressInput", "/dom/body/div[1]/div[2]/form/fieldset[1]/div[1]/table/tbody/tr[4]/td[@innertext=' *']/input[@id='txtAddress1']", 30000, null, "664f4b3a-5bd8-4120-91bf-c4a367f22fc5");
@@ -1064,7 +1065,7 @@ namespace Tests.General.Tests.ConsumerReg
             /// Creates a new PaymentInfo  folder.
             /// </summary>
             public PaymentInfoFolder(RepoGenBaseFolder parentFolder) :
-                    base("PaymentInfo", "", parentFolder, 0, false, "9c752930-ab22-456f-bc3c-f005e369100d")
+                    base("PaymentInfo", "", parentFolder, 0, false, "9c752930-ab22-456f-bc3c-f005e369100d", "")
             {
                 _paymenttypeselectInfo = new RepoItemInfo(this, "PaymentTypeSelect", "/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[1]/td[@innertext~'^\\ \\ \\ \\ \\*\\ \\ \\ \\ \\ \\ ']/select[@id='drpPaymentType']", 30000, null, "9d955540-defb-4cb3-904c-676c318aa03d");
                 _cardtypeselectInfo = new RepoItemInfo(this, "CardTypeSelect", "/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCType']/td[2]/select[@id='drpCreditCardType']", 30000, null, "fe4c0963-613b-4920-92be-b4d3c5e68821");
@@ -1257,7 +1258,7 @@ namespace Tests.General.Tests.ConsumerReg
             /// Creates a new RegConfirmPage  folder.
             /// </summary>
             public RegConfirmPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("RegConfirmPage", "", parentFolder, 0, false, "ec36dfd4-5128-4edd-9022-24b4b099a3b4")
+                    base("RegConfirmPage", "", parentFolder, 0, false, "ec36dfd4-5128-4edd-9022-24b4b099a3b4", "")
             {
                 _logoutlinkInfo = new RepoItemInfo(this, "LogoutLink", "/dom/body/div[@id='eyebrow']/div[1]/ul/li[3]/a/strong[@innertext='log out']", 30000, null, "f4ca70e3-7b3c-4137-b92c-998078fc30c2");
                 _printreceiptbuttonInfo = new RepoItemInfo(this, "PrintReceiptButton", "/dom/body/div[4]/div[3]/a/span[@innertext='print receipt']", 30000, null, "8677b82b-9d8c-4eb5-b48f-72c6afe48589");

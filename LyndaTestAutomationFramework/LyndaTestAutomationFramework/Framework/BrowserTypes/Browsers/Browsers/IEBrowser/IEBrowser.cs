@@ -14,15 +14,38 @@ namespace Lynda.Test.Browsers
 {
 
     /// <summary>
-    /// Represents an Internet Explorer 9 browser.
+    /// Represents an Internet Explorer browser.
     /// </summary>
     internal class IEBrowser : BrowserBasic
-    {
+    {    	    	    	
+    	/// <summary>
+        /// Version (Major version) of iexplore exe that this class supports.
+        /// </summary>
+    	static int supportedExeMajorVersion = 9;
+    	
+    	/// <summary>
+        /// Expected full directory path of iexplore exe including the exe.
+        /// </summary>
+        static string expectedExePath = null;
+        
+        static string installedExePath = null;
+        static int installedVersion = 0;  	
+
         /// <summary>
         /// IE Ranorex repository instance for this IE browser window.
         /// </summary>
         internal IE ieRepo = null;
-     
+        
+        /// <summary>
+        /// Static constructor for Lynda.Test.Browsers.IEBrowser class.
+        /// </summary>
+        static IEBrowser()
+        {
+        	expectedExePath = string.Format("{0}{1}",BrowserSystemInfo.ProgramFilesX86Path,"\\Internet Explorer\\iexplore.exe");
+			installedExePath = BrowserSystemInfo.GetInstalledExePath(expectedExePath);
+        	installedVersion = BrowserSystemInfo.GetInstalledVersion(expectedExePath);
+        }       
+       
         /// <summary>
         /// Initializes a new instance of the Lynda.Test.Browsers.IEBrowser class, opens a new IE window and navigates to
         /// the specified uri.
@@ -30,8 +53,17 @@ namespace Lynda.Test.Browsers
         /// <param name="uri">uri to navigate to in the new IE window.</param>
         /// <param name="killExisting">Kill all existing IE browser processes before opening a new IE window.</param>
         internal IEBrowser(string uri, bool killExisting)
-        {
-            ieRepo = new IE();
+        {       	       	        	
+        	if (installedExePath == null)
+        	{
+        		throw new Exception(string.Format("Internet Explorer is not installed. Expected location:{0}",expectedExePath));
+        	}
+        	if (installedVersion != supportedExeMajorVersion)
+    		{
+    			throw new Exception(string.Format("Internet Explorer version {0} ({1}) is not supported by this class. Supported version: {2}.", installedVersion, installedExePath, supportedExeMajorVersion));
+    		}
+        	
+        	ieRepo = new IE();
 
             //Kill existing browser processes before opening a new browser
             if (killExisting)
@@ -45,7 +77,33 @@ namespace Lynda.Test.Browsers
             ieRepo.Form.BasePath = new RxPath(String.Format("/form[@class='IEFrame' and @handle='{0}']", handle));
             Validate.Exists(ieRepo.Form.BasePath);
         }
-
+        
+        /// <summary>
+        /// Major part of the file version of browser exe.
+        /// Will be 0 if browser exe is not installed.
+        /// </summary>
+        internal static int InstalledVersion
+        {
+        	get{return installedVersion;}
+        }
+        
+		/// <summary>
+		/// Full directory path of installed browser exe.
+		/// Will be null if browser exe is not installed.
+		/// </summary>
+        internal static string InstalledExePath
+        {
+        	get{return installedExePath;}
+        }
+        
+        /// <summary>
+        /// Version (Major version) of iexplore exe that this class supports.
+        /// </summary>
+        internal static int SupportedExeMajorVersion
+        {
+        	get {return supportedExeMajorVersion;}
+        }
+        
         /// <summary>
         /// Get the uri from this browser window's navigation edit box.
         /// </summary>
@@ -107,7 +165,8 @@ namespace Lynda.Test.Browsers
         {
             base.Fun(ieRepo.Form.Window);
         }
-
+        
+                 
     }  
     
 }
