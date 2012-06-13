@@ -111,22 +111,22 @@
 			C:\Windows\assembly\GAC_32\Ranorex.Libs.WinForms\3.3.0.17843__b798506b574ebc9a\Ranorex.Libs.WinForms.dll
 		</reference>
 		<reference>
-			..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
-		</reference>
-		<reference>
-			Browsers.dll
-		</reference>
-		<reference>
-			WebPages.dll
-		</reference>
-		<reference>
-			ConsumerPagesMain.dll
+			PagesAbstractGeneral.dll
 		</reference>
 		<reference>
 			ConsumerPagesAbstract.dll
 		</reference>
 		<reference>
-			PagesAbstractGeneral.dll
+			ConsumerPagesMain.dll
+		</reference>
+		<reference>
+			WebPages.dll
+		</reference>
+		<reference>
+			Browsers.dll
+		</reference>
+		<reference>
+			..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
 		</reference>
 	</references>
 </testsuite>
