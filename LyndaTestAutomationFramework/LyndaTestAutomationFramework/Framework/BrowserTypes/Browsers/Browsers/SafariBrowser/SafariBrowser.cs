@@ -14,15 +14,38 @@ namespace Lynda.Test.Browsers
 {
 
     /// <summary>
-    /// Represents a Safari 5.1.4 browser.
+    /// Represents a Safari browser.
     /// </summary>
     internal class SafariBrowser : BrowserBasic
     {
         /// <summary>
+        /// Version (Major version) of safari exe that this class supports.
+        /// </summary>
+    	static int supportedExeMajorVersion = 5;
+    	
+    	/// <summary>
+        /// Expected full directory path of safari exe including the exe.
+        /// </summary>
+        static string expectedExePath = null;
+        
+        static string installedExePath = null;
+        static int installedVersion = 0;  	
+    	
+    	/// <summary>
         /// Safari Ranorex repository instance for this Safari browser window.
         /// </summary>
         internal Safari safariRepo = null;
      
+        /// <summary>
+        /// Static constructor for Lynda.Test.Browsers.SafariBrowser class.
+        /// </summary>
+        static SafariBrowser()
+        {
+        	expectedExePath = string.Format("{0}{1}",BrowserSystemInfo.ProgramFilesX86Path,"\\Safari\\safari.exe");
+			installedExePath = BrowserSystemInfo.GetInstalledExePath(expectedExePath);
+        	installedVersion = BrowserSystemInfo.GetInstalledVersion(expectedExePath);
+        }    
+        
         /// <summary>
         /// Initializes a new instance of the Lynda.Test.Browsers.SafariBrowser class, opens a new Safari window and navigates to
         /// the specified uri.
@@ -30,7 +53,16 @@ namespace Lynda.Test.Browsers
         /// <param name="uri">uri to navigate to in the new Safari window.</param>
         internal SafariBrowser(string uri, bool killExisting)
         {
-            safariRepo = new Safari();
+            if (installedExePath == null)
+        	{
+        		throw new Exception(string.Format("Safari is not installed. Expected location:{0}",expectedExePath));
+        	}
+        	if (installedVersion != supportedExeMajorVersion)
+    		{
+    			throw new Exception(string.Format("Safari version {0} ({1}) is not supported by this class. Supported version: {2}.", installedVersion, installedExePath, supportedExeMajorVersion));
+    		}
+        	
+        	safariRepo = new Safari();
 
             //Kill existing browser processes before opening a new browser.
             if (killExisting)
@@ -43,6 +75,32 @@ namespace Lynda.Test.Browsers
             //Update repository instance base path to include native window handle attribute for the form
             safariRepo.Form.BasePath = new RxPath(String.Format("/form[@processname='Safari' and @handle='{0}']", handle));
             Validate.Exists(safariRepo.Form.BasePath);
+        }
+        
+        /// <summary>
+        /// Major part of the file version of browser exe.
+        /// Will be 0 if browser exe is not installed.
+        /// </summary>
+        internal static int InstalledVersion
+        {
+        	get{return installedVersion;}
+        }
+        
+		/// <summary>
+		/// Full directory path of installed browser exe.
+		/// Will be null if browser exe is not installed.
+		/// </summary>
+        internal static string InstalledExePath
+        {
+        	get{return installedExePath;}
+        }
+        
+        /// <summary>
+        /// Version (Major version) of safari exe that this class supports.
+        /// </summary>
+        internal static int SupportedExeMajorVersion
+        {
+        	get {return supportedExeMajorVersion;}
         }
 
         /// <summary>

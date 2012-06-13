@@ -28,7 +28,13 @@ namespace Tests
         [STAThread]
         public static int Main(string[] args)
         {                    	
-        	Keyboard.Enabled = false; 
+        	const string supportedRanorexVersion = "3.3.0.17843";
+        	if (string.Compare(Ranorex.Host.Local.RanorexVersion, supportedRanorexVersion)!=0)
+        	{
+        		throw new Exception(string.Format("Ranorex version {0} not supported. Please use version {1}.",
+        		                                  Ranorex.Host.Local.RanorexVersion, supportedRanorexVersion));
+        	}
+        	Keyboard.Enabled = false;
         	Mouse.Enabled = false;
         	Keyboard.AbortKey = System.Windows.Forms.Keys.Pause;
             int error = 0;

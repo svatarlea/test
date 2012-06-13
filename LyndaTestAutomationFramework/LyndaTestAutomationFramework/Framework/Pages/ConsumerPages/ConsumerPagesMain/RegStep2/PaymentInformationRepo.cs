@@ -21,10 +21,12 @@ namespace ConsumerPagesMain.RegStep2
     /// <summary>
     /// The class representing the PaymentInformationRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("4c36a5e1-5c67-4d1c-ba57-eb2cbeea98f5")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("4c36a5e1-5c67-4d1c-ba57-eb2cbeea98f5")]
     public partial class PaymentInformationRepo : RepoGenBaseFolder
     {
         static PaymentInformationRepo instance = new PaymentInformationRepo();
+        PaymentInformationRepoFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the PaymentInformationRepo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesMain.RegStep2
             get { return instance; }
         }
 
-        PaymentInformationRepoFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public PaymentInformationRepo() 
-            : base("PaymentInformationRepo", "", null, 30000, false)
+            : base("PaymentInformationRepo", "", null, 30000, false, "4c36a5e1-5c67-4d1c-ba57-eb2cbeea98f5", "./RepositoryImages\\PaymentInformationRepo4c36a5e1.rximgres")
         {
             _dom = new PaymentInformationRepoFolders.DOMAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesMain.RegStep2
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class PaymentInformationRepoFolders
     {
         /// <summary>
@@ -85,7 +86,7 @@ namespace ConsumerPagesMain.RegStep2
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0")
+                    base("DOM", "/dom", parentFolder, 30000, false, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0");
                 _paymenttypeselectInfo = new RepoItemInfo(this, "PaymentTypeSelect", "body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[1]/td/select[@id='drpPaymentType']", 30000, null, "a20e893e-13ef-4ebe-916e-2286f8dd64fb");

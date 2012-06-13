@@ -51,95 +51,35 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
-    <Reference Include="Ranorex.Controls, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Controls.dll</HintPath>
-      <id>f08e85a6-327b-49f2-bbaa-ae35e9e25650</id>
-    </Reference>
-    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.dll</HintPath>
-      <id>35cbf64d-8537-460d-922d-41425c52470b</id>
-    </Reference>
-    <Reference Include="Ranorex.Core.Injector, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.Injector.dll</HintPath>
-      <id>c1213639-c47c-4761-b405-b71e2829c71e</id>
-    </Reference>
-    <Reference Include="Ranorex.Core.WinApi, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Core.WinApi.dll</HintPath>
-      <id>899ec292-4798-4aec-8653-946d35cef061</id>
-    </Reference>
-    <Reference Include="Ranorex.Libs, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.dll</HintPath>
-      <id>baa587aa-d9bd-490d-9f84-3ff14aeb631a</id>
-    </Reference>
-    <Reference Include="Ranorex.Libs.IeAddon3, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.IeAddon3.dll</HintPath>
-      <id>5aac4e06-2005-4303-bc98-4c12b5e17783</id>
-    </Reference>
-    <Reference Include="Ranorex.Libs.Web, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.Web.dll</HintPath>
-      <id>05e1fe9b-c41d-4cb7-bdc7-ff9fe012b878</id>
-    </Reference>
-    <Reference Include="Ranorex.Libs.WinForms, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Libs.WinForms.dll</HintPath>
-      <id>6147e32b-232d-4e3d-b3a5-825e2457d9a3</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.ChromeWeb.dll</HintPath>
-      <id>c155a387-f2da-43bd-bc63-5f3b936c7ea8</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Flex.dll</HintPath>
-      <id>5bda82ad-5fa5-45ca-8ab0-e32274bed687</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Java.dll</HintPath>
-      <id>883cac51-bf53-4a54-a0c2-054f5a7f7d6d</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.MozillaWeb.dll</HintPath>
-      <id>fe71abc0-15df-4798-9478-4a44c1b332e6</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Msaa.dll</HintPath>
-      <id>8bb90add-3a52-440a-808e-24c2718405d2</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.Office.dll</HintPath>
-      <id>82337be8-92ea-43e8-983f-214e63aaca55</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Ranorex 3.2\Bin\Ranorex.Plugin.RawText.dll</HintPath>
-      <id>19042b97-c161-4058-b66e-5808e1ac33d7</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)">
-      <id>5ab0f042-6b08-4ea8-87a3-f57084931c08</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)">
-      <id>9658fc22-9f8c-4d87-a057-021fd9dfcd49</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)">
-      <id>fb181440-03f7-42f2-a097-94371b11bcaf</id>
-    </Reference>
-    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)">
-      <id>847285cc-76e8-4fff-b0fe-8db6e5e0ab64</id>
-    </Reference>
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Core.Injector, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Core.WinApi, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Libs, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Libs.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Libs.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
     <Reference Include="System">
-      <id>ef2cba77-b575-43c0-92e8-c17da59493a7</id>
     </Reference>
     <Reference Include="System.Configuration">
-      <id>4c6006f3-14a5-4954-9e5c-5a31d13d1a0c</id>
     </Reference>
     <Reference Include="System.Data">
-      <id>081cbe65-e698-425c-b18e-509be7dce61a</id>
     </Reference>
     <Reference Include="System.Drawing">
-      <id>43c8c46d-9494-47f5-9068-ddde574707a5</id>
     </Reference>
     <Reference Include="System.Windows.Forms">
-      <id>26116f38-1b7e-465f-83b6-2325004a1e30</id>
     </Reference>
     <Reference Include="System.Xml">
-      <id>7c236e5c-bba5-493f-8647-c1702acb7490</id>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -252,27 +192,22 @@
     <ProjectReference Include="..\Framework\BrowserTypes\Browsers\Browsers\Browsers.csproj">
       <Project>{3A1AC965-0417-49EF-9B28-E907EB7FC79A}</Project>
       <Name>Browsers</Name>
-      <id>d4f92513-68ab-42fe-90e4-19168accfd4a</id>
     </ProjectReference>
     <ProjectReference Include="..\Framework\Pages\AbstractGeneral\PagesAbstractGeneral\PagesAbstractGeneral.csproj">
       <Project>{E701375F-9B34-4EF8-9A74-39D5D3E6D77A}</Project>
       <Name>PagesAbstractGeneral</Name>
-      <id>71dc8854-e3bb-40d4-b5fa-e99e3d0db72a</id>
     </ProjectReference>
     <ProjectReference Include="..\Framework\Pages\ConsumerPages\ConsumerPagesAbstract\ConsumerPagesAbstract.csproj">
       <Project>{992E822F-BF99-42E0-A285-D94CFAC1DF6D}</Project>
       <Name>ConsumerPagesAbstract</Name>
-      <id>b8df9b26-1072-4705-93d5-b6bcbd59e729</id>
     </ProjectReference>
     <ProjectReference Include="..\Framework\Pages\ConsumerPages\ConsumerPagesMain\ConsumerPagesMain.csproj">
       <Project>{28D0F7A8-9FF8-4AB7-A7B3-279B5A84A2C7}</Project>
       <Name>ConsumerPagesMain</Name>
-      <id>3f425d75-f333-4287-8d2c-0a88f186b40c</id>
     </ProjectReference>
     <ProjectReference Include="..\Framework\Utilities\WebPages\WebPages.csproj">
       <Project>{DD4D570A-3317-402A-B9AF-E7CBBBAB9F1D}</Project>
       <Name>WebPages</Name>
-      <id>f12fab88-f5f5-4799-93b0-0b694d2f3b96</id>
     </ProjectReference>
     <Folder Include="General">
       <id>d89eff42-8f68-40f2-b511-a0207216a815</id>
@@ -295,10 +230,6 @@
     <Folder Include="General\Utilities">
       <id>8169fd0e-b01b-4cac-bcc4-aee7900d30c1</id>
     </Folder>
-    <Folder Include="Reports">
-      <ReportsDir>true</ReportsDir>
-      <id>7919b9d6-f7c7-43fe-b946-fb2baa707d2e</id>
-    </Folder>
     <Folder Include="Skynet\ConsumerReg">
       <id>6d8c4508-d8ac-410f-8682-f53a5d4d03e6</id>
     </Folder>
@@ -314,20 +245,18 @@
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
       <Install>false</Install>
-      <id>f67fa750-2e80-41e1-bb63-a6f11701d168</id>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>true</Install>
-      <id>a4f30904-86d8-4c2c-ade6-cfda81e555fc</id>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
       <Visible>False</Visible>
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
-      <id>574e020e-5197-4052-ab37-1ba3311fff85</id>
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup />
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
 </Project>

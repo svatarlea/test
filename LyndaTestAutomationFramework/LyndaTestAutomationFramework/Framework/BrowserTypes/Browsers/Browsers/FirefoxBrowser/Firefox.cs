@@ -21,10 +21,13 @@ namespace Browsers.FirefoxBrowser
     /// <summary>
     /// The class representing the Firefox element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("76c841d7-0ac5-4985-b102-a45cc6bbeb68")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("76c841d7-0ac5-4985-b102-a45cc6bbeb68")]
     public partial class Firefox : RepoGenBaseFolder
     {
         static Firefox instance = new Firefox();
+        FirefoxFolders.FormAppFolder _form;
+        FirefoxFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the Firefox element repository.
@@ -35,14 +38,11 @@ namespace Browsers.FirefoxBrowser
             get { return instance; }
         }
 
-        FirefoxFolders.FormAppFolder _form;
-        FirefoxFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public Firefox() 
-            : base("Firefox", "", null, 30000, false)
+            : base("Firefox", "", null, 30000, false, "76c841d7-0ac5-4985-b102-a45cc6bbeb68", "./RepositoryImages\\Firefox76c841d7.rximgres")
         {
             _form = new FirefoxFolders.FormAppFolder(this);
             _dom = new FirefoxFolders.DOMAppFolder(this);
@@ -74,6 +74,7 @@ namespace Browsers.FirefoxBrowser
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class FirefoxFolders
     {
         /// <summary>
@@ -92,7 +93,7 @@ namespace Browsers.FirefoxBrowser
             /// Creates a new Form  folder.
             /// </summary>
             public FormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Form", "/form[@class='MozillaWindowClass']", parentFolder, 30000, true, "1a43965b-5ca0-43b4-b128-7d9e666d98ff")
+                    base("Form", "/form[@class='MozillaWindowClass']", parentFolder, 30000, true, "1a43965b-5ca0-43b4-b128-7d9e666d98ff", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "1a43965b-5ca0-43b4-b128-7d9e666d98ff");
                 _navigateeditboxInfo = new RepoItemInfo(this, "NavigateEditBox", "container[@accessiblerole='PropertyPage']/toolbar[@accessiblename='Navigation Toolbar']/combobox[@accessiblename='Go to a Website']", 30000, null, "0535d943-7b3b-4f00-9b16-79a1cc1a9464");
@@ -235,7 +236,7 @@ namespace Browsers.FirefoxBrowser
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "daefb408-00fb-47dd-a6ab-a1b9e297f4a7")
+                    base("DOM", "/dom", parentFolder, 30000, false, "daefb408-00fb-47dd-a6ab-a1b9e297f4a7", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "daefb408-00fb-47dd-a6ab-a1b9e297f4a7");
                 _webpageInfo = new RepoItemInfo(this, "WebPage", "", 30000, null, "40522d18-2021-417a-9d52-1b1a82d39a74");

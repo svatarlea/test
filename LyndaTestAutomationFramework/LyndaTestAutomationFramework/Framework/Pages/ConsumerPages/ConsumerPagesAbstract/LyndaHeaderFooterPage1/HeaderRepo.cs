@@ -21,10 +21,12 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage1
     /// <summary>
     /// The class representing the HeaderRepo element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("dd5063b8-99c4-4d7c-abae-f8959eebbf1c")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("dd5063b8-99c4-4d7c-abae-f8959eebbf1c")]
     public partial class HeaderRepo : RepoGenBaseFolder
     {
         static HeaderRepo instance = new HeaderRepo();
+        HeaderRepoFolders.DOMbaseAppFolder _dombase;
 
         /// <summary>
         /// Gets the singleton class instance representing the HeaderRepo element repository.
@@ -35,13 +37,11 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage1
             get { return instance; }
         }
 
-        HeaderRepoFolders.DOMbaseAppFolder _dombase;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public HeaderRepo() 
-            : base("HeaderRepo", "", null, 30000, false)
+            : base("HeaderRepo", "", null, 30000, false, "dd5063b8-99c4-4d7c-abae-f8959eebbf1c", "./RepositoryImages\\HeaderRepodd5063b8.rximgres")
         {
             _dombase = new HeaderRepoFolders.DOMbaseAppFolder(this);
         }
@@ -63,6 +63,7 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage1
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class HeaderRepoFolders
     {
         /// <summary>
@@ -80,7 +81,7 @@ namespace ConsumerPagesAbstract.LyndaHeaderFooterPage1
             /// Creates a new DOMbase  folder.
             /// </summary>
             public DOMbaseAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOMbase", "/dom", parentFolder, 30000, false, "b10025bb-d9f1-4980-b9bf-67b402450255")
+                    base("DOMbase", "/dom", parentFolder, 30000, false, "b10025bb-d9f1-4980-b9bf-67b402450255", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "b10025bb-d9f1-4980-b9bf-67b402450255");
                 _subscribelinkInfo = new RepoItemInfo(this, "SubscribeLink", "body/div[@id='eyebrow']/div[1]/ul/li[2]/a[@innertext='subscribe']", 30000, null, "b8389e85-ab84-4359-bd14-505deefe5be2");

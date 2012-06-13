@@ -9,24 +9,23 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 
 namespace Lynda.Test.Browsers
-{	
-	
+{		
     /// <summary>
     /// Represents an abstract browser.
     /// </summary>
     public abstract class BrowserBasic
     {
-        //Members applicable to all browsers such as IE, Firefox, Chrome and Safari
-
+        //Members applicable to all browsers such as IE, Firefox, Chrome and Safari.
+        
         /// <summary>
-        /// Handle of the native window for the browser instance
+        /// Handle of the native window for the browser instance.
         /// </summary>
         protected IntPtr handle;
-		
+
 		protected BrowserBasic()
         {
         }
-
+			
         /// <summary>
         /// Opens a new browser window of the specified browserProduct with the specified default uri.
         /// Initializes the handle field of this class to the native window handle of the new window.

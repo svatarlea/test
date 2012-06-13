@@ -21,10 +21,13 @@ namespace Browsers.SafariBrowser
     /// <summary>
     /// The class representing the Safari element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("a4f3ebd6-bd34-4818-936b-6d0a7e3de81a")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("a4f3ebd6-bd34-4818-936b-6d0a7e3de81a")]
     public partial class Safari : RepoGenBaseFolder
     {
         static Safari instance = new Safari();
+        SafariFolders.DOMAppFolder _dom;
+        SafariFolders.FormAppFolder _form;
 
         /// <summary>
         /// Gets the singleton class instance representing the Safari element repository.
@@ -35,14 +38,11 @@ namespace Browsers.SafariBrowser
             get { return instance; }
         }
 
-        SafariFolders.DOMAppFolder _dom;
-        SafariFolders.FormAppFolder _form;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public Safari() 
-            : base("Safari", "", null, 30000, false)
+            : base("Safari", "", null, 30000, false, "a4f3ebd6-bd34-4818-936b-6d0a7e3de81a", "./RepositoryImages\\Safaria4f3ebd6.rximgres")
         {
             _dom = new SafariFolders.DOMAppFolder(this);
             _form = new SafariFolders.FormAppFolder(this);
@@ -74,6 +74,7 @@ namespace Browsers.SafariBrowser
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class SafariFolders
     {
         /// <summary>
@@ -89,7 +90,7 @@ namespace Browsers.SafariBrowser
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "a68b881b-e066-4a8b-b4f6-fc6e32cc5639")
+                    base("DOM", "/dom", parentFolder, 30000, false, "a68b881b-e066-4a8b-b4f6-fc6e32cc5639", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "a68b881b-e066-4a8b-b4f6-fc6e32cc5639");
                 _webpageInfo = new RepoItemInfo(this, "WebPage", "", 30000, null, "1b645d8d-7e90-46bd-87cd-1b358636d6dd");
@@ -159,7 +160,7 @@ namespace Browsers.SafariBrowser
             /// Creates a new Form  folder.
             /// </summary>
             public FormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Form", "/form[@processname='Safari']", parentFolder, 30000, true, "fcbfcd12-4c7a-41b5-bab5-a2655acc0c5a")
+                    base("Form", "/form[@processname='Safari']", parentFolder, 30000, true, "fcbfcd12-4c7a-41b5-bab5-a2655acc0c5a", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "fcbfcd12-4c7a-41b5-bab5-a2655acc0c5a");
                 _navigateeditboxInfo = new RepoItemInfo(this, "NavigateEditBox", "element[@class='RootElement']/element[@class='SafariEdit']", 30000, null, "a78f072c-0064-439f-8667-e420d8b1964b");

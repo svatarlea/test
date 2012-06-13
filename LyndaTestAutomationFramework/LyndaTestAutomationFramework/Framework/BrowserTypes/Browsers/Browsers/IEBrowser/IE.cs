@@ -21,10 +21,13 @@ namespace Browsers.IEBrowser
     /// <summary>
     /// The class representing the IE element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("20d858bd-54d3-486c-a6fb-bdd9ab5b016f")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("20d858bd-54d3-486c-a6fb-bdd9ab5b016f")]
     public partial class IE : RepoGenBaseFolder
     {
         static IE instance = new IE();
+        IEFolders.FormAppFolder _form;
+        IEFolders.DOMAppFolder _dom;
 
         /// <summary>
         /// Gets the singleton class instance representing the IE element repository.
@@ -35,14 +38,11 @@ namespace Browsers.IEBrowser
             get { return instance; }
         }
 
-        IEFolders.FormAppFolder _form;
-        IEFolders.DOMAppFolder _dom;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public IE() 
-            : base("IE", "", null, 30000, false)
+            : base("IE", "", null, 30000, false, "20d858bd-54d3-486c-a6fb-bdd9ab5b016f", "./RepositoryImages\\IE20d858bd.rximgres")
         {
             _form = new IEFolders.FormAppFolder(this);
             _dom = new IEFolders.DOMAppFolder(this);
@@ -74,6 +74,7 @@ namespace Browsers.IEBrowser
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class IEFolders
     {
         /// <summary>
@@ -95,7 +96,7 @@ namespace Browsers.IEBrowser
             /// Creates a new Form  folder.
             /// </summary>
             public FormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Form", "/form[@class='IEFrame']", parentFolder, 30000, true, "5bf07cb5-9605-4764-a654-0ea04402878e")
+                    base("Form", "/form[@class='IEFrame']", parentFolder, 30000, true, "5bf07cb5-9605-4764-a654-0ea04402878e", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "5bf07cb5-9605-4764-a654-0ea04402878e");
                 _navigateeditboxInfo = new RepoItemInfo(this, "NavigateEditBox", "element[@class='WorkerW']/container/element[@controlid='41477']/text[@class='Edit']", 30000, null, "a8920685-d014-4a34-a858-940fde7c7f51");
@@ -313,7 +314,7 @@ namespace Browsers.IEBrowser
             /// Creates a new DOM  folder.
             /// </summary>
             public DOMAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("DOM", "/dom", parentFolder, 30000, false, "ea9444db-7ca7-495f-9dfa-16ec93263cc5")
+                    base("DOM", "/dom", parentFolder, 30000, false, "ea9444db-7ca7-495f-9dfa-16ec93263cc5", "")
             {
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "ea9444db-7ca7-495f-9dfa-16ec93263cc5");
                 _webpageInfo = new RepoItemInfo(this, "WebPage", "", 30000, null, "38bef810-ac24-4f45-9da5-f630e98feebc");

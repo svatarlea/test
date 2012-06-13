@@ -42,9 +42,9 @@ namespace Tests.General.Tests.Story_B_02914_Login
             Keyboard.DefaultKeyPressTime = AppSettings.KeyboardDefaultKeyPressTime;
             Delay.SpeedFactor = 1.0;
 
-            //Specifiy domain.
-            string domain = AppSettings.Domain;
-
+            //This test case currently only supports IE.
+            const string browser = "IE";           
+                     				
             //Specifiy test case name.
             const string testCaseName = "Story_B_02914_Login";
 
@@ -52,21 +52,19 @@ namespace Tests.General.Tests.Story_B_02914_Login
             bool canDirectlyNavigateTo = Convert.ToBoolean(TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["CanDirectlyNavigateTo"]);
             bool loginGoesToAfterLoginPage = Convert.ToBoolean(TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["LoginGoesToAfterLoginPage"]);
             string afterLoginPage = TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["AfterLoginPage"];
-            afterLoginPage=string.Format("http://{0}{1}",domain,afterLoginPage);
+            afterLoginPage=string.Format("http://{0}{1}",AppSettings.Domain,afterLoginPage);
             string username = TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["Username"];
             string password = TestSuite.Current.GetTestCase(testCaseName).DataContext.CurrentRow["Password"];
 
             Story_B_02914_LoginRepo repo = Story_B_02914_LoginRepo.Instance;
-            
-            string browser = AppSettings.Browser.ToString();
-            
+                        
             Host.Local.KillBrowser(browser);
             Host.Local.OpenBrowser("", browser, "", true, true); 
 
             repo.DOM.WebPage.WaitForDocumentLoaded();
             Validate.Exists(repo.Form.NavigateEditBox);
 
-           	repo.Form.NavigateEditBox.PressKeys(string.Format("http://{0}{1}{2}",domain,navigateTo.ToString(), "{ENTER}"));
+           	repo.Form.NavigateEditBox.PressKeys(string.Format("http://{0}{1}{2}",AppSettings.Domain,navigateTo.ToString(), "{ENTER}"));
             
            	repo.DOM.WebPage.WaitForDocumentLoaded();
            	LoginControl loginControl; 

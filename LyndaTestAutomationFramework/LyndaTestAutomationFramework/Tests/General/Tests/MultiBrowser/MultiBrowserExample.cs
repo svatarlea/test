@@ -42,6 +42,17 @@ namespace Tests.General.Tests.MultiBrowser
             Keyboard.DefaultKeyPressTime = 100;
             Delay.SpeedFactor = 1.0;
             
+            string installedBrowserPath = Browser.GetInstalledExePath(BrowserProduct.IE);  
+			if (installedBrowserPath == null)
+        	{        		
+				throw new Exception("Internet Explorer is not installed.");
+        	}
+			int installedBrowserVersion = Browser.GetInstalledVersion(BrowserProduct.IE);
+        	if (installedBrowserVersion != 9)
+    		{
+        		throw new Exception(string.Format("Internet Explorer version {0} ({1}) is not supported by this test. Supported version: 9.", installedBrowserVersion, installedBrowserPath));
+    		}
+            
   			const string uri = "www.lynda.com";
 
             Browser browser1 = new Browser(BrowserProduct.IE, uri, true);

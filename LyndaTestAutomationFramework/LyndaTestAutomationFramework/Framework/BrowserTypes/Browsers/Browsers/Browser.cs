@@ -30,7 +30,6 @@ namespace Lynda.Test.Browsers
     	
     	private BrowserProduct browserProduct;
 
-
         /// <summary>
         /// Initializes a new instance of the Lynda.Test.Browsers.Browser class,
         /// opens a new Internet Explorer window without killing any existing Internet Explorer windows first and leaves the url as the
@@ -71,7 +70,7 @@ namespace Lynda.Test.Browsers
         	{
         		case BrowserProduct.IE:
 		    		{
-                        ieBrowser = new IEBrowser(uri, killExisting);	
+                        ieBrowser = new IEBrowser(uri, killExisting);	                      
 		        		break;
 		    		}
         		case BrowserProduct.Chrome:
@@ -94,6 +93,93 @@ namespace Lynda.Test.Browsers
             }
         }
 
+        /// <summary>
+        /// Gets the full directory path of a Lynda.Test.Browsers.Browser.BrowserProduct
+        ///  that is installed on the system.
+        /// </summary>
+        /// <param name="browserProduct">Browser to get the full directory path of.</param>
+        /// <returns>Full directory path of the installed browser, or null if the browser is not installed.</returns>
+        public static string GetInstalledExePath(BrowserProduct browserProduct)
+        {
+        	switch (browserProduct)
+        	{
+        		case BrowserProduct.IE:
+        			{
+        				return IEBrowser.InstalledExePath;
+        			}
+        		case BrowserProduct.Chrome:
+        			{
+        				return ChromeBrowser.InstalledExePath;        	
+        			}
+        		case BrowserProduct.Firefox:
+        			{
+        				return FirefoxBrowser.InstalledExePath;        			
+        			}
+        		case BrowserProduct.Safari:
+        			{
+        				return SafariBrowser.InstalledExePath;        		
+        			}
+ 				default:
+                    throw new Exception(String.Format("Code not implemented yet: {0}", browserProduct.ToString()));       			
+        	}
+        }
+               
+        /// <summary>
+        /// Gets the version of a Lynda.Test.Browsers.Browser.BrowserProduct
+        ///  that is installed on the sytem.
+        /// </summary>
+        /// <param name="browserProduct">Browser to get the version of.</param>
+        /// <returns>Major part of the file version of the installed browser exe, or 0 if the browser is not installed.</returns>
+        public static int GetInstalledVersion(BrowserProduct browserProduct)
+        {
+        	switch (browserProduct)
+        	{
+        		case BrowserProduct.IE:
+        			{
+        				return IEBrowser.InstalledVersion;
+        			}
+        		case BrowserProduct.Chrome:
+        			{
+        				return ChromeBrowser.InstalledVersion;        	
+        			}
+        		case BrowserProduct.Firefox:
+        			{
+        				return FirefoxBrowser.InstalledVersion;        			
+        			}
+        		case BrowserProduct.Safari:
+        			{
+        				return SafariBrowser.InstalledVersion;        		
+        			}
+ 				default:
+                    throw new Exception(String.Format("Code not implemented yet: {0}", browserProduct.ToString()));       			
+        	}
+        }
+        
+        public static int GetSupportedVersion(BrowserProduct browserProduct)
+        {
+        	switch (browserProduct)
+        	{
+        		case BrowserProduct.IE:
+        			{
+        				return IEBrowser.SupportedExeMajorVersion;
+        			}
+        		case BrowserProduct.Chrome:
+        			{
+        				return ChromeBrowser.SupportedExeMajorVersion;      	
+        			}
+        		case BrowserProduct.Firefox:
+        			{
+        				return FirefoxBrowser.SupportedExeMajorVersion;        			
+        			}
+        		case BrowserProduct.Safari:
+        			{
+        				return SafariBrowser.SupportedExeMajorVersion;        		
+        			}
+ 				default:
+                    throw new Exception(String.Format("Code not implemented yet: {0}", browserProduct.ToString()));       			
+        	}
+        }
+        
         /// <summary>
         /// Navigate to a uri by typing the uri in the browser's navigation edit box and pressing the {ENTER} key.
         /// </summary>

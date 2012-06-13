@@ -1,13 +1,12 @@
-﻿<repository name="MemberHomePage" id="96b36747-8a91-4a5b-a093-deeee36533cc" rxversion="3.2.3.16825">
-  <codegen classname="MemberHomePage" namespace="Tests.General.Tests.MultiBrowser"/>
-  <rootfolder name="Root" id="12b2a37c-e9c1-4d56-a7d5-624b896a361e" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <folder name="MemberPage" id="a0cedce3-e83e-4a04-aed7-c772fef1be1d" searchtimeout="0ms" capname="unknown" isrooted="False">
-      <item name="SubscribeLink" id="050b24e0-9350-46d6-96b9-e8eda1c76539" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
-        <![CDATA[/dom/body/div[@id='eyebrow']/div[1]/ul/li[2]/a[@innertext='subscribe']]]>
-      </item>
-    </folder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+﻿<repository name="MemberHomePage" id="96b36747-8a91-4a5b-a093-deeee36533cc" rxversion="3.3.0.17843">
+	<codegen classname="MemberHomePage" namespace="Tests.General.Tests.MultiBrowser" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<rootfolder name="Root" id="12b2a37c-e9c1-4d56-a7d5-624b896a361e" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<folder name="MemberPage" id="a0cedce3-e83e-4a04-aed7-c772fef1be1d" searchtimeout="0ms" capname="unknown" isrooted="False">
+			<item name="SubscribeLink" id="050b24e0-9350-46d6-96b9-e8eda1c76539" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+				/dom/body/div[@id='eyebrow']/div[1]/ul/li[2]/a[@innertext='subscribe']
+			</item>
+		</folder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

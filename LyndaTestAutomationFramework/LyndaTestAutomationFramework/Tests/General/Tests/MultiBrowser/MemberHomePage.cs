@@ -21,10 +21,12 @@ namespace Tests.General.Tests.MultiBrowser
     /// <summary>
     /// The class representing the MemberHomePage element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.2.3"), RepositoryFolder("12b2a37c-e9c1-4d56-a7d5-624b896a361e")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
+    [RepositoryFolder("12b2a37c-e9c1-4d56-a7d5-624b896a361e")]
     public partial class MemberHomePage : RepoGenBaseFolder
     {
         static MemberHomePage instance = new MemberHomePage();
+        MemberHomePageFolders.MemberPageFolder _memberpage;
 
         /// <summary>
         /// Gets the singleton class instance representing the MemberHomePage element repository.
@@ -35,13 +37,11 @@ namespace Tests.General.Tests.MultiBrowser
             get { return instance; }
         }
 
-        MemberHomePageFolders.MemberPageFolder _memberpage;
-
         /// <summary>
         /// Repository class constructor.
         /// </summary>
         public MemberHomePage() 
-            : base("MemberHomePage", "", null, 30000, false)
+            : base("MemberHomePage", "", null, 30000, false, "12b2a37c-e9c1-4d56-a7d5-624b896a361e", "./RepositoryImages\\MemberHomePage12b2a37c.rximgres")
         {
             _memberpage = new MemberHomePageFolders.MemberPageFolder(this);
         }
@@ -63,6 +63,7 @@ namespace Tests.General.Tests.MultiBrowser
     /// <summary>
     /// Inner folder classes.
     /// </summary>
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "3.3.0")]
     public partial class MemberHomePageFolders
     {
         /// <summary>
@@ -77,7 +78,7 @@ namespace Tests.General.Tests.MultiBrowser
             /// Creates a new MemberPage  folder.
             /// </summary>
             public MemberPageFolder(RepoGenBaseFolder parentFolder) :
-                    base("MemberPage", "", parentFolder, 0, false, "a0cedce3-e83e-4a04-aed7-c772fef1be1d")
+                    base("MemberPage", "", parentFolder, 0, false, "a0cedce3-e83e-4a04-aed7-c772fef1be1d", "")
             {
                 _subscribelinkInfo = new RepoItemInfo(this, "SubscribeLink", "/dom/body/div[@id='eyebrow']/div[1]/ul/li[2]/a[@innertext='subscribe']", 30000, null, "050b24e0-9350-46d6-96b9-e8eda1c76539");
             }

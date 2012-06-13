@@ -1,36 +1,36 @@
-﻿<repository name="PaymentInformationRepo" id="692518d0-74b1-429b-9d64-b057d824cadf" rxversion="3.2.3.16825">
-  <codegen classname="PaymentInformationRepo" namespace="ConsumerPagesMain.RegStep2"/>
-  <rootfolder name="Root" id="4c36a5e1-5c67-4d1c-ba57-eb2cbeea98f5" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
-    <appfolder name="DOM" id="8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
-      <item name="PaymentTypeSelect" id="a20e893e-13ef-4ebe-916e-2286f8dd64fb" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[1]/td/select[@id='drpPaymentType']]]>
-      </item>
-      <item name="AmountTD" id="72a54718-eea8-40f7-b040-3354e0e3bd67" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCAmount']/td[@innertext~'.*subscription\)$']]]>
-      </item>
-      <item name="CreditCardTypeSelect" id="bed44469-07c9-4664-8a33-053e5d7a0f36" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCType']/td[2]/select[@id='drpCreditCardType']]]>
-      </item>
-      <item name="CreditCardNumberInput" id="41de9737-6840-423c-9c13-f630c86003a4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCNumber']/td[2]/input[@id='txtCreditCardNumber']]]>
-      </item>
-      <item name="NameOnCardInput" id="a5159af1-fecf-49ec-a021-04744652c2c8" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCName']/td[2]/input[@id='txtNameOnCard']]]>
-      </item>
-      <item name="CreditCardSecurityInput" id="450f8363-75a7-4528-a895-1984aab32c9b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCSecurityCode']/td[2]/input[@id='txtCreditCardSecurityCode']]]>
-      </item>
-      <item name="ExpirationMonthSelect" id="a1566cbc-beef-44af-ad4d-f2271d1b6506" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCExpirationDate']/td[@innertext='/']/select[@id='drpExpirationMonth']]]>
-      </item>
-      <item name="ExpirationYearSelect" id="3a03ccfd-b6d8-4bf1-ae6e-02cfe65f2e9d" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
-        <![CDATA[/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCExpirationDate']/td[@innertext='/']/select[@id='drpExpirationYear']]]>
-      </item>
-      <basepath>
-        <![CDATA[/dom]]>
-      </basepath>
-      <icon>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+﻿<repository name="PaymentInformationRepo" id="692518d0-74b1-429b-9d64-b057d824cadf" rxversion="3.3.0.17843">
+	<codegen classname="PaymentInformationRepo" namespace="ConsumerPagesMain.RegStep2" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<rootfolder name="Root" id="4c36a5e1-5c67-4d1c-ba57-eb2cbeea98f5" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+		<appfolder name="DOM" id="8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+			<item name="PaymentTypeSelect" id="a20e893e-13ef-4ebe-916e-2286f8dd64fb" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+				/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[1]/td/select[@id='drpPaymentType']
+			</item>
+			<item name="AmountTD" id="72a54718-eea8-40f7-b040-3354e0e3bd67" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">
+				/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCAmount']/td[@innertext~'.*subscription\)$']
+			</item>
+			<item name="CreditCardTypeSelect" id="bed44469-07c9-4664-8a33-053e5d7a0f36" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+				/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCType']/td[2]/select[@id='drpCreditCardType']
+			</item>
+			<item name="CreditCardNumberInput" id="41de9737-6840-423c-9c13-f630c86003a4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCNumber']/td[2]/input[@id='txtCreditCardNumber']
+			</item>
+			<item name="NameOnCardInput" id="a5159af1-fecf-49ec-a021-04744652c2c8" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCName']/td[2]/input[@id='txtNameOnCard']
+			</item>
+			<item name="CreditCardSecurityInput" id="450f8363-75a7-4528-a895-1984aab32c9b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+				/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCSecurityCode']/td[2]/input[@id='txtCreditCardSecurityCode']
+			</item>
+			<item name="ExpirationMonthSelect" id="a1566cbc-beef-44af-ad4d-f2271d1b6506" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+				/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCExpirationDate']/td[@innertext='/']/select[@id='drpExpirationMonth']
+			</item>
+			<item name="ExpirationYearSelect" id="3a03ccfd-b6d8-4bf1-ae6e-02cfe65f2e9d" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+				/dom/body/div[1]/div[2]/form/fieldset[2]/table/tbody/tr[@id='trCCExpirationDate']/td[@innertext='/']/select[@id='drpExpirationYear']
+			</item>
+			<basepath>
+				/dom
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
 OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
 9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
@@ -42,10 +42,9 @@ mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
 rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
 gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
 j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
-      </icon>
-    </appfolder>
-    <basepath>
-    </basepath>
-  </rootfolder>
-  <variables/>
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
 </repository>

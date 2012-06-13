@@ -14,14 +14,37 @@ namespace Lynda.Test.Browsers
 {
 
     /// <summary>
-    /// Represents a Firefox 11 browser.
+    /// Represents a Firefox browser.
     /// </summary>
     internal class FirefoxBrowser : BrowserBasic
     {
         /// <summary>
+        /// Version (Major version) of firefox exe that this class supports.
+        /// </summary>
+    	static int supportedExeMajorVersion = 13;
+    	
+    	/// <summary>
+        /// Expected full directory path of firefox exe including the exe.
+        /// </summary>
+        static string expectedExePath = null;
+        
+        static string installedExePath = null;
+        static int installedVersion = 0;  	
+    	
+    	/// <summary>
         /// Firefox Ranorex repository instance for this Firefox browser window
         /// </summary>
         internal Firefox firefoxRepo = null;
+        
+        /// <summary>
+        /// Static constructor for Lynda.Test.Browsers.FirefoxBrowser class.
+        /// </summary>
+        static FirefoxBrowser()
+        {
+        	expectedExePath = string.Format("{0}{1}",BrowserSystemInfo.ProgramFilesX86Path,"\\Mozilla Firefox\\firefox.exe");
+			installedExePath = BrowserSystemInfo.GetInstalledExePath(expectedExePath);
+        	installedVersion = BrowserSystemInfo.GetInstalledVersion(expectedExePath);
+        }   
      
         /// <summary>
         /// Initializes a new instance of the Lynda.Test.Browsers.FirefoxBrowser class, opens a new Firefox window and navigates to
@@ -30,7 +53,16 @@ namespace Lynda.Test.Browsers
         /// <param name="uri">uri to navigate to in the new Firefox window.</param>
         internal FirefoxBrowser(string uri, bool killExisting)
         {
-            firefoxRepo = new Firefox();
+            if (installedExePath == null)
+        	{
+        		throw new Exception(string.Format("Firefox is not installed. Expected location:{0}",expectedExePath));
+        	}
+        	if (installedVersion != supportedExeMajorVersion)
+    		{
+    			throw new Exception(string.Format("Firefox version {0} ({1}) is not supported by this class. Supported version: {2}.", installedVersion, installedExePath, supportedExeMajorVersion));
+    		}        	
+        	
+        	firefoxRepo = new Firefox();
 
             //Kill existing browser processes before opening a new browser
             if (killExisting)
@@ -43,6 +75,32 @@ namespace Lynda.Test.Browsers
             //Update repository instance base path to include native window handle attribute for the form
             firefoxRepo.Form.BasePath = new RxPath(String.Format("/form[@class='MozillaWindowClass' and @handle='{0}']", handle));
             Validate.Exists(firefoxRepo.Form.BasePath);
+        }
+        
+        /// <summary>
+        /// Major part of the file version of browser exe.
+        /// Will be 0 if browser exe is not installed.
+        /// </summary>
+        internal static int InstalledVersion
+        {
+        	get{return installedVersion;}
+        }
+        
+		/// <summary>
+		/// Full directory path of installed browser exe.
+		/// Will be null if browser exe is not installed.
+		/// </summary>
+        internal static string InstalledExePath
+        {
+        	get{return installedExePath;}
+        }
+        
+        /// <summary>
+        /// Version (Major version) of firefox exe that this class supports.
+        /// </summary>
+        internal static int SupportedExeMajorVersion
+        {
+        	get {return supportedExeMajorVersion;}
         }
 
         /// <summary>

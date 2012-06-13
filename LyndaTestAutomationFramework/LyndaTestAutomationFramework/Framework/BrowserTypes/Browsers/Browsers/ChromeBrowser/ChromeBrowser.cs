@@ -14,15 +14,38 @@ namespace Lynda.Test.Browsers
 {
 
     /// <summary>
-    /// Represents a Chrome version "18.0.1025.162 m" browser.
+    /// Represents a Chrome browser.
     /// </summary>
     internal class ChromeBrowser : BrowserBasic
-    {
-        /// <summary>
+    {   	    	
+    	/// <summary>
+        /// Version (Major version) of chrome exe that this class supports.
+        /// </summary>
+    	static int supportedExeMajorVersion = 19;
+    	
+    	/// <summary>
+        /// Expected full directory path of chrome exe including the exe.
+        /// </summary>
+        static string expectedExePath = null;
+        
+        static string installedExePath = null;
+        static int installedVersion = 0;  	
+    	
+    	/// <summary>
         /// Chrome Ranorex repository instance for this Chrome browser window.
         /// </summary>
         internal Chrome chromeRepo = null;
      
+        /// <summary>
+        /// Static constructor for Lynda.Test.Browsers.ChromeBrowser class.
+        /// </summary>
+        static ChromeBrowser()
+        {
+        	expectedExePath = string.Format("{0}{1}",BrowserSystemInfo.LocalAppDataPath,"\\Google\\Chrome\\Application\\chrome.exe");
+			installedExePath = BrowserSystemInfo.GetInstalledExePath(expectedExePath);
+        	installedVersion = BrowserSystemInfo.GetInstalledVersion(expectedExePath);
+        }    
+        
         /// <summary>
         /// Initializes a new instance of the Lynda.Test.Browsers.ChromeBrowser class, opens a new Chrome window and navigates to
         /// the specified uri.
@@ -30,7 +53,16 @@ namespace Lynda.Test.Browsers
         /// <param name="uri">uri to navigate to in the new Chrome window.</param>
         internal ChromeBrowser(string uri, bool killExisting)
         {
-            chromeRepo = new Chrome();
+            if (installedExePath == null)
+        	{
+        		throw new Exception(string.Format("Chrome is not installed. Expected location:{0}",expectedExePath));
+        	}
+        	if (installedVersion != supportedExeMajorVersion)
+    		{
+    			throw new Exception(string.Format("Chrome version {0} ({1}) is not supported by this class. Supported version: {2}.", installedVersion, installedExePath, supportedExeMajorVersion));
+    		}
+        	
+        	chromeRepo = new Chrome();
 
             //Kill existing browser processes before opening a new browser
             if (killExisting)
@@ -43,6 +75,32 @@ namespace Lynda.Test.Browsers
             //Update repository instance base path to include native window handle attribute for the form
             chromeRepo.Form.BasePath = new RxPath(String.Format("/form[@class='Chrome_WidgetWin_1' and @handle='{0}']", handle));
             Validate.Exists(chromeRepo.Form.BasePath);
+        }
+        
+        /// <summary>
+        /// Major part of the file version of browser exe.
+        /// Will be 0 if browser exe is not installed.
+        /// </summary>
+        internal static int InstalledVersion
+        {
+        	get{return installedVersion;}
+        }
+        
+		/// <summary>
+		/// Full directory path of installed browser exe.
+		/// Will be null if browser exe is not installed.
+		/// </summary>
+        internal static string InstalledExePath
+        {
+        	get{return installedExePath;}
+        }
+        
+        /// <summary>
+        /// Version (Major version) of chrome exe that this class supports.
+        /// </summary>
+        internal static int SupportedExeMajorVersion
+        {
+        	get {return supportedExeMajorVersion;}
         }
 
         /// <summary>
