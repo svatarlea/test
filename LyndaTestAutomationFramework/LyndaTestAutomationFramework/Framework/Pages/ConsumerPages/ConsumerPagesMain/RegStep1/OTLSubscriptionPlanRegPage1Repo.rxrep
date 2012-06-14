@@ -1,5 +1,5 @@
 ﻿<repository name="OTLSubscriptionPlanRegPage1Repo" id="ec15a732-269f-4116-b9c7-c073b3ff0cc0" rxversion="3.3.0.17843">
-	<codegen classname="OTLSubscriptionPlanRegPage1Repo" namespace="ConsumerPagesMain.RegStep1" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<codegen classname="OTLSubscriptionPlanRegPage1Repo" namespace="ConsumerPagesMain.RegStep1" resourcebasedir="C:\Users\mperry\GITrepo\temp2\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
 	<rootfolder name="Root" id="6fc9bb01-badc-48e5-9e77-61be3084ff39" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="89597d3b-6b55-44a6-aaa5-914eedf6a09b" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="RadioMonthlyInput" id="9b64126d-d036-4a88-a436-11fa2b2edeaa" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">

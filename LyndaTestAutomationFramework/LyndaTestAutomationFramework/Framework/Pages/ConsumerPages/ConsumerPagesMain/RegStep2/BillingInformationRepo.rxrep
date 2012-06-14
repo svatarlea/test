@@ -1,5 +1,5 @@
 ﻿<repository name="BillingInformationRepo" id="49f5b734-39fa-49bc-b260-855938a38d1b" rxversion="3.3.0.17843">
-	<codegen classname="BillingInformationRepo" namespace="ConsumerPagesMain.RegStep2" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<codegen classname="BillingInformationRepo" namespace="ConsumerPagesMain.RegStep2" resourcebasedir="C:\Users\mperry\GITrepo\temp2\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
 	<rootfolder name="Root" id="d11d1e90-a524-406b-aa69-266b05cccaf4" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="FirstNameInput" id="d5f7a92d-12b5-4074-a8db-8fcdeef766d4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">

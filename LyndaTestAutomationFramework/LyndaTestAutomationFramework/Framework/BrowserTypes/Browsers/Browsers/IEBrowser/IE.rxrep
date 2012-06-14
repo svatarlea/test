@@ -1,5 +1,5 @@
 ﻿<repository name="IE" id="545b1474-1808-4033-9ff6-15291080dad2" rxversion="3.3.0.17843">
-	<codegen classname="IE" namespace="Browsers.IEBrowser" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
+	<codegen classname="IE" namespace="Browsers.IEBrowser" resourcebasedir="C:\Users\mperry\GITrepo\temp2\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
 	<rootfolder name="Root" id="20d858bd-54d3-486c-a6fb-bdd9ab5b016f" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="Form" id="5bf07cb5-9605-4764-a654-0ea04402878e" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
 			<item name="NavigateEditBox" id="a8920685-d014-4a34-a858-940fde7c7f51" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">

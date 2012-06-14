@@ -89,6 +89,48 @@
     <Compile Include="AppSettings.cs">
       <id>4330eb56-2d78-43ee-adfc-c46979cc70ed</id>
     </Compile>
+    <Compile Include="General\Tests\BVT5\Admin_CS_NewAcct.cs">
+      <id>64fabb49-7014-46cc-a70d-91f1474f504f</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Admin_CS_NewAcctRepository.cs">
+      <id>4265abd7-7656-42bd-8a1e-ea5355c32660</id>
+      <DependentUpon>Admin_CS_NewAcctRepository.rxrep</DependentUpon>
+      <BoundTo>bf2906ea-d13b-4a09-ac85-f79c5294ae4d</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpAddGroupsUsers.cs">
+      <id>fb102e65-77b5-4746-a42a-e1e3f44ac6b4</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpBVT5Repository.cs">
+      <id>9f8281e0-23d5-43fb-8b61-6eff45f8685d</id>
+      <DependentUpon>Public_lpBVT5Repository.rxrep</DependentUpon>
+      <BoundTo>dc4a6a48-b89b-4136-afa4-f00fb8e00002</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpCleanGroupsUsers.cs">
+      <id>3e54fc34-aa12-4d68-9fe5-ccbc956ecf33</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpManageUsers.cs">
+      <id>9a6fc79b-d5a4-48fe-ad9c-9df5cbc70c69</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpNewSubAdmin.cs">
+      <id>3c6703b9-d087-424a-a466-c2b47f8d3294</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpNewUser_RegisterLogin.cs">
+      <id>1911084c-6fae-4c14-bc6c-95aef44d4339</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_lpRemSubAdmin.cs">
+      <id>fdb59a0c-db00-4564-b7f4-95f80bd641cb</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_NewAcctAccess.cs">
+      <id>c8fdad78-6bad-4cc4-a556-02c7a39fee68</id>
+    </Compile>
+    <Compile Include="General\Tests\BVT5\Public_NewAcctAccessRepository.cs">
+      <id>a74373b0-86e0-44d5-a233-ed966fa1dacf</id>
+      <DependentUpon>Public_NewAcctAccessRepository.rxrep</DependentUpon>
+      <BoundTo>b305e5de-6257-475a-bed0-a84916cdca37</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
     <Compile Include="General\Tests\ConsumerReg\ConsumerRegRepo.cs">
       <id>22aaac18-60cd-4bc6-97ab-855fea1cc6cb</id>
       <RepositoryCode>true</RepositoryCode>
@@ -106,6 +148,21 @@
       <DependentUpon>CreateEducatorRepo.rxrep</DependentUpon>
       <id>64cbcc90-0043-4d36-afa2-e01b685820e8</id>
       <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\EnterpriseCampus\EnterpriseAcctSetup_IP.cs">
+      <id>51fc5285-73b5-4fc1-b96c-d04c464e417c</id>
+    </Compile>
+    <Compile Include="General\Tests\EnterpriseCampus\EnterpriseCampusAcctSetup.cs">
+      <id>cdfc3081-6681-4a9c-acda-db19774f63f4</id>
+      <DependentUpon>EnterpriseCampusAcctSetup.rxrep</DependentUpon>
+      <BoundTo>86805def-3770-43d7-b1cd-e74b9715b58e</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\EnterpriseCampus\IPAddressRange.cs">
+      <id>b9b7f47a-5a9c-465d-93fa-fbc693f7e4fd</id>
+    </Compile>
+    <Compile Include="General\Tests\EnterpriseCampus\TestModule.cs">
+      <id>d0928287-73b1-43f5-9ef4-c52909358080</id>
     </Compile>
     <Compile Include="General\Tests\MultiBrowser\MemberHomePage.cs">
       <id>4370890a-60b4-402e-9e98-2b05b8a0b5a2</id>
@@ -125,11 +182,17 @@
       <id>1e8e4b65-70bc-43ec-8ec2-d5c463ba9bff</id>
       <DependentUpon>Story_B_02914_LoginRepo.rxrep</DependentUpon>
     </Compile>
+    <Compile Include="General\Utilities\ExcelData.cs">
+      <id>58e468c0-3d9b-4f2f-87d8-04e08acb81a6</id>
+    </Compile>
     <Compile Include="General\Utilities\FormDataAccount.cs">
       <id>825cf5a0-579b-42cd-932c-06219bba6b1c</id>
     </Compile>
     <Compile Include="General\Utilities\FormDataBilling.cs">
       <id>4af087d1-5774-4051-9e59-188955365568</id>
+    </Compile>
+    <Compile Include="General\Utilities\FormDataIPAddress.cs">
+      <id>c0baf93c-51c4-4a49-884a-fc6e33dc8344</id>
     </Compile>
     <Compile Include="General\Utilities\FormDataPayment.cs">
       <id>5795314a-2a6a-42fb-93c1-243208bba899</id>
@@ -155,6 +218,21 @@
     <None Include="app.config">
       <id>e702f5f2-2916-4963-adcc-74c1a0e25fc1</id>
     </None>
+    <None Include="General\Tests\BVT5\Admin_CS_NewAcctRepository.rxrep">
+      <id>bf2906ea-d13b-4a09-ac85-f79c5294ae4d</id>
+      <repoid>1273f589-4da2-4255-ad2b-a5c6488595ff</repoid>
+      <reporootid>8e7e5982-0f98-4e7b-ad69-ffa5a3335a13</reporootid>
+    </None>
+    <None Include="General\Tests\BVT5\Public_lpBVT5Repository.rxrep">
+      <id>dc4a6a48-b89b-4136-afa4-f00fb8e00002</id>
+      <repoid>43e3b16d-5e4b-4792-9fd3-e72a4c3f1d16</repoid>
+      <reporootid>8ec0adf8-37d6-47d6-bfa0-2fcb3edabd0e</reporootid>
+    </None>
+    <None Include="General\Tests\BVT5\Public_NewAcctAccessRepository.rxrep">
+      <id>b305e5de-6257-475a-bed0-a84916cdca37</id>
+      <repoid>0d341447-d39b-4730-9b40-6aef3db5d6ad</repoid>
+      <reporootid>96b341df-9816-4ff2-b42d-d37adb3a631b</reporootid>
+    </None>
     <None Include="General\Tests\ConsumerReg\ConsumerRegRepo.rxrep">
       <id>3b7a21e9-3705-4c92-bc5f-5656ff8a8ed9</id>
       <reporootid>c01e8542-268c-458b-a9b3-363285851754</reporootid>
@@ -164,6 +242,11 @@
       <id>2C265F80-98E0-495C-81AE-7AB3C83897D0</id>
       <repoid>82cec03a-770a-40d6-b498-119cbafb121f</repoid>
       <reporootid>1d6ce830-0df7-45d3-8518-f2705151a6d2</reporootid>
+    </None>
+    <None Include="General\Tests\EnterpriseCampus\EnterpriseCampusAcctSetup.rxrep">
+      <id>86805def-3770-43d7-b1cd-e74b9715b58e</id>
+      <repoid>fc760cce-a606-4ded-9c54-0b8978677736</repoid>
+      <reporootid>d8fd4343-4955-447e-b9c6-947d8986c648</reporootid>
     </None>
     <None Include="General\Tests\MultiBrowser\MemberHomePage.rxrep">
       <id>32340971-9464-4ff2-9e46-a79ff75a0c40</id>
@@ -223,6 +306,12 @@
     </Folder>
     <Folder Include="General\Tests\Educator">
       <id>a7761a53-836d-4c74-a0f3-06babf0edba6</id>
+    </Folder>
+    <Folder Include="General\Tests\BVT5">
+      <id>46f0160e-e6bd-4b74-9b72-081cc33161c7</id>
+    </Folder>
+    <Folder Include="General\Tests\EnterpriseCampus">
+      <id>d33aaa8a-f9a8-44cb-8f10-82af5806712d</id>
     </Folder>
     <Folder Include="General\Tests\Story_B_02914_Login">
       <id>7e5ab37e-96ac-4de7-aac5-bc756554fee9</id>

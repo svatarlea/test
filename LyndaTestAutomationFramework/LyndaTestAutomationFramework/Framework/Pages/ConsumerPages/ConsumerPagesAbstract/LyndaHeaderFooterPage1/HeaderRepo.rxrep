@@ -1,5 +1,5 @@
 ﻿<repository name="HeaderRepo" id="0675dd3d-4220-4bde-8e37-2658f2247710" rxversion="3.3.0.17843">
-	<codegen classname="HeaderRepo" namespace="ConsumerPagesAbstract.LyndaHeaderFooterPage1" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesAbstract"/>
+	<codegen classname="HeaderRepo" namespace="ConsumerPagesAbstract.LyndaHeaderFooterPage1" resourcebasedir="C:\Users\mperry\GITrepo\temp2\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesAbstract"/>
 	<rootfolder name="Root" id="dd5063b8-99c4-4d7c-abae-f8959eebbf1c" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOMbase" id="b10025bb-d9f1-4980-b9bf-67b402450255" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="SubscribeLink" id="b8389e85-ab84-4359-bd14-505deefe5be2" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
