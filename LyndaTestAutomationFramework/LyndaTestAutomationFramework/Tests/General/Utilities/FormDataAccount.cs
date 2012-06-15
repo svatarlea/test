@@ -35,8 +35,9 @@ namespace Tests.General.Utilities.Forms
 			TimeSpan timeSinceMidnight = currentDateTime.TimeOfDay;
 			//Seconds since midnight e.g. 47003.9293606
             double secondsSinceMidnight = timeSinceMidnight.TotalSeconds;
-            //Format "shortDate"-"secondsSinceMidnight" to no decimal places. e.g. 2-20-2012-47004
-            username = String.Format("{0}-{1:0.}", shortDate, secondsSinceMidnight);            
+            //Format lyndaqa-"shortDate"-"secondsSinceMidnight" to no decimal places.
+            //e.g. lyndaqa-2-20-2012-47004
+            username = String.Format("lyndaqa-{0}-{1:0.}", shortDate, secondsSinceMidnight);            
             email = String.Format("{0}@mailinator.com", username);  
     	}
     	

@@ -80,8 +80,9 @@ namespace Lynda.Test.ConsumerPages
 						TimeSpan timeSinceMidnight = currentDateTime.TimeOfDay;
 						//Seconds since midnight e.g. 47003.9293606
                         double secondsSinceMidnight = timeSinceMidnight.TotalSeconds;
-                        //Format "shortDate"-"secondsSinceMidnight" to no decimal places. e.g. 2-20-2012-47004
-                        Username = String.Format("{0}-{1:0.}", shortDate, secondsSinceMidnight);                       
+                        //Format lyndaqa-"shortDate"-"secondsSinceMidnight" to no decimal places.
+                        //e.g. lyndaqa-2-20-2012-47004
+                        Username = String.Format("lyndaqa-{0}-{1:0.}", shortDate, secondsSinceMidnight);                       
                         Email = String.Format("{0}@mailinator.com", username);                        
                         Password = "lynda1";
                         PasswordConfirm = password;
