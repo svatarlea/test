@@ -1,5 +1,5 @@
 ﻿<repository name="Public_lpBVT5Repository" id="43e3b16d-5e4b-4792-9fd3-e72a4c3f1d16" rxversion="3.3.0.17843">
-	<codegen classname="Public_lpBVT5Repository" namespace="Tests.General.Tests.BVT5" resourcebasedir="C:\Users\mperry\GITrepo\temp2\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<codegen classname="Public_lpBVT5Repository" namespace="Tests.General.Tests.BusinessSolutions.lyndaPro" resourcebasedir="C:\Users\jalex\git2JudeCode\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
 	<rootfolder name="Root" id="8ec0adf8-37d6-47d6-bfa0-2fcb3edabd0e" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="56b6aa61-6c61-475c-ab8c-719f9ae3dfba" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="WebDocumentSoftware_training_online" id="42d48072-5150-4832-be50-23042ac15dd4" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">

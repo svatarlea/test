@@ -1,5 +1,5 @@
 ﻿<repository name="Story_B_02914_LoginRepo" id="4d8e3c8d-c312-455c-b74a-570e20a9b4df" rxversion="3.3.0.17843">
-	<codegen classname="Story_B_02914_LoginRepo" namespace="Tests.General.Tests.Story_B_02914_Login" resourcebasedir="C:\Users\mperry\GITrepo\temp2\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<codegen classname="Story_B_02914_LoginRepo" namespace="Tests.General.Tests.Story_B_02914_Login" resourcebasedir="C:\Users\jalex\git2JudeCode\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
 	<rootfolder name="Root" id="b0017254-ce36-4185-917b-250caa8ff04b" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="Form" id="77812b61-8c32-44da-946d-ebfadb4bcaaf" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
 			<item name="NavigateEditBox" id="122d31d8-85c8-4e64-a222-eb8d267ab3fd" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">

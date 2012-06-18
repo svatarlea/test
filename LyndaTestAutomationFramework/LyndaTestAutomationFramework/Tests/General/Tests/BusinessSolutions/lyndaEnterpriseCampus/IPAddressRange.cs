@@ -10,7 +10,7 @@ using System;
 using System.Net;
 using Ranorex;
 
-namespace Tests.General.Tests.EnterpriseCampus
+namespace Tests.General.Tests.BusinessSolutions.lyndaEnterpriseCampus
 {
 	/// <summary>
 	/// Description of IPAddressRange.

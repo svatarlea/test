@@ -16,7 +16,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Tests.General.Tests.BVT5
+namespace Tests.General.Tests.BusinessSolutions.lyndaPro
 {
     /// <summary>
     /// The class representing the Admin_CS_NewAcctRepository element repository.

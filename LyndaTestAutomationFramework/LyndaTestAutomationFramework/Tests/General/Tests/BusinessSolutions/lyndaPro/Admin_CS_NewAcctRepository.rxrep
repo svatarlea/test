@@ -1,5 +1,5 @@
 ﻿<repository name="Admin_CS_NewAcctRepository" id="1273f589-4da2-4255-ad2b-a5c6488595ff" rxversion="3.3.0.17843">
-	<codegen classname="Admin_CS_NewAcctRepository" namespace="Tests.General.Tests.BVT5" resourcebasedir="C:\Users\mperry\GITrepo\temp2\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<codegen classname="Admin_CS_NewAcctRepository" namespace="Tests.General.Tests.BusinessSolutions.lyndaPro" resourcebasedir="C:\Users\jalex\git2JudeCode\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
 	<rootfolder name="Root" id="8e7e5982-0f98-4e7b-ad69-ffa5a3335a13" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="454fb43e-b24c-40e0-9ed9-e294e212ba61" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="WebDocumentLyndaPro_Admin_Registrat" id="f727a542-5bf5-46ca-83d9-8bdb6d8bd4d1" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">

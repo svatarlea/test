@@ -23,7 +23,7 @@ using Lynda.Test.Browsers;
 using Tests.General.Utilities;
 using Lynda.Test.Advanced.Utilities.WebPages;
 
-namespace Tests.General.Tests.BVT5
+namespace Tests.General.Tests.BusinessSolutions.lyndaPro
 {
     /// <summary>
     /// Description of Public_lpAddGroupsUsers.
@@ -146,6 +146,8 @@ namespace Tests.General.Tests.BVT5
 				 Validate.Exists(repo.DOM.ManageGroupsActionMenu.lnkAddUsersInfo);
 				 repo.DOM.ManageGroupsActionMenu.lnkAddUsers.MoveTo();
 				 repo.DOM.ManageGroupsActionMenu.lnkAddUsers.Click();
+				 
+				 Validate.Exists(repo.DOM.Modal_AddUsers.txtAUtxtGroupNameInfo);
 				 
 				 Report.Log(ReportLevel.Info,repo.DOM.Modal_AddUsers.txtAUtxtGroupName.TagValue.ToString());
 				 

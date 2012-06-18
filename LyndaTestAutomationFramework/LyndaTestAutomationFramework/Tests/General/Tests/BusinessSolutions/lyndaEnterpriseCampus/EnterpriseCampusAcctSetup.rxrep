@@ -1,5 +1,5 @@
 ﻿<repository name="EnterpriseCampusAcctSetup" id="fc760cce-a606-4ded-9c54-0b8978677736" rxversion="3.3.0.17843">
-	<codegen classname="EnterpriseCampusAcctSetup" namespace="Tests.General.Tests.EnterpriseCampus" resourcebasedir="C:\Users\mperry\GITrepo\temp2\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<codegen classname="EnterpriseCampusAcctSetup" namespace="Tests.General.Tests.BusinessSolutions.lyndaEnterpriseCampus" resourcebasedir="C:\Users\jalex\git2JudeCode\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
 	<rootfolder name="Root" id="d8fd4343-4955-447e-b9c6-947d8986c648" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="454fb43e-b24c-40e0-9ed9-e294e212ba61" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="Webpage" id="f727a542-5bf5-46ca-83d9-8bdb6d8bd4d1" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">

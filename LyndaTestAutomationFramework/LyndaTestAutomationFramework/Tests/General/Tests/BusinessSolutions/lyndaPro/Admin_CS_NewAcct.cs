@@ -24,7 +24,7 @@ using Tests.General.Utilities;
 using Tests.General.Utilities.Forms;
 using WinForms = System.Windows.Forms;
 
-namespace Tests.General.Tests.BVT5
+namespace Tests.General.Tests.BusinessSolutions.lyndaPro
 {
     /// <summary>
     /// Description of Admin_CS_NewAcct.
@@ -202,9 +202,8 @@ namespace Tests.General.Tests.BVT5
             if (varAccountType == "Complimentary")
                repo.DOM.SomeBodyTag.rbAccountType_Compl.Click();
             
-            
+            Validate.Exists(repo.DOM.SomeBodyTag.btnContinueInfo);
             repo.DOM.SomeBodyTag.btnContinue.MoveTo();
-            repo.DOM.SomeBodyTag.btnContinue.Focus();
             repo.DOM.SomeBodyTag.btnContinue.Click();
             
             
@@ -345,7 +344,7 @@ namespace Tests.General.Tests.BVT5
         	
         	
         	Validate.Attribute(repo.DOM.SomeBodyTag.txtDetailsUserName, "TagValue", varUsername);
-        	
+        	Report.Log(ReportLevel.Info, "New " + varPersona + " : " + " with username : " + varUsername + " created.");
         	ExcelData.Write(strResultsFile , intIndex+1, 2, varPersona, varUsername);
             
         	//TODO : Logout and close only when all iterations are completed.

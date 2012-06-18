@@ -25,7 +25,7 @@ using Tests.General.Utilities;
 using Tests.General.Utilities.Forms;
 
 
-namespace Tests.General.Tests.EnterpriseCampus
+namespace Tests.General.Tests.BusinessSolutions.lyndaEnterpriseCampus
 {
     
 	
@@ -68,7 +68,13 @@ namespace Tests.General.Tests.EnterpriseCampus
             Mouse.DefaultMoveTime = 50;
             Keyboard.DefaultKeyPressTime = 50;
             Delay.SpeedFactor = 1.0;
-             
+            //TODO: Update rxrep to support all Browsers
+            if(AppSettings.Browser != BrowserProduct.IE)
+            {
+            	Report.Error("Note: Currently only IE Supported; Please change the appsettings - Key Browser value to IE and retry.");
+            	throw new Ranorex.RanorexException();
+            } 
+            
             string strResultsFile = Directory.GetCurrentDirectory() + @"\Public_AcctAccessData.xlsx";
             string username = "knvirtualuser8";
             string password = "lynda1";
@@ -153,7 +159,7 @@ namespace Tests.General.Tests.EnterpriseCampus
            	 {
            	 	repo.DOM.AccountSetup.txtEmailDomain.PressKeys("{LControlKey down}{Akey}{LControlKey up}");
            		repo.DOM.AccountSetup.txtEmailDomain.PressKeys("{Back}");
-           	 	repo.DOM.AccountSetup.txtEmailDomain.PressKeys("testdomain");
+           	 	repo.DOM.AccountSetup.txtEmailDomain.PressKeys("testdomain.com");
            	 }
            	 Validate.Exists(repo.DOM.AccountSetup.btnContinuePg3of4Info);
            	repo.DOM.AccountSetup.btnContinuePg3of4.MoveTo();

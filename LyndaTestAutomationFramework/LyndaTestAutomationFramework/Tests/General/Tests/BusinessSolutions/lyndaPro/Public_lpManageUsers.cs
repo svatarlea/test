@@ -24,7 +24,7 @@ using Lynda.Test.Browsers;
 using Lynda.Test.Advanced.Utilities.WebPages;
 using Tests.General.Utilities;
 
-namespace Tests.General.Tests.BVT5
+namespace Tests.General.Tests.BusinessSolutions.lyndaPro
 {
     /// <summary>
     /// Description of Public_lpManageUsers.

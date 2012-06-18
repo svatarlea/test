@@ -20,7 +20,7 @@ using Ranorex.Core.Testing;
 using Tests.AppConfig;
 using Lynda.Test.Browsers;
 
-namespace Tests.General.Tests.BVT5
+namespace Tests.General.Tests.BusinessSolutions.lyndaPro
 {
     /// <summary>
     /// Description of Public_lpCleanGroupsUsers.

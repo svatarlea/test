@@ -21,7 +21,7 @@ using Ranorex.Core.Testing;
 using Lynda.Test.Browsers;
 using Tests.AppConfig;
 
-namespace Tests.General.Tests.EnterpriseCampus
+namespace Tests.General.Tests.BusinessSolutions.lyndaEnterpriseCampus
 {
     /// <summary>
     /// Description of TestModule.

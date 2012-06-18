@@ -1,5 +1,5 @@
 ﻿<repository name="Public_NewAcctAccessRepository" id="0d341447-d39b-4730-9b40-6aef3db5d6ad" rxversion="3.3.0.17843">
-	<codegen classname="Public_NewAcctAccessRepository" namespace="Tests.General.Tests.BVT5" resourcebasedir="C:\Users\mperry\GITrepo\temp2\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<codegen classname="Public_NewAcctAccessRepository" namespace="Tests.General.Tests.BusinessSolutions.lyndaPro" resourcebasedir="C:\Users\jalex\git2JudeCode\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
 	<rootfolder name="Root" id="96b341df-9816-4ff2-b42d-d37adb3a631b" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="5b5d3c89-ab8e-4f92-98a3-20577c3f5979" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<folder name="SomeBodyTag" id="2a264a64-6075-47b4-bb05-ca2c3cefed18" searchtimeout="30000ms" capname="bodytag" addcaps="unknown,webelement,bodytag" isrooted="True" usecache="False">

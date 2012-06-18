@@ -50,6 +50,183 @@
 				</column>
 			</fallbackcolumns>
 		</dataConnector>
+		<dataConnector name="BusSolns_Admin_NewAccts" type="Ranorex.Core.Data.ExcelDataConnector" id="3c0d6992-e772-4339-853c-0aead756ccda" filename="Admin_CS_NewAcctData.xlsx" worksheetname="Sheet1" worksheetrange="B:L" includefile="Checked">
+			<fallbackcolumns>
+				<column>
+					persona
+				</column>
+				<column>
+					accountType
+				</column>
+				<column>
+					Username
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					StartDate
+				</column>
+				<column>
+					ExpirationDate
+				</column>
+				<column>
+					NoofLicenses
+				</column>
+				<column>
+					EnterPromoCode
+				</column>
+				<column>
+					DiscountReason
+				</column>
+				<column>
+					Rep1
+				</column>
+				<column>
+					OperationType
+				</column>
+			</fallbackcolumns>
+		</dataConnector>
+		<dataConnector name="BusSolns_Public_AcctAccess" type="Ranorex.Core.Data.ExcelDataConnector" id="1d0b9a66-1280-4e8b-af45-958e12388ab6" filename="Public_AcctAccessData.xlsx" worksheetname="Sheet1" worksheetrange="B:AO" includefile="Checked">
+			<fallbackcolumns>
+				<column>
+					persona
+				</column>
+				<column>
+					Username
+				</column>
+				<column>
+					Password
+				</column>
+				<column>
+					Column4
+				</column>
+				<column>
+					Column5
+				</column>
+				<column>
+					Column6
+				</column>
+				<column>
+					Column7
+				</column>
+				<column>
+					Column8
+				</column>
+				<column>
+					Column9
+				</column>
+				<column>
+					Column10
+				</column>
+				<column>
+					Column11
+				</column>
+				<column>
+					Column12
+				</column>
+				<column>
+					Column13
+				</column>
+				<column>
+					Column14
+				</column>
+				<column>
+					Column15
+				</column>
+				<column>
+					Column16
+				</column>
+				<column>
+					Column17
+				</column>
+				<column>
+					Column18
+				</column>
+				<column>
+					Column19
+				</column>
+				<column>
+					Column20
+				</column>
+				<column>
+					Column21
+				</column>
+				<column>
+					Column22
+				</column>
+				<column>
+					Column23
+				</column>
+				<column>
+					Column24
+				</column>
+				<column>
+					Column25
+				</column>
+				<column>
+					Column26
+				</column>
+				<column>
+					Column27
+				</column>
+				<column>
+					Column28
+				</column>
+				<column>
+					Column29
+				</column>
+				<column>
+					Column30
+				</column>
+				<column>
+					Column31
+				</column>
+				<column>
+					Column32
+				</column>
+				<column>
+					Column33
+				</column>
+				<column>
+					Column34
+				</column>
+				<column>
+					Column35
+				</column>
+				<column>
+					Column36
+				</column>
+				<column>
+					Column37
+				</column>
+				<column>
+					Column38
+				</column>
+				<column>
+					Column39
+				</column>
+				<column>
+					Column40
+				</column>
+			</fallbackcolumns>
+		</dataConnector>
+		<dataConnector name="BusSolns_lpAcct" type="Ranorex.Core.Data.ExcelDataConnector" id="9ff76153-2b6f-4b27-a86d-44fc8cc961f9" filename="Public_lpAcctData.xlsx" worksheetname="Sheet1" worksheetrange="B:E" includefile="Checked">
+			<fallbackcolumns>
+				<column>
+					GroupCode
+				</column>
+				<column>
+					UserEmail
+				</column>
+				<column>
+					UserStatus
+				</column>
+				<column>
+					UserName
+				</column>
+			</fallbackcolumns>
+		</dataConnector>
 	</datasources>
 	<content>
 		<folder name="General" id="108c6022-89ef-4c23-802b-23fe8fd6cde3">
@@ -65,54 +242,121 @@
 			<testcase name="CreateEducator" id="cb6339f1-d3a9-46b7-ad9e-414e26c0e399">
 				<testmodule name="CreateEducator" id="d17f2e62-d812-4a76-9168-b5fac0f954d0" ref="fe2b6f36-8341-4d18-a9cf-7325f9390251" type="UserCode"/>
 			</testcase>
-			<folder name="BVT5" id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84">
+			<folder name="lyndaPro" id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84">
 				<folder name="BVT5_Precondition" id="eaaf240c-4fd3-455f-aa24-19e4bba957be">
-					<testcase name="Prep_lpAdmin" id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True">
-						<testmodule name="Admin_CS_NewAcct" id="1cdd5fbe-0d0c-4d23-8735-e64b5afcba83" ref="ed3e942b-6e05-4c79-b999-bd5146ea35cc" type="UserCode"/>
+					<testcase name="Prep_lpAdmin" id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="BusSolns_Admin_NewAccts">
+						<testmodule name="Admin_CS_NewAcct" id="1cdd5fbe-0d0c-4d23-8735-e64b5afcba83" ref="ed3e942b-6e05-4c79-b999-bd5146ea35cc" type="UserCode">
+							<databinding>
+								<var variablename="varPersona" variableid="8C000255-B7B7-4331-B9A2-6FA9DA65472E" dataname="persona" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varAccountType" variableid="D601E63D-3D8C-472F-A1C0-9BA208F002E6" dataname="accountType" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varUsername" variableid="CBA471B1-1567-4EEA-BD18-685C68CB5715" dataname="Username" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varSalesRep1" variableid="9E760F6A-7E9B-4189-B1DB-F72DA11FDAF6" dataname="Rep1" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varSalesOperationType" variableid="0E5282F7-833B-42C1-838E-4A10F36C4260" dataname="OperationType" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+							</databinding>
+						</testmodule>
 					</testcase>
-					<testcase name="BVT5_PublicNewAcctAccess" id="d1844dff-545d-4897-b07f-4097aab99565" minrange="0" maxrange="0" datarangeactive="True">
-						<testmodule name="Public_NewAcctAccess" id="7f722dad-7bcd-485c-9f92-33019d25d1da" ref="a69389bd-527d-4b6d-b0ff-557e1e283c9e" type="UserCode"/>
+					<testcase name="BVT5_PublicNewAcctAccess" id="d1844dff-545d-4897-b07f-4097aab99565" minrange="0" maxrange="0" datarangeactive="True" datasource="BusSolns_Public_AcctAccess">
+						<testmodule name="Public_NewAcctAccess" id="7f722dad-7bcd-485c-9f92-33019d25d1da" ref="a69389bd-527d-4b6d-b0ff-557e1e283c9e" type="UserCode">
+							<databinding>
+								<var variablename="varPersona" variableid="A4730979-E4FE-4FB3-A8F1-1BCE4DFD6869" dataname="persona" datasourceid="1d0b9a66-1280-4e8b-af45-958e12388ab6"/>
+								<var variablename="varUserName" variableid="613EC119-8E51-4F27-9CD2-BE4F82CD939B" dataname="Username" datasourceid="1d0b9a66-1280-4e8b-af45-958e12388ab6"/>
+							</databinding>
+						</testmodule>
 					</testcase>
 				</folder>
-				<testcase name="TC1_lyndaProAdmin_AddGroupsUsers" id="f65dad26-88c6-414b-8faa-109200942e03" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True">
-					<testmodule name="Public_lpAddGroupsUsers" id="449a1113-37a2-49fd-ba99-2424d0cf13fa" ref="a6fb8831-fb06-43ca-a7c2-9b1accd64646" type="UserCode"/>
+				<testcase name="TC1_lyndaProAdmin_AddGroupsUsers" id="f65dad26-88c6-414b-8faa-109200942e03" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="BusSolns_Public_AcctAccess">
+					<testmodule name="Public_lpAddGroupsUsers" id="449a1113-37a2-49fd-ba99-2424d0cf13fa" ref="a6fb8831-fb06-43ca-a7c2-9b1accd64646" type="UserCode">
+						<databinding>
+							<var variablename="varUsername" variableid="95874721-24BC-4CD4-AD41-6A595FA81489" dataname="Username" datasourceid="1d0b9a66-1280-4e8b-af45-958e12388ab6"/>
+						</databinding>
+					</testmodule>
 				</testcase>
-				<testcase name="TC2_lyndaProUser_Regn" id="569237fb-e44c-4940-92d0-9c9377b1f2a4" errorbehavior="ContinueNextIteration" minrange="0" maxrange="2">
-					<testmodule name="Public_lpNewUser_RegisterLogin" id="28e86fad-fa07-4991-9245-5f713e4794fa" ref="13f3dd1c-4c7a-4f4a-a4d9-f42f3df4104d" type="UserCode"/>
+				<testcase name="TC2_lyndaProUser_Regn" id="569237fb-e44c-4940-92d0-9c9377b1f2a4" errorbehavior="ContinueNextIteration" minrange="0" maxrange="2" datasource="BusSolns_lpAcct">
+					<testmodule name="Public_lpNewUser_RegisterLogin" id="28e86fad-fa07-4991-9245-5f713e4794fa" ref="13f3dd1c-4c7a-4f4a-a4d9-f42f3df4104d" type="UserCode">
+						<databinding>
+							<var variablename="varGroupCode" variableid="33709D07-6267-4323-A1D4-4AD77257FB4D" dataname="GroupCode" datasourceid="9ff76153-2b6f-4b27-a86d-44fc8cc961f9"/>
+							<var variablename="varUserEmail" variableid="84503917-B646-410D-B189-B3F2A22F3EF1" dataname="UserEmail" datasourceid="9ff76153-2b6f-4b27-a86d-44fc8cc961f9"/>
+							<var variablename="varUserstatus" variableid="B61E2514-DE87-4953-A94C-AFC36CD9D3F3" dataname="UserStatus" datasourceid="9ff76153-2b6f-4b27-a86d-44fc8cc961f9"/>
+						</databinding>
+					</testmodule>
 				</testcase>
-				<testcase name="TC3_lyndaProdAdmin_ManageUsers" id="c905a61d-a547-4294-8389-11d995543502" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True">
-					<testmodule name="Public_lpManageUsers" id="4c64a00d-07e8-49ed-9b1c-b80b853214ee" ref="08315453-3d16-459b-8d03-6084044f00ab" type="UserCode"/>
+				<testcase name="TC3_lyndaProdAdmin_ManageUsers" id="c905a61d-a547-4294-8389-11d995543502" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="BusSolns_Public_AcctAccess">
+					<testmodule name="Public_lpManageUsers" id="4c64a00d-07e8-49ed-9b1c-b80b853214ee" ref="08315453-3d16-459b-8d03-6084044f00ab" type="UserCode">
+						<databinding>
+							<var variablename="varUsername" variableid="1603EA22-E576-4893-92C5-E2CC5B91B028" dataname="Username" datasourceid="1d0b9a66-1280-4e8b-af45-958e12388ab6"/>
+						</databinding>
+					</testmodule>
 				</testcase>
-				<testcase name="TC4_lyndaProSubAdmin" id="dcac7107-933a-414b-99c1-f0e5a92e2425" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True">
-					<testmodule name="Public_lpNewSubAdmin" id="e1b136a2-f47b-4675-947e-995c4cc4448d" ref="3f31d071-ef12-455d-85da-c40eb003efc0" type="UserCode"/>
+				<testcase name="TC4_lyndaProSubAdmin" id="dcac7107-933a-414b-99c1-f0e5a92e2425" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="BusSolns_Public_AcctAccess">
+					<testmodule name="Public_lpNewSubAdmin" id="e1b136a2-f47b-4675-947e-995c4cc4448d" ref="3f31d071-ef12-455d-85da-c40eb003efc0" type="UserCode">
+						<databinding>
+							<var variablename="varUsername" variableid="B4B312A7-E6F9-479F-87B6-4E788F3B014E" dataname="Username" datasourceid="1d0b9a66-1280-4e8b-af45-958e12388ab6"/>
+						</databinding>
+					</testmodule>
 				</testcase>
-				<testcase name="TC5_lyndaProRemSubAdmin" id="9153f576-aa32-42b5-a84c-acf8e727531e" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True">
-					<testmodule name="Public_lpRemSubAdmin" id="f016cb32-de54-4fbb-ba65-3b342d5a8b9c" ref="4ef5f661-3628-46f2-a92f-7242c002bd46" type="UserCode"/>
+				<testcase name="TC5_lyndaProRemSubAdmin" id="9153f576-aa32-42b5-a84c-acf8e727531e" errorbehavior="Stop" minrange="0" maxrange="0" datarangeactive="True" datasource="BusSolns_Public_AcctAccess">
+					<testmodule name="Public_lpRemSubAdmin" id="f016cb32-de54-4fbb-ba65-3b342d5a8b9c" ref="4ef5f661-3628-46f2-a92f-7242c002bd46" type="UserCode">
+						<databinding>
+							<var variablename="varUsername" variableid="576A43C1-2DEB-484F-BEB5-E8DE322202C4" dataname="Username" datasourceid="1d0b9a66-1280-4e8b-af45-958e12388ab6"/>
+						</databinding>
+					</testmodule>
 				</testcase>
-				<testcase name="Cleanup" id="6faa9fa3-9922-4db5-bdc6-8dd627ef2e08" minrange="0" maxrange="0" datarangeactive="True">
-					<testmodule name="Public_lpCleanGroupsUsers" id="58547308-5017-46ce-9ea4-c4a2ae8e4e3d" ref="56df0cf4-cf34-41fa-b76b-ff8ef0bb3600" type="UserCode"/>
+				<testcase name="BVT5_Cleanup" id="6faa9fa3-9922-4db5-bdc6-8dd627ef2e08" minrange="0" maxrange="0" datarangeactive="True" datasource="BusSolns_Public_AcctAccess">
+					<testmodule name="Public_lpCleanGroupsUsers" id="58547308-5017-46ce-9ea4-c4a2ae8e4e3d" ref="56df0cf4-cf34-41fa-b76b-ff8ef0bb3600" type="UserCode">
+						<databinding>
+							<var variablename="varUsername" variableid="3BA8D5D8-0134-4025-ACFB-516326AF8E0E" dataname="Username" datasourceid="1d0b9a66-1280-4e8b-af45-958e12388ab6"/>
+						</databinding>
+					</testmodule>
 				</testcase>
 			</folder>
 			<folder name="EnterpriseCampus" id="e7b9d864-9218-42c7-a1f6-cc28285b022c">
 				<folder name="Enterprise" id="de5f10b7-0978-4294-b2c6-7386063dd5ec">
-					<testcase name="Prep_leAdmin" id="7d071d5a-27ab-495a-854a-2dcce2c4114a" minrange="3" maxrange="3" datarangeactive="True">
-						<testmodule name="Admin_CS_NewAcct" id="643ce9c4-27b6-48e1-8463-e0255decd42e" ref="ed3e942b-6e05-4c79-b999-bd5146ea35cc" type="UserCode"/>
+					<testcase name="Prep_leAdmin" id="7d071d5a-27ab-495a-854a-2dcce2c4114a" minrange="3" maxrange="3" datarangeactive="True" datasource="BusSolns_Admin_NewAccts">
+						<testmodule name="Admin_CS_NewAcct" id="643ce9c4-27b6-48e1-8463-e0255decd42e" ref="ed3e942b-6e05-4c79-b999-bd5146ea35cc" type="UserCode">
+							<databinding>
+								<var variablename="varPersona" variableid="8C000255-B7B7-4331-B9A2-6FA9DA65472E" dataname="persona" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varAccountType" variableid="D601E63D-3D8C-472F-A1C0-9BA208F002E6" dataname="accountType" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varUsername" variableid="CBA471B1-1567-4EEA-BD18-685C68CB5715" dataname="Username" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varSalesRep1" variableid="9E760F6A-7E9B-4189-B1DB-F72DA11FDAF6" dataname="Rep1" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varSalesOperationType" variableid="0E5282F7-833B-42C1-838E-4A10F36C4260" dataname="OperationType" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+							</databinding>
+						</testmodule>
 					</testcase>
-					<testcase name="TC_EC01_AcctSetup_IPlogin" id="0857d2c2-aa49-481e-9f5e-aa5dbc7353b6" minrange="3" maxrange="3" datarangeactive="True">
-						<testmodule name="EnterpriseAcctSetup_IP" id="a71eb3bd-2549-4ea8-b52d-a529e8adcf22" ref="dbb4c28f-ad02-4a89-9683-c7146ffd459f" type="UserCode"/>
+					<testcase name="TC_EC01_AcctSetup_IPlogin" id="0857d2c2-aa49-481e-9f5e-aa5dbc7353b6" minrange="3" maxrange="3" datarangeactive="True" datasource="BusSolns_Public_AcctAccess">
+						<testmodule name="EnterpriseAcctSetup_IP" id="a71eb3bd-2549-4ea8-b52d-a529e8adcf22" ref="dbb4c28f-ad02-4a89-9683-c7146ffd459f" type="UserCode">
+							<databinding>
+								<var variablename="varUsername" variableid="18A2165A-0A8E-4413-AC47-3788C10F97C7" dataname="Username" datasourceid="1d0b9a66-1280-4e8b-af45-958e12388ab6"/>
+							</databinding>
+						</testmodule>
 					</testcase>
 					<testcase name="unittest" id="010cb2cd-8b27-4f2f-afb0-119fac0a285c">
 						<testmodule name="TestModule" id="5fc42744-f519-46b1-86ea-13a673672ded" ref="9afafa71-d4c8-46a2-bbec-56086e4a20a0" type="UserCode"/>
 					</testcase>
 				</folder>
 				<folder name="Campus" id="78cb7f12-1af5-4c3b-a3a2-e5dd7138cbbf">
-					<testcase name="EC_Prep_lcAdmin" id="b1e2a5eb-7215-4f60-a43f-1a63c99f9c54" minrange="1" maxrange="1" datarangeactive="True">
-						<testmodule name="Admin_CS_NewAcct" id="fcaab644-4de9-4417-8d30-feca02e75542" ref="ed3e942b-6e05-4c79-b999-bd5146ea35cc" type="UserCode"/>
+					<testcase name="EC_Prep_lcAdmin" id="b1e2a5eb-7215-4f60-a43f-1a63c99f9c54" minrange="1" maxrange="1" datarangeactive="True" datasource="BusSolns_Admin_NewAccts">
+						<testmodule name="Admin_CS_NewAcct" id="fcaab644-4de9-4417-8d30-feca02e75542" ref="ed3e942b-6e05-4c79-b999-bd5146ea35cc" type="UserCode">
+							<databinding>
+								<var variablename="varPersona" variableid="8C000255-B7B7-4331-B9A2-6FA9DA65472E" dataname="persona" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varAccountType" variableid="D601E63D-3D8C-472F-A1C0-9BA208F002E6" dataname="accountType" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varUsername" variableid="CBA471B1-1567-4EEA-BD18-685C68CB5715" dataname="Username" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varSalesRep1" variableid="9E760F6A-7E9B-4189-B1DB-F72DA11FDAF6" dataname="Rep1" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varSalesOperationType" variableid="0E5282F7-833B-42C1-838E-4A10F36C4260" dataname="OperationType" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+							</databinding>
+						</testmodule>
 					</testcase>
 				</folder>
 				<folder name="Kiosk" id="fea24d67-a7c0-4a55-b604-079fb90dc715">
-					<testcase name="Prep_lkAdmin" id="ff6f666d-ce65-431b-aa84-8bbd0ce3d696" minrange="2" maxrange="2" datarangeactive="True">
-						<testmodule name="Admin_CS_NewAcct" id="7aadd7c3-f878-4dad-bd48-a0f5e797f540" ref="ed3e942b-6e05-4c79-b999-bd5146ea35cc" type="UserCode"/>
+					<testcase name="Prep_lkAdmin" id="ff6f666d-ce65-431b-aa84-8bbd0ce3d696" minrange="2" maxrange="2" datarangeactive="True" datasource="BusSolns_Admin_NewAccts">
+						<testmodule name="Admin_CS_NewAcct" id="7aadd7c3-f878-4dad-bd48-a0f5e797f540" ref="ed3e942b-6e05-4c79-b999-bd5146ea35cc" type="UserCode">
+							<databinding>
+								<var variablename="varPersona" variableid="8C000255-B7B7-4331-B9A2-6FA9DA65472E" dataname="persona" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varAccountType" variableid="D601E63D-3D8C-472F-A1C0-9BA208F002E6" dataname="accountType" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varUsername" variableid="CBA471B1-1567-4EEA-BD18-685C68CB5715" dataname="Username" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varSalesRep1" variableid="9E760F6A-7E9B-4189-B1DB-F72DA11FDAF6" dataname="Rep1" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+								<var variablename="varSalesOperationType" variableid="0E5282F7-833B-42C1-838E-4A10F36C4260" dataname="OperationType" datasourceid="3c0d6992-e772-4339-853c-0aead756ccda"/>
+							</databinding>
+						</testmodule>
 					</testcase>
 				</folder>
 			</folder>
@@ -133,16 +377,48 @@
 			</folder>
 		</folder>
 	</content>
-	<testconfigurations default="TestRun">
+	<testconfigurations default="lyndaPro_BVT5">
 		<testconfiguration name="TestRun">
 			<testcase id="108c6022-89ef-4c23-802b-23fe8fd6cde3"/>
+			<testcase id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84"/>
 			<testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
-			<testcase id="cb6339f1-d3a9-46b7-ad9e-414e26c0e399"/>
+			<testcase id="569237fb-e44c-4940-92d0-9c9377b1f2a4"/>
+			<testcase id="6faa9fa3-9922-4db5-bdc6-8dd627ef2e08"/>
+			<testcase id="9153f576-aa32-42b5-a84c-acf8e727531e"/>
+			<testcase id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21"/>
+			<testcase id="c905a61d-a547-4294-8389-11d995543502"/>
+			<testcase id="d1844dff-545d-4897-b07f-4097aab99565"/>
+			<testcase id="dcac7107-933a-414b-99c1-f0e5a92e2425"/>
+			<testcase id="eaaf240c-4fd3-455f-aa24-19e4bba957be"/>
+			<testcase id="f65dad26-88c6-414b-8faa-109200942e03"/>
 		</testconfiguration>
 		<testconfiguration name="TestRun1">
 			<testcase id="108c6022-89ef-4c23-802b-23fe8fd6cde3"/>
+			<testcase id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84"/>
 			<testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
+			<testcase id="569237fb-e44c-4940-92d0-9c9377b1f2a4"/>
 			<testcase id="6ce6c25b-f521-4089-8452-f4796a0ba4ae"/>
+			<testcase id="6faa9fa3-9922-4db5-bdc6-8dd627ef2e08"/>
+			<testcase id="9153f576-aa32-42b5-a84c-acf8e727531e"/>
+			<testcase id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21"/>
+			<testcase id="c905a61d-a547-4294-8389-11d995543502"/>
+			<testcase id="d1844dff-545d-4897-b07f-4097aab99565"/>
+			<testcase id="dcac7107-933a-414b-99c1-f0e5a92e2425"/>
+			<testcase id="eaaf240c-4fd3-455f-aa24-19e4bba957be"/>
+			<testcase id="f65dad26-88c6-414b-8faa-109200942e03"/>
+		</testconfiguration>
+		<testconfiguration name="lyndaPro_BVT5">
+			<testcase id="140fafa8-e0c4-40e9-90a8-2f0ccb54ab84"/>
+			<testcase id="569237fb-e44c-4940-92d0-9c9377b1f2a4"/>
+			<testcase id="6ce6c25b-f521-4089-8452-f4796a0ba4ae"/>
+			<testcase id="6faa9fa3-9922-4db5-bdc6-8dd627ef2e08"/>
+			<testcase id="9153f576-aa32-42b5-a84c-acf8e727531e"/>
+			<testcase id="bf9f6223-d7f5-4e08-9f44-5e52571e4e21"/>
+			<testcase id="c905a61d-a547-4294-8389-11d995543502"/>
+			<testcase id="d1844dff-545d-4897-b07f-4097aab99565"/>
+			<testcase id="dcac7107-933a-414b-99c1-f0e5a92e2425"/>
+			<testcase id="eaaf240c-4fd3-455f-aa24-19e4bba957be"/>
+			<testcase id="f65dad26-88c6-414b-8faa-109200942e03"/>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
@@ -162,22 +438,22 @@
 			C:\Windows\assembly\GAC_32\Ranorex.Libs.WinForms\3.3.0.17843__b798506b574ebc9a\Ranorex.Libs.WinForms.dll
 		</reference>
 		<reference>
-			..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
-		</reference>
-		<reference>
-			Browsers.dll
-		</reference>
-		<reference>
-			WebPages.dll
-		</reference>
-		<reference>
-			ConsumerPagesMain.dll
+			PagesAbstractGeneral.dll
 		</reference>
 		<reference>
 			ConsumerPagesAbstract.dll
 		</reference>
 		<reference>
-			PagesAbstractGeneral.dll
+			ConsumerPagesMain.dll
+		</reference>
+		<reference>
+			WebPages.dll
+		</reference>
+		<reference>
+			Browsers.dll
+		</reference>
+		<reference>
+			..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
 		</reference>
 	</references>
 </testsuite>

@@ -1,5 +1,5 @@
 ﻿<repository name="RegPageStep2Repo" id="9d112fce-9408-4e31-a755-6f592d5b2dfa" rxversion="3.3.0.17843">
-	<codegen classname="RegPageStep2Repo" namespace="ConsumerPagesMain.RegStep2" resourcebasedir="C:\Users\mperry\GITrepo\temp2\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<codegen classname="RegPageStep2Repo" namespace="ConsumerPagesMain.RegStep2" resourcebasedir="C:\Users\jalex\git2JudeCode\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
 	<rootfolder name="Root" id="5950c3eb-5975-4e43-b477-23d3bc6cd340" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="IHaveReadInput" id="18e7ed2b-285e-482a-91b0-796410119d44" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">

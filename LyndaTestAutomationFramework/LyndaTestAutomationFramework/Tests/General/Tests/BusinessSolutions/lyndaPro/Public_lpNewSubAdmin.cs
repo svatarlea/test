@@ -23,7 +23,7 @@ using Lynda.Test.Browsers;
 using Tests.General.Utilities;
 using Lynda.Test.Advanced.Utilities.WebPages;
 
-namespace Tests.General.Tests.BVT5.TestData
+namespace Tests.General.Tests.BusinessSolutions.lyndaPro
 {
     /// <summary>
     /// Description of Public_lpNewSubAdmin.
@@ -89,16 +89,19 @@ namespace Tests.General.Tests.BVT5.TestData
             SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.Body.selGroupName_CreateSubadminPage, "QA_Group1");
 		    
 		    SelectTagUI.ChooseSelectTagOption(repo.DOM.BasePath.ToString(),repo.DOM.Body.selUserName_CreateSubadminPage, "TestLname, TestFnamea");
-
+		    
+		    Validate.Exists(repo.DOM.Body.selGroupsAvail_CreateSubAdminPageInfo);
+		    
 			foreach (OptionTag option in repo.DOM.Body.selGroupsAvail_CreateSubAdminPage.Find(".//option", 30000))
 			{
+				
 				if(option.InnerText == "QA_Group1")
 				{
-					option.Focus();
-					option.Click();
+					option.Selected = true;
+					Report.Log(ReportLevel.Info, "Debug : option value " + option.Selected.ToString());
 				}	
 			}
-	
+		    
 		    //TODO: validate repo.DOM.Body.selGroupsManaged_CreateSubadminPage is empty 
 		        	
 		    repo.DOM.Body.btnAddGrouptoManage_CreateSubadminPage.Click();

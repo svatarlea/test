@@ -24,7 +24,7 @@ using Tests.General.Utilities;
 using Tests.General.Utilities.Forms;
 using WinForms = System.Windows.Forms;
 
-namespace Tests.General.Tests.BVT5
+namespace Tests.General.Tests.BusinessSolutions.lyndaPro
 {
     /// <summary>
     /// Description of Public_lpNewUser_RegisterLogin.
@@ -111,7 +111,7 @@ namespace Tests.General.Tests.BVT5
              	string strUsername, strEmail;
             	FormDataAccount.GenerateUsernameEmail(out strUsername, out strEmail);
             	
-            	string strunamePrefix = "lyndaqalpuser";
+            	string strunamePrefix = "";
             	string lpusername = strunamePrefix + strUsername;
             	
             	repo.DOM.UserRegnPage2.txtUsername_RegnPage2.PressKeys(lpusername);

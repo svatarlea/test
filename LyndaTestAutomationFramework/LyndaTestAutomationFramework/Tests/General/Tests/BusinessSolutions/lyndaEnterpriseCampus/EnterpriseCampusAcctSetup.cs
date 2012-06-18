@@ -16,7 +16,7 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace Tests.General.Tests.EnterpriseCampus
+namespace Tests.General.Tests.BusinessSolutions.lyndaEnterpriseCampus
 {
     /// <summary>
     /// The class representing the EnterpriseCampusAcctSetup element repository.

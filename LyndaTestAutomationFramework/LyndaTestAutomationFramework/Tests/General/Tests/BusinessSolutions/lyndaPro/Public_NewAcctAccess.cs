@@ -23,7 +23,7 @@ using Lynda.Test.Browsers;
 using Tests.AppConfig;
 using Tests.General.Utilities;
 
-namespace Tests.General.Tests.BVT5
+namespace Tests.General.Tests.BusinessSolutions.lyndaPro
 {
    
 	
