@@ -1,5 +1,5 @@
 ﻿<repository name="Safari" id="223313f9-f148-4504-a562-c8d1988dbdf9" rxversion="3.3.0.17843">
-	<codegen classname="Safari" namespace="Browsers.SafariBrowser" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
+	<codegen classname="Safari" namespace="Browsers.SafariBrowser" resourcebasedir="C:\Users\mperry\gitrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
 	<rootfolder name="Root" id="a4f3ebd6-bd34-4818-936b-6d0a7e3de81a" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="a68b881b-e066-4a8b-b4f6-fc6e32cc5639" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="WebPage" id="1b645d8d-7e90-46bd-87cd-1b358636d6dd" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">

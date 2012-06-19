@@ -1,6 +1,6 @@
 ﻿<testsuite name="Tests" rxversion="3.3.0.17843" id="3f647c1d-1399-4837-9f78-e70951b71080" reportfilename="%S_%Y%M%D_%T.rxlog" reportxslfilename="" reportwriteinterval="30000ms" reportcompress="False" enabletracingscreenshots="True" description="" reportlevel="Info;20">
 	<datasources>
-		<dataConnector name="Subscriptions" type="Ranorex.Core.Data.ExcelDataConnector" id="ffa9686f-1436-4968-897b-53583ed729f3" filename="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests\Tests\Tests\ConsumerReg\AllRegistrations.xlsx" worksheetname="TestRowsAutomated" worksheetrange="A:C" includefile="Checked">
+		<dataConnector name="Subscriptions" type="Ranorex.Core.Data.ExcelDataConnector" id="ffa9686f-1436-4968-897b-53583ed729f3" filename="C:\Users\mperry\GITrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests\Skynet\ConsumerReg\AllRegistrations.xlsx" worksheetname="TestRowsAutomated" worksheetrange="A:C" includefile="Unchecked">
 			<fallbackcolumns>
 				<column>
 					SubscriptionPlan
@@ -13,7 +13,7 @@
 				</column>
 			</fallbackcolumns>
 		</dataConnector>
-		<dataConnector name="Story_B_02914_Login" type="Ranorex.Core.Data.ExcelDataConnector" id="8009c209-c10c-4c67-8add-1421c2c4f17c" filename="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests\General\Tests\Story_B_02914_Login\Story_B_02914_Login.xlsx" worksheetname="TestRowsAutomated" worksheetrange="A:K" includefile="Checked">
+		<dataConnector name="Story_B_02914_Login" type="Ranorex.Core.Data.ExcelDataConnector" id="8009c209-c10c-4c67-8add-1421c2c4f17c" filename="C:\Users\mperry\GITrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests\General\Tests\Story_B_02914_Login\Story_B_02914_Login.xlsx" worksheetname="TestRowsAutomated" worksheetrange="A:K" includefile="Unchecked">
 			<fallbackcolumns>
 				<column>
 					NavigateTo
@@ -112,22 +112,22 @@
 			C:\Windows\assembly\GAC_32\Ranorex.Libs.WinForms\3.3.0.17843__b798506b574ebc9a\Ranorex.Libs.WinForms.dll
 		</reference>
 		<reference>
-			PagesAbstractGeneral.dll
-		</reference>
-		<reference>
-			ConsumerPagesAbstract.dll
-		</reference>
-		<reference>
-			ConsumerPagesMain.dll
-		</reference>
-		<reference>
-			WebPages.dll
+			..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
 		</reference>
 		<reference>
 			Browsers.dll
 		</reference>
 		<reference>
-			..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
+			WebPages.dll
+		</reference>
+		<reference>
+			ConsumerPagesMain.dll
+		</reference>
+		<reference>
+			ConsumerPagesAbstract.dll
+		</reference>
+		<reference>
+			PagesAbstractGeneral.dll
 		</reference>
 	</references>
 </testsuite>

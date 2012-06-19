@@ -1,5 +1,5 @@
 ﻿<repository name="OTLPlanInfoRepo" id="9abf8fd9-0d8c-428e-8155-33e2fba5c8b8" rxversion="3.3.0.17843">
-	<codegen classname="OTLPlanInfoRepo" namespace="ConsumerPagesMain.RegConfirm" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<codegen classname="OTLPlanInfoRepo" namespace="ConsumerPagesMain.RegConfirm" resourcebasedir="C:\Users\mperry\gitrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
 	<rootfolder name="Root" id="3fcad546-cef4-4d24-8ca7-7a3a4062a81e" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="2a88a4ef-6070-4d81-974a-6de75b7a1141" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="OTLPlanPrice" id="83152af2-e5a5-4ad6-a55a-860c228637be" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">

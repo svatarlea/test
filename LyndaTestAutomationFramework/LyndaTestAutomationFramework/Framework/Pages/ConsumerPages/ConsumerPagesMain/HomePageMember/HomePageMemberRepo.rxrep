@@ -1,5 +1,5 @@
 ﻿<repository name="HomePageMemberRepo" id="bfc87119-05b2-4370-8a68-13183b2c3491" rxversion="3.3.0.17843">
-	<codegen classname="HomePageMemberRepo" namespace="ConsumerPagesMain.HomePageMember" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<codegen classname="HomePageMemberRepo" namespace="ConsumerPagesMain.HomePageMember" resourcebasedir="C:\Users\mperry\gitrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
 	<rootfolder name="Root" id="d4e8c92d-ca76-47f6-b467-d5e40e210536" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOMbase" id="00ec6c98-0b85-45c1-935d-b288fd0dc41c" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<folder name="LatestReleaseTabs" id="cd1bb5e7-57e4-4763-b036-ae2fccefc5b9" searchtimeout="0ms" capname="unknown" isrooted="False">

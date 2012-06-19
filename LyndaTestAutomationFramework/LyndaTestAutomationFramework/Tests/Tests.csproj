@@ -146,12 +146,6 @@
     <Compile Include="Skynet\Demo\RegMultiBrowser\RegMultiBrowser.cs">
       <id>15406e70-517c-4a1f-a994-78dee4bc609e</id>
     </Compile>
-    <Content Include="AllRegistrations.xlsx">
-      <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
-      <DependentUpon>Tests.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>bd88fa50-aea1-46d6-8aea-22a09151b36e</id>
-    </Content>
     <None Include="app.config">
       <id>e702f5f2-2916-4963-adcc-74c1a0e25fc1</id>
     </None>
@@ -176,12 +170,6 @@
       <projectdefaultrepository>true</projectdefaultrepository>
       <repoid>4d8e3c8d-c312-455c-b74a-570e20a9b4df</repoid>
     </None>
-    <Content Include="Story_B_02914_Login.xlsx">
-      <BoundTo>ccad5aec-3cb9-485a-a031-4542e4ff132c</BoundTo>
-      <DependentUpon>Tests.rxtst</DependentUpon>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <id>2e643a99-282a-4026-9137-2996e15dd3cd</id>
-    </Content>
     <Content Include="Tests.rxtst">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>ccad5aec-3cb9-485a-a031-4542e4ff132c</id>

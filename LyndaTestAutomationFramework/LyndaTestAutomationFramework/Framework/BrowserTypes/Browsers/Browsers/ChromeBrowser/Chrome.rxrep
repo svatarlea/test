@@ -1,5 +1,5 @@
 ﻿<repository name="Chrome" id="0bfa8476-14bc-4ad3-8a40-1e2d991af687" rxversion="3.3.0.17843">
-	<codegen classname="Chrome" namespace="Browsers.ChromeBrowser" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
+	<codegen classname="Chrome" namespace="Browsers.ChromeBrowser" resourcebasedir="C:\Users\mperry\gitrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
 	<rootfolder name="Root" id="cf5abfec-c870-4e9f-abf2-d23d77ae15ed" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="f5109710-53f2-48e2-b62b-d7ae1fcd5a4a" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="WebPage" id="a04f60ff-c95b-4a04-ae99-3e7cd867c805" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument">

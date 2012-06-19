@@ -1,5 +1,5 @@
 ﻿<repository name="RegConfirmRepo" id="59c48bef-c8cb-4fba-b93c-1007fa5dbe63" rxversion="3.3.0.17843">
-	<codegen classname="RegConfirmRepo" namespace="ConsumerPagesMain.RegConfirm" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<codegen classname="RegConfirmRepo" namespace="ConsumerPagesMain.RegConfirm" resourcebasedir="C:\Users\mperry\gitrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
 	<rootfolder name="Root" id="5baa0d35-4aae-4139-b0a7-6b75cda9eec7" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="PrintReceiptSpan" id="5ee21bea-e92f-4d23-9c05-066bee7a1d07" searchtimeout="30000ms" capname="spantag" addcaps="unknown,webelement,spantag">

@@ -1,5 +1,5 @@
 ﻿<repository name="HeaderRepo" id="49bab088-7346-405a-969d-c12205af5ab7" rxversion="3.3.0.17843">
-	<codegen classname="HeaderRepo" namespace="ConsumerPagesAbstract.LyndaHeaderFooterPage3" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesAbstract"/>
+	<codegen classname="HeaderRepo" namespace="ConsumerPagesAbstract.LyndaHeaderFooterPage3" resourcebasedir="C:\Users\mperry\gitrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesAbstract"/>
 	<rootfolder name="Root" id="1baeb281-0703-4776-ad8e-348e00fa0997" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="6683bd48-49ee-4212-8ab2-938e09fb7f27" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="LogOut" id="066500ea-d342-40f5-b455-413fb027b51d" searchtimeout="30000ms" capname="strongtag" addcaps="unknown,webelement,strongtag">

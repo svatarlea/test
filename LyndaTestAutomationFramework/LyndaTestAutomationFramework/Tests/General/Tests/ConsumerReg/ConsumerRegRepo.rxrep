@@ -1,5 +1,5 @@
 ﻿<repository name="ConsumerRegRepo" id="3a7797e6-9535-4e0d-b260-0e1480059b10" rxversion="3.3.0.17843">
-	<codegen classname="ConsumerRegRepo" namespace="Tests.General.Tests.ConsumerReg" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<codegen classname="ConsumerRegRepo" namespace="Tests.General.Tests.ConsumerReg" resourcebasedir="C:\Users\mperry\gitrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
 	<rootfolder name="Root" id="c01e8542-268c-458b-a9b3-363285851754" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="Form" id="77812b61-8c32-44da-946d-ebfadb4bcaaf" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
 			<item name="NavigateEditBox" id="122d31d8-85c8-4e64-a222-eb8d267ab3fd" searchtimeout="30000ms" capname="text" addcaps="text,nativewindow">
