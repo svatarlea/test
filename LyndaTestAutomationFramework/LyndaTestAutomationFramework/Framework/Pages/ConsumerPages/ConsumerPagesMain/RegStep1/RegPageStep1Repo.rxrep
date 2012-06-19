@@ -1,5 +1,5 @@
 ﻿<repository name="RegPageStep1Repo" id="2245834b-648b-48b0-b797-fc5bfa89e480" rxversion="3.3.0.17843">
-	<codegen classname="RegPageStep1Repo" namespace="ConsumerPagesMain.RegStep1" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<codegen classname="RegPageStep1Repo" namespace="ConsumerPagesMain.RegStep1" resourcebasedir="C:\Users\mjordan\Documents\Ranorex\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
 	<rootfolder name="Root" id="742ba02d-1b46-4948-9c3b-649792e2d609" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="89597d3b-6b55-44a6-aaa5-914eedf6a09b" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="ContinueButtonInput" id="0aac29bb-151d-4400-a8e8-8fea03c1cebe" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">

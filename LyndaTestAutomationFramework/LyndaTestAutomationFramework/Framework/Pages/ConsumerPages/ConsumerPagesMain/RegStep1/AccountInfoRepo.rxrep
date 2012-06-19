@@ -1,5 +1,5 @@
 ﻿<repository name="AccountInfoRepo" id="b5094ddd-6080-433d-a4ab-3b2998356dd9" rxversion="3.3.0.17843">
-	<codegen classname="AccountInfoRepo" namespace="ConsumerPagesMain.RegStep1" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<codegen classname="AccountInfoRepo" namespace="ConsumerPagesMain.RegStep1" resourcebasedir="C:\Users\mjordan\Documents\Ranorex\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
 	<rootfolder name="Root" id="5ac99b8c-7c79-4aab-b72e-c7919e4b02bf" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="89597d3b-6b55-44a6-aaa5-914eedf6a09b" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="FirstNameInput" id="565efb7d-4da0-4681-9ed3-475bef29f1f6" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">

@@ -1,0 +1,204 @@
+﻿<repository name="FreeTrialrepo" id="8a35c974-f847-4954-882d-1e0045a5ae15" rxversion="3.2.3.16825">
+  <codegen classname="FreeTrialrepo" namespace="Tests.General.Tests.FreeTrial"/>
+  <rootfolder name="Root" id="afaaa5c6-d328-410d-ac03-9af7b6afb9a6" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+    <appfolder name="dom" id="0a4c5adb-2c00-4bda-9b87-bd89f71e16c2" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="body" id="1839eaf1-396e-4bae-a8fe-e326a7e7d164" searchtimeout="30000ms" capname="bodytag" addcaps="unknown,webelement,bodytag">
+        <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body]]>
+      </item>
+      <folder name="starttrial" id="b2c1425d-3354-4934-8ead-6106a3dba5ee" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+        <item name="ATagStart_free_trial" id="c6ccdc12-8f53-45a6-a945-0ca8724c09ac" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[@id='upper']/a[@innertext='start free trial']]]>
+        </item>
+        <item name="ObjectTagLynda_video_9653" id="fdfc1432-9b7f-4228-b505-417fe5c22aac" searchtimeout="30000ms" capname="objecttag" addcaps="unknown,webelement,objecttag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[2]/div/object[@id='lynda-video-9653']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']]]>
+        </basepath>
+      </folder>
+      <folder name="coursetabs" id="d34ad04d-155c-4289-bdee-2121af3d9689" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+        <item name="LiTagN3D" id="63b1b398-2742-40d3-ba36-f8ac633592e5" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[3]/div/ul/li[@innertext='3D']]]>
+        </item>
+        <item name="LiTagAudio" id="ef3d39ad-66cb-4147-bb7c-3bedeb21169d" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[3]/div/ul/li[@innertext='Audio']]]>
+        </item>
+        <item name="LiTagBusiness" id="d018236b-fdca-4f53-a282-5e6e46a445ad" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[3]/div/ul/li[@innertext='Business']]]>
+        </item>
+        <item name="LiTagDesign" id="1f56e2c4-fd0c-4e9b-91c2-bd9800fb9cd0" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[3]/div/ul/li[@innertext='Design']]]>
+        </item>
+        <item name="LiTagDeveloper" id="b05621c2-fd42-44c5-b6fe-6878e2173f71" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[3]/div/ul/li[@innertext='Developer']]]>
+        </item>
+        <item name="LiTagDocumentaries" id="c9e8ee1a-9987-4fa2-a8c6-9577859d2e5b" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[3]/div/ul/li[@innertext='Documentaries']]]>
+        </item>
+        <item name="LiTagPhotography" id="9e98b29d-07a4-4663-a7f7-b2fa88896e47" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[3]/div/ul/li[@innertext='Photography']]]>
+        </item>
+        <item name="LiTagVideo" id="dcf6276e-c31d-4554-89c4-9a3c20d9d3cd" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[3]/div/ul/li[@innertext='Video']]]>
+        </item>
+        <item name="LiTagWeb" id="6677ffcc-5830-4ab6-899d-05f8e8f35f70" searchtimeout="30000ms" capname="litag" addcaps="unknown,webelement,litag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[3]/div/ul/li[@innertext='Web']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[@id='content']/div[3]/div]]>
+        </basepath>
+      </folder>
+      <folder name="actinfo" id="5e3fcb51-e0c8-4df0-8ac9-40da7f1a47c8" searchtimeout="30000ms" capname="bodytag" addcaps="unknown,webelement,bodytag" isrooted="True" usecache="False">
+        <item name="firstname" id="e89388da-a9f4-4cce-8253-edbf16cc17e5" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/form/fieldset/table/tbody/tr[1]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']/input[@id='txtFirstName']]]>
+        </item>
+        <item name="lastname" id="abcb9dd5-21ee-422e-a05c-83c2f47dbba0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/form/fieldset/table/tbody/tr[2]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']/input[@id='txtLastName']]]>
+        </item>
+        <item name="email" id="8e866d1b-14d9-48e9-b257-67c36b612294" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/form/fieldset/table/tbody/tr[3]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']/input[@id='txtEmail']]]>
+        </item>
+        <item name="username" id="209a2e6e-eaab-48e4-ba0b-7fac7dbc68e7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/form/fieldset/table/tbody/tr[4]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']/input[@id='txtUserName']]]>
+        </item>
+        <item name="password" id="dae8cd21-1bfe-4452-9617-794373d5f146" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/form/fieldset/table/tbody/tr[5]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']/input[@id='txtPassword']]]>
+        </item>
+        <item name="passwordconfirm" id="c4ff070e-5c98-4b66-9bc6-fbadf6960f70" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/form/fieldset/table/tbody/tr[6]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']/input[@id='txtPasswordConfirm']]]>
+        </item>
+        <item name="continuebtn" id="d8889f5c-d8aa-4f4b-b3ba-1e0e16f9dddd" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/form/span/input[@name='Continue']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body]]>
+        </basepath>
+      </folder>
+      <folder name="billinginfo" id="dc8a8baa-7ecc-4e7b-94bd-4d70b4f75cb9" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+        <item name="country" id="815b8b0a-3c80-4fb3-8afa-d1dd8868081e" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[1]/td[2]/select[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_drpCountry']]]>
+        </item>
+        <item name="firstname" id="bbeaf0d1-a2c0-4be3-a38a-7e89c6bea6cb" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[2]/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_txtFirstName']]]>
+        </item>
+        <item name="lastname" id="5a712641-e3ae-49be-81f5-86d0e6314dfd" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[3]/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_txtLastName']]]>
+        </item>
+        <item name="company" id="8e752020-87fb-421b-97c9-bc0b74cbe3cc" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[4]/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_txtCompany']]]>
+        </item>
+        <item name="address1" id="d7ca824a-2847-49e4-8052-8e87aba4a330" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[5]/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_txtAddress1']]]>
+        </item>
+        <item name="address2" id="d603bd44-adc3-4742-af00-b02b6b55504c" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[6]/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_txtAddress2']]]>
+        </item>
+        <item name="city" id="04bda1fa-72f1-47cf-93a4-2251c56d988e" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[7]/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_txtCity']]]>
+        </item>
+        <item name="state" id="e2b4950e-9680-418c-8700-146dad640a5f" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[8]/td[2]/select[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_drpState']]]>
+        </item>
+        <item name="zip" id="1fe8e899-a74f-412f-acc3-71f7a27e7059" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[9]/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_txtZIP']]]>
+        </item>
+        <item name="email" id="0e98e6d5-a852-48f5-a6c8-001315eb73b5" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_rowEmail']/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ']/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_txtBillingEmail']]]>
+        </item>
+        <item name="phone" id="5f0dd70c-d067-4eeb-96fb-84e228d7e372" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_trPhone']/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucBillingInfo_txtPhone']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table]]>
+        </basepath>
+      </folder>
+      <folder name="cctype" id="24a16266-39d2-450a-9b45-add1ef130484" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+        <item name="cctype" id="b8b117a2-11d7-4889-b1ba-460be4bbd35d" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[4]/div[2]/table/tbody/tr[2]/td[2]/select[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucCreditCard_drpCreditCardType']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div]]>
+        </basepath>
+      </folder>
+      <folder name="ccinfo" id="97d6f5e2-e34f-4aad-908e-db60d0554715" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+        <item name="ccnumber" id="145536ef-8a0f-4438-8b09-8bab6692ea55" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[4]/div[2]/table/tbody/tr[3]/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucCreditCard_txtCreditCardNumber']]]>
+        </item>
+        <item name="ccname" id="4ada74b6-653c-4153-b203-34b1d6931f8f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[4]/div[2]/table/tbody/tr[4]/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucCreditCard_txtNameOnCard']]]>
+        </item>
+        <item name="cccode" id="88fad4e7-ec2f-4571-842f-66c01ee1c057" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[4]/div[2]/table/tbody/tr[5]/td[2]/input[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucCreditCard_txtCreditCardSecurityCode']]]>
+        </item>
+        <item name="expmo" id="bf6563bf-6751-4819-9481-609f2209ab97" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[4]/div[2]/table/tbody/tr[6]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ /\ \ ']/select[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucCreditCard_drpExpirationMonth']]]>
+        </item>
+        <item name="expyr" id="7692a943-5bf5-4e77-8f72-26fc5bd061be" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[4]/div[2]/table/tbody/tr[6]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ /\ \ ']/select[@id='ctl00_main_ucRegistrationStep2_ucPaymentInformation_ucCreditCard_drpExpirationYear']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_pnl']/div/fieldset[4]/div[2]/table]]>
+        </basepath>
+      </folder>
+      <folder name="terms" id="dd0cb3e1-8fd0-47ae-b258-73539ce4363b" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+        <item name="terms" id="091e3f4e-e505-4e3c-af02-02f9fb525878" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@innertext='. ']/input[@id='ctl00_main_ucRegistrationStep2_TermsAndConditionsCheckBox1_chkTerms']]]>
+        </item>
+        <item name="aboutus" id="9b775975-fb48-4cea-8a65-bbf2883f6ea9" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/div[@id='ctl00_main_ucRegistrationStep2_ucHearAbout_divHearAbout']/select[@id='ctl00_main_ucRegistrationStep2_ucHearAbout_ddlHearAboutUs']]]>
+        </item>
+        <item name="submit" id="219864de-707e-49e8-94eb-f94d914f45cb" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]/p/span[1]/input[@id='ctl00_main_ucRegistrationStep2_btnSubmit']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/form/div[2]/div[2]]]>
+        </basepath>
+      </folder>
+      <basepath>
+        <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <appfolder name="confirmationpage" id="dcb0408e-88dc-4ca4-a93c-a5c79e172544" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="confirmationtxt" id="ff4c2117-a03d-4434-9b04-031143344bdb" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag">
+        <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[2]/div[2]]]>
+      </item>
+      <item name="continuebtn" id="70c10694-f999-4d3a-8d12-cab37138a7ff" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[2]/div[2]/p[3]/span/input[@id='ctl00_main_RegistrationConfirmation_btnSubmit']]]>
+      </item>
+      <basepath>
+        <![CDATA[/dom[@domain='release.lynda.com']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <basepath>
+    </basepath>
+  </rootfolder>
+  <variables/>
+</repository>

@@ -65,6 +65,36 @@
 			<testcase name="CreateEducator" id="cb6339f1-d3a9-46b7-ad9e-414e26c0e399">
 				<testmodule name="CreateEducator" id="d17f2e62-d812-4a76-9168-b5fac0f954d0" ref="fe2b6f36-8341-4d18-a9cf-7325f9390251" type="UserCode"/>
 			</testcase>
+			<folder name="Admin" id="f8bd33d1-0380-4fd2-a011-b81aa5bcdb55">
+				<testcase name="Admin4" id="c613b116-1062-4237-baad-5332a6961b58">
+					<testmodule name="admin4" id="98ba517a-d4f0-4475-9231-3888b1fafb68" ref="2a66975d-b913-4fe0-8b3c-c85db1232749" type="UserCode"/>
+				</testcase>
+				<folder name="AdminReports" id="b3dba823-4837-4520-a5f3-bb07cf07d8f8">
+					<testcase name="Royalty" id="e0165b89-1233-4104-9895-bbfdd2b6ca55">
+						<testmodule name="admin_reports_royalty" id="e0ae8731-edba-407b-a257-ff7a84a83fbd" ref="fb03f5b4-9539-4ea4-b0e8-4eb407bcec35" type="UserCode"/>
+					</testcase>
+					<testcase name="Finance" id="d3ce62b9-8732-42d4-8745-7ff537bb1fee">
+						<testmodule name="admin_reports_finance" id="e66f1aec-35be-430e-89e6-0e3f1e707a6d" ref="9d027fdd-0799-46bc-910e-cedf7ec0ca4e" type="UserCode"/>
+					</testcase>
+					<testcase name="Content" id="9c59ecf7-5315-4eb7-a9f7-d2e6854af9cb">
+						<testmodule name="admin_reports_content" id="2944e187-06f1-44a4-a3e8-439d8f25cbdd" ref="59d860f9-b84a-496d-a45f-0f5e212a1636" type="UserCode"/>
+					</testcase>
+					<testcase name="CustomerService" id="03996aa8-6f4f-495b-ae02-f3b0e46c5eeb">
+						<testmodule name="admin_reports_cs" id="bc8c1864-e8c4-49b5-a394-1f81e4f97244" ref="5b7b47a7-7126-44e3-ba80-833c79a89918" type="UserCode"/>
+					</testcase>
+					<testcase name="Marketing" id="8c4b89ab-e475-437d-9f60-8f267c162d3d">
+						<testmodule name="admin_reports_marketing" id="db29b028-4e3c-47e6-8805-7e2bafccdbef" ref="c4038a8d-e933-4672-b249-dd4984b258ea" type="UserCode"/>
+					</testcase>
+					<testcase name="Sales" id="3105eda1-8dd0-4b91-aee1-174ac5146672">
+						<testmodule name="admin_reports_sales" id="4edba0f7-965d-425a-9d8c-23502a61d541" ref="44f4b18a-a0ea-4ee4-bcd7-14d441d3fa95" type="UserCode"/>
+					</testcase>
+				</folder>
+				<folder name="CS" id="22fc1700-e616-4bb6-bf93-bd8876a184f4">
+					<testcase name="CS-Customer-Search" id="551f2195-9ec6-4e19-81ad-e9c03dab596f">
+						<testmodule name="cs_customer_search" id="a3fb5cd5-fc23-484b-b19c-a5309b9905ef" ref="4ffb794a-69e6-4683-92dd-3c199813dac3" type="UserCode"/>
+					</testcase>
+				</folder>
+			</folder>
 		</folder>
 		<folder name="Skynet" id="cc5a43f0-cedc-44b8-a95f-866e6fa6e20e">
 			<folder name="ConsumerRegistration" id="43e16ec5-f749-4d70-9e3f-bec5231ad329">
@@ -83,12 +113,7 @@
 		</folder>
 	</content>
 	<testconfigurations default="TestRun">
-		<testconfiguration name="TestRun">
-			<testcase id="08529b9b-c12b-4067-a77d-0e24fad714f4"/>
-			<testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
-			<testcase id="43e16ec5-f749-4d70-9e3f-bec5231ad329"/>
-			<testcase id="cc5a43f0-cedc-44b8-a95f-866e6fa6e20e"/>
-		</testconfiguration>
+		<testconfiguration name="TestRun"/>
 		<testconfiguration name="TestRun1">
 			<testcase id="108c6022-89ef-4c23-802b-23fe8fd6cde3"/>
 			<testcase id="3f647c1d-1399-4837-9f78-e70951b71080"/>
@@ -112,22 +137,22 @@
 			C:\Windows\assembly\GAC_32\Ranorex.Libs.WinForms\3.3.0.17843__b798506b574ebc9a\Ranorex.Libs.WinForms.dll
 		</reference>
 		<reference>
-			PagesAbstractGeneral.dll
-		</reference>
-		<reference>
-			ConsumerPagesAbstract.dll
-		</reference>
-		<reference>
-			ConsumerPagesMain.dll
-		</reference>
-		<reference>
-			WebPages.dll
+			..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
 		</reference>
 		<reference>
 			Browsers.dll
 		</reference>
 		<reference>
-			..\..\..\Framework\BrowserTypes\Browsers\BrowsersAbstract\bin\Debug\BrowsersAbstract.dll
+			WebPages.dll
+		</reference>
+		<reference>
+			ConsumerPagesMain.dll
+		</reference>
+		<reference>
+			ConsumerPagesAbstract.dll
+		</reference>
+		<reference>
+			PagesAbstractGeneral.dll
 		</reference>
 	</references>
 </testsuite>

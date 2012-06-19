@@ -1,0 +1,66 @@
+﻿<repository name="repoActivationKey" id="cded53d9-a00e-4828-aea9-742147f92bfa" rxversion="3.2.3.16825">
+  <codegen classname="repoActivationKey" namespace="Tests.General.Tests.ActivationKey"/>
+  <rootfolder name="Root" id="95298a2b-bae5-4ecb-a7cc-a2577c874313" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+    <appfolder name="WebDocumentSoftware_training_online" id="2f8413b4-f347-43d1-9051-da2b02e6b5a8" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="ATagRegister_activation_key" id="e8169ab3-b9b5-446a-92b8-a572c34f8398" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+        <![CDATA[/dom[1]/body/div[@id='eyebrow']/div[1]/ul/li[1]/div/ul/li[4]/a[@innertext='register activation key']]]>
+      </item>
+      <basepath>
+        <![CDATA[/dom[1]]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <appfolder name="WebDocumentLynda_com_Online_Trainin" id="d9e81a5f-7c78-49b4-8bc7-7a27035de5d3" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="SelectTagDdlRegSelect" id="36d44d20-819e-486a-826e-69263c84539f" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+        <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/div[1]/p/select[@id='ddlRegSelect']]]>
+      </item>
+      <folder name="SomeTableTag" id="07f8e120-cf8c-4850-adab-ca77e26d81cf" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+        <item name="SelectTagCountry" id="568ed8f2-5283-49f0-9308-234db27bfacd" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/div[@id='divSpecialOffer']/div[@id='newuserform']/div[@id='divNewUser']/table/tbody/tr[1]/td/select[@id='Country']]]>
+        </item>
+        <item name="InputTagTxtActivationKey" id="ae2d2237-29ef-415a-a359-0a9e244586b2" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/div[@id='divSpecialOffer']/div[@id='newuserform']/div[@id='divNewUser']/table/tbody/tr[2]/td/input[@id='txtActivationKey']]]>
+        </item>
+        <item name="InputTagTxtFirstName" id="0a04623e-a809-4f72-a3ec-fc56fc7e1298" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/div[@id='divSpecialOffer']/div[@id='newuserform']/div[@id='divNewUser']/table/tbody/tr[3]/td/input[@id='txtFirstName']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']/body/div[5]/div[2]/div[@id='divSpecialOffer']/div[@id='newuserform']/div[@id='divNewUser']/table]]>
+        </basepath>
+      </folder>
+      <basepath>
+        <![CDATA[/dom[@domain='release.lynda.com' and @caption~'^lynda\.com\ Online\ Training']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <basepath>
+    </basepath>
+  </rootfolder>
+  <variables/>
+</repository>

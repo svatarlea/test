@@ -1,0 +1,168 @@
+﻿<repository name="GiftSubscriptionRepo" id="4385d467-5572-4938-a70c-8b83549667bb" rxversion="3.2.3.16825">
+  <codegen classname="GiftSubscriptionRepo" namespace="Tests.General.Tests.GiftSubscription"/>
+  <rootfolder name="Root" id="7666a42e-f1b5-4226-9873-e2a473aea14e" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+    <appfolder name="GiftSub" id="f29f68fc-2b89-460c-b4e7-8ec2c51572c4" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <item name="GiftSubLink" id="6a0be08b-d498-464f-8c47-febb7db71d94" searchtimeout="30000ms" capname="atag" addcaps="unknown,webelement,atag">
+        <![CDATA[/dom[@domain='release.lynda.com']/body/div[@id='fat-footer']/div[@id='ajaxedFooter']/div[1]/div[@id='sub_footer']/div[4]/ul/li[7]/a[@innertext='gift subscriptions']]]>
+      </item>
+      <item name="continuebtn" id="7b16ed06-287a-404b-ba98-16e288d01d41" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div/div[2]/div[4]/input[@id='ctl00_ContentPlaceHolder1_btnNext']]]>
+      </item>
+      <folder name="GiftSub2" id="5faf6883-3f80-499e-b534-b9277800bd5b" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+        <item name="FirstName" id="863f6906-9a16-4063-bc81-69092c2ca68e" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_upAppliesTo']/div/div[3]/table[@id='ctl00_ContentPlaceHolder1_dtUsers']/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[1]/td[2]/input[@id='ctl00_ContentPlaceHolder1_dtUsers_ctl00_ucUserGiftSubscribtion_tbFirstName']]]>
+        </item>
+        <item name="LastName" id="07108561-aa40-4807-a3ca-b76852695156" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_upAppliesTo']/div/div[3]/table[@id='ctl00_ContentPlaceHolder1_dtUsers']/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[2]/td[2]/input[@id='ctl00_ContentPlaceHolder1_dtUsers_ctl00_ucUserGiftSubscribtion_tbLastName']]]>
+        </item>
+        <item name="Email1" id="09685080-f0d2-4f87-91cb-c864f50f89db" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_upAppliesTo']/div/div[3]/table[@id='ctl00_ContentPlaceHolder1_dtUsers']/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td[2]/input[@id='ctl00_ContentPlaceHolder1_dtUsers_ctl00_ucUserGiftSubscribtion_tbRecipientEmail']]]>
+        </item>
+        <item name="Email2" id="01c5a0ae-318c-442a-bd7e-63c1c5c7c798" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_upAppliesTo']/div/div[3]/table[@id='ctl00_ContentPlaceHolder1_dtUsers']/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td[2]/input[@id='ctl00_ContentPlaceHolder1_dtUsers_ctl00_ucUserGiftSubscribtion_tbConfirmEmail']]]>
+        </item>
+        <item name="Greeting" id="6a5a3716-5ef1-42fa-9199-c14e135275b8" searchtimeout="30000ms" capname="textareatag" addcaps="unknown,webelement,textareatag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_upAppliesTo']/div/div[3]/table[@id='ctl00_ContentPlaceHolder1_dtUsers']/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td[2]/textarea[@id='ctl00_ContentPlaceHolder1_dtUsers_ctl00_ucUserGiftSubscribtion_tbGreetingMessage']]]>
+        </item>
+        <item name="DeliveryDate" id="5ab9daa2-d0d8-4465-8caa-6777583cba7d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_upAppliesTo']/div/div[3]/table[@id='ctl00_ContentPlaceHolder1_dtUsers']/tbody/tr/td/table/tbody/tr/td[2]/table/tbody/tr[6]/td[2]/input[@id='ctl00_ContentPlaceHolder1_dtUsers_ctl00_ucUserGiftSubscribtion_cpDesiredDeliveryDate']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_upAppliesTo']/div/div[3]/table[@id='ctl00_ContentPlaceHolder1_dtUsers']/tbody/tr/td/table/tbody/tr/td[2]/table]]>
+        </basepath>
+      </folder>
+      <item name="continuebtn2" id="0dbf244e-c471-40be-89b7-6883b431e789" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_upAppliesTo']/div/div[3]/div[1]/input[@id='ctl00_ContentPlaceHolder1_btnContinue']]]>
+      </item>
+      <folder name="GiftSub3" id="a9cc4e29-5a78-47da-a3bd-e353580d8864" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+        <item name="FirstName1" id="bd4af285-06b7-448a-890b-9d2c9fd0968b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[4]/div[@id='ctl00_ContentPlaceHolder1_Panel2']/fieldset/table/tbody/tr[1]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucCreateAccount_txtFirstName']]]>
+        </item>
+        <item name="LastName1" id="6c9ca05d-add5-4706-a3eb-85794a3dbe1a" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[4]/div[@id='ctl00_ContentPlaceHolder1_Panel2']/fieldset/table/tbody/tr[2]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucCreateAccount_txtLastName']]]>
+        </item>
+        <item name="Email1" id="e767b4ee-8739-40d1-bc07-61d6f7e1404b" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[4]/div[@id='ctl00_ContentPlaceHolder1_Panel2']/fieldset/table/tbody/tr[3]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucCreateAccount_txtEmail']]]>
+        </item>
+        <item name="Username1" id="11f31e7c-8be8-4efb-ab7a-542bca48b033" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[4]/div[@id='ctl00_ContentPlaceHolder1_Panel2']/fieldset/table/tbody/tr[4]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucCreateAccount_txtUsername']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[4]/div[@id='ctl00_ContentPlaceHolder1_Panel2']/fieldset/table]]>
+        </basepath>
+      </folder>
+      <folder name="GiftSub3CreateAct" id="0405964e-fa98-4099-86f2-e3a6fdec5de7" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+        <item name="continuebtn3" id="c36b8f07-7d88-4a73-93b5-1bb187eac31d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[4]/div[@id='ctl00_ContentPlaceHolder1_Panel2']/div[1]/input[@id='ctl00_ContentPlaceHolder1_btnContinue']]]>
+        </item>
+        <item name="Password" id="d4c82ffe-32a7-443f-8155-f100e1f291c7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[4]/div[@id='ctl00_ContentPlaceHolder1_Panel2']/fieldset/table/tbody/tr[5]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucCreateAccount_txtNewPassword']]]>
+        </item>
+        <item name="Password2" id="374949c0-0324-4b34-bb5d-0fba3723935f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[4]/div[@id='ctl00_ContentPlaceHolder1_Panel2']/fieldset/table/tbody/tr[6]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucCreateAccount_txtPasswordConfirm']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[4]/div[@id='ctl00_ContentPlaceHolder1_Panel2']]]>
+        </basepath>
+      </folder>
+      <folder name="BillingInfo" id="3ce9a82f-11e6-4da0-973c-900d13220b83" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+        <item name="Country" id="ef7344e3-ce46-45e5-9990-1cbce5e6c442" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[1]/td[2]/select[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_drpCountry']]]>
+        </item>
+        <item name="FirstName2" id="f4fe3acb-fbe1-43a5-b3b2-7a5f796a62a9" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[2]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_txtFirstName']]]>
+        </item>
+        <item name="LastName2" id="a924e7be-7048-4374-ac19-41ffde98cb61" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[3]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_txtLastName']]]>
+        </item>
+        <item name="OrgName" id="cebf6507-d809-4793-9808-897edc4d68a3" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[4]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_txtCompany']]]>
+        </item>
+        <item name="Address" id="e76e6879-de9f-4571-aa80-b2b135fd7e13" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[5]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_txtAddress1']]]>
+        </item>
+        <item name="Apt" id="afafed55-0ad6-4a1d-b50c-f4488047bbd1" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[6]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_txtAddress2']]]>
+        </item>
+        <item name="City" id="16749e8d-72db-402b-8415-47c27ec40c65" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[7]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_txtCity']]]>
+        </item>
+        <item name="State" id="2a732e46-983c-45a7-aaaf-05aac03d1ec1" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[8]/td[2]/select[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_drpState']]]>
+        </item>
+        <item name="Zip" id="120b3b0b-2334-4a14-a21f-6df557138de6" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[9]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_txtZIP']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table]]>
+        </basepath>
+      </folder>
+      <folder name="PaymentInfo" id="855a6b86-8439-4ab9-8097-c93c987921ef" searchtimeout="30000ms" capname="divtag" addcaps="unknown,webelement,divtag" isrooted="True" usecache="False">
+        <item name="Phone" id="9f61e53e-60c2-4ef9-8110-3aaccf1437ba" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[@innertext~'^\ \ \ \ \*\ Required\ informati']/table/tbody/tr[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_trPhone']/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucBillingInfo_txtPhone']]]>
+        </item>
+        <item name="cardType" id="1e403cb4-09e3-4ac5-8812-df7c741c2f7e" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[2]/div[2]/table/tbody/tr[1]/td[2]/select[@id='ctl00_ContentPlaceHolder1_ucCreditCard_drpCreditCardType']]]>
+        </item>
+        <item name="cardNumber" id="7f4c1fb2-46d4-40db-b26f-0b3738ab4ce0" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[2]/div[2]/table/tbody/tr[2]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucCreditCard_txtCreditCardNumber']]]>
+        </item>
+        <item name="continuebtn4" id="db3f9c02-2fb4-4ff5-9fd1-49affe5b4283" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/div[4]/input[@id='ctl00_ContentPlaceHolder1_btnContinue']]]>
+        </item>
+        <item name="AgreeTerms" id="57a09a3a-5d65-49eb-9395-7493e9a79a8f" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/p[@innertext='. ']/input[@id='ctl00_ContentPlaceHolder1_ucTermsAndConditionsCheckBox_chkTerms']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div]]>
+        </basepath>
+      </folder>
+      <folder name="CCInfo" id="aafdcb42-35fa-4f0d-a534-c5bc3339b916" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+        <item name="nameOnCard" id="b15edfa6-53af-487a-b6a3-7029aeb321a1" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[2]/div[2]/table/tbody/tr[3]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucCreditCard_txtNameOnCard']]]>
+        </item>
+        <item name="cardSecurityCode" id="89c6a015-76d3-49b1-9f81-7e2dfe4d09ad" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[2]/div[2]/table/tbody/tr[4]/td[2]/input[@id='ctl00_ContentPlaceHolder1_ucCreditCard_txtCreditCardSecurityCode']]]>
+        </item>
+        <item name="expireMonth" id="deb7f729-921d-4bf1-93d1-2731c990feda" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[2]/div[2]/table/tbody/tr[5]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ /\ \ ']/select[@id='ctl00_ContentPlaceHolder1_ucCreditCard_drpExpirationMonth']]]>
+        </item>
+        <item name="expireYear" id="8985938a-67f1-410a-bf9a-de900edf9ead" searchtimeout="30000ms" capname="selecttag">
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[2]/div[2]/table/tbody/tr[5]/td[@innertext~'^\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ /\ \ ']/select[@id='ctl00_ContentPlaceHolder1_ucCreditCard_drpExpirationYear']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_UpdatePanel1']/div/fieldset[2]/div[2]/table]]>
+        </basepath>
+      </folder>
+      <item name="submitbtn" id="67eabb17-35d9-45aa-9004-f6a5d660e537" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div[@id='ctl00_ContentPlaceHolder1_Panel1']/div[4]/input[@id='ctl00_ContentPlaceHolder1_btnSubmit']]]>
+      </item>
+      <item name="gotolyndabtn" id="eb817e46-33d3-4e5d-8fbe-9aa74d32555d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+        <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div/p[5]/input[@id='ctl00_ContentPlaceHolder1_btnGotoLyndaDotCom']]]>
+      </item>
+      <basepath>
+        <![CDATA[/dom[@domain='release.lynda.com']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <item name="qty" id="d4f6f8e7-8790-456b-b5a5-f221e48af8e7" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+      <![CDATA[/dom[@domain='release.lynda.com']/body/form/div[3]/div/div/div[2]/div[3]/table/tbody/tr[2]/td[4]/input[@id='ctl00_ContentPlaceHolder1_gvGiftCertificates_ctl02_txtQuantity']]]>
+    </item>
+    <basepath>
+    </basepath>
+  </rootfolder>
+  <variables/>
+</repository>

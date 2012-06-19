@@ -89,6 +89,48 @@
     <Compile Include="AppSettings.cs">
       <id>4330eb56-2d78-43ee-adfc-c46979cc70ed</id>
     </Compile>
+    <Compile Include="General\Tests\ActivationKey\ActivationKey.cs">
+      <id>c6dec579-79e7-41a8-af69-f0ff129486cd</id>
+    </Compile>
+    <Compile Include="General\Tests\ActivationKey\repoActivationKey.cs">
+      <id>4cf21b67-39ca-4421-9756-f93d81be2817</id>
+      <DependentUpon>repoActivationKey.rxrep</DependentUpon>
+      <BoundTo>00fb6f86-e7d0-4bbc-92bf-d8557a0357ce</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\Admin\admin4.cs">
+      <id>6b51730f-20e7-482b-bd1f-bc13a3cb9617</id>
+    </Compile>
+    <Compile Include="General\Tests\Admin\adminrepo.cs">
+      <id>f43dcfdb-5773-4192-9589-0c73e2b6cb62</id>
+      <DependentUpon>adminrepo.rxrep</DependentUpon>
+      <BoundTo>389ed88f-afd4-4090-90b0-0b65f8b72ac8</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\Admin\AdminReports\admin_reports_content.cs">
+      <id>91f7049b-dc5b-4404-9ad3-5875dcc493be</id>
+    </Compile>
+    <Compile Include="General\Tests\Admin\AdminReports\admin_reports_cs.cs">
+      <id>eb954a7f-c6dd-4ce3-83a7-9007f3dd1250</id>
+    </Compile>
+    <Compile Include="General\Tests\Admin\AdminReports\admin_reports_finance.cs">
+      <id>93e83a86-80ff-4239-9c1d-7f6fc360a116</id>
+    </Compile>
+    <Compile Include="General\Tests\Admin\AdminReports\admin_reports_marketing.cs">
+      <id>e77ec5bb-f8a4-44b4-9534-8cb2fa75178c</id>
+    </Compile>
+    <Compile Include="General\Tests\Admin\AdminReports\admin_reports_product.cs">
+      <id>273b800e-508d-491d-b8b9-24e9244934ae</id>
+    </Compile>
+    <Compile Include="General\Tests\Admin\AdminReports\admin_reports_royalty.cs">
+      <id>efe57d7a-9652-426e-90fc-8ad293389566</id>
+    </Compile>
+    <Compile Include="General\Tests\Admin\AdminReports\admin_reports_sales.cs">
+      <id>b7d9966c-dfe0-4bdd-851a-ad968ce3b805</id>
+    </Compile>
+    <Compile Include="General\Tests\Admin\CS\cs_customer_search.cs">
+      <id>5677c491-161f-4336-8c13-7038da3650bc</id>
+    </Compile>
     <Compile Include="General\Tests\ConsumerReg\ConsumerRegRepo.cs">
       <id>22aaac18-60cd-4bc6-97ab-855fea1cc6cb</id>
       <RepositoryCode>true</RepositoryCode>
@@ -106,6 +148,24 @@
       <DependentUpon>CreateEducatorRepo.rxrep</DependentUpon>
       <id>64cbcc90-0043-4d36-afa2-e01b685820e8</id>
       <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\FreeTrial\FreeTrial.cs">
+      <id>f1120e86-78bf-4417-bccc-a2fa6f88c930</id>
+    </Compile>
+    <Compile Include="General\Tests\FreeTrial\FreeTrialrepo.cs">
+      <id>17e3a416-eba2-4041-b67e-faef4693296f</id>
+      <DependentUpon>FreeTrialrepo.rxrep</DependentUpon>
+      <BoundTo>c6f526f4-bcaf-4f1d-bfa7-98961cbdeaa2</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\GiftSubscription\GiftSubscriptionRepo.cs">
+      <id>f01f8c59-481b-4526-8616-767fd58e0973</id>
+      <DependentUpon>GiftSubscriptionRepo.rxrep</DependentUpon>
+      <BoundTo>538674c3-7026-464e-b702-f519466820e2</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="General\Tests\GiftSubscription\GiftsubscriptionStandardMonthly.cs">
+      <id>27220011-c2c1-4c1b-a383-a956c2ac739b</id>
     </Compile>
     <Compile Include="General\Tests\MultiBrowser\MemberHomePage.cs">
       <id>4370890a-60b4-402e-9e98-2b05b8a0b5a2</id>
@@ -125,8 +185,14 @@
       <id>1e8e4b65-70bc-43ec-8ec2-d5c463ba9bff</id>
       <DependentUpon>Story_B_02914_LoginRepo.rxrep</DependentUpon>
     </Compile>
+    <Compile Include="General\Utilities\AdminReportViewer.cs">
+      <id>635ed2e6-e6c3-4f6a-b89b-80f572276f1e</id>
+    </Compile>
     <Compile Include="General\Utilities\FormDataAccount.cs">
       <id>825cf5a0-579b-42cd-932c-06219bba6b1c</id>
+    </Compile>
+    <Compile Include="General\Utilities\FormDataAdmin.cs">
+      <id>21f1aba2-33f1-47bf-8512-f364584f820c</id>
     </Compile>
     <Compile Include="General\Utilities\FormDataBilling.cs">
       <id>4af087d1-5774-4051-9e59-188955365568</id>
@@ -155,6 +221,16 @@
     <None Include="app.config">
       <id>e702f5f2-2916-4963-adcc-74c1a0e25fc1</id>
     </None>
+    <None Include="General\Tests\ActivationKey\repoActivationKey.rxrep">
+      <id>00fb6f86-e7d0-4bbc-92bf-d8557a0357ce</id>
+      <repoid>cded53d9-a00e-4828-aea9-742147f92bfa</repoid>
+      <reporootid>95298a2b-bae5-4ecb-a7cc-a2577c874313</reporootid>
+    </None>
+    <None Include="General\Tests\Admin\adminrepo.rxrep">
+      <id>389ed88f-afd4-4090-90b0-0b65f8b72ac8</id>
+      <repoid>6af1af15-33a7-468c-8c00-abd832527e8b</repoid>
+      <reporootid>b2f822dc-bd2e-4d5e-8ca2-aea2351f2c27</reporootid>
+    </None>
     <None Include="General\Tests\ConsumerReg\ConsumerRegRepo.rxrep">
       <id>3b7a21e9-3705-4c92-bc5f-5656ff8a8ed9</id>
       <reporootid>c01e8542-268c-458b-a9b3-363285851754</reporootid>
@@ -164,6 +240,16 @@
       <id>2C265F80-98E0-495C-81AE-7AB3C83897D0</id>
       <repoid>82cec03a-770a-40d6-b498-119cbafb121f</repoid>
       <reporootid>1d6ce830-0df7-45d3-8518-f2705151a6d2</reporootid>
+    </None>
+    <None Include="General\Tests\FreeTrial\FreeTrialrepo.rxrep">
+      <id>c6f526f4-bcaf-4f1d-bfa7-98961cbdeaa2</id>
+      <repoid>8a35c974-f847-4954-882d-1e0045a5ae15</repoid>
+      <reporootid>afaaa5c6-d328-410d-ac03-9af7b6afb9a6</reporootid>
+    </None>
+    <None Include="General\Tests\GiftSubscription\GiftSubscriptionRepo.rxrep">
+      <id>538674c3-7026-464e-b702-f519466820e2</id>
+      <repoid>4385d467-5572-4938-a70c-8b83549667bb</repoid>
+      <reporootid>7666a42e-f1b5-4226-9873-e2a473aea14e</reporootid>
     </None>
     <None Include="General\Tests\MultiBrowser\MemberHomePage.rxrep">
       <id>32340971-9464-4ff2-9e46-a79ff75a0c40</id>
@@ -212,6 +298,15 @@
     <Folder Include="General">
       <id>d89eff42-8f68-40f2-b511-a0207216a815</id>
     </Folder>
+    <Folder Include="General\Tests\Admin">
+      <id>a9a0cd7e-4fc5-41ec-84ba-372cd4654c5f</id>
+    </Folder>
+    <Folder Include="General\Tests\Admin\AdminReports">
+      <id>b107714b-8273-4665-9c3a-0dd5933e0e1d</id>
+    </Folder>
+    <Folder Include="General\Tests\Admin\CS">
+      <id>6b11251f-55e2-4d03-8944-5b28c09a8b2d</id>
+    </Folder>
     <Folder Include="General\Tests\ConsumerReg">
       <id>871d187f-0b3c-48bd-bcc3-036953606560</id>
     </Folder>
@@ -223,6 +318,15 @@
     </Folder>
     <Folder Include="General\Tests\Educator">
       <id>a7761a53-836d-4c74-a0f3-06babf0edba6</id>
+    </Folder>
+    <Folder Include="General\Tests\ActivationKey">
+      <id>22566442-cca7-4154-96c3-932d3f73c9f9</id>
+    </Folder>
+    <Folder Include="General\Tests\FreeTrial">
+      <id>38fff635-c367-4f45-b94e-14c91eb8e3df</id>
+    </Folder>
+    <Folder Include="General\Tests\GiftSubscription">
+      <id>3bc787af-9607-414e-acba-23b0af1eb034</id>
     </Folder>
     <Folder Include="General\Tests\Story_B_02914_Login">
       <id>7e5ab37e-96ac-4de7-aac5-bc756554fee9</id>

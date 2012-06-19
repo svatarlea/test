@@ -1,5 +1,5 @@
 ﻿<repository name="OTLSubscriptionPlanRegPage2Repo" id="35861c9f-3f1c-4c48-aa33-d0f4cd6c3028" rxversion="3.3.0.17843">
-	<codegen classname="OTLSubscriptionPlanRegPage2Repo" namespace="ConsumerPagesMain.RegStep2" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<codegen classname="OTLSubscriptionPlanRegPage2Repo" namespace="ConsumerPagesMain.RegStep2" resourcebasedir="C:\Users\mjordan\Documents\Ranorex\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
 	<rootfolder name="Root" id="92731d2c-63e1-4c11-8eb8-783f70d52232" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="bb48ffcf-865f-4327-93a5-0c9d1910efbf" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="PlanName" id="783b1314-ba93-4b47-863c-9d0df31a770b" searchtimeout="30000ms" capname="tdtag" addcaps="unknown,webelement,tdtag">

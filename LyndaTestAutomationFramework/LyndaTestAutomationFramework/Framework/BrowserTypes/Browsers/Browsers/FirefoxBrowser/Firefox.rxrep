@@ -1,5 +1,5 @@
 ﻿<repository name="Firefox" id="49cc1734-00f5-48dc-80b6-71f26bb525a4" rxversion="3.3.0.17843">
-	<codegen classname="Firefox" namespace="Browsers.FirefoxBrowser" resourcebasedir="C:\Users\mperry\GITrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
+	<codegen classname="Firefox" namespace="Browsers.FirefoxBrowser" resourcebasedir="C:\Users\mjordan\Documents\Ranorex\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\BrowserTypes\Browsers\Browsers"/>
 	<rootfolder name="Root" id="76c841d7-0ac5-4985-b102-a45cc6bbeb68" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="Form" id="1a43965b-5ca0-43b4-b128-7d9e666d98ff" searchtimeout="30000ms" capname="form" addcaps="form,nativewindow" isrooted="True" usecache="True">
 			<item name="NavigateEditBox" id="0535d943-7b3b-4f00-9b16-79a1cc1a9464" searchtimeout="30000ms" capname="combobox" addcaps="text,accessible">

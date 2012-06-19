@@ -1,0 +1,41 @@
+﻿<repository name="adminreportsrepo" id="dd8e87e5-d875-451c-89ba-4d26b0bae773" rxversion="3.2.3.16825">
+  <codegen classname="Adminreportsrepo" namespace="Tests.General.Tests.AdminReports"/>
+  <rootfolder name="Root" id="c6b63f15-2f9e-402f-b660-37bbce5ecb3a" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
+    <appfolder name="Web" id="4ef56098-c866-492f-961b-d60f181e6411" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
+      <folder name="Welcome" id="5eb0844d-689a-424f-88d7-2e077664486a" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
+        <item name="username" id="698ab586-0410-4be6-8c1b-b2a34d4deb2d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='admin.release.lynda.com']/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtUsername']]]>
+        </item>
+        <item name="loginbtn" id="c7bf49db-2d90-4818-a485-d24bcf1c72f4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='admin.release.lynda.com']/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[1]/td[3]/input[@id='ctl00_UcHeaderAdminLogin1_ImageButton1']]]>
+        </item>
+        <item name="password" id="f6dd491b-43e6-470e-84d8-ba9fe96a3c54" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
+          <![CDATA[/dom[@domain='admin.release.lynda.com']/body/form/div[3]/table/tbody/tr/td[9]/div/table/tbody/tr[2]/td[2]/input[@id='ctl00_UcHeaderAdminLogin1_txtPassword']]]>
+        </item>
+        <basepath>
+          <![CDATA[/dom[@domain='admin.release.lynda.com']/body/form/div[3]/table/tbody/tr/td[9]/div/table]]>
+        </basepath>
+      </folder>
+      <basepath>
+        <![CDATA[/dom[@domain='admin.release.lynda.com']]]>
+      </basepath>
+      <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAipJREFU
+OE+N091L01EYwHEv+huCoMsuiiio8CaICAwSYyAVmezCIeXAyswyC2dG5oXbmGlqvpEuMaPfdGgv
+9uKsJCVI5ku51dSWKMp0br5O9/bN36+88iw68PC7OOf5nOc8D7+4uL+rofUjtS1dVDR1Uvqog5Lq
+Vu6Wt6AzPCa3uJ6swio2zwq/cvK/Vr7BrGAxEfnmUDga05AB5/h0bMS0UfZ6UAyEI1Fk4EjyRSXi
+E9O3ViK/eXVtKxCOoMArgQgLy2HcnpAYkBu2CXhX5qjqaKfc2obOkkmppRHX1ALehRCOiYAYkBsk
+3yAnG2x6hqMO7NF+iuzXOJwncaHyFUNuHwOjy2JAHpV/KUJNu438r8k0zGupsbegMU5zvMzDnsYT
+mNrr+DyyJAbkOc/5w9x70E2aNQn1GxVZJjfZZXCwupDtrTs5WXCFniG/GNDevM/0fIg7D13oyj6R
+1pyCylZEitHPqcwb7Li9jaM56bzrnxcDmhw9k7NBqqQRtAZQGyQOdOwi3phM0vkX7FVdRl9Tx8s+
+rxhIvVSMe2Yd55iP6yWD7M+rZXfBPhIyrnIoxcpp7VNe985g7ZkVA2cyCnFNrimjsju9mJqaOXau
+gITUcirMb5Xkvm9LSO89YkCluYVzYm2jD0EmPOuMTQVw/FpVxvbl+/JG8iIfBhdjA4nqXHqHfbR1
+j/Os6ydPOkcxP/9BvdVJtcVBpfQnKiSXuIKEs9nKxv/G5l/5GzRtKw4mGzgLAAAAAElFTkSuQmCC
+      </icon>
+    </appfolder>
+    <basepath>
+    </basepath>
+  </rootfolder>
+  <variables/>
+</repository>
