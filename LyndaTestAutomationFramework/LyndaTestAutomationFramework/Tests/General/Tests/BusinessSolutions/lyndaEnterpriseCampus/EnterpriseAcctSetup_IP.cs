@@ -209,7 +209,7 @@ namespace Tests.General.Tests.BusinessSolutions.lyndaEnterpriseCampus
            	Report.Log(ReportLevel.Info, repo.DOM.InvalidIP_LoginPage.p_IP_Permission_denied_mesg.InnerText);
            	Report.Log(ReportLevel.Info, strPermDend);
            	
-           	
+           	Host.Local.CloseApplication(repo.DOM.Self, new Duration(0));
 			
         }
         

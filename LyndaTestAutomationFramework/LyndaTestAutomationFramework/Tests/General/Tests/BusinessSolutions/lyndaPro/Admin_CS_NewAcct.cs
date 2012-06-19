@@ -279,11 +279,10 @@ namespace Tests.General.Tests.BusinessSolutions.lyndaPro
             			//TODO : Promotional Code
             		
             			repo.DOM.DivTagTable_format.lc_btnCalculate.Click();
-            			
+            			Validate.Exists(repo.DOM.lc_RegnStep2of4_TableDiscountInfo);
             			//TODO : Validate Amount
             			
             			Validate.Exists(repo.DOM.DivTagTable_format.lc_btn_Step2of4_ContinueInfo);
-            			
             			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.MoveTo();
             			repo.DOM.DivTagTable_format.lc_btn_Step2of4_Continue.Click();
             		
@@ -313,7 +312,7 @@ namespace Tests.General.Tests.BusinessSolutions.lyndaPro
             			//TODO : Promotional Code
             		
             			repo.DOM.DivTagTable_format.lc_btnCalculate.Click();
-            			
+            			Validate.Exists(repo.DOM.lc_RegnStep2of4_TableDiscountInfo);
             			//TODO : Validate Amount
             			
             			Validate.Exists(repo.DOM.DivTagTable_format.lc_btn_Step2of4_ContinueInfo);

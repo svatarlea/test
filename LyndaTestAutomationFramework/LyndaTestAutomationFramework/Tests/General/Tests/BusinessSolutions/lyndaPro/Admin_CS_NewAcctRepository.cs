@@ -209,7 +209,7 @@ namespace Tests.General.Tests.BusinessSolutions.lyndaPro
             RepoItemInfo _selfInfo;
             RepoItemInfo _webdocumentlyndapro_admin_registratInfo;
             RepoItemInfo _regnstep2of4_tablediscountInfo;
-            RepoItemInfo _zzregnstep2of4_btncontinueInfo;
+            RepoItemInfo _lc_regnstep2of4_tablediscountInfo;
 
             /// <summary>
             /// Creates a new DOM  folder.
@@ -230,7 +230,7 @@ namespace Tests.General.Tests.BusinessSolutions.lyndaPro
                 _selfInfo = new RepoItemInfo(this, "Self", "", 0, null, "454fb43e-b24c-40e0-9ed9-e294e212ba61");
                 _webdocumentlyndapro_admin_registratInfo = new RepoItemInfo(this, "WebDocumentLyndaPro_Admin_Registrat", "", 30000, null, "f727a542-5bf5-46ca-83d9-8bdb6d8bd4d1");
                 _regnstep2of4_tablediscountInfo = new RepoItemInfo(this, "RegnStep2of4_TableDiscount", ".//table[#'ctl00_cphMain_ucRegistrationStep2_ucOrderDescription_tableDiscount']", 30000, null, "53bcbcdf-4df3-4c4b-b891-82d84e8c105c");
-                _zzregnstep2of4_btncontinueInfo = new RepoItemInfo(this, "zzRegnStep2of4_btnContinue", ".//input[#'ctl00_cphMain_imgContinue']", 30000, null, "8b665a23-4147-4086-a416-67c16c6f6f7d");
+                _lc_regnstep2of4_tablediscountInfo = new RepoItemInfo(this, "lc_RegnStep2of4_TableDiscount", ".//table[#'ctl00_cphMain_ucOrderDescription_tableDiscount']", 30000, null, "4264227c-b72b-461b-9494-0bb9db0d2456");
             }
 
             /// <summary>
@@ -306,26 +306,26 @@ namespace Tests.General.Tests.BusinessSolutions.lyndaPro
             }
 
             /// <summary>
-            /// The zzRegnStep2of4_btnContinue item.
+            /// The lc_RegnStep2of4_TableDiscount item.
             /// </summary>
-            [RepositoryItem("8b665a23-4147-4086-a416-67c16c6f6f7d")]
-            public virtual Ranorex.InputTag zzRegnStep2of4_btnContinue
+            [RepositoryItem("4264227c-b72b-461b-9494-0bb9db0d2456")]
+            public virtual Ranorex.TableTag lc_RegnStep2of4_TableDiscount
             {
                 get
                 {
-                    return _zzregnstep2of4_btncontinueInfo.CreateAdapter<Ranorex.InputTag>(true);
+                    return _lc_regnstep2of4_tablediscountInfo.CreateAdapter<Ranorex.TableTag>(true);
                 }
             }
 
             /// <summary>
-            /// The zzRegnStep2of4_btnContinue item info.
+            /// The lc_RegnStep2of4_TableDiscount item info.
             /// </summary>
-            [RepositoryItemInfo("8b665a23-4147-4086-a416-67c16c6f6f7d")]
-            public virtual RepoItemInfo zzRegnStep2of4_btnContinueInfo
+            [RepositoryItemInfo("4264227c-b72b-461b-9494-0bb9db0d2456")]
+            public virtual RepoItemInfo lc_RegnStep2of4_TableDiscountInfo
             {
                 get
                 {
-                    return _zzregnstep2of4_btncontinueInfo;
+                    return _lc_regnstep2of4_tablediscountInfo;
                 }
             }
 

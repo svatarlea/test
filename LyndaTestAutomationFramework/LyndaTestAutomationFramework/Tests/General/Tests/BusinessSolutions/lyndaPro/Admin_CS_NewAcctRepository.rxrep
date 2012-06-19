@@ -150,8 +150,8 @@
 			<item name="RegnStep2of4_TableDiscount" id="53bcbcdf-4df3-4c4b-b891-82d84e8c105c" searchtimeout="30000ms" capname="tabletag" addcaps="unknown,webelement,tabletag">
 				/dom//table[#'ctl00_cphMain_ucRegistrationStep2_ucOrderDescription_tableDiscount']
 			</item>
-			<item name="zzRegnStep2of4_btnContinue" id="8b665a23-4147-4086-a416-67c16c6f6f7d" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
-				/dom//input[#'ctl00_cphMain_imgContinue']
+			<item name="lc_RegnStep2of4_TableDiscount" id="4264227c-b72b-461b-9494-0bb9db0d2456" searchtimeout="30000ms" capname="tabletag" addcaps="unknown,webelement,tabletag">
+				/dom//table[#'ctl00_cphMain_ucOrderDescription_tableDiscount']
 			</item>
 			<folder name="TableTagCtl00_cphMain_rblPersona" id="7abb9a23-1262-4ad9-8468-d5f39939eb32" searchtimeout="30000ms" capname="table" addcaps="unknown,webelement,tabletag" isrooted="True" usecache="False">
 				<item name="rbPersona_Educator" id="d1961cd7-be7c-4cae-92ec-1374890579d4" searchtimeout="30000ms" capname="inputtag" addcaps="unknown,webelement,inputtag">
