@@ -1,5 +1,5 @@
 ﻿<repository name="PaymentInformationRepo" id="692518d0-74b1-429b-9d64-b057d824cadf" rxversion="3.3.0.17843">
-	<codegen classname="PaymentInformationRepo" namespace="ConsumerPagesMain.RegStep2" resourcebasedir="C:\Users\mperry\gitrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
+	<codegen classname="PaymentInformationRepo" namespace="ConsumerPagesMain.RegStep2" resourcebasedir="C:\Users\mperry\gitrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Framework\Pages\ConsumerPages\ConsumerPagesMain"/>
 	<rootfolder name="Root" id="4c36a5e1-5c67-4d1c-ba57-eb2cbeea98f5" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="8e83c3dd-c9a3-42fe-84b2-0e8afeca1ba0" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<item name="PaymentTypeSelect" id="a20e893e-13ef-4ebe-916e-2286f8dd64fb" searchtimeout="30000ms" capname="selecttag" addcaps="unknown,webelement,selecttag">

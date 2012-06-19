@@ -1,5 +1,5 @@
 ﻿<repository name="CreateEducatorRepo" id="82cec03a-770a-40d6-b498-119cbafb121f" rxversion="3.3.0.17843">
-	<codegen classname="CreateEducatorRepo" namespace="Tests.General.Tests.Educator" resourcebasedir="C:\Users\mperry\gitrepo\temp\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
+	<codegen classname="CreateEducatorRepo" namespace="Tests.General.Tests.Educator" resourcebasedir="C:\Users\mperry\gitrepo\QA\test\LyndaTestAutomationFramework\LyndaTestAutomationFramework\Tests"/>
 	<rootfolder name="Root" id="1d6ce830-0df7-45d3-8518-f2705151a6d2" searchtimeout="30000ms" capname="unknown" isrooted="True" usecache="True">
 		<appfolder name="DOM" id="21187d4f-baeb-40a2-b8f5-85f2cdaf82f6" searchtimeout="30000ms" capname="webdocument" addcaps="container,webdocument" isrooted="True" usecache="False">
 			<folder name="AdminWelcomePageNotLoggedIn" id="5f19804b-d22d-4792-98d6-b28ec28cabae" searchtimeout="0ms" capname="unknown" isrooted="False">
